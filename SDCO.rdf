@@ -450,7 +450,7 @@
      rdfs:subClassOf :PipeFabric ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeFabricDamage ;
-                       owl:hasValue :Deformation
+                       owl:someValuesFrom :Deformation
                      ] .
 
 
@@ -467,7 +467,7 @@
        rdfs:subClassOf :BAA ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasDamageOrientation ;
-                         owl:hasValue :Vertical
+                         owl:someValuesFrom :Vertical
                        ] ;
        owl:disjointWith :BAA_B .
 
@@ -485,7 +485,7 @@
        rdfs:subClassOf :BAA ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasDamageOrientation ;
-                         owl:hasValue :Horizontal
+                         owl:someValuesFrom :Horizontal
                        ] .
 
 
@@ -498,7 +498,7 @@
      rdfs:subClassOf :PipeFabric ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeFabricDamage ;
-                       owl:hasValue :Fissure
+                       owl:someValuesFrom :Fissure
                      ] ;
      rdfs:comment """BAB = Pipe Fissure Damage
 Char1: Nature of the Fissure
@@ -520,7 +520,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAB ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
-                          owl:hasValue :SurfaceCrackFissure
+                          owl:someValuesFrom :SurfaceCrackFissure
                         ] .
 
 
@@ -537,7 +537,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAB ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
-                          owl:hasValue :CrackFissure
+                          owl:someValuesFrom :CrackFissure
                         ] .
 
 
@@ -554,7 +554,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAB ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
-                          owl:hasValue :FractureFissure
+                          owl:someValuesFrom :FractureFissure
                         ] .
 
 
@@ -571,7 +571,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAB ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDamageOrientation ;
-                          owl:hasValue :SurfaceCrackFissure
+                          owl:someValuesFrom :Longitudinal
                         ] ;
         owl:disjointWith :BAB2_B .
 
@@ -589,7 +589,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAB ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDamageOrientation ;
-                          owl:hasValue :Circumferential
+                          owl:someValuesFrom :Circumferential
                         ] .
 
 
@@ -606,7 +606,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAB ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDamageOrientation ;
-                          owl:hasValue :Complex
+                          owl:someValuesFrom :Complex
                         ] .
 
 
@@ -623,7 +623,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAB ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDamageOrientation ;
-                          owl:hasValue :Helical
+                          owl:someValuesFrom :Helical
                         ] ;
         owl:disjointWith :BAB2_E .
 
@@ -641,7 +641,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAB ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDamageOrientation ;
-                          owl:hasValue :StarFissure
+                          owl:someValuesFrom :StarFissure
                         ] .
 
 
@@ -654,7 +654,7 @@ Circumferntial Location: Should be recorded""" .
      rdfs:subClassOf :PipeFabric ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeFabricDamage ;
-                       owl:hasValue :BreakOrCollapse
+                       owl:someValuesFrom :BreakOrCollapse
                      ] ;
      rdfs:comment "Break/Collapse" ;
      rdfs:isDefinedBy "DIN EN 13508-2" .
@@ -673,7 +673,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BAC ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeFabricDamage ;
-                         owl:hasValue :Break
+                         owl:someValuesFrom :Break
                        ] .
 
 
@@ -690,7 +690,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BAC ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeFabricDamage ;
-                         owl:hasValue :MissingWallBreakOrCollapse
+                         owl:someValuesFrom :MissingWallBreakOrCollapse
                        ] .
 
 
@@ -707,7 +707,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BAC ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeFabricDamage ;
-                         owl:hasValue :CollapsedBreakOrCollapse
+                         owl:someValuesFrom :CollapsedBreakOrCollapse
                        ] .
 
 
@@ -720,7 +720,7 @@ Circumferntial Location: Should be recorded""" .
      rdfs:subClassOf :PipeFabric ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeFabricDamage ;
-                       owl:hasValue :DefectiveBrickworkOrMasonry
+                       owl:someValuesFrom :DefectiveBrickworkOrMasonry
                      ] .
 
 
@@ -737,7 +737,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAD ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
-                          owl:hasValue :DisplacedBrickworkOrMasonry
+                          owl:someValuesFrom :DisplacedBrickworkOrMasonry
                         ] .
 
 
@@ -754,7 +754,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAD ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
-                          owl:hasValue :MissingBrickworkOrMasonry
+                          owl:someValuesFrom :MissingBrickworkOrMasonry
                         ] .
 
 
@@ -771,7 +771,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAD ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
-                          owl:hasValue :DroppedInvertBrickworkOrMasonry
+                          owl:someValuesFrom :DroppedInvertBrickworkOrMasonry
                         ] .
 
 
@@ -788,7 +788,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAD ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
-                          owl:hasValue :CollapsedBrickworkOrMasonry
+                          owl:someValuesFrom :CollapsedBrickworkOrMasonry
                         ] .
 
 
@@ -805,7 +805,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAD ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
-                          owl:hasValue :LayerBrickworkOrMasonryVisible
+                          owl:someValuesFrom :LayerBrickworkOrMasonryVisible
                         ] .
 
 
@@ -822,7 +822,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAD ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
-                          owl:hasValue :NothingVisible
+                          owl:someValuesFrom :NothingVisible
                         ] .
 
 
@@ -835,7 +835,7 @@ Circumferntial Location: Should be recorded""" .
      rdfs:subClassOf :PipeFabric ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeFabricDamage ;
-                       owl:hasValue :MissingMortar
+                       owl:someValuesFrom :MissingMortar
                      ] .
 
 
@@ -848,7 +848,7 @@ Circumferntial Location: Should be recorded""" .
      rdfs:subClassOf :PipeFabric ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeFabricDamage ;
-                       owl:hasValue :Surface
+                       owl:someValuesFrom :Surface
                      ] .
 
 
@@ -865,7 +865,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAF ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
-                          owl:hasValue :IncreasedRoughness
+                          owl:someValuesFrom :IncreasedRoughness
                         ] .
 
 
@@ -882,7 +882,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAF ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
-                          owl:hasValue :Spalling
+                          owl:someValuesFrom :Spalling
                         ] .
 
 
@@ -899,7 +899,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAF ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
-                          owl:hasValue :VisibleAggregate
+                          owl:someValuesFrom :VisibleAggregate
                         ] .
 
 
@@ -916,7 +916,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAF ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
-                          owl:hasValue :AggregateProjectingFromSurface
+                          owl:someValuesFrom :AggregateProjectingFromSurface
                         ] .
 
 
@@ -933,7 +933,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAF ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
-                          owl:hasValue :MissingAggregate
+                          owl:someValuesFrom :MissingAggregate
                         ] .
 
 
@@ -950,7 +950,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAF ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
-                          owl:hasValue :VisibleReinforcement
+                          owl:someValuesFrom :VisibleReinforcement
                         ] .
 
 
@@ -967,7 +967,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAF ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
-                          owl:hasValue :ReinforcementProjectingFromSurface
+                          owl:someValuesFrom :ReinforcementProjectingFromSurface
                         ] .
 
 
@@ -984,7 +984,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAF ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
-                          owl:hasValue :CorrodedReinforcement
+                          owl:someValuesFrom :CorrodedReinforcement
                         ] .
 
 
@@ -1001,7 +1001,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAF ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
-                          owl:hasValue :MissingWallSurface
+                          owl:someValuesFrom :MissingWallSurface
                         ] .
 
 
@@ -1018,7 +1018,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAF ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
-                          owl:hasValue :CorrosionProductsOnSurface
+                          owl:someValuesFrom :CorrosionProductsOnSurface
                         ] .
 
 
@@ -1035,7 +1035,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAF ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
-                          owl:hasValue :Blistering
+                          owl:someValuesFrom :Blistering
                         ] .
 
 
@@ -1052,7 +1052,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAF ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
-                          owl:hasValue :OtherSurfaceDamage
+                          owl:someValuesFrom :OtherSurfaceDamage
                         ] .
 
 
@@ -1069,7 +1069,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAF ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDamageCause ;
-                          owl:hasValue :Mechanical
+                          owl:someValuesFrom :Mechanical
                         ] .
 
 
@@ -1086,7 +1086,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAF ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDamageCause ;
-                          owl:hasValue :Chemical
+                          owl:someValuesFrom :Chemical
                         ] .
 
 
@@ -1103,7 +1103,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAF ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDamageCause ;
-                          owl:hasValue :ChemicalUpperPart
+                          owl:someValuesFrom :ChemicalUpperPart
                         ] .
 
 
@@ -1120,7 +1120,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAF ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDamageCause ;
-                          owl:hasValue :ChemicalLowerPart
+                          owl:someValuesFrom :ChemicalLowerPart
                         ] .
 
 
@@ -1137,7 +1137,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAF ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
-                          owl:hasValue :NotEvident
+                          owl:someValuesFrom :NotEvident
                         ] .
 
 
@@ -1154,7 +1154,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAF ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDamageCause ;
-                          owl:hasValue :OtherCause
+                          owl:someValuesFrom :OtherCause
                         ] .
 
 
@@ -1167,7 +1167,7 @@ Circumferntial Location: Should be recorded""" .
      rdfs:subClassOf :PipeFabric ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeFabricDamage ;
-                       owl:hasValue :IntrudingConnection
+                       owl:someValuesFrom :IntrudingConnection
                      ] .
 
 
@@ -1180,7 +1180,7 @@ Circumferntial Location: Should be recorded""" .
      rdfs:subClassOf :PipeFabric ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeFabricDamage ;
-                       owl:hasValue :DefectiveConnection
+                       owl:someValuesFrom :DefectiveConnection
                      ] .
 
 
@@ -1197,7 +1197,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BAH ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeFabricDamage ;
-                         owl:hasValue :IncorrectPositionConnection
+                         owl:someValuesFrom :IncorrectPositionConnection
                        ] .
 
 
@@ -1214,7 +1214,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BAH ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeFabricDamage ;
-                         owl:hasValue :GapConnection
+                         owl:someValuesFrom :GapConnection
                        ] .
 
 
@@ -1231,7 +1231,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BAH ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeFabricDamage ;
-                         owl:hasValue :PartialGapConnection
+                         owl:someValuesFrom :PartialGapConnection
                        ] .
 
 
@@ -1248,7 +1248,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BAH ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeFabricDamage ;
-                         owl:hasValue :DamagedConnection
+                         owl:someValuesFrom :DamagedConnection
                        ] .
 
 
@@ -1265,7 +1265,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BAH ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeFabricDamage ;
-                         owl:hasValue :BlockedConnection
+                         owl:someValuesFrom :BlockedConnection
                        ] .
 
 
@@ -1282,7 +1282,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BAH ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeFabricDamage ;
-                         owl:hasValue :OtherDefectiveConnection
+                         owl:someValuesFrom :OtherDefectiveConnection
                        ] .
 
 
@@ -1295,7 +1295,7 @@ Circumferntial Location: Should be recorded""" .
      rdfs:subClassOf :PipeFabric ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeFabricDamage ;
-                       owl:hasValue :IntrudingSealingMaterial
+                       owl:someValuesFrom :IntrudingSealingMaterial
                      ] .
 
 
@@ -1312,7 +1312,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAI ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
-                          owl:hasValue :IntrudingSealingRing
+                          owl:someValuesFrom :IntrudingSealingRing
                         ] .
 
 
@@ -1329,7 +1329,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAI ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
-                          owl:hasValue :IntrudingOtherSealant
+                          owl:someValuesFrom :IntrudingOtherSealant
                         ] .
 
 
@@ -1346,7 +1346,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAI ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
-                          owl:hasValue :DisplacedSealingRing
+                          owl:someValuesFrom :DisplacedSealingRing
                         ] .
 
 
@@ -1363,7 +1363,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAI ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
-                          owl:hasValue :IntrudingSealingRingAboveCentreline
+                          owl:someValuesFrom :IntrudingSealingRingAboveCentreline
                         ] .
 
 
@@ -1380,7 +1380,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAI ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
-                          owl:hasValue :IntrudingSealingRingBelowCentreline
+                          owl:someValuesFrom :IntrudingSealingRingBelowCentreline
                         ] .
 
 
@@ -1397,7 +1397,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAI ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
-                          owl:hasValue :IntrudingBrokenSealingRing
+                          owl:someValuesFrom :IntrudingBrokenSealingRing
                         ] .
 
 
@@ -1410,7 +1410,7 @@ Circumferntial Location: Should be recorded""" .
      rdfs:subClassOf :PipeFabric ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeFabricDamage ;
-                       owl:hasValue :DisplacedJoint
+                       owl:someValuesFrom :DisplacedJoint
                      ] .
 
 
@@ -1427,7 +1427,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BAJ ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasDamageOrientation ;
-                         owl:hasValue :Longitudinal
+                         owl:someValuesFrom :Longitudinal
                        ] .
 
 
@@ -1444,7 +1444,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BAJ ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasDamageOrientation ;
-                         owl:hasValue :Radial
+                         owl:someValuesFrom :Radial
                        ] .
 
 
@@ -1461,7 +1461,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BAJ ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasDamageOrientation ;
-                         owl:hasValue :Angular
+                         owl:someValuesFrom :Angular
                        ] .
 
 
@@ -1474,7 +1474,7 @@ Circumferntial Location: Should be recorded""" .
      rdfs:subClassOf :PipeFabric ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeFabricDamage ;
-                       owl:hasValue :Lining
+                       owl:someValuesFrom :Lining
                      ] .
 
 
@@ -1491,7 +1491,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
-                          owl:hasValue :DetachedLining
+                          owl:someValuesFrom :DetachedLining
                         ] .
 
 
@@ -1508,7 +1508,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
-                          owl:hasValue :DiscoloredLining
+                          owl:someValuesFrom :DiscoloredLining
                         ] .
 
 
@@ -1525,7 +1525,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
-                          owl:hasValue :DefectiveEndOfLining
+                          owl:someValuesFrom :DefectiveEndOfLining
                         ] .
 
 
@@ -1542,7 +1542,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
-                          owl:hasValue :WrinkledLining
+                          owl:someValuesFrom :WrinkledLining
                         ] .
 
 
@@ -1559,7 +1559,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
-                          owl:hasValue :BlisteredOrInternalBulgeLining
+                          owl:someValuesFrom :BlisteredOrInternalBulgeLining
                         ] .
 
 
@@ -1576,7 +1576,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
-                          owl:hasValue :ExternalBulgeLining
+                          owl:someValuesFrom :ExternalBulgeLining
                         ] .
 
 
@@ -1593,7 +1593,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
-                          owl:hasValue :InternalFilmOrCoatingSeparation
+                          owl:someValuesFrom :InternalFilmOrCoatingSeparation
                         ] .
 
 
@@ -1610,7 +1610,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
-                          owl:hasValue :SeamCoveringSeparation
+                          owl:someValuesFrom :SeamCoveringSeparation
                         ] .
 
 
@@ -1627,7 +1627,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
-                          owl:hasValue :CrackOrSplitOrWeldFailure
+                          owl:someValuesFrom :CrackOrSplitOrWeldFailure
                         ] .
 
 
@@ -1644,7 +1644,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
-                          owl:hasValue :HoleInLining
+                          owl:someValuesFrom :HoleInLining
                         ] .
 
 
@@ -1661,7 +1661,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
-                          owl:hasValue :LiningConnectionDefect
+                          owl:someValuesFrom :LiningConnectionDefect
                         ] .
 
 
@@ -1678,7 +1678,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
-                          owl:hasValue :SoftLiningMaterial
+                          owl:someValuesFrom :SoftLiningMaterial
                         ] .
 
 
@@ -1695,7 +1695,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
-                          owl:hasValue :ResinMissingFromLaminate
+                          owl:someValuesFrom :ResinMissingFromLaminate
                         ] .
 
 
@@ -1712,7 +1712,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
-                          owl:hasValue :EndOfLiningNotSealed
+                          owl:someValuesFrom :EndOfLiningNotSealed
                         ] .
 
 
@@ -1729,7 +1729,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
-                          owl:hasValue :OtherLiningDefect
+                          owl:someValuesFrom :OtherLiningDefect
                         ] .
 
 
@@ -1746,7 +1746,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDamageOrientation ;
-                          owl:hasValue :Longitudinal
+                          owl:someValuesFrom :Longitudinal
                         ] .
 
 
@@ -1763,7 +1763,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDamageOrientation ;
-                          owl:hasValue :Circumferential
+                          owl:someValuesFrom :Circumferential
                         ] .
 
 
@@ -1780,7 +1780,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDamageOrientation ;
-                          owl:hasValue :Complex
+                          owl:someValuesFrom :Complex
                         ] .
 
 
@@ -1797,7 +1797,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDamageOrientation ;
-                          owl:hasValue :Helical
+                          owl:someValuesFrom :Helical
                         ] .
 
 
@@ -1810,7 +1810,7 @@ Circumferntial Location: Should be recorded""" .
      rdfs:subClassOf :PipeFabric ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeFabricDamage ;
-                       owl:hasValue :DefectiveRepair
+                       owl:someValuesFrom :DefectiveRepair
                      ] .
 
 
@@ -1827,7 +1827,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAL ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
-                          owl:hasValue :MissingWallDefectiveRepair
+                          owl:someValuesFrom :MissingWallDefectiveRepair
                         ] .
 
 
@@ -1844,7 +1844,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAL ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
-                          owl:hasValue :PatchSealingDefectiveRepair
+                          owl:someValuesFrom :PatchSealingDefectiveRepair
                         ] .
 
 
@@ -1861,7 +1861,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAL ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
-                          owl:hasValue :RepairMaterialSeparated
+                          owl:someValuesFrom :RepairMaterialSeparated
                         ] .
 
 
@@ -1878,7 +1878,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAL ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
-                          owl:hasValue :MissingRepairMaterial
+                          owl:someValuesFrom :MissingRepairMaterial
                         ] .
 
 
@@ -1895,7 +1895,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAL ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
-                          owl:hasValue :ExcessRepairMaterial
+                          owl:someValuesFrom :ExcessRepairMaterial
                         ] .
 
 
@@ -1912,7 +1912,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAL ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
-                          owl:hasValue :HoleInRepairMaterial
+                          owl:someValuesFrom :HoleInRepairMaterial
                         ] .
 
 
@@ -1929,7 +1929,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAL ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
-                          owl:hasValue :CrackInRepairMaterial
+                          owl:someValuesFrom :CrackInRepairMaterial
                         ] .
 
 
@@ -1946,7 +1946,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAL ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
-                          owl:hasValue :OtherDefectiveRepair
+                          owl:someValuesFrom :OtherDefectiveRepair
                         ] .
 
 
@@ -1963,7 +1963,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAL ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDamageOrientation ;
-                          owl:hasValue :Longitudinal
+                          owl:someValuesFrom :Longitudinal
                         ] .
 
 
@@ -1980,7 +1980,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAL ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDamageOrientation ;
-                          owl:hasValue :Circumferential
+                          owl:someValuesFrom :Circumferential
                         ] .
 
 
@@ -1997,7 +1997,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAL ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDamageOrientation ;
-                          owl:hasValue :Complex
+                          owl:someValuesFrom :Complex
                         ] .
 
 
@@ -2014,7 +2014,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BAL ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDamageOrientation ;
-                          owl:hasValue :Helical
+                          owl:someValuesFrom :Helical
                         ] .
 
 
@@ -2027,7 +2027,7 @@ Circumferntial Location: Should be recorded""" .
      rdfs:subClassOf :PipeFabric ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeFabricDamage ;
-                       owl:hasValue :WeldFailure
+                       owl:someValuesFrom :WeldFailure
                      ] .
 
 
@@ -2044,7 +2044,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BAM ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasDamageOrientation ;
-                         owl:hasValue :Longitudinal
+                         owl:someValuesFrom :Longitudinal
                        ] .
 
 
@@ -2061,7 +2061,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BAM ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasDamageOrientation ;
-                         owl:hasValue :Circumferential
+                         owl:someValuesFrom :Circumferential
                        ] .
 
 
@@ -2078,7 +2078,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BAM ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasDamageOrientation ;
-                         owl:hasValue :Helical
+                         owl:someValuesFrom :Helical
                        ] .
 
 
@@ -2091,7 +2091,7 @@ Circumferntial Location: Should be recorded""" .
      rdfs:subClassOf :PipeFabric ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeFabricDamage ;
-                       owl:hasValue :PorousPipe
+                       owl:someValuesFrom :PorousPipe
                      ] .
 
 
@@ -2104,7 +2104,7 @@ Circumferntial Location: Should be recorded""" .
      rdfs:subClassOf :PipeFabric ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeFabricDamage ;
-                       owl:hasValue :SoilVisibleThroughDefect
+                       owl:someValuesFrom :SoilVisibleThroughDefect
                      ] .
 
 
@@ -2117,7 +2117,7 @@ Circumferntial Location: Should be recorded""" .
      rdfs:subClassOf :PipeFabric ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeFabricDamage ;
-                       owl:hasValue :VoidVisibleThroughDefect
+                       owl:someValuesFrom :VoidVisibleThroughDefect
                      ] .
 
 
@@ -2130,7 +2130,7 @@ Circumferntial Location: Should be recorded""" .
      rdfs:subClassOf :PipeOperation ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeOperationDamage ;
-                       owl:hasValue :Roots
+                       owl:someValuesFrom :Roots
                      ] .
 
 
@@ -2147,7 +2147,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BBA ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
-                         owl:hasValue :TapRoot
+                         owl:someValuesFrom :TapRoot
                        ] .
 
 
@@ -2164,7 +2164,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BBA ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
-                         owl:hasValue :IndependentFineRoots
+                         owl:someValuesFrom :IndependentFineRoots
                        ] .
 
 
@@ -2181,7 +2181,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BBA ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
-                         owl:hasValue :ComplexMassRoots
+                         owl:someValuesFrom :ComplexMassRoots
                        ] .
 
 
@@ -2194,7 +2194,7 @@ Circumferntial Location: Should be recorded""" .
      rdfs:subClassOf :PipeOperation ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeOperationDamage ;
-                       owl:hasValue :AttachedDeposits
+                       owl:someValuesFrom :AttachedDeposits
                      ] .
 
 
@@ -2211,7 +2211,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BBB ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
-                         owl:hasValue :EncrustationAttachedDeposit
+                         owl:someValuesFrom :EncrustationAttachedDeposit
                        ] .
 
 
@@ -2228,7 +2228,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BBB ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
-                         owl:hasValue :GreaseAttachedDeposit
+                         owl:someValuesFrom :GreaseAttachedDeposit
                        ] .
 
 
@@ -2245,7 +2245,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BBB ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
-                         owl:hasValue :FoulingAttachedDeposit
+                         owl:someValuesFrom :FoulingAttachedDeposit
                        ] .
 
 
@@ -2262,7 +2262,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BBB ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
-                         owl:hasValue :OtherAttachedDeposit
+                         owl:someValuesFrom :OtherAttachedDeposit
                        ] .
 
 
@@ -2275,7 +2275,7 @@ Circumferntial Location: Should be recorded""" .
      rdfs:subClassOf :PipeOperation ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeOperationDamage ;
-                       owl:hasValue :SettledDeposit
+                       owl:someValuesFrom :SettledDeposit
                      ] .
 
 
@@ -2292,7 +2292,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BBC ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
-                         owl:hasValue :FineSettledDeposit
+                         owl:someValuesFrom :FineSettledDeposit
                        ] .
 
 
@@ -2309,7 +2309,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BBC ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
-                         owl:hasValue :CoarseSettledDeposit
+                         owl:someValuesFrom :CoarseSettledDeposit
                        ] .
 
 
@@ -2326,7 +2326,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BBC ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
-                         owl:hasValue :HardOrCompactedSettledDeposit
+                         owl:someValuesFrom :HardOrCompactedSettledDeposit
                        ] .
 
 
@@ -2343,7 +2343,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BBC ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
-                         owl:hasValue :OtherSettledDeposit
+                         owl:someValuesFrom :OtherSettledDeposit
                        ] .
 
 
@@ -2356,7 +2356,7 @@ Circumferntial Location: Should be recorded""" .
      rdfs:subClassOf :PipeOperation ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeOperationDamage ;
-                       owl:hasValue :IngressOfSoil
+                       owl:someValuesFrom :IngressOfSoil
                      ] .
 
 
@@ -2373,7 +2373,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BBD ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
-                         owl:hasValue :IngressOfSand
+                         owl:someValuesFrom :IngressOfSand
                        ] .
 
 
@@ -2390,7 +2390,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BBD ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
-                         owl:hasValue :IngressOfPeat
+                         owl:someValuesFrom :IngressOfPeat
                        ] .
 
 
@@ -2407,7 +2407,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BBD ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
-                         owl:hasValue :IngressOfFineMaterial
+                         owl:someValuesFrom :IngressOfFineMaterial
                        ] .
 
 
@@ -2424,7 +2424,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BBD ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
-                         owl:hasValue :IngressOfGravel
+                         owl:someValuesFrom :IngressOfGravel
                        ] .
 
 
@@ -2441,7 +2441,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BBD ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
-                         owl:hasValue :IngressOfOtherSoil
+                         owl:someValuesFrom :IngressOfOtherSoil
                        ] .
 
 
@@ -2454,7 +2454,7 @@ Circumferntial Location: Should be recorded""" .
      rdfs:subClassOf :PipeOperation ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeOperationDamage ;
-                       owl:hasValue :OtherObstacles
+                       owl:someValuesFrom :OtherObstacles
                      ] .
 
 
@@ -2471,7 +2471,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BBE ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
-                         owl:hasValue :BrickOrMasonryLyingInInvert
+                         owl:someValuesFrom :BrickOrMasonryLyingInInvert
                        ] .
 
 
@@ -2488,7 +2488,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BBE ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
-                         owl:hasValue :PiecesOfPipeLyingInInvert
+                         owl:someValuesFrom :PiecesOfPipeLyingInInvert
                        ] .
 
 
@@ -2505,7 +2505,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BBE ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
-                         owl:hasValue :AnotherObjectLyingInInvert
+                         owl:someValuesFrom :AnotherObjectLyingInInvert
                        ] .
 
 
@@ -2522,7 +2522,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BBE ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
-                         owl:hasValue :ProtrudingThroughWall
+                         owl:someValuesFrom :ProtrudingThroughWall
                        ] .
 
 
@@ -2539,7 +2539,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BBE ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
-                         owl:hasValue :WedgedInJoint
+                         owl:someValuesFrom :WedgedInJoint
                        ] .
 
 
@@ -2556,7 +2556,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BBE ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
-                         owl:hasValue :EnteringThroughConnection
+                         owl:someValuesFrom :EnteringThroughConnection
                        ] .
 
 
@@ -2573,7 +2573,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BBE ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
-                         owl:hasValue :ExternalPipesOrCablesBuiltThroughPipeline
+                         owl:someValuesFrom :ExternalPipesOrCablesBuiltThroughPipeline
                        ] .
 
 
@@ -2590,7 +2590,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BBE ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
-                         owl:hasValue :BuiltIntoStructure
+                         owl:someValuesFrom :BuiltIntoStructure
                        ] .
 
 
@@ -2607,7 +2607,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BBE ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
-                         owl:hasValue :OtherObstacles
+                         owl:someValuesFrom :OtherObstacles
                        ] .
 
 
@@ -2620,7 +2620,7 @@ Circumferntial Location: Should be recorded""" .
      rdfs:subClassOf :PipeOperation ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeOperationDamage ;
-                       owl:hasValue :Infiltration
+                       owl:someValuesFrom :Infiltration
                      ] .
 
 
@@ -2637,7 +2637,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BBF ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
-                         owl:hasValue :SweatingInfiltration
+                         owl:someValuesFrom :SweatingInfiltration
                        ] .
 
 
@@ -2654,7 +2654,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BBF ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
-                         owl:hasValue :DrippingInfiltration
+                         owl:someValuesFrom :DrippingInfiltration
                        ] .
 
 
@@ -2671,7 +2671,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BBF ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
-                         owl:hasValue :FlowingInfiltration
+                         owl:someValuesFrom :FlowingInfiltration
                        ] .
 
 
@@ -2688,7 +2688,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BBF ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
-                         owl:hasValue :GushingInfiltration
+                         owl:someValuesFrom :GushingInfiltration
                        ] .
 
 
@@ -2701,7 +2701,7 @@ Circumferntial Location: Should be recorded""" .
      rdfs:subClassOf :PipeOperation ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeOperationDamage ;
-                       owl:hasValue :Exfiltration
+                       owl:someValuesFrom :Exfiltration
                      ] .
 
 
@@ -2714,7 +2714,7 @@ Circumferntial Location: Should be recorded""" .
      rdfs:subClassOf :PipeOperation ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeOperationDamage ;
-                       owl:hasValue :Vermin
+                       owl:someValuesFrom :Vermin
                      ] .
 
 
@@ -2731,7 +2731,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BBH ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeOperationDamage ;
-                          owl:hasValue :RatVermin
+                          owl:someValuesFrom :RatVermin
                         ] .
 
 
@@ -2748,7 +2748,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BBH ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeOperationDamage ;
-                          owl:hasValue :CockroachVermin
+                          owl:someValuesFrom :CockroachVermin
                         ] .
 
 
@@ -2765,7 +2765,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BBH ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeOperationDamage ;
-                          owl:hasValue :OtherVermin
+                          owl:someValuesFrom :OtherVermin
                         ] .
 
 
@@ -2782,7 +2782,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BBH ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasLocation ;
-                          owl:hasValue :InPipeline
+                          owl:someValuesFrom :InPipeline
                         ] .
 
 
@@ -2799,7 +2799,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BBH ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasLocation ;
-                          owl:hasValue :InConnection
+                          owl:someValuesFrom :InConnection
                         ] .
 
 
@@ -2816,7 +2816,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BBH ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasLocation ;
-                          owl:hasValue :InOpenJoint
+                          owl:someValuesFrom :InOpenJoint
                         ] .
 
 
@@ -2833,7 +2833,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BBH ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasLocation ;
-                          owl:hasValue :OtherLocation
+                          owl:someValuesFrom :OtherLocation
                         ] .
 
 
@@ -2846,7 +2846,7 @@ Circumferntial Location: Should be recorded""" .
      rdfs:subClassOf :PipeInventory ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeInventoryFeature ;
-                       owl:hasValue :Connection
+                       owl:someValuesFrom :Connection
                      ] .
 
 
@@ -2863,7 +2863,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BCA ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeInventoryFeature ;
-                          owl:hasValue :Junction
+                          owl:someValuesFrom :Junction
                         ] .
 
 
@@ -2880,7 +2880,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BCA ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeInventoryFeature ;
-                          owl:hasValue :DrilledSaddleConnection
+                          owl:someValuesFrom :DrilledSaddleConnection
                         ] .
 
 
@@ -2897,7 +2897,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BCA ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeInventoryFeature ;
-                          owl:hasValue :ChiselledSaddleConnection
+                          owl:someValuesFrom :ChiselledSaddleConnection
                         ] .
 
 
@@ -2914,7 +2914,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BCA ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeInventoryFeature ;
-                          owl:hasValue :DrilledPlainConnection
+                          owl:someValuesFrom :DrilledPlainConnection
                         ] .
 
 
@@ -2931,7 +2931,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BCA ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeInventoryFeature ;
-                          owl:hasValue :ChiselledPlainConnection
+                          owl:someValuesFrom :ChiselledPlainConnection
                         ] .
 
 
@@ -2948,7 +2948,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BCA ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeInventoryFeature ;
-                          owl:hasValue :ConnectionNotEvident
+                          owl:someValuesFrom :ConnectionNotEvident
                         ] .
 
 
@@ -2965,7 +2965,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BCA ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeInventoryFeature ;
-                          owl:hasValue :OtherConnection
+                          owl:someValuesFrom :OtherConnection
                         ] .
 
 
@@ -2982,7 +2982,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BCA ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeInventoryFeature ;
-                          owl:hasValue :OpenConnection
+                          owl:someValuesFrom :OpenConnection
                         ] .
 
 
@@ -2999,7 +2999,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BCA ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeInventoryFeature ;
-                          owl:hasValue :ClosedConnection
+                          owl:someValuesFrom :ClosedConnection
                         ] .
 
 
@@ -3012,7 +3012,7 @@ Circumferntial Location: Should be recorded""" .
      rdfs:subClassOf :PipeInventory ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeInventoryFeature ;
-                       owl:hasValue :PointRepair
+                       owl:someValuesFrom :PointRepair
                      ] .
 
 
@@ -3029,7 +3029,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BCB ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeInventoryFeature ;
-                         owl:hasValue :PipeReplacedRepair
+                         owl:someValuesFrom :PipeReplacedRepair
                        ] .
 
 
@@ -3046,7 +3046,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BCB ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeInventoryFeature ;
-                         owl:hasValue :LocalisedLiningOfPipeRepair
+                         owl:someValuesFrom :LocalisedLiningOfPipeRepair
                        ] .
 
 
@@ -3063,7 +3063,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BCB ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeInventoryFeature ;
-                         owl:hasValue :InjectedMortarRepair
+                         owl:someValuesFrom :InjectedMortarRepair
                        ] .
 
 
@@ -3080,7 +3080,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BCB ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeInventoryFeature ;
-                         owl:hasValue :OtherInjectedSealingMaterialRepair
+                         owl:someValuesFrom :OtherInjectedSealingMaterialRepair
                        ] .
 
 
@@ -3097,7 +3097,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BCB ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeInventoryFeature ;
-                         owl:hasValue :HoleRepair
+                         owl:someValuesFrom :HoleRepair
                        ] .
 
 
@@ -3114,7 +3114,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BCB ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeInventoryFeature ;
-                         owl:hasValue :LocalisedLiningOfConnectionRepair
+                         owl:someValuesFrom :LocalisedLiningOfConnectionRepair
                        ] .
 
 
@@ -3131,7 +3131,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BCB ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeInventoryFeature ;
-                         owl:hasValue :OtherConnectionRepair
+                         owl:someValuesFrom :OtherConnectionRepair
                        ] .
 
 
@@ -3148,7 +3148,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BCB ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeInventoryFeature ;
-                         owl:hasValue :OtherTrenchlessRepair
+                         owl:someValuesFrom :OtherTrenchlessRepair
                        ] .
 
 
@@ -3161,7 +3161,7 @@ Circumferntial Location: Should be recorded""" .
      rdfs:subClassOf :PipeInventory ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeInventoryFeature ;
-                       owl:hasValue :SewerCurvature
+                       owl:someValuesFrom :SewerCurvature
                      ] .
 
 
@@ -3178,7 +3178,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BCC ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasHorizontalCurvatureDirection ;
-                          owl:hasValue :Left
+                          owl:someValuesFrom :Left
                         ] .
 
 
@@ -3195,7 +3195,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BCC ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasHorizontalCurvatureDirection ;
-                          owl:hasValue :Right
+                          owl:someValuesFrom :Right
                         ] .
 
 
@@ -3212,7 +3212,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BCC ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasVerticalCurvatureDirection ;
-                          owl:hasValue :Up
+                          owl:someValuesFrom :Up
                         ] .
 
 
@@ -3229,7 +3229,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BCC ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasVerticalCurvatureDirection ;
-                          owl:hasValue :Down
+                          owl:someValuesFrom :Down
                         ] .
 
 
@@ -3242,7 +3242,7 @@ Circumferntial Location: Should be recorded""" .
      rdfs:subClassOf :PipeInventory ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeInventoryFeature ;
-                       owl:hasValue :NodeType
+                       owl:someValuesFrom :NodeType
                      ] .
 
 
@@ -3259,7 +3259,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BCD ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasStartNodeType ;
-                         owl:hasValue :Manhole
+                         owl:someValuesFrom :Manhole
                        ] .
 
 
@@ -3276,7 +3276,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BCD ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasStartNodeType ;
-                         owl:hasValue :InspectionChamber
+                         owl:someValuesFrom :InspectionChamber
                        ] .
 
 
@@ -3293,7 +3293,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BCD ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasStartNodeType ;
-                         owl:hasValue :RoddingEye
+                         owl:someValuesFrom :RoddingEye
                        ] .
 
 
@@ -3310,7 +3310,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BCD ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasStartNodeType ;
-                         owl:hasValue :LampHole
+                         owl:someValuesFrom :LampHole
                        ] .
 
 
@@ -3327,7 +3327,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BCD ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasStartNodeType ;
-                         owl:hasValue :Outfall
+                         owl:someValuesFrom :Outfall
                        ] .
 
 
@@ -3344,7 +3344,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BCD ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasStartNodeType ;
-                         owl:hasValue :MajorConnectionWithoutManholeOrInspectionChamber
+                         owl:someValuesFrom :MajorConnectionWithoutManholeOrInspectionChamber
                        ] .
 
 
@@ -3361,7 +3361,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BCD ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasStartNodeType ;
-                         owl:hasValue :SpecialNodeType
+                         owl:someValuesFrom :SpecialNodeType
                        ] .
 
 
@@ -3378,7 +3378,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BCD ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasStartNodeType ;
-                         owl:hasValue :OtherSpecialChamber
+                         owl:someValuesFrom :OtherSpecialChamber
                        ] .
 
 
@@ -3391,7 +3391,7 @@ Circumferntial Location: Should be recorded""" .
      rdfs:subClassOf :PipeInventory ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeInventoryFeature ;
-                       owl:hasValue :NodeType
+                       owl:someValuesFrom :NodeType
                      ] .
 
 
@@ -3408,7 +3408,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BCE ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasFinishNodeType ;
-                         owl:hasValue :Manhole
+                         owl:someValuesFrom :Manhole
                        ] .
 
 
@@ -3425,7 +3425,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BCE ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasFinishNodeType ;
-                         owl:hasValue :InspectionChamber
+                         owl:someValuesFrom :InspectionChamber
                        ] .
 
 
@@ -3442,7 +3442,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BCE ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasFinishNodeType ;
-                         owl:hasValue :RoddingEye
+                         owl:someValuesFrom :RoddingEye
                        ] .
 
 
@@ -3459,7 +3459,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BCE ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasFinishNodeType ;
-                         owl:hasValue :LampHole
+                         owl:someValuesFrom :LampHole
                        ] .
 
 
@@ -3476,7 +3476,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BCE ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasFinishNodeType ;
-                         owl:hasValue :Outfall
+                         owl:someValuesFrom :Outfall
                        ] .
 
 
@@ -3493,7 +3493,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BCE ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasFinishNodeType ;
-                         owl:hasValue :MajorConnectionWithoutManholeOrInspectionChamber
+                         owl:someValuesFrom :MajorConnectionWithoutManholeOrInspectionChamber
                        ] .
 
 
@@ -3510,7 +3510,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BCE ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasFinishNodeType ;
-                         owl:hasValue :SpecialNodeType
+                         owl:someValuesFrom :SpecialNodeType
                        ] .
 
 
@@ -3527,7 +3527,7 @@ Circumferntial Location: Should be recorded""" .
        rdfs:subClassOf :BCE ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasFinishNodeType ;
-                         owl:hasValue :OtherSpecialChamber
+                         owl:someValuesFrom :OtherSpecialChamber
                        ] .
 
 
@@ -3540,7 +3540,7 @@ Circumferntial Location: Should be recorded""" .
      rdfs:subClassOf :PipeOther ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeFeature ;
-                       owl:hasValue :GeneralPhotograph
+                       owl:someValuesFrom :GeneralPhotograph
                      ] ;
      rdfs:comment "A still photograph has been taken to record the general condition of the drain or sewer and is not related to a particular feature" .
 
@@ -3554,7 +3554,7 @@ Circumferntial Location: Should be recorded""" .
      rdfs:subClassOf :PipeOther ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeFeature ;
-                       owl:hasValue :GeneralRemark
+                       owl:someValuesFrom :GeneralRemark
                      ] ;
      rdfs:comment "A remark which cannot be included in any other way." .
 
@@ -3568,7 +3568,7 @@ Circumferntial Location: Should be recorded""" .
      rdfs:subClassOf :PipeOther ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeFeature ;
-                       owl:hasValue :InspectionTermination
+                       owl:someValuesFrom :InspectionTermination
                      ] ;
      rdfs:comment "Characterisation 1\"  The reason for the termination:  obstruction (A);  high water level (B);  equipment failure (C);  !other (Z) – where this is used further details shall be recorded in the remarks section." ,
                   "Characterisation 2 Further characterisation as follows:  inspection objective achieved before reaching finish node (A);  inspection terminated on the instruction of the employing authority (B);  when considered with a previous partial inspection, the inspection of the whole pipeline is complete (C);  when considered with a previous partial inspection, the inspection of the whole pipeline is not complete (D);  when considered with a previous partial inspection, it is not known whether the inspection of the whole pipeline is complete (E);  other (Z) – where this is used further details shall be recorded in the remarks section." ,
@@ -3588,7 +3588,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BDC ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasTerminationReason ;
-                          owl:hasValue :Obstruction
+                          owl:someValuesFrom :Obstruction
                         ] ;
         rdfs:comment "The reason for the termination:  obstruction (A);" .
 
@@ -3606,7 +3606,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BDC ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasTerminationReason ;
-                          owl:hasValue :HighWaterLevel
+                          owl:someValuesFrom :HighWaterLevel
                         ] ;
         rdfs:comment "The reason for the termination: high water level (B);" .
 
@@ -3624,7 +3624,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BDC ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasTerminationReason ;
-                          owl:hasValue :EquipmentFailure
+                          owl:someValuesFrom :EquipmentFailure
                         ] .
 
 
@@ -3641,7 +3641,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BDC ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasTerminationReason ;
-                          owl:hasValue :OtherCause
+                          owl:someValuesFrom :OtherCause
                         ] .
 
 
@@ -3658,7 +3658,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BDC ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasTerminationReason ;
-                          owl:hasValue :InspectionComplete
+                          owl:someValuesFrom :InspectionComplete
                         ] .
 
 
@@ -3675,7 +3675,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BDC ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasTerminationReason ;
-                          owl:hasValue :AuthorityInstruction
+                          owl:someValuesFrom :AuthorityInstruction
                         ] .
 
 
@@ -3692,11 +3692,11 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BDC ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasTerminationReason ;
-                          owl:hasValue :InspectionComplete
+                          owl:someValuesFrom :InspectionComplete
                         ] ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasTerminationReason ;
-                          owl:hasValue :PreviousPartialInspection
+                          owl:someValuesFrom :PreviousPartialInspection
                         ] ;
         rdfs:comment "when considered with a previous partial inspection, the inspection of the whole pipeline is complete (C);" .
 
@@ -3714,11 +3714,11 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BDC ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasTerminationReason ;
-                          owl:hasValue :InspectionIncomplete
+                          owl:someValuesFrom :InspectionIncomplete
                         ] ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasTerminationReason ;
-                          owl:hasValue :PreviousPartialInspection
+                          owl:someValuesFrom :PreviousPartialInspection
                         ] ;
         rdfs:comment "when considered with a previous partial inspection, the inspection of the whole pipeline is not complete (D)" .
 
@@ -3736,11 +3736,11 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BDC ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasTerminationReason ;
-                          owl:hasValue :InspectionStatusUnknown
+                          owl:someValuesFrom :InspectionStatusUnknown
                         ] ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasTerminationReason ;
-                          owl:hasValue :PreviousPartialInspection
+                          owl:someValuesFrom :PreviousPartialInspection
                         ] ;
         rdfs:comment "when considered with a previous partial inspection, it is not known whether the inspection of the whole pipeline is complete (E);" .
 
@@ -3758,7 +3758,7 @@ Circumferntial Location: Should be recorded""" .
         rdfs:subClassOf :BDC ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasTerminationReason ;
-                          owl:hasValue :OtherCause
+                          owl:someValuesFrom :OtherCause
                         ] ;
         rdfs:comment "other (Z) – where this is used further details shall be recorded in the remarks section." .
 
@@ -3772,7 +3772,7 @@ Circumferntial Location: Should be recorded""" .
      rdfs:subClassOf :PipeOther ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeFeature ;
-                       owl:hasValue :WaterLevel
+                       owl:someValuesFrom :WaterLevel
                      ] ;
      rdfs:comment """The level of !wastewater\" above the invert of the drain or sewer.
 
@@ -3792,7 +3792,7 @@ Characterisation !The wastewater in the pipe is:  clear effluent (the invert is 
        rdfs:subClassOf :BDD ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasWater ;
-                         owl:hasValue :ClearEffluentWastewater
+                         owl:someValuesFrom :ClearEffluentWastewater
                        ] .
 
 
@@ -3809,7 +3809,7 @@ Characterisation !The wastewater in the pipe is:  clear effluent (the invert is 
        rdfs:subClassOf :BDD ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasWater ;
-                         owl:hasValue :DiscountinuedWastewaterCode
+                         owl:someValuesFrom :DiscountinuedWastewaterCode
                        ] .
 
 
@@ -3826,7 +3826,7 @@ Characterisation !The wastewater in the pipe is:  clear effluent (the invert is 
        rdfs:subClassOf :BDD ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasWater ;
-                         owl:hasValue :TurbidWastewater
+                         owl:someValuesFrom :TurbidWastewater
                        ] .
 
 
@@ -3843,7 +3843,7 @@ Characterisation !The wastewater in the pipe is:  clear effluent (the invert is 
        rdfs:subClassOf :BDD ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasWater ;
-                         owl:hasValue :ColouredWastewater
+                         owl:someValuesFrom :ColouredWastewater
                        ] .
 
 
@@ -3860,11 +3860,11 @@ Characterisation !The wastewater in the pipe is:  clear effluent (the invert is 
        rdfs:subClassOf :BDD ,
                        [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
                                                 owl:onProperty :hasWater ;
-                                                owl:hasValue :ColouredWastewater
+                                                owl:someValuesFrom :ColouredWastewater
                                               ]
                                               [ rdf:type owl:Restriction ;
                                                 owl:onProperty :hasWater ;
-                                                owl:hasValue :TurbidWastewater
+                                                owl:someValuesFrom :TurbidWastewater
                                               ]
                                             ) ;
                          rdf:type owl:Class
@@ -3880,7 +3880,7 @@ Characterisation !The wastewater in the pipe is:  clear effluent (the invert is 
      rdfs:subClassOf :PipeOther ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeFeature ;
-                       owl:hasValue :FlowFromIncomingPipe
+                       owl:someValuesFrom :FlowFromIncomingPipe
                      ] ;
      rdfs:comment """Flow from incoming pipe
 
@@ -3908,7 +3908,7 @@ The wastewater flowing from the incoming pipe is:
         rdfs:subClassOf :BDE ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasWater ;
-                          owl:hasValue :ClearEffluentWastewater
+                          owl:someValuesFrom :ClearEffluentWastewater
                         ] .
 
 
@@ -3925,7 +3925,7 @@ The wastewater flowing from the incoming pipe is:
         rdfs:subClassOf :BDE ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasWater ;
-                          owl:hasValue :DiscountinuedWastewaterCode
+                          owl:someValuesFrom :DiscountinuedWastewaterCode
                         ] .
 
 
@@ -3942,7 +3942,7 @@ The wastewater flowing from the incoming pipe is:
         rdfs:subClassOf :BDE ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasWater ;
-                          owl:hasValue :TurbidWastewater
+                          owl:someValuesFrom :TurbidWastewater
                         ] .
 
 
@@ -3959,7 +3959,7 @@ The wastewater flowing from the incoming pipe is:
         rdfs:subClassOf :BDE ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasWater ;
-                          owl:hasValue :ColouredWastewater
+                          owl:someValuesFrom :ColouredWastewater
                         ] .
 
 
@@ -3976,11 +3976,11 @@ The wastewater flowing from the incoming pipe is:
         rdfs:subClassOf :BDE ,
                         [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
                                                  owl:onProperty :hasWater ;
-                                                 owl:hasValue :ColouredWastewater
+                                                 owl:someValuesFrom :ColouredWastewater
                                                ]
                                                [ rdf:type owl:Restriction ;
                                                  owl:onProperty :hasWater ;
-                                                 owl:hasValue :TurbidWastewater
+                                                 owl:someValuesFrom :TurbidWastewater
                                                ]
                                              ) ;
                           rdf:type owl:Class
@@ -4000,7 +4000,7 @@ The wastewater flowing from the incoming pipe is:
          rdfs:subClassOf :BDE ,
                          [ rdf:type owl:Restriction ;
                            owl:onProperty :hasWater ;
-                           owl:hasValue :UnknownWastewater
+                           owl:someValuesFrom :UnknownWastewater
                          ] .
 
 
@@ -4017,7 +4017,7 @@ The wastewater flowing from the incoming pipe is:
         rdfs:subClassOf :BDE ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFeature ;
-                          owl:hasValue :WronglyConnectedIncomingWastewaterPipe
+                          owl:someValuesFrom :WronglyConnectedIncomingWastewaterPipe
                         ] .
 
 
@@ -4034,7 +4034,7 @@ The wastewater flowing from the incoming pipe is:
         rdfs:subClassOf :BDE ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFeature ;
-                          owl:hasValue :WronglyConnectedIncomingSurfaceWaterPipe
+                          owl:someValuesFrom :WronglyConnectedIncomingSurfaceWaterPipe
                         ] .
 
 
@@ -4051,7 +4051,7 @@ The wastewater flowing from the incoming pipe is:
         rdfs:subClassOf :BDE ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFeature ;
-                          owl:hasValue :CorrectConnection
+                          owl:someValuesFrom :CorrectConnection
                         ] .
 
 
@@ -4064,7 +4064,7 @@ The wastewater flowing from the incoming pipe is:
      rdfs:subClassOf :PipeOther ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeFeature ;
-                       owl:hasValue :AtmosphereWithinPipeline
+                       owl:someValuesFrom :AtmosphereWithinPipeline
                      ] ;
      owl:disjointWith :BDG .
 
@@ -4082,7 +4082,7 @@ The wastewater flowing from the incoming pipe is:
        rdfs:subClassOf :BDF ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeFeature ;
-                         owl:hasValue :OxygenDeficiency
+                         owl:someValuesFrom :OxygenDeficiency
                        ] .
 
 
@@ -4099,7 +4099,7 @@ The wastewater flowing from the incoming pipe is:
        rdfs:subClassOf :BDF ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeFeature ;
-                         owl:hasValue :HydrogenSulfide
+                         owl:someValuesFrom :HydrogenSulfide
                        ] .
 
 
@@ -4116,7 +4116,7 @@ The wastewater flowing from the incoming pipe is:
        rdfs:subClassOf :BDF ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeFeature ;
-                         owl:hasValue :Methane
+                         owl:someValuesFrom :Methane
                        ] .
 
 
@@ -4133,7 +4133,7 @@ The wastewater flowing from the incoming pipe is:
        rdfs:subClassOf :BDF ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeFeature ;
-                         owl:hasValue :OtherAtmosphereWithinPipeline
+                         owl:someValuesFrom :OtherAtmosphereWithinPipeline
                        ] .
 
 
@@ -4146,7 +4146,7 @@ The wastewater flowing from the incoming pipe is:
      rdfs:subClassOf :PipeOther ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeFeature ;
-                       owl:hasValue :LossOfVision
+                       owl:someValuesFrom :LossOfVision
                      ] .
 
 
@@ -4163,7 +4163,7 @@ The wastewater flowing from the incoming pipe is:
        rdfs:subClassOf :BDG ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasObstructionReason ;
-                         owl:hasValue :CameraUnderwater
+                         owl:someValuesFrom :CameraUnderwater
                        ] .
 
 
@@ -4180,7 +4180,7 @@ The wastewater flowing from the incoming pipe is:
        rdfs:subClassOf :BDG ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasObstructionReason ;
-                         owl:hasValue :Silt
+                         owl:someValuesFrom :Silt
                        ] .
 
 
@@ -4197,7 +4197,7 @@ The wastewater flowing from the incoming pipe is:
        rdfs:subClassOf :BDG ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasObstructionReason ;
-                         owl:hasValue :Steam
+                         owl:someValuesFrom :Steam
                        ] .
 
 
@@ -4214,7 +4214,7 @@ The wastewater flowing from the incoming pipe is:
        rdfs:subClassOf :BDG ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasObstructionReason ;
-                         owl:hasValue :OtherCause
+                         owl:someValuesFrom :OtherCause
                        ] .
 
 
@@ -4407,7 +4407,7 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
      rdfs:subClassOf :NodeFabric ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasNodeFabricDamage ;
-                       owl:hasValue :Deformation
+                       owl:someValuesFrom :Deformation
                      ] ;
      owl:disjointWith :DAC .
 
@@ -4425,7 +4425,7 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
        rdfs:subClassOf :DAA ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasNodeFabricDamage ;
-                         owl:hasValue :GeneralDeformation
+                         owl:someValuesFrom :GeneralDeformation
                        ] ;
        owl:disjointWith :DAA_B .
 
@@ -4443,7 +4443,7 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
        rdfs:subClassOf :DAA ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasNodeFabricDamage ;
-                         owl:hasValue :LocalisedDeformation
+                         owl:someValuesFrom :LocalisedDeformation
                        ] .
 
 
@@ -4456,7 +4456,7 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
      rdfs:subClassOf :NodeFabric ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasNodeFabricDamage ;
-                       owl:hasValue :Fissure
+                       owl:someValuesFrom :Fissure
                      ] .
 
 
@@ -4473,7 +4473,7 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
         rdfs:subClassOf :DAB ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasNodeFabricDamage ;
-                          owl:hasValue :SurfaceCrackFissure
+                          owl:someValuesFrom :SurfaceCrackFissure
                         ] .
 
 
@@ -4490,7 +4490,7 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
         rdfs:subClassOf :DAB ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasNodeFabricDamage ;
-                          owl:hasValue :CrackFissure
+                          owl:someValuesFrom :CrackFissure
                         ] .
 
 
@@ -4507,7 +4507,7 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
         rdfs:subClassOf :DAB ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasNodeFabricDamage ;
-                          owl:hasValue :FractureFissure
+                          owl:someValuesFrom :FractureFissure
                         ] .
 
 
@@ -4524,7 +4524,7 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
         rdfs:subClassOf :DAB ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDamageOrientation ;
-                          owl:hasValue :Vertical
+                          owl:someValuesFrom :Vertical
                         ] .
 
 
@@ -4541,7 +4541,7 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
         rdfs:subClassOf :DAB ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDamageOrientation ;
-                          owl:hasValue :Horizontal
+                          owl:someValuesFrom :Horizontal
                         ] .
 
 
@@ -4558,7 +4558,7 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
         rdfs:subClassOf :DAB ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDamageOrientation ;
-                          owl:hasValue :Complex
+                          owl:someValuesFrom :Complex
                         ] .
 
 
@@ -4575,7 +4575,7 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
         rdfs:subClassOf :DAB ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDamageOrientation ;
-                          owl:hasValue :Inclined
+                          owl:someValuesFrom :Inclined
                         ] .
 
 
@@ -4592,7 +4592,7 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
         rdfs:subClassOf :DAB ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDamageOrientation ;
-                          owl:hasValue :StarFissure
+                          owl:someValuesFrom :StarFissure
                         ] .
 
 
@@ -4605,7 +4605,7 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
      rdfs:subClassOf :NodeFabric ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasNodeFabricDamage ;
-                       owl:hasValue :BreakOrCollapse
+                       owl:someValuesFrom :BreakOrCollapse
                      ] .
 
 
@@ -4622,7 +4622,7 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
        rdfs:subClassOf :DAC ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasNodeFabricDamage ;
-                         owl:hasValue :Break
+                         owl:someValuesFrom :Break
                        ] .
 
 
@@ -4639,7 +4639,7 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
        rdfs:subClassOf :DAC ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasNodeFabricDamage ;
-                         owl:hasValue :MissingWallBreakOrCollapse
+                         owl:someValuesFrom :MissingWallBreakOrCollapse
                        ] .
 
 
@@ -4656,7 +4656,7 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
        rdfs:subClassOf :DAC ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasNodeFabricDamage ;
-                         owl:hasValue :CollapsedBreakOrCollapse
+                         owl:someValuesFrom :CollapsedBreakOrCollapse
                        ] .
 
 
@@ -7641,1028 +7641,8 @@ According to the DWA-M 150, the coding systems that can be applied here are:
 #    Individuals
 #################################################################
 
-###  http://www.semanticweb.org/jluis/ontologies/sdco#AggregateProjectingFromSurface
-:AggregateProjectingFromSurface rdf:type owl:NamedIndividual ,
-                                         :AggregateProjectingFromSurface .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#Angular
-:Angular rdf:type owl:NamedIndividual ,
-                  :Angular .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#AnotherObjectLyingInInvert
-:AnotherObjectLyingInInvert rdf:type owl:NamedIndividual ,
-                                     :AnotherObjectLyingInInvert .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#AtmosphereWithinPipeline
-:AtmosphereWithinPipeline rdf:type owl:NamedIndividual ,
-                                   :AtmosphereWithinPipeline .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#AttachedDeposits
-:AttachedDeposits rdf:type owl:NamedIndividual ,
-                           :AttachedDeposits .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#AuthorityInstruction
-:AuthorityInstruction rdf:type owl:NamedIndividual ,
-                               :AuthorityInstruction .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#BlisteredOrInternalBulgeLining
-:BlisteredOrInternalBulgeLining rdf:type owl:NamedIndividual ,
-                                         :BlisteredOrInternalBulgeLining .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#Blistering
-:Blistering rdf:type owl:NamedIndividual ,
-                     :Blistering .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#BlockedConnection
-:BlockedConnection rdf:type owl:NamedIndividual ,
-                            :BlockedConnection .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#Break
-:Break rdf:type owl:NamedIndividual ,
-                :Break .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#BreakOrCollapse
-:BreakOrCollapse rdf:type owl:NamedIndividual ,
-                          :BreakOrCollapse .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#BrickMasonryLayerVisible
-:BrickMasonryLayerVisible rdf:type owl:NamedIndividual ,
-                                   :BrickMasonryLayerVisible .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#BrickOrMasonryLyingInInvert
-:BrickOrMasonryLyingInInvert rdf:type owl:NamedIndividual ,
-                                      :BrickOrMasonryLyingInInvert .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#BuiltIntoStructure
-:BuiltIntoStructure rdf:type owl:NamedIndividual ,
-                             :BuiltIntoStructure .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#CameraUnderwater
-:CameraUnderwater rdf:type owl:NamedIndividual ,
-                           :CameraUnderwater .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#Chemical
-:Chemical rdf:type owl:NamedIndividual ,
-                   :Chemical .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#ChemicalLowerPart
-:ChemicalLowerPart rdf:type owl:NamedIndividual ,
-                            :ChemicalLowerPart .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#ChemicalUpperPart
-:ChemicalUpperPart rdf:type owl:NamedIndividual ,
-                            :ChemicalUpperPart .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#ChiselledPlainConnection
-:ChiselledPlainConnection rdf:type owl:NamedIndividual ,
-                                   :ChiselledPlainConnection .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#ChiselledSaddleConnection
-:ChiselledSaddleConnection rdf:type owl:NamedIndividual ,
-                                    :ChiselledSaddleConnection .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#Circumferential
-:Circumferential rdf:type owl:NamedIndividual ,
-                          :Circumferential .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#ClearEffluentWastewater
-:ClearEffluentWastewater rdf:type owl:NamedIndividual ,
-                                  :ClearEffluentWastewater .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#ClosedConnection
-:ClosedConnection rdf:type owl:NamedIndividual ,
-                           :ClosedConnection .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#CoarseSettledDeposit
-:CoarseSettledDeposit rdf:type owl:NamedIndividual ,
-                               :CoarseSettledDeposit .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#CockroachVermin
-:CockroachVermin rdf:type owl:NamedIndividual ,
-                          :CockroachVermin .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#CollapsedBreakOrCollapse
-:CollapsedBreakOrCollapse rdf:type owl:NamedIndividual ,
-                                   :CollapsedBreakOrCollapse .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#CollapsedBrickworkOrMasonry
-:CollapsedBrickworkOrMasonry rdf:type owl:NamedIndividual ,
-                                      :CollapsedBrickworkOrMasonry .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#ColouredWastewater
-:ColouredWastewater rdf:type owl:NamedIndividual ,
-                             :ColouredWastewater .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#Complex
-:Complex rdf:type owl:NamedIndividual ,
-                  :Complex .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#ComplexMassRoots
-:ComplexMassRoots rdf:type owl:NamedIndividual ,
-                           :ComplexMassRoots .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#Connection
-:Connection rdf:type owl:NamedIndividual ,
-                     :Connection .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#ConnectionNotEvident
-:ConnectionNotEvident rdf:type owl:NamedIndividual ,
-                               :ConnectionNotEvident .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#CorrectConnection
-:CorrectConnection rdf:type owl:NamedIndividual ,
-                            :CorrectConnection .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#CorrodedReinforcement
-:CorrodedReinforcement rdf:type owl:NamedIndividual ,
-                                :CorrodedReinforcement .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#CorrosionProductsOnSurface
-:CorrosionProductsOnSurface rdf:type owl:NamedIndividual ,
-                                     :CorrosionProductsOnSurface .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#CrackFissure
-:CrackFissure rdf:type owl:NamedIndividual ,
-                       :CrackFissure .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#CrackInRepairMaterial
-:CrackInRepairMaterial rdf:type owl:NamedIndividual ,
-                                :CrackInRepairMaterial .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#CrackOrSplitOrWeldFailure
-:CrackOrSplitOrWeldFailure rdf:type owl:NamedIndividual ,
-                                    :CrackOrSplitOrWeldFailure .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#DamagedConnection
-:DamagedConnection rdf:type owl:NamedIndividual ,
-                            :DamagedConnection .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#DefectiveBrickworkOrMasonry
-:DefectiveBrickworkOrMasonry rdf:type owl:NamedIndividual ,
-                                      :DefectiveBrickworkOrMasonry .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#DefectiveConnection
-:DefectiveConnection rdf:type owl:NamedIndividual ,
-                              :DefectiveConnection .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#DefectiveEndOfLining
-:DefectiveEndOfLining rdf:type owl:NamedIndividual ,
-                               :DefectiveEndOfLining .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#DefectiveRepair
-:DefectiveRepair rdf:type owl:NamedIndividual ,
-                          :DefectiveRepair .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#Deformation
-:Deformation rdf:type owl:NamedIndividual ,
-                      :Deformation .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#DetachedLining
-:DetachedLining rdf:type owl:NamedIndividual ,
-                         :DetachedLining .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#DiscoloredLining
-:DiscoloredLining rdf:type owl:NamedIndividual ,
-                           :DiscoloredLining .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#DiscountinuedWastewaterCode
-:DiscountinuedWastewaterCode rdf:type owl:NamedIndividual ,
-                                      :DiscountinuedWastewaterCode .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#DisplacedBrickworkOrMasonry
-:DisplacedBrickworkOrMasonry rdf:type owl:NamedIndividual ,
-                                      :DisplacedBrickworkOrMasonry .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#DisplacedJoint
-:DisplacedJoint rdf:type owl:NamedIndividual ,
-                         :DisplacedJoint .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#DisplacedSealingRing
-:DisplacedSealingRing rdf:type owl:NamedIndividual ,
-                               :DisplacedSealingRing .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#Down
-:Down rdf:type owl:NamedIndividual ,
-               :Down .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#DrilledPlainConnection
-:DrilledPlainConnection rdf:type owl:NamedIndividual ,
-                                 :DrilledPlainConnection .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#DrilledSaddleConnection
-:DrilledSaddleConnection rdf:type owl:NamedIndividual ,
-                                  :DrilledSaddleConnection .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#DrippingInfiltration
-:DrippingInfiltration rdf:type owl:NamedIndividual ,
-                               :DrippingInfiltration .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#DroppedInvertBrickworkOrMasonry
-:DroppedInvertBrickworkOrMasonry rdf:type owl:NamedIndividual ,
-                                          :DroppedInvertBrickworkOrMasonry .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#EncrustationAttachedDeposit
-:EncrustationAttachedDeposit rdf:type owl:NamedIndividual ,
-                                      :EncrustationAttachedDeposit .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#EndOfLiningNotSealed
-:EndOfLiningNotSealed rdf:type owl:NamedIndividual ,
-                               :EndOfLiningNotSealed .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#EnteringThroughConnection
-:EnteringThroughConnection rdf:type owl:NamedIndividual ,
-                                    :EnteringThroughConnection .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#EquipmentFailure
-:EquipmentFailure rdf:type owl:NamedIndividual ,
-                           :EquipmentFailure .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#ExcessRepairMaterial
-:ExcessRepairMaterial rdf:type owl:NamedIndividual ,
-                               :ExcessRepairMaterial .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#Exfiltration
-:Exfiltration rdf:type owl:NamedIndividual ,
-                       :Exfiltration .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#ExternalBulgeLining
-:ExternalBulgeLining rdf:type owl:NamedIndividual ,
-                              :ExternalBulgeLining .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#ExternalPipesOrCablesBuiltThroughPipeline
-:ExternalPipesOrCablesBuiltThroughPipeline rdf:type owl:NamedIndividual ,
-                                                    :ExternalPipesOrCablesBuiltThroughPipeline .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#FineSettledDeposit
-:FineSettledDeposit rdf:type owl:NamedIndividual ,
-                             :FineSettledDeposit .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#Fissure
-:Fissure rdf:type owl:NamedIndividual ,
-                  :Fissure .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#FlowFromIncomingPipe
-:FlowFromIncomingPipe rdf:type owl:NamedIndividual ,
-                               :FlowFromIncomingPipe .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#FlowingInfiltration
-:FlowingInfiltration rdf:type owl:NamedIndividual ,
-                              :FlowingInfiltration .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#FoulingAttachedDeposit
-:FoulingAttachedDeposit rdf:type owl:NamedIndividual ,
-                                 :FoulingAttachedDeposit .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#FractureFissure
-:FractureFissure rdf:type owl:NamedIndividual ,
-                          :FractureFissure .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#GapConnection
-:GapConnection rdf:type owl:NamedIndividual ,
-                        :GapConnection .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#GeneralDeformation
-:GeneralDeformation rdf:type owl:NamedIndividual ,
-                             :GeneralDeformation .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#GeneralPhotograph
-:GeneralPhotograph rdf:type owl:NamedIndividual ,
-                            :GeneralPhotograph .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#GeneralRemark
-:GeneralRemark rdf:type owl:NamedIndividual ,
-                        :GeneralRemark .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#GreaseAttachedDeposit
-:GreaseAttachedDeposit rdf:type owl:NamedIndividual ,
-                                :GreaseAttachedDeposit .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#GushingInfiltration
-:GushingInfiltration rdf:type owl:NamedIndividual ,
-                              :GushingInfiltration .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#HardOrCompactedSettledDeposit
-:HardOrCompactedSettledDeposit rdf:type owl:NamedIndividual ,
-                                        :HardOrCompactedSettledDeposit .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#Helical
-:Helical rdf:type owl:NamedIndividual ,
-                  :Helical .
-
-
 ###  http://www.semanticweb.org/jluis/ontologies/sdco#HighCost
 :HighCost rdf:type owl:NamedIndividual .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#HighWaterLevel
-:HighWaterLevel rdf:type owl:NamedIndividual ,
-                         :HighWaterLevel .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#HoleInLining
-:HoleInLining rdf:type owl:NamedIndividual ,
-                       :HoleInLining .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#HoleInRepairMaterial
-:HoleInRepairMaterial rdf:type owl:NamedIndividual ,
-                               :HoleInRepairMaterial .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#HoleRepair
-:HoleRepair rdf:type owl:NamedIndividual ,
-                     :HoleRepair .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#Horizontal
-:Horizontal rdf:type owl:NamedIndividual ,
-                     :Horizontal .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#HydrogenSulfide
-:HydrogenSulfide rdf:type owl:NamedIndividual ,
-                          :HydrogenSulfide .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#InConnection
-:InConnection rdf:type owl:NamedIndividual ,
-                       :InConnection .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#InOpenJoint
-:InOpenJoint rdf:type owl:NamedIndividual ,
-                      :InOpenJoint .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#InPipeline
-:InPipeline rdf:type owl:NamedIndividual ,
-                     :InPipeline .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#Inclined
-:Inclined rdf:type owl:NamedIndividual ,
-                   :Inclined .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#IncorrectPositionConnection
-:IncorrectPositionConnection rdf:type owl:NamedIndividual ,
-                                      :IncorrectPositionConnection .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#IncreasedRoughness
-:IncreasedRoughness rdf:type owl:NamedIndividual ,
-                             :IncreasedRoughness .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#IndependentFineRoots
-:IndependentFineRoots rdf:type owl:NamedIndividual ,
-                               :IndependentFineRoots .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#Infiltration
-:Infiltration rdf:type owl:NamedIndividual ,
-                       :Infiltration .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#IngressOfFineMaterial
-:IngressOfFineMaterial rdf:type owl:NamedIndividual ,
-                                :IngressOfFineMaterial .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#IngressOfGravel
-:IngressOfGravel rdf:type owl:NamedIndividual ,
-                          :IngressOfGravel .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#IngressOfOtherSoil
-:IngressOfOtherSoil rdf:type owl:NamedIndividual ,
-                             :IngressOfOtherSoil .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#IngressOfPeat
-:IngressOfPeat rdf:type owl:NamedIndividual ,
-                        :IngressOfPeat .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#IngressOfSand
-:IngressOfSand rdf:type owl:NamedIndividual ,
-                        :IngressOfSand .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#IngressOfSoil
-:IngressOfSoil rdf:type owl:NamedIndividual ,
-                        :IngressOfSoil .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#InjectedMortarRepair
-:InjectedMortarRepair rdf:type owl:NamedIndividual ,
-                               :InjectedMortarRepair .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#InspectionChamber
-:InspectionChamber rdf:type owl:NamedIndividual ,
-                            :InspectionChamber .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#InspectionComplete
-:InspectionComplete rdf:type owl:NamedIndividual ,
-                             :InspectionComplete .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#InspectionIncomplete
-:InspectionIncomplete rdf:type owl:NamedIndividual ,
-                               :InspectionIncomplete .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#InspectionStatus
-:InspectionStatus rdf:type owl:NamedIndividual ,
-                           :InspectionStatus .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#InspectionStatusUnknown
-:InspectionStatusUnknown rdf:type owl:NamedIndividual ,
-                                  :InspectionStatusUnknown .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#InspectionTermination
-:InspectionTermination rdf:type owl:NamedIndividual ,
-                                :InspectionTermination .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#InternalFilmOrCoatingSeparation
-:InternalFilmOrCoatingSeparation rdf:type owl:NamedIndividual ,
-                                          :InternalFilmOrCoatingSeparation .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#IntrudingBrokenSealingRing
-:IntrudingBrokenSealingRing rdf:type owl:NamedIndividual ,
-                                     :IntrudingBrokenSealingRing .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#IntrudingConnection
-:IntrudingConnection rdf:type owl:NamedIndividual ,
-                              :IntrudingConnection .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#IntrudingOtherSealant
-:IntrudingOtherSealant rdf:type owl:NamedIndividual ,
-                                :IntrudingOtherSealant .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#IntrudingSealingMaterial
-:IntrudingSealingMaterial rdf:type owl:NamedIndividual ,
-                                   :IntrudingSealingMaterial .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#IntrudingSealingRing
-:IntrudingSealingRing rdf:type owl:NamedIndividual ,
-                               :IntrudingSealingRing .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#IntrudingSealingRingAboveCentreline
-:IntrudingSealingRingAboveCentreline rdf:type owl:NamedIndividual ,
-                                              :IntrudingSealingRingAboveCentreline .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#IntrudingSealingRingBelowCentreline
-:IntrudingSealingRingBelowCentreline rdf:type owl:NamedIndividual ,
-                                              :IntrudingSealingRingBelowCentreline .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#Junction
-:Junction rdf:type owl:NamedIndividual ,
-                   :Junction .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#LampHole
-:LampHole rdf:type owl:NamedIndividual ,
-                   :LampHole .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#LayerBrickworkOrMasonryVisible
-:LayerBrickworkOrMasonryVisible rdf:type owl:NamedIndividual ,
-                                         :LayerBrickworkOrMasonryVisible .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#Left
-:Left rdf:type owl:NamedIndividual ,
-               :Left .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#Lining
-:Lining rdf:type owl:NamedIndividual ,
-                 :Lining .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#LiningConnectionDefect
-:LiningConnectionDefect rdf:type owl:NamedIndividual ,
-                                 :LiningConnectionDefect .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#LocalisedDeformation
-:LocalisedDeformation rdf:type owl:NamedIndividual ,
-                               :LocalisedDeformation .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#LocalisedLiningOfConnectionRepair
-:LocalisedLiningOfConnectionRepair rdf:type owl:NamedIndividual ,
-                                            :LocalisedLiningOfConnectionRepair .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#LocalisedLiningOfPipeRepair
-:LocalisedLiningOfPipeRepair rdf:type owl:NamedIndividual ,
-                                      :LocalisedLiningOfPipeRepair .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#Longitudinal
-:Longitudinal rdf:type owl:NamedIndividual ,
-                       :Longitudinal .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#LossOfVision
-:LossOfVision rdf:type owl:NamedIndividual ,
-                       :LossOfVision .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#MajorConnectionWithoutManholeOrInspectionChamber
-:MajorConnectionWithoutManholeOrInspectionChamber rdf:type owl:NamedIndividual ,
-                                                           :MajorConnectionWithoutManholeOrInspectionChamber .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#Manhole
-:Manhole rdf:type owl:NamedIndividual ,
-                  :Manhole .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#Mechanical
-:Mechanical rdf:type owl:NamedIndividual ,
-                     :Mechanical .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#Methane
-:Methane rdf:type owl:NamedIndividual ,
-                  :Methane .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#MissingAggregate
-:MissingAggregate rdf:type owl:NamedIndividual ,
-                           :MissingAggregate .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#MissingBrickworkOrMasonry
-:MissingBrickworkOrMasonry rdf:type owl:NamedIndividual ,
-                                    :MissingBrickworkOrMasonry .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#MissingMortar
-:MissingMortar rdf:type owl:NamedIndividual ,
-                        :MissingMortar .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#MissingRepairMaterial
-:MissingRepairMaterial rdf:type owl:NamedIndividual ,
-                                :MissingRepairMaterial .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#MissingWallBreakOrCollapse
-:MissingWallBreakOrCollapse rdf:type owl:NamedIndividual ,
-                                     :MissingWallBreakOrCollapse .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#MissingWallDefectiveRepair
-:MissingWallDefectiveRepair rdf:type owl:NamedIndividual ,
-                                     :MissingWallDefectiveRepair .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#MissingWallSurface
-:MissingWallSurface rdf:type owl:NamedIndividual ,
-                             :MissingWallSurface .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#NodeType
-:NodeType rdf:type owl:NamedIndividual ,
-                   :NodeType .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#NotEvident
-:NotEvident rdf:type owl:NamedIndividual ,
-                     :NotEvident .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#NothingVisible
-:NothingVisible rdf:type owl:NamedIndividual ,
-                         :NothingVisible .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#Obstacles
-:Obstacles rdf:type owl:NamedIndividual ,
-                    :Obstacles .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#Obstruction
-:Obstruction rdf:type owl:NamedIndividual ,
-                      :Obstruction .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#OpenConnection
-:OpenConnection rdf:type owl:NamedIndividual ,
-                         :OpenConnection .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#OtherAtmosphereWithinPipeline
-:OtherAtmosphereWithinPipeline rdf:type owl:NamedIndividual ,
-                                        :OtherAtmosphereWithinPipeline .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#OtherAttachedDeposit
-:OtherAttachedDeposit rdf:type owl:NamedIndividual ,
-                               :OtherAttachedDeposit .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#OtherCause
-:OtherCause rdf:type owl:NamedIndividual ,
-                     :OtherCause .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#OtherConnection
-:OtherConnection rdf:type owl:NamedIndividual ,
-                          :OtherConnection .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#OtherConnectionRepair
-:OtherConnectionRepair rdf:type owl:NamedIndividual ,
-                                :OtherConnectionRepair .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#OtherDefectiveConnection
-:OtherDefectiveConnection rdf:type owl:NamedIndividual ,
-                                   :OtherDefectiveConnection .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#OtherDefectiveRepair
-:OtherDefectiveRepair rdf:type owl:NamedIndividual ,
-                               :OtherDefectiveRepair .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#OtherInjectedSealingMaterialRepair
-:OtherInjectedSealingMaterialRepair rdf:type owl:NamedIndividual ,
-                                             :OtherInjectedSealingMaterialRepair .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#OtherLiningDefect
-:OtherLiningDefect rdf:type owl:NamedIndividual ,
-                            :OtherLiningDefect .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#OtherLocation
-:OtherLocation rdf:type owl:NamedIndividual ,
-                        :OtherLocation .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#OtherObservation
-:OtherObservation rdf:type owl:NamedIndividual ,
-                           :OtherObservation .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#OtherObstacles
-:OtherObstacles rdf:type owl:NamedIndividual ,
-                         :OtherObstacles .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#OtherSettledDeposit
-:OtherSettledDeposit rdf:type owl:NamedIndividual ,
-                              :OtherSettledDeposit .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#OtherSpecialChamber
-:OtherSpecialChamber rdf:type owl:NamedIndividual ,
-                              :OtherSpecialChamber .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#OtherSurfaceDamage
-:OtherSurfaceDamage rdf:type owl:NamedIndividual ,
-                             :OtherSurfaceDamage .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#OtherTrenchlessRepair
-:OtherTrenchlessRepair rdf:type owl:NamedIndividual ,
-                                :OtherTrenchlessRepair .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#OtherVermin
-:OtherVermin rdf:type owl:NamedIndividual ,
-                      :OtherVermin .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#Outfall
-:Outfall rdf:type owl:NamedIndividual ,
-                  :Outfall .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#OxygenDeficiency
-:OxygenDeficiency rdf:type owl:NamedIndividual ,
-                           :OxygenDeficiency .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#PartialGapConnection
-:PartialGapConnection rdf:type owl:NamedIndividual ,
-                               :PartialGapConnection .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#PatchSealingDefectiveRepair
-:PatchSealingDefectiveRepair rdf:type owl:NamedIndividual ,
-                                      :PatchSealingDefectiveRepair .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#PiecesOfPipeLyingInInvert
-:PiecesOfPipeLyingInInvert rdf:type owl:NamedIndividual ,
-                                    :PiecesOfPipeLyingInInvert .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#PipeReplacedRepair
-:PipeReplacedRepair rdf:type owl:NamedIndividual ,
-                             :PipeReplacedRepair .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#PointRepair
-:PointRepair rdf:type owl:NamedIndividual ,
-                      :PointRepair .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#PorousPipe
-:PorousPipe rdf:type owl:NamedIndividual ,
-                     :PorousPipe .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#PreviousPartialInspection
-:PreviousPartialInspection rdf:type owl:NamedIndividual ,
-                                    :PreviousPartialInspection .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#ProtrudingThroughWall
-:ProtrudingThroughWall rdf:type owl:NamedIndividual ,
-                                :ProtrudingThroughWall .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#Radial
-:Radial rdf:type owl:NamedIndividual ,
-                 :Radial .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#RatVermin
-:RatVermin rdf:type owl:NamedIndividual ,
-                    :RatVermin .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#ReinforcementProjectingFromSurface
-:ReinforcementProjectingFromSurface rdf:type owl:NamedIndividual ,
-                                             :ReinforcementProjectingFromSurface .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#RepairMaterialSeparated
-:RepairMaterialSeparated rdf:type owl:NamedIndividual ,
-                                  :RepairMaterialSeparated .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#ResinMissingFromLaminate
-:ResinMissingFromLaminate rdf:type owl:NamedIndividual ,
-                                   :ResinMissingFromLaminate .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#Right
-:Right rdf:type owl:NamedIndividual ,
-                :Right .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#RoddingEye
-:RoddingEye rdf:type owl:NamedIndividual ,
-                     :RoddingEye .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#Roots
-:Roots rdf:type owl:NamedIndividual ,
-                :Roots .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#SeamCoveringSeparation
-:SeamCoveringSeparation rdf:type owl:NamedIndividual ,
-                                 :SeamCoveringSeparation .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#SettledDeposit
-:SettledDeposit rdf:type owl:NamedIndividual ,
-                         :SettledDeposit .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#SewerCurvature
-:SewerCurvature rdf:type owl:NamedIndividual ,
-                         :SewerCurvature .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#Silt
-:Silt rdf:type owl:NamedIndividual ,
-               :Silt .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#SoftLiningMaterial
-:SoftLiningMaterial rdf:type owl:NamedIndividual ,
-                             :SoftLiningMaterial .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#SoilVisibleThroughDefect
-:SoilVisibleThroughDefect rdf:type owl:NamedIndividual ,
-                                   :SoilVisibleThroughDefect .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#Spalling
-:Spalling rdf:type owl:NamedIndividual ,
-                   :Spalling .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#SpecialNodeType
-:SpecialNodeType rdf:type owl:NamedIndividual ,
-                          :SpecialNodeType .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#StarFissure
-:StarFissure rdf:type owl:NamedIndividual ,
-                      :StarFissure .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#Steam
-:Steam rdf:type owl:NamedIndividual ,
-                :Steam .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#Surface
-:Surface rdf:type owl:NamedIndividual ,
-                  :Surface .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#SurfaceCrackFissure
-:SurfaceCrackFissure rdf:type owl:NamedIndividual ,
-                              :SurfaceCrackFissure .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#SweatingInfiltration
-:SweatingInfiltration rdf:type owl:NamedIndividual ,
-                               :SweatingInfiltration .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#TapRoot
-:TapRoot rdf:type owl:NamedIndividual ,
-                  :TapRoot .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#TurbidWastewater
-:TurbidWastewater rdf:type owl:NamedIndividual ,
-                           :TurbidWastewater .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#UnknownWastewater
-:UnknownWastewater rdf:type owl:NamedIndividual ,
-                            :UnknownWastewater .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#Up
-:Up rdf:type owl:NamedIndividual ,
-             :Up .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#Vermin
-:Vermin rdf:type owl:NamedIndividual ,
-                 :Vermin .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#Vertical
-:Vertical rdf:type owl:NamedIndividual ,
-                   :Vertical .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#VisibleAggregate
-:VisibleAggregate rdf:type owl:NamedIndividual ,
-                           :VisibleAggregate .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#VisibleReinforcement
-:VisibleReinforcement rdf:type owl:NamedIndividual ,
-                               :VisibleReinforcement .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#VoidVisibleThroughDefect
-:VoidVisibleThroughDefect rdf:type owl:NamedIndividual ,
-                                   :VoidVisibleThroughDefect .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#Wastewater
-:Wastewater rdf:type owl:NamedIndividual ,
-                     :Wastewater .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#WaterLevel
-:WaterLevel rdf:type owl:NamedIndividual ,
-                     :WaterLevel .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#WedgedInJoint
-:WedgedInJoint rdf:type owl:NamedIndividual ,
-                        :WedgedInJoint .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#WeldFailure
-:WeldFailure rdf:type owl:NamedIndividual ,
-                      :WeldFailure .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#WrinkledLining
-:WrinkledLining rdf:type owl:NamedIndividual ,
-                         :WrinkledLining .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#WronglyConnectedIncomingSurfaceWaterPipe
-:WronglyConnectedIncomingSurfaceWaterPipe rdf:type owl:NamedIndividual ,
-                                                   :WronglyConnectedIncomingSurfaceWaterPipe .
-
-
-###  http://www.semanticweb.org/jluis/ontologies/sdco#WronglyConnectedIncomingWastewaterPipe
-:WronglyConnectedIncomingWastewaterPipe rdf:type owl:NamedIndividual ,
-                                                 :WronglyConnectedIncomingWastewaterPipe .
 
 
 ###  http://www.semanticweb.org/jluis/ontologies/sdco#0_ConditionReport_001_1
