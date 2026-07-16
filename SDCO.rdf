@@ -7449,6 +7449,131 @@ According to the DWA-M 150, the coding systems that can be applied here are:
           rdfs:subClassOf :kA .
 
 
+###  https://l-jamora.github.io/sdco#BentStep
+:BentStep rdf:type owl:Class ;
+          rdfs:subClassOf :DefectiveStepOrLadder .
+
+
+###  https://l-jamora.github.io/sdco#BrokenCover
+:BrokenCover rdf:type owl:Class ;
+             rdfs:subClassOf :DefectiveCoverOrFrame .
+
+
+###  https://l-jamora.github.io/sdco#BrokenFrame
+:BrokenFrame rdf:type owl:Class ;
+             rdfs:subClassOf :DefectiveCoverOrFrame .
+
+
+###  https://l-jamora.github.io/sdco#BrokenPlasticEncapsulationOfStep
+:BrokenPlasticEncapsulationOfStep rdf:type owl:Class ;
+                                  rdfs:subClassOf :DefectiveStepOrLadder .
+
+
+###  https://l-jamora.github.io/sdco#CorrodedLadderHandrail
+:CorrodedLadderHandrail rdf:type owl:Class ;
+                        rdfs:subClassOf :DefectiveStepOrLadder .
+
+
+###  https://l-jamora.github.io/sdco#CorrodedLadderRunner
+:CorrodedLadderRunner rdf:type owl:Class ;
+                      rdfs:subClassOf :DefectiveStepOrLadder .
+
+
+###  https://l-jamora.github.io/sdco#CorrodedLadderSupport
+:CorrodedLadderSupport rdf:type owl:Class ;
+                       rdfs:subClassOf :DefectiveStepOrLadder .
+
+
+###  https://l-jamora.github.io/sdco#CorrodedStep
+:CorrodedStep rdf:type owl:Class ;
+              rdfs:subClassOf :DefectiveStepOrLadder .
+
+
+###  https://l-jamora.github.io/sdco#CoverAboveSurfaceLevel
+:CoverAboveSurfaceLevel rdf:type owl:Class ;
+                        rdfs:subClassOf :DefectiveCoverOrFrame .
+
+
+###  https://l-jamora.github.io/sdco#CoverBelowSurfaceLevel
+:CoverBelowSurfaceLevel rdf:type owl:Class ;
+                        rdfs:subClassOf :DefectiveCoverOrFrame .
+
+
+###  https://l-jamora.github.io/sdco#DefectiveCoverOrFrame
+:DefectiveCoverOrFrame rdf:type owl:Class ;
+                       rdfs:subClassOf :StructuralDefect .
+
+
+###  https://l-jamora.github.io/sdco#DefectiveStepOrLadder
+:DefectiveStepOrLadder rdf:type owl:Class ;
+                       rdfs:subClassOf :StructuralDefect .
+
+
+###  https://l-jamora.github.io/sdco#DefectiveToeHole
+:DefectiveToeHole rdf:type owl:Class ;
+                  rdfs:subClassOf :DefectiveStepOrLadder .
+
+
+###  https://l-jamora.github.io/sdco#IntrudingButNotBrokenSealingRing
+:IntrudingButNotBrokenSealingRing rdf:type owl:Class ;
+                                  rdfs:subClassOf :IntrudingSealingRing .
+
+
+###  https://l-jamora.github.io/sdco#LooseFrame
+:LooseFrame rdf:type owl:Class ;
+            rdfs:subClassOf :DefectiveCoverOrFrame .
+
+
+###  https://l-jamora.github.io/sdco#LooseLadderSupport
+:LooseLadderSupport rdf:type owl:Class ;
+                    rdfs:subClassOf :DefectiveStepOrLadder .
+
+
+###  https://l-jamora.github.io/sdco#LooseStep
+:LooseStep rdf:type owl:Class ;
+           rdfs:subClassOf :DefectiveStepOrLadder .
+
+
+###  https://l-jamora.github.io/sdco#MissingCover
+:MissingCover rdf:type owl:Class ;
+              rdfs:subClassOf :DefectiveCoverOrFrame .
+
+
+###  https://l-jamora.github.io/sdco#MissingFrame
+:MissingFrame rdf:type owl:Class ;
+              rdfs:subClassOf :DefectiveCoverOrFrame .
+
+
+###  https://l-jamora.github.io/sdco#MissingLadderSupport
+:MissingLadderSupport rdf:type owl:Class ;
+                      rdfs:subClassOf :DefectiveStepOrLadder .
+
+
+###  https://l-jamora.github.io/sdco#MissingStep
+:MissingStep rdf:type owl:Class ;
+             rdfs:subClassOf :DefectiveStepOrLadder .
+
+
+###  https://l-jamora.github.io/sdco#OtherDefectiveCoverOrFrame
+:OtherDefectiveCoverOrFrame rdf:type owl:Class ;
+                            rdfs:subClassOf :DefectiveCoverOrFrame .
+
+
+###  https://l-jamora.github.io/sdco#OtherDefectiveStepOrLadder
+:OtherDefectiveStepOrLadder rdf:type owl:Class ;
+                            rdfs:subClassOf :DefectiveStepOrLadder .
+
+
+###  https://l-jamora.github.io/sdco#PorousWall
+:PorousWall rdf:type owl:Class ;
+            rdfs:subClassOf :StructuralDefect .
+
+
+###  https://l-jamora.github.io/sdco#RockingCover
+:RockingCover rdf:type owl:Class ;
+              rdfs:subClassOf :DefectiveCoverOrFrame .
+
+
 #################################################################
 #    Individuals
 #################################################################
@@ -7907,10 +8032,9 @@ According to the DWA-M 150, the coding systems that can be applied here are:
 
 
 [ rdf:type owl:AllDisjointClasses ;
-  owl:members ( :DAB2_A
-                :DAB2_B
-                :DAB2_D
-                :DAB2_E
+  owl:members ( :DAB1_A
+                :DAB1_B
+                :DAB1_C
               )
 ] .
 
@@ -8426,6 +8550,1809 @@ According to the DWA-M 150, the coding systems that can be applied here are:
                 :kA_BBE_Z
               )
 ] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :BentStep
+                :BrokenPlasticEncapsulationOfStep
+                :CorrodedLadderHandrail
+                :CorrodedLadderRunner
+                :CorrodedLadderSupport
+                :CorrodedStep
+                :DefectiveToeHole
+                :LooseLadderSupport
+                :LooseStep
+                :MissingLadderSupport
+                :MissingStep
+                :OtherDefectiveStepOrLadder
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :BrokenCover
+                :BrokenFrame
+                :CoverAboveSurfaceLevel
+                :CoverBelowSurfaceLevel
+                :LooseFrame
+                :MissingCover
+                :MissingFrame
+                :OtherDefectiveCoverOrFrame
+                :RockingCover
+              )
+] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAD
+:DAD rdf:type owl:Class ;
+    owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasConditionCode ;
+                           owl:hasValue "DAD"
+                         ] ;
+    rdfs:subClassOf :NodeFabric ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :DefectiveBrickworkOrMasonry
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAD1_A
+:DAD1_A rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAD
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "A"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAD ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :DisplacedBrickworkOrMasonry
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAD1_B
+:DAD1_B rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAD
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "B"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAD ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :MissingBrickworkOrMasonry
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAD1_C
+:DAD1_C rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAD
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "C"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAD ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :CollapsedBrickworkOrMasonry
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAD2_A
+:DAD2_A rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAD
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization2 ;
+                                                 owl:hasValue "A"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAD ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :LayerBrickworkOrMasonryVisible
+        ] ;
+    rdfs:comment """(!) WHEN BRICKS MISSING = Meaning only relevant when char1=b""" .
+
+
+###  https://l-jamora.github.io/m150-onto#DAD2_B
+:DAD2_B rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAD
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization2 ;
+                                                 owl:hasValue "B"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAD ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :NothingVisible
+        ] ;
+    rdfs:comment """(!) WHEN BRICKS MISSING = Meaning only relevant when char1=b""" .
+
+
+###  https://l-jamora.github.io/m150-onto#DAE
+:DAE rdf:type owl:Class ;
+    owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasConditionCode ;
+                           owl:hasValue "DAE"
+                         ] ;
+    rdfs:subClassOf :NodeFabric ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :MissingBrickworkOrMasonry
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAF
+:DAF rdf:type owl:Class ;
+    owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasConditionCode ;
+                           owl:hasValue "DAF"
+                         ] ;
+    rdfs:subClassOf :NodeFabric ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :Surface
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAF1_A
+:DAF1_A rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAF
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "A"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAF ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :IncreasedRoughness
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAF1_B
+:DAF1_B rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAF
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "B"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAF ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :Spalling
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAF1_C
+:DAF1_C rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAF
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "C"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAF ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :VisibleAggregate
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAF1_D
+:DAF1_D rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAF
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "D"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAF ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :AggregateProjectingFromSurface
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAF1_E
+:DAF1_E rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAF
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "E"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAF ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :MissingAggregate
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAF1_F
+:DAF1_F rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAF
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "F"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAF ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :VisibleReinforcement
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAF1_G
+:DAF1_G rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAF
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "G"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAF ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :ReinforcementProjectingFromSurface
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAF1_H
+:DAF1_H rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAF
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "H"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAF ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :CorrodedReinforcement
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAF1_I
+:DAF1_I rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAF
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "I"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAF ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :MissingWallSurface
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAF1_J
+:DAF1_J rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAF
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "J"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAF ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :CorrosionProductsOnSurface
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAF1_K
+:DAF1_K rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAF
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "K"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAF ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :Blistering
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAF1_Z
+:DAF1_Z rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAF
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "Z"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAF ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :OtherSurfaceDamage
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAF2_A
+:DAF2_A rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAF
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization2 ;
+                                                 owl:hasValue "A"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAF ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasDamageCause ;
+          owl:someValuesFrom :Mechanical
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAF2_B
+:DAF2_B rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAF
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization2 ;
+                                                 owl:hasValue "B"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAF ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasDamageCause ;
+          owl:someValuesFrom :Chemical
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAF2_C
+:DAF2_C rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAF
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization2 ;
+                                                 owl:hasValue "C"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAF ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasDamageCause ;
+          owl:someValuesFrom :ChemicalUpperPart
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAF2_D
+:DAF2_D rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAF
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization2 ;
+                                                 owl:hasValue "D"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAF ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasDamageCause ;
+          owl:someValuesFrom :ChemicalLowerPart
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAF2_E
+:DAF2_E rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAF
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization2 ;
+                                                 owl:hasValue "E"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAF ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasDamageCause ;
+          owl:someValuesFrom :NotEvident
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAF2_Z
+:DAF2_Z rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAF
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization2 ;
+                                                 owl:hasValue "Z"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAF ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasDamageCause ;
+          owl:someValuesFrom :OtherCause
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAG
+:DAG rdf:type owl:Class ;
+    owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasConditionCode ;
+                           owl:hasValue "DAG"
+                         ] ;
+    rdfs:subClassOf :NodeFabric ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :IntrudingConnection
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAH
+:DAH rdf:type owl:Class ;
+    owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasConditionCode ;
+                           owl:hasValue "DAH"
+                         ] ;
+    rdfs:subClassOf :NodeFabric ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :DefectiveConnection
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAH_A
+:DAH_A rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAH
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "A"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAH ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :IncorrectPositionConnection
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAH_B
+:DAH_B rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAH
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "B"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAH ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :GapConnection
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAH_C
+:DAH_C rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAH
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "C"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAH ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :PartialGapConnection
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAH_D
+:DAH_D rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAH
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "D"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAH ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :DamagedConnection
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAH_E
+:DAH_E rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAH
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "E"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAH ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :BlockedConnection
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAH_Z
+:DAH_Z rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAH
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "Z"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAH ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :OtherDefectiveConnection
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAI
+:DAI rdf:type owl:Class ;
+    owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasConditionCode ;
+                           owl:hasValue "DAI"
+                         ] ;
+    rdfs:subClassOf :NodeFabric ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :IntrudingSealingMaterial
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAI1_A
+:DAI1_A rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAI
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "A"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAI ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :IntrudingSealingRing
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAI1_Z
+:DAI1_Z rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAI
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "Z"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAI ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :IntrudingOtherSealant
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAI2_A
+:DAI2_A rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAI
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization2 ;
+                                                 owl:hasValue "A"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAI ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :DisplacedSealingRing
+        ] ;
+    rdfs:comment """(!) WHEN RING! = Meaning only relevant when DAI1=A""" .
+
+
+###  https://l-jamora.github.io/m150-onto#DAI2_B
+:DAI2_B rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAI
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization2 ;
+                                                 owl:hasValue "B"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAI ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :IntrudingButNotBrokenSealingRing
+        ] ;
+    rdfs:comment """(!) WHEN RING! = Meaning only relevant when DAI1=A""" .
+
+
+###  https://l-jamora.github.io/m150-onto#DAI2_C
+:DAI2_C rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAI
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization2 ;
+                                                 owl:hasValue "C"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAI ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :IntrudingBrokenSealingRing
+        ] ;
+    rdfs:comment """(!) WHEN RING! = Meaning only relevant when DAI1=A""" .
+
+
+###  https://l-jamora.github.io/m150-onto#DAJ
+:DAJ rdf:type owl:Class ;
+    owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasConditionCode ;
+                           owl:hasValue "DAJ"
+                         ] ;
+    rdfs:subClassOf :NodeFabric ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :DisplacedJoint
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAJ_A
+:DAJ_A rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAJ
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "A"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAJ ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasDamageOrientation ;
+          owl:someValuesFrom :Vertical
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAJ_B
+:DAJ_B rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAJ
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "B"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAJ ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasDamageOrientation ;
+          owl:someValuesFrom :Horizontal
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAJ_C
+:DAJ_C rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAJ
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "C"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAJ ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasDamageOrientation ;
+          owl:someValuesFrom :Angular
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAK
+:DAK rdf:type owl:Class ;
+    owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasConditionCode ;
+                           owl:hasValue "DAK"
+                         ] ;
+    rdfs:subClassOf :NodeFabric ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :Lining
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAK1_A
+:DAK1_A rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAK
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "A"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAK ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :DetachedLining
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAK1_B
+:DAK1_B rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAK
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "B"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAK ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :DiscoloredLining
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAK1_C
+:DAK1_C rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAK
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "C"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAK ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :DefectiveEndOfLining
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAK1_D
+:DAK1_D rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAK
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "D"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAK ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :WrinkledLining
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAK1_E
+:DAK1_E rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAK
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "E"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAK ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :BlisteredOrInternalBulgeLining
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAK1_F
+:DAK1_F rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAK
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "F"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAK ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :ExternalBulgeLining
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAK1_G
+:DAK1_G rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAK
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "G"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAK ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :InternalFilmOrCoatingSeparation
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAK1_H
+:DAK1_H rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAK
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "H"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAK ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :SeamCoveringSeparation
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAK1_I
+:DAK1_I rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAK
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "I"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAK ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :CrackOrSplitOrWeldFailure
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAK1_J
+:DAK1_J rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAK
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "J"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAK ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :HoleInLining
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAK1_K
+:DAK1_K rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAK
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "K"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAK ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :LiningConnectionDefect
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAK1_L
+:DAK1_L rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAK
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "L"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAK ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :SoftLiningMaterial
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAK1_M
+:DAK1_M rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAK
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "M"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAK ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :ResinMissingFromLaminate
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAK1_N
+:DAK1_N rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAK
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "N"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAK ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :EndOfLiningNotSealed
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAK1_Z
+:DAK1_Z rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAK
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "Z"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAK ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :OtherLiningDefect
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAK2_A
+:DAK2_A rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAK
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization2 ;
+                                                 owl:hasValue "A"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAK ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasDamageOrientation ;
+          owl:someValuesFrom :Vertical
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAK2_B
+:DAK2_B rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAK
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization2 ;
+                                                 owl:hasValue "B"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAK ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasDamageOrientation ;
+          owl:someValuesFrom :Horizontal
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAK2_C
+:DAK2_C rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAK
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization2 ;
+                                                 owl:hasValue "C"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAK ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasDamageOrientation ;
+          owl:someValuesFrom :Complex
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAK2_D
+:DAK2_D rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAK
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization2 ;
+                                                 owl:hasValue "D"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAK ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasDamageOrientation ;
+          owl:someValuesFrom :Helical
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAL
+:DAL rdf:type owl:Class ;
+    owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasConditionCode ;
+                           owl:hasValue "DAL"
+                         ] ;
+    rdfs:subClassOf :NodeFabric ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :DefectiveRepair
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAL_A
+:DAL_A rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAL
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "A"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAL ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :MissingWallDefectiveRepair
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAL_B
+:DAL_B rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAL
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "B"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAL ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :PatchSealingDefectiveRepair
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAL_C
+:DAL_C rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAL
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "C"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAL ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :RepairMaterialSeparated
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAL_D
+:DAL_D rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAL
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "D"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAL ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :MissingRepairMaterial
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAL_E
+:DAL_E rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAL
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "E"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAL ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :ExcessRepairMaterial
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAL_F
+:DAL_F rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAL
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "F"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAL ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :HoleInRepairMaterial
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAL_G
+:DAL_G rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAL
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "G"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAL ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :CrackInRepairMaterial
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAL_Z
+:DAL_Z rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAL
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "Z"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAL ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :OtherDefectiveRepair
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAM
+:DAM rdf:type owl:Class ;
+    owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasConditionCode ;
+                           owl:hasValue "DAM"
+                         ] ;
+    rdfs:subClassOf :NodeFabric ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :WeldFailure
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAM_A
+:DAM_A rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAM
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "A"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAM ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasDamageOrientation ;
+          owl:someValuesFrom :Vertical
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAM_B
+:DAM_B rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAM
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "B"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAM ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasDamageOrientation ;
+          owl:someValuesFrom :Horizontal
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAM_C
+:DAM_C rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAM
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "C"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAM ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasDamageOrientation ;
+          owl:someValuesFrom :Inclined
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAN
+:DAN rdf:type owl:Class ;
+    owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasConditionCode ;
+                           owl:hasValue "DAN"
+                         ] ;
+    rdfs:subClassOf :NodeFabric ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :PorousWall
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAO
+:DAO rdf:type owl:Class ;
+    owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasConditionCode ;
+                           owl:hasValue "DAO"
+                         ] ;
+    rdfs:subClassOf :NodeFabric ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :SoilVisibleThroughDefect
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAP
+:DAP rdf:type owl:Class ;
+    owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasConditionCode ;
+                           owl:hasValue "DAP"
+                         ] ;
+    rdfs:subClassOf :NodeFabric ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :VoidVisibleThroughDefect
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAQ
+:DAQ rdf:type owl:Class ;
+    owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasConditionCode ;
+                           owl:hasValue "DAQ"
+                         ] ;
+    rdfs:subClassOf :NodeFabric ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :DefectiveStepOrLadder
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAQ_A
+:DAQ_A rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAQ
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "A"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAQ ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :LooseStep
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAQ_B
+:DAQ_B rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAQ
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "B"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAQ ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :MissingStep
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAQ_C
+:DAQ_C rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAQ
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "C"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAQ ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :CorrodedStep
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAQ_D
+:DAQ_D rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAQ
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "D"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAQ ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :BentStep
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAQ_E
+:DAQ_E rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAQ
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "E"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAQ ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :BrokenPlasticEncapsulationOfStep
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAQ_F
+:DAQ_F rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAQ
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "F"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAQ ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :CorrodedLadderHandrail
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAQ_G
+:DAQ_G rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAQ
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "G"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAQ ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :LooseLadderSupport
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAQ_H
+:DAQ_H rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAQ
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "H"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAQ ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :MissingLadderSupport
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAQ_I
+:DAQ_I rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAQ
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "I"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAQ ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :CorrodedLadderSupport
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAQ_J
+:DAQ_J rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAQ
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "J"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAQ ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :CorrodedLadderRunner
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAQ_K
+:DAQ_K rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAQ
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "K"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAQ ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :DefectiveToeHole
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAQ_Z
+:DAQ_Z rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAQ
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "Z"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAQ ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :OtherDefectiveStepOrLadder
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAR
+:DAR rdf:type owl:Class ;
+    owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty :hasConditionCode ;
+                           owl:hasValue "DAR"
+                         ] ;
+    rdfs:subClassOf :NodeFabric ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :DefectiveCoverOrFrame
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAR_A
+:DAR_A rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAR
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "A"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAR ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :BrokenCover
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAR_B
+:DAR_B rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAR
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "B"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAR ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :RockingCover
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAR_C
+:DAR_C rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAR
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "C"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAR ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :MissingCover
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAR_D
+:DAR_D rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAR
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "D"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAR ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :BrokenFrame
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAR_E
+:DAR_E rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAR
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "E"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAR ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :LooseFrame
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAR_F
+:DAR_F rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAR
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "F"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAR ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :MissingFrame
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAR_G
+:DAR_G rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAR
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "G"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAR ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :CoverBelowSurfaceLevel
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAR_H
+:DAR_H rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAR
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "H"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAR ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :CoverAboveSurfaceLevel
+        ] .
+
+
+###  https://l-jamora.github.io/m150-onto#DAR_Z
+:DAR_Z rdf:type owl:Class ;
+    owl:equivalentClass [ owl:intersectionOf ( :DAR
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :hasCharacterization1 ;
+                                                 owl:hasValue "Z"
+                                               ]
+                                             ) ;
+                          rdf:type owl:Class
+                        ] ;
+    rdfs:subClassOf :DAR ,
+        [ rdf:type owl:Restriction ;
+          owl:onProperty :hasNodeFabricDamage ;
+          owl:someValuesFrom :OtherDefectiveCoverOrFrame
+        ] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DAD :DAE :DAF :DAG :DAH :DAI :DAJ :DAK :DAL :DAM :DAN :DAO :DAP :DAQ :DAR )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DAD1_A :DAD1_B :DAD1_C )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DAD2_A :DAD2_B )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DAF1_A :DAF1_B :DAF1_C :DAF1_D :DAF1_E :DAF1_F :DAF1_G :DAF1_H :DAF1_I :DAF1_J :DAF1_K :DAF1_Z )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DAF2_A :DAF2_B :DAF2_C :DAF2_D :DAF2_E :DAF2_Z )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DAH_A :DAH_B :DAH_C :DAH_D :DAH_E :DAH_Z )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DAI1_A :DAI1_Z )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DAI2_A :DAI2_B :DAI2_C )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DAJ_A :DAJ_B :DAJ_C )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DAK1_A :DAK1_B :DAK1_C :DAK1_D :DAK1_E :DAK1_F :DAK1_G :DAK1_H :DAK1_I :DAK1_J :DAK1_K :DAK1_L :DAK1_M :DAK1_N :DAK1_Z )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DAK2_A :DAK2_B :DAK2_C :DAK2_D )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DAL_A :DAL_B :DAL_C :DAL_D :DAL_E :DAL_F :DAL_G :DAL_Z )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DAM_A :DAM_B :DAM_C )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DAQ_A :DAQ_B :DAQ_C :DAQ_D :DAQ_E :DAQ_F :DAQ_G :DAQ_H :DAQ_I :DAQ_J :DAQ_K :DAQ_Z )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DAR_A :DAR_B :DAR_C :DAR_D :DAR_E :DAR_F :DAR_G :DAR_H :DAR_Z )
+] .
+
 
 
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
