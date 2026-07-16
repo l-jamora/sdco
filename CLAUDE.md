@@ -19,7 +19,7 @@ Full design narrative, competency questions, and SPARQL/SHACL examples: `docs/Se
 
 ## ⚠️ Current namespace state (uncommitted, mid-refactor)
 
-As of the current working tree, `SDCO.rdf` binds its default `:` prefix to the **m150-onto namespace** (`https://l-jamora.github.io/m150-onto#`), and native SDCO terms (`:BAB`, `:CrackFissure`, etc.) are declared under that same prefix rather than a separate `sdco:` namespace. This is a side effect of commit `5c38450` ("Directly imports M150-Onto.rdf, as defined in catalog-v001.xml"), which also deleted ~243 `owl:equivalentClass` axioms as collateral damage (see `scripts/restore_equivalentclass_axioms.py` docstring for the full story). `docs/` still describes the older two-prefix layout (`:` = sdco#, `m150-onto:` = m150-onto#) — treat the docs' prefix examples as conceptually correct but not textually current. Check `SDCO.rdf`'s actual `@prefix`/`@base` lines before writing new SPARQL against it.
+As of the current working tree, `SDCO.rdf` binds its default `:` prefix to the **m150-onto namespace** (`https://l-jamora.github.io/m150-onto#`), and native SDCO terms (`:BAB`, `:CrackFissure`, etc.) are declared under that same prefix rather than a separate `sdco:` namespace. This is a side effect of commit `5c38450` ("Directly imports M150-Onto.rdf, as defined in catalog-v001.xml"), which also deleted ~243 `owl:equivalentClass` axioms as collateral damage — since restored (see `scripts/obsolete/restore_equivalentclass_axioms.py` docstring for the full story; the axioms are back in `SDCO.rdf`, so that script is now a no-op kept for history). `docs/` still describes the older two-prefix layout (`:` = sdco#, `m150-onto:` = m150-onto#) — treat the docs' prefix examples as conceptually correct but not textually current. Check `SDCO.rdf`'s actual `@prefix`/`@base` lines before writing new SPARQL against it.
 
 ## Modeling approach (branch: `dev-classes_approach`)
 
@@ -27,7 +27,7 @@ Damage codes are modeled as **OWL classes**, not individuals:
 - `owl:equivalentClass` matches literal condition-report codes (e.g. `:BAB` ≡ `hasConditionCode value "BAB"`).
 - `rdfs:subClassOf` restrictions use `owl:someValuesFrom` (not `owl:hasValue`) on characteristic object properties (`hasPipeFabricDamage`, `hasDamageOrientation`, etc.) to link damage-code classes into their taxonomy (e.g. `CrackFissure ⊑ Fissure`).
 
-This is the result of a **punning removal refactor** (`docs/Punning_Refactor_Plan.md`): originally every taxonomy term was punned (both `owl:Class` and `owl:NamedIndividual`) to fill `owl:hasValue` restrictions. That was replaced with `someValuesFrom` so subsumption reasoning works automatically without punning — trade-off: `someValuesFrom` is existential, so HermiT classifies individuals into the right damage classes but never materializes a literal, queryable triple (`:ind :hasPipeFabricDamage :CrackFissure`) for the filler.
+This is the result of a **punning removal refactor**, fully executed (`docs/stale/Punning_Refactor_Plan.md` — plan complete, kept for history): originally every taxonomy term was punned (both `owl:Class` and `owl:NamedIndividual`) to fill `owl:hasValue` restrictions. That was replaced with `someValuesFrom` so subsumption reasoning works automatically without punning — trade-off: `someValuesFrom` is existential, so HermiT classifies individuals into the right damage classes but never materializes a literal, queryable triple (`:ind :hasPipeFabricDamage :CrackFissure`) for the filler.
 
 A sibling branch `dev-instances_approach` (remote-only, individuals-only, no class taxonomy) was considered and rejected for this repo — it avoids the materialization gap but loses automatic subsumption. **Don't suggest switching back to it without raising that trade-off explicitly** — it was already decided once.
 
@@ -58,13 +58,15 @@ python scripts/materialize_object_properties.py --source SDCO-dwa-parsed.rdf --c
 
 ## Other scripts
 
-- `scripts/restore_equivalentclass_axioms.py` — one-time repair restoring `owl:equivalentClass` axioms accidentally deleted by commit `5c38450`; splices them back from commit `e0a0242` by text-matching each class's declaration line (not a full rdflib round-trip, to avoid reformatting the whole file). `--dry-run` supported.
-- `scripts/split_mixed_disjoint_classes.py` — fixes `owl:AllDisjointClasses` blocks that wrongly mix independent characterization dimensions (e.g. `hasCharacterization1`-keyed and `hasCharacterization2`-keyed code families listed as mutually disjoint, when a real report can legitimately be both). Same bug class as the `BAB2_A`/`hasDamageOrientation` fix documented in `docs/Handover_Materialize_Object_Properties.md`.
-
-Both are recovery scripts for fallout from the namespace-consolidation commit above — read their docstrings in full before running; they mutate `SDCO.rdf` in place (or `--target`).
-
 - `scripts/make_benchmark_dataset.py` — regenerates `benchmark/m150-onto-parsed-dwa-lite.rdf` (see above).
 - `scripts/test_classify_individuals.py` — assert-based self-check for `classify_individuals()`'s two forward-chaining rules (simple + intersection `equivalentClass` patterns) against a toy graph. Run after touching that function.
+
+### `scripts/obsolete/`
+
+One-time recovery scripts for fallout from the namespace-consolidation commit (`5c38450`) above. Both confirmed via `--dry-run` to have zero remaining work against the current `SDCO.rdf` — their fixes are already baked into the file. Kept for history/docstring context, not part of the normal workflow.
+
+- `restore_equivalentclass_axioms.py` — restored `owl:equivalentClass` axioms accidentally deleted by commit `5c38450`, splicing them back from commit `e0a0242` by text-matching each class's declaration line.
+- `split_mixed_disjoint_classes.py` — fixed `owl:AllDisjointClasses` blocks that wrongly mixed independent characterization dimensions (e.g. `hasCharacterization1`-keyed and `hasCharacterization2`-keyed code families listed as mutually disjoint, when a real report can legitimately be both). Same bug class as the `BAB2_A`/`hasDamageOrientation` fix documented in `docs/stale/Handover_Materialize_Object_Properties.md`.
 
 ## Working with the ontology
 
