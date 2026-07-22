@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <uri id="Imports Wizard Entry" name="https://l-jamora.github.io/m150-onto" uri="file:/C:/Users/jluis/GitHub/ICOM/m150-onto/m150-onto.rdf"/>
+    <uri id="Imports Wizard Entry" name="https://l-jamora.github.io/m150-onto" uri="file:/C:/Users/jluis/GitHub/ICOM/m150-onto/m150-onto.rdf"/>
     <uri id="Imports Wizard Entry" name="https://l-jamora.github.io/sdco/materialized/SDCO-dwa-parsed" uri="derived/SDCO-dwa-parsed_materialized.rdf"/>
     <uri id="Imports Wizard Entry" name="https://l-jamora.github.io/m150-onto-parsed" uri="file:/C:/Users/jluis/GitHub/ICOM/m150-onto/m150-onto-parsed-dwa.rdf"/>
     <uri id="Imports Wizard Entry" name="https://l-jamora.github.io/m150-onto" uri="file:/C:/Users/jluis/GitHub/ICOM/m150-onto/m150-onto.rdf"/>

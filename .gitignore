@@ -2,3 +2,4 @@ docs/DIN EN 13508-2 ENGLISH.pdf
 scripts/__pycache__/*
 *.pyc
 .claude/*
+SDCO-dwa-parsed.rdf

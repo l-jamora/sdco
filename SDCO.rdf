@@ -1,10 +1,10 @@
-@prefix : <https://l-jamora.github.io/m150-onto#> .
+@prefix : <https://l-jamora.github.io/sdco#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://l-jamora.github.io/m150-onto#> .
+@base <https://l-jamora.github.io/sdco#> .
 
 <https://l-jamora.github.io/sdco> rdf:type owl:Ontology ;
                                    owl:imports <https://l-jamora.github.io/m150-onto> ;
@@ -195,10 +195,6 @@
 #    Classes
 #################################################################
 
-###  https://l-jamora.github.io/m150-onto#Reference
-:Reference owl:equivalentClass :Reference .
-
-
 ###  https://l-jamora.github.io/sdco#AggregateProjectingFromSurface
 :AggregateProjectingFromSurface rdf:type owl:Class ;
                                 rdfs:subClassOf :Surface .
@@ -232,6 +228,10 @@
 
 ###  https://l-jamora.github.io/sdco#BAA
 :BAA rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "BAA"
+                         ] ;
      rdfs:subClassOf :PipeFabric ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeFabricDamage ;
@@ -241,6 +241,14 @@
 
 ###  https://l-jamora.github.io/sdco#BAA_A
 :BAA_A rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BAA
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "A"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BAA ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasDamageOrientation ;
@@ -251,6 +259,14 @@
 
 ###  https://l-jamora.github.io/sdco#BAA_B
 :BAA_B rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BAA
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "B"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BAA ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasDamageOrientation ;
@@ -260,6 +276,10 @@
 
 ###  https://l-jamora.github.io/sdco#BAB
 :BAB rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "BAB"
+                         ] ;
      rdfs:subClassOf :PipeFabric ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeFabricDamage ;
@@ -274,6 +294,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAB1_A
 :BAB1_A rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAB
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "A"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAB ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
@@ -283,6 +311,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAB1_B
 :BAB1_B rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAB
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "B"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAB ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
@@ -292,6 +328,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAB1_C
 :BAB1_C rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAB
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "C"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAB ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
@@ -301,6 +345,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAB2_A
 :BAB2_A rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAB
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "A"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAB ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDamageOrientation ;
@@ -310,6 +362,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAB2_B
 :BAB2_B rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAB
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "B"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAB ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDamageOrientation ;
@@ -319,6 +379,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAB2_C
 :BAB2_C rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAB
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "C"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAB ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDamageOrientation ;
@@ -328,6 +396,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAB2_D
 :BAB2_D rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAB
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "D"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAB ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDamageOrientation ;
@@ -337,6 +413,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAB2_E
 :BAB2_E rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAB
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "E"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAB ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDamageOrientation ;
@@ -346,6 +430,10 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAC
 :BAC rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "BAC"
+                         ] ;
      rdfs:subClassOf :PipeFabric ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeFabricDamage ;
@@ -357,6 +445,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAC_A
 :BAC_A rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BAC
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "A"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BAC ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeFabricDamage ;
@@ -366,6 +462,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAC_B
 :BAC_B rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BAC
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "B"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BAC ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeFabricDamage ;
@@ -375,6 +479,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAC_C
 :BAC_C rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BAC
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "C"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BAC ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeFabricDamage ;
@@ -384,6 +496,10 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAD
 :BAD rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "BAD"
+                         ] ;
      rdfs:subClassOf :PipeFabric ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeFabricDamage ;
@@ -393,6 +509,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAD1_A
 :BAD1_A rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAD
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "A"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAD ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
@@ -402,6 +526,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAD1_B
 :BAD1_B rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAD
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "B"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAD ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
@@ -411,6 +543,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAD1_C
 :BAD1_C rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAD
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "C"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAD ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
@@ -420,6 +560,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAD1_D
 :BAD1_D rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAD
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "D"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAD ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
@@ -429,6 +577,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAD2_A
 :BAD2_A rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAD
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "A"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAD ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
@@ -439,6 +595,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAD2_B
 :BAD2_B rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAD
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "B"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAD ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
@@ -448,6 +612,10 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAE
 :BAE rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "BAE"
+                         ] ;
      rdfs:subClassOf :PipeFabric ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeFabricDamage ;
@@ -457,6 +625,10 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAF
 :BAF rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "BAF"
+                         ] ;
      rdfs:subClassOf :PipeFabric ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeFabricDamage ;
@@ -466,6 +638,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAF1_A
 :BAF1_A rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAF
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "A"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAF ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
@@ -475,6 +655,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAF1_B
 :BAF1_B rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAF
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "B"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAF ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
@@ -484,6 +672,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAF1_C
 :BAF1_C rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAF
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "C"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAF ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
@@ -493,6 +689,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAF1_D
 :BAF1_D rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAF
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "D"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAF ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
@@ -502,6 +706,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAF1_E
 :BAF1_E rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAF
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "E"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAF ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
@@ -511,6 +723,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAF1_F
 :BAF1_F rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAF
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "F"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAF ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
@@ -520,6 +740,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAF1_G
 :BAF1_G rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAF
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "G"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAF ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
@@ -529,6 +757,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAF1_H
 :BAF1_H rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAF
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "H"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAF ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
@@ -538,6 +774,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAF1_I
 :BAF1_I rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAF
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "I"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAF ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
@@ -547,6 +791,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAF1_J
 :BAF1_J rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAF
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "J"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAF ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
@@ -556,6 +808,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAF1_K
 :BAF1_K rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAF
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "K"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAF ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
@@ -565,6 +825,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAF1_Z
 :BAF1_Z rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAF
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "Z"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAF ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
@@ -574,6 +842,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAF2_A
 :BAF2_A rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAF
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "A"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAF ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDamageCause ;
@@ -583,6 +859,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAF2_B
 :BAF2_B rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAF
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "B"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAF ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDamageCause ;
@@ -592,6 +876,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAF2_C
 :BAF2_C rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAF
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "C"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAF ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDamageCause ;
@@ -601,6 +893,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAF2_D
 :BAF2_D rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAF
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "D"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAF ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDamageCause ;
@@ -610,6 +910,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAF2_E
 :BAF2_E rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAF
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "E"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAF ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
@@ -619,6 +927,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAF2_Z
 :BAF2_Z rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAF
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "Z"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAF ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDamageCause ;
@@ -628,6 +944,10 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAG
 :BAG rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "BAG"
+                         ] ;
      rdfs:subClassOf :PipeFabric ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeFabricDamage ;
@@ -637,6 +957,10 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAH
 :BAH rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "BAH"
+                         ] ;
      rdfs:subClassOf :PipeFabric ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeFabricDamage ;
@@ -646,6 +970,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAH_A
 :BAH_A rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BAH
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "A"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BAH ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeFabricDamage ;
@@ -655,6 +987,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAH_B
 :BAH_B rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BAH
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "B"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BAH ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeFabricDamage ;
@@ -664,6 +1004,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAH_C
 :BAH_C rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BAH
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "C"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BAH ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeFabricDamage ;
@@ -673,6 +1021,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAH_D
 :BAH_D rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BAH
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "D"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BAH ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeFabricDamage ;
@@ -682,6 +1038,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAH_E
 :BAH_E rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BAH
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "E"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BAH ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeFabricDamage ;
@@ -691,6 +1055,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAH_Z
 :BAH_Z rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BAH
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "Z"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BAH ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeFabricDamage ;
@@ -700,6 +1072,10 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAI
 :BAI rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "BAI"
+                         ] ;
      rdfs:subClassOf :PipeFabric ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeFabricDamage ;
@@ -709,6 +1085,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAI1_A
 :BAI1_A rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAI
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "A"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAI ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
@@ -719,6 +1103,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAI1_Z
 :BAI1_Z rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAI
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "B"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAI ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
@@ -728,6 +1120,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAI2_A
 :BAI2_A rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAI
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "A"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAI ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
@@ -737,6 +1137,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAI2_B
 :BAI2_B rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAI
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "B"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAI ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
@@ -746,6 +1154,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAI2_C
 :BAI2_C rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAI
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "C"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAI ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
@@ -755,6 +1171,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAI2_D
 :BAI2_D rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAI
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "D"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAI ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
@@ -764,6 +1188,10 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAJ
 :BAJ rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "BAJ"
+                         ] ;
      rdfs:subClassOf :PipeFabric ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeFabricDamage ;
@@ -773,6 +1201,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAJ_A
 :BAJ_A rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BAJ
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "A"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BAJ ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasDamageOrientation ;
@@ -782,6 +1218,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAJ_B
 :BAJ_B rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BAJ
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "B"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BAJ ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasDamageOrientation ;
@@ -791,6 +1235,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAJ_C
 :BAJ_C rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BAJ
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "C"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BAJ ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasDamageOrientation ;
@@ -800,6 +1252,10 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAK
 :BAK rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "BAK"
+                         ] ;
      rdfs:subClassOf :PipeFabric ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeFabricDamage ;
@@ -809,6 +1265,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAK1_A
 :BAK1_A rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAK
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "A"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
@@ -818,6 +1282,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAK1_B
 :BAK1_B rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAK
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "B"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
@@ -827,6 +1299,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAK1_C
 :BAK1_C rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAK
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "C"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
@@ -836,6 +1316,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAK1_D
 :BAK1_D rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAK
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "D"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
@@ -845,6 +1333,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAK1_E
 :BAK1_E rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAK
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "E"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
@@ -854,6 +1350,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAK1_F
 :BAK1_F rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAK
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "F"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
@@ -863,6 +1367,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAK1_G
 :BAK1_G rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAK
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "G"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
@@ -872,6 +1384,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAK1_H
 :BAK1_H rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAK
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "H"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
@@ -881,6 +1401,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAK1_I
 :BAK1_I rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAK
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "I"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
@@ -890,6 +1418,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAK1_J
 :BAK1_J rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAK
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "J"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
@@ -899,6 +1435,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAK1_K
 :BAK1_K rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAK
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "K"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
@@ -908,6 +1452,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAK1_L
 :BAK1_L rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAK
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "L"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
@@ -917,6 +1469,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAK1_M
 :BAK1_M rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAK
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "M"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
@@ -926,6 +1486,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAK1_N
 :BAK1_N rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAK
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "N"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
@@ -935,6 +1503,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAK1_Z
 :BAK1_Z rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAK
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "Z"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
@@ -944,6 +1520,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAK2_A
 :BAK2_A rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAK
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "A"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDamageOrientation ;
@@ -953,6 +1537,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAK2_B
 :BAK2_B rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAK
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "B"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDamageOrientation ;
@@ -962,6 +1554,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAK2_C
 :BAK2_C rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAK
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "C"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDamageOrientation ;
@@ -971,6 +1571,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAK2_D
 :BAK2_D rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAK
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "D"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDamageOrientation ;
@@ -980,6 +1588,10 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAL
 :BAL rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "BAL"
+                         ] ;
      rdfs:subClassOf :PipeFabric ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeFabricDamage ;
@@ -989,6 +1601,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAL1_A
 :BAL1_A rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAL
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "A"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAL ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
@@ -998,6 +1618,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAL1_B
 :BAL1_B rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAL
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "B"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAL ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
@@ -1007,6 +1635,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAL1_C
 :BAL1_C rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAL
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "C"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAL ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
@@ -1016,6 +1652,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAL1_D
 :BAL1_D rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAL
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "D"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAL ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
@@ -1025,6 +1669,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAL1_E
 :BAL1_E rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAL
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "E"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAL ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
@@ -1034,6 +1686,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAL1_F
 :BAL1_F rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAL
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "F"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAL ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
@@ -1043,6 +1703,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAL1_G
 :BAL1_G rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAL
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "G"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAL ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
@@ -1052,6 +1720,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAL1_Z
 :BAL1_Z rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAL
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "Z"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAL ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFabricDamage ;
@@ -1061,6 +1737,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAL2_A
 :BAL2_A rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAL
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "A"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAL ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDamageOrientation ;
@@ -1070,6 +1754,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAL2_B
 :BAL2_B rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAL
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "B"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAL ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDamageOrientation ;
@@ -1079,6 +1771,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAL2_C
 :BAL2_C rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAL
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "C"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAL ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDamageOrientation ;
@@ -1088,6 +1788,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAL2_D
 :BAL2_D rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BAL
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "D"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BAL ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDamageOrientation ;
@@ -1097,6 +1805,10 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAM
 :BAM rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "BAM"
+                         ] ;
      rdfs:subClassOf :PipeFabric ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeFabricDamage ;
@@ -1106,6 +1818,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAM_A
 :BAM_A rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BAM
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "A"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BAM ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasDamageOrientation ;
@@ -1115,6 +1835,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAM_B
 :BAM_B rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BAM
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "B"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BAM ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasDamageOrientation ;
@@ -1124,6 +1852,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAM_C
 :BAM_C rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BAM
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "C"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BAM ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasDamageOrientation ;
@@ -1133,6 +1869,10 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAN
 :BAN rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "BAN"
+                         ] ;
      rdfs:subClassOf :PipeFabric ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeFabricDamage ;
@@ -1142,6 +1882,10 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAO
 :BAO rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "BAO"
+                         ] ;
      rdfs:subClassOf :PipeFabric ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeFabricDamage ;
@@ -1151,6 +1895,10 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BAP
 :BAP rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "BAP"
+                         ] ;
      rdfs:subClassOf :PipeFabric ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeFabricDamage ;
@@ -1160,6 +1908,10 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BBA
 :BBA rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "BBA"
+                         ] ;
      rdfs:subClassOf :PipeOperation ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeOperationDamage ;
@@ -1169,6 +1921,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BBA_A
 :BBA_A rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BBA
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "A"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BBA ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
@@ -1178,6 +1938,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BBA_B
 :BBA_B rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BBA
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "B"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BBA ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
@@ -1187,6 +1955,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BBA_C
 :BBA_C rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BBA
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "C"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BBA ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
@@ -1196,6 +1972,10 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BBB
 :BBB rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "BBB"
+                         ] ;
      rdfs:subClassOf :PipeOperation ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeOperationDamage ;
@@ -1205,6 +1985,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BBB_A
 :BBB_A rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BBB
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "A"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BBB ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
@@ -1214,6 +2002,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BBB_B
 :BBB_B rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BBB
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "B"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BBB ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
@@ -1223,6 +2019,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BBB_C
 :BBB_C rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BBB
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "C"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BBB ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
@@ -1232,6 +2036,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BBB_Z
 :BBB_Z rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BBB
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "D"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BBB ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
@@ -1241,6 +2053,10 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BBC
 :BBC rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "BBB"
+                         ] ;
      rdfs:subClassOf :PipeOperation ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeOperationDamage ;
@@ -1250,6 +2066,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BBC_A
 :BBC_A rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BBC
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "A"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BBC ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
@@ -1259,6 +2083,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BBC_B
 :BBC_B rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BBC
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "B"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BBC ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
@@ -1268,6 +2100,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BBC_C
 :BBC_C rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BBC
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "C"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BBC ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
@@ -1277,6 +2117,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BBC_Z
 :BBC_Z rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BBC
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "Z"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BBC ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
@@ -1286,6 +2134,10 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BBD
 :BBD rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "BBD"
+                         ] ;
      rdfs:subClassOf :PipeOperation ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeOperationDamage ;
@@ -1295,6 +2147,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BBD_A
 :BBD_A rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BBD
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "A"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BBD ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
@@ -1304,6 +2164,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BBD_B
 :BBD_B rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BBD
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "B"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BBD ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
@@ -1313,6 +2181,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BBD_C
 :BBD_C rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BBD
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "C"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BBD ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
@@ -1322,6 +2198,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BBD_D
 :BBD_D rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BBD
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "D"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BBD ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
@@ -1331,6 +2215,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BBD_Z
 :BBD_Z rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BBD
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "Z"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BBD ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
@@ -1340,6 +2232,10 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BBE
 :BBE rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "BBE"
+                         ] ;
      rdfs:subClassOf :PipeOperation ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeOperationDamage ;
@@ -1349,6 +2245,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BBE_A
 :BBE_A rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BBE
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "A"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BBE ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
@@ -1358,6 +2262,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BBE_B
 :BBE_B rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BBE
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "B"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BBE ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
@@ -1367,6 +2279,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BBE_C
 :BBE_C rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BBE
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "C"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BBE ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
@@ -1376,6 +2296,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BBE_D
 :BBE_D rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BBE
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "D"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BBE ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
@@ -1385,6 +2313,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BBE_E
 :BBE_E rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BBE
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "E"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BBE ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
@@ -1394,6 +2330,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BBE_F
 :BBE_F rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BBE
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "F"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BBE ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
@@ -1403,6 +2347,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BBE_G
 :BBE_G rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BBE
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "G"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BBE ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
@@ -1412,6 +2364,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BBE_H
 :BBE_H rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BBE
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "H"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BBE ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
@@ -1421,6 +2381,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BBE_Z
 :BBE_Z rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BBE
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "Z"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BBE ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
@@ -1430,6 +2398,10 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BBF
 :BBF rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "BBF"
+                         ] ;
      rdfs:subClassOf :PipeOperation ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeOperationDamage ;
@@ -1439,6 +2411,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BBF_A
 :BBF_A rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BBF
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "A"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BBF ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
@@ -1448,6 +2428,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BBF_B
 :BBF_B rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BBF
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "B"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BBF ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
@@ -1457,6 +2445,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BBF_C
 :BBF_C rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BBF
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "C"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BBF ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
@@ -1466,6 +2462,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BBF_D
 :BBF_D rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BBF
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "D"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BBF ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeOperationDamage ;
@@ -1475,6 +2479,10 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BBG
 :BBG rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "BBG"
+                         ] ;
      rdfs:subClassOf :PipeOperation ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeOperationDamage ;
@@ -1484,6 +2492,10 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BBH
 :BBH rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "BBH"
+                         ] ;
      rdfs:subClassOf :PipeOperation ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeOperationDamage ;
@@ -1493,6 +2505,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BBH1_A
 :BBH1_A rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BBH
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "A"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BBH ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeOperationDamage ;
@@ -1502,6 +2522,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BBH1_B
 :BBH1_B rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BBH
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "B"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BBH ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeOperationDamage ;
@@ -1511,6 +2539,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BBH1_Z
 :BBH1_Z rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BBH
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "Z"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BBH ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeOperationDamage ;
@@ -1520,6 +2556,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BBH2_A
 :BBH2_A rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BBH
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "A"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BBH ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasLocation ;
@@ -1529,6 +2573,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BBH2_B
 :BBH2_B rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BBH
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "B"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BBH ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasLocation ;
@@ -1538,6 +2590,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BBH2_C
 :BBH2_C rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BBH
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "C"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BBH ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasLocation ;
@@ -1547,6 +2607,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BBH2_Z
 :BBH2_Z rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BBH
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "Z"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BBH ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasLocation ;
@@ -1556,6 +2624,10 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BCA
 :BCA rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "BCA"
+                         ] ;
      rdfs:subClassOf :PipeInventory ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeInventoryFeature ;
@@ -1565,6 +2637,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BCA1_A
 :BCA1_A rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BCA
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "A"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BCA ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeInventoryFeature ;
@@ -1574,6 +2654,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BCA1_B
 :BCA1_B rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BCA
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "B"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BCA ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeInventoryFeature ;
@@ -1583,6 +2671,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BCA1_C
 :BCA1_C rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BCA
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "C"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BCA ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeInventoryFeature ;
@@ -1592,6 +2688,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BCA1_D
 :BCA1_D rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BCA
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "D"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BCA ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeInventoryFeature ;
@@ -1601,6 +2705,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BCA1_E
 :BCA1_E rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BCA
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "E"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BCA ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeInventoryFeature ;
@@ -1610,6 +2722,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BCA1_G
 :BCA1_G rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BCA
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "G"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BCA ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeInventoryFeature ;
@@ -1619,6 +2739,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BCA1_Z
 :BCA1_Z rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BCA
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "Z"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BCA ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeInventoryFeature ;
@@ -1628,6 +2756,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BCA2_A
 :BCA2_A rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BCA
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "A"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BCA ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeInventoryFeature ;
@@ -1637,6 +2773,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BCA2_B
 :BCA2_B rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BCA
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "B"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BCA ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeInventoryFeature ;
@@ -1646,6 +2790,10 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BCB
 :BCB rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "BCB"
+                         ] ;
      rdfs:subClassOf :PipeInventory ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeInventoryFeature ;
@@ -1655,6 +2803,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BCB_A
 :BCB_A rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BCB
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "A"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BCB ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeInventoryFeature ;
@@ -1664,6 +2820,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BCB_B
 :BCB_B rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BCB
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "B"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BCB ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeInventoryFeature ;
@@ -1673,6 +2837,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BCB_C
 :BCB_C rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BCB
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "C"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BCB ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeInventoryFeature ;
@@ -1682,6 +2854,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BCB_D
 :BCB_D rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BCB
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "D"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BCB ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeInventoryFeature ;
@@ -1691,6 +2871,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BCB_E
 :BCB_E rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BCB
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "E"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BCB ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeInventoryFeature ;
@@ -1700,6 +2888,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BCB_F
 :BCB_F rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BCB
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "F"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BCB ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeInventoryFeature ;
@@ -1709,6 +2905,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BCB_G
 :BCB_G rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BCB
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "G"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BCB ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeInventoryFeature ;
@@ -1718,6 +2922,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BCB_Z
 :BCB_Z rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BCB
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "Z"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BCB ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeInventoryFeature ;
@@ -1727,6 +2939,10 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BCC
 :BCC rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "BCC"
+                         ] ;
      rdfs:subClassOf :PipeInventory ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeInventoryFeature ;
@@ -1736,6 +2952,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BCC1_A
 :BCC1_A rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BCC
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "A"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BCC ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasHorizontalCurvatureDirection ;
@@ -1745,6 +2969,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BCC1_B
 :BCC1_B rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BCC
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "B"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BCC ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasHorizontalCurvatureDirection ;
@@ -1754,6 +2986,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BCC2_A
 :BCC2_A rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BCC
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "A"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BCC ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasVerticalCurvatureDirection ;
@@ -1763,6 +3003,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BCC2_B
 :BCC2_B rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BCC
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "B"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BCC ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasVerticalCurvatureDirection ;
@@ -1772,6 +3020,10 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BCD
 :BCD rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "BCD"
+                         ] ;
      rdfs:subClassOf :PipeInventory ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeInventoryFeature ;
@@ -1781,6 +3033,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BCD_A
 :BCD_A rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BCD
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "A"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BCD ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasStartNodeType ;
@@ -1790,6 +3050,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BCD_B
 :BCD_B rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BCD
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "B"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BCD ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasStartNodeType ;
@@ -1799,6 +3067,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BCD_C
 :BCD_C rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BCD
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "C"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BCD ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasStartNodeType ;
@@ -1808,6 +3084,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BCD_D
 :BCD_D rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BCD
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "D"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BCD ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasStartNodeType ;
@@ -1817,6 +3101,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BCD_E
 :BCD_E rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BCD
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "E"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BCD ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasStartNodeType ;
@@ -1826,6 +3118,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BCD_F
 :BCD_F rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BCD
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "F"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BCD ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasStartNodeType ;
@@ -1835,6 +3135,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BCD_X
 :BCD_X rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BCD
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "X"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BCD ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasStartNodeType ;
@@ -1844,6 +3152,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BCD_Z
 :BCD_Z rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BCD
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "Z"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BCD ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasStartNodeType ;
@@ -1853,6 +3169,10 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BCE
 :BCE rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "BCE"
+                         ] ;
      rdfs:subClassOf :PipeInventory ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeInventoryFeature ;
@@ -1862,6 +3182,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BCE_A
 :BCE_A rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BCE
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "A"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BCE ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasFinishNodeType ;
@@ -1871,6 +3199,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BCE_B
 :BCE_B rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BCE
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "B"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BCE ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasFinishNodeType ;
@@ -1880,6 +3216,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BCE_C
 :BCE_C rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BCE
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "C"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BCE ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasFinishNodeType ;
@@ -1889,6 +3233,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BCE_D
 :BCE_D rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BCE
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "D"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BCE ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasFinishNodeType ;
@@ -1898,6 +3250,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BCE_E
 :BCE_E rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BCE
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "E"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BCE ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasFinishNodeType ;
@@ -1907,6 +3267,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BCE_F
 :BCE_F rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BCE
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "F"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BCE ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasFinishNodeType ;
@@ -1916,6 +3284,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BCE_X
 :BCE_X rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BCE
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "X"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BCE ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasFinishNodeType ;
@@ -1925,6 +3301,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BCE_Z
 :BCE_Z rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BCE
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "Z"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BCE ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasFinishNodeType ;
@@ -1934,6 +3318,10 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BDA
 :BDA rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "BDA"
+                         ] ;
      rdfs:subClassOf :PipeOther ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeFeature ;
@@ -1944,6 +3332,10 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BDB
 :BDB rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "BDB"
+                         ] ;
      rdfs:subClassOf :PipeOther ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeFeature ;
@@ -1954,6 +3346,10 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BDC
 :BDC rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "BDC"
+                         ] ;
      rdfs:subClassOf :PipeOther ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeFeature ;
@@ -1966,6 +3362,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BDC1_A
 :BDC1_A rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BDC
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "A"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BDC ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasTerminationReason ;
@@ -1976,6 +3380,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BDC1_B
 :BDC1_B rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BDC
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "B"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BDC ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasTerminationReason ;
@@ -1986,6 +3398,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BDC1_C
 :BDC1_C rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BDC
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "C"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BDC ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasTerminationReason ;
@@ -1995,6 +3415,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BDC1_Z
 :BDC1_Z rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BDC
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "Z"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BDC ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasTerminationReason ;
@@ -2004,6 +3432,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BDC2_A
 :BDC2_A rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BDC
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "A"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BDC ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasTerminationReason ;
@@ -2013,6 +3449,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BDC2_B
 :BDC2_B rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BDC
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "B"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BDC ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasTerminationReason ;
@@ -2022,6 +3466,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BDC2_C
 :BDC2_C rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BDC
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "C"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BDC ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasTerminationReason ;
@@ -2036,6 +3488,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BDC2_D
 :BDC2_D rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BDC
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "D"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BDC ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasTerminationReason ;
@@ -2050,6 +3510,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BDC2_E
 :BDC2_E rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BDC
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "E"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BDC ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasTerminationReason ;
@@ -2064,6 +3532,14 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BDC2_Z
 :BDC2_Z rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BDC
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "Z"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BDC ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasTerminationReason ;
@@ -2074,6 +3550,10 @@ Circumferntial Location: Should be recorded""" .
 
 ###  https://l-jamora.github.io/sdco#BDD
 :BDD rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "BDD"
+                         ] ;
      rdfs:subClassOf :PipeOther ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeFeature ;
@@ -2086,6 +3566,14 @@ Characterisation !The wastewater in the pipe is:  clear effluent (the invert is 
 
 ###  https://l-jamora.github.io/sdco#BDD_A
 :BDD_A rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BDD
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "A"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BDD ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasWater ;
@@ -2095,6 +3583,14 @@ Characterisation !The wastewater in the pipe is:  clear effluent (the invert is 
 
 ###  https://l-jamora.github.io/sdco#BDD_B
 :BDD_B rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BDD
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "B"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BDD ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasWater ;
@@ -2104,6 +3600,14 @@ Characterisation !The wastewater in the pipe is:  clear effluent (the invert is 
 
 ###  https://l-jamora.github.io/sdco#BDD_C
 :BDD_C rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BDD
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "C"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BDD ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasWater ;
@@ -2113,6 +3617,14 @@ Characterisation !The wastewater in the pipe is:  clear effluent (the invert is 
 
 ###  https://l-jamora.github.io/sdco#BDD_D
 :BDD_D rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BDD
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "D"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BDD ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasWater ;
@@ -2122,6 +3634,14 @@ Characterisation !The wastewater in the pipe is:  clear effluent (the invert is 
 
 ###  https://l-jamora.github.io/sdco#BDD_E
 :BDD_E rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BDD
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "E"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BDD ,
                        [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
                                                 owl:onProperty :hasWater ;
@@ -2138,6 +3658,10 @@ Characterisation !The wastewater in the pipe is:  clear effluent (the invert is 
 
 ###  https://l-jamora.github.io/sdco#BDE
 :BDE rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "BDE"
+                         ] ;
      rdfs:subClassOf :PipeOther ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeFeature ;
@@ -2158,6 +3682,14 @@ The wastewater flowing from the incoming pipe is:
 
 ###  https://l-jamora.github.io/sdco#BDE1_A
 :BDE1_A rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BDE
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "A"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BDE ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasWater ;
@@ -2167,6 +3699,14 @@ The wastewater flowing from the incoming pipe is:
 
 ###  https://l-jamora.github.io/sdco#BDE1_B
 :BDE1_B rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BDE
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "B"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BDE ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasWater ;
@@ -2176,6 +3716,14 @@ The wastewater flowing from the incoming pipe is:
 
 ###  https://l-jamora.github.io/sdco#BDE1_C
 :BDE1_C rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BDE
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "C"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BDE ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasWater ;
@@ -2185,6 +3733,14 @@ The wastewater flowing from the incoming pipe is:
 
 ###  https://l-jamora.github.io/sdco#BDE1_D
 :BDE1_D rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BDE
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "D"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BDE ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasWater ;
@@ -2194,6 +3750,14 @@ The wastewater flowing from the incoming pipe is:
 
 ###  https://l-jamora.github.io/sdco#BDE1_E
 :BDE1_E rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BDE
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "E"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BDE ,
                         [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
                                                  owl:onProperty :hasWater ;
@@ -2210,6 +3774,14 @@ The wastewater flowing from the incoming pipe is:
 
 ###  https://l-jamora.github.io/sdco#BDE1_YY
 :BDE1_YY rdf:type owl:Class ;
+         owl:equivalentClass [ owl:intersectionOf ( :BDE
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                      owl:hasValue "YY"
+                                                    ]
+                                                  ) ;
+                               rdf:type owl:Class
+                             ] ;
          rdfs:subClassOf :BDE ,
                          [ rdf:type owl:Restriction ;
                            owl:onProperty :hasWater ;
@@ -2219,6 +3791,14 @@ The wastewater flowing from the incoming pipe is:
 
 ###  https://l-jamora.github.io/sdco#BDE2_A
 :BDE2_A rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BDE
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "A"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BDE ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFeature ;
@@ -2228,6 +3808,14 @@ The wastewater flowing from the incoming pipe is:
 
 ###  https://l-jamora.github.io/sdco#BDE2_B
 :BDE2_B rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BDE
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "B"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BDE ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFeature ;
@@ -2237,6 +3825,14 @@ The wastewater flowing from the incoming pipe is:
 
 ###  https://l-jamora.github.io/sdco#BDE2_C
 :BDE2_C rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :BDE
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "C"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :BDE ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeFeature ;
@@ -2246,6 +3842,10 @@ The wastewater flowing from the incoming pipe is:
 
 ###  https://l-jamora.github.io/sdco#BDF
 :BDF rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "BDF"
+                         ] ;
      rdfs:subClassOf :PipeOther ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeFeature ;
@@ -2256,6 +3856,14 @@ The wastewater flowing from the incoming pipe is:
 
 ###  https://l-jamora.github.io/sdco#BDF_A
 :BDF_A rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BDF
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "A"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BDF ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeFeature ;
@@ -2265,6 +3873,14 @@ The wastewater flowing from the incoming pipe is:
 
 ###  https://l-jamora.github.io/sdco#BDF_B
 :BDF_B rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BDF
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "B"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BDF ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeFeature ;
@@ -2274,6 +3890,14 @@ The wastewater flowing from the incoming pipe is:
 
 ###  https://l-jamora.github.io/sdco#BDF_C
 :BDF_C rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BDF
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "C"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BDF ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeFeature ;
@@ -2283,6 +3907,14 @@ The wastewater flowing from the incoming pipe is:
 
 ###  https://l-jamora.github.io/sdco#BDF_Z
 :BDF_Z rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BDF
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "Z"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BDF ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasPipeFeature ;
@@ -2292,6 +3924,10 @@ The wastewater flowing from the incoming pipe is:
 
 ###  https://l-jamora.github.io/sdco#BDG
 :BDG rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "BDG"
+                         ] ;
      rdfs:subClassOf :PipeOther ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeFeature ;
@@ -2301,6 +3937,14 @@ The wastewater flowing from the incoming pipe is:
 
 ###  https://l-jamora.github.io/sdco#BDG_A
 :BDG_A rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BDG
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "A"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BDG ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasObstructionReason ;
@@ -2310,6 +3954,14 @@ The wastewater flowing from the incoming pipe is:
 
 ###  https://l-jamora.github.io/sdco#BDG_B
 :BDG_B rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BDG
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "B"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BDG ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasObstructionReason ;
@@ -2319,6 +3971,14 @@ The wastewater flowing from the incoming pipe is:
 
 ###  https://l-jamora.github.io/sdco#BDG_C
 :BDG_C rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BDG
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "C"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BDG ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasObstructionReason ;
@@ -2328,6 +3988,14 @@ The wastewater flowing from the incoming pipe is:
 
 ###  https://l-jamora.github.io/sdco#BDG_Z
 :BDG_Z rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :BDG
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "Z"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :BDG ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasObstructionReason ;
@@ -2561,6 +4229,10 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAA
 :DAA rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "DAA"
+                         ] ;
      rdfs:subClassOf :NodeFabric ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasNodeFabricDamage ;
@@ -2571,6 +4243,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAA_A
 :DAA_A rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DAA
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "A"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :DAA ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasNodeFabricDamage ;
@@ -2581,6 +4261,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAA_B
 :DAA_B rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DAA
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "B"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :DAA ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasNodeFabricDamage ;
@@ -2590,6 +4278,10 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAB
 :DAB rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "DAB"
+                         ] ;
      rdfs:subClassOf :NodeFabric ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasNodeFabricDamage ;
@@ -2599,6 +4291,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAB1_A
 :DAB1_A rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DAB
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "A"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :DAB ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasNodeFabricDamage ;
@@ -2608,6 +4308,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAB1_B
 :DAB1_B rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DAB
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "B"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :DAB ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasNodeFabricDamage ;
@@ -2617,6 +4325,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAB1_C
 :DAB1_C rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DAB
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "C"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :DAB ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasNodeFabricDamage ;
@@ -2626,6 +4342,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAB2_A
 :DAB2_A rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DAB
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "A"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :DAB ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDamageOrientation ;
@@ -2635,6 +4359,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAB2_B
 :DAB2_B rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DAB
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "B"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :DAB ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDamageOrientation ;
@@ -2644,6 +4376,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAB2_C
 :DAB2_C rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DAB
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "C"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :DAB ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDamageOrientation ;
@@ -2653,6 +4393,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAB2_D
 :DAB2_D rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DAB
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "D"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :DAB ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDamageOrientation ;
@@ -2662,6 +4410,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAB2_E
 :DAB2_E rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DAB
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "E"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :DAB ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDamageOrientation ;
@@ -2671,6 +4427,10 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAC
 :DAC rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "DAC"
+                         ] ;
      rdfs:subClassOf :NodeFabric ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasNodeFabricDamage ;
@@ -2680,6 +4440,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAC_A
 :DAC_A rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DAC
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "A"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :DAC ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasNodeFabricDamage ;
@@ -2689,6 +4457,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAC_B
 :DAC_B rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DAC
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "B"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :DAC ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasNodeFabricDamage ;
@@ -2698,6 +4474,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAC_C
 :DAC_C rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DAC
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "C"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :DAC ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasNodeFabricDamage ;
