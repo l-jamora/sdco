@@ -354,7 +354,7 @@ def insert_before_footer(source_path: Path, new_text: str) -> None:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--csv", default=str(REPO_ROOT / "node_codes.csv"), help="CSV mapping file to read.")
+    parser.add_argument("--csv", default=str(REPO_ROOT / "scripts" / "node_codes.csv"), help="CSV mapping file to read.")
     parser.add_argument("--source", default=str(REPO_ROOT / "SDCO.rdf"), help="Ontology file to update.")
     parser.add_argument(
         "--dry-run", action="store_true", help="Validate and print generated Turtle; don't write --source."
