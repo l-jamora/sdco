@@ -17,9 +17,11 @@ Full design narrative, competency questions, and SPARQL/SHACL examples: `docs/Se
 - `docs/` — design doc, DIN EN 13508-2 PDFs, refactor/handover writeups. Read before large structural changes — several past decisions (punning removal, materialization approach) are recorded there with rationale, not just in commit messages.
 - `scripts/` — one-off/repeatable maintenance scripts (Python, `rdflib`/`owlready2`), described below.
 
-## ⚠️ Current namespace state (uncommitted, mid-refactor)
+## Namespace state (fixed and committed)
 
-As of the current working tree, `SDCO.rdf` binds its default `:` prefix to the **m150-onto namespace** (`https://l-jamora.github.io/m150-onto#`), and native SDCO terms (`:BAB`, `:CrackFissure`, etc.) are declared under that same prefix rather than a separate `sdco:` namespace. This is a side effect of commit `5c38450` ("Directly imports M150-Onto.rdf, as defined in catalog-v001.xml"), which also deleted ~243 `owl:equivalentClass` axioms as collateral damage — since restored (see `scripts/obsolete/restore_equivalentclass_axioms.py` docstring for the full story; the axioms are back in `SDCO.rdf`, so that script is now a no-op kept for history). `docs/` still describes the older two-prefix layout (`:` = sdco#, `m150-onto:` = m150-onto#) — treat the docs' prefix examples as conceptually correct but not textually current. Check `SDCO.rdf`'s actual `@prefix`/`@base` lines before writing new SPARQL against it.
+`SDCO.rdf`'s `:` prefix and `@base` are `https://l-jamora.github.io/sdco#` — native SDCO terms (`:BAB`, `:PipeFabric`, `:hasPipeFabricDamage`, `:Fissure`, `:CrackFissure`, etc.) live there; `m150-onto`-defined terms (`ConditionReport`, `hasConditionCode`, `hasCharacterization1/2`, etc., referenced via the `m150-onto:` prefix) stay in `https://l-jamora.github.io/m150-onto#`. This is the two-prefix layout `docs/` describes.
+
+History: commit `5c38450` ("Directly imports M150-Onto.rdf, as defined in catalog-v001.xml") had collapsed SDCO's own `:` prefix onto the m150-onto namespace and, as collateral damage, deleted ~243 `owl:equivalentClass` axioms. Both were fixed and committed: the axioms were restored (`scripts/obsolete/restore_equivalentclass_axioms.py`, now a no-op kept for history) and the namespace was moved back to `sdco#` in commits `d772723`/`d1afe80`. Currently 243 `owl:equivalentClass` definitions total. When writing new SPARQL against `SDCO.rdf`, use `sdco#` for damage-code/taxonomy terms and `m150-onto#` for data-exchange-format terms — check `SDCO.rdf`'s actual `@prefix`/`@base` lines if in doubt, since this has flipped before.
 
 ## Modeling approach (branch: `dev-classes_approach`)
 
@@ -67,6 +69,14 @@ One-time recovery scripts for fallout from the namespace-consolidation commit (`
 
 - `restore_equivalentclass_axioms.py` — restored `owl:equivalentClass` axioms accidentally deleted by commit `5c38450`, splicing them back from commit `e0a0242` by text-matching each class's declaration line.
 - `split_mixed_disjoint_classes.py` — fixed `owl:AllDisjointClasses` blocks that wrongly mixed independent characterization dimensions (e.g. `hasCharacterization1`-keyed and `hasCharacterization2`-keyed code families listed as mutually disjoint, when a real report can legitimately be both). Same bug class as the `BAB2_A`/`hasDamageOrientation` fix documented in `docs/stale/Handover_Materialize_Object_Properties.md`.
+
+## Test suite
+
+`tests/` (pytest) checks `SDCO.rdf` itself, not just the Python scripts. Full rationale, file-by-file design, and findings: `docs/design-specs/SDCO_Testing_Suite_Design_Spec.md` — read it before touching `tests/`.
+
+- **Tier 1** (`tests/test_structure.py`, `tests/test_classification.py`, default `pytest`, ~1-2s): rdflib-only structural invariants over `SDCO.rdf`, plus a fixture round trip through `classify_individuals()`/`CONSTRUCT_QUERY`.
+- **Tier 2** (`tests/test_reasoning.py`, opt-in via `pytest -m reasoner`, ~10s): HermiT via `owlready2`, needs a JDK and the sibling `m150-onto` repo. Both tiers currently pass except two known real ontology defects, deliberately left unfixed (design spec §4b): `:BBC`'s `equivalentClass` wrongly reads literal `"BBB"`, and the `BCA1_*` family has no disjointness axioms.
+- Test individuals live in `tests/fixtures/test_individuals.rdf` — hand-authored (Protégé-shaped RDF/XML), not generated. Each individual's expected damage-code `rdf:type`(s) must be derived from HermiT (`python scripts/materialize_object_properties.py --source tests/fixtures/test_individuals.rdf --catalog tests/fixtures/catalog-v001.xml --reason`), **never** by hand-guessing or by copying `classify_individuals()`'s own output back in — that would make the test circular.
 
 ## Working with the ontology
 

@@ -19,6 +19,8 @@ declaration line rather than a full rdflib round-trip, so the rest of the
 Usage: python scripts/restore_equivalentclass_axioms.py [--target FILE] [--dry-run]
 """
 
+from __future__ import annotations
+
 import argparse
 import re
 import subprocess

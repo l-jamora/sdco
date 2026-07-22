@@ -1,0 +1,148 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://l-jamora.github.io/sdco/test_individuals#"
+     xml:base="https://l-jamora.github.io/sdco/test_individuals"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:sdco="https://l-jamora.github.io/sdco#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:m150-onto="https://l-jamora.github.io/m150-onto#">
+    <owl:Ontology rdf:about="https://l-jamora.github.io/sdco/test_individuals">
+        <owl:imports rdf:resource="https://l-jamora.github.io/m150-onto"/>
+        <owl:imports rdf:resource="https://l-jamora.github.io/sdco"/>
+        <owl:imports rdf:resource="https://l-jamora.github.io/sdco/materialized/test_individuals"/>
+        <rdfs:comment>Hand-editted for SDCO testing suite.</rdfs:comment>
+        <rdfs:label>SDCO Test Individuals</rdfs:label>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://l-jamora.github.io/sdco/test_individuals#0_ConditionReport1_1 -->
+
+    <owl:NamedIndividual rdf:about="https://l-jamora.github.io/sdco/test_individuals#0_ConditionReport1_1">
+        <rdf:type rdf:resource="https://l-jamora.github.io/m150-onto#ConditionReport"/>
+        <!-- Expected damage-code classification, verified against HermiT (scripts/materialize_object_properties.py, reason flag), not against classify_individuals(). -->
+        <rdf:type rdf:resource="https://l-jamora.github.io/sdco#BAB"/>
+        <rdf:type rdf:resource="https://l-jamora.github.io/sdco#BAB1_B"/>
+        <rdf:type rdf:resource="https://l-jamora.github.io/sdco#BAB2_A"/>
+        <m150-onto:isChildOf rdf:resource="https://l-jamora.github.io/sdco/test_individuals#0_InspectionReport1"/>
+        <m150-onto:hasCharacterization1>B</m150-onto:hasCharacterization1>
+        <m150-onto:hasCharacterization2>A</m150-onto:hasCharacterization2>
+        <m150-onto:hasConditionCode>BAB</m150-onto:hasConditionCode>
+        <m150-onto:hasLongText>Längsriss</m150-onto:hasLongText>
+        <m150-onto:hasPipeSectionConditionStation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.9</m150-onto:hasPipeSectionConditionStation>
+        <m150-onto:hasPositionFrom>09</m150-onto:hasPositionFrom>
+        <m150-onto:hasPositionTo>00</m150-onto:hasPositionTo>
+        <m150-onto:hasQuantification1 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</m150-onto:hasQuantification1>
+        <m150-onto:hasVideoCounterReading>0:08:41</m150-onto:hasVideoCounterReading>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://l-jamora.github.io/sdco/test_individuals#0_ConditionReport1_2 -->
+
+    <owl:NamedIndividual rdf:about="https://l-jamora.github.io/sdco/test_individuals#0_ConditionReport1_2">
+        <rdf:type rdf:resource="https://l-jamora.github.io/m150-onto#ConditionReport"/>
+        <!-- Expected damage-code classification, verified against HermiT (scripts/materialize_object_properties.py, reason flag), not against classify_individuals(). -->
+        <rdf:type rdf:resource="https://l-jamora.github.io/sdco#BBA"/>
+        <rdf:type rdf:resource="https://l-jamora.github.io/sdco#BBA_C"/>
+        <m150-onto:isChildOf rdf:resource="https://l-jamora.github.io/sdco/test_individuals#0_InspectionReport1"/>
+        <m150-onto:hasCharacterization1>C</m150-onto:hasCharacterization1>
+        <m150-onto:hasConditionCode>BBA</m150-onto:hasConditionCode>
+        <m150-onto:hasConnection rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</m150-onto:hasConnection>
+        <m150-onto:hasLongText>Komplexes Wurzelwerk</m150-onto:hasLongText>
+        <m150-onto:hasPipeSectionConditionStation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.9</m150-onto:hasPipeSectionConditionStation>
+        <m150-onto:hasPositionFrom>08</m150-onto:hasPositionFrom>
+        <m150-onto:hasPositionTo>04</m150-onto:hasPositionTo>
+        <m150-onto:hasQuantification1 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">40.0</m150-onto:hasQuantification1>
+        <m150-onto:hasVideoCounterReading>0:08:07</m150-onto:hasVideoCounterReading>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://l-jamora.github.io/sdco/test_individuals#0_ConditionReport1_3 -->
+
+    <owl:NamedIndividual rdf:about="https://l-jamora.github.io/sdco/test_individuals#0_ConditionReport1_3">
+        <rdf:type rdf:resource="https://l-jamora.github.io/m150-onto#ConditionReport"/>
+        <!-- Expected damage-code classification, verified against HermiT (scripts/materialize_object_properties.py, reason flag), not against classify_individuals(). -->
+        <rdf:type rdf:resource="https://l-jamora.github.io/sdco#BAB"/>
+        <m150-onto:isChildOf rdf:resource="https://l-jamora.github.io/sdco/test_individuals#0_InspectionReport1"/>
+        <m150-onto:hasConditionCode>BAB</m150-onto:hasConditionCode>
+        <m150-onto:hasLongText>Riss, unspezifiziert</m150-onto:hasLongText>
+        <m150-onto:hasPipeSectionConditionStation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.2</m150-onto:hasPipeSectionConditionStation>
+        <m150-onto:hasPositionFrom>03</m150-onto:hasPositionFrom>
+        <m150-onto:hasVideoCounterReading>0:03:12</m150-onto:hasVideoCounterReading>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://l-jamora.github.io/sdco/test_individuals#0_ConditionReport1_4 -->
+
+    <owl:NamedIndividual rdf:about="https://l-jamora.github.io/sdco/test_individuals#0_ConditionReport1_4">
+        <rdf:type rdf:resource="https://l-jamora.github.io/m150-onto#ConditionReport"/>
+        <!-- Expected damage-code classification, verified against HermiT (scripts/materialize_object_properties.py, reason flag), not against classify_individuals(). -->
+        <rdf:type rdf:resource="https://l-jamora.github.io/sdco#BAB"/>
+        <rdf:type rdf:resource="https://l-jamora.github.io/sdco#BAB1_A"/>
+        <m150-onto:isChildOf rdf:resource="https://l-jamora.github.io/sdco/test_individuals#0_InspectionReport1"/>
+        <m150-onto:hasCharacterization1>A</m150-onto:hasCharacterization1>
+        <m150-onto:hasConditionCode>BAB</m150-onto:hasConditionCode>
+        <m150-onto:hasLongText>Oberflächenriss</m150-onto:hasLongText>
+        <m150-onto:hasPipeSectionConditionStation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.6</m150-onto:hasPipeSectionConditionStation>
+        <m150-onto:hasPositionFrom>05</m150-onto:hasPositionFrom>
+        <m150-onto:hasVideoCounterReading>0:05:40</m150-onto:hasVideoCounterReading>
+    </owl:NamedIndividual>
+
+
+
+    <!-- https://l-jamora.github.io/sdco/test_individuals#0_InspectionReport1 -->
+
+    <owl:NamedIndividual rdf:about="https://l-jamora.github.io/sdco/test_individuals#0_InspectionReport1">
+        <rdf:type rdf:resource="https://l-jamora.github.io/m150-onto#InspectionReport"/>
+        <m150-onto:inspects rdf:resource="https://l-jamora.github.io/m150-onto#PipeSection001"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://l-jamora.github.io/sdco/test_individuals#0_Node001 -->
+
+    <owl:NamedIndividual rdf:about="https://l-jamora.github.io/sdco/test_individuals#0_Node001">
+        <rdf:type rdf:resource="https://l-jamora.github.io/m150-onto#Node"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://l-jamora.github.io/sdco/test_individuals#0_Node002 -->
+
+    <owl:NamedIndividual rdf:about="https://l-jamora.github.io/sdco/test_individuals#0_Node002">
+        <rdf:type rdf:resource="https://l-jamora.github.io/m150-onto#Node"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://l-jamora.github.io/sdco/test_individuals#0_PipeSection001 -->
+
+    <owl:NamedIndividual rdf:about="https://l-jamora.github.io/sdco/test_individuals#0_PipeSection001">
+        <rdf:type rdf:resource="https://l-jamora.github.io/m150-onto#PipeSection"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
