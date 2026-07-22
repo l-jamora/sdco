@@ -56,7 +56,7 @@ from pathlib import Path
 from rdflib import OWL, RDF, RDFS, Graph, Namespace
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-NS = "https://l-jamora.github.io/m150-onto#"
+NS = "https://l-jamora.github.io/sdco#"
 NODE = Namespace(NS)
 
 NODE_CATEGORIES = {"NodeFabric", "NodeInventory", "NodeOperation", "NodeOther"}
