@@ -2,4 +2,6 @@ docs/DIN EN 13508-2 ENGLISH.pdf
 scripts/__pycache__/*
 *.pyc
 .claude/*
+.pytest_cache/*
+.vscode/*
 SDCO-dwa-parsed.rdf

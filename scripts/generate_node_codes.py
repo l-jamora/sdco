@@ -57,6 +57,7 @@ from rdflib import OWL, RDF, RDFS, Graph, Namespace
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 NS = "https://l-jamora.github.io/sdco#"
+M150_NS = "https://l-jamora.github.io/m150-onto#"
 NODE = Namespace(NS)
 
 NODE_CATEGORIES = {"NodeFabric", "NodeInventory", "NodeOperation", "NodeOther"}
@@ -274,7 +275,7 @@ def render_base_class(row: dict) -> str:
         f"###  {NS}{name}\n"
         f":{name} rdf:type owl:Class ;\n"
         f"    owl:equivalentClass [ rdf:type owl:Restriction ;\n"
-        f"                           owl:onProperty :hasConditionCode ;\n"
+        f"                           owl:onProperty <{M150_NS}hasConditionCode> ;\n"
         f'                           owl:hasValue "{name}"\n'
         f"                         ] ;\n"
         f"    rdfs:subClassOf :{row['category']} ,\n"
@@ -294,7 +295,7 @@ def render_char_class(row: dict) -> str:
         f":{name} rdf:type owl:Class ;\n"
         f"    owl:equivalentClass [ owl:intersectionOf ( :{parent}\n"
         f"                                               [ rdf:type owl:Restriction ;\n"
-        f"                                                 owl:onProperty :hasCharacterization{dim} ;\n"
+        f"                                                 owl:onProperty <{M150_NS}hasCharacterization{dim}> ;\n"
         f'                                                 owl:hasValue "{row["char_value"]}"\n'
         f"                                               ]\n"
         f"                                             ) ;\n"

@@ -2055,7 +2055,7 @@ Circumferntial Location: Should be recorded""" .
 :BBC rdf:type owl:Class ;
      owl:equivalentClass [ rdf:type owl:Restriction ;
                            owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
-                           owl:hasValue "BBB"
+                           owl:hasValue "BBC"
                          ] ;
      rdfs:subClassOf :PipeOperation ,
                      [ rdf:type owl:Restriction ;
@@ -2768,7 +2768,8 @@ Circumferntial Location: Should be recorded""" .
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasPipeInventoryFeature ;
                           owl:someValuesFrom :OpenConnection
-                        ] .
+                        ] ;
+        owl:disjointWith :BCA2_B .
 
 
 ###  https://l-jamora.github.io/sdco#BCA2_B
@@ -2964,7 +2965,8 @@ Circumferntial Location: Should be recorded""" .
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasHorizontalCurvatureDirection ;
                           owl:someValuesFrom :Left
-                        ] .
+                        ] ;
+        owl:disjointWith :BCC1_B .
 
 
 ###  https://l-jamora.github.io/sdco#BCC1_B
@@ -2998,7 +3000,8 @@ Circumferntial Location: Should be recorded""" .
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasVerticalCurvatureDirection ;
                           owl:someValuesFrom :Up
-                        ] .
+                        ] ;
+        owl:disjointWith :BCC2_B .
 
 
 ###  https://l-jamora.github.io/sdco#BCC2_B
@@ -3850,8 +3853,7 @@ The wastewater flowing from the incoming pipe is:
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeFeature ;
                        owl:someValuesFrom :AtmosphereWithinPipeline
-                     ] ;
-     owl:disjointWith :BDG .
+                     ] .
 
 
 ###  https://l-jamora.github.io/sdco#BDF_A
@@ -4237,8 +4239,7 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasNodeFabricDamage ;
                        owl:someValuesFrom :Deformation
-                     ] ;
-     owl:disjointWith :DAC .
+                     ] .
 
 
 ###  https://l-jamora.github.io/sdco#DAA_A
@@ -4491,6 +4492,10 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAD
 :DAD rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "DAD"
+                         ] ;
      rdfs:subClassOf :NodeFabric ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasNodeFabricDamage ;
@@ -4500,6 +4505,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAD1_A
 :DAD1_A rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DAD
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "A"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :DAD ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasNodeFabricDamage ;
@@ -4509,6 +4522,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAD1_B
 :DAD1_B rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DAD
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "B"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :DAD ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasNodeFabricDamage ;
@@ -4518,6 +4539,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAD1_C
 :DAD1_C rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DAD
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "C"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :DAD ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasNodeFabricDamage ;
@@ -4527,6 +4556,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAD2_A
 :DAD2_A rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DAD
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "A"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :DAD ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasNodeFabricDamage ;
@@ -4538,6 +4575,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAD2_B
 :DAD2_B rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DAD
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "B"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :DAD ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasNodeFabricDamage ;
@@ -4548,6 +4593,10 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAE
 :DAE rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "DAE"
+                         ] ;
      rdfs:subClassOf :NodeFabric ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasNodeFabricDamage ;
@@ -4557,6 +4606,10 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAF
 :DAF rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "DAF"
+                         ] ;
      rdfs:subClassOf :NodeFabric ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasNodeFabricDamage ;
@@ -4566,6 +4619,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAF1_A
 :DAF1_A rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DAF
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "A"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :DAF ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasNodeFabricDamage ;
@@ -4575,6 +4636,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAF1_B
 :DAF1_B rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DAF
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "B"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :DAF ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasNodeFabricDamage ;
@@ -4584,6 +4653,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAF1_C
 :DAF1_C rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DAF
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "C"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :DAF ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasNodeFabricDamage ;
@@ -4593,6 +4670,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAF1_D
 :DAF1_D rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DAF
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "D"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :DAF ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasNodeFabricDamage ;
@@ -4602,6 +4687,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAF1_E
 :DAF1_E rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DAF
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "E"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :DAF ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasNodeFabricDamage ;
@@ -4611,6 +4704,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAF1_F
 :DAF1_F rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DAF
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "F"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :DAF ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasNodeFabricDamage ;
@@ -4620,6 +4721,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAF1_G
 :DAF1_G rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DAF
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "G"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :DAF ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasNodeFabricDamage ;
@@ -4629,6 +4738,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAF1_H
 :DAF1_H rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DAF
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "H"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :DAF ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasNodeFabricDamage ;
@@ -4638,6 +4755,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAF1_I
 :DAF1_I rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DAF
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "I"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :DAF ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasNodeFabricDamage ;
@@ -4647,6 +4772,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAF1_J
 :DAF1_J rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DAF
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "J"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :DAF ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasNodeFabricDamage ;
@@ -4656,6 +4789,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAF1_K
 :DAF1_K rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DAF
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "K"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :DAF ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasNodeFabricDamage ;
@@ -4665,6 +4806,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAF1_Z
 :DAF1_Z rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DAF
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "Z"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :DAF ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasNodeFabricDamage ;
@@ -4674,6 +4823,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAF2_A
 :DAF2_A rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DAF
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "A"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :DAF ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDamageCause ;
@@ -4683,6 +4840,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAF2_B
 :DAF2_B rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DAF
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "B"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :DAF ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDamageCause ;
@@ -4692,6 +4857,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAF2_C
 :DAF2_C rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DAF
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "C"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :DAF ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDamageCause ;
@@ -4701,6 +4874,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAF2_D
 :DAF2_D rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DAF
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "D"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :DAF ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDamageCause ;
@@ -4710,6 +4891,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAF2_E
 :DAF2_E rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DAF
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "E"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :DAF ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDamageCause ;
@@ -4719,6 +4908,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAF2_Z
 :DAF2_Z rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DAF
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "Z"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :DAF ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDamageCause ;
@@ -4728,6 +4925,10 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAG
 :DAG rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "DAG"
+                         ] ;
      rdfs:subClassOf :NodeFabric ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasNodeFabricDamage ;
@@ -4737,6 +4938,10 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAH
 :DAH rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "DAH"
+                         ] ;
      rdfs:subClassOf :NodeFabric ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasNodeFabricDamage ;
@@ -4746,6 +4951,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAH_A
 :DAH_A rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DAH
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "A"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :DAH ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasNodeFabricDamage ;
@@ -4755,6 +4968,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAH_B
 :DAH_B rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DAH
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "B"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :DAH ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasNodeFabricDamage ;
@@ -4764,6 +4985,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAH_C
 :DAH_C rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DAH
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "C"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :DAH ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasNodeFabricDamage ;
@@ -4773,6 +5002,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAH_D
 :DAH_D rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DAH
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "D"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :DAH ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasNodeFabricDamage ;
@@ -4782,6 +5019,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAH_E
 :DAH_E rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DAH
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "E"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :DAH ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasNodeFabricDamage ;
@@ -4791,6 +5036,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAH_Z
 :DAH_Z rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DAH
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "Z"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :DAH ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasNodeFabricDamage ;
@@ -4800,6 +5053,10 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAI
 :DAI rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "DAI"
+                         ] ;
      rdfs:subClassOf :NodeFabric ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasNodeFabricDamage ;
@@ -4809,6 +5066,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAI1_A
 :DAI1_A rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DAI
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "A"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :DAI ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasNodeFabricDamage ;
@@ -4819,6 +5084,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAI1_Z
 :DAI1_Z rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DAI
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "Z"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :DAI ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasNodeFabricDamage ;
@@ -4828,6 +5101,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAI2_A
 :DAI2_A rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DAI
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "A"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :DAI ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasNodeFabricDamage ;
@@ -4838,6 +5119,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAI2_B
 :DAI2_B rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DAI
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "B"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :DAI ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasNodeFabricDamage ;
@@ -4848,6 +5137,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAI2_C
 :DAI2_C rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DAI
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "C"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :DAI ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasNodeFabricDamage ;
@@ -4858,6 +5155,10 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAJ
 :DAJ rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "DAJ"
+                         ] ;
      rdfs:subClassOf :NodeFabric ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasNodeFabricDamage ;
@@ -4867,6 +5168,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAJ_A
 :DAJ_A rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DAJ
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "A"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :DAJ ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasDamageOrientation ;
@@ -4876,6 +5185,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAJ_B
 :DAJ_B rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DAJ
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "B"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :DAJ ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasDamageOrientation ;
@@ -4885,6 +5202,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAJ_C
 :DAJ_C rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DAJ
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "C"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :DAJ ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasDamageOrientation ;
@@ -4894,6 +5219,10 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAK
 :DAK rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "DAK"
+                         ] ;
      rdfs:subClassOf :NodeFabric ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasNodeFabricDamage ;
@@ -4903,6 +5232,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAK1_A
 :DAK1_A rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DAK
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "A"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :DAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasNodeFabricDamage ;
@@ -4912,6 +5249,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAK1_B
 :DAK1_B rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DAK
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "B"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :DAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasNodeFabricDamage ;
@@ -4921,6 +5266,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAK1_C
 :DAK1_C rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DAK
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "C"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :DAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasNodeFabricDamage ;
@@ -4930,6 +5283,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAK1_D
 :DAK1_D rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DAK
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "D"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :DAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasNodeFabricDamage ;
@@ -4939,6 +5300,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAK1_E
 :DAK1_E rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DAK
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "E"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :DAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasNodeFabricDamage ;
@@ -4948,6 +5317,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAK1_F
 :DAK1_F rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DAK
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "F"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :DAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasNodeFabricDamage ;
@@ -4957,6 +5334,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAK1_G
 :DAK1_G rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DAK
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "G"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :DAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasNodeFabricDamage ;
@@ -4966,6 +5351,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAK1_H
 :DAK1_H rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DAK
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "H"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :DAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasNodeFabricDamage ;
@@ -4975,6 +5368,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAK1_I
 :DAK1_I rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DAK
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "I"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :DAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasNodeFabricDamage ;
@@ -4984,6 +5385,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAK1_J
 :DAK1_J rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DAK
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "J"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :DAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasNodeFabricDamage ;
@@ -4993,6 +5402,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAK1_K
 :DAK1_K rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DAK
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "K"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :DAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasNodeFabricDamage ;
@@ -5002,6 +5419,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAK1_L
 :DAK1_L rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DAK
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "L"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :DAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasNodeFabricDamage ;
@@ -5011,6 +5436,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAK1_M
 :DAK1_M rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DAK
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "M"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :DAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasNodeFabricDamage ;
@@ -5020,6 +5453,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAK1_N
 :DAK1_N rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DAK
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "N"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :DAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasNodeFabricDamage ;
@@ -5029,6 +5470,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAK1_Z
 :DAK1_Z rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DAK
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "Z"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :DAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasNodeFabricDamage ;
@@ -5038,6 +5487,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAK2_A
 :DAK2_A rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DAK
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "A"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :DAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDamageOrientation ;
@@ -5047,6 +5504,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAK2_B
 :DAK2_B rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DAK
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "B"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :DAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDamageOrientation ;
@@ -5056,6 +5521,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAK2_C
 :DAK2_C rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DAK
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "C"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :DAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDamageOrientation ;
@@ -5065,6 +5538,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAK2_D
 :DAK2_D rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DAK
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "D"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
         rdfs:subClassOf :DAK ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasDamageOrientation ;
@@ -5074,6 +5555,10 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAL
 :DAL rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "DAL"
+                         ] ;
      rdfs:subClassOf :NodeFabric ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasNodeFabricDamage ;
@@ -5083,6 +5568,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAL_A
 :DAL_A rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DAL
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "A"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :DAL ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasNodeFabricDamage ;
@@ -5092,6 +5585,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAL_B
 :DAL_B rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DAL
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "B"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :DAL ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasNodeFabricDamage ;
@@ -5101,6 +5602,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAL_C
 :DAL_C rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DAL
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "C"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :DAL ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasNodeFabricDamage ;
@@ -5110,6 +5619,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAL_D
 :DAL_D rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DAL
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "D"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :DAL ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasNodeFabricDamage ;
@@ -5119,6 +5636,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAL_E
 :DAL_E rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DAL
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "E"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :DAL ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasNodeFabricDamage ;
@@ -5128,6 +5653,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAL_F
 :DAL_F rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DAL
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "F"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :DAL ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasNodeFabricDamage ;
@@ -5137,6 +5670,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAL_G
 :DAL_G rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DAL
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "G"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :DAL ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasNodeFabricDamage ;
@@ -5146,6 +5687,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAL_Z
 :DAL_Z rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DAL
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "Z"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :DAL ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasNodeFabricDamage ;
@@ -5155,6 +5704,10 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAM
 :DAM rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "DAM"
+                         ] ;
      rdfs:subClassOf :NodeFabric ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasNodeFabricDamage ;
@@ -5164,6 +5717,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAM_A
 :DAM_A rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DAM
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "A"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :DAM ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasDamageOrientation ;
@@ -5173,6 +5734,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAM_B
 :DAM_B rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DAM
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "B"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :DAM ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasDamageOrientation ;
@@ -5182,6 +5751,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAM_C
 :DAM_C rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DAM
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "C"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :DAM ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasDamageOrientation ;
@@ -5191,6 +5768,10 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAN
 :DAN rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "DAN"
+                         ] ;
      rdfs:subClassOf :NodeFabric ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasNodeFabricDamage ;
@@ -5200,6 +5781,10 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAO
 :DAO rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "DAO"
+                         ] ;
      rdfs:subClassOf :NodeFabric ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasNodeFabricDamage ;
@@ -5209,6 +5794,10 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAP
 :DAP rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "DAP"
+                         ] ;
      rdfs:subClassOf :NodeFabric ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasNodeFabricDamage ;
@@ -5218,6 +5807,10 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAQ
 :DAQ rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "DAQ"
+                         ] ;
      rdfs:subClassOf :NodeFabric ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasNodeFabricDamage ;
@@ -5227,6 +5820,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAQ_A
 :DAQ_A rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DAQ
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "A"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :DAQ ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasNodeFabricDamage ;
@@ -5236,6 +5837,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAQ_B
 :DAQ_B rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DAQ
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "B"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :DAQ ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasNodeFabricDamage ;
@@ -5245,6 +5854,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAQ_C
 :DAQ_C rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DAQ
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "C"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :DAQ ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasNodeFabricDamage ;
@@ -5254,6 +5871,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAQ_D
 :DAQ_D rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DAQ
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "D"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :DAQ ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasNodeFabricDamage ;
@@ -5263,6 +5888,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAQ_E
 :DAQ_E rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DAQ
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "E"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :DAQ ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasNodeFabricDamage ;
@@ -5272,6 +5905,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAQ_F
 :DAQ_F rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DAQ
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "F"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :DAQ ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasNodeFabricDamage ;
@@ -5281,6 +5922,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAQ_G
 :DAQ_G rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DAQ
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "G"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :DAQ ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasNodeFabricDamage ;
@@ -5290,6 +5939,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAQ_H
 :DAQ_H rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DAQ
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "H"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :DAQ ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasNodeFabricDamage ;
@@ -5299,6 +5956,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAQ_I
 :DAQ_I rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DAQ
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "I"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :DAQ ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasNodeFabricDamage ;
@@ -5308,6 +5973,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAQ_J
 :DAQ_J rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DAQ
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "J"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :DAQ ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasNodeFabricDamage ;
@@ -5317,6 +5990,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAQ_K
 :DAQ_K rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DAQ
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "K"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :DAQ ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasNodeFabricDamage ;
@@ -5326,6 +6007,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAQ_Z
 :DAQ_Z rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DAQ
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "Z"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :DAQ ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasNodeFabricDamage ;
@@ -5335,6 +6024,10 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAR
 :DAR rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "DAR"
+                         ] ;
      rdfs:subClassOf :NodeFabric ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasNodeFabricDamage ;
@@ -5344,6 +6037,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAR_A
 :DAR_A rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DAR
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "A"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :DAR ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasNodeFabricDamage ;
@@ -5353,6 +6054,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAR_B
 :DAR_B rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DAR
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "B"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :DAR ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasNodeFabricDamage ;
@@ -5362,6 +6071,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAR_C
 :DAR_C rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DAR
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "C"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :DAR ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasNodeFabricDamage ;
@@ -5371,6 +6088,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAR_D
 :DAR_D rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DAR
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "D"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :DAR ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasNodeFabricDamage ;
@@ -5380,6 +6105,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAR_E
 :DAR_E rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DAR
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "E"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :DAR ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasNodeFabricDamage ;
@@ -5389,6 +6122,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAR_F
 :DAR_F rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DAR
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "F"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :DAR ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasNodeFabricDamage ;
@@ -5398,6 +6139,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAR_G
 :DAR_G rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DAR
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "G"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :DAR ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasNodeFabricDamage ;
@@ -5407,6 +6156,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAR_H
 :DAR_H rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DAR
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "H"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :DAR ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasNodeFabricDamage ;
@@ -5416,6 +6173,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#DAR_Z
 :DAR_Z rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DAR
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "Z"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
        rdfs:subClassOf :DAR ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasNodeFabricDamage ;
@@ -8628,6 +9393,19 @@ Has potential to be used to also describe other damage codes with more detail.""
 
 
 [ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :BBA
+                :BBB
+                :BBC
+                :BBD
+                :BBE
+                :BBF
+                :BBG
+                :BBH
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
   owl:members ( :BBA_A
                 :BBA_B
                 :BBA_C
@@ -8699,6 +9477,120 @@ Has potential to be used to also describe other damage codes with more detail.""
                 :BBH2_B
                 :BBH2_C
                 :BBH2_Z
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :BCA
+                :BCB
+                :BCC
+                :BCD
+                :BCE
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :BCA1_A
+                :BCA1_B
+                :BCA1_C
+                :BCA1_D
+                :BCA1_E
+                :BCA1_G
+                :BCA1_Z
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :BCB_A
+                :BCB_B
+                :BCB_C
+                :BCB_D
+                :BCB_E
+                :BCB_F
+                :BCB_G
+                :BCB_Z
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :BCD_A
+                :BCD_B
+                :BCD_C
+                :BCD_D
+                :BCD_E
+                :BCD_F
+                :BCD_X
+                :BCD_Z
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :BCE_A
+                :BCE_B
+                :BCE_C
+                :BCE_D
+                :BCE_E
+                :BCE_F
+                :BCE_X
+                :BCE_Z
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :BDA
+                :BDB
+                :BDC
+                :BDD
+                :BDE
+                :BDF
+                :BDG
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :BDC1_A
+                :BDC1_B
+                :BDC1_C
+                :BDC1_Z
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :BDC2_A
+                :BDC2_B
+                :BDC2_C
+                :BDC2_D
+                :BDC2_E
+                :BDC2_Z
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :BDD_A
+                :BDD_B
+                :BDD_C
+                :BDD_D
+                :BDD_E
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :BDE1_A
+                :BDE1_B
+                :BDE1_C
+                :BDE1_D
+                :BDE1_E
+                :BDE1_YY
               )
 ] .
 
@@ -8827,9 +9719,42 @@ Has potential to be used to also describe other damage codes with more detail.""
 
 
 [ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DAA
+                :DAB
+                :DAC
+                :DAD
+                :DAE
+                :DAF
+                :DAG
+                :DAH
+                :DAI
+                :DAJ
+                :DAK
+                :DAL
+                :DAM
+                :DAN
+                :DAO
+                :DAP
+                :DAQ
+                :DAR
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
   owl:members ( :DAB1_A
                 :DAB1_B
                 :DAB1_C
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DAB2_A
+                :DAB2_B
+                :DAB2_C
+                :DAB2_D
+                :DAB2_E
               )
 ] .
 
