@@ -20,6 +20,34 @@ Full design narrative, competency questions, and SPARQL/SHACL examples: `docs/Se
 
 Damage codes are modeled as **OWL classes** (branch `dev-classes_approach`), not individuals: `owl:equivalentClass` matches literal condition-report codes, and `rdfs:subClassOf` restrictions use `owl:someValuesFrom` to place damage-code classes into their taxonomy. This lets HermiT-style subsumption reasoning work automatically without punning.
 
+## Class hierarchy
+
+```
+owl:Thing
+├── Observation                — root of all coded findings
+│   ├── Cause                  — why a defect/observation occurred (mechanical, chemical, equipment failure...)
+│   ├── Defect                 — anything wrong found during inspection
+│   │   ├── OperationalDefect  — functional problems (blockages, infiltration, roots, deposits...)
+│   │   └── StructuralDefect   — physical damage to the pipe/node fabric (cracks, deformation, collapse...)
+│   ├── Inventory               — non-defect features recorded for the asset (connections, node type, repairs)
+│   ├── Location                — positional qualifiers for a finding
+│   ├── Orientation             — clock-position/directional qualifiers (left, down, circumferential...)
+│   └── OtherObservation        — miscellaneous codes DIN EN 13508-2 buckets as "Other" (photos, remarks, termination...)
+└── Reference                   — DIN EN 13508-2 damage/feature codes themselves (BAA, BBA, DAB, ...)
+    ├── NodeFabric               — structural/fabric condition codes for nodes (manholes, inspection chambers)
+    ├── NodeInventory             — inventory/feature codes recorded for nodes (type, dimensions, materials)
+    ├── NodeOperation             — operational condition codes for nodes (blockages, deposits, infiltration)
+    ├── NodeOther                 — miscellaneous node codes DIN EN 13508-2 buckets as "Other"
+    ├── PipeFabric                — structural/fabric condition codes for pipe sections
+    ├── PipeInventory             — inventory/feature codes recorded for pipe sections (connections, linings, repairs)
+    ├── PipeOperation             — operational condition codes for pipe sections
+    └── PipeOther                 — miscellaneous pipe codes DIN EN 13508-2 buckets as "Other"
+```
+
+Each `Reference` code class (e.g. `:BAA`) is `owl:equivalentClass` to a literal `hasConditionCode` value and `rdfs:subClassOf` a `someValuesFrom` restriction pointing into the `Observation` tree above (e.g. `:BAA` ⊑ `hasPipeFabricDamage some :Deformation`) — that's how a raw code gets its semantic meaning. The full code list isn't reproduced here; see `SDCO.rdf` or `docs/Sewer Damage Classification Ontology SDCO.md`.
+
+> Classes imported directly from `m150-onto` (e.g. `ConditionReport`, individuals for pipe sections/nodes) aren't part of this hierarchy — see the sibling [m150-onto](../m150-onto) repo for those.
+
 ## Materialization
 
 `someValuesFrom` restrictions are existential, so reasoning alone never yields a literal, queryable triple for the filler. `scripts/materialize_object_properties.py` closes that gap, producing `derived/*_materialized.rdf`/`.ttl`:
