@@ -29,6 +29,16 @@
                        owl:IrreflexiveProperty .
 
 
+###  https://l-jamora.github.io/sdco#hasConnectionDischargeDirection
+:hasConnectionDischargeDirection rdf:type owl:ObjectProperty ;
+                                 rdfs:subPropertyOf owl:topObjectProperty ;
+                                 rdf:type owl:AsymmetricProperty ,
+                                          owl:IrreflexiveProperty ;
+                                 rdfs:comment """For DCG char2:
+
+Whether the connection is incoming or outgoing or has been sealed:  connection discharges into the manhole or inspection chamber (A); connection discharges from the manhole or inspection chamber (B); connection closed (C)."""@en .
+
+
 ###  https://l-jamora.github.io/sdco#hasCost
 :hasCost rdf:type owl:ObjectProperty .
 
@@ -79,7 +89,9 @@
 
 ###  https://l-jamora.github.io/sdco#hasHorizontalCurvatureDirection
 :hasHorizontalCurvatureDirection rdf:type owl:ObjectProperty ;
-                                 rdfs:subPropertyOf :hasCurvatureDirection .
+                                 rdfs:subPropertyOf :hasCurvatureDirection ;
+                                 rdf:type owl:AsymmetricProperty ,
+                                          owl:IrreflexiveProperty .
 
 
 ###  https://l-jamora.github.io/sdco#hasInventoryFeature
@@ -88,6 +100,13 @@
                               owl:IrreflexiveProperty ;
                      rdfs:range :Inventory ;
                      rdfs:comment "Used to describe inventory codes for pipes and nodes." .
+
+
+###  https://l-jamora.github.io/sdco#hasLocalizedRepair
+:hasLocalizedRepair rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf owl:topObjectProperty ;
+                    rdf:type owl:AsymmetricProperty ,
+                             owl:IrreflexiveProperty .
 
 
 ###  https://l-jamora.github.io/sdco#hasLocation
@@ -194,7 +213,9 @@
 
 ###  https://l-jamora.github.io/sdco#hasVerticalCurvatureDirection
 :hasVerticalCurvatureDirection rdf:type owl:ObjectProperty ;
-                               rdfs:subPropertyOf :hasCurvatureDirection .
+                               rdfs:subPropertyOf :hasCurvatureDirection ;
+                               rdf:type owl:AsymmetricProperty ,
+                                        owl:IrreflexiveProperty .
 
 
 ###  https://l-jamora.github.io/sdco#hasWater
@@ -206,6 +227,16 @@
 #################################################################
 #    Classes
 #################################################################
+
+###  https://l-jamora.github.io/sdco#AccesablePipeCoverMissing
+:AccesablePipeCoverMissing rdf:type owl:Class ;
+                           rdfs:subClassOf :OtherPipelineThroughManhole .
+
+
+###  https://l-jamora.github.io/sdco#AccessablePipeCoverInPlace
+:AccessablePipeCoverInPlace rdf:type owl:Class ;
+                            rdfs:subClassOf :OtherPipelineThroughManhole .
+
 
 ###  https://l-jamora.github.io/sdco#AggregateProjectingFromSurface
 :AggregateProjectingFromSurface rdf:type owl:Class ;
@@ -221,6 +252,11 @@
 ###  https://l-jamora.github.io/sdco#AnotherObjectObstacle
 :AnotherObjectObstacle rdf:type owl:Class ;
                        rdfs:subClassOf :Obstacle .
+
+
+###  https://l-jamora.github.io/sdco#ArchShapedConnectingPipeline
+:ArchShapedConnectingPipeline rdf:type owl:Class ;
+                              rdfs:subClassOf :ConnectingPipeline .
 
 
 ###  https://l-jamora.github.io/sdco#AtmosphereWithinPipeline
@@ -4085,6 +4121,16 @@ Describes the cause of the surface damage. Has potential to be expanded to furth
 Also used to described BDG Loss of vision and its reasons for the vision obstruction to the view of the pipeline.""" .
 
 
+###  https://l-jamora.github.io/sdco#Channel
+:Channel rdf:type owl:Class ;
+         rdfs:subClassOf :Inventory ;
+         rdfs:comment """Used to describe DCI char1 and 2:
+
+!Characterisation 1\"  The following information:  channel defective (A); channel not defective (B);  !no channel (C).\"
+
+!Characterisation 2 Further information:  Channel narrows (in the direction of flow) (A); Channel widens (in the direction of flow) (B); Channel has a high point (C); Channel has a low point (D).\""""@en .
+
+
 ###  https://l-jamora.github.io/sdco#ChannelInBenching
 :ChannelInBenching rdf:type owl:Class ;
                    rdfs:subClassOf :Benching .
@@ -4116,6 +4162,16 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
                            rdfs:subClassOf :PipeConnection .
 
 
+###  https://l-jamora.github.io/sdco#CircularConnectingPipeline
+:CircularConnectingPipeline rdf:type owl:Class ;
+                            rdfs:subClassOf :ConnectingPipeline .
+
+
+###  https://l-jamora.github.io/sdco#CircularCrossSection
+:CircularCrossSection rdf:type owl:Class ;
+                      rdfs:subClassOf :CrossSection .
+
+
 ###  https://l-jamora.github.io/sdco#Circumferential
 :Circumferential rdf:type owl:Class ;
                  rdfs:subClassOf :Orientation .
@@ -4135,6 +4191,16 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 ###  https://l-jamora.github.io/sdco#CoarseSettledDeposit
 :CoarseSettledDeposit rdf:type owl:Class ;
                       rdfs:subClassOf :SettledDeposit .
+
+
+###  https://l-jamora.github.io/sdco#CoatedDebrisSafetyBar
+:CoatedDebrisSafetyBar rdf:type owl:Class ;
+                       rdfs:subClassOf :SafetyChainBar .
+
+
+###  https://l-jamora.github.io/sdco#CoatedDebrisSafetyChain
+:CoatedDebrisSafetyChain rdf:type owl:Class ;
+                         rdfs:subClassOf :SafetyChainBar .
 
 
 ###  https://l-jamora.github.io/sdco#CockroachVermin
@@ -4168,9 +4234,27 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
                   rdfs:subClassOf :Roots .
 
 
+###  https://l-jamora.github.io/sdco#ConnectingPipeline
+:ConnectingPipeline rdf:type owl:Class ;
+                    rdfs:subClassOf :Inventory .
+
+
+###  https://l-jamora.github.io/sdco#ConnectingPipelineDischargeDirection
+:ConnectingPipelineDischargeDirection rdf:type owl:Class ;
+                                      rdfs:subClassOf :OtherObservation ;
+                                      rdfs:comment """To define DCG char2:
+
+Whether the connection is incoming or outgoing or has been sealed:  connection discharges into the manhole or inspection chamber (A); connection discharges from the manhole or inspection chamber (B); connection closed (C)."""@en .
+
+
 ###  https://l-jamora.github.io/sdco#Connection
 :Connection rdf:type owl:Class ;
             rdfs:subClassOf :Inventory .
+
+
+###  https://l-jamora.github.io/sdco#ConnectionClosed
+:ConnectionClosed rdf:type owl:Class ;
+                  rdfs:subClassOf :ConnectingPipelineDischargeDirection .
 
 
 ###  https://l-jamora.github.io/sdco#ConnectionDischargeBneching
@@ -4178,9 +4262,25 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
                              rdfs:subClassOf :Benching .
 
 
+###  https://l-jamora.github.io/sdco#ConnectionDischargeFromNode
+:ConnectionDischargeFromNode rdf:type owl:Class ;
+                             rdfs:subClassOf :ConnectingPipelineDischargeDirection .
+
+
+###  https://l-jamora.github.io/sdco#ConnectionDischargeIntoNode
+:ConnectionDischargeIntoNode rdf:type owl:Class ;
+                             rdfs:subClassOf :ConnectingPipelineDischargeDirection .
+
+
 ###  https://l-jamora.github.io/sdco#ConnectionNotEvident
 :ConnectionNotEvident rdf:type owl:Class ;
                       rdfs:subClassOf :PipeConnection .
+
+
+###  https://l-jamora.github.io/sdco#ContinuationFlowControl
+:ContinuationFlowControl rdf:type owl:Class ;
+                         rdfs:subClassOf :FlowControl ;
+                         owl:disjointWith :OverflowControl .
 
 
 ###  https://l-jamora.github.io/sdco#CorrectConnection
@@ -4241,6 +4341,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 ###  https://l-jamora.github.io/sdco#CrackOrSplitOrWeldFailure
 :CrackOrSplitOrWeldFailure rdf:type owl:Class ;
                            rdfs:subClassOf :Lining .
+
+
+###  https://l-jamora.github.io/sdco#CrossSection
+:CrossSection rdf:type owl:Class ;
+              rdfs:subClassOf :Inventory ;
+              rdfs:comment """Used to describe DCO.
+
+DCO Characterisation The shape of the horizontal (plan) cross-section of the manhole or inspection  chamber as follows:  circular (A); rectangular (B);  local section - code to be specified by the employing authority and prefixed by an X (e.g. XA);  !other (Z) – where this is used"""@en .
 
 
 ###  https://l-jamora.github.io/sdco#DAA
@@ -6884,6 +6992,1411 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
                         ] .
 
 
+###  https://l-jamora.github.io/sdco#DCA
+:DCA rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "DCA"
+                         ] ;
+     rdfs:subClassOf :NodeInventory ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :hasNodeInventoryFeature ;
+                       owl:someValuesFrom :NodeConnection
+                     ] .
+
+
+###  https://l-jamora.github.io/sdco#DCA1_A
+:DCA1_A rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DCA
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "A"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:subClassOf :DCA ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasNodeInventoryFeature ;
+                          owl:someValuesFrom :BenchingConnection
+                        ] .
+
+
+###  https://l-jamora.github.io/sdco#DCA1_B
+:DCA1_B rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DCA
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "B"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:subClassOf :DCA ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasNodeInventoryFeature ;
+                          owl:someValuesFrom :FreeDropConnection
+                        ] .
+
+
+###  https://l-jamora.github.io/sdco#DCA1_C
+:DCA1_C rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DCA
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "C"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:subClassOf :DCA ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasNodeInventoryFeature ;
+                          owl:someValuesFrom :BackdropConnection
+                        ] .
+
+
+###  https://l-jamora.github.io/sdco#DCA1_D
+:DCA1_D rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DCA
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "D"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:subClassOf :DCA ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasNodeInventoryFeature ;
+                          owl:someValuesFrom :InternalDropPipeConnection
+                        ] .
+
+
+###  https://l-jamora.github.io/sdco#DCA1_E
+:DCA1_E rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DCA
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "E"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:subClassOf :DCA ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasNodeInventoryFeature ;
+                          owl:someValuesFrom :RampConnection
+                        ] .
+
+
+###  https://l-jamora.github.io/sdco#DCA1_F
+:DCA1_F rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DCA
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "F"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:subClassOf :DCA ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasNodeInventoryFeature ;
+                          owl:someValuesFrom :VentilationPipeConnection
+                        ] .
+
+
+###  https://l-jamora.github.io/sdco#DCA1_Z
+:DCA1_Z rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DCA
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "Z"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:subClassOf :DCA ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasNodeInventoryFeature ;
+                          owl:someValuesFrom :OtherConnection
+                        ] .
+
+
+###  https://l-jamora.github.io/sdco#DCA2_A
+:DCA2_A rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DCA
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "A"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:subClassOf :DCA ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasNodeInventoryFeature ;
+                          owl:someValuesFrom :ChannelInBenching
+                        ] .
+
+
+###  https://l-jamora.github.io/sdco#DCA2_B
+:DCA2_B rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DCA
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "B"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:subClassOf :DCA ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasNodeInventoryFeature ;
+                          owl:someValuesFrom :ConnectionDischargeBneching
+                        ] .
+
+
+###  https://l-jamora.github.io/sdco#DCA2_C
+:DCA2_C rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DCA
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "C"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:subClassOf :DCA ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasNodeInventoryFeature ;
+                          owl:someValuesFrom :RampChannelBenching
+                        ] .
+
+
+###  https://l-jamora.github.io/sdco#DCA2_D
+:DCA2_D rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DCA
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "D"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:subClassOf :DCA ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasNodeInventoryFeature ;
+                          owl:someValuesFrom :PipeUnderBenching
+                        ] .
+
+
+###  https://l-jamora.github.io/sdco#DCA2_Z
+:DCA2_Z rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DCA
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "Z"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:subClassOf :DCA ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasNodeInventoryFeature ;
+                          owl:someValuesFrom :OtherBenching
+                        ] .
+
+
+###  https://l-jamora.github.io/sdco#DCB
+:DCB rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "DCB"
+                         ] ;
+     rdfs:subClassOf :NodeInventory ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :hasLocalizedRepair ;
+                       owl:someValuesFrom :PointRepair
+                     ] .
+
+
+###  https://l-jamora.github.io/sdco#DCB_A
+:DCB_A rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DCB
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "A"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
+       rdfs:subClassOf :DCB ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasLocalizedRepair ;
+                         owl:someValuesFrom :WallPartRepair
+                       ] .
+
+
+###  https://l-jamora.github.io/sdco#DCB_B
+:DCB_B rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DCB
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "B"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
+       rdfs:subClassOf :DCB ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasLocalizedRepair ;
+                         owl:someValuesFrom :LocalisedLiningOfManholeOrInspectionChamberRepair
+                       ] .
+
+
+###  https://l-jamora.github.io/sdco#DCB_C
+:DCB_C rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DCB
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "C"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
+       rdfs:subClassOf :DCB ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasLocalizedRepair ;
+                         owl:someValuesFrom :InjectedSealingMaterialRepair
+                       ] .
+
+
+###  https://l-jamora.github.io/sdco#DCB_D
+:DCB_D rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DCB
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "D"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
+       rdfs:subClassOf :DCB ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasLocalizedRepair ;
+                         owl:someValuesFrom :HoleRepair
+                       ] .
+
+
+###  https://l-jamora.github.io/sdco#DCB_E
+:DCB_E rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DCB
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "E"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
+       rdfs:subClassOf :DCB ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasLocalizedRepair ;
+                         owl:someValuesFrom :LocalisedLiningOfConnectionRepair
+                       ] .
+
+
+###  https://l-jamora.github.io/sdco#DCB_F
+:DCB_F rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DCB
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "F"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
+       rdfs:subClassOf :DCB ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasLocalizedRepair ;
+                         owl:someValuesFrom :OtherConnectionRepair
+                       ] .
+
+
+###  https://l-jamora.github.io/sdco#DCB_Z
+:DCB_Z rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DCB
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "Z"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
+       rdfs:subClassOf :DCB ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasLocalizedRepair ;
+                         owl:someValuesFrom :OtherPointRepair
+                       ] .
+
+
+###  https://l-jamora.github.io/sdco#DCG
+:DCG rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "DCG"
+                         ] ;
+     rdfs:subClassOf :NodeInventory ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :hasNodeInventoryFeature ;
+                       owl:someValuesFrom :ConnectingPipeline
+                     ] .
+
+
+###  https://l-jamora.github.io/sdco#DCG1_A
+:DCG1_A rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DCG
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "A"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:subClassOf :DCG ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasNodeInventoryFeature ;
+                          owl:someValuesFrom :CircularConnectingPipeline
+                        ] .
+
+
+###  https://l-jamora.github.io/sdco#DCG1_B
+:DCG1_B rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DCG
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "B"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:subClassOf :DCG ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasNodeInventoryFeature ;
+                          owl:someValuesFrom :RectangularConnectingPipeline
+                        ] .
+
+
+###  https://l-jamora.github.io/sdco#DCG1_C
+:DCG1_C rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DCG
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "C"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:subClassOf :DCG ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasNodeInventoryFeature ;
+                          owl:someValuesFrom :EggShapedConnectingPipeline
+                        ] .
+
+
+###  https://l-jamora.github.io/sdco#DCG1_D
+:DCG1_D rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DCG
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "D"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:subClassOf :DCG ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasNodeInventoryFeature ;
+                          owl:someValuesFrom :UShapeConnectingPipeline
+                        ] .
+
+
+###  https://l-jamora.github.io/sdco#DCG1_E
+:DCG1_E rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DCG
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "E"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:subClassOf :DCG ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasNodeInventoryFeature ;
+                          owl:someValuesFrom :ArchShapedConnectingPipeline
+                        ] .
+
+
+###  https://l-jamora.github.io/sdco#DCG1_F
+:DCG1_F rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DCG
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "F"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:subClassOf :DCG ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasNodeInventoryFeature ;
+                          owl:someValuesFrom :OvalConnectingPipeline
+                        ] .
+
+
+###  https://l-jamora.github.io/sdco#DCG1_X
+:DCG1_X rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DCG
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "X"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:subClassOf :DCG ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasNodeInventoryFeature ;
+                          owl:someValuesFrom :LocallyDefinedConnectingPipeline
+                        ] ;
+        rdfs:comment "If prefixed with X, then local section defined by the employing authority." .
+
+
+###  https://l-jamora.github.io/sdco#DCG1_Z
+:DCG1_Z rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DCG
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "Z"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:subClassOf :DCG ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasNodeInventoryFeature ;
+                          owl:someValuesFrom :OtherConnectingPipeline
+                        ] .
+
+
+###  https://l-jamora.github.io/sdco#DCG2_A
+:DCG2_A rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DCG
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "A"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:subClassOf :DCG ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasConnectionDischargeDirection ;
+                          owl:someValuesFrom :ConnectionDischargeIntoNode
+                        ] .
+
+
+###  https://l-jamora.github.io/sdco#DCG2_B
+:DCG2_B rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DCG
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "B"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:subClassOf :DCG ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasConnectionDischargeDirection ;
+                          owl:someValuesFrom :ConnectionDischargeFromNode
+                        ] .
+
+
+###  https://l-jamora.github.io/sdco#DCG2_C
+:DCG2_C rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DCG
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "C"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:subClassOf :DCG ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasConnectionDischargeDirection ;
+                          owl:someValuesFrom :ConnectionClosed
+                        ] .
+
+
+###  https://l-jamora.github.io/sdco#DCH
+:DCH rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "DCH"
+                         ] ;
+     rdfs:subClassOf :NodeInventory ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :hasNodeInventoryFeature ;
+                       owl:someValuesFrom :Benching
+                     ] .
+
+
+###  https://l-jamora.github.io/sdco#DCH_A
+:DCH_A rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DCH
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "A"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
+       rdfs:subClassOf :DCH ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasNodeInventoryFeature ;
+                         owl:someValuesFrom :NoBenching
+                       ] .
+
+
+###  https://l-jamora.github.io/sdco#DCH_B
+:DCH_B rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DCH
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "B"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
+       rdfs:subClassOf :DCH ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasNodeInventoryFeature ;
+                         owl:someValuesFrom :DefectiveBenching
+                       ] .
+
+
+###  https://l-jamora.github.io/sdco#DCH_C
+:DCH_C rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DCH
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "C"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
+       rdfs:subClassOf :DCH ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasNodeInventoryFeature ;
+                         owl:someValuesFrom :WorkingBenching
+                       ] .
+
+
+###  https://l-jamora.github.io/sdco#DCI
+:DCI rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "DCI"
+                         ] ;
+     rdfs:subClassOf :NodeInventory ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :hasNodeInventoryFeature ;
+                       owl:someValuesFrom :Channel
+                     ] .
+
+
+###  https://l-jamora.github.io/sdco#DCI1_A
+:DCI1_A rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DCI
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "A"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:subClassOf :DCI ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasNodeInventoryFeature ;
+                          owl:someValuesFrom :DefectiveChannel
+                        ] .
+
+
+###  https://l-jamora.github.io/sdco#DCI1_B
+:DCI1_B rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DCI
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "B"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:subClassOf :DCI ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasNodeInventoryFeature ;
+                          owl:someValuesFrom :WorkingChannel
+                        ] .
+
+
+###  https://l-jamora.github.io/sdco#DCI1_C
+:DCI1_C rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DCI
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "C"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:subClassOf :DCI ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasNodeInventoryFeature ;
+                          owl:someValuesFrom :NoChannel
+                        ] .
+
+
+###  https://l-jamora.github.io/sdco#DCI2_A
+:DCI2_A rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DCI
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "A"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:subClassOf :DCI ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasNodeInventoryFeature ;
+                          owl:someValuesFrom :NarrowsChannel
+                        ] .
+
+
+###  https://l-jamora.github.io/sdco#DCI2_B
+:DCI2_B rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DCI
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "B"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:subClassOf :DCI ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasNodeInventoryFeature ;
+                          owl:someValuesFrom :WidensChannel
+                        ] .
+
+
+###  https://l-jamora.github.io/sdco#DCI2_C
+:DCI2_C rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DCI
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "C"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:subClassOf :DCI ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasNodeInventoryFeature ;
+                          owl:someValuesFrom :HighPointChannel
+                        ] .
+
+
+###  https://l-jamora.github.io/sdco#DCI2_D
+:DCI2_D rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DCI
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "D"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:subClassOf :DCI ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasNodeInventoryFeature ;
+                          owl:someValuesFrom :LowPointChannel
+                        ] .
+
+
+###  https://l-jamora.github.io/sdco#DCJ
+:DCJ rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "DCJ"
+                         ] ;
+     rdfs:subClassOf :NodeInventory ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :hasNodeInventoryFeature ;
+                       owl:someValuesFrom :SafetyChainBar
+                     ] .
+
+
+###  https://l-jamora.github.io/sdco#DCJ_A
+:DCJ_A rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DCJ
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "A"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
+       rdfs:subClassOf :DCJ ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasNodeInventoryFeature ;
+                         owl:someValuesFrom :NoDefectsSafetyChain
+                       ] .
+
+
+###  https://l-jamora.github.io/sdco#DCJ_B
+:DCJ_B rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DCJ
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "B"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
+       rdfs:subClassOf :DCJ ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasNodeInventoryFeature ;
+                         owl:someValuesFrom :MissingSafetyChain
+                       ] .
+
+
+###  https://l-jamora.github.io/sdco#DCJ_C
+:DCJ_C rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DCJ
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "C"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
+       rdfs:subClassOf :DCJ ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasNodeInventoryFeature ;
+                         owl:someValuesFrom :DefectiveSafetyChain
+                       ] .
+
+
+###  https://l-jamora.github.io/sdco#DCJ_D
+:DCJ_D rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DCJ
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "D"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
+       rdfs:subClassOf :DCJ ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasNodeInventoryFeature ;
+                         owl:someValuesFrom :CoatedDebrisSafetyChain
+                       ] .
+
+
+###  https://l-jamora.github.io/sdco#DCJ_E
+:DCJ_E rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DCJ
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "E"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
+       rdfs:subClassOf :DCJ ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasNodeInventoryFeature ;
+                         owl:someValuesFrom :NoDefectsSafetyBar
+                       ] .
+
+
+###  https://l-jamora.github.io/sdco#DCJ_F
+:DCJ_F rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DCJ
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "F"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
+       rdfs:subClassOf :DCJ ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasNodeInventoryFeature ;
+                         owl:someValuesFrom :MissingSafetyBar
+                       ] .
+
+
+###  https://l-jamora.github.io/sdco#DCJ_G
+:DCJ_G rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DCJ
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "G"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
+       rdfs:subClassOf :DCJ ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasNodeInventoryFeature ;
+                         owl:someValuesFrom :DefectiveSafetyBar
+                       ] .
+
+
+###  https://l-jamora.github.io/sdco#DCJ_H
+:DCJ_H rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DCJ
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "H"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
+       rdfs:subClassOf :DCJ ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasNodeInventoryFeature ;
+                         owl:someValuesFrom :CoatedDebrisSafetyBar
+                       ] .
+
+
+###  https://l-jamora.github.io/sdco#DCK
+:DCK rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "DCK"
+                         ] ;
+     rdfs:subClassOf :NodeInventory ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :hasNodeInventoryFeature ;
+                       owl:someValuesFrom :FlowControl
+                     ] .
+
+
+###  https://l-jamora.github.io/sdco#DCK1_A
+:DCK1_A rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DCK
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "A"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:subClassOf :DCK ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasNodeInventoryFeature ;
+                          owl:someValuesFrom :WeirFlowControl
+                        ] .
+
+
+###  https://l-jamora.github.io/sdco#DCK1_B
+:DCK1_B rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DCK
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "B"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:subClassOf :DCK ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasNodeInventoryFeature ;
+                          owl:someValuesFrom :SyphonFlowControl
+                        ] .
+
+
+###  https://l-jamora.github.io/sdco#DCK1_C
+:DCK1_C rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DCK
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "C"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:subClassOf :DCK ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasNodeInventoryFeature ;
+                          owl:someValuesFrom :OrificePlateFlowControl
+                        ] .
+
+
+###  https://l-jamora.github.io/sdco#DCK1_D
+:DCK1_D rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DCK
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "D"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:subClassOf :DCK ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasNodeInventoryFeature ;
+                          owl:someValuesFrom :VortexFlowControl
+                        ] .
+
+
+###  https://l-jamora.github.io/sdco#DCK1_E
+:DCK1_E rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DCK
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "E"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:subClassOf :DCK ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasNodeInventoryFeature ;
+                          owl:someValuesFrom :GateValveFlowControl
+                        ] .
+
+
+###  https://l-jamora.github.io/sdco#DCK1_F
+:DCK1_F rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DCK
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "F"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:subClassOf :DCK ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasNodeInventoryFeature ;
+                          owl:someValuesFrom :FloatOperatedGateValveFlowControl
+                        ] .
+
+
+###  https://l-jamora.github.io/sdco#DCK1_G
+:DCK1_G rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DCK
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "G"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:subClassOf :DCK ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasNodeInventoryFeature ;
+                          owl:someValuesFrom :VenturiFlowControl
+                        ] .
+
+
+###  https://l-jamora.github.io/sdco#DCK1_H
+:DCK1_H rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DCK
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "H"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:subClassOf :DCK ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasNodeInventoryFeature ;
+                          owl:someValuesFrom :FlapValveFlowControl
+                        ] .
+
+
+###  https://l-jamora.github.io/sdco#DCK1_I
+:DCK1_I rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DCK
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "I"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:subClassOf :DCK ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasNodeInventoryFeature ;
+                          owl:someValuesFrom :ScreensFlowControl
+                        ] .
+
+
+###  https://l-jamora.github.io/sdco#DCK1_Z
+:DCK1_Z rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DCK
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "Z"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:subClassOf :DCK ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasNodeInventoryFeature ;
+                          owl:someValuesFrom :OtherFlowControl
+                        ] .
+
+
+###  https://l-jamora.github.io/sdco#DCK2_A
+:DCK2_A rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DCK
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "A"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:subClassOf :DCK ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasNodeInventoryFeature ;
+                          owl:someValuesFrom :ContinuationFlowControl
+                        ] ;
+        owl:disjointWith :DCK2_B .
+
+
+###  https://l-jamora.github.io/sdco#DCK2_B
+:DCK2_B rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DCK
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "B"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:subClassOf :DCK ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasNodeInventoryFeature ;
+                          owl:someValuesFrom :OverflowControl
+                        ] .
+
+
+###  https://l-jamora.github.io/sdco#DCL
+:DCL rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "DCL"
+                         ] ;
+     rdfs:subClassOf :NodeInventory ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :hasNodeInventoryFeature ;
+                       owl:someValuesFrom :OtherPipelineThroughManhole
+                     ] .
+
+
+###  https://l-jamora.github.io/sdco#DCL1_A
+:DCL1_A rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DCL
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "A"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:subClassOf :DCL ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasNodeInventoryFeature ;
+                          owl:someValuesFrom :NoAccessToPipe
+                        ] .
+
+
+###  https://l-jamora.github.io/sdco#DCL1_B
+:DCL1_B rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DCL
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "B"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:subClassOf :DCL ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasNodeInventoryFeature ;
+                          owl:someValuesFrom :AccessablePipeCoverInPlace
+                        ] .
+
+
+###  https://l-jamora.github.io/sdco#DCL1_C
+:DCL1_C rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DCL
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                     owl:hasValue "C"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:subClassOf :DCL ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasNodeInventoryFeature ;
+                          owl:someValuesFrom :AccesablePipeCoverMissing
+                        ] .
+
+
+###  https://l-jamora.github.io/sdco#DCL2_A
+:DCL2_A rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DCL
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "A"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:subClassOf :DCL ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasNodeInventoryFeature ;
+                          owl:someValuesFrom :DefectiveOtherPipelineThroughManhole
+                        ] ;
+        owl:disjointWith :DCL2_B .
+
+
+###  https://l-jamora.github.io/sdco#DCL2_B
+:DCL2_B rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :DCL
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2> ;
+                                                     owl:hasValue "B"
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:subClassOf :DCL ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasNodeInventoryFeature ;
+                          owl:someValuesFrom :WorkingOtherPipelineThroughManhole
+                        ] .
+
+
+###  https://l-jamora.github.io/sdco#DCM
+:DCM rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "DCM"
+                         ] ;
+     rdfs:subClassOf :NodeInventory ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :hasNodeInventoryFeature ;
+                       owl:someValuesFrom :GritTrapUnderCover
+                     ] .
+
+
+###  https://l-jamora.github.io/sdco#DCM_A
+:DCM_A rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DCM
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "A"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
+       rdfs:subClassOf :DCM ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasNodeInventoryFeature ;
+                         owl:someValuesFrom :DefectiveGritTrap
+                       ] .
+
+
+###  https://l-jamora.github.io/sdco#DCM_B
+:DCM_B rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DCM
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "B"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
+       rdfs:subClassOf :DCM ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasNodeInventoryFeature ;
+                         owl:someValuesFrom :MissingGritTrap
+                       ] .
+
+
+###  https://l-jamora.github.io/sdco#DCM_C
+:DCM_C rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DCM
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "C"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
+       rdfs:subClassOf :DCM ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasNodeInventoryFeature ;
+                         owl:someValuesFrom :WorkingGritTrap
+                       ] .
+
+
+###  https://l-jamora.github.io/sdco#DCN
+:DCN rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "DCN"
+                         ] ;
+     rdfs:subClassOf :NodeInventory ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :hasNodeInventoryFeature ;
+                       owl:someValuesFrom :SlitPit
+                     ] .
+
+
+###  https://l-jamora.github.io/sdco#DCN_A
+:DCN_A rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DCN
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "A"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
+       rdfs:subClassOf :DCN ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasNodeInventoryFeature ;
+                         owl:someValuesFrom :WorkingSlitPit
+                       ] ;
+       owl:disjointWith :DCN_B .
+
+
+###  https://l-jamora.github.io/sdco#DCN_B
+:DCN_B rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DCN
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "B"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
+       rdfs:subClassOf :DCN ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasNodeInventoryFeature ;
+                         owl:someValuesFrom :DefectiveSlitPit
+                       ] .
+
+
+###  https://l-jamora.github.io/sdco#DCO
+:DCO rdf:type owl:Class ;
+     owl:equivalentClass [ rdf:type owl:Restriction ;
+                           owl:onProperty <https://l-jamora.github.io/m150-onto#hasConditionCode> ;
+                           owl:hasValue "DCO"
+                         ] ;
+     rdfs:subClassOf :NodeInventory ,
+                     [ rdf:type owl:Restriction ;
+                       owl:onProperty :hasNodeInventoryFeature ;
+                       owl:someValuesFrom :CrossSection
+                     ] .
+
+
+###  https://l-jamora.github.io/sdco#DCO_A
+:DCO_A rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DCO
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "A"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
+       rdfs:subClassOf :DCO ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasNodeInventoryFeature ;
+                         owl:someValuesFrom :CircularCrossSection
+                       ] .
+
+
+###  https://l-jamora.github.io/sdco#DCO_B
+:DCO_B rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DCO
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "B"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
+       rdfs:subClassOf :DCO ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasNodeInventoryFeature ;
+                         owl:someValuesFrom :RectangularCrossSection
+                       ] .
+
+
+###  https://l-jamora.github.io/sdco#DCO_X
+:DCO_X rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DCO
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "X"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
+       rdfs:subClassOf :DCO ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasNodeInventoryFeature ;
+                         owl:someValuesFrom :LocallyDefinedCrossSection
+                       ] .
+
+
+###  https://l-jamora.github.io/sdco#DCO_Z
+:DCO_Z rdf:type owl:Class ;
+       owl:equivalentClass [ owl:intersectionOf ( :DCO
+                                                  [ rdf:type owl:Restriction ;
+                                                    owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1> ;
+                                                    owl:hasValue "Z"
+                                                  ]
+                                                ) ;
+                             rdf:type owl:Class
+                           ] ;
+       rdfs:subClassOf :DCO ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasNodeInventoryFeature ;
+                         owl:someValuesFrom :OtherCrossSection
+                       ] .
+
+
 ###  https://l-jamora.github.io/sdco#DamagedConnection
 :DamagedConnection rdf:type owl:Class ;
                    rdfs:subClassOf :DefectiveConnection .
@@ -6894,9 +8407,19 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
         rdfs:subClassOf :Observation .
 
 
+###  https://l-jamora.github.io/sdco#DefectiveBenching
+:DefectiveBenching rdf:type owl:Class ;
+                   rdfs:subClassOf :Benching .
+
+
 ###  https://l-jamora.github.io/sdco#DefectiveBrickworkOrMasonry
 :DefectiveBrickworkOrMasonry rdf:type owl:Class ;
                              rdfs:subClassOf :StructuralDefect .
+
+
+###  https://l-jamora.github.io/sdco#DefectiveChannel
+:DefectiveChannel rdf:type owl:Class ;
+                  rdfs:subClassOf :Channel .
 
 
 ###  https://l-jamora.github.io/sdco#DefectiveConnection
@@ -6914,9 +8437,36 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
                       rdfs:subClassOf :Lining .
 
 
+###  https://l-jamora.github.io/sdco#DefectiveGritTrap
+:DefectiveGritTrap rdf:type owl:Class ;
+                   rdfs:subClassOf :GritTrapUnderCover .
+
+
+###  https://l-jamora.github.io/sdco#DefectiveOtherPipelineThroughManhole
+:DefectiveOtherPipelineThroughManhole rdf:type owl:Class ;
+                                      rdfs:subClassOf :OtherPipelineThroughManhole ;
+                                      owl:disjointWith :WorkingOtherPipelineThroughManhole .
+
+
 ###  https://l-jamora.github.io/sdco#DefectiveRepair
 :DefectiveRepair rdf:type owl:Class ;
                  rdfs:subClassOf :StructuralDefect .
+
+
+###  https://l-jamora.github.io/sdco#DefectiveSafetyBar
+:DefectiveSafetyBar rdf:type owl:Class ;
+                    rdfs:subClassOf :SafetyChainBar .
+
+
+###  https://l-jamora.github.io/sdco#DefectiveSafetyChain
+:DefectiveSafetyChain rdf:type owl:Class ;
+                      rdfs:subClassOf :SafetyChainBar .
+
+
+###  https://l-jamora.github.io/sdco#DefectiveSlitPit
+:DefectiveSlitPit rdf:type owl:Class ;
+                  rdfs:subClassOf :SlitPit ;
+                  owl:disjointWith :WorkingSlitPit .
 
 
 ###  https://l-jamora.github.io/sdco#DefectiveStepOrLadder
@@ -6987,6 +8537,11 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 ###  https://l-jamora.github.io/sdco#DroppedInvertBrickworkOrMasonry
 :DroppedInvertBrickworkOrMasonry rdf:type owl:Class ;
                                  rdfs:subClassOf :DefectiveBrickworkOrMasonry .
+
+
+###  https://l-jamora.github.io/sdco#EggShapedConnectingPipeline
+:EggShapedConnectingPipeline rdf:type owl:Class ;
+                             rdfs:subClassOf :ConnectingPipeline .
 
 
 ###  https://l-jamora.github.io/sdco#EncrustationAttachedDeposit
@@ -7860,6 +9415,22 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
          rdfs:subClassOf :StructuralDefect .
 
 
+###  https://l-jamora.github.io/sdco#FlapValveFlowControl
+:FlapValveFlowControl rdf:type owl:Class ;
+                      rdfs:subClassOf :FlowControl .
+
+
+###  https://l-jamora.github.io/sdco#FloatOperatedGateValveFlowControl
+:FloatOperatedGateValveFlowControl rdf:type owl:Class ;
+                                   rdfs:subClassOf :FlowControl .
+
+
+###  https://l-jamora.github.io/sdco#FlowControl
+:FlowControl rdf:type owl:Class ;
+             rdfs:subClassOf :Inventory ;
+             rdfs:comment "Used to describe DCK: Flow Control"@en .
+
+
 ###  https://l-jamora.github.io/sdco#FlowFromIncomingPipe
 :FlowFromIncomingPipe rdf:type owl:Class ;
                       rdfs:subClassOf :OtherObservation .
@@ -7890,6 +9461,11 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
                rdfs:subClassOf :DefectiveConnection .
 
 
+###  https://l-jamora.github.io/sdco#GateValveFlowControl
+:GateValveFlowControl rdf:type owl:Class ;
+                      rdfs:subClassOf :FlowControl .
+
+
 ###  https://l-jamora.github.io/sdco#GeneralDeformation
 :GeneralDeformation rdf:type owl:Class ;
                     rdfs:subClassOf :Deformation ;
@@ -7911,6 +9487,14 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
                        rdfs:subClassOf :AttachedDeposits .
 
 
+###  https://l-jamora.github.io/sdco#GritTrapUnderCover
+:GritTrapUnderCover rdf:type owl:Class ;
+                    rdfs:subClassOf :Inventory ;
+                    rdfs:comment """Used to describe DCM.
+
+DCM This is used to record the presence of a grit trap (bucket) under the cover.  Characterisation The following information:  trap present with no defects (A); trap missing (with evidence that one was provided) (B); trap defective (C)."""@en .
+
+
 ###  https://l-jamora.github.io/sdco#GushingInfiltration
 :GushingInfiltration rdf:type owl:Class ;
                      rdfs:subClassOf :Infiltration .
@@ -7924,6 +9508,11 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 ###  https://l-jamora.github.io/sdco#Helical
 :Helical rdf:type owl:Class ;
          rdfs:subClassOf :Orientation .
+
+
+###  https://l-jamora.github.io/sdco#HighPointChannel
+:HighPointChannel rdf:type owl:Class ;
+                  rdfs:subClassOf :Channel .
 
 
 ###  https://l-jamora.github.io/sdco#HighWaterLevel
@@ -7943,7 +9532,7 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#HoleRepair
 :HoleRepair rdf:type owl:Class ;
-            rdfs:subClassOf :PipePointRepair .
+            rdfs:subClassOf :PointRepair .
 
 
 ###  https://l-jamora.github.io/sdco#Horizontal
@@ -8053,7 +9642,12 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#InjectedMortarRepair
 :InjectedMortarRepair rdf:type owl:Class ;
-                      rdfs:subClassOf :PipePointRepair .
+                      rdfs:subClassOf :PointRepair .
+
+
+###  https://l-jamora.github.io/sdco#InjectedSealingMaterialRepair
+:InjectedSealingMaterialRepair rdf:type owl:Class ;
+                               rdfs:subClassOf :PointRepair .
 
 
 ###  https://l-jamora.github.io/sdco#InspectionChamber
@@ -8394,12 +9988,27 @@ Also used to described BDG Loss of vision and its reasons for the vision obstruc
 
 ###  https://l-jamora.github.io/sdco#LocalisedLiningOfConnectionRepair
 :LocalisedLiningOfConnectionRepair rdf:type owl:Class ;
-                                   rdfs:subClassOf :PipePointRepair .
+                                   rdfs:subClassOf :PointRepair .
+
+
+###  https://l-jamora.github.io/sdco#LocalisedLiningOfManholeOrInspectionChamberRepair
+:LocalisedLiningOfManholeOrInspectionChamberRepair rdf:type owl:Class ;
+                                                   rdfs:subClassOf :PointRepair .
 
 
 ###  https://l-jamora.github.io/sdco#LocalisedLiningOfPipeRepair
 :LocalisedLiningOfPipeRepair rdf:type owl:Class ;
-                             rdfs:subClassOf :PipePointRepair .
+                             rdfs:subClassOf :PointRepair .
+
+
+###  https://l-jamora.github.io/sdco#LocallyDefinedConnectingPipeline
+:LocallyDefinedConnectingPipeline rdf:type owl:Class ;
+                                  rdfs:subClassOf :ConnectingPipeline .
+
+
+###  https://l-jamora.github.io/sdco#LocallyDefinedCrossSection
+:LocallyDefinedCrossSection rdf:type owl:Class ;
+                            rdfs:subClassOf :CrossSection .
 
 
 ###  https://l-jamora.github.io/sdco#Location
@@ -8440,6 +10049,11 @@ Has potential to be used to also describe other damage codes with more detail.""
 :LossOfVision rdf:type owl:Class ;
               rdfs:subClassOf :OtherObservation ;
               rdfs:comment "Reasons for loss of vision captured in subclass 'Cause'" .
+
+
+###  https://l-jamora.github.io/sdco#LowPointChannel
+:LowPointChannel rdf:type owl:Class ;
+                 rdfs:subClassOf :Channel .
 
 
 ###  https://l-jamora.github.io/sdco#MajorConnectionWithoutManholeOrInspectionChamber
@@ -8667,6 +10281,11 @@ Has potential to be used to also describe other damage codes with more detail.""
               rdfs:subClassOf :DefectiveCoverOrFrame .
 
 
+###  https://l-jamora.github.io/sdco#MissingGritTrap
+:MissingGritTrap rdf:type owl:Class ;
+                 rdfs:subClassOf :GritTrapUnderCover .
+
+
 ###  https://l-jamora.github.io/sdco#MissingLadderSupport
 :MissingLadderSupport rdf:type owl:Class ;
                       rdfs:subClassOf :DefectiveStepOrLadder .
@@ -8680,6 +10299,16 @@ Has potential to be used to also describe other damage codes with more detail.""
 ###  https://l-jamora.github.io/sdco#MissingRepairMaterial
 :MissingRepairMaterial rdf:type owl:Class ;
                        rdfs:subClassOf :DefectiveRepair .
+
+
+###  https://l-jamora.github.io/sdco#MissingSafetyBar
+:MissingSafetyBar rdf:type owl:Class ;
+                  rdfs:subClassOf :SafetyChainBar .
+
+
+###  https://l-jamora.github.io/sdco#MissingSafetyChain
+:MissingSafetyChain rdf:type owl:Class ;
+                    rdfs:subClassOf :SafetyChainBar .
 
 
 ###  https://l-jamora.github.io/sdco#MissingStep
@@ -8701,6 +10330,36 @@ Has potential to be used to also describe other damage codes with more detail.""
 ###  https://l-jamora.github.io/sdco#MissingWallSurface
 :MissingWallSurface rdf:type owl:Class ;
                     rdfs:subClassOf :Surface .
+
+
+###  https://l-jamora.github.io/sdco#NarrowsChannel
+:NarrowsChannel rdf:type owl:Class ;
+                rdfs:subClassOf :Channel .
+
+
+###  https://l-jamora.github.io/sdco#NoAccessToPipe
+:NoAccessToPipe rdf:type owl:Class ;
+                rdfs:subClassOf :OtherPipelineThroughManhole .
+
+
+###  https://l-jamora.github.io/sdco#NoBenching
+:NoBenching rdf:type owl:Class ;
+            rdfs:subClassOf :Benching .
+
+
+###  https://l-jamora.github.io/sdco#NoChannel
+:NoChannel rdf:type owl:Class ;
+           rdfs:subClassOf :Channel .
+
+
+###  https://l-jamora.github.io/sdco#NoDefectsSafetyBar
+:NoDefectsSafetyBar rdf:type owl:Class ;
+                    rdfs:subClassOf :SafetyChainBar .
+
+
+###  https://l-jamora.github.io/sdco#NoDefectsSafetyChain
+:NoDefectsSafetyChain rdf:type owl:Class ;
+                      rdfs:subClassOf :SafetyChainBar .
 
 
 ###  https://l-jamora.github.io/sdco#NodeConnection
@@ -8772,6 +10431,11 @@ Has potential to be used to also describe other damage codes with more detail.""
              rdfs:subClassOf :Observation .
 
 
+###  https://l-jamora.github.io/sdco#OrificePlateFlowControl
+:OrificePlateFlowControl rdf:type owl:Class ;
+                         rdfs:subClassOf :FlowControl .
+
+
 ###  https://l-jamora.github.io/sdco#OtherAtmosphereWithinPipeline
 :OtherAtmosphereWithinPipeline rdf:type owl:Class ;
                                rdfs:subClassOf :AtmosphereWithinPipeline .
@@ -8793,6 +10457,11 @@ Has potential to be used to also describe other damage codes with more detail.""
             rdfs:comment "General catch all for any other cause / obstructions described in several damage codes." .
 
 
+###  https://l-jamora.github.io/sdco#OtherConnectingPipeline
+:OtherConnectingPipeline rdf:type owl:Class ;
+                         rdfs:subClassOf :ConnectingPipeline .
+
+
 ###  https://l-jamora.github.io/sdco#OtherConnection
 :OtherConnection rdf:type owl:Class ;
                  rdfs:subClassOf :Connection .
@@ -8800,7 +10469,12 @@ Has potential to be used to also describe other damage codes with more detail.""
 
 ###  https://l-jamora.github.io/sdco#OtherConnectionRepair
 :OtherConnectionRepair rdf:type owl:Class ;
-                       rdfs:subClassOf :PipePointRepair .
+                       rdfs:subClassOf :PointRepair .
+
+
+###  https://l-jamora.github.io/sdco#OtherCrossSection
+:OtherCrossSection rdf:type owl:Class ;
+                   rdfs:subClassOf :CrossSection .
 
 
 ###  https://l-jamora.github.io/sdco#OtherDefectiveConnection
@@ -8823,9 +10497,14 @@ Has potential to be used to also describe other damage codes with more detail.""
                             rdfs:subClassOf :DefectiveStepOrLadder .
 
 
+###  https://l-jamora.github.io/sdco#OtherFlowControl
+:OtherFlowControl rdf:type owl:Class ;
+                  rdfs:subClassOf :FlowControl .
+
+
 ###  https://l-jamora.github.io/sdco#OtherInjectedSealingMaterialRepair
 :OtherInjectedSealingMaterialRepair rdf:type owl:Class ;
-                                    rdfs:subClassOf :PipePointRepair .
+                                    rdfs:subClassOf :PointRepair .
 
 
 ###  https://l-jamora.github.io/sdco#OtherLiningDefect
@@ -8849,6 +10528,19 @@ Has potential to be used to also describe other damage codes with more detail.""
                rdfs:subClassOf :Obstacle .
 
 
+###  https://l-jamora.github.io/sdco#OtherPipelineThroughManhole
+:OtherPipelineThroughManhole rdf:type owl:Class ;
+                             rdfs:subClassOf :Inventory ;
+                             rdfs:comment """To describe DCL.
+
+DCL !There is another wastewater pipeline through the manhole or inspection  chamber.  The connections to the manhole or inspection chamber joined to each end of the pipeline should be coded using DCA and DCG.\" Characterisation 1 There is:  no access to the pipe (A); access is provided – cover in place (B);  !access is provided – cover missing (C).\"  Characterisation 2 !The pipeline is:\"  defective (A); not defective (B)."""@en .
+
+
+###  https://l-jamora.github.io/sdco#OtherPointRepair
+:OtherPointRepair rdf:type owl:Class ;
+                  rdfs:subClassOf :PointRepair .
+
+
 ###  https://l-jamora.github.io/sdco#OtherSettledDeposit
 :OtherSettledDeposit rdf:type owl:Class ;
                      rdfs:subClassOf :SettledDeposit .
@@ -8866,7 +10558,7 @@ Has potential to be used to also describe other damage codes with more detail.""
 
 ###  https://l-jamora.github.io/sdco#OtherTrenchlessRepair
 :OtherTrenchlessRepair rdf:type owl:Class ;
-                       rdfs:subClassOf :PipePointRepair .
+                       rdfs:subClassOf :PointRepair .
 
 
 ###  https://l-jamora.github.io/sdco#OtherVermin
@@ -8877,6 +10569,16 @@ Has potential to be used to also describe other damage codes with more detail.""
 ###  https://l-jamora.github.io/sdco#Outfall
 :Outfall rdf:type owl:Class ;
          rdfs:subClassOf :NodeType .
+
+
+###  https://l-jamora.github.io/sdco#OvalConnectingPipeline
+:OvalConnectingPipeline rdf:type owl:Class ;
+                        rdfs:subClassOf :ConnectingPipeline .
+
+
+###  https://l-jamora.github.io/sdco#OverflowControl
+:OverflowControl rdf:type owl:Class ;
+                 rdfs:subClassOf :FlowControl .
 
 
 ###  https://l-jamora.github.io/sdco#OxygenDeficiency
@@ -8924,14 +10626,9 @@ Has potential to be used to also describe other damage codes with more detail.""
            rdfs:subClassOf :Reference .
 
 
-###  https://l-jamora.github.io/sdco#PipePointRepair
-:PipePointRepair rdf:type owl:Class ;
-                 rdfs:subClassOf :PointRepair .
-
-
 ###  https://l-jamora.github.io/sdco#PipeReplacedRepair
 :PipeReplacedRepair rdf:type owl:Class ;
-                    rdfs:subClassOf :PipePointRepair .
+                    rdfs:subClassOf :PointRepair .
 
 
 ###  https://l-jamora.github.io/sdco#PipeUnderBenching
@@ -8983,6 +10680,16 @@ Has potential to be used to also describe other damage codes with more detail.""
 ###  https://l-jamora.github.io/sdco#RatVermin
 :RatVermin rdf:type owl:Class ;
            rdfs:subClassOf :Vermin .
+
+
+###  https://l-jamora.github.io/sdco#RectangularConnectingPipeline
+:RectangularConnectingPipeline rdf:type owl:Class ;
+                               rdfs:subClassOf :ConnectingPipeline .
+
+
+###  https://l-jamora.github.io/sdco#RectangularCrossSection
+:RectangularCrossSection rdf:type owl:Class ;
+                         rdfs:subClassOf :CrossSection .
 
 
 ###  https://l-jamora.github.io/sdco#Reference
@@ -9076,6 +10783,14 @@ Has potential to be used to also describe other damage codes with more detail.""
 ###  https://l-jamora.github.io/sdco#Roots
 :Roots rdf:type owl:Class ;
        rdfs:subClassOf :OperationalDefect .
+
+
+###  https://l-jamora.github.io/sdco#SafetyChainBar
+:SafetyChainBar rdf:type owl:Class ;
+                rdfs:subClassOf :Inventory ;
+                rdfs:comment """To describe DCJ:
+
+DCJ This is used to record the location and condition of safety chains/bars on the  outgoing connections. Characterisation The following information:  safety chain present with no defects (A); safety chain missing (with evidence that one was provided) (B); safety chain defective (C); safety chain in position but coated with debris (D); safety bar present with no defects (E); safety bar missing (with evidence that one was provided) (F); safety bar defective (G); safety bar in position but coated with debris (H)"""@en .
 
 
 ###  https://l-jamora.github.io/sdco#Schlauchliner
@@ -9343,6 +11058,11 @@ Has potential to be used to also describe other damage codes with more detail.""
                              rdfs:subClassOf :Schädlingsbekämpfung .
 
 
+###  https://l-jamora.github.io/sdco#ScreensFlowControl
+:ScreensFlowControl rdf:type owl:Class ;
+                    rdfs:subClassOf :FlowControl .
+
+
 ###  https://l-jamora.github.io/sdco#SeamCoveringSeparation
 :SeamCoveringSeparation rdf:type owl:Class ;
                         rdfs:subClassOf :Lining .
@@ -9361,6 +11081,14 @@ Has potential to be used to also describe other damage codes with more detail.""
 ###  https://l-jamora.github.io/sdco#Silt
 :Silt rdf:type owl:Class ;
       rdfs:subClassOf :Cause .
+
+
+###  https://l-jamora.github.io/sdco#SlitPit
+:SlitPit rdf:type owl:Class ;
+         rdfs:subClassOf :Inventory ;
+         rdfs:comment """Used to describe DCN.
+
+Characterisation The following information:  pit not defective (A); pit defective (B)."""@en .
 
 
 ###  https://l-jamora.github.io/sdco#SoftLiningMaterial
@@ -9413,6 +11141,11 @@ Has potential to be used to also describe other damage codes with more detail.""
                       rdfs:subClassOf :Infiltration .
 
 
+###  https://l-jamora.github.io/sdco#SyphonFlowControl
+:SyphonFlowControl rdf:type owl:Class ;
+                   rdfs:subClassOf :FlowControl .
+
+
 ###  https://l-jamora.github.io/sdco#TapRoot
 :TapRoot rdf:type owl:Class ;
          rdfs:subClassOf :Roots .
@@ -9421,6 +11154,11 @@ Has potential to be used to also describe other damage codes with more detail.""
 ###  https://l-jamora.github.io/sdco#TurbidWastewater
 :TurbidWastewater rdf:type owl:Class ;
                   rdfs:subClassOf :Wastewater .
+
+
+###  https://l-jamora.github.io/sdco#UShapeConnectingPipeline
+:UShapeConnectingPipeline rdf:type owl:Class ;
+                          rdfs:subClassOf :ConnectingPipeline .
 
 
 ###  https://l-jamora.github.io/sdco#UnknownWastewater
@@ -9436,6 +11174,11 @@ Has potential to be used to also describe other damage codes with more detail.""
 ###  https://l-jamora.github.io/sdco#VentilationPipeConnection
 :VentilationPipeConnection rdf:type owl:Class ;
                            rdfs:subClassOf :NodeConnection .
+
+
+###  https://l-jamora.github.io/sdco#VenturiFlowControl
+:VenturiFlowControl rdf:type owl:Class ;
+                    rdfs:subClassOf :FlowControl .
 
 
 ###  https://l-jamora.github.io/sdco#Vermin
@@ -9543,10 +11286,20 @@ Has potential to be used to also describe other damage codes with more detail.""
                           rdfs:subClassOf :StructuralDefect .
 
 
+###  https://l-jamora.github.io/sdco#VortexFlowControl
+:VortexFlowControl rdf:type owl:Class ;
+                   rdfs:subClassOf :FlowControl .
+
+
 ###  https://l-jamora.github.io/sdco#WallInfiltration
 :WallInfiltration rdf:type owl:Class ;
                   rdfs:subClassOf :Infiltration ;
                   rdfs:comment "Infiltration through the wall of the manhole or inspection chamber"@en .
+
+
+###  https://l-jamora.github.io/sdco#WallPartRepair
+:WallPartRepair rdf:type owl:Class ;
+                rdfs:subClassOf :PointRepair .
 
 
 ###  https://l-jamora.github.io/sdco#Wastewater
@@ -9564,9 +11317,44 @@ Has potential to be used to also describe other damage codes with more detail.""
                        rdfs:subClassOf :Obstacle .
 
 
+###  https://l-jamora.github.io/sdco#WeirFlowControl
+:WeirFlowControl rdf:type owl:Class ;
+                 rdfs:subClassOf :FlowControl .
+
+
 ###  https://l-jamora.github.io/sdco#WeldFailure
 :WeldFailure rdf:type owl:Class ;
              rdfs:subClassOf :StructuralDefect .
+
+
+###  https://l-jamora.github.io/sdco#WidensChannel
+:WidensChannel rdf:type owl:Class ;
+               rdfs:subClassOf :Channel .
+
+
+###  https://l-jamora.github.io/sdco#WorkingBenching
+:WorkingBenching rdf:type owl:Class ;
+                 rdfs:subClassOf :Benching .
+
+
+###  https://l-jamora.github.io/sdco#WorkingChannel
+:WorkingChannel rdf:type owl:Class ;
+                rdfs:subClassOf :Channel .
+
+
+###  https://l-jamora.github.io/sdco#WorkingGritTrap
+:WorkingGritTrap rdf:type owl:Class ;
+                 rdfs:subClassOf :GritTrapUnderCover .
+
+
+###  https://l-jamora.github.io/sdco#WorkingOtherPipelineThroughManhole
+:WorkingOtherPipelineThroughManhole rdf:type owl:Class ;
+                                    rdfs:subClassOf :OtherPipelineThroughManhole .
+
+
+###  https://l-jamora.github.io/sdco#WorkingSlitPit
+:WorkingSlitPit rdf:type owl:Class ;
+                rdfs:subClassOf :SlitPit .
 
 
 ###  https://l-jamora.github.io/sdco#WrinkledLining
@@ -9909,6 +11697,14 @@ Has potential to be used to also describe other damage codes with more detail.""
 #################################################################
 
 [ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :AccesablePipeCoverMissing
+                :AccessablePipeCoverInPlace
+                :NoAccessToPipe
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
   owl:members ( :AggregateProjectingFromSurface
                 :Blistering
                 :CorrodedReinforcement
@@ -9940,6 +11736,33 @@ Has potential to be used to also describe other damage codes with more detail.""
                 :StarFissure
                 :Up
                 :Vertical
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :ArchShapedConnectingPipeline
+                :CircularConnectingPipeline
+                :EggShapedConnectingPipeline
+                :LocallyDefinedConnectingPipeline
+                :OtherConnectingPipeline
+                :OvalConnectingPipeline
+                :RectangularConnectingPipeline
+                :UShapeConnectingPipeline
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :AtmosphereWithinPipeline
+                :ConnectingPipelineDischargeDirection
+                :FlowFromIncomingPipe
+                :GeneralPhotograph
+                :GeneralRemark
+                :InspectionTermination
+                :LossOfVision
+                :Wastewater
+                :WaterLevel
               )
 ] .
 
@@ -10397,10 +12220,18 @@ Has potential to be used to also describe other damage codes with more detail.""
 
 [ rdf:type owl:AllDisjointClasses ;
   owl:members ( :Benching
+                :Channel
+                :ConnectingPipeline
                 :Connection
+                :CrossSection
+                :FlowControl
+                :GritTrapUnderCover
                 :NodeType
+                :OtherPipelineThroughManhole
                 :PointRepair
+                :SafetyChainBar
                 :SewerCurvature
+                :SlitPit
               )
 ] .
 
@@ -10479,7 +12310,6 @@ Has potential to be used to also describe other damage codes with more detail.""
 [ rdf:type owl:AllDisjointClasses ;
   owl:members ( :ChannelInBenching
                 :ConnectionDischargeBneching
-                :OtherBenching
                 :PipeUnderBenching
                 :RampChannelBenching
               )
@@ -10496,32 +12326,10 @@ Has potential to be used to also describe other damage codes with more detail.""
 
 
 [ rdf:type owl:AllDisjointClasses ;
-  owl:members ( :ChiselledPlainConnection
-                :ChiselledSaddleConnection
-                :ClosedConnection
-                :ConnectionNotEvident
-                :DrilledPlainConnection
-                :DrilledSaddleConnection
-                :Junction
-                :NodeConnection
-                :OpenConnection
-                :OtherConnection
-              )
-] .
-
-
-[ rdf:type owl:AllDisjointClasses ;
-  owl:members ( :ChiselledPlainConnection
-                :ChiselledSaddleConnection
-                :ClosedConnection
-                :ConnectionNotEvident
-                :DrilledPlainConnection
-                :DrilledSaddleConnection
-                :Junction
-                :NodeConnection
-                :OpenConnection
-                :OtherConnection
-                :PipeConnection
+  owl:members ( :CircularCrossSection
+                :LocallyDefinedCrossSection
+                :OtherCrossSection
+                :RectangularCrossSection
               )
 ] .
 
@@ -10535,6 +12343,27 @@ Has potential to be used to also describe other damage codes with more detail.""
                 :Longitudinal
                 :StarFissure
                 :Vertical
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :CoatedDebrisSafetyBar
+                :CoatedDebrisSafetyChain
+                :DefectiveSafetyBar
+                :DefectiveSafetyChain
+                :MissingSafetyBar
+                :MissingSafetyChain
+                :NoDefectsSafetyBar
+                :NoDefectsSafetyChain
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :ConnectionClosed
+                :ConnectionDischargeFromNode
+                :ConnectionDischargeIntoNode
               )
 ] .
 
@@ -10856,6 +12685,171 @@ Has potential to be used to also describe other damage codes with more detail.""
 
 
 [ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DCA
+                :DCB
+                :DCG
+                :DCH
+                :DCI
+                :DCJ
+                :DCK
+                :DCL
+                :DCM
+                :DCN
+                :DCO
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DCA1_A
+                :DCA1_B
+                :DCA1_C
+                :DCA1_D
+                :DCA1_E
+                :DCA1_F
+                :DCA1_Z
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DCA2_A
+                :DCA2_B
+                :DCA2_C
+                :DCA2_D
+                :DCA2_Z
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DCB_A
+                :DCB_B
+                :DCB_C
+                :DCB_D
+                :DCB_E
+                :DCB_F
+                :DCB_Z
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DCG1_A
+                :DCG1_B
+                :DCG1_C
+                :DCG1_D
+                :DCG1_E
+                :DCG1_F
+                :DCG1_X
+                :DCG1_Z
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DCG2_A
+                :DCG2_B
+                :DCG2_C
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DCH_A
+                :DCH_B
+                :DCH_C
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DCI1_A
+                :DCI1_B
+                :DCI1_C
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DCI2_A
+                :DCI2_B
+                :DCI2_C
+                :DCI2_D
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DCJ_A
+                :DCJ_B
+                :DCJ_C
+                :DCJ_D
+                :DCJ_E
+                :DCJ_F
+                :DCJ_G
+                :DCJ_H
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DCK1_A
+                :DCK1_B
+                :DCK1_C
+                :DCK1_D
+                :DCK1_E
+                :DCK1_F
+                :DCK1_G
+                :DCK1_H
+                :DCK1_I
+                :DCK1_Z
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DCL1_A
+                :DCL1_B
+                :DCL1_C
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DCM_A
+                :DCM_B
+                :DCM_C
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DCO_A
+                :DCO_B
+                :DCO_X
+                :DCO_Z
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DefectiveChannel
+                :NoChannel
+                :WorkingChannel
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DefectiveGritTrap
+                :MissingGritTrap
+                :WorkingGritTrap
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
   owl:members ( :Entfernen
                 :Hutprofil
                 :Kurzliner
@@ -11040,6 +13034,30 @@ Has potential to be used to also describe other damage codes with more detail.""
 
 
 [ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :FlapValveFlowControl
+                :FloatOperatedGateValveFlowControl
+                :GateValveFlowControl
+                :OrificePlateFlowControl
+                :OtherFlowControl
+                :ScreensFlowControl
+                :SyphonFlowControl
+                :VenturiFlowControl
+                :VortexFlowControl
+                :WeirFlowControl
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :HighPointChannel
+                :LowPointChannel
+                :NarrowsChannel
+                :WidensChannel
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
   owl:members ( :HoleRepair
                 :InjectedMortarRepair
                 :LocalisedLiningOfConnectionRepair
@@ -11170,6 +13188,14 @@ Has potential to be used to also describe other damage codes with more detail.""
                 :Manschette_BBF_C
                 :Manschette_BBF_D
                 :Manschette_BBF_Z
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :NodeConnection
+                :OtherConnection
+                :PipeConnection
               )
 ] .
 
