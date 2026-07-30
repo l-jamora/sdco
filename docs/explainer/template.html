@@ -1,0 +1,1076 @@
+<meta charset="utf-8">
+<title>SDCO — Giving Meaning to Sewer Inspection Data</title>
+
+<style>
+  :root {
+    --ground:   #F4F2ED;
+    --surface:  #FFFFFF;
+    --ink:      #14161A;
+    --muted:    #6B6C68;
+    --hairline: #DAD6CC;
+    --accent:   #E8A32D;
+    --accent-ink: #7A4E00;
+    --fabric:    #B5482F;
+    --operation: #3F7A6B;
+    --inventory: #4A6E8A;
+    --other:     #7A7570;
+
+    --font-display: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --font-body: Georgia, "Iowan Old Style", "Times New Roman", serif;
+    --font-mono: ui-monospace, "Cascadia Mono", Consolas, "DejaVu Sans Mono", monospace;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ground:   #131416;
+      --surface:  #1B1D20;
+      --ink:      #ECE8E1;
+      --muted:    #9A9B96;
+      --hairline: #2C2F33;
+      --accent:   #F0B23F;
+      --accent-ink: #F0B23F;
+      --fabric:    #E0725A;
+      --operation: #5FA08F;
+      --inventory: #7098B8;
+      --other:     #9A948E;
+    }
+  }
+
+  :root[data-theme="light"] {
+    --ground:   #F4F2ED;
+    --surface:  #FFFFFF;
+    --ink:      #14161A;
+    --muted:    #6B6C68;
+    --hairline: #DAD6CC;
+    --accent:   #E8A32D;
+    --accent-ink: #7A4E00;
+    --fabric:    #B5482F;
+    --operation: #3F7A6B;
+    --inventory: #4A6E8A;
+    --other:     #7A7570;
+  }
+
+  :root[data-theme="dark"] {
+    --ground:   #131416;
+    --surface:  #1B1D20;
+    --ink:      #ECE8E1;
+    --muted:    #9A9B96;
+    --hairline: #2C2F33;
+    --accent:   #F0B23F;
+    --accent-ink: #F0B23F;
+    --fabric:    #E0725A;
+    --operation: #5FA08F;
+    --inventory: #7098B8;
+    --other:     #9A948E;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 1.0625rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 1160px; margin: 0 auto; padding: 0 clamp(1.1rem, 4vw, 3rem); }
+
+  /* ---- structural bands: provenance rail + content ---- */
+  .band {
+    display: grid;
+    grid-template-columns: 12.5rem minmax(0, 1fr);
+    gap: clamp(1.4rem, 4vw, 3.25rem);
+    padding: clamp(2.75rem, 6vw, 4.75rem) 0;
+    border-top: 1px solid var(--hairline);
+  }
+  .band > .rail { grid-column: 1; }
+  .band > .body { grid-column: 2; }
+
+  @media (max-width: 900px) {
+    .band { grid-template-columns: minmax(0, 1fr); gap: 1.1rem; }
+    .band > .rail, .band > .body { grid-column: 1; }
+    .band > .rail { order: 2; }
+    .band > .body { order: 1; }
+  }
+
+  .rail {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    line-height: 1.6;
+    color: var(--muted);
+    letter-spacing: 0.01em;
+  }
+  .rail b {
+    display: block;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--ink);
+    margin-bottom: 0.55rem;
+    font-size: 0.66rem;
+  }
+  .rail p { margin: 0 0 0.7rem; overflow-wrap: anywhere; }
+  .rail .fig { color: var(--ink); }
+
+  @media (max-width: 900px) {
+    .rail {
+      border-left: 2px solid var(--accent);
+      padding-left: 0.8rem;
+      margin-top: 0.6rem;
+    }
+  }
+
+  /* ---- type ---- */
+  h1, h2, h3 { font-family: var(--font-display); text-wrap: balance; margin: 0; }
+  h2 {
+    font-size: clamp(1.5rem, 3.4vw, 2.1rem);
+    font-weight: 750;
+    letter-spacing: -0.02em;
+    line-height: 1.14;
+    margin-bottom: 1.1rem;
+  }
+  h3 {
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.11em;
+    color: var(--muted);
+    margin: 2.1rem 0 0.85rem;
+  }
+  p { margin: 0 0 1.05rem; max-width: 65ch; }
+  .lede { font-size: 1.16rem; line-height: 1.55; }
+  strong { font-weight: 700; }
+  em.turn { font-style: italic; color: var(--accent-ink); font-weight: 700; }
+  a { color: var(--accent-ink); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+
+  .mono { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+  .num  { font-variant-numeric: tabular-nums; }
+
+  /* ---- hero ---- */
+  .hero { padding: clamp(3rem, 9vw, 6.5rem) 0 clamp(2rem, 5vw, 3.25rem); }
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: clamp(1.5rem, 4vw, 2.5rem);
+  }
+  .three-letters {
+    font-family: var(--font-mono);
+    font-size: clamp(4.5rem, 22vw, 12rem);
+    font-weight: 700;
+    line-height: 0.86;
+    letter-spacing: 0.02em;
+    margin: 0 0 1.25rem;
+    color: var(--ink);
+  }
+  .hero-row {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--muted);
+    border-top: 1px solid var(--hairline);
+    border-bottom: 1px solid var(--hairline);
+    padding: 0.85rem 0;
+    margin-bottom: 1.6rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+  }
+  .hero-row span { white-space: nowrap; }
+  .hero-row span b { color: var(--ink); font-weight: 700; }
+  .hero-said { font-size: 1.3rem; line-height: 1.45; max-width: 34ch; }
+  .hero-means {
+    font-size: 1.3rem;
+    line-height: 1.45;
+    max-width: 44ch;
+    border-left: 3px solid var(--accent);
+    padding-left: 1.1rem;
+    margin-top: 1.5rem;
+  }
+  .hero-means .cls { font-family: var(--font-mono); font-size: 0.95em; font-weight: 700; }
+  .live-badge {
+    font-family: var(--font-mono); font-size: 0.74rem; color: var(--muted);
+    display: flex; align-items: center; gap: 0.5rem; margin: -0.6rem 0 1.8rem; max-width: 46ch;
+  }
+  .live-badge i { width: 0.5rem; height: 0.5rem; border-radius: 50%; background: var(--accent); flex: none; }
+
+  .code-nav { display: flex; align-items: center; gap: clamp(0.5rem, 2vw, 1.4rem); margin: 0; }
+  .code-arrow {
+    font-family: var(--font-display); font-size: clamp(1.5rem, 4vw, 2.4rem); line-height: 1;
+    background: transparent; border: 1px solid var(--hairline); color: var(--muted);
+    width: 1.8em; height: 1.8em; cursor: pointer; flex: none; border-radius: 2px;
+    transition: border-color 140ms ease, color 140ms ease;
+  }
+  .code-arrow:hover { border-color: var(--accent); color: var(--accent-ink); }
+  .code-current {
+    display: inline-block;
+    background: transparent;
+    border: none;
+    border-bottom: 3px dashed var(--hairline);
+    padding: 0;
+    cursor: pointer;
+    max-width: 100%;
+    text-align: left;
+    transition: border-color 140ms ease;
+  }
+  .code-current:hover { border-bottom-color: var(--accent); }
+  .code-current:focus-visible, .code-arrow:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+  .code-hint { font-family: var(--font-mono); font-size: 0.74rem; color: var(--muted); margin: 0.6rem 0 1.6rem; }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .reveal { animation: rise 900ms cubic-bezier(.2,.7,.3,1) both; animation-delay: 380ms; }
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(9px); }
+      to   { opacity: 1; transform: none; }
+    }
+  }
+
+  /* ---- figures / panels ---- */
+  .panel {
+    background: var(--surface);
+    border: 1px solid var(--hairline);
+    padding: clamp(1.05rem, 2.5vw, 1.6rem);
+    margin: 1.5rem 0;
+  }
+  .scroll-x { overflow-x: auto; }
+
+  /* code pair (BAB vs DAB) */
+  .pair { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+  .pair-card { background: var(--surface); border: 1px solid var(--hairline); border-top: 3px solid var(--fabric); padding: 1.1rem 1.2rem; }
+  .pair-card .code { font-family: var(--font-mono); font-size: 2.1rem; font-weight: 700; line-height: 1; letter-spacing: 0.04em; }
+  .pair-card .where { font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); margin: 0.5rem 0 0.7rem; }
+  .pair-card .what { font-size: 0.98rem; margin: 0; }
+  .pair-note { font-size: 0.97rem; color: var(--muted); max-width: 60ch; }
+
+  /* reference grid */
+  table.grid { border-collapse: collapse; width: 100%; min-width: 40rem; }
+  table.grid th, table.grid td { border: 1px solid var(--hairline); padding: 0.6rem 0.7rem; text-align: left; vertical-align: top; }
+  table.grid thead th {
+    font-family: var(--font-display); font-size: 0.7rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); background: var(--surface);
+  }
+  table.grid tbody th {
+    font-family: var(--font-mono); font-size: 0.78rem; font-weight: 700;
+    white-space: nowrap; background: var(--surface); width: 1%;
+  }
+  table.grid tbody th small { display: block; font-weight: 400; color: var(--muted); letter-spacing: 0.04em; }
+  .chip {
+    display: inline-block; font-family: var(--font-mono); font-size: 0.74rem; font-weight: 700;
+    border: 1px solid currentColor; border-radius: 2px; padding: 0.08rem 0.34rem;
+    margin: 0.15rem 0.2rem 0.15rem 0; white-space: nowrap;
+  }
+  .chip .n { font-weight: 400; opacity: 0.72; }
+  .chip.empty { color: var(--muted); border-style: dashed; opacity: 0.6; font-weight: 400; }
+  .f-Fabric    { color: var(--fabric); }
+  .f-Operation { color: var(--operation); }
+  .f-Inventory { color: var(--inventory); }
+  .f-Other     { color: var(--other); }
+
+  .key { display: flex; flex-wrap: wrap; gap: 0.4rem 1.1rem; font-family: var(--font-mono); font-size: 0.72rem; color: var(--muted); margin-top: 0.9rem; }
+  .key i { display: inline-block; width: 0.66rem; height: 0.66rem; margin-right: 0.35rem; background: currentColor; vertical-align: baseline; }
+
+  /* taxonomy tree */
+  .tree { font-family: var(--font-mono); font-size: 0.83rem; line-height: 1.5; }
+  .tree details { margin: 0; }
+  .tree summary {
+    cursor: pointer; padding: 0.13rem 0; list-style: none; display: flex;
+    align-items: baseline; gap: 0.5rem; border-radius: 2px;
+  }
+  .tree summary::-webkit-details-marker { display: none; }
+  .tree summary::before { content: "+"; color: var(--accent); width: 0.75rem; flex: none; font-weight: 700; }
+  .tree details[open] > summary::before { content: "−"; }
+  .tree .leaf { display: flex; align-items: baseline; gap: 0.5rem; padding: 0.13rem 0 0.13rem 1.25rem; }
+  .tree .kids { padding-left: 1.15rem; border-left: 1px solid var(--hairline); margin-left: 0.3rem; }
+  .tree .cnt { font-size: 0.72rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .tree .cnt.hit { color: var(--accent-ink); font-weight: 700; }
+  .tree .zero { opacity: 0.42; }
+  :root:not(.show-unused) .tree .zero { display: none; }
+  .toggle-row { display: flex; align-items: center; gap: 0.5rem; font-family: var(--font-mono); font-size: 0.75rem; color: var(--muted); margin-bottom: 0.9rem; }
+
+  /* taxonomy graph */
+  .graph-wrap { max-height: 34rem; overflow: auto; }
+  .graph-svg { display: block; font-family: var(--font-mono); font-size: 0.72rem; }
+  .graph-edge { fill: none; stroke: var(--hairline); stroke-width: 1.4; }
+  .graph-node circle { fill: var(--surface); stroke: var(--muted); stroke-width: 1.4; }
+  .graph-node.hit circle { fill: var(--accent); stroke: var(--accent-ink); }
+  .graph-node text { fill: var(--ink); }
+  .graph-node.zero text { fill: var(--muted); }
+  .graph-node .marker { fill: var(--accent-ink); font-weight: 700; }
+  .graph-node.expandable { cursor: pointer; }
+
+  /* axiom block */
+  pre.axiom, pre.sparql {
+    font-family: var(--font-mono);
+    font-size: 0.79rem;
+    line-height: 1.55;
+    background: var(--surface);
+    border: 1px solid var(--hairline);
+    border-left: 3px solid var(--accent);
+    padding: 0.9rem 1rem;
+    margin: 1.1rem 0;
+    overflow-x: auto;
+    white-space: pre;
+  }
+  pre.axiom { font-size: 0.95rem; text-align: center; }
+
+  /* question demo */
+  .qbar { display: flex; flex-wrap: wrap; gap: 0.45rem; margin-bottom: 1.4rem; }
+  .qbtn {
+    font-family: var(--font-body); font-size: 0.93rem; text-align: left;
+    background: var(--surface); color: var(--ink);
+    border: 1px solid var(--hairline); border-radius: 2px;
+    padding: 0.5rem 0.8rem; cursor: pointer;
+    transition: border-color 140ms ease, color 140ms ease;
+  }
+  .qbtn:hover { border-color: var(--accent); }
+  .qbtn[aria-pressed="true"] {
+    border-color: var(--accent); border-left-width: 3px;
+    color: var(--accent-ink); font-weight: 700;
+  }
+  :is(.qbtn, summary, input):focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  .answer { background: var(--surface); border: 1px solid var(--hairline); }
+  .answer-head { padding: clamp(1rem, 2.4vw, 1.4rem); border-bottom: 1px solid var(--hairline); }
+  .answer-head .q { font-size: 1.22rem; font-weight: 700; font-family: var(--font-display); letter-spacing: -0.01em; margin-bottom: 0.35rem; }
+  .answer-head .count { font-family: var(--font-mono); font-size: 0.76rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); }
+  .answer-head .count b { color: var(--accent-ink); font-size: 1.05rem; }
+
+  table.rows { border-collapse: collapse; width: 100%; font-family: var(--font-mono); font-size: 0.76rem; font-variant-numeric: tabular-nums; }
+  table.rows th, table.rows td { text-align: left; padding: 0.36rem 0.75rem; border-bottom: 1px solid var(--hairline); white-space: nowrap; }
+  table.rows th { font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.09em; color: var(--muted); font-weight: 700; }
+  table.rows tbody tr:last-child td { border-bottom: 0; }
+  .more { font-family: var(--font-mono); font-size: 0.73rem; color: var(--muted); padding: 0.5rem 0.75rem; }
+
+  /* distribution bars (q3) */
+  .dist { padding: clamp(1rem, 2.4vw, 1.4rem); display: grid; gap: 0.6rem; }
+  .dist-row { display: grid; grid-template-columns: 10.5rem 1fr auto; gap: 0.75rem; align-items: center; font-family: var(--font-mono); font-size: 0.79rem; }
+  .dist-row .bar { height: 0.72rem; background: currentColor; min-width: 2px; }
+  .dist-row .v { font-variant-numeric: tabular-nums; color: var(--ink); }
+  @media (max-width: 560px) { .dist-row { grid-template-columns: 8rem 1fr auto; font-size: 0.72rem; } }
+
+  details.disc { border-top: 1px solid var(--hairline); }
+  details.disc > summary {
+    cursor: pointer; padding: 0.7rem clamp(1rem, 2.4vw, 1.4rem);
+    font-family: var(--font-mono); font-size: 0.73rem; text-transform: uppercase;
+    letter-spacing: 0.09em; color: var(--muted); list-style: none;
+    display: flex; gap: 0.5rem; align-items: baseline;
+  }
+  details.disc > summary::-webkit-details-marker { display: none; }
+  details.disc > summary::before { content: "▸"; color: var(--accent); }
+  details.disc[open] > summary::before { content: "▾"; }
+  details.disc > summary:hover { color: var(--ink); }
+  .disc-body { padding: 0 clamp(1rem, 2.4vw, 1.4rem) 1.1rem; }
+  .disc-body p { font-size: 0.97rem; }
+  .disc-body pre.sparql { margin-top: 0.4rem; }
+
+  .no-query {
+    border: 1px dashed var(--fabric);
+    color: var(--fabric);
+    padding: 1rem 1.1rem;
+    font-family: var(--font-mono);
+    font-size: 0.83rem;
+    line-height: 1.5;
+  }
+  .no-query b { display: block; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 0.45rem; }
+
+  /* claims */
+  .claims { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 1rem; margin-top: 1.4rem; }
+  .claim { background: var(--surface); border: 1px solid var(--hairline); padding: 1.1rem 1.2rem; }
+  .claim h4 { font-family: var(--font-display); font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.11em; margin: 0 0 0.6rem; color: var(--accent-ink); }
+  .claim p { font-size: 0.96rem; margin: 0; max-width: none; }
+
+  /* stat strip */
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr)); gap: 1px; background: var(--hairline); border: 1px solid var(--hairline); margin: 1.5rem 0; }
+  .stat { background: var(--surface); padding: 0.9rem 1rem; }
+  .stat .v { font-family: var(--font-mono); font-size: 1.5rem; font-weight: 700; line-height: 1; font-variant-numeric: tabular-nums; }
+  .stat .k { font-family: var(--font-mono); font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.09em; color: var(--muted); margin-top: 0.35rem; }
+
+  ul.plain { margin: 0 0 1.05rem; padding-left: 1.15rem; max-width: 65ch; }
+  ul.plain li { margin-bottom: 0.5rem; }
+
+  footer.colophon {
+    border-top: 1px solid var(--hairline);
+    padding: clamp(2.25rem, 5vw, 3.5rem) 0 clamp(3rem, 6vw, 4.5rem);
+    font-family: var(--font-mono);
+    font-size: 0.76rem;
+    color: var(--muted);
+    line-height: 1.7;
+  }
+  footer.colophon b { color: var(--ink); letter-spacing: 0.02em; }
+  footer.colophon .who { font-size: 0.86rem; color: var(--ink); margin-bottom: 0.9rem; }
+</style>
+
+<div class="wrap">
+
+  <header class="hero">
+    <div class="eyebrow">SDCO · Sewer Damage Classification Ontology · DIN EN 13508-2</div>
+    <div class="live-badge"><i></i>Live data — every figure, table and query result below is extracted from SDCO.rdf and the real M150 example dataset at build time. Nothing on this page is mocked.</div>
+    <div class="code-nav">
+      <button type="button" class="code-arrow" id="heroPrev" aria-label="Previous code">‹</button>
+      <button type="button" class="three-letters code-current" id="heroCode"></button>
+      <button type="button" class="code-arrow" id="heroNext" aria-label="Next code">›</button>
+    </div>
+    <div class="code-hint">browse <b id="nDemoCodes" class="num"></b> observed codes with ‹ › or the left/right arrow keys</div>
+    <div class="hero-row" id="heroRow"></div>
+    <p class="hero-said">To your database, this is a three-character string. It sorts, it matches exactly, and it means nothing.</p>
+    <div class="hero-means reveal" id="heroMeans"></div>
+  </header>
+
+  <section class="band">
+    <div class="rail" id="railSource"></div>
+    <div class="body">
+      <h2>Where this data already comes from</h2>
+      <p class="lede">Nothing here is new data. A camera crew has already been down these pipes.</p>
+      <p>A German sewer utility commissions an inspection. A crew drives a CCTV crawler through a pipe section, or lowers a camera into a manhole, and logs what it sees at each station — the distance along the pipe. The result is delivered as a <strong>DWA-M 150</strong> exchange file, the standard German format for passing sewer inspection data between contractor and municipality.</p>
+      <p>That file nests three levels: the asset (<span class="mono">HG</span> pipe, <span class="mono">KG</span> node), the inspection event that visited it (<span class="mono">HI</span>, <span class="mono">KI</span>), and each individual observation recorded along the way (<span class="mono">HZ</span>, <span class="mono">KZ</span>). A sibling project, <strong>m150-onto</strong>, converts that XML into a graph — every pipe section, manhole, inspection and condition report becomes an addressable thing rather than a row.</p>
+      <div class="stats" id="statStrip"></div>
+      <p>This layer already worked. Every single observation shown on this page comes from it. But converting XML into a graph does not make the graph <em>mean</em> anything — the damage codes arrive as literal strings, exactly as opaque as they were in the file.</p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="rail" id="railProblem"></div>
+    <div class="body">
+      <h2>The problem: the meaning lives in a PDF</h2>
+      <p>DIN EN 13508-2 defines <b id="nCodesTotal" class="num"></b> codes, all present in SDCO.rdf. This one small dataset uses <b id="nCodes" class="num"></b> of them. What each code means is written down — in the standard, on paper — and carried in the heads of the inspectors who use it daily. It is nowhere in the data.</p>
+      <p>Here is what that costs you. These two codes describe the <strong>same physical defect</strong>: a fissure, a crack in the wall.</p>
+      <div class="pair" id="pairCards"></div>
+      <p class="pair-note">They share no characters. No string match, no wildcard, no <span class="mono">LIKE 'BA%'</span> will ever group them. To ask “show me every fissure in my network” you must already know the standard well enough to enumerate the codes by hand — and re-check your list every time the standard is revised.</p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="rail" id="railGrid"></div>
+    <div class="body">
+      <h2>What the codes are actually saying</h2>
+      <p>The code system is not arbitrary. Its first letter says <strong>where</strong> the observation was made; its second says <strong>what kind</strong> of thing was observed. Laid out on those two axes, the whole scheme becomes readable at a glance — every code the standard defines lands in a cell, whether or not this sample dataset happens to use it. Solid chips were observed in this dataset; dashed chips exist in the standard but not here.</p>
+      <div class="panel scroll-x">
+        <table class="grid" id="refGrid"></table>
+      </div>
+      <div class="key">
+        <span class="f-Fabric"><i></i>Fabric — structural damage</span>
+        <span class="f-Operation"><i></i>Operation — blockage, roots, infiltration</span>
+        <span class="f-Inventory"><i></i>Inventory — features, not damage</span>
+        <span class="f-Other"><i></i>Other — remarks, photos, termination</span>
+        <span class="chip empty" style="margin-left:0.5rem">dashed — not in this sample</span>
+      </div>
+      <h3>And the same codes, as meanings</h3>
+      <p>SDCO restates the standard as a hierarchy of concepts. A crack is a kind of fissure; a fissure is a kind of structural defect; a structural defect is a kind of observation. Ask about any level and you get everything beneath it, automatically.</p>
+      <div class="toggle-row">
+        <input type="checkbox" id="showUnused">
+        <label for="showUnused">show concepts unused by this dataset</label>
+      </div>
+      <div class="panel tree scroll-x" id="tree"></div>
+      <p class="pair-note">Most of this tree is greyed out or hidden, because this is a 96-observation sample of a standard built for entire networks. That is honest: the taxonomy covers the standard, not just the example.</p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="rail" id="railTaxGraph"></div>
+    <div class="body">
+      <h2>The same hierarchy, as a graph</h2>
+      <p>The tree above is the same data laid out as a node-link graph instead — click any node with a <span class="mono">+</span> to expand it, or a <span class="mono">−</span> to collapse it back. Node size and fill reflect how many reports in this sample actually landed there.</p>
+      <div class="panel graph-wrap scroll-x" id="graphHost"></div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="rail" id="railBridge"></div>
+    <div class="body">
+      <h2>The bridge is one sentence</h2>
+      <p>Connecting the operator's existing data to all of that meaning takes a single statement, repeated once per code:</p>
+      <pre class="axiom">:BAB  ≡  hasConditionCode value "BAB"</pre>
+      <p>Read it aloud: <em class="turn">anything whose condition code is “BAB” is a BAB</em> — and a BAB, the ontology already knows, is a fissure in a pipe. That is the whole join. From there the hierarchy does the rest without being told anything further.</p>
+      <p>It attaches to the data through exactly three properties the M150 file already contains: <span class="mono">hasConditionCode</span>, <span class="mono">hasCharacterization1</span> and <span class="mono">hasCharacterization2</span>. <strong>No re-entry, no migration, no new field for anyone to fill in.</strong> The inspection reports stay exactly as they were written.</p>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="rail" id="railAsk"></div>
+    <div class="body">
+      <h2>Ask it something</h2>
+      <p>Six questions an operator would actually ask, run against the real dataset. Every row below is a real observation from the April 2006 example inspection — and each answer is followed by what it would take to get the same result without any of this.</p>
+      <div class="qbar" id="qbar" role="group" aria-label="Choose a question"></div>
+      <div class="answer" id="answer"></div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="rail" id="railClaims"></div>
+    <div class="body">
+      <h2>What that buys, in three words</h2>
+      <p>These were the project's own research questions. They are the right three, and everything above is the evidence.</p>
+      <div class="claims">
+        <div class="claim">
+          <h4>Interoperability</h4>
+          <p>The codes stop being local strings and become shared concepts. Two utilities, two software vendors, one CCTV contractor and an AI defect detector can all mean the same thing by “fissure” — because they point at the same definition, derived from the standard rather than from anyone's database schema.</p>
+        </div>
+        <div class="claim">
+          <h4>Query complexity</h4>
+          <p>“Every fissure in the network” goes from a hand-maintained list of codes you must know the standard to write, to naming the concept once. The list cannot drift out of date, because there is no list.</p>
+        </div>
+        <div class="claim">
+          <h4>Inference</h4>
+          <p>Nobody wrote down that this manhole crack runs vertically. A reasoner derived it from the code and its characterization, then wrote it back as a fact you can query. Meaning that was implicit in the standard becomes data.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="rail" id="railLimits"></div>
+    <div class="body">
+      <h2>What this doesn't do yet</h2>
+      <p>This is a working prototype, and it is worth being precise about its edges.</p>
+      <ul class="plain">
+        <li><strong>No domain-expert validation.</strong> The taxonomy is derived from the standard by reading it carefully. No practising sewer inspector has reviewed it yet. That review is the single most valuable thing that could happen to it next.</li>
+        <li><strong>The reasoning needs a materialization step.</strong> The classification uses existential restrictions (<span class="mono">someValuesFrom</span>), which let a reasoner prove that this report <em>is</em> a vertical crack fissure, but never leave behind a plain triple saying so. A separate pass walks the proven types back through the restrictions and writes the literal triples out — that is where the numbers on this page come from, and it has to be re-run when the data changes.</li>
+        <li><strong>The ontology itself is barely annotated.</strong> Across <b id="nClasses" class="num"></b> classes there is exactly one human-readable label and a few dozen comments. Every plain-English gloss on this page was written by hand for this page. The ontology is precise; it is not yet self-explanatory.</li>
+        <li><strong>It is one worked example.</strong> 96 observations across 4 pipe sections and 5 manholes, from the standard's own textbook dataset. It demonstrates the mechanism; it does not prove it at network scale.</li>
+      </ul>
+      <h3>Where it goes</h3>
+      <p>SDCO exists to serve <strong>KaSyTwin</strong> — semi-automated digital twins of sewer networks built from multi-sensor robotic platforms, with AI detecting damage from the footage in real time. When a crawler's neural network flags a crack, it needs somewhere to <em>put</em> that finding that isn't a three-letter string. This is the target schema for that: the same vocabulary, whether the observation came from an inspector's eye in 2006 or a model's output tomorrow. From there, condition data that carries its own meaning is what predictive maintenance — which pipe fails next, and when — actually needs underneath it.</p>
+    </div>
+  </section>
+
+  <footer class="colophon">
+    <div class="who"><b>Luis Jamora</b> &amp; <b>Raquel Valles</b></div>
+    <div><b>ICOM</b> — Institut für Baumanagement, Digitales Bauen und Robotik im Bauwesen</div>
+    <div>Contributing to <b>KaSyTwin</b> · SDCO formalizes <b>DIN EN 13508-2</b> · built on <b>m150-onto</b> (<b>DWA-M 150</b>)</div>
+    <div id="colophonData" style="margin-top:0.9rem"></div>
+  </footer>
+
+</div>
+
+<script id="sdco-data" type="application/json">__SDCO_DATA__</script>
+
+<script>
+(function () {
+  "use strict";
+
+  var D = JSON.parse(document.getElementById("sdco-data").textContent);
+  var S = D.stats;
+
+  function el(tag, cls, txt) {
+    var n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (txt !== undefined && txt !== null) n.textContent = String(txt);
+    return n;
+  }
+  function put(id, node) { var h = document.getElementById(id); if (h) { h.innerHTML = ""; h.appendChild(node); } }
+  function txt(id, v) { var h = document.getElementById(id); if (h) h.textContent = String(v); }
+  function shortId(s) { return String(s).replace(/^Beispiel_/, ""); }
+  function spaced(name) { return String(name).replace(/(?!^)([A-Z])/g, " $1"); }
+  function fam2(family) {
+    if (/Fabric$/.test(family)) return "Fabric";
+    if (/Operation$/.test(family)) return "Operation";
+    if (/Inventory$/.test(family)) return "Inventory";
+    return "Other";
+  }
+
+  /* ---------------- hero ---------------- */
+  var HERO_ID = "Beispiel_Condition_1204013_2_7_DAB";
+  var codeByString = {};
+  D.codes.forEach(function (c) { codeByString[c.code] = c; });
+
+  // one representative report per code actually present in the sample --
+  // only those codes can be demoed, since the row/meaning text below reads
+  // real report fields.
+  var reportByCode = {};
+  D.reports.forEach(function (r) {
+    if (!(r.code in reportByCode)) reportByCode[r.code] = r;
+  });
+  var demoCodes = Object.keys(reportByCode).sort();
+
+  var heroCurrent = document.getElementById("heroCode");
+  var heroPrev = document.getElementById("heroPrev");
+  var heroNext = document.getElementById("heroNext");
+  txt("nDemoCodes", demoCodes.length);
+
+  var row = document.getElementById("heroRow");
+  var means = document.getElementById("heroMeans");
+  function cell(k, v) {
+    var s = el("span");
+    s.appendChild(document.createTextNode(k + " "));
+    s.appendChild(el("b", null, v));
+    return s;
+  }
+
+  /* first sdco class not describing orientation/cause/reason/direction is
+     treated as the primary defect; the rest are read out as modifiers. */
+  function splitPrimary(sdco) {
+    var primary = null, modifiers = [];
+    (sdco || []).forEach(function (e) {
+      if (/Orientation|Cause|Reason|Direction$/.test(e.property)) {
+        modifiers.push(e.class);
+      } else if (!primary) {
+        primary = e.class;
+      } else {
+        modifiers.push(e.class);
+      }
+    });
+    return { primary: primary, modifiers: modifiers };
+  }
+
+  function renderHero(hero) {
+    var rec = codeByString[hero.code];
+
+    row.innerHTML = "";
+    row.appendChild(cell("id", shortId(hero.id)));
+    row.appendChild(cell("code", hero.code));
+    if (hero.char1) row.appendChild(cell("char1", hero.char1));
+    if (hero.nodeConditionDepth !== undefined) row.appendChild(cell("depth", hero.nodeConditionDepth + " m"));
+    if (hero.pipeSectionConditionStation !== undefined) row.appendChild(cell("station", hero.pipeSectionConditionStation + " m"));
+    if (hero.nodeConditionManholeArea) row.appendChild(cell("area", hero.nodeConditionManholeArea));
+    if (hero.longText) row.appendChild(cell("text", '"' + hero.longText + '"'));
+
+    means.innerHTML = "";
+    var split = splitPrimary(hero.sdco);
+    var primaryText = split.primary ? spaced(split.primary).toLowerCase()
+      : (rec && rec.meaning ? rec.meaning.toLowerCase() : hero.code);
+    var isNode = hero.assetType === "Node";
+    var assetShort = shortId(hero.assetId).replace(/^(Node|PipeSection|Pipe)_/, "");
+
+    means.appendChild(document.createTextNode("To the standard, it is a "));
+    means.appendChild(el("span", "cls", primaryText));
+    means.appendChild(document.createTextNode(
+      " in " + (isNode ? "manhole " : "pipe section ") + assetShort
+    ));
+    if (isNode && hero.nodeConditionDepth !== undefined) {
+      means.appendChild(document.createTextNode(", " + hero.nodeConditionDepth + " m down"));
+    } else if (!isNode && hero.pipeSectionConditionStation !== undefined) {
+      means.appendChild(document.createTextNode(", at station " + hero.pipeSectionConditionStation + " m"));
+    }
+    means.appendChild(document.createTextNode("."));
+    if (split.modifiers.length) {
+      means.appendChild(document.createTextNode(" Further characterized as "));
+      means.appendChild(el("span", "cls", split.modifiers.map(function (m) { return spaced(m).toLowerCase(); }).join(", ")));
+      means.appendChild(document.createTextNode("."));
+    }
+    means.appendChild(document.createTextNode(" Nobody typed any of that. It was derived."));
+  }
+
+  var heroIdx = 0;
+  function goTo(idx) {
+    heroIdx = (idx % demoCodes.length + demoCodes.length) % demoCodes.length;
+    var code = demoCodes[heroIdx];
+    var c = codeByString[code];
+    heroCurrent.textContent = code;
+    heroCurrent.setAttribute("aria-label",
+      code + (c && c.meaning ? " — " + c.meaning.toLowerCase() : "") + ". Click, or use the arrows, to browse other codes.");
+    renderHero(reportByCode[code]);
+  }
+  heroPrev.addEventListener("click", function () { goTo(heroIdx - 1); });
+  heroNext.addEventListener("click", function () { goTo(heroIdx + 1); });
+  heroCurrent.addEventListener("click", function () { goTo(heroIdx + 1); });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "ArrowLeft") goTo(heroIdx - 1);
+    else if (e.key === "ArrowRight") goTo(heroIdx + 1);
+  });
+
+  var heroReport = D.reports.filter(function (r) { return r.id === HERO_ID; })[0] || D.reports[0];
+  var startCode = reportByCode[heroReport.code] ? heroReport.code : demoCodes[0];
+  goTo(demoCodes.indexOf(startCode));
+
+  /* ---------------- provenance rails ---------------- */
+  function rail(id, title, lines) {
+    var h = document.getElementById(id);
+    if (!h) return;
+    h.appendChild(el("b", null, title));
+    lines.forEach(function (t) {
+      var p = el("p");
+      p.innerHTML = t;
+      h.appendChild(p);
+    });
+  }
+  var tc = S.tripleCounts;
+  function tcOf(re) {
+    var k = Object.keys(tc).filter(function (n) { return re.test(n); })[0];
+    return k ? tc[k].toLocaleString("en-US") : "—";
+  }
+
+  rail("railSource", "source", [
+    'm150-onto-parsed-dwa.rdf<br><span class="fig">' + tcOf(/parsed-dwa\.rdf$/) + " triples</span>",
+    'All <span class="fig">' + S.reportCount + " condition reports</span> on this page originate here — not in SDCO.",
+    'Inspected <span class="fig">' + S.inspectionDateRange.min.slice(0, 10) + "</span> to <span class=\"fig\">" + S.inspectionDateRange.max.slice(0, 10) + "</span>"
+  ]);
+
+  rail("railProblem", "scale", [
+    '<span class="fig">' + S.codeCount + " of " + S.totalCodeCount + "</span> DIN codes appear in this dataset.",
+    'DIN EN 13508-2 is a paper standard. The code&rarr;meaning mapping exists nowhere in an M150 file.'
+  ]);
+
+  rail("railGrid", "taxonomy", [
+    "SDCO.rdf",
+    '<span class="fig">' + S.axioms.namedClasses.toLocaleString("en-US") + "</span> classes",
+    '<span class="fig">' + S.axioms.someValuesFrom.toLocaleString("en-US") + "</span> someValuesFrom restrictions",
+    '<span class="fig">' + S.axioms.allDisjointClasses + "</span> disjointness blocks"
+  ]);
+
+  rail("railTaxGraph", "graph", [
+    "Same source as the tree above: SDCO.rdf's class hierarchy, walked from :Observation down.",
+    "Layout and rendering computed in-browser from the injected JSON — no charting library."
+  ]);
+
+  rail("railBridge", "join", [
+    '<span class="fig">' + S.axioms.equivalentClass.toLocaleString("en-US") + "</span> equivalentClass axioms — one per code and characterization.",
+    "Attaches via 3 existing M150 properties. Zero changes to the source data."
+  ]);
+
+  rail("railAsk", "answers", [
+    "derived/SDCO-dwa-parsed_materialized.rdf",
+    '<span class="fig">' + S.materializedTripleCount + "</span> triples derived across <span class=\"fig\">" + S.materializedSubjectCount + "</span> reports.",
+    "Every row below was computed by running the query shown, not written by hand."
+  ]);
+
+  rail("railClaims", "claims", ["The project's own three research questions, as posed in its design document."]);
+
+  rail("railLimits", "candour", [
+    'Labels in SDCO.rdf: <span class="fig">1</span>',
+    'Comments: <span class="fig">~48</span> across <span class="fig">' + S.axioms.namedClasses.toLocaleString("en-US") + "</span> classes"
+  ]);
+
+  /* ---------------- stat strip ---------------- */
+  var strip = document.getElementById("statStrip");
+  [
+    [S.reportCount, "condition reports"],
+    [S.pipeSectionCount, "pipe sections"],
+    [S.nodeCount, "manholes"],
+    [S.inspectionCount, "inspections"],
+    [S.codeCount, "distinct codes"],
+    [S.inspectionDateRange.min.slice(0, 7), "inspected"]
+  ].forEach(function (p) {
+    var s = el("div", "stat");
+    s.appendChild(el("div", "v", p[0]));
+    s.appendChild(el("div", "k", p[1]));
+    strip.appendChild(s);
+  });
+
+  txt("nCodes", S.codeCount);
+  txt("nCodesTotal", S.totalCodeCount);
+  txt("nClasses", S.axioms.namedClasses.toLocaleString("en-US"));
+
+  /* ---------------- BAB / DAB pair ---------------- */
+  var pairHost = document.getElementById("pairCards");
+  [
+    { code: "BAB", where: "in a pipe", what: "A fissure in the pipe wall." },
+    { code: "DAB", where: "in a manhole", what: "A fissure in the manhole wall." }
+  ].forEach(function (spec) {
+    var rec = D.codes.filter(function (c) { return c.code === spec.code; })[0];
+    var card = el("div", "pair-card");
+    card.appendChild(el("div", "code", spec.code));
+    card.appendChild(el("div", "where", spec.where + (rec ? " · " + rec.count + " in this dataset" : "")));
+    card.appendChild(el("p", "what", spec.what));
+    pairHost.appendChild(card);
+  });
+
+  /* ---------------- reference grid ---------------- */
+  var KINDS = ["Fabric", "Operation", "Inventory", "Other"];
+  var PLACES = [{ letter: "B", label: "pipe section" }, { letter: "D", label: "manhole / node" }];
+  var grid = document.getElementById("refGrid");
+  var thead = el("thead"), htr = el("tr");
+  htr.appendChild(el("th", null, ""));
+  KINDS.forEach(function (k) { htr.appendChild(el("th", null, k)); });
+  thead.appendChild(htr); grid.appendChild(thead);
+
+  var tbody = el("tbody");
+  PLACES.forEach(function (pl) {
+    var tr = el("tr");
+    var th = el("th");
+    th.appendChild(document.createTextNode(pl.letter + "__"));
+    th.appendChild(el("small", null, pl.label));
+    tr.appendChild(th);
+    KINDS.forEach(function (kind) {
+      var td = el("td");
+      var hits = D.codes.filter(function (c) {
+        return c.code.charAt(0) === pl.letter && fam2(c.family) === kind;
+      }).sort(function (a, b) { return b.count - a.count; });
+      if (!hits.length) {
+        td.appendChild(el("span", "chip empty", "none defined"));
+      } else {
+        hits.forEach(function (c) {
+          var observed = c.count > 0;
+          var chip = el("span", "chip" + (observed ? " f-" + kind : " empty"));
+          chip.appendChild(document.createTextNode(c.code));
+          if (observed) chip.appendChild(el("span", "n", " " + c.count));
+          chip.title = (c.meaning || c.code) + (observed ? " — " + c.count + " report(s) in this dataset" : " — not observed in this dataset");
+          td.appendChild(chip);
+        });
+      }
+      tr.appendChild(td);
+    });
+    tbody.appendChild(tr);
+  });
+  grid.appendChild(tbody);
+
+  /* ---------------- taxonomy tree ---------------- */
+  function node(n, depth) {
+    var hasKids = n.children && n.children.length;
+    var zero = !n.reportCount;
+    if (!hasKids) {
+      var leaf = el("div", "leaf" + (zero ? " zero" : ""));
+      leaf.appendChild(el("span", null, spaced(n.name)));
+      leaf.appendChild(el("span", "cnt" + (zero ? "" : " hit"), zero ? "—" : n.reportCount));
+      return leaf;
+    }
+    var d = el("details", zero ? "zero" : null);
+    if (depth < 1) d.open = true;
+    var sm = el("summary");
+    sm.appendChild(el("span", null, spaced(n.name)));
+    sm.appendChild(el("span", "cnt" + (zero ? "" : " hit"), zero ? "—" : n.reportCount));
+    d.appendChild(sm);
+    var kids = el("div", "kids");
+    n.children.slice().sort(function (a, b) { return (b.reportCount || 0) - (a.reportCount || 0); })
+      .forEach(function (c) { kids.appendChild(node(c, depth + 1)); });
+    d.appendChild(kids);
+    return d;
+  }
+  put("tree", node(D.taxonomy.observation, 0));
+
+  var chk = document.getElementById("showUnused");
+  function syncUnused() { document.documentElement.classList.toggle("show-unused", chk.checked); }
+  chk.addEventListener("change", syncUnused);
+  syncUnused();
+
+  /* ---------------- taxonomy graph (node-link view of the same tree) ---------------- */
+  (function () {
+    var host = document.getElementById("graphHost");
+    if (!host) return;
+    var svgNS = "http://www.w3.org/2000/svg";
+    var ROW = 22, COL = 190, PAD = 16;
+    var collapsed = {};
+
+    function markInitialCollapse(n, path, depth) {
+      if (depth >= 2) collapsed[path] = true;
+      (n.children || []).forEach(function (c) { markInitialCollapse(c, path + ">" + n.name, depth + 1); });
+    }
+    markInitialCollapse(D.taxonomy.observation, "", 0);
+
+    var leafCounter, maxDepth;
+    function layout(n, path, depth) {
+      var id = path + ">" + n.name;
+      var hasKids = !!(n.children && n.children.length);
+      var isCollapsed = hasKids && collapsed[id];
+      var rec = { name: n.name, reportCount: n.reportCount, depth: depth, id: id, hasChildren: hasKids, collapsed: isCollapsed, children: [] };
+      maxDepth = Math.max(maxDepth, depth);
+      if (!hasKids || isCollapsed) {
+        rec.y = leafCounter * ROW;
+        leafCounter++;
+      } else {
+        n.children.forEach(function (c) { rec.children.push(layout(c, id, depth + 1)); });
+        var ys = rec.children.map(function (c) { return c.y; });
+        rec.y = (Math.min.apply(null, ys) + Math.max.apply(null, ys)) / 2;
+      }
+      rec.x = depth * COL;
+      return rec;
+    }
+
+    function render() {
+      leafCounter = 0; maxDepth = 0;
+      var root = layout(D.taxonomy.observation, "", 0);
+      var height = leafCounter * ROW + PAD * 2;
+      var width = (maxDepth + 1) * COL + 260;
+
+      var svg = document.createElementNS(svgNS, "svg");
+      svg.setAttribute("viewBox", "0 0 " + width + " " + height);
+      svg.setAttribute("width", width);
+      svg.setAttribute("height", height);
+      svg.setAttribute("class", "graph-svg");
+
+      function walk(n) {
+        n.children.forEach(function (c) {
+          var mx = n.x + PAD + 70;
+          var p = document.createElementNS(svgNS, "path");
+          p.setAttribute("d",
+            "M " + (n.x + PAD) + " " + (n.y + PAD) +
+            " C " + mx + " " + (n.y + PAD) + ", " + mx + " " + (c.y + PAD) + ", " + (c.x + PAD) + " " + (c.y + PAD));
+          p.setAttribute("class", "graph-edge");
+          svg.appendChild(p);
+          walk(c);
+        });
+      }
+      walk(root);
+
+      function paint(n) {
+        var hit = n.reportCount > 0;
+        var g = document.createElementNS(svgNS, "g");
+        g.setAttribute("class", "graph-node" + (hit ? " hit" : " zero") + (n.hasChildren ? " expandable" : ""));
+        g.setAttribute("transform", "translate(" + (n.x + PAD) + "," + (n.y + PAD) + ")");
+
+        var r = 4 + Math.min(13, Math.sqrt(n.reportCount || 0) * 3);
+        var circle = document.createElementNS(svgNS, "circle");
+        circle.setAttribute("r", r);
+        g.appendChild(circle);
+
+        if (n.hasChildren) {
+          var marker = document.createElementNS(svgNS, "text");
+          marker.setAttribute("class", "marker");
+          marker.setAttribute("x", -r - 4);
+          marker.setAttribute("dy", "0.32em");
+          marker.setAttribute("text-anchor", "end");
+          marker.textContent = n.collapsed ? "+" : "−";
+          g.appendChild(marker);
+        }
+
+        var label = document.createElementNS(svgNS, "text");
+        label.setAttribute("x", r + 6);
+        label.setAttribute("dy", "0.32em");
+        label.textContent = spaced(n.name) + (hit ? " (" + n.reportCount + ")" : "");
+        g.appendChild(label);
+
+        if (n.hasChildren) {
+          g.addEventListener("click", function () {
+            collapsed[n.id] = !collapsed[n.id];
+            render();
+          });
+        }
+        svg.appendChild(g);
+        n.children.forEach(paint);
+      }
+      paint(root);
+
+      host.innerHTML = "";
+      host.appendChild(svg);
+    }
+    render();
+  })();
+
+  /* ---------------- question demo ---------------- */
+  var qbar = document.getElementById("qbar");
+  var answer = document.getElementById("answer");
+  var current = null;
+
+  function renderRowsTable(rows) {
+    var cols = ["report", "code", "asset", "class"].filter(function (c) {
+      return rows.some(function (r) { return r[c] !== undefined && r[c] !== null; });
+    });
+    var wrapDiv = el("div", "scroll-x");
+    var t = el("table", "rows");
+    var th = el("thead"), tr = el("tr");
+    cols.forEach(function (c) { tr.appendChild(el("th", null, c === "class" ? "derived meaning" : c)); });
+    th.appendChild(tr); t.appendChild(th);
+    var tb = el("tbody");
+    rows.slice(0, 14).forEach(function (r) {
+      var row2 = el("tr");
+      cols.forEach(function (c) {
+        var v = r[c];
+        row2.appendChild(el("td", null,
+          v === undefined || v === null ? "—" :
+          (c === "class" ? spaced(v) : shortId(v))));
+      });
+      tb.appendChild(row2);
+    });
+    t.appendChild(tb);
+    wrapDiv.appendChild(t);
+    if (rows.length > 14) {
+      wrapDiv.appendChild(el("div", "more", "… and " + (rows.length - 14) + " more"));
+    }
+    return wrapDiv;
+  }
+
+  function renderDistribution(rows) {
+    var host = el("div", "dist");
+    var max = Math.max.apply(null, rows.map(function (r) { return r.reportCount; }));
+    var order = { StructuralDefect: "Fabric", OperationalDefect: "Operation", Inventory: "Inventory", OtherObservation: "Other" };
+    rows.slice().sort(function (a, b) { return b.reportCount - a.reportCount; }).forEach(function (r) {
+      var line = el("div", "dist-row f-" + (order[r.bucket] || "Other"));
+      line.appendChild(el("span", null, spaced(r.bucket)));
+      var track = el("div");
+      var bar = el("div", "bar");
+      bar.style.width = Math.round((r.reportCount / max) * 100) + "%";
+      track.appendChild(bar);
+      line.appendChild(track);
+      line.appendChild(el("span", "v", r.reportCount));
+      host.appendChild(line);
+    });
+    return host;
+  }
+
+  function show(q) {
+    current = q.id;
+    Array.prototype.forEach.call(qbar.children, function (b) {
+      b.setAttribute("aria-pressed", String(b.dataset.qid === q.id));
+    });
+
+    answer.innerHTML = "";
+
+    var head = el("div", "answer-head");
+    head.appendChild(el("div", "q", q.question));
+    var isDist = q.results.length && q.results[0].bucket !== undefined;
+    var count = el("div", "count");
+    if (isDist) {
+      count.appendChild(document.createTextNode("distribution across "));
+      count.appendChild(el("b", null, q.results.length));
+      count.appendChild(document.createTextNode(" categories"));
+    } else {
+      count.appendChild(el("b", null, q.resultCount));
+      count.appendChild(document.createTextNode(q.resultCount === 1 ? " matching report" : " matching reports"));
+    }
+    head.appendChild(count);
+    answer.appendChild(head);
+
+    answer.appendChild(isDist ? renderDistribution(q.results) : renderRowsTable(q.results));
+
+    /* the query that produced it */
+    var d1 = el("details", "disc");
+    var s1 = el("summary"); s1.appendChild(document.createTextNode("the query that produced this"));
+    d1.appendChild(s1);
+    var b1 = el("div", "disc-body");
+    b1.appendChild(el("pre", "sparql", q.sparql));
+    d1.appendChild(b1);
+    answer.appendChild(d1);
+
+    /* without SDCO */
+    var d2 = el("details", "disc");
+    var s2 = el("summary"); s2.appendChild(document.createTextNode("how would you do this without SDCO?"));
+    d2.appendChild(s2);
+    var b2 = el("div", "disc-body");
+    if (q.withoutSdco && q.withoutSdco.sparql) {
+      b2.appendChild(el("p", null, q.withoutSdco.explanation));
+      b2.appendChild(el("pre", "sparql", q.withoutSdco.sparql));
+    } else {
+      var nq = el("div", "no-query");
+      nq.appendChild(el("b", null, "There is no equivalent query."));
+      nq.appendChild(document.createTextNode(
+        (q.withoutSdco && q.withoutSdco.explanation) ||
+        "This question cannot be expressed against the literal codes at all."
+      ));
+      b2.appendChild(nq);
+    }
+    d2.appendChild(b2);
+    answer.appendChild(d2);
+  }
+
+  D.queries.forEach(function (q) {
+    var b = el("button", "qbtn", q.question);
+    b.type = "button";
+    b.dataset.qid = q.id;
+    b.setAttribute("aria-pressed", "false");
+    b.addEventListener("click", function () { show(q); });
+    qbar.appendChild(b);
+  });
+
+  /* open on q2 — the one with no equivalent */
+  var start = D.queries.filter(function (q) { return q.id === "q2"; })[0] || D.queries[0];
+  show(start);
+
+  /* ---------------- colophon provenance ---------------- */
+  var cd = document.getElementById("colophonData");
+  cd.appendChild(document.createTextNode(
+    "Dataset: the DWA-M 150 standard's own worked example (“Beispiel” = example) — " +
+    S.reportCount + " condition reports, " + S.pipeSectionCount + " pipe sections, " +
+    S.nodeCount + " manholes, inspected " + S.inspectionDateRange.min.slice(0, 10) +
+    "–" + S.inspectionDateRange.max.slice(0, 10) + ". Not live municipal data."
+  ));
+  cd.appendChild(el("div", null,
+    "Figures on this page are extracted at build time from SDCO.rdf (" +
+    tcOf(/^SDCO\.rdf$/) + " triples), m150-onto (" + tcOf(/^m150-onto\.rdf$/) +
+    "), the parsed example data (" + tcOf(/parsed-dwa\.rdf$/) +
+    ") and the derived materialization (" + S.materializedTripleCount + " triples)."
+  ));
+})();
+</script>

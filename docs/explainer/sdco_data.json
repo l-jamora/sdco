@@ -1,0 +1,5858 @@
+{
+  "reports": [
+    {
+      "id": "Beispiel_Condition_1204011_0_0_DCA",
+      "code": "DCA",
+      "char1": "B",
+      "char2": null,
+      "nodeConditionManholeArea": "J",
+      "positionFrom": "06",
+      "label": "Condition[1204011]_[0,0]_[DCA]",
+      "nodeConditionDepth": 0.0,
+      "positionTo": "00",
+      "longText": "Anschluss",
+      "assetId": "Beispiel_Node_1204011",
+      "assetType": "Node",
+      "inspectionId": "Beispiel_Inspection_1204011_13_04_2006_08_49_00",
+      "inspectionDate": "2006-04-13T08:49:00",
+      "sdco": [
+        {
+          "property": "hasNodeInventoryFeature",
+          "class": "FreeDropConnection"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204011_0_0_DCG",
+      "code": "DCG",
+      "char1": "A",
+      "char2": "A",
+      "label": "Condition[1204011]_[0,0]_[DCG]",
+      "longText": "Anschlussleitung",
+      "positionTo": "00",
+      "positionFrom": "06",
+      "quantification1": 400.0,
+      "nodeConditionDepth": 0.0,
+      "nodeConditionManholeArea": "J",
+      "assetId": "Beispiel_Node_1204011",
+      "assetType": "Node",
+      "inspectionId": "Beispiel_Inspection_1204011_13_04_2006_08_49_00",
+      "inspectionDate": "2006-04-13T08:49:00",
+      "sdco": [
+        {
+          "property": "hasConnectionDischargeDirection",
+          "class": "ConnectionDischargeIntoNode"
+        },
+        {
+          "property": "hasNodeInventoryFeature",
+          "class": "CircularConnectingPipeline"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204011_0_0_DDB",
+      "code": "DDB",
+      "char1": null,
+      "char2": null,
+      "standardizedComment": "A",
+      "label": "Condition[1204011]_[0,0]_[DDB]",
+      "longText": "Sohle/Inspektionsanfang",
+      "positionFrom": "00",
+      "nodeConditionManholeArea": "J",
+      "nodeConditionDepth": 0.0,
+      "positionTo": "00",
+      "assetId": "Beispiel_Node_1204011",
+      "assetType": "Node",
+      "inspectionId": "Beispiel_Inspection_1204011_13_04_2006_08_49_00",
+      "inspectionDate": "2006-04-13T08:49:00",
+      "sdco": [
+        {
+          "property": "hasNodeFeature",
+          "class": "GeneralRemark"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204011_2_4_DBF",
+      "code": "DBF",
+      "char1": "A",
+      "char2": "A",
+      "nodeConditionDepth": 2.4,
+      "positionTo": "07",
+      "label": "Condition[1204011]_[2,4]_[DBF]",
+      "nodeConditionManholeArea": "C",
+      "longText": "Infiltration",
+      "positionFrom": "12",
+      "assetId": "Beispiel_Node_1204011",
+      "assetType": "Node",
+      "inspectionId": "Beispiel_Inspection_1204011_13_04_2006_08_49_00",
+      "inspectionDate": "2006-04-13T08:49:00",
+      "sdco": [
+        {
+          "property": "hasNodeOperationDamage",
+          "class": "SweatingInfiltration"
+        },
+        {
+          "property": "hasNodeOperationDamage",
+          "class": "WallInfiltration"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204011_3_4_DDB",
+      "code": "DDB",
+      "char1": null,
+      "char2": null,
+      "nodeConditionDepth": 3.4,
+      "standardizedComment": "B",
+      "longText": "Oberkante/Inspektionsende",
+      "label": "Condition[1204011]_[3,4]_[DDB]",
+      "positionFrom": "00",
+      "positionTo": "00",
+      "assetId": "Beispiel_Node_1204011",
+      "assetType": "Node",
+      "inspectionId": "Beispiel_Inspection_1204011_13_04_2006_08_49_00",
+      "inspectionDate": "2006-04-13T08:49:00",
+      "sdco": [
+        {
+          "property": "hasNodeFeature",
+          "class": "GeneralRemark"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204012_0_0_BCD",
+      "code": "BCD",
+      "char1": "XP",
+      "char2": null,
+      "positionTo": "00",
+      "label": "Condition[1204012]_[0.0]_[BCD]",
+      "longText": "Rohranfang",
+      "pipeSectionConditionStation": 0.0,
+      "positionFrom": "00",
+      "videoCounterReading": "0:00:22",
+      "imageName": "5_0-00-22.jpg",
+      "assetId": "Beispiel_PipeSection_1204012",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204012",
+      "inspectionDate": null,
+      "sdco": [
+        {
+          "property": "hasPipeInventoryFeature",
+          "class": "NodeType"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204012_0_0_DCA",
+      "code": "DCA",
+      "char1": "B",
+      "char2": null,
+      "nodeConditionDepth": 0.0,
+      "longText": "Anschluss",
+      "positionFrom": "08",
+      "label": "Condition[1204012]_[0,0]_[DCA]",
+      "nodeConditionManholeArea": "J",
+      "positionTo": "00",
+      "assetId": "Beispiel_Node_1204012",
+      "assetType": "Node",
+      "inspectionId": "Beispiel_Inspection_1204012_13_04_2006_08_42_00",
+      "inspectionDate": "2006-04-13T08:42:00",
+      "sdco": [
+        {
+          "property": "hasNodeInventoryFeature",
+          "class": "FreeDropConnection"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204012_0_0_DCG",
+      "code": "DCG",
+      "char1": "A",
+      "char2": "A",
+      "nodeConditionDepth": 0.0,
+      "longText": "Anschlussleitung",
+      "positionFrom": "08",
+      "positionTo": "00",
+      "nodeConditionManholeArea": "J",
+      "quantification1": 400.0,
+      "label": "Condition[1204012]_[0,0]_[DCG]",
+      "assetId": "Beispiel_Node_1204012",
+      "assetType": "Node",
+      "inspectionId": "Beispiel_Inspection_1204012_13_04_2006_08_42_00",
+      "inspectionDate": "2006-04-13T08:42:00",
+      "sdco": [
+        {
+          "property": "hasConnectionDischargeDirection",
+          "class": "ConnectionDischargeIntoNode"
+        },
+        {
+          "property": "hasNodeInventoryFeature",
+          "class": "CircularConnectingPipeline"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204012_0_0_DDB",
+      "code": "DDB",
+      "char1": null,
+      "char2": null,
+      "nodeConditionDepth": 0.0,
+      "nodeConditionManholeArea": "J",
+      "positionFrom": "00",
+      "positionTo": "00",
+      "longText": "Sohle/Inspektionsanfang",
+      "label": "Condition[1204012]_[0,0]_[DDB]",
+      "standardizedComment": "A",
+      "assetId": "Beispiel_Node_1204012",
+      "assetType": "Node",
+      "inspectionId": "Beispiel_Inspection_1204012_13_04_2006_08_42_00",
+      "inspectionDate": "2006-04-13T08:42:00",
+      "sdco": [
+        {
+          "property": "hasNodeFeature",
+          "class": "GeneralRemark"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204012_12_8_BAK",
+      "code": "BAK",
+      "char1": "Z",
+      "char2": null,
+      "longText": "Ablösung Auskleidung",
+      "label": "Condition[1204012]_[12,8]_[BAK]",
+      "positionFrom": "07",
+      "imageName": "5_0-06-23.jpg",
+      "videoCounterReading": "0:06:23",
+      "pipeSectionConditionStation": 12.8,
+      "quantification1": 20.0,
+      "standardizedComment": "A",
+      "positionTo": "10",
+      "assetId": "Beispiel_PipeSection_1204012",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204012",
+      "inspectionDate": null,
+      "sdco": [
+        {
+          "property": "hasPipeFabricDamage",
+          "class": "OtherLiningDefect"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204012_16_4_BAK",
+      "code": "BAK",
+      "char1": "Z",
+      "char2": null,
+      "standardizedComment": "K",
+      "positionFrom": "07",
+      "videoCounterReading": "0:09:13",
+      "positionTo": "10",
+      "quantification1": 10.0,
+      "longText": "komplexe Falte in Auskleidung",
+      "imageName": "5_0-09-13.jpg",
+      "pipeSectionConditionStation": 16.4,
+      "label": "Condition[1204012]_[16,4]_[BAK]",
+      "assetId": "Beispiel_PipeSection_1204012",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204012",
+      "inspectionDate": null,
+      "sdco": [
+        {
+          "property": "hasPipeFabricDamage",
+          "class": "OtherLiningDefect"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204012_17_0_BCA",
+      "code": "BCA",
+      "char1": "G",
+      "char2": "A",
+      "imageName": "5_0-12-17.jpg",
+      "quantification1": 150.0,
+      "videoCounterReading": "0:12:17",
+      "pipeSectionConditionStation": 17.0,
+      "label": "Condition[1204012]_[17,0]_[BCA]",
+      "positionTo": "00",
+      "longText": "Anschluss, einfach, unbekannt, offen",
+      "positionFrom": "11",
+      "assetId": "Beispiel_PipeSection_1204012",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204012",
+      "inspectionDate": null,
+      "sdco": [
+        {
+          "property": "hasPipeInventoryFeature",
+          "class": "ConnectionNotEvident"
+        },
+        {
+          "property": "hasPipeInventoryFeature",
+          "class": "OpenConnection"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204012_1_5_DAQ",
+      "code": "DAQ",
+      "char1": "Z",
+      "char2": null,
+      "longText": "Steigeisen anderer Schaden",
+      "nodeConditionDepth": 1.5,
+      "comment": "Steigeisen falsch gesetzt",
+      "label": "Condition[1204012]_[1,5]_[DAQ]",
+      "positionFrom": "03",
+      "nodeConditionManholeArea": "C",
+      "quantification1": 1.0,
+      "positionTo": "00",
+      "assetId": "Beispiel_Node_1204012",
+      "assetType": "Node",
+      "inspectionId": "Beispiel_Inspection_1204012_13_04_2006_08_42_00",
+      "inspectionDate": "2006-04-13T08:42:00",
+      "sdco": [
+        {
+          "property": "hasNodeFabricDamage",
+          "class": "OtherDefectiveStepOrLadder"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204012_21_4_BAK",
+      "code": "BAK",
+      "char1": "Z",
+      "char2": null,
+      "longText": "komplexe Falte in Auskleidung",
+      "pipeSectionConditionStation": 21.4,
+      "label": "Condition[1204012]_[21,4]_[BAK]",
+      "imageName": "5_0-14-51.jpg",
+      "quantification1": 15.0,
+      "positionTo": "04",
+      "videoCounterReading": "0:14:51",
+      "standardizedComment": "K",
+      "positionFrom": "02",
+      "assetId": "Beispiel_PipeSection_1204012",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204012",
+      "inspectionDate": null,
+      "sdco": [
+        {
+          "property": "hasPipeFabricDamage",
+          "class": "OtherLiningDefect"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204012_23_1_BCA",
+      "code": "BCA",
+      "char1": "G",
+      "char2": "A",
+      "positionTo": "00",
+      "pipeSectionConditionStation": 23.1,
+      "longText": "Anschluss, unbekannt, offen",
+      "positionFrom": "01",
+      "quantification1": 100.0,
+      "videoCounterReading": "0:19:41",
+      "imageName": "5_0-19-41.jpg",
+      "label": "Condition[1204012]_[23,1]_[BCA]",
+      "assetId": "Beispiel_PipeSection_1204012",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204012",
+      "inspectionDate": null,
+      "sdco": [
+        {
+          "property": "hasPipeInventoryFeature",
+          "class": "ConnectionNotEvident"
+        },
+        {
+          "property": "hasPipeInventoryFeature",
+          "class": "OpenConnection"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204012_28_0_BCE",
+      "code": "BCE",
+      "char1": "XP",
+      "char2": null,
+      "positionFrom": "00",
+      "longText": "ROhrende",
+      "imageName": "5_0-14-20.jpg",
+      "positionTo": "00",
+      "videoCounterReading": "0:14:20",
+      "label": "Condition[1204012]_[28.0]_[BCE]",
+      "pipeSectionConditionStation": 28.0,
+      "assetId": "Beispiel_PipeSection_1204012",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204012",
+      "inspectionDate": null,
+      "sdco": [
+        {
+          "property": "hasPipeInventoryFeature",
+          "class": "NodeType"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204012_3_3_DDB",
+      "code": "DDB",
+      "char1": null,
+      "char2": null,
+      "label": "Condition[1204012]_[3,3]_[DDB]",
+      "longText": "Oberkante/Inspektionsende",
+      "standardizedComment": "B",
+      "nodeConditionDepth": 3.3,
+      "positionFrom": "00",
+      "positionTo": "00",
+      "assetId": "Beispiel_Node_1204012",
+      "assetType": "Node",
+      "inspectionId": "Beispiel_Inspection_1204012_13_04_2006_08_42_00",
+      "inspectionDate": "2006-04-13T08:42:00",
+      "sdco": [
+        {
+          "property": "hasNodeFeature",
+          "class": "GeneralRemark"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204012_5_8_BCA",
+      "code": "BCA",
+      "char1": "G",
+      "char2": "A",
+      "imageName": "5_0-03-26.jpg",
+      "label": "Condition[1204012]_[5,8]_[BCA]",
+      "pipeSectionConditionStation": 5.8,
+      "positionTo": "00",
+      "positionFrom": "02",
+      "videoCounterReading": "0:03:26",
+      "longText": "Anschluss, unbekannt, offen",
+      "quantification1": 100.0,
+      "assetId": "Beispiel_PipeSection_1204012",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204012",
+      "inspectionDate": null,
+      "sdco": [
+        {
+          "property": "hasPipeInventoryFeature",
+          "class": "ConnectionNotEvident"
+        },
+        {
+          "property": "hasPipeInventoryFeature",
+          "class": "OpenConnection"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204013_0_0_BAF",
+      "code": "BAF",
+      "char1": "D",
+      "char2": "A",
+      "positionTo": "12",
+      "linearDamage": "A1",
+      "videoCounterReading": "0:00:42",
+      "positionFrom": "12",
+      "imageName": [
+        "4_0-00-42.jpg",
+        "3_0-00-58.jpg"
+      ],
+      "longText": "Oberflächenschaden",
+      "pipeSectionConditionStation": 0.0,
+      "label": "Condition[1204013]_[0,0]_[BAF]",
+      "assetId": "Beispiel_PipeSection_1204013",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204013",
+      "inspectionDate": "2006-04-07T10:55:00",
+      "sdco": [
+        {
+          "property": "hasDamageCause",
+          "class": "Mechanical"
+        },
+        {
+          "property": "hasPipeFabricDamage",
+          "class": "AggregateProjectingFromSurface"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204013_0_0_BAI",
+      "code": "BAI",
+      "char1": "A",
+      "char2": "B",
+      "videoCounterReading": "0:00:42",
+      "label": "Condition[1204013]_[0,0]_[BAI]",
+      "positionFrom": "12",
+      "imageName": "4_0-00-42.jpg",
+      "pipeSectionConditionStation": 0.0,
+      "longText": "Einragendes Dichtugnsmaterial",
+      "positionTo": "12",
+      "assetId": "Beispiel_PipeSection_1204013",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204013",
+      "inspectionDate": "2006-04-07T10:55:00",
+      "sdco": [
+        {
+          "property": "hasPipeFabricDamage",
+          "class": "IntrudingSealingRingAboveCentreline"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204013_0_0_BCD",
+      "code": "BCD",
+      "char1": "XP",
+      "char2": null,
+      "imageName": [
+        "3_0-00-19.jpg",
+        "4_0-00-19.jpg"
+      ],
+      "label": "Condition[1204013]_[0.0]_[BCD]",
+      "pipeSectionConditionStation": 0.0,
+      "videoCounterReading": "0:00:19",
+      "positionFrom": "00",
+      "longText": "Rohranfang",
+      "positionTo": "00",
+      "assetId": "Beispiel_PipeSection_1204013",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204013",
+      "inspectionDate": "2006-04-07T10:55:00",
+      "sdco": [
+        {
+          "property": "hasPipeInventoryFeature",
+          "class": "NodeType"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204013_0_0_DBC",
+      "code": "DBC",
+      "char1": "C",
+      "char2": null,
+      "positionFrom": "12",
+      "positionTo": "00",
+      "label": "Condition[1204013]_[0,0]_[DBC]",
+      "nodeConditionDepth": 0.0,
+      "longText": "Ablagerungen",
+      "quantification1": 50.0,
+      "nodeConditionManholeArea": "J",
+      "assetId": "Beispiel_Node_1204013",
+      "assetType": "Node",
+      "inspectionId": "Beispiel_Inspection_1204013_13_04_2006_08_34_00",
+      "inspectionDate": "2006-04-13T08:34:00",
+      "sdco": [
+        {
+          "property": "hasNodeOperationDamage",
+          "class": "HardOrCompactedSettledDeposit"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204013_0_0_DCA",
+      "code": "DCA",
+      "char1": "B",
+      "char2": null,
+      "positionFrom": "07",
+      "label": "Condition[1204013]_[0,0]_[DCA]",
+      "longText": "Anschluss",
+      "nodeConditionDepth": 0.0,
+      "positionTo": "00",
+      "nodeConditionManholeArea": "J",
+      "assetId": "Beispiel_Node_1204013",
+      "assetType": "Node",
+      "inspectionId": "Beispiel_Inspection_1204013_13_04_2006_08_34_00",
+      "inspectionDate": "2006-04-13T08:34:00",
+      "sdco": [
+        {
+          "property": "hasNodeInventoryFeature",
+          "class": "FreeDropConnection"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204013_0_0_DCG",
+      "code": "DCG",
+      "char1": "A",
+      "char2": "A",
+      "label": "Condition[1204013]_[0,0]_[DCG]",
+      "longText": "Anschlussleitung",
+      "nodeConditionDepth": 0.0,
+      "quantification1": 400.0,
+      "positionTo": "00",
+      "positionFrom": "07",
+      "nodeConditionManholeArea": "J",
+      "assetId": "Beispiel_Node_1204013",
+      "assetType": "Node",
+      "inspectionId": "Beispiel_Inspection_1204013_13_04_2006_08_34_00",
+      "inspectionDate": "2006-04-13T08:34:00",
+      "sdco": [
+        {
+          "property": "hasConnectionDischargeDirection",
+          "class": "ConnectionDischargeIntoNode"
+        },
+        {
+          "property": "hasNodeInventoryFeature",
+          "class": "CircularConnectingPipeline"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204013_0_0_DDB",
+      "code": "DDB",
+      "char1": null,
+      "char2": null,
+      "longText": "Sohle/Inspektionsanfang",
+      "positionFrom": "00",
+      "standardizedComment": "A",
+      "nodeConditionDepth": 0.0,
+      "label": "Condition[1204013]_[0,0]_[DDB]",
+      "positionTo": "00",
+      "assetId": "Beispiel_Node_1204013",
+      "assetType": "Node",
+      "inspectionId": "Beispiel_Inspection_1204013_13_04_2006_08_34_00",
+      "inspectionDate": "2006-04-13T08:34:00",
+      "sdco": [
+        {
+          "property": "hasNodeFeature",
+          "class": "GeneralRemark"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204013_0_2_DAE",
+      "code": "DAE",
+      "char1": null,
+      "char2": null,
+      "label": "Condition[1204013]_[0,2]_[DAE]",
+      "longText": "fehledner Mörtel",
+      "nodeConditionDepth": 0.2,
+      "quantification1": 30.0,
+      "positionFrom": "12",
+      "nodeConditionManholeArea": "I",
+      "positionTo": "02",
+      "assetId": "Beispiel_Node_1204013",
+      "assetType": "Node",
+      "inspectionId": "Beispiel_Inspection_1204013_13_04_2006_08_34_00",
+      "inspectionDate": "2006-04-13T08:34:00",
+      "sdco": [
+        {
+          "property": "hasNodeFabricDamage",
+          "class": "MissingBrickworkOrMasonry"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204013_10_1_BAF",
+      "code": "BAF",
+      "char1": "D",
+      "char2": "A",
+      "positionFrom": "12",
+      "label": "Condition[1204013]_[10,1]_[BAF]",
+      "imageName": "3_0-11-38.jpg",
+      "positionTo": "12",
+      "videoCounterReading": "0:11:38",
+      "linearDamage": "B1",
+      "longText": "Oberflächenschaden",
+      "pipeSectionConditionStation": 10.1,
+      "assetId": "Beispiel_PipeSection_1204013",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204013",
+      "inspectionDate": "2006-04-07T10:55:00",
+      "sdco": [
+        {
+          "property": "hasDamageCause",
+          "class": "Mechanical"
+        },
+        {
+          "property": "hasPipeFabricDamage",
+          "class": "AggregateProjectingFromSurface"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204013_10_1_BBA",
+      "code": "BBA",
+      "char1": "C",
+      "char2": null,
+      "videoCounterReading": "0:12:04",
+      "pipeSectionConditionStation": 10.1,
+      "longText": "Komplexes Wurzelwerk",
+      "connection": true,
+      "label": "Condition[1204013]_[10,1]_[BBA]",
+      "positionTo": "04",
+      "quantification1": 50.0,
+      "positionFrom": "08",
+      "imageName": "3_0-12-04.jpg",
+      "assetId": "Beispiel_PipeSection_1204013",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204013",
+      "inspectionDate": "2006-04-07T10:55:00",
+      "sdco": [
+        {
+          "property": "hasPipeOperationDamage",
+          "class": "ComplexMassRoots"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204013_10_1_BDC",
+      "code": "BDC",
+      "char1": "Y",
+      "char2": null,
+      "longText": "Inspektion abgebrochen",
+      "positionTo": "00",
+      "imageName": "3_0-14-20.jpg",
+      "videoCounterReading": "0:14:20",
+      "label": "Condition[1204013]_[10.1]_[BDC]",
+      "pipeSectionConditionStation": 10.1,
+      "positionFrom": "00",
+      "assetId": "Beispiel_PipeSection_1204013",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204013",
+      "inspectionDate": "2006-04-07T10:55:00",
+      "sdco": [
+        {
+          "property": "hasPipeFeature",
+          "class": "InspectionTermination"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204013_1_7_DAG",
+      "code": "DAG",
+      "char1": null,
+      "char2": null,
+      "quantification1": 100.0,
+      "nodeConditionDepth": 1.7,
+      "nodeConditionManholeArea": "C",
+      "label": "Condition[1204013]_[1,7]_[DAG]",
+      "longText": "Einragender Anschluss",
+      "positionTo": "00",
+      "positionFrom": "08",
+      "assetId": "Beispiel_Node_1204013",
+      "assetType": "Node",
+      "inspectionId": "Beispiel_Inspection_1204013_13_04_2006_08_34_00",
+      "inspectionDate": "2006-04-13T08:34:00",
+      "sdco": [
+        {
+          "property": "hasNodeFabricDamage",
+          "class": "IntrudingConnection"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204013_1_7_DCA",
+      "code": "DCA",
+      "char1": "D",
+      "char2": null,
+      "longText": "Anschluss",
+      "nodeConditionDepth": 1.7,
+      "label": "Condition[1204013]_[1,7]_[DCA]",
+      "nodeConditionManholeArea": "C",
+      "positionTo": "00",
+      "positionFrom": "08",
+      "assetId": "Beispiel_Node_1204013",
+      "assetType": "Node",
+      "inspectionId": "Beispiel_Inspection_1204013_13_04_2006_08_34_00",
+      "inspectionDate": "2006-04-13T08:34:00",
+      "sdco": [
+        {
+          "property": "hasNodeInventoryFeature",
+          "class": "InternalDropPipeConnection"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204013_1_7_DCG",
+      "code": "DCG",
+      "char1": "A",
+      "char2": "A",
+      "positionTo": "00",
+      "longText": "Anschlussleitung",
+      "positionFrom": "08",
+      "nodeConditionManholeArea": "C",
+      "quantification1": 100.0,
+      "nodeConditionDepth": 1.7,
+      "label": "Condition[1204013]_[1,7]_[DCG]",
+      "assetId": "Beispiel_Node_1204013",
+      "assetType": "Node",
+      "inspectionId": "Beispiel_Inspection_1204013_13_04_2006_08_34_00",
+      "inspectionDate": "2006-04-13T08:34:00",
+      "sdco": [
+        {
+          "property": "hasConnectionDischargeDirection",
+          "class": "ConnectionDischargeIntoNode"
+        },
+        {
+          "property": "hasNodeInventoryFeature",
+          "class": "CircularConnectingPipeline"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204013_1_8_DAB",
+      "code": "DAB",
+      "char1": "B",
+      "char2": "A",
+      "positionTo": "00",
+      "linearDamage": "A1",
+      "positionFrom": "08",
+      "quantification1": 3.0,
+      "nodeConditionManholeArea": "C",
+      "nodeConditionDepth": 1.8,
+      "label": "Condition[1204013]_[1,8]_[DAB]",
+      "longText": "Riss",
+      "assetId": "Beispiel_Node_1204013",
+      "assetType": "Node",
+      "inspectionId": "Beispiel_Inspection_1204013_13_04_2006_08_34_00",
+      "inspectionDate": "2006-04-13T08:34:00",
+      "sdco": [
+        {
+          "property": "hasDamageOrientation",
+          "class": "Vertical"
+        },
+        {
+          "property": "hasNodeFabricDamage",
+          "class": "CrackFissure"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204013_2_7_DAB",
+      "code": "DAB",
+      "char1": "B",
+      "char2": "A",
+      "nodeConditionDepth": 2.7,
+      "quantification1": 3.0,
+      "label": "Condition[1204013]_[2,7]_[DAB]",
+      "positionFrom": "08",
+      "positionTo": "00",
+      "nodeConditionManholeArea": "C",
+      "longText": "Riss",
+      "linearDamage": "B1",
+      "assetId": "Beispiel_Node_1204013",
+      "assetType": "Node",
+      "inspectionId": "Beispiel_Inspection_1204013_13_04_2006_08_34_00",
+      "inspectionDate": "2006-04-13T08:34:00",
+      "sdco": [
+        {
+          "property": "hasDamageOrientation",
+          "class": "Vertical"
+        },
+        {
+          "property": "hasNodeFabricDamage",
+          "class": "CrackFissure"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204013_2_8_DAR",
+      "code": "DAR",
+      "char1": "B",
+      "char2": null,
+      "positionFrom": "05",
+      "nodeConditionManholeArea": "A",
+      "longText": "Abdeckung wackelt",
+      "label": "Condition[1204013]_[2,8]_[DAR]",
+      "positionTo": "00",
+      "nodeConditionDepth": 2.8,
+      "assetId": "Beispiel_Node_1204013",
+      "assetType": "Node",
+      "inspectionId": "Beispiel_Inspection_1204013_13_04_2006_08_34_00",
+      "inspectionDate": "2006-04-13T08:34:00",
+      "sdco": [
+        {
+          "property": "hasNodeFabricDamage",
+          "class": "RockingCover"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204013_2_8_DDB",
+      "code": "DDB",
+      "char1": null,
+      "char2": null,
+      "longText": "Oberkante/Inspektionsende",
+      "positionFrom": "00",
+      "standardizedComment": "B",
+      "label": "Condition[1204013]_[2,8]_[DDB]",
+      "positionTo": "00",
+      "nodeConditionDepth": 2.8,
+      "assetId": "Beispiel_Node_1204013",
+      "assetType": "Node",
+      "inspectionId": "Beispiel_Inspection_1204013_13_04_2006_08_34_00",
+      "inspectionDate": "2006-04-13T08:34:00",
+      "sdco": [
+        {
+          "property": "hasNodeFeature",
+          "class": "GeneralRemark"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204013_4_1_BCA",
+      "code": "BCA",
+      "char1": "E",
+      "char2": "A",
+      "pipeSectionConditionStation": 4.1,
+      "positionTo": "00",
+      "positionFrom": "02",
+      "longText": "Anschluss, einfach, gemeißelt, offen",
+      "quantification1": 100.0,
+      "videoCounterReading": "0:03:35",
+      "imageName": "4_0-03-35.jpg",
+      "label": "Condition[1204013]_[4,1]_[BCA]",
+      "assetId": "Beispiel_PipeSection_1204013",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204013",
+      "inspectionDate": "2006-04-07T10:55:00",
+      "sdco": [
+        {
+          "property": "hasPipeInventoryFeature",
+          "class": "ChiselledPlainConnection"
+        },
+        {
+          "property": "hasPipeInventoryFeature",
+          "class": "OpenConnection"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204013_5_8_BAL",
+      "code": "BAL",
+      "char1": "Z",
+      "char2": null,
+      "positionTo": "00",
+      "imageName": "4_0-06-11.jpg",
+      "videoCounterReading": "0:06:11",
+      "pipeSectionConditionStation": 5.8,
+      "standardizedComment": "A",
+      "positionFrom": "02",
+      "longText": "Zulaufeinbindung",
+      "quantification1": 3.0,
+      "label": "Condition[1204013]_[5,8]_[BAL]",
+      "assetId": "Beispiel_PipeSection_1204013",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204013",
+      "inspectionDate": "2006-04-07T10:55:00",
+      "sdco": [
+        {
+          "property": "hasPipeFabricDamage",
+          "class": "OtherDefectiveRepair"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204013_5_8_BCA",
+      "code": "BCA",
+      "char1": "G",
+      "char2": "A",
+      "longText": "Anschluss, unbekannt, offen",
+      "positionFrom": "02",
+      "imageName": "4_0-05-02.jpg",
+      "quantification1": 100.0,
+      "videoCounterReading": "0:05:02",
+      "label": "Condition[1204013]_[5,8]_[BCA]",
+      "pipeSectionConditionStation": 5.8,
+      "positionTo": "00",
+      "assetId": "Beispiel_PipeSection_1204013",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204013",
+      "inspectionDate": "2006-04-07T10:55:00",
+      "sdco": [
+        {
+          "property": "hasPipeInventoryFeature",
+          "class": "ConnectionNotEvident"
+        },
+        {
+          "property": "hasPipeInventoryFeature",
+          "class": "OpenConnection"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204013_5_8_BCB",
+      "code": "BCB",
+      "char1": "Z",
+      "char2": null,
+      "pipeSectionConditionStation": 5.8,
+      "positionTo": "00",
+      "positionFrom": "02",
+      "longText": "Zulaufeinbindung",
+      "imageName": "4_0-05-42.jpg",
+      "standardizedComment": "D",
+      "videoCounterReading": "0:05:42",
+      "label": "Condition[1204013]_[5,8]_[BCB]",
+      "assetId": "Beispiel_PipeSection_1204013",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204013",
+      "inspectionDate": "2006-04-07T10:55:00",
+      "sdco": [
+        {
+          "property": "hasPipeInventoryFeature",
+          "class": "PointRepair"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204013_6_3_BCA",
+      "code": "BCA",
+      "char1": "E",
+      "char2": "A",
+      "label": "Condition[1204013]_[6,3]_[BCA]",
+      "positionFrom": "10",
+      "positionTo": "00",
+      "videoCounterReading": "0:05:16",
+      "longText": "Anschluss, einfach, gemeißelt, offen",
+      "pipeSectionConditionStation": 6.3,
+      "imageName": "3_0-05-16.jpg",
+      "quantification1": 100.0,
+      "assetId": "Beispiel_PipeSection_1204013",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204013",
+      "inspectionDate": "2006-04-07T10:55:00",
+      "sdco": [
+        {
+          "property": "hasPipeInventoryFeature",
+          "class": "ChiselledPlainConnection"
+        },
+        {
+          "property": "hasPipeInventoryFeature",
+          "class": "OpenConnection"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204013_7_9_BAB",
+      "code": "BAB",
+      "char1": "B",
+      "char2": "A",
+      "longText": "Längsriss",
+      "videoCounterReading": "0:08:41",
+      "positionTo": "00",
+      "label": "Condition[1204013]_[7,9]_[BAB]",
+      "quantification1": 2.0,
+      "positionFrom": "09",
+      "pipeSectionConditionStation": 7.9,
+      "imageName": "3_0-08-41.jpg",
+      "assetId": "Beispiel_PipeSection_1204013",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204013",
+      "inspectionDate": "2006-04-07T10:55:00",
+      "sdco": [
+        {
+          "property": "hasDamageOrientation",
+          "class": "Longitudinal"
+        },
+        {
+          "property": "hasPipeFabricDamage",
+          "class": "CrackFissure"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204013_7_9_BBA",
+      "code": "BBA",
+      "char1": "C",
+      "char2": null,
+      "positionFrom": "08",
+      "quantification1": 40.0,
+      "imageName": "4_0-08-07.jpg",
+      "longText": "Komplexes Wurzelwerk",
+      "pipeSectionConditionStation": 7.9,
+      "label": "Condition[1204013]_[7,9]_[BBA]",
+      "videoCounterReading": "0:08:07",
+      "connection": true,
+      "positionTo": "04",
+      "assetId": "Beispiel_PipeSection_1204013",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204013",
+      "inspectionDate": "2006-04-07T10:55:00",
+      "sdco": [
+        {
+          "property": "hasPipeOperationDamage",
+          "class": "ComplexMassRoots"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204013_7_9_BDC",
+      "code": "BDC",
+      "char1": "Z",
+      "char2": null,
+      "positionTo": "00",
+      "standardizedComment": "GN",
+      "longText": "Gegenseite nicht erreicht",
+      "label": "Condition[1204013]_[7.9]_[BDC]",
+      "positionFrom": "00",
+      "imageName": "4_0-08-49.jpg",
+      "pipeSectionConditionStation": 7.9,
+      "videoCounterReading": "0:08:49",
+      "assetId": "Beispiel_PipeSection_1204013",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204013",
+      "inspectionDate": "2006-04-07T10:55:00",
+      "sdco": [
+        {
+          "property": "hasPipeFeature",
+          "class": "InspectionTermination"
+        },
+        {
+          "property": "hasTerminationReason",
+          "class": "OtherCause"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204013_9_8_BAH",
+      "code": "BAH",
+      "char1": "C",
+      "char2": null,
+      "positionTo": "00",
+      "imageName": "3_0-10-56.jpg",
+      "videoCounterReading": "0:10:56",
+      "label": "Condition[1204013]_[9,8]_[BAH]",
+      "positionFrom": "11",
+      "pipeSectionConditionStation": 9.8,
+      "longText": "Schadhafter Anschluss",
+      "assetId": "Beispiel_PipeSection_1204013",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204013",
+      "inspectionDate": "2006-04-07T10:55:00",
+      "sdco": [
+        {
+          "property": "hasPipeFabricDamage",
+          "class": "PartialGapConnection"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204013_9_8_BCA",
+      "code": "BCA",
+      "char1": "E",
+      "char2": "A",
+      "quantification1": 100.0,
+      "label": "Condition[1204013]_[9,8]_[BCA]",
+      "pipeSectionConditionStation": 9.8,
+      "videoCounterReading": "0:10:17",
+      "longText": "Anschluss, einfach, gemeißelt, offen",
+      "positionFrom": "11",
+      "imageName": "3_0-10-17.jpg",
+      "positionTo": "00",
+      "assetId": "Beispiel_PipeSection_1204013",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204013",
+      "inspectionDate": "2006-04-07T10:55:00",
+      "sdco": [
+        {
+          "property": "hasPipeInventoryFeature",
+          "class": "ChiselledPlainConnection"
+        },
+        {
+          "property": "hasPipeInventoryFeature",
+          "class": "OpenConnection"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204014_0_0_BAF",
+      "code": "BAF",
+      "char1": "D",
+      "char2": "A",
+      "positionTo": "07",
+      "longText": "Oberflächenschaden",
+      "linearDamage": "A1",
+      "label": "Condition[1204014]_[0,0]_[BAF]",
+      "videoCounterReading": "0:01:07",
+      "positionFrom": "05",
+      "pipeSectionConditionStation": 0.0,
+      "imageName": "2_0-01-07.jpg",
+      "assetId": "Beispiel_PipeSection_1204014",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204014",
+      "inspectionDate": "2006-04-07T09:11:00",
+      "sdco": [
+        {
+          "property": "hasDamageCause",
+          "class": "Mechanical"
+        },
+        {
+          "property": "hasPipeFabricDamage",
+          "class": "AggregateProjectingFromSurface"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204014_0_0_BCD",
+      "code": "BCD",
+      "char1": "XP",
+      "char2": null,
+      "pipeSectionConditionStation": 0.0,
+      "imageName": "2_0-00-25.jpg",
+      "positionFrom": "00",
+      "positionTo": "00",
+      "label": "Condition[1204014]_[0.0]_[BCD]",
+      "longText": "Rohranfang",
+      "videoCounterReading": "0:00:25",
+      "assetId": "Beispiel_PipeSection_1204014",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204014",
+      "inspectionDate": "2006-04-07T09:11:00",
+      "sdco": [
+        {
+          "property": "hasPipeInventoryFeature",
+          "class": "NodeType"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204014_0_0_DCA",
+      "code": "DCA",
+      "char1": "B",
+      "char2": null,
+      "nodeConditionManholeArea": "J",
+      "positionTo": "00",
+      "positionFrom": "06",
+      "longText": "Anschluss",
+      "nodeConditionDepth": 0.0,
+      "label": "Condition[1204014]_[0,0]_[DCA]",
+      "assetId": "Beispiel_Node_1204014",
+      "assetType": "Node",
+      "inspectionId": "Beispiel_Inspection_1204014_13_04_2006_08_21_00",
+      "inspectionDate": "2006-04-13T08:21:00",
+      "sdco": [
+        {
+          "property": "hasNodeInventoryFeature",
+          "class": "FreeDropConnection"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204014_0_0_DCG",
+      "code": "DCG",
+      "char1": "A",
+      "char2": "A",
+      "nodeConditionDepth": 0.0,
+      "quantification1": 300.0,
+      "nodeConditionManholeArea": "J",
+      "positionTo": "00",
+      "positionFrom": "06",
+      "longText": "Anschlussleitung",
+      "label": "Condition[1204014]_[0,0]_[DCG]",
+      "assetId": "Beispiel_Node_1204014",
+      "assetType": "Node",
+      "inspectionId": "Beispiel_Inspection_1204014_13_04_2006_08_21_00",
+      "inspectionDate": "2006-04-13T08:21:00",
+      "sdco": [
+        {
+          "property": "hasConnectionDischargeDirection",
+          "class": "ConnectionDischargeIntoNode"
+        },
+        {
+          "property": "hasNodeInventoryFeature",
+          "class": "CircularConnectingPipeline"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204014_0_0_DDB",
+      "code": "DDB",
+      "char1": null,
+      "char2": null,
+      "nodeConditionDepth": 0.0,
+      "longText": "Sohle/Inspektionsanfang",
+      "positionFrom": "00",
+      "positionTo": "00",
+      "label": "Condition[1204014]_[0,0]_[DDB]",
+      "nodeConditionManholeArea": "J",
+      "standardizedComment": "A",
+      "assetId": "Beispiel_Node_1204014",
+      "assetType": "Node",
+      "inspectionId": "Beispiel_Inspection_1204014_13_04_2006_08_21_00",
+      "inspectionDate": "2006-04-13T08:21:00",
+      "sdco": [
+        {
+          "property": "hasNodeFeature",
+          "class": "GeneralRemark"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204014_0_5_DAQ",
+      "code": "DAQ",
+      "char1": "B",
+      "char2": null,
+      "longText": "fehlendes Steigeisen",
+      "positionFrom": "03",
+      "positionTo": "00",
+      "nodeConditionManholeArea": "C",
+      "label": "Condition[1204014]_[0,5]_[DAQ]",
+      "quantification1": 1.0,
+      "nodeConditionDepth": 0.5,
+      "assetId": "Beispiel_Node_1204014",
+      "assetType": "Node",
+      "inspectionId": "Beispiel_Inspection_1204014_13_04_2006_08_21_00",
+      "inspectionDate": "2006-04-13T08:21:00",
+      "sdco": [
+        {
+          "property": "hasNodeFabricDamage",
+          "class": "MissingStep"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204014_11_3_BAB",
+      "code": "BAB",
+      "char1": "B",
+      "char2": "A",
+      "linearDamage": "B3",
+      "imageName": "2_0-11-18.jpg",
+      "pipeSectionConditionStation": 11.3,
+      "positionFrom": "09",
+      "quantification1": 1.0,
+      "longText": "Längsriss",
+      "videoCounterReading": "0:11:18",
+      "label": "Condition[1204014]_[11,3]_[BAB]",
+      "positionTo": "00",
+      "assetId": "Beispiel_PipeSection_1204014",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204014",
+      "inspectionDate": "2006-04-07T09:11:00",
+      "sdco": [
+        {
+          "property": "hasDamageOrientation",
+          "class": "Longitudinal"
+        },
+        {
+          "property": "hasPipeFabricDamage",
+          "class": "CrackFissure"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204014_11_3_BAH",
+      "code": "BAH",
+      "char1": "B",
+      "char2": null,
+      "label": "Condition[1204014]_[11,3]_[BAH]",
+      "positionTo": "00",
+      "positionFrom": "01",
+      "longText": "Schadhafter Anschluss",
+      "pipeSectionConditionStation": 11.3,
+      "videoCounterReading": "0:10:43",
+      "imageName": "2_0-10-43.jpg",
+      "assetId": "Beispiel_PipeSection_1204014",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204014",
+      "inspectionDate": "2006-04-07T09:11:00",
+      "sdco": [
+        {
+          "property": "hasPipeFabricDamage",
+          "class": "GapConnection"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204014_11_3_BCA",
+      "code": "BCA",
+      "char1": "E",
+      "char2": "A",
+      "longText": "Anschluss, einfach, gemeißelt, offen",
+      "positionFrom": "01",
+      "positionTo": "00",
+      "pipeSectionConditionStation": 11.3,
+      "label": "Condition[1204014]_[11,3]_[BCA]",
+      "videoCounterReading": "0:10:19",
+      "quantification1": 100.0,
+      "imageName": "2_0-10-19.jpg",
+      "assetId": "Beispiel_PipeSection_1204014",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204014",
+      "inspectionDate": "2006-04-07T09:11:00",
+      "sdco": [
+        {
+          "property": "hasPipeInventoryFeature",
+          "class": "ChiselledPlainConnection"
+        },
+        {
+          "property": "hasPipeInventoryFeature",
+          "class": "OpenConnection"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204014_15_1_BAH",
+      "code": "BAH",
+      "char1": "C",
+      "char2": null,
+      "label": "Condition[1204014]_[15,1]_[BAH]",
+      "positionFrom": "11",
+      "longText": "Schadhafter Anschluss",
+      "imageName": "2_0-15-06.jpg",
+      "positionTo": "00",
+      "videoCounterReading": "0:15:06",
+      "pipeSectionConditionStation": 15.1,
+      "assetId": "Beispiel_PipeSection_1204014",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204014",
+      "inspectionDate": "2006-04-07T09:11:00",
+      "sdco": [
+        {
+          "property": "hasPipeFabricDamage",
+          "class": "PartialGapConnection"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204014_15_1_BCA",
+      "code": "BCA",
+      "char1": "E",
+      "char2": "A",
+      "positionFrom": "11",
+      "pipeSectionConditionStation": 15.1,
+      "quantification1": 100.0,
+      "videoCounterReading": "0:14:32",
+      "label": "Condition[1204014]_[15,1]_[BCA]",
+      "imageName": "2_0-14-32.jpg",
+      "positionTo": "00",
+      "longText": "Anschluss, einfach, gemeißelt, offen",
+      "assetId": "Beispiel_PipeSection_1204014",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204014",
+      "inspectionDate": "2006-04-07T09:11:00",
+      "sdco": [
+        {
+          "property": "hasPipeInventoryFeature",
+          "class": "ChiselledPlainConnection"
+        },
+        {
+          "property": "hasPipeInventoryFeature",
+          "class": "OpenConnection"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204014_18_1_BBA",
+      "code": "BBA",
+      "char1": "C",
+      "char2": null,
+      "pipeSectionConditionStation": 18.1,
+      "connection": true,
+      "videoCounterReading": "0:18:11",
+      "positionTo": "03",
+      "label": "Condition[1204014]_[18,1]_[BBA]",
+      "positionFrom": "10",
+      "quantification1": 15.0,
+      "longText": "Komplexes Wurzelwerk",
+      "imageName": "2_0-18-11.jpg",
+      "assetId": "Beispiel_PipeSection_1204014",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204014",
+      "inspectionDate": "2006-04-07T09:11:00",
+      "sdco": [
+        {
+          "property": "hasPipeOperationDamage",
+          "class": "ComplexMassRoots"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204014_23_5_BCA",
+      "code": "BCA",
+      "char1": "D",
+      "char2": "A",
+      "pipeSectionConditionStation": 23.5,
+      "positionFrom": "02",
+      "videoCounterReading": "0:20:21",
+      "positionTo": "00",
+      "label": "Condition[1204014]_[23,5]_[BCA]",
+      "quantification1": 100.0,
+      "longText": "Anschluss, einfach, gebohrt, offen",
+      "imageName": "2_0-20-21.jpg",
+      "assetId": "Beispiel_PipeSection_1204014",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204014",
+      "inspectionDate": "2006-04-07T09:11:00",
+      "sdco": [
+        {
+          "property": "hasPipeInventoryFeature",
+          "class": "DrilledPlainConnection"
+        },
+        {
+          "property": "hasPipeInventoryFeature",
+          "class": "OpenConnection"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204014_24_8_BAB",
+      "code": "BAB",
+      "char1": "B",
+      "char2": "A",
+      "quantification1": 1.0,
+      "label": "Condition[1204014]_[24,8]_[BAB]",
+      "linearDamage": "A4",
+      "pipeSectionConditionStation": 24.8,
+      "imageName": "2_0-21-07.jpg",
+      "positionFrom": "03",
+      "positionTo": "00",
+      "videoCounterReading": "0:21:07",
+      "longText": "Längsriss",
+      "assetId": "Beispiel_PipeSection_1204014",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204014",
+      "inspectionDate": "2006-04-07T09:11:00",
+      "sdco": [
+        {
+          "property": "hasDamageOrientation",
+          "class": "Longitudinal"
+        },
+        {
+          "property": "hasPipeFabricDamage",
+          "class": "CrackFissure"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204014_26_0_BBA",
+      "code": "BBA",
+      "char1": "C",
+      "char2": null,
+      "pipeSectionConditionStation": 26.0,
+      "quantification1": 10.0,
+      "positionFrom": "10",
+      "longText": "Komplexes Wurzelwerk",
+      "label": "Condition[1204014]_[26,0]_[BBA]",
+      "videoCounterReading": "0:22:35",
+      "imageName": "2_0-22-35.jpg",
+      "positionTo": "12",
+      "connection": true,
+      "assetId": "Beispiel_PipeSection_1204014",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204014",
+      "inspectionDate": "2006-04-07T09:11:00",
+      "sdco": [
+        {
+          "property": "hasPipeOperationDamage",
+          "class": "ComplexMassRoots"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204014_29_9_BCA",
+      "code": "BCA",
+      "char1": "D",
+      "char2": "A",
+      "longText": "Anschluss, einfach, gebohrt, offen",
+      "positionFrom": "10",
+      "quantification1": 100.0,
+      "videoCounterReading": "0:24:09",
+      "pipeSectionConditionStation": 29.9,
+      "label": "Condition[1204014]_[29,9]_[BCA]",
+      "imageName": "2_0-24-09.jpg",
+      "positionTo": "00",
+      "assetId": "Beispiel_PipeSection_1204014",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204014",
+      "inspectionDate": "2006-04-07T09:11:00",
+      "sdco": [
+        {
+          "property": "hasPipeInventoryFeature",
+          "class": "DrilledPlainConnection"
+        },
+        {
+          "property": "hasPipeInventoryFeature",
+          "class": "OpenConnection"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204014_2_1_DDB",
+      "code": "DDB",
+      "char1": null,
+      "char2": null,
+      "positionFrom": "00",
+      "standardizedComment": "B",
+      "nodeConditionDepth": 2.1,
+      "positionTo": "00",
+      "longText": "Oberkante/Inspektionsende",
+      "label": "Condition[1204014]_[2,1]_[DDB]",
+      "assetId": "Beispiel_Node_1204014",
+      "assetType": "Node",
+      "inspectionId": "Beispiel_Inspection_1204014_13_04_2006_08_21_00",
+      "inspectionDate": "2006-04-13T08:21:00",
+      "sdco": [
+        {
+          "property": "hasNodeFeature",
+          "class": "GeneralRemark"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204014_2_4_BAB",
+      "code": "BAB",
+      "char1": "B",
+      "char2": "A",
+      "label": "Condition[1204014]_[2,4]_[BAB]",
+      "imageName": "2_0-03-24.jpg",
+      "longText": "Längsriss",
+      "videoCounterReading": "0:03:24",
+      "positionFrom": "12",
+      "positionTo": "00",
+      "quantification1": 1.0,
+      "pipeSectionConditionStation": 2.4,
+      "linearDamage": "A2",
+      "assetId": "Beispiel_PipeSection_1204014",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204014",
+      "inspectionDate": "2006-04-07T09:11:00",
+      "sdco": [
+        {
+          "property": "hasDamageOrientation",
+          "class": "Longitudinal"
+        },
+        {
+          "property": "hasPipeFabricDamage",
+          "class": "CrackFissure"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204014_38_6_BAB",
+      "code": "BAB",
+      "char1": "B",
+      "char2": "A",
+      "imageName": "2_0-27-46.jpg",
+      "linearDamage": "B4",
+      "positionTo": "00",
+      "pipeSectionConditionStation": 38.6,
+      "label": "Condition[1204014]_[38,6]_[BAB]",
+      "positionFrom": "03",
+      "quantification1": 1.0,
+      "longText": "Längsriss",
+      "videoCounterReading": "0:27:46",
+      "assetId": "Beispiel_PipeSection_1204014",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204014",
+      "inspectionDate": "2006-04-07T09:11:00",
+      "sdco": [
+        {
+          "property": "hasDamageOrientation",
+          "class": "Longitudinal"
+        },
+        {
+          "property": "hasPipeFabricDamage",
+          "class": "CrackFissure"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204014_42_2_BAF",
+      "code": "BAF",
+      "char1": "D",
+      "char2": "A",
+      "label": "Condition[1204014]_[42,2]_[BAF]",
+      "videoCounterReading": "0:30:57",
+      "imageName": "2_0-30-57.jpg",
+      "pipeSectionConditionStation": 42.2,
+      "positionTo": "07",
+      "linearDamage": "B1",
+      "longText": "Oberflächenschaden",
+      "positionFrom": "05",
+      "assetId": "Beispiel_PipeSection_1204014",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204014",
+      "inspectionDate": "2006-04-07T09:11:00",
+      "sdco": [
+        {
+          "property": "hasDamageCause",
+          "class": "Mechanical"
+        },
+        {
+          "property": "hasPipeFabricDamage",
+          "class": "AggregateProjectingFromSurface"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204014_42_2_BCE",
+      "code": "BCE",
+      "char1": "XP",
+      "char2": null,
+      "positionFrom": "00",
+      "imageName": "2_0-31-10.jpg",
+      "pipeSectionConditionStation": 42.2,
+      "videoCounterReading": "0:31:10",
+      "longText": "Rohrende",
+      "label": "Condition[1204014]_[42.2]_[BCE]",
+      "positionTo": "00",
+      "assetId": "Beispiel_PipeSection_1204014",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204014",
+      "inspectionDate": "2006-04-07T09:11:00",
+      "sdco": [
+        {
+          "property": "hasPipeInventoryFeature",
+          "class": "NodeType"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204014_4_6_BCA",
+      "code": "BCA",
+      "char1": "E",
+      "char2": "A",
+      "pipeSectionConditionStation": 4.6,
+      "quantification1": 100.0,
+      "imageName": "2_0-05-54.jpg",
+      "videoCounterReading": "0:05:54",
+      "longText": "Anschluss, einfach, gemeißelt, offen",
+      "positionFrom": "02",
+      "positionTo": "00",
+      "label": "Condition[1204014]_[4,6]_[BCA]",
+      "assetId": "Beispiel_PipeSection_1204014",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204014",
+      "inspectionDate": "2006-04-07T09:11:00",
+      "sdco": [
+        {
+          "property": "hasPipeInventoryFeature",
+          "class": "ChiselledPlainConnection"
+        },
+        {
+          "property": "hasPipeInventoryFeature",
+          "class": "OpenConnection"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204014_6_0_BAB",
+      "code": "BAB",
+      "char1": "B",
+      "char2": "A",
+      "imageName": "2_0-07-06.jpg",
+      "linearDamage": "A3",
+      "positionFrom": "09",
+      "quantification1": 1.0,
+      "longText": "Längsriss",
+      "pipeSectionConditionStation": 6.0,
+      "label": "Condition[1204014]_[6,0]_[BAB]",
+      "videoCounterReading": "0:07:06",
+      "positionTo": "00",
+      "assetId": "Beispiel_PipeSection_1204014",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204014",
+      "inspectionDate": "2006-04-07T09:11:00",
+      "sdco": [
+        {
+          "property": "hasDamageOrientation",
+          "class": "Longitudinal"
+        },
+        {
+          "property": "hasPipeFabricDamage",
+          "class": "CrackFissure"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204014_8_7_BAB",
+      "code": "BAB",
+      "char1": "B",
+      "char2": "A",
+      "longText": "Längsriss",
+      "quantification1": 1.0,
+      "imageName": "2_0-09-28.jpg",
+      "positionFrom": "12",
+      "linearDamage": "B2",
+      "videoCounterReading": "0:09:28",
+      "pipeSectionConditionStation": 8.7,
+      "label": "Condition[1204014]_[8,7]_[BAB]",
+      "positionTo": "00",
+      "assetId": "Beispiel_PipeSection_1204014",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204014",
+      "inspectionDate": "2006-04-07T09:11:00",
+      "sdco": [
+        {
+          "property": "hasDamageOrientation",
+          "class": "Longitudinal"
+        },
+        {
+          "property": "hasPipeFabricDamage",
+          "class": "CrackFissure"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204015_0_0_BCD",
+      "code": "BCD",
+      "char1": "XP",
+      "char2": null,
+      "imageName": "1_0-00-04.jpg",
+      "pipeSectionConditionStation": 0.0,
+      "positionFrom": "00",
+      "label": "Condition[1204015]_[0.0]_[BCD]",
+      "positionTo": "00",
+      "videoCounterReading": "0:00:04",
+      "longText": "Rohranfang",
+      "assetId": "Beispiel_PipeSection_1204015",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204015",
+      "inspectionDate": "2006-04-07T08:30:00",
+      "sdco": [
+        {
+          "property": "hasPipeInventoryFeature",
+          "class": "NodeType"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204015_0_0_DAB",
+      "code": "DAB",
+      "char1": "B",
+      "char2": "A",
+      "nodeConditionDepth": 0.0,
+      "linearDamage": "A",
+      "positionFrom": "03",
+      "quantification1": 3.0,
+      "nodeConditionManholeArea": "C",
+      "label": "Condition[1204015]_[0,0]_[DAB]",
+      "longText": "Riss",
+      "positionTo": "00",
+      "assetId": "Beispiel_Node_1204015",
+      "assetType": "Node",
+      "inspectionId": "Beispiel_Inspection_1204015_13_04_2006_08_12_00",
+      "inspectionDate": "2006-04-13T08:12:00",
+      "sdco": [
+        {
+          "property": "hasDamageOrientation",
+          "class": "Vertical"
+        },
+        {
+          "property": "hasNodeFabricDamage",
+          "class": "CrackFissure"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204015_0_0_DCA",
+      "code": "DCA",
+      "char1": "B",
+      "char2": null,
+      "nodeConditionManholeArea": "J",
+      "positionTo": "00",
+      "positionFrom": "06",
+      "label": "Condition[1204015]_[0,0]_[DCA]",
+      "nodeConditionDepth": 0.0,
+      "longText": "Anschluss",
+      "assetId": "Beispiel_Node_1204015",
+      "assetType": "Node",
+      "inspectionId": "Beispiel_Inspection_1204015_13_04_2006_08_12_00",
+      "inspectionDate": "2006-04-13T08:12:00",
+      "sdco": [
+        {
+          "property": "hasNodeInventoryFeature",
+          "class": "FreeDropConnection"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204015_0_0_DCG",
+      "code": "DCG",
+      "char1": "A",
+      "char2": "A",
+      "longText": "Anschlussleitung",
+      "positionTo": "00",
+      "nodeConditionDepth": 0.0,
+      "quantification1": 300.0,
+      "nodeConditionManholeArea": "J",
+      "label": "Condition[1204015]_[0,0]_[DCG]",
+      "positionFrom": "06",
+      "assetId": "Beispiel_Node_1204015",
+      "assetType": "Node",
+      "inspectionId": "Beispiel_Inspection_1204015_13_04_2006_08_12_00",
+      "inspectionDate": "2006-04-13T08:12:00",
+      "sdco": [
+        {
+          "property": "hasConnectionDischargeDirection",
+          "class": "ConnectionDischargeIntoNode"
+        },
+        {
+          "property": "hasNodeInventoryFeature",
+          "class": "CircularConnectingPipeline"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204015_0_0_DDB",
+      "code": "DDB",
+      "char1": null,
+      "char2": null,
+      "label": "Condition[1204015]_[0,0]_[DDB]",
+      "standardizedComment": "A",
+      "longText": "Sohle/Inspektionsanfang",
+      "nodeConditionDepth": 0.0,
+      "positionFrom": "00",
+      "positionTo": "00",
+      "assetId": "Beispiel_Node_1204015",
+      "assetType": "Node",
+      "inspectionId": "Beispiel_Inspection_1204015_13_04_2006_08_12_00",
+      "inspectionDate": "2006-04-13T08:12:00",
+      "sdco": [
+        {
+          "property": "hasNodeFeature",
+          "class": "GeneralRemark"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204015_10_6_BAG",
+      "code": "BAG",
+      "char1": null,
+      "char2": null,
+      "pipeSectionConditionStation": 10.6,
+      "quantification1": 3.0,
+      "label": "Condition[1204015]_[10,6]_[BAG]",
+      "videoCounterReading": "0:04:15",
+      "longText": "Einragender Anschluss",
+      "positionFrom": "03",
+      "positionTo": "00",
+      "assetId": "Beispiel_PipeSection_1204015",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204015",
+      "inspectionDate": "2006-04-07T08:30:00",
+      "sdco": [
+        {
+          "property": "hasPipeFabricDamage",
+          "class": "IntrudingConnection"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204015_10_6_BCA",
+      "code": "BCA",
+      "char1": "E",
+      "char2": "A",
+      "videoCounterReading": "0:03:48",
+      "positionFrom": "01",
+      "positionTo": "00",
+      "imageName": "1_0-03-48.jpg",
+      "label": "Condition[1204015]_[10,6]_[BCA]",
+      "quantification1": 100.0,
+      "pipeSectionConditionStation": 10.6,
+      "longText": "Anschluss, einfach, gemeißelt, offen",
+      "assetId": "Beispiel_PipeSection_1204015",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204015",
+      "inspectionDate": "2006-04-07T08:30:00",
+      "sdco": [
+        {
+          "property": "hasPipeInventoryFeature",
+          "class": "ChiselledPlainConnection"
+        },
+        {
+          "property": "hasPipeInventoryFeature",
+          "class": "OpenConnection"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204015_16_4_BAH",
+      "code": "BAH",
+      "char1": "C",
+      "char2": null,
+      "positionFrom": "02",
+      "pipeSectionConditionStation": 16.4,
+      "label": "Condition[1204015]_[16,4]_[BAH]",
+      "videoCounterReading": "0:06:47",
+      "positionTo": "00",
+      "longText": "Einragender Anschluss",
+      "assetId": "Beispiel_PipeSection_1204015",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204015",
+      "inspectionDate": "2006-04-07T08:30:00",
+      "sdco": [
+        {
+          "property": "hasPipeFabricDamage",
+          "class": "PartialGapConnection"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204015_16_4_BCA",
+      "code": "BCA",
+      "char1": "E",
+      "char2": "A",
+      "label": "Condition[1204015]_[16,4]_[BCA]",
+      "imageName": "1_0-06-32.jpg",
+      "pipeSectionConditionStation": 16.4,
+      "longText": "Anschluss, einfach, gemeißelt, offen",
+      "positionTo": "00",
+      "videoCounterReading": "0:06:32",
+      "positionFrom": "02",
+      "quantification1": 100.0,
+      "assetId": "Beispiel_PipeSection_1204015",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204015",
+      "inspectionDate": "2006-04-07T08:30:00",
+      "sdco": [
+        {
+          "property": "hasPipeInventoryFeature",
+          "class": "ChiselledPlainConnection"
+        },
+        {
+          "property": "hasPipeInventoryFeature",
+          "class": "OpenConnection"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204015_18_7_BCA",
+      "code": "BCA",
+      "char1": "E",
+      "char2": "A",
+      "longText": "Anschluss, einfach, gemeißelt, offen",
+      "positionTo": "00",
+      "quantification1": 100.0,
+      "videoCounterReading": "0:08:13",
+      "pipeSectionConditionStation": 18.7,
+      "imageName": "1_0-08-13.jpg",
+      "label": "Condition[1204015]_[18,7]_[BCA]",
+      "positionFrom": "11",
+      "assetId": "Beispiel_PipeSection_1204015",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204015",
+      "inspectionDate": "2006-04-07T08:30:00",
+      "sdco": [
+        {
+          "property": "hasPipeInventoryFeature",
+          "class": "ChiselledPlainConnection"
+        },
+        {
+          "property": "hasPipeInventoryFeature",
+          "class": "OpenConnection"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204015_19_1_BAB",
+      "code": "BAB",
+      "char1": "B",
+      "char2": "A",
+      "imageName": "1_0-09-04.jpg",
+      "videoCounterReading": "0:09:04",
+      "longText": "Längsriss",
+      "label": "Condition[1204015]_[19,1]_[BAB]",
+      "quantification1": 0.1,
+      "positionTo": "00",
+      "pipeSectionConditionStation": 19.1,
+      "positionFrom": "11",
+      "assetId": "Beispiel_PipeSection_1204015",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204015",
+      "inspectionDate": "2006-04-07T08:30:00",
+      "sdco": [
+        {
+          "property": "hasDamageOrientation",
+          "class": "Longitudinal"
+        },
+        {
+          "property": "hasPipeFabricDamage",
+          "class": "CrackFissure"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204015_1_0_DAB",
+      "code": "DAB",
+      "char1": "B",
+      "char2": "A",
+      "positionFrom": "03",
+      "quantification1": 3.0,
+      "nodeConditionManholeArea": "C",
+      "linearDamage": "B",
+      "longText": "Riss",
+      "nodeConditionDepth": 1.0,
+      "positionTo": "00",
+      "label": "Condition[1204015]_[1,0]_[DAB]",
+      "assetId": "Beispiel_Node_1204015",
+      "assetType": "Node",
+      "inspectionId": "Beispiel_Inspection_1204015_13_04_2006_08_12_00",
+      "inspectionDate": "2006-04-13T08:12:00",
+      "sdco": [
+        {
+          "property": "hasDamageOrientation",
+          "class": "Vertical"
+        },
+        {
+          "property": "hasNodeFabricDamage",
+          "class": "CrackFissure"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204015_23_2_BAH",
+      "code": "BAH",
+      "char1": "B",
+      "char2": null,
+      "imageName": "1_0-10-26.jpg",
+      "positionFrom": "10",
+      "positionTo": "00",
+      "pipeSectionConditionStation": 23.2,
+      "longText": "Schadhafter Anschluss",
+      "videoCounterReading": "0:10:26",
+      "label": "Condition[1204015]_[23,2]_[BAH]",
+      "assetId": "Beispiel_PipeSection_1204015",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204015",
+      "inspectionDate": "2006-04-07T08:30:00",
+      "sdco": [
+        {
+          "property": "hasPipeFabricDamage",
+          "class": "GapConnection"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204015_23_2_BCA",
+      "code": "BCA",
+      "char1": "E",
+      "char2": "A",
+      "quantification1": 100.0,
+      "imageName": "1_0-10-07.jpg",
+      "longText": "Anschluss, einfach, gemeißelt, offen",
+      "videoCounterReading": "0:10:07",
+      "pipeSectionConditionStation": 23.2,
+      "positionFrom": "10",
+      "positionTo": "00",
+      "label": "Condition[1204015]_[23,2]_[BCA]",
+      "assetId": "Beispiel_PipeSection_1204015",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204015",
+      "inspectionDate": "2006-04-07T08:30:00",
+      "sdco": [
+        {
+          "property": "hasPipeInventoryFeature",
+          "class": "ChiselledPlainConnection"
+        },
+        {
+          "property": "hasPipeInventoryFeature",
+          "class": "OpenConnection"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204015_26_4_BAH",
+      "code": "BAH",
+      "char1": "B",
+      "char2": null,
+      "positionFrom": "02",
+      "longText": "Schadhafter Anschluss",
+      "videoCounterReading": "0:11:38",
+      "label": "Condition[1204015]_[26,4]_[BAH]",
+      "pipeSectionConditionStation": 26.4,
+      "positionTo": "00",
+      "imageName": "1_0-11-38.jpg",
+      "assetId": "Beispiel_PipeSection_1204015",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204015",
+      "inspectionDate": "2006-04-07T08:30:00",
+      "sdco": [
+        {
+          "property": "hasPipeFabricDamage",
+          "class": "GapConnection"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204015_26_4_BCA",
+      "code": "BCA",
+      "char1": "E",
+      "char2": "A",
+      "positionFrom": "02",
+      "imageName": "1_0-11-14.jpg",
+      "label": "Condition[1204015]_[26,4]_[BCA]",
+      "pipeSectionConditionStation": 26.4,
+      "positionTo": "00",
+      "videoCounterReading": "0:11:14",
+      "longText": "Anschluss, einfach, gemeißelt, offen",
+      "quantification1": 100.0,
+      "assetId": "Beispiel_PipeSection_1204015",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204015",
+      "inspectionDate": "2006-04-07T08:30:00",
+      "sdco": [
+        {
+          "property": "hasPipeInventoryFeature",
+          "class": "ChiselledPlainConnection"
+        },
+        {
+          "property": "hasPipeInventoryFeature",
+          "class": "OpenConnection"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204015_2_1_DAR",
+      "code": "DAR",
+      "char1": "B",
+      "char2": null,
+      "nodeConditionManholeArea": "A",
+      "positionTo": "12",
+      "longText": "Abdeckung wackelt",
+      "label": "Condition[1204015]_[2,1]_[DAR]",
+      "nodeConditionDepth": 2.1,
+      "positionFrom": "12",
+      "assetId": "Beispiel_Node_1204015",
+      "assetType": "Node",
+      "inspectionId": "Beispiel_Inspection_1204015_13_04_2006_08_12_00",
+      "inspectionDate": "2006-04-13T08:12:00",
+      "sdco": [
+        {
+          "property": "hasNodeFabricDamage",
+          "class": "RockingCover"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204015_2_1_DDB",
+      "code": "DDB",
+      "char1": null,
+      "char2": null,
+      "standardizedComment": "B",
+      "label": "Condition[1204015]_[2,1]_[DDB]",
+      "longText": "Oberkante/Inspektionsende",
+      "positionTo": "00",
+      "nodeConditionDepth": 2.1,
+      "positionFrom": "00",
+      "assetId": "Beispiel_Node_1204015",
+      "assetType": "Node",
+      "inspectionId": "Beispiel_Inspection_1204015_13_04_2006_08_12_00",
+      "inspectionDate": "2006-04-13T08:12:00",
+      "sdco": [
+        {
+          "property": "hasNodeFeature",
+          "class": "GeneralRemark"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204015_2_5_BCA",
+      "code": "BCA",
+      "char1": "E",
+      "char2": "A",
+      "longText": "Anschluss, einfach, gemeißelt, offen",
+      "positionFrom": "02",
+      "positionTo": "00",
+      "label": "Condition[1204015]_[2,5]_[BCA]",
+      "pipeSectionConditionStation": 2.5,
+      "quantification1": 100.0,
+      "imageName": "1_0-01-02.jpg",
+      "videoCounterReading": "0:01:02",
+      "assetId": "Beispiel_PipeSection_1204015",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204015",
+      "inspectionDate": "2006-04-07T08:30:00",
+      "sdco": [
+        {
+          "property": "hasPipeInventoryFeature",
+          "class": "ChiselledPlainConnection"
+        },
+        {
+          "property": "hasPipeInventoryFeature",
+          "class": "OpenConnection"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204015_32_3_BAG",
+      "code": "BAG",
+      "char1": null,
+      "char2": null,
+      "longText": "Einragender Anschluss",
+      "quantification1": 3.0,
+      "imageName": "1_0-12-25.jpg",
+      "videoCounterReading": "0:12:25",
+      "positionTo": "00",
+      "pipeSectionConditionStation": 32.3,
+      "positionFrom": "10",
+      "label": "Condition[1204015]_[32,3]_[BAG]",
+      "assetId": "Beispiel_PipeSection_1204015",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204015",
+      "inspectionDate": "2006-04-07T08:30:00",
+      "sdco": [
+        {
+          "property": "hasPipeFabricDamage",
+          "class": "IntrudingConnection"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204015_32_3_BCA",
+      "code": "BCA",
+      "char1": "E",
+      "char2": "A",
+      "label": "Condition[1204015]_[32,3]_[BCA]",
+      "pipeSectionConditionStation": 32.3,
+      "positionFrom": "10",
+      "positionTo": "00",
+      "longText": "Anschluss, einfach, gemeißelt, offen",
+      "videoCounterReading": "0:12:04",
+      "quantification1": 100.0,
+      "imageName": "1_0-12-04.jpg",
+      "assetId": "Beispiel_PipeSection_1204015",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204015",
+      "inspectionDate": "2006-04-07T08:30:00",
+      "sdco": [
+        {
+          "property": "hasPipeInventoryFeature",
+          "class": "ChiselledPlainConnection"
+        },
+        {
+          "property": "hasPipeInventoryFeature",
+          "class": "OpenConnection"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204015_34_4_BCA",
+      "code": "BCA",
+      "char1": "E",
+      "char2": "A",
+      "positionFrom": "01",
+      "imageName": "1_0-14-08.jpg",
+      "videoCounterReading": "0:14:08",
+      "label": "Condition[1204015]_[34,4]_[BCA]",
+      "longText": "Anschluss, einfach, gemeißelt, offen",
+      "positionTo": "00",
+      "pipeSectionConditionStation": 34.4,
+      "quantification1": 100.0,
+      "assetId": "Beispiel_PipeSection_1204015",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204015",
+      "inspectionDate": "2006-04-07T08:30:00",
+      "sdco": [
+        {
+          "property": "hasPipeInventoryFeature",
+          "class": "ChiselledPlainConnection"
+        },
+        {
+          "property": "hasPipeInventoryFeature",
+          "class": "OpenConnection"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204015_36_1_BBA",
+      "code": "BBA",
+      "char1": "C",
+      "char2": null,
+      "longText": "Komplexes Wurzelwerk",
+      "connection": true,
+      "imageName": "1_0-16-14.jpg",
+      "quantification1": 15.0,
+      "pipeSectionConditionStation": 36.1,
+      "videoCounterReading": "0:16:14",
+      "positionFrom": "11",
+      "label": "Condition[1204015]_[36,1]_[BBA]",
+      "positionTo": "01",
+      "assetId": "Beispiel_PipeSection_1204015",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204015",
+      "inspectionDate": "2006-04-07T08:30:00",
+      "sdco": [
+        {
+          "property": "hasPipeOperationDamage",
+          "class": "ComplexMassRoots"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204015_38_0_BBA",
+      "code": "BBA",
+      "char1": "C",
+      "char2": null,
+      "longText": "Komplexes Wurzelwerk",
+      "pipeSectionConditionStation": 38.0,
+      "imageName": "1_0-17-53.jpg",
+      "positionTo": "02",
+      "connection": true,
+      "quantification1": 15.0,
+      "videoCounterReading": "0:17:53",
+      "positionFrom": "11",
+      "label": "Condition[1204015]_[38,0]_[BBA]",
+      "assetId": "Beispiel_PipeSection_1204015",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204015",
+      "inspectionDate": "2006-04-07T08:30:00",
+      "sdco": [
+        {
+          "property": "hasPipeOperationDamage",
+          "class": "ComplexMassRoots"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204015_42_1_BCA",
+      "code": "BCA",
+      "char1": "A",
+      "char2": "A",
+      "positionFrom": "11",
+      "videoCounterReading": "0:17:07",
+      "label": "Condition[1204015]_[42,1]_[BCA]",
+      "positionTo": "00",
+      "longText": "Anschluss, einfach, gemeißelt, offen",
+      "pipeSectionConditionStation": 42.1,
+      "imageName": "1_0-17-07.jpg",
+      "quantification1": 100.0,
+      "assetId": "Beispiel_PipeSection_1204015",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204015",
+      "inspectionDate": "2006-04-07T08:30:00",
+      "sdco": [
+        {
+          "property": "hasPipeInventoryFeature",
+          "class": "Junction"
+        },
+        {
+          "property": "hasPipeInventoryFeature",
+          "class": "OpenConnection"
+        }
+      ]
+    },
+    {
+      "id": "Beispiel_Condition_1204015_48_3_BCE",
+      "code": "BCE",
+      "char1": "XP",
+      "char2": null,
+      "label": "Condition[1204015]_[48.3]_[BCE]",
+      "positionFrom": "00",
+      "videoCounterReading": "0:22:10",
+      "imageName": "1_0-22-10.jpg",
+      "pipeSectionConditionStation": 48.3,
+      "longText": "Rohrende",
+      "positionTo": "00",
+      "assetId": "Beispiel_PipeSection_1204015",
+      "assetType": "PipeSection",
+      "inspectionId": "Beispiel_Inspection_1204015",
+      "inspectionDate": "2006-04-07T08:30:00",
+      "sdco": [
+        {
+          "property": "hasPipeInventoryFeature",
+          "class": "NodeType"
+        }
+      ]
+    }
+  ],
+  "codes": [
+    {
+      "code": "BCA",
+      "count": 21,
+      "sdcoClass": "BCA",
+      "comment": null,
+      "family": "PipeInventory",
+      "meaning": "Connection"
+    },
+    {
+      "code": "DDB",
+      "count": 10,
+      "sdcoClass": "DDB",
+      "comment": null,
+      "family": "NodeOther",
+      "meaning": "General Remark"
+    },
+    {
+      "code": "BAB",
+      "count": 8,
+      "sdcoClass": "BAB",
+      "comment": "BAB = Pipe Fissure Damage\r\nChar1: Nature of the Fissure\r\nChar2: Orientation of the Fissure\r\nQuantification: Width in millimeters\r\nCircumferntial Location: Should be recorded",
+      "family": "PipeFabric",
+      "meaning": "Fissure"
+    },
+    {
+      "code": "BAH",
+      "count": 6,
+      "sdcoClass": "BAH",
+      "comment": null,
+      "family": "PipeFabric",
+      "meaning": "Defective Connection"
+    },
+    {
+      "code": "BBA",
+      "count": 6,
+      "sdcoClass": "BBA",
+      "comment": null,
+      "family": "PipeOperation",
+      "meaning": "Roots"
+    },
+    {
+      "code": "DCA",
+      "count": 6,
+      "sdcoClass": "DCA",
+      "comment": null,
+      "family": "NodeInventory",
+      "meaning": "Node Connection"
+    },
+    {
+      "code": "DCG",
+      "count": 6,
+      "sdcoClass": "DCG",
+      "comment": null,
+      "family": "NodeInventory",
+      "meaning": "Connecting Pipeline"
+    },
+    {
+      "code": "BAF",
+      "count": 4,
+      "sdcoClass": "BAF",
+      "comment": null,
+      "family": "PipeFabric",
+      "meaning": "Surface"
+    },
+    {
+      "code": "BCD",
+      "count": 4,
+      "sdcoClass": "BCD",
+      "comment": null,
+      "family": "PipeInventory",
+      "meaning": "Node Type"
+    },
+    {
+      "code": "DAB",
+      "count": 4,
+      "sdcoClass": "DAB",
+      "comment": null,
+      "family": "NodeFabric",
+      "meaning": "Fissure"
+    },
+    {
+      "code": "BAK",
+      "count": 3,
+      "sdcoClass": "BAK",
+      "comment": null,
+      "family": "PipeFabric",
+      "meaning": "Lining"
+    },
+    {
+      "code": "BCE",
+      "count": 3,
+      "sdcoClass": "BCE",
+      "comment": null,
+      "family": "PipeInventory",
+      "meaning": "Node Type"
+    },
+    {
+      "code": "BAG",
+      "count": 2,
+      "sdcoClass": "BAG",
+      "comment": null,
+      "family": "PipeFabric",
+      "meaning": "Intruding Connection"
+    },
+    {
+      "code": "BDC",
+      "count": 2,
+      "sdcoClass": "BDC",
+      "comment": "The inspection has been terminated before the intended finish node was reached.  Where the reason is due to an obstruction this obstruction shall be coded separately using the appropriate main code.  !NOTE If the inspection is restarted it is a new inspection.\"",
+      "family": "PipeOther",
+      "meaning": "Inspection Termination"
+    },
+    {
+      "code": "DAQ",
+      "count": 2,
+      "sdcoClass": "DAQ",
+      "comment": null,
+      "family": "NodeFabric",
+      "meaning": "Defective Step Or Ladder"
+    },
+    {
+      "code": "DAR",
+      "count": 2,
+      "sdcoClass": "DAR",
+      "comment": null,
+      "family": "NodeFabric",
+      "meaning": "Defective Cover Or Frame"
+    },
+    {
+      "code": "BAI",
+      "count": 1,
+      "sdcoClass": "BAI",
+      "comment": null,
+      "family": "PipeFabric",
+      "meaning": "Intruding Sealing Material"
+    },
+    {
+      "code": "BAL",
+      "count": 1,
+      "sdcoClass": "BAL",
+      "comment": null,
+      "family": "PipeFabric",
+      "meaning": "Defective Repair"
+    },
+    {
+      "code": "BCB",
+      "count": 1,
+      "sdcoClass": "BCB",
+      "comment": null,
+      "family": "PipeInventory",
+      "meaning": "Point Repair"
+    },
+    {
+      "code": "DAE",
+      "count": 1,
+      "sdcoClass": "DAE",
+      "comment": null,
+      "family": "NodeFabric",
+      "meaning": "Missing Brickwork Or Masonry"
+    },
+    {
+      "code": "DAG",
+      "count": 1,
+      "sdcoClass": "DAG",
+      "comment": null,
+      "family": "NodeFabric",
+      "meaning": "Intruding Connection"
+    },
+    {
+      "code": "DBC",
+      "count": 1,
+      "sdcoClass": "DBC",
+      "comment": null,
+      "family": "NodeOperation",
+      "meaning": "Settled Deposit"
+    },
+    {
+      "code": "DBF",
+      "count": 1,
+      "sdcoClass": "DBF",
+      "comment": null,
+      "family": "NodeOperation",
+      "meaning": "Infiltration"
+    },
+    {
+      "code": "BAA",
+      "count": 0,
+      "sdcoClass": "BAA",
+      "comment": null,
+      "family": "PipeFabric",
+      "meaning": "Deformation"
+    },
+    {
+      "code": "BAC",
+      "count": 0,
+      "sdcoClass": "BAC",
+      "comment": "Break/Collapse",
+      "family": "PipeFabric",
+      "meaning": "Break Or Collapse"
+    },
+    {
+      "code": "BAD",
+      "count": 0,
+      "sdcoClass": "BAD",
+      "comment": null,
+      "family": "PipeFabric",
+      "meaning": "Defective Brickwork Or Masonry"
+    },
+    {
+      "code": "BAE",
+      "count": 0,
+      "sdcoClass": "BAE",
+      "comment": null,
+      "family": "PipeFabric",
+      "meaning": "Missing Mortar"
+    },
+    {
+      "code": "BAJ",
+      "count": 0,
+      "sdcoClass": "BAJ",
+      "comment": null,
+      "family": "PipeFabric",
+      "meaning": "Displaced Joint"
+    },
+    {
+      "code": "BAM",
+      "count": 0,
+      "sdcoClass": "BAM",
+      "comment": null,
+      "family": "PipeFabric",
+      "meaning": "Weld Failure"
+    },
+    {
+      "code": "BAN",
+      "count": 0,
+      "sdcoClass": "BAN",
+      "comment": null,
+      "family": "PipeFabric",
+      "meaning": "Porous Pipe"
+    },
+    {
+      "code": "BAO",
+      "count": 0,
+      "sdcoClass": "BAO",
+      "comment": null,
+      "family": "PipeFabric",
+      "meaning": "Soil Visible Through Defect"
+    },
+    {
+      "code": "BAP",
+      "count": 0,
+      "sdcoClass": "BAP",
+      "comment": null,
+      "family": "PipeFabric",
+      "meaning": "Void Visible Through Defect"
+    },
+    {
+      "code": "BBB",
+      "count": 0,
+      "sdcoClass": "BBB",
+      "comment": null,
+      "family": "PipeOperation",
+      "meaning": "Attached Deposits"
+    },
+    {
+      "code": "BBC",
+      "count": 0,
+      "sdcoClass": "BBC",
+      "comment": null,
+      "family": "PipeOperation",
+      "meaning": "Settled Deposit"
+    },
+    {
+      "code": "BBD",
+      "count": 0,
+      "sdcoClass": "BBD",
+      "comment": null,
+      "family": "PipeOperation",
+      "meaning": "Ingress Of Soil"
+    },
+    {
+      "code": "BBE",
+      "count": 0,
+      "sdcoClass": "BBE",
+      "comment": null,
+      "family": "PipeOperation",
+      "meaning": "Other Obstacle"
+    },
+    {
+      "code": "BBF",
+      "count": 0,
+      "sdcoClass": "BBF",
+      "comment": null,
+      "family": "PipeOperation",
+      "meaning": "Infiltration"
+    },
+    {
+      "code": "BBG",
+      "count": 0,
+      "sdcoClass": "BBG",
+      "comment": null,
+      "family": "PipeOperation",
+      "meaning": "Exfiltration"
+    },
+    {
+      "code": "BBH",
+      "count": 0,
+      "sdcoClass": "BBH",
+      "comment": null,
+      "family": "PipeOperation",
+      "meaning": "Vermin"
+    },
+    {
+      "code": "BCC",
+      "count": 0,
+      "sdcoClass": "BCC",
+      "comment": null,
+      "family": "PipeInventory",
+      "meaning": "Sewer Curvature"
+    },
+    {
+      "code": "BDA",
+      "count": 0,
+      "sdcoClass": "BDA",
+      "comment": "A still photograph has been taken to record the general condition of the drain or sewer and is not related to a particular feature",
+      "family": "PipeOther",
+      "meaning": "General Photograph"
+    },
+    {
+      "code": "BDB",
+      "count": 0,
+      "sdcoClass": "BDB",
+      "comment": "A remark which cannot be included in any other way.",
+      "family": "PipeOther",
+      "meaning": "General Remark"
+    },
+    {
+      "code": "BDD",
+      "count": 0,
+      "sdcoClass": "BDD",
+      "comment": "The level of !wastewater\" above the invert of the drain or sewer.\r\n\r\nCharacterisation !The wastewater in the pipe is:  clear effluent (the invert is visible) (A); Use of code discontinued (B);  turbid (C);  coloured (D);  turbid and coloured (E).\"",
+      "family": "PipeOther",
+      "meaning": "Water Level"
+    },
+    {
+      "code": "BDE",
+      "count": 0,
+      "sdcoClass": "BDE",
+      "comment": "Flow from incoming pipe\r\n\r\nInformation about the wastewater flowing from an incoming pipe.\"  Where this is used the item for a connection (Code BCA) is also required.\r\n\r\nThe wastewater flowing from the incoming pipe is:  \r\n- clear effluent (the invert of the incoming pipe is visible) (A);  \r\n- use of code discontinued (B);  \r\n- turbid (C);  \r\n- coloured (D); \r\n- turbid and coloured (E).  \r\n- If the wastewater flowing from the incoming pipe is not visible because the water level in the main pipe is too high the characterisation code YY shall be used",
+      "family": "PipeOther",
+      "meaning": "Flow From Incoming Pipe"
+    },
+    {
+      "code": "BDF",
+      "count": 0,
+      "sdcoClass": "BDF",
+      "comment": null,
+      "family": "PipeOther",
+      "meaning": "Atmosphere Within"
+    },
+    {
+      "code": "BDG",
+      "count": 0,
+      "sdcoClass": "BDG",
+      "comment": null,
+      "family": "PipeOther",
+      "meaning": "Loss Of Vision"
+    },
+    {
+      "code": "DAA",
+      "count": 0,
+      "sdcoClass": "DAA",
+      "comment": null,
+      "family": "NodeFabric",
+      "meaning": "Deformation"
+    },
+    {
+      "code": "DAC",
+      "count": 0,
+      "sdcoClass": "DAC",
+      "comment": null,
+      "family": "NodeFabric",
+      "meaning": "Break Or Collapse"
+    },
+    {
+      "code": "DAD",
+      "count": 0,
+      "sdcoClass": "DAD",
+      "comment": null,
+      "family": "NodeFabric",
+      "meaning": "Defective Brickwork Or Masonry"
+    },
+    {
+      "code": "DAF",
+      "count": 0,
+      "sdcoClass": "DAF",
+      "comment": null,
+      "family": "NodeFabric",
+      "meaning": "Surface"
+    },
+    {
+      "code": "DAH",
+      "count": 0,
+      "sdcoClass": "DAH",
+      "comment": null,
+      "family": "NodeFabric",
+      "meaning": "Defective Connection"
+    },
+    {
+      "code": "DAI",
+      "count": 0,
+      "sdcoClass": "DAI",
+      "comment": null,
+      "family": "NodeFabric",
+      "meaning": "Intruding Sealing Material"
+    },
+    {
+      "code": "DAJ",
+      "count": 0,
+      "sdcoClass": "DAJ",
+      "comment": null,
+      "family": "NodeFabric",
+      "meaning": "Displaced Joint"
+    },
+    {
+      "code": "DAK",
+      "count": 0,
+      "sdcoClass": "DAK",
+      "comment": null,
+      "family": "NodeFabric",
+      "meaning": "Lining"
+    },
+    {
+      "code": "DAL",
+      "count": 0,
+      "sdcoClass": "DAL",
+      "comment": null,
+      "family": "NodeFabric",
+      "meaning": "Defective Repair"
+    },
+    {
+      "code": "DAM",
+      "count": 0,
+      "sdcoClass": "DAM",
+      "comment": null,
+      "family": "NodeFabric",
+      "meaning": "Weld Failure"
+    },
+    {
+      "code": "DAN",
+      "count": 0,
+      "sdcoClass": "DAN",
+      "comment": null,
+      "family": "NodeFabric",
+      "meaning": "Porous Wall"
+    },
+    {
+      "code": "DAO",
+      "count": 0,
+      "sdcoClass": "DAO",
+      "comment": null,
+      "family": "NodeFabric",
+      "meaning": "Soil Visible Through Defect"
+    },
+    {
+      "code": "DAP",
+      "count": 0,
+      "sdcoClass": "DAP",
+      "comment": null,
+      "family": "NodeFabric",
+      "meaning": "Void Visible Through Defect"
+    },
+    {
+      "code": "DBA",
+      "count": 0,
+      "sdcoClass": "DBA",
+      "comment": null,
+      "family": "NodeOperation",
+      "meaning": "Roots"
+    },
+    {
+      "code": "DBB",
+      "count": 0,
+      "sdcoClass": "DBB",
+      "comment": null,
+      "family": "NodeOperation",
+      "meaning": "Attached Deposits"
+    },
+    {
+      "code": "DBD",
+      "count": 0,
+      "sdcoClass": "DBD",
+      "comment": null,
+      "family": "NodeOperation",
+      "meaning": "Ingress Of Soil"
+    },
+    {
+      "code": "DBE",
+      "count": 0,
+      "sdcoClass": "DBE",
+      "comment": null,
+      "family": "NodeOperation",
+      "meaning": "Obstacle"
+    },
+    {
+      "code": "DBG",
+      "count": 0,
+      "sdcoClass": "DBG",
+      "comment": null,
+      "family": "NodeOperation",
+      "meaning": "Exfiltration"
+    },
+    {
+      "code": "DBH",
+      "count": 0,
+      "sdcoClass": "DBH",
+      "comment": null,
+      "family": "NodeOperation",
+      "meaning": "Vermin"
+    },
+    {
+      "code": "DCB",
+      "count": 0,
+      "sdcoClass": "DCB",
+      "comment": null,
+      "family": "NodeInventory",
+      "meaning": "Point Repair"
+    },
+    {
+      "code": "DCH",
+      "count": 0,
+      "sdcoClass": "DCH",
+      "comment": null,
+      "family": "NodeInventory",
+      "meaning": "Benching"
+    },
+    {
+      "code": "DCI",
+      "count": 0,
+      "sdcoClass": "DCI",
+      "comment": null,
+      "family": "NodeInventory",
+      "meaning": "Channel"
+    },
+    {
+      "code": "DCJ",
+      "count": 0,
+      "sdcoClass": "DCJ",
+      "comment": null,
+      "family": "NodeInventory",
+      "meaning": "Safety Chain Bar"
+    },
+    {
+      "code": "DCK",
+      "count": 0,
+      "sdcoClass": "DCK",
+      "comment": null,
+      "family": "NodeInventory",
+      "meaning": "Flow Control"
+    },
+    {
+      "code": "DCL",
+      "count": 0,
+      "sdcoClass": "DCL",
+      "comment": null,
+      "family": "NodeInventory",
+      "meaning": "Other Pipeline Through Manhole"
+    },
+    {
+      "code": "DCM",
+      "count": 0,
+      "sdcoClass": "DCM",
+      "comment": null,
+      "family": "NodeInventory",
+      "meaning": "Grit Trap Under Cover"
+    },
+    {
+      "code": "DCN",
+      "count": 0,
+      "sdcoClass": "DCN",
+      "comment": null,
+      "family": "NodeInventory",
+      "meaning": "Slit Pit"
+    },
+    {
+      "code": "DCO",
+      "count": 0,
+      "sdcoClass": "DCO",
+      "comment": null,
+      "family": "NodeInventory",
+      "meaning": "Cross Section"
+    },
+    {
+      "code": "DDA",
+      "count": 0,
+      "sdcoClass": "DDA",
+      "comment": null,
+      "family": "NodeOther",
+      "meaning": "General Photograph"
+    },
+    {
+      "code": "DDC",
+      "count": 0,
+      "sdcoClass": "DDC",
+      "comment": null,
+      "family": "NodeOther",
+      "meaning": "Inspection Termination"
+    },
+    {
+      "code": "DDD",
+      "count": 0,
+      "sdcoClass": "DDD",
+      "comment": null,
+      "family": "NodeOther",
+      "meaning": "Water Level"
+    },
+    {
+      "code": "DDE",
+      "count": 0,
+      "sdcoClass": "DDE",
+      "comment": null,
+      "family": "NodeOther",
+      "meaning": "Flow From Incoming Pipe"
+    },
+    {
+      "code": "DDF",
+      "count": 0,
+      "sdcoClass": "DDF",
+      "comment": null,
+      "family": "NodeOther",
+      "meaning": "Atmosphere Within"
+    },
+    {
+      "code": "DDG",
+      "count": 0,
+      "sdcoClass": "DDG",
+      "comment": null,
+      "family": "NodeOther",
+      "meaning": "Loss Of Vision"
+    }
+  ],
+  "taxonomy": {
+    "observation": {
+      "name": "Observation",
+      "children": [
+        {
+          "name": "Cause",
+          "children": [
+            {
+              "name": "AuthorityInstruction",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "CameraUnderwater",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "Chemical",
+              "children": [
+                {
+                  "name": "ChemicalLowerPart",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "ChemicalUpperPart",
+                  "children": [],
+                  "reportCount": 0
+                }
+              ],
+              "reportCount": 0
+            },
+            {
+              "name": "EquipmentFailure",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "HighWaterLevel",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "InspectionStatus",
+              "children": [
+                {
+                  "name": "InspectionComplete",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "InspectionIncomplete",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "InspectionStatusUnknown",
+                  "children": [],
+                  "reportCount": 0
+                }
+              ],
+              "reportCount": 0
+            },
+            {
+              "name": "Mechanical",
+              "children": [],
+              "reportCount": 4
+            },
+            {
+              "name": "NotEvident",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "Obstruction",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "OtherCause",
+              "children": [],
+              "reportCount": 1
+            },
+            {
+              "name": "PreviousPartialInspection",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "Slit",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "Steam",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "UnableToLiftCover",
+              "children": [],
+              "reportCount": 0
+            }
+          ],
+          "reportCount": 5
+        },
+        {
+          "name": "Defect",
+          "children": [
+            {
+              "name": "OperationalDefect",
+              "children": [
+                {
+                  "name": "AttachedDeposits",
+                  "children": [
+                    {
+                      "name": "EncrustationAttachedDeposit",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "FoulingAttachedDeposit",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "GreaseAttachedDeposit",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "OtherAttachedDeposit",
+                      "children": [],
+                      "reportCount": 0
+                    }
+                  ],
+                  "reportCount": 0
+                },
+                {
+                  "name": "Exfiltration",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "Infiltration",
+                  "children": [
+                    {
+                      "name": "BenchingConnectionInfiltration",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "DrippingInfiltration",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "FlowingInfiltration",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "GushingInfiltration",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "InvertConnectionInfiltration",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "SweatingInfiltration",
+                      "children": [],
+                      "reportCount": 1
+                    },
+                    {
+                      "name": "WallInfiltration",
+                      "children": [],
+                      "reportCount": 1
+                    }
+                  ],
+                  "reportCount": 1
+                },
+                {
+                  "name": "IngressOfSoil",
+                  "children": [
+                    {
+                      "name": "IngressOfFineMaterial",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "IngressOfGravel",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "IngressOfOtherSoil",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "IngressOfPeat",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "IngressOfSand",
+                      "children": [],
+                      "reportCount": 0
+                    }
+                  ],
+                  "reportCount": 0
+                },
+                {
+                  "name": "Obstacle",
+                  "children": [
+                    {
+                      "name": "AnotherObjectObstacle",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "BrickOrMasonryObstacle",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "BuiltIntoStructureObstacle",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "EnteringThroughConnectionObstacle",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "ExternalPipesOrCablesBuiltThroughStructureObstacle",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "OtherObstacle",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "PiecesOfPipeObstacle",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "ProtrudingThroughWallObstacle",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "WedgedInJointObstacle",
+                      "children": [],
+                      "reportCount": 0
+                    }
+                  ],
+                  "reportCount": 0
+                },
+                {
+                  "name": "Roots",
+                  "children": [
+                    {
+                      "name": "ComplexMassRoots",
+                      "children": [],
+                      "reportCount": 6
+                    },
+                    {
+                      "name": "IndependentFineRoots",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "TapRoot",
+                      "children": [],
+                      "reportCount": 0
+                    }
+                  ],
+                  "reportCount": 6
+                },
+                {
+                  "name": "SettledDeposit",
+                  "children": [
+                    {
+                      "name": "CoarseSettledDeposit",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "FineSettledDeposit",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "HardOrCompactedSettledDeposit",
+                      "children": [],
+                      "reportCount": 1
+                    },
+                    {
+                      "name": "OtherSettledDeposit",
+                      "children": [],
+                      "reportCount": 0
+                    }
+                  ],
+                  "reportCount": 1
+                },
+                {
+                  "name": "Vermin",
+                  "children": [
+                    {
+                      "name": "CockroachVermin",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "OtherVermin",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "RatVermin",
+                      "children": [],
+                      "reportCount": 0
+                    }
+                  ],
+                  "reportCount": 0
+                }
+              ],
+              "reportCount": 8
+            },
+            {
+              "name": "StructuralDefect",
+              "children": [
+                {
+                  "name": "BreakOrCollapse",
+                  "children": [
+                    {
+                      "name": "Break",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "CollapsedBreakOrCollapse",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "MissingWallBreakOrCollapse",
+                      "children": [],
+                      "reportCount": 0
+                    }
+                  ],
+                  "reportCount": 0
+                },
+                {
+                  "name": "DefectiveBrickworkOrMasonry",
+                  "children": [
+                    {
+                      "name": "BrickMasonryLayerVisible",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "CollapsedBrickworkOrMasonry",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "DisplacedBrickworkOrMasonry",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "DroppedInvertBrickworkOrMasonry",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "MissingBrickworkOrMasonry",
+                      "children": [
+                        {
+                          "name": "LayerBrickworkOrMasonryVisible",
+                          "children": [],
+                          "reportCount": 0
+                        },
+                        {
+                          "name": "NothingVisible",
+                          "children": [],
+                          "reportCount": 0
+                        }
+                      ],
+                      "reportCount": 1
+                    }
+                  ],
+                  "reportCount": 1
+                },
+                {
+                  "name": "DefectiveConnection",
+                  "children": [
+                    {
+                      "name": "BlockedConnection",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "DamagedConnection",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "GapConnection",
+                      "children": [],
+                      "reportCount": 3
+                    },
+                    {
+                      "name": "IncorrectPositionConnection",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "OtherDefectiveConnection",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "PartialGapConnection",
+                      "children": [],
+                      "reportCount": 3
+                    }
+                  ],
+                  "reportCount": 6
+                },
+                {
+                  "name": "DefectiveCoverOrFrame",
+                  "children": [
+                    {
+                      "name": "BrokenCover",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "BrokenFrame",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "CoverAboveSurfaceLevel",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "CoverBelowSurfaceLevel",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "LooseFrame",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "MissingCover",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "MissingFrame",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "OtherDefectiveCoverOrFrame",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "RockingCover",
+                      "children": [],
+                      "reportCount": 2
+                    }
+                  ],
+                  "reportCount": 2
+                },
+                {
+                  "name": "DefectiveRepair",
+                  "children": [
+                    {
+                      "name": "CrackInRepairMaterial",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "ExcessRepairMaterial",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "HoleInRepairMaterial",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "MissingRepairMaterial",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "MissingWallDefectiveRepair",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "OtherDefectiveRepair",
+                      "children": [],
+                      "reportCount": 1
+                    },
+                    {
+                      "name": "PatchSealingDefectiveRepair",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "RepairMaterialSeparated",
+                      "children": [],
+                      "reportCount": 0
+                    }
+                  ],
+                  "reportCount": 1
+                },
+                {
+                  "name": "DefectiveStepOrLadder",
+                  "children": [
+                    {
+                      "name": "BentStep",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "BrokenPlasticEncapsulationOfStep",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "CorrodedLadderHandrail",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "CorrodedLadderRunner",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "CorrodedLadderSupport",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "CorrodedStep",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "DefectiveToeHole",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "LooseLadderSupport",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "LooseStep",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "MissingLadderSupport",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "MissingStep",
+                      "children": [],
+                      "reportCount": 1
+                    },
+                    {
+                      "name": "OtherDefectiveStepOrLadder",
+                      "children": [],
+                      "reportCount": 1
+                    }
+                  ],
+                  "reportCount": 2
+                },
+                {
+                  "name": "Deformation",
+                  "children": [
+                    {
+                      "name": "GeneralDeformation",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "LocalisedDeformation",
+                      "children": [],
+                      "reportCount": 0
+                    }
+                  ],
+                  "reportCount": 0
+                },
+                {
+                  "name": "DisplacedJoint",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "Fissure",
+                  "children": [
+                    {
+                      "name": "CrackFissure",
+                      "children": [],
+                      "reportCount": 12
+                    },
+                    {
+                      "name": "FractureFissure",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "SurfaceCrackFissure",
+                      "children": [],
+                      "reportCount": 0
+                    }
+                  ],
+                  "reportCount": 12
+                },
+                {
+                  "name": "IntrudingConnection",
+                  "children": [],
+                  "reportCount": 3
+                },
+                {
+                  "name": "IntrudingSealingMaterial",
+                  "children": [
+                    {
+                      "name": "IntrudingOtherSealant",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "IntrudingSealingRing",
+                      "children": [
+                        {
+                          "name": "DisplacedSealingRing",
+                          "children": [],
+                          "reportCount": 0
+                        },
+                        {
+                          "name": "IntrudingBrokenSealingRing",
+                          "children": [],
+                          "reportCount": 0
+                        },
+                        {
+                          "name": "IntrudingButNotBrokenSealingRing",
+                          "children": [],
+                          "reportCount": 0
+                        },
+                        {
+                          "name": "IntrudingSealingRingAboveCentreline",
+                          "children": [],
+                          "reportCount": 1
+                        },
+                        {
+                          "name": "IntrudingSealingRingBelowCentreline",
+                          "children": [],
+                          "reportCount": 0
+                        }
+                      ],
+                      "reportCount": 1
+                    }
+                  ],
+                  "reportCount": 1
+                },
+                {
+                  "name": "Lining",
+                  "children": [
+                    {
+                      "name": "BlisteredOrInternalBulgeLining",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "CrackOrSplitOrWeldFailure",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "DefectiveEndOfLining",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "DetachedLining",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "DiscoloredLining",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "EndOfLiningNotSealed",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "ExternalBulgeLining",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "HoleInLining",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "InternalFilmOrCoatingSeparation",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "LiningConnectionDefect",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "OtherLiningDefect",
+                      "children": [],
+                      "reportCount": 3
+                    },
+                    {
+                      "name": "ResinMissingFromLaminate",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "SeamCoveringSeparation",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "SoftLiningMaterial",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "WrinkledLining",
+                      "children": [],
+                      "reportCount": 0
+                    }
+                  ],
+                  "reportCount": 3
+                },
+                {
+                  "name": "MissingMortar",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "PorousPipe",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "PorousWall",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "SoilVisibleThroughDefect",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "Surface",
+                  "children": [
+                    {
+                      "name": "AggregateProjectingFromSurface",
+                      "children": [],
+                      "reportCount": 4
+                    },
+                    {
+                      "name": "Blistering",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "CorrodedReinforcement",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "CorrosionProductsOnSurface",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "IncreasedRoughness",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "MissingAggregate",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "MissingWallSurface",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "OtherSurfaceDamage",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "ReinforcementProjectingFromSurface",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "Spalling",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "VisibleAggregate",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "VisibleReinforcement",
+                      "children": [],
+                      "reportCount": 0
+                    }
+                  ],
+                  "reportCount": 4
+                },
+                {
+                  "name": "VoidVisibleThroughDefect",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "WeldFailure",
+                  "children": [],
+                  "reportCount": 0
+                }
+              ],
+              "reportCount": 35
+            }
+          ],
+          "reportCount": 43
+        },
+        {
+          "name": "Inventory",
+          "children": [
+            {
+              "name": "Benching",
+              "children": [
+                {
+                  "name": "ChannelInBenching",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "ConnectionDischargeBneching",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "DefectiveBenching",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "NoBenching",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "OtherBenching",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "PipeUnderBenching",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "RampChannelBenching",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "WorkingBenching",
+                  "children": [],
+                  "reportCount": 0
+                }
+              ],
+              "reportCount": 0
+            },
+            {
+              "name": "Channel",
+              "children": [
+                {
+                  "name": "DefectiveChannel",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "HighPointChannel",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "LowPointChannel",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "NarrowsChannel",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "NoChannel",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "WidensChannel",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "WorkingChannel",
+                  "children": [],
+                  "reportCount": 0
+                }
+              ],
+              "reportCount": 0
+            },
+            {
+              "name": "ConnectingPipeline",
+              "children": [
+                {
+                  "name": "ArchShapedConnectingPipeline",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "CircularConnectingPipeline",
+                  "children": [],
+                  "reportCount": 6
+                },
+                {
+                  "name": "EggShapedConnectingPipeline",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "LocallyDefinedConnectingPipeline",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "OtherConnectingPipeline",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "OvalConnectingPipeline",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "RectangularConnectingPipeline",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "UShapeConnectingPipeline",
+                  "children": [],
+                  "reportCount": 0
+                }
+              ],
+              "reportCount": 6
+            },
+            {
+              "name": "Connection",
+              "children": [
+                {
+                  "name": "NodeConnection",
+                  "children": [
+                    {
+                      "name": "BackdropConnection",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "BenchingConnection",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "FreeDropConnection",
+                      "children": [],
+                      "reportCount": 5
+                    },
+                    {
+                      "name": "InternalDropPipeConnection",
+                      "children": [],
+                      "reportCount": 1
+                    },
+                    {
+                      "name": "RampConnection",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "VentilationPipeConnection",
+                      "children": [],
+                      "reportCount": 0
+                    }
+                  ],
+                  "reportCount": 6
+                },
+                {
+                  "name": "OtherConnection",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "PipeConnection",
+                  "children": [
+                    {
+                      "name": "ChiselledPlainConnection",
+                      "children": [],
+                      "reportCount": 14
+                    },
+                    {
+                      "name": "ChiselledSaddleConnection",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "ClosedConnection",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "ConnectionNotEvident",
+                      "children": [],
+                      "reportCount": 4
+                    },
+                    {
+                      "name": "DrilledPlainConnection",
+                      "children": [],
+                      "reportCount": 2
+                    },
+                    {
+                      "name": "DrilledSaddleConnection",
+                      "children": [],
+                      "reportCount": 0
+                    },
+                    {
+                      "name": "Junction",
+                      "children": [],
+                      "reportCount": 1
+                    },
+                    {
+                      "name": "OpenConnection",
+                      "children": [],
+                      "reportCount": 21
+                    }
+                  ],
+                  "reportCount": 21
+                }
+              ],
+              "reportCount": 27
+            },
+            {
+              "name": "CrossSection",
+              "children": [
+                {
+                  "name": "CircularCrossSection",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "LocallyDefinedCrossSection",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "OtherCrossSection",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "RectangularCrossSection",
+                  "children": [],
+                  "reportCount": 0
+                }
+              ],
+              "reportCount": 0
+            },
+            {
+              "name": "FlowControl",
+              "children": [
+                {
+                  "name": "ContinuationFlowControl",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "FlapValveFlowControl",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "FloatOperatedGateValveFlowControl",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "GateValveFlowControl",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "OrificePlateFlowControl",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "OtherFlowControl",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "OverflowControl",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "ScreensFlowControl",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "SyphonFlowControl",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "VenturiFlowControl",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "VortexFlowControl",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "WeirFlowControl",
+                  "children": [],
+                  "reportCount": 0
+                }
+              ],
+              "reportCount": 0
+            },
+            {
+              "name": "GritTrapUnderCover",
+              "children": [
+                {
+                  "name": "DefectiveGritTrap",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "MissingGritTrap",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "WorkingGritTrap",
+                  "children": [],
+                  "reportCount": 0
+                }
+              ],
+              "reportCount": 0
+            },
+            {
+              "name": "NodeType",
+              "children": [
+                {
+                  "name": "InspectionChamber",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "LampHole",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "MajorConnectionWithoutManholeOrInspectionChamber",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "Manhole",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "OtherSpecialChamber",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "Outfall",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "RoddingEye",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "SpecialNodeType",
+                  "children": [],
+                  "reportCount": 0
+                }
+              ],
+              "reportCount": 7
+            },
+            {
+              "name": "OtherPipelineThroughManhole",
+              "children": [
+                {
+                  "name": "AccesablePipeCoverMissing",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "AccessablePipeCoverInPlace",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "DefectiveOtherPipelineThroughManhole",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "NoAccessToPipe",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "WorkingOtherPipelineThroughManhole",
+                  "children": [],
+                  "reportCount": 0
+                }
+              ],
+              "reportCount": 0
+            },
+            {
+              "name": "PointRepair",
+              "children": [
+                {
+                  "name": "HoleRepair",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "InjectedMortarRepair",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "InjectedSealingMaterialRepair",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "LocalisedLiningOfConnectionRepair",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "LocalisedLiningOfManholeOrInspectionChamberRepair",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "LocalisedLiningOfPipeRepair",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "OtherConnectionRepair",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "OtherInjectedSealingMaterialRepair",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "OtherPointRepair",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "OtherTrenchlessRepair",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "PipeReplacedRepair",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "WallPartRepair",
+                  "children": [],
+                  "reportCount": 0
+                }
+              ],
+              "reportCount": 1
+            },
+            {
+              "name": "SafetyChainBar",
+              "children": [
+                {
+                  "name": "CoatedDebrisSafetyBar",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "CoatedDebrisSafetyChain",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "DefectiveSafetyBar",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "DefectiveSafetyChain",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "MissingSafetyBar",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "MissingSafetyChain",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "NoDefectsSafetyBar",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "NoDefectsSafetyChain",
+                  "children": [],
+                  "reportCount": 0
+                }
+              ],
+              "reportCount": 0
+            },
+            {
+              "name": "SewerCurvature",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "SlitPit",
+              "children": [
+                {
+                  "name": "DefectiveSlitPit",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "WorkingSlitPit",
+                  "children": [],
+                  "reportCount": 0
+                }
+              ],
+              "reportCount": 0
+            }
+          ],
+          "reportCount": 41
+        },
+        {
+          "name": "Location",
+          "children": [
+            {
+              "name": "InConnection",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "InManholeOrInspectionChamber",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "InOpenJoint",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "InPipeline",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "OtherLocation",
+              "children": [],
+              "reportCount": 0
+            }
+          ],
+          "reportCount": 0
+        },
+        {
+          "name": "Orientation",
+          "children": [
+            {
+              "name": "Angular",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "Circumferential",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "Complex",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "Down",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "Helical",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "Horizontal",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "Inclined",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "Left",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "Longitudinal",
+              "children": [],
+              "reportCount": 8
+            },
+            {
+              "name": "Radial",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "Right",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "StarFissure",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "Up",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "Vertical",
+              "children": [],
+              "reportCount": 4
+            }
+          ],
+          "reportCount": 12
+        },
+        {
+          "name": "OtherObservation",
+          "children": [
+            {
+              "name": "AtmosphereWithin",
+              "children": [
+                {
+                  "name": "HydrogenSulfide",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "Methane",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "OtherAtmosphereWithin",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "OxygenDeficiency",
+                  "children": [],
+                  "reportCount": 0
+                }
+              ],
+              "reportCount": 0
+            },
+            {
+              "name": "ConnectingPipelineDischargeDirection",
+              "children": [
+                {
+                  "name": "ConnectionClosed",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "ConnectionDischargeFromNode",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "ConnectionDischargeIntoNode",
+                  "children": [],
+                  "reportCount": 6
+                }
+              ],
+              "reportCount": 6
+            },
+            {
+              "name": "FlowFromIncomingPipe",
+              "children": [
+                {
+                  "name": "CorrectConnection",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "WronglyConnectedIncomingSurfaceWaterPipe",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "WronglyConnectedIncomingWastewaterPipe",
+                  "children": [],
+                  "reportCount": 0
+                }
+              ],
+              "reportCount": 0
+            },
+            {
+              "name": "GeneralPhotograph",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "GeneralRemark",
+              "children": [],
+              "reportCount": 10
+            },
+            {
+              "name": "InspectionTermination",
+              "children": [],
+              "reportCount": 2
+            },
+            {
+              "name": "LossOfVision",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "Wastewater",
+              "children": [
+                {
+                  "name": "ClearEffluentWastewater",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "ColouredWastewater",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "DiscountinuedWastewaterCode",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "TurbidWastewater",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
+                  "name": "UnknownWastewater",
+                  "children": [],
+                  "reportCount": 0
+                }
+              ],
+              "reportCount": 0
+            },
+            {
+              "name": "WaterLevel",
+              "children": [],
+              "reportCount": 0
+            }
+          ],
+          "reportCount": 18
+        }
+      ],
+      "reportCount": 96
+    },
+    "reference": {
+      "name": "Reference",
+      "children": [
+        {
+          "name": "PipeFabric",
+          "children": [
+            {
+              "name": "BAB",
+              "children": [],
+              "reportCount": 8
+            },
+            {
+              "name": "BAH",
+              "children": [],
+              "reportCount": 6
+            },
+            {
+              "name": "BAF",
+              "children": [],
+              "reportCount": 4
+            },
+            {
+              "name": "BAK",
+              "children": [],
+              "reportCount": 3
+            },
+            {
+              "name": "BAG",
+              "children": [],
+              "reportCount": 2
+            },
+            {
+              "name": "BAI",
+              "children": [],
+              "reportCount": 1
+            },
+            {
+              "name": "BAL",
+              "children": [],
+              "reportCount": 1
+            },
+            {
+              "name": "BAA",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "BAC",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "BAD",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "BAE",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "BAJ",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "BAM",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "BAN",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "BAO",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "BAP",
+              "children": [],
+              "reportCount": 0
+            }
+          ],
+          "reportCount": 25
+        },
+        {
+          "name": "PipeOperation",
+          "children": [
+            {
+              "name": "BBA",
+              "children": [],
+              "reportCount": 6
+            },
+            {
+              "name": "BBB",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "BBC",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "BBD",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "BBE",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "BBF",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "BBG",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "BBH",
+              "children": [],
+              "reportCount": 0
+            }
+          ],
+          "reportCount": 6
+        },
+        {
+          "name": "PipeInventory",
+          "children": [
+            {
+              "name": "BCA",
+              "children": [],
+              "reportCount": 21
+            },
+            {
+              "name": "BCD",
+              "children": [],
+              "reportCount": 4
+            },
+            {
+              "name": "BCE",
+              "children": [],
+              "reportCount": 3
+            },
+            {
+              "name": "BCB",
+              "children": [],
+              "reportCount": 1
+            },
+            {
+              "name": "BCC",
+              "children": [],
+              "reportCount": 0
+            }
+          ],
+          "reportCount": 29
+        },
+        {
+          "name": "PipeOther",
+          "children": [
+            {
+              "name": "BDC",
+              "children": [],
+              "reportCount": 2
+            },
+            {
+              "name": "BDA",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "BDB",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "BDD",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "BDE",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "BDF",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "BDG",
+              "children": [],
+              "reportCount": 0
+            }
+          ],
+          "reportCount": 2
+        },
+        {
+          "name": "NodeFabric",
+          "children": [
+            {
+              "name": "DAB",
+              "children": [],
+              "reportCount": 4
+            },
+            {
+              "name": "DAQ",
+              "children": [],
+              "reportCount": 2
+            },
+            {
+              "name": "DAR",
+              "children": [],
+              "reportCount": 2
+            },
+            {
+              "name": "DAE",
+              "children": [],
+              "reportCount": 1
+            },
+            {
+              "name": "DAG",
+              "children": [],
+              "reportCount": 1
+            },
+            {
+              "name": "DAA",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "DAC",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "DAD",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "DAF",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "DAH",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "DAI",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "DAJ",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "DAK",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "DAL",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "DAM",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "DAN",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "DAO",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "DAP",
+              "children": [],
+              "reportCount": 0
+            }
+          ],
+          "reportCount": 10
+        },
+        {
+          "name": "NodeOperation",
+          "children": [
+            {
+              "name": "DBC",
+              "children": [],
+              "reportCount": 1
+            },
+            {
+              "name": "DBF",
+              "children": [],
+              "reportCount": 1
+            },
+            {
+              "name": "DBA",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "DBB",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "DBD",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "DBE",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "DBG",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "DBH",
+              "children": [],
+              "reportCount": 0
+            }
+          ],
+          "reportCount": 2
+        },
+        {
+          "name": "NodeInventory",
+          "children": [
+            {
+              "name": "DCA",
+              "children": [],
+              "reportCount": 6
+            },
+            {
+              "name": "DCG",
+              "children": [],
+              "reportCount": 6
+            },
+            {
+              "name": "DCB",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "DCH",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "DCI",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "DCJ",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "DCK",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "DCL",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "DCM",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "DCN",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "DCO",
+              "children": [],
+              "reportCount": 0
+            }
+          ],
+          "reportCount": 12
+        },
+        {
+          "name": "NodeOther",
+          "children": [
+            {
+              "name": "DDB",
+              "children": [],
+              "reportCount": 10
+            },
+            {
+              "name": "DDA",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "DDC",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "DDD",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "DDE",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "DDF",
+              "children": [],
+              "reportCount": 0
+            },
+            {
+              "name": "DDG",
+              "children": [],
+              "reportCount": 0
+            }
+          ],
+          "reportCount": 10
+        }
+      ],
+      "reportCount": 96
+    }
+  },
+  "assets": [
+    {
+      "id": "Beispiel_PipeSection_1204012",
+      "type": "PipeSection",
+      "material": "Beton",
+      "pipeSectionProfileHeight": 400,
+      "pipeSectionProfileWidth": 400,
+      "pipeSectionLength": 27.8,
+      "pipeSectionPipeLength": 2.0,
+      "streetName": "Schlossallee",
+      "pipeSectionTopNodeDesignation": "Beispiel_Node_1204012",
+      "pipeSectionBottomNodeDesignation": "Beispiel_Node_1204011",
+      "designation": "1204012",
+      "reportCount": 8
+    },
+    {
+      "id": "Beispiel_PipeSection_1204013",
+      "type": "PipeSection",
+      "material": "Beton",
+      "pipeSectionProfileHeight": 400,
+      "pipeSectionProfileWidth": 400,
+      "pipeSectionLength": 35.2,
+      "pipeSectionPipeLength": 2.0,
+      "streetName": "Schlossallee",
+      "pipeSectionTopNodeDesignation": "Beispiel_Node_1204013",
+      "pipeSectionBottomNodeDesignation": "Beispiel_Node_1204012",
+      "designation": "1204013",
+      "reportCount": 16
+    },
+    {
+      "id": "Beispiel_PipeSection_1204014",
+      "type": "PipeSection",
+      "material": "Beton",
+      "pipeSectionProfileHeight": 400,
+      "pipeSectionProfileWidth": 400,
+      "pipeSectionLength": 42.4,
+      "pipeSectionPipeLength": 2.0,
+      "streetName": "Parkstrasse",
+      "pipeSectionTopNodeDesignation": "Beispiel_Node_1204014",
+      "pipeSectionBottomNodeDesignation": "Beispiel_Node_1204013",
+      "designation": "1204014",
+      "reportCount": 19
+    },
+    {
+      "id": "Beispiel_PipeSection_1204015",
+      "type": "PipeSection",
+      "material": "Stoneware",
+      "pipeSectionProfileHeight": 300,
+      "pipeSectionProfileWidth": 300,
+      "pipeSectionLength": 48.32,
+      "pipeSectionPipeLength": 2.0,
+      "streetName": "Parkstrasse",
+      "pipeSectionTopNodeDesignation": "Beispiel_Node_1204015",
+      "pipeSectionBottomNodeDesignation": "Beispiel_Node_1204014",
+      "designation": "1204015",
+      "reportCount": 19
+    },
+    {
+      "id": "Beispiel_Node_1204011",
+      "type": "Node",
+      "material": "Concrete Segments",
+      "nodeManholeLength": 100,
+      "nodeManholeWidth": 100,
+      "depth": 3.4,
+      "streetName": "Parkstrasse",
+      "designation": "1204011",
+      "reportCount": 5
+    },
+    {
+      "id": "Beispiel_Node_1204012",
+      "type": "Node",
+      "material": "Concrete Segments",
+      "nodeManholeLength": 100,
+      "nodeManholeWidth": 100,
+      "depth": 3.31,
+      "streetName": "Schlossallee",
+      "designation": "1204012",
+      "reportCount": 5
+    },
+    {
+      "id": "Beispiel_Node_1204013",
+      "type": "Node",
+      "material": "Concrete Segments",
+      "nodeManholeLength": 100,
+      "nodeManholeWidth": 100,
+      "depth": 2.8,
+      "streetName": "Parkstrasse",
+      "designation": "1204013",
+      "reportCount": 12
+    },
+    {
+      "id": "Beispiel_Node_1204014",
+      "type": "Node",
+      "material": "Concrete Segments",
+      "nodeManholeLength": 100,
+      "nodeManholeWidth": 100,
+      "depth": 2.25,
+      "streetName": "Parkstrasse",
+      "designation": "1204014",
+      "reportCount": 5
+    },
+    {
+      "id": "Beispiel_Node_1204015",
+      "type": "Node",
+      "material": "Concrete Segments",
+      "nodeManholeLength": 100,
+      "nodeManholeWidth": 100,
+      "depth": 2.12,
+      "streetName": "Parkstrasse",
+      "designation": "1204015",
+      "reportCount": 7
+    }
+  ],
+  "queries": [
+    {
+      "id": "q1",
+      "question": "Show me every fissure in the network",
+      "sparql": "PREFIX sdco: <https://l-jamora.github.io/sdco#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX m150: <https://l-jamora.github.io/m150-onto#>\nSELECT ?report ?code ?cls WHERE {\n  ?report m150:hasConditionCode ?code .\n  { ?report sdco:hasPipeFabricDamage ?cls } UNION { ?report sdco:hasNodeFabricDamage ?cls }\n  ?cls rdfs:subClassOf* sdco:Fissure .\n}",
+      "results": [
+        {
+          "report": "Beispiel_Condition_1204014_11_3_BAB",
+          "code": "BAB",
+          "asset": "Beispiel_PipeSection_1204014",
+          "class": "CrackFissure"
+        },
+        {
+          "report": "Beispiel_Condition_1204014_6_0_BAB",
+          "code": "BAB",
+          "asset": "Beispiel_PipeSection_1204014",
+          "class": "CrackFissure"
+        },
+        {
+          "report": "Beispiel_Condition_1204013_7_9_BAB",
+          "code": "BAB",
+          "asset": "Beispiel_PipeSection_1204013",
+          "class": "CrackFissure"
+        },
+        {
+          "report": "Beispiel_Condition_1204014_38_6_BAB",
+          "code": "BAB",
+          "asset": "Beispiel_PipeSection_1204014",
+          "class": "CrackFissure"
+        },
+        {
+          "report": "Beispiel_Condition_1204014_24_8_BAB",
+          "code": "BAB",
+          "asset": "Beispiel_PipeSection_1204014",
+          "class": "CrackFissure"
+        },
+        {
+          "report": "Beispiel_Condition_1204014_8_7_BAB",
+          "code": "BAB",
+          "asset": "Beispiel_PipeSection_1204014",
+          "class": "CrackFissure"
+        },
+        {
+          "report": "Beispiel_Condition_1204014_2_4_BAB",
+          "code": "BAB",
+          "asset": "Beispiel_PipeSection_1204014",
+          "class": "CrackFissure"
+        },
+        {
+          "report": "Beispiel_Condition_1204015_19_1_BAB",
+          "code": "BAB",
+          "asset": "Beispiel_PipeSection_1204015",
+          "class": "CrackFissure"
+        },
+        {
+          "report": "Beispiel_Condition_1204015_1_0_DAB",
+          "code": "DAB",
+          "asset": "Beispiel_Node_1204015",
+          "class": "CrackFissure"
+        },
+        {
+          "report": "Beispiel_Condition_1204013_2_7_DAB",
+          "code": "DAB",
+          "asset": "Beispiel_Node_1204013",
+          "class": "CrackFissure"
+        },
+        {
+          "report": "Beispiel_Condition_1204013_1_8_DAB",
+          "code": "DAB",
+          "asset": "Beispiel_Node_1204013",
+          "class": "CrackFissure"
+        },
+        {
+          "report": "Beispiel_Condition_1204015_0_0_DAB",
+          "code": "DAB",
+          "asset": "Beispiel_Node_1204015",
+          "class": "CrackFissure"
+        }
+      ],
+      "resultCount": 12,
+      "withoutSdco": {
+        "explanation": "BAB (pipe fissure) and DAB (node fissure) are the same underlying defect but share no common substring or numeric relationship in the raw condition code -- a code-only query has no way to know they should be grouped together without a human already knowing DIN EN 13508-2's code table by heart.",
+        "sparql": "PREFIX m150: <https://l-jamora.github.io/m150-onto#>\nSELECT ?report ?code WHERE {\n  ?report m150:hasConditionCode ?code .\n  FILTER(?code IN (\"BAB\", \"DAB\"))\n}"
+      }
+    },
+    {
+      "id": "q2",
+      "question": "Which damages run vertically?",
+      "sparql": "PREFIX sdco: <https://l-jamora.github.io/sdco#>\nPREFIX m150: <https://l-jamora.github.io/m150-onto#>\nSELECT ?report ?code ?orientation WHERE {\n  ?report m150:hasConditionCode ?code ;\n          sdco:hasDamageOrientation ?orientation .\n}",
+      "results": [
+        {
+          "report": "Beispiel_Condition_1204015_1_0_DAB",
+          "code": "DAB",
+          "orientation": "Vertical",
+          "asset": "Beispiel_Node_1204015"
+        },
+        {
+          "report": "Beispiel_Condition_1204013_2_7_DAB",
+          "code": "DAB",
+          "orientation": "Vertical",
+          "asset": "Beispiel_Node_1204013"
+        },
+        {
+          "report": "Beispiel_Condition_1204013_1_8_DAB",
+          "code": "DAB",
+          "orientation": "Vertical",
+          "asset": "Beispiel_Node_1204013"
+        },
+        {
+          "report": "Beispiel_Condition_1204015_0_0_DAB",
+          "code": "DAB",
+          "orientation": "Vertical",
+          "asset": "Beispiel_Node_1204015"
+        }
+      ],
+      "resultCount": 4,
+      "contrast": {
+        "orientation": "Longitudinal",
+        "count": 8
+      },
+      "withoutSdco": {
+        "explanation": "Orientation is buried in hasCharacterization2, whose value's meaning is entirely code-dependent (the same letter means a different thing for a different code) -- there is no equivalent query over the raw m150 data alone.",
+        "sparql": null
+      }
+    },
+    {
+      "id": "q3",
+      "question": "Which observations are structural defects, and which are just inventory notes?",
+      "sparql": "PREFIX sdco: <https://l-jamora.github.io/sdco#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX m150: <https://l-jamora.github.io/m150-onto#>\nSELECT ?report ?code ?cls ?bucket WHERE {\n  ?report m150:hasConditionCode ?code .\n  VALUES ?prop { sdco:hasPipeFabricDamage sdco:hasNodeFabricDamage sdco:hasPipeOperationDamage sdco:hasNodeOperationDamage sdco:hasPipeInventoryFeature sdco:hasNodeInventoryFeature sdco:hasPipeFeature sdco:hasNodeFeature sdco:hasDamageOrientation sdco:hasDamageCause sdco:hasTerminationReason sdco:hasConnectionDischargeDirection }\n  ?report ?prop ?cls .\n  VALUES ?bucket { sdco:StructuralDefect sdco:OperationalDefect sdco:Inventory sdco:OtherObservation }\n  ?cls rdfs:subClassOf* ?bucket .\n}",
+      "results": [
+        {
+          "bucket": "Inventory",
+          "reportCount": 41
+        },
+        {
+          "bucket": "OperationalDefect",
+          "reportCount": 8
+        },
+        {
+          "bucket": "OtherObservation",
+          "reportCount": 18
+        },
+        {
+          "bucket": "StructuralDefect",
+          "reportCount": 35
+        }
+      ],
+      "resultCount": 124,
+      "withoutSdco": {
+        "explanation": "The split roughly correlates with the condition code's 2nd letter (A=Fabric, B=Operation, C=Inventory, D=Other) by DIN EN 13508-2 convention, but that convention lives in the standard's documentation, not in the triple store -- nothing in the raw m150 data marks a code as 'structural' vs 'just inventory'; a raw-code query has to hardcode the letter convention by hand, per code family, with no way to verify it against the data itself.",
+        "sparql": "PREFIX m150: <https://l-jamora.github.io/m150-onto#>\nSELECT ?report ?code WHERE {\n  ?report m150:hasConditionCode ?code .\n  FILTER(REGEX(?code, \"^.A\"))\n}"
+      }
+    },
+    {
+      "id": "q4",
+      "question": "Where are the root intrusions?",
+      "sparql": "PREFIX sdco: <https://l-jamora.github.io/sdco#>\nPREFIX m150: <https://l-jamora.github.io/m150-onto#>\nSELECT ?report ?code WHERE {\n  ?report m150:hasConditionCode ?code ;\n          sdco:hasPipeOperationDamage sdco:ComplexMassRoots .\n}",
+      "results": [
+        {
+          "report": "Beispiel_Condition_1204013_7_9_BBA",
+          "code": "BBA",
+          "asset": "Beispiel_PipeSection_1204013",
+          "class": "ComplexMassRoots"
+        },
+        {
+          "report": "Beispiel_Condition_1204015_36_1_BBA",
+          "code": "BBA",
+          "asset": "Beispiel_PipeSection_1204015",
+          "class": "ComplexMassRoots"
+        },
+        {
+          "report": "Beispiel_Condition_1204014_18_1_BBA",
+          "code": "BBA",
+          "asset": "Beispiel_PipeSection_1204014",
+          "class": "ComplexMassRoots"
+        },
+        {
+          "report": "Beispiel_Condition_1204014_26_0_BBA",
+          "code": "BBA",
+          "asset": "Beispiel_PipeSection_1204014",
+          "class": "ComplexMassRoots"
+        },
+        {
+          "report": "Beispiel_Condition_1204015_38_0_BBA",
+          "code": "BBA",
+          "asset": "Beispiel_PipeSection_1204015",
+          "class": "ComplexMassRoots"
+        },
+        {
+          "report": "Beispiel_Condition_1204013_10_1_BBA",
+          "code": "BBA",
+          "asset": "Beispiel_PipeSection_1204013",
+          "class": "ComplexMassRoots"
+        }
+      ],
+      "resultCount": 6,
+      "withoutSdco": {
+        "explanation": "Needs code BBA AND hasCharacterization1 = 'C' -- two fields, not one.",
+        "sparql": "PREFIX m150: <https://l-jamora.github.io/m150-onto#>\nSELECT ?report WHERE {\n  ?report m150:hasConditionCode \"BBA\" ;\n          m150:hasCharacterization1 \"C\" .\n}"
+      }
+    },
+    {
+      "id": "q5",
+      "question": "Which manholes show infiltration?",
+      "sparql": "PREFIX sdco: <https://l-jamora.github.io/sdco#>\nPREFIX m150: <https://l-jamora.github.io/m150-onto#>\nSELECT ?report ?code ?cls WHERE {\n  ?report m150:hasConditionCode ?code ;\n          sdco:hasNodeOperationDamage ?cls .\n  FILTER(?cls IN (sdco:WallInfiltration, sdco:SweatingInfiltration))\n}",
+      "results": [
+        {
+          "report": "Beispiel_Condition_1204011_2_4_DBF",
+          "code": "DBF",
+          "asset": "Beispiel_Node_1204011",
+          "class": "SweatingInfiltration"
+        },
+        {
+          "report": "Beispiel_Condition_1204011_2_4_DBF",
+          "code": "DBF",
+          "asset": "Beispiel_Node_1204011",
+          "class": "WallInfiltration"
+        }
+      ],
+      "resultCount": 2,
+      "withoutSdco": {
+        "explanation": "Both rows come from the same raw code (DBF); SweatingInfiltration vs WallInfiltration is determined by whether the differentiating characterization is char1 or char2 and which literal value it holds -- not discoverable from the code string alone.",
+        "sparql": null
+      }
+    },
+    {
+      "id": "q6",
+      "question": "Which reports aren't damage at all?",
+      "sparql": "PREFIX sdco: <https://l-jamora.github.io/sdco#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX m150: <https://l-jamora.github.io/m150-onto#>\nSELECT ?report ?code ?cls WHERE {\n  ?report m150:hasConditionCode ?code .\n  VALUES ?prop { sdco:hasPipeFabricDamage sdco:hasNodeFabricDamage sdco:hasPipeOperationDamage sdco:hasNodeOperationDamage sdco:hasPipeInventoryFeature sdco:hasNodeInventoryFeature sdco:hasPipeFeature sdco:hasNodeFeature sdco:hasDamageOrientation sdco:hasDamageCause sdco:hasTerminationReason sdco:hasConnectionDischargeDirection }\n  ?report ?prop ?cls .\n  VALUES ?bucket { sdco:Inventory sdco:OtherObservation }\n  ?cls rdfs:subClassOf* ?bucket .\n}",
+      "results": [
+        {
+          "report": "Beispiel_Condition_1204011_0_0_DCA",
+          "code": "DCA",
+          "asset": "Beispiel_Node_1204011"
+        },
+        {
+          "report": "Beispiel_Condition_1204011_0_0_DCG",
+          "code": "DCG",
+          "asset": "Beispiel_Node_1204011"
+        },
+        {
+          "report": "Beispiel_Condition_1204011_0_0_DDB",
+          "code": "DDB",
+          "asset": "Beispiel_Node_1204011"
+        },
+        {
+          "report": "Beispiel_Condition_1204011_3_4_DDB",
+          "code": "DDB",
+          "asset": "Beispiel_Node_1204011"
+        },
+        {
+          "report": "Beispiel_Condition_1204012_0_0_BCD",
+          "code": "BCD",
+          "asset": "Beispiel_PipeSection_1204012"
+        },
+        {
+          "report": "Beispiel_Condition_1204012_0_0_DCA",
+          "code": "DCA",
+          "asset": "Beispiel_Node_1204012"
+        },
+        {
+          "report": "Beispiel_Condition_1204012_0_0_DCG",
+          "code": "DCG",
+          "asset": "Beispiel_Node_1204012"
+        },
+        {
+          "report": "Beispiel_Condition_1204012_0_0_DDB",
+          "code": "DDB",
+          "asset": "Beispiel_Node_1204012"
+        },
+        {
+          "report": "Beispiel_Condition_1204012_17_0_BCA",
+          "code": "BCA",
+          "asset": "Beispiel_PipeSection_1204012"
+        },
+        {
+          "report": "Beispiel_Condition_1204012_23_1_BCA",
+          "code": "BCA",
+          "asset": "Beispiel_PipeSection_1204012"
+        },
+        {
+          "report": "Beispiel_Condition_1204012_28_0_BCE",
+          "code": "BCE",
+          "asset": "Beispiel_PipeSection_1204012"
+        },
+        {
+          "report": "Beispiel_Condition_1204012_3_3_DDB",
+          "code": "DDB",
+          "asset": "Beispiel_Node_1204012"
+        },
+        {
+          "report": "Beispiel_Condition_1204012_5_8_BCA",
+          "code": "BCA",
+          "asset": "Beispiel_PipeSection_1204012"
+        },
+        {
+          "report": "Beispiel_Condition_1204013_0_0_BCD",
+          "code": "BCD",
+          "asset": "Beispiel_PipeSection_1204013"
+        },
+        {
+          "report": "Beispiel_Condition_1204013_0_0_DCA",
+          "code": "DCA",
+          "asset": "Beispiel_Node_1204013"
+        },
+        {
+          "report": "Beispiel_Condition_1204013_0_0_DCG",
+          "code": "DCG",
+          "asset": "Beispiel_Node_1204013"
+        },
+        {
+          "report": "Beispiel_Condition_1204013_0_0_DDB",
+          "code": "DDB",
+          "asset": "Beispiel_Node_1204013"
+        },
+        {
+          "report": "Beispiel_Condition_1204013_10_1_BDC",
+          "code": "BDC",
+          "asset": "Beispiel_PipeSection_1204013"
+        },
+        {
+          "report": "Beispiel_Condition_1204013_1_7_DCA",
+          "code": "DCA",
+          "asset": "Beispiel_Node_1204013"
+        },
+        {
+          "report": "Beispiel_Condition_1204013_1_7_DCG",
+          "code": "DCG",
+          "asset": "Beispiel_Node_1204013"
+        },
+        {
+          "report": "Beispiel_Condition_1204013_2_8_DDB",
+          "code": "DDB",
+          "asset": "Beispiel_Node_1204013"
+        },
+        {
+          "report": "Beispiel_Condition_1204013_4_1_BCA",
+          "code": "BCA",
+          "asset": "Beispiel_PipeSection_1204013"
+        },
+        {
+          "report": "Beispiel_Condition_1204013_5_8_BCA",
+          "code": "BCA",
+          "asset": "Beispiel_PipeSection_1204013"
+        },
+        {
+          "report": "Beispiel_Condition_1204013_5_8_BCB",
+          "code": "BCB",
+          "asset": "Beispiel_PipeSection_1204013"
+        },
+        {
+          "report": "Beispiel_Condition_1204013_6_3_BCA",
+          "code": "BCA",
+          "asset": "Beispiel_PipeSection_1204013"
+        },
+        {
+          "report": "Beispiel_Condition_1204013_7_9_BDC",
+          "code": "BDC",
+          "asset": "Beispiel_PipeSection_1204013"
+        },
+        {
+          "report": "Beispiel_Condition_1204013_9_8_BCA",
+          "code": "BCA",
+          "asset": "Beispiel_PipeSection_1204013"
+        },
+        {
+          "report": "Beispiel_Condition_1204014_0_0_BCD",
+          "code": "BCD",
+          "asset": "Beispiel_PipeSection_1204014"
+        },
+        {
+          "report": "Beispiel_Condition_1204014_0_0_DCA",
+          "code": "DCA",
+          "asset": "Beispiel_Node_1204014"
+        },
+        {
+          "report": "Beispiel_Condition_1204014_0_0_DCG",
+          "code": "DCG",
+          "asset": "Beispiel_Node_1204014"
+        },
+        {
+          "report": "Beispiel_Condition_1204014_0_0_DDB",
+          "code": "DDB",
+          "asset": "Beispiel_Node_1204014"
+        },
+        {
+          "report": "Beispiel_Condition_1204014_11_3_BCA",
+          "code": "BCA",
+          "asset": "Beispiel_PipeSection_1204014"
+        },
+        {
+          "report": "Beispiel_Condition_1204014_15_1_BCA",
+          "code": "BCA",
+          "asset": "Beispiel_PipeSection_1204014"
+        },
+        {
+          "report": "Beispiel_Condition_1204014_23_5_BCA",
+          "code": "BCA",
+          "asset": "Beispiel_PipeSection_1204014"
+        },
+        {
+          "report": "Beispiel_Condition_1204014_29_9_BCA",
+          "code": "BCA",
+          "asset": "Beispiel_PipeSection_1204014"
+        },
+        {
+          "report": "Beispiel_Condition_1204014_2_1_DDB",
+          "code": "DDB",
+          "asset": "Beispiel_Node_1204014"
+        },
+        {
+          "report": "Beispiel_Condition_1204014_42_2_BCE",
+          "code": "BCE",
+          "asset": "Beispiel_PipeSection_1204014"
+        },
+        {
+          "report": "Beispiel_Condition_1204014_4_6_BCA",
+          "code": "BCA",
+          "asset": "Beispiel_PipeSection_1204014"
+        },
+        {
+          "report": "Beispiel_Condition_1204015_0_0_BCD",
+          "code": "BCD",
+          "asset": "Beispiel_PipeSection_1204015"
+        },
+        {
+          "report": "Beispiel_Condition_1204015_0_0_DCA",
+          "code": "DCA",
+          "asset": "Beispiel_Node_1204015"
+        },
+        {
+          "report": "Beispiel_Condition_1204015_0_0_DCG",
+          "code": "DCG",
+          "asset": "Beispiel_Node_1204015"
+        },
+        {
+          "report": "Beispiel_Condition_1204015_0_0_DDB",
+          "code": "DDB",
+          "asset": "Beispiel_Node_1204015"
+        },
+        {
+          "report": "Beispiel_Condition_1204015_10_6_BCA",
+          "code": "BCA",
+          "asset": "Beispiel_PipeSection_1204015"
+        },
+        {
+          "report": "Beispiel_Condition_1204015_16_4_BCA",
+          "code": "BCA",
+          "asset": "Beispiel_PipeSection_1204015"
+        },
+        {
+          "report": "Beispiel_Condition_1204015_18_7_BCA",
+          "code": "BCA",
+          "asset": "Beispiel_PipeSection_1204015"
+        },
+        {
+          "report": "Beispiel_Condition_1204015_23_2_BCA",
+          "code": "BCA",
+          "asset": "Beispiel_PipeSection_1204015"
+        },
+        {
+          "report": "Beispiel_Condition_1204015_26_4_BCA",
+          "code": "BCA",
+          "asset": "Beispiel_PipeSection_1204015"
+        },
+        {
+          "report": "Beispiel_Condition_1204015_2_1_DDB",
+          "code": "DDB",
+          "asset": "Beispiel_Node_1204015"
+        },
+        {
+          "report": "Beispiel_Condition_1204015_2_5_BCA",
+          "code": "BCA",
+          "asset": "Beispiel_PipeSection_1204015"
+        },
+        {
+          "report": "Beispiel_Condition_1204015_32_3_BCA",
+          "code": "BCA",
+          "asset": "Beispiel_PipeSection_1204015"
+        },
+        {
+          "report": "Beispiel_Condition_1204015_34_4_BCA",
+          "code": "BCA",
+          "asset": "Beispiel_PipeSection_1204015"
+        },
+        {
+          "report": "Beispiel_Condition_1204015_42_1_BCA",
+          "code": "BCA",
+          "asset": "Beispiel_PipeSection_1204015"
+        },
+        {
+          "report": "Beispiel_Condition_1204015_48_3_BCE",
+          "code": "BCE",
+          "asset": "Beispiel_PipeSection_1204015"
+        }
+      ],
+      "resultCount": 53,
+      "withoutSdco": {
+        "explanation": "No single field marks a report as 'not damage' -- an analyst has to already know and enumerate every non-damage code by hand (e.g. DDB for general remarks, BDC for inspection termination, and every inventory-feature code besides), with no way to check the list is complete.",
+        "sparql": "PREFIX m150: <https://l-jamora.github.io/m150-onto#>\nSELECT ?report ?code WHERE {\n  ?report m150:hasConditionCode ?code .\n  FILTER(?code IN (\"DDB\", \"BDC\"))\n}"
+      }
+    }
+  ],
+  "stats": {
+    "tripleCounts": {
+      "SDCO.rdf": 11683,
+      "m150-onto-parsed-dwa.rdf": 2269,
+      "m150-onto.rdf": 2896,
+      "SDCO-dwa-parsed_materialized.rdf": 145
+    },
+    "axioms": {
+      "equivalentClass": 504,
+      "namedClasses": 1228,
+      "someValuesFrom": 501,
+      "allDisjointClasses": 133,
+      "objectProperties": 29
+    },
+    "reportCount": 96,
+    "codeCount": 23,
+    "totalCodeCount": 80,
+    "pipeSectionCount": 4,
+    "nodeCount": 5,
+    "inspectionCount": 9,
+    "materializedTripleCount": 141,
+    "materializedSubjectCount": 96,
+    "inspectionDateRange": {
+      "min": "2006-04-07T08:30:00",
+      "max": "2006-04-13T08:49:00"
+    }
+  }
+}

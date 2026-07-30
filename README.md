@@ -58,4 +58,21 @@ python scripts/materialize_object_properties.py --source SDCO-dwa-parsed.rdf
 
 By default it forward-chains the `equivalentClass` patterns directly (seconds). Pass `--reason` to instead run the original HermiT path via `owlready2` as a correctness oracle (minutes+).
 
+## Explainer
+
+`docs/explainer/` is a self-contained HTML walkthrough of the ontology, built from real data (not hand-typed numbers). `scripts/build_explainer.py` extracts stats/examples from `SDCO.rdf` + the m150 example dataset into `docs/explainer/sdco_data.json`, then injects that JSON into `docs/explainer/template.html` to produce `docs/explainer/index.html`.
+
+```bash
+python scripts/build_explainer.py
+```
+
+Don't open `index.html` via `file://` — browsers treat `file://` pages as unique security origins, which breaks things. Serve it over localhost instead:
+
+```bash
+cd docs/explainer
+python -m http.server 8000
+```
+
+Then visit `http://localhost:8000/index.html`.
+
 See `CLAUDE.md` for full agent-facing context, including current namespace state, working notes, and script details.
