@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="https://l-jamora.github.io/m150-onto-parsed" uri="file:/C:/Users/jluis/Repositories/ICOM/m150-onto/m150-onto-parsed-dwa.rdf"/>
     <uri id="Imports Wizard Entry" name="https://l-jamora.github.io/m150-onto" uri="file:/C:/Users/jluis/Repositories/ICOM/m150-onto/m150-onto.rdf"/>
-    <uri id="Imports Wizard Entry" name="https://l-jamora.github.io/m150-onto" uri="file:/C:/Users/jluis/GitHub/ICOM/m150-onto/m150-onto.rdf"/>
-    <uri id="Imports Wizard Entry" name="https://l-jamora.github.io/m150-onto" uri="file:/C:/Users/jluis/GitHub/ICOM/m150-onto/m150-onto.rdf"/>
     <uri id="Imports Wizard Entry" name="https://l-jamora.github.io/sdco/materialized/SDCO-dwa-parsed" uri="derived/SDCO-dwa-parsed_materialized.rdf"/>
-    <uri id="Imports Wizard Entry" name="https://l-jamora.github.io/m150-onto-parsed" uri="file:/C:/Users/jluis/GitHub/ICOM/m150-onto/m150-onto-parsed-dwa.rdf"/>
-    <uri id="Imports Wizard Entry" name="https://l-jamora.github.io/m150-onto" uri="file:/C:/Users/jluis/GitHub/ICOM/m150-onto/m150-onto.rdf"/>
-    <uri id="Imports Wizard Entry" name="https://l-jamora.github.io/m150-onto" uri="file:/C:/Users/jluis/GitHub/ICOM/m150-onto/m150-onto.rdf"/>
-    <uri id="Imports Wizard Entry" name="https://l-jamora.github.io/m150-onto" uri="file:/C:/Users/jluis/GitHub/ICOM/m150-onto/m150-onto.rdf"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
         <uri id="Automatically generated entry, Timestamp=1784798079440" name="https://l-jamora.github.io/sdco/test_individuals" uri="tests/fixtures/test_individuals.rdf"/>
     </group>

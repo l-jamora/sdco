@@ -1,58 +1,164 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
-   xmlns:ns1="https://l-jamora.github.io/m150-onto#"
+   xmlns="https://l-jamora.github.io/sdco#"
    xmlns:owl="http://www.w3.org/2002/07/owl#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204014_6_0_BAB">
-    <ns1:hasDamageOrientation rdf:resource="https://l-jamora.github.io/m150-onto#Longitudinal"/>
-    <ns1:hasPipeFabricDamage rdf:resource="https://l-jamora.github.io/m150-onto#CrackFissure"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204012_0_0_BCD">
-    <ns1:hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/m150-onto#NodeType"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204014_0_0_BCD">
-    <ns1:hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/m150-onto#NodeType"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204013_2_7_DAB">
-    <ns1:hasDamageOrientation rdf:resource="https://l-jamora.github.io/m150-onto#Vertical"/>
-    <ns1:hasNodeFabricDamage rdf:resource="https://l-jamora.github.io/m150-onto#CrackFissure"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204014_42_2_BAF">
-    <ns1:hasDamageCause rdf:resource="https://l-jamora.github.io/m150-onto#Mechanical"/>
-    <ns1:hasPipeFabricDamage rdf:resource="https://l-jamora.github.io/m150-onto#AggregateProjectingFromSurface"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204012_16_4_BAK">
-    <ns1:hasPipeFabricDamage rdf:resource="https://l-jamora.github.io/m150-onto#OtherLiningDefect"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204014_8_7_BAB">
-    <ns1:hasDamageOrientation rdf:resource="https://l-jamora.github.io/m150-onto#Longitudinal"/>
-    <ns1:hasPipeFabricDamage rdf:resource="https://l-jamora.github.io/m150-onto#CrackFissure"/>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204013_0_0_DDB">
+    <hasNodeFeature rdf:resource="https://l-jamora.github.io/sdco#GeneralRemark"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204013_9_8_BAH">
-    <ns1:hasPipeFabricDamage rdf:resource="https://l-jamora.github.io/m150-onto#PartialGapConnection"/>
+    <hasPipeFabricDamage rdf:resource="https://l-jamora.github.io/sdco#PartialGapConnection"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204014_2_4_BAB">
-    <ns1:hasDamageOrientation rdf:resource="https://l-jamora.github.io/m150-onto#Longitudinal"/>
-    <ns1:hasPipeFabricDamage rdf:resource="https://l-jamora.github.io/m150-onto#CrackFissure"/>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204013_0_0_DCG">
+    <hasConnectionDischargeDirection rdf:resource="https://l-jamora.github.io/sdco#ConnectionDischargeIntoNode"/>
+    <hasNodeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#CircularConnectingPipeline"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204015_32_3_BAG">
-    <ns1:hasPipeFabricDamage rdf:resource="https://l-jamora.github.io/m150-onto#IntrudingConnection"/>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204012_23_1_BCA">
+    <hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#ConnectionNotEvident"/>
+    <hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#OpenConnection"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204013_10_1_BDC">
-    <ns1:hasPipeFeature rdf:resource="https://l-jamora.github.io/m150-onto#InspectionTermination"/>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204013_2_8_DDB">
+    <hasNodeFeature rdf:resource="https://l-jamora.github.io/sdco#GeneralRemark"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204014_23_5_BCA">
-    <ns1:hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/m150-onto#DrilledPlainConnection"/>
-    <ns1:hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/m150-onto#OpenConnection"/>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204013_7_9_BDC">
+    <hasPipeFeature rdf:resource="https://l-jamora.github.io/sdco#InspectionTermination"/>
+    <hasTerminationReason rdf:resource="https://l-jamora.github.io/sdco#OtherCause"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204013_5_8_BCB">
-    <ns1:hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/m150-onto#OtherTrenchlessRepair"/>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204013_0_0_BCD">
+    <hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#NodeType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204014_0_0_DCA">
+    <hasNodeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#FreeDropConnection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204013_2_7_DAB">
+    <hasDamageOrientation rdf:resource="https://l-jamora.github.io/sdco#Vertical"/>
+    <hasNodeFabricDamage rdf:resource="https://l-jamora.github.io/sdco#CrackFissure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204015_42_1_BCA">
+    <hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#Junction"/>
+    <hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#OpenConnection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204015_48_3_BCE">
+    <hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#NodeType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204015_0_0_BCD">
+    <hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#NodeType"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204013_0_0_BAF">
-    <ns1:hasDamageCause rdf:resource="https://l-jamora.github.io/m150-onto#Mechanical"/>
-    <ns1:hasPipeFabricDamage rdf:resource="https://l-jamora.github.io/m150-onto#AggregateProjectingFromSurface"/>
+    <hasDamageCause rdf:resource="https://l-jamora.github.io/sdco#Mechanical"/>
+    <hasPipeFabricDamage rdf:resource="https://l-jamora.github.io/sdco#AggregateProjectingFromSurface"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204014_0_5_DAQ">
+    <hasNodeFabricDamage rdf:resource="https://l-jamora.github.io/sdco#MissingStep"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204013_5_8_BCB">
+    <hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#PointRepair"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204014_0_0_BAF">
+    <hasDamageCause rdf:resource="https://l-jamora.github.io/sdco#Mechanical"/>
+    <hasPipeFabricDamage rdf:resource="https://l-jamora.github.io/sdco#AggregateProjectingFromSurface"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204015_34_4_BCA">
+    <hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#ChiselledPlainConnection"/>
+    <hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#OpenConnection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204012_16_4_BAK">
+    <hasPipeFabricDamage rdf:resource="https://l-jamora.github.io/sdco#OtherLiningDefect"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204014_11_3_BCA">
+    <hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#ChiselledPlainConnection"/>
+    <hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#OpenConnection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204014_6_0_BAB">
+    <hasDamageOrientation rdf:resource="https://l-jamora.github.io/sdco#Longitudinal"/>
+    <hasPipeFabricDamage rdf:resource="https://l-jamora.github.io/sdco#CrackFissure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204013_4_1_BCA">
+    <hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#ChiselledPlainConnection"/>
+    <hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#OpenConnection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204013_5_8_BCA">
+    <hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#ConnectionNotEvident"/>
+    <hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#OpenConnection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204015_0_0_DDB">
+    <hasNodeFeature rdf:resource="https://l-jamora.github.io/sdco#GeneralRemark"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204015_16_4_BAH">
+    <hasPipeFabricDamage rdf:resource="https://l-jamora.github.io/sdco#PartialGapConnection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204012_0_0_BCD">
+    <hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#NodeType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204012_5_8_BCA">
+    <hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#ConnectionNotEvident"/>
+    <hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#OpenConnection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204014_2_4_BAB">
+    <hasDamageOrientation rdf:resource="https://l-jamora.github.io/sdco#Longitudinal"/>
+    <hasPipeFabricDamage rdf:resource="https://l-jamora.github.io/sdco#CrackFissure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204011_0_0_DDB">
+    <hasNodeFeature rdf:resource="https://l-jamora.github.io/sdco#GeneralRemark"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204011_0_0_DCA">
+    <hasNodeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#FreeDropConnection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204015_19_1_BAB">
+    <hasDamageOrientation rdf:resource="https://l-jamora.github.io/sdco#Longitudinal"/>
+    <hasPipeFabricDamage rdf:resource="https://l-jamora.github.io/sdco#CrackFissure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204013_2_8_DAR">
+    <hasNodeFabricDamage rdf:resource="https://l-jamora.github.io/sdco#RockingCover"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204013_9_8_BCA">
+    <hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#ChiselledPlainConnection"/>
+    <hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#OpenConnection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204014_24_8_BAB">
+    <hasDamageOrientation rdf:resource="https://l-jamora.github.io/sdco#Longitudinal"/>
+    <hasPipeFabricDamage rdf:resource="https://l-jamora.github.io/sdco#CrackFissure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204013_10_1_BBA">
+    <hasPipeOperationDamage rdf:resource="https://l-jamora.github.io/sdco#ComplexMassRoots"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204014_4_6_BCA">
+    <hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#ChiselledPlainConnection"/>
+    <hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#OpenConnection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204012_3_3_DDB">
+    <hasNodeFeature rdf:resource="https://l-jamora.github.io/sdco#GeneralRemark"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204015_0_0_DCA">
+    <hasNodeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#FreeDropConnection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204015_36_1_BBA">
+    <hasPipeOperationDamage rdf:resource="https://l-jamora.github.io/sdco#ComplexMassRoots"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204014_15_1_BAH">
+    <hasPipeFabricDamage rdf:resource="https://l-jamora.github.io/sdco#PartialGapConnection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204013_7_9_BAB">
+    <hasDamageOrientation rdf:resource="https://l-jamora.github.io/sdco#Longitudinal"/>
+    <hasPipeFabricDamage rdf:resource="https://l-jamora.github.io/sdco#CrackFissure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204015_2_5_BCA">
+    <hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#ChiselledPlainConnection"/>
+    <hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#OpenConnection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204013_1_7_DCG">
+    <hasConnectionDischargeDirection rdf:resource="https://l-jamora.github.io/sdco#ConnectionDischargeIntoNode"/>
+    <hasNodeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#CircularConnectingPipeline"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204011_2_4_DBF">
+    <hasNodeOperationDamage rdf:resource="https://l-jamora.github.io/sdco#SweatingInfiltration"/>
+    <hasNodeOperationDamage rdf:resource="https://l-jamora.github.io/sdco#WallInfiltration"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204014_8_7_BAB">
+    <hasDamageOrientation rdf:resource="https://l-jamora.github.io/sdco#Longitudinal"/>
+    <hasPipeFabricDamage rdf:resource="https://l-jamora.github.io/sdco#CrackFissure"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://l-jamora.github.io/sdco/materialized/SDCO-dwa-parsed">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
@@ -60,191 +166,182 @@
     <rdfs:label>SDCO materialized object-property triples (DERIVED)</rdfs:label>
     <rdfs:comment>Auto-generated by scripts/materialize_object_properties.py via forward-chaining classify_individuals() + SPARQL CONSTRUCT. DO NOT HAND-EDIT -- regenerate with: python scripts/materialize_object_properties.py --source SDCO-dwa-parsed.rdf. Source: SDCO-dwa-parsed.rdf.</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204012_21_4_BAK">
-    <ns1:hasPipeFabricDamage rdf:resource="https://l-jamora.github.io/m150-onto#OtherLiningDefect"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204014_15_1_BAH">
-    <ns1:hasPipeFabricDamage rdf:resource="https://l-jamora.github.io/m150-onto#PartialGapConnection"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204013_9_8_BCA">
-    <ns1:hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/m150-onto#ChiselledPlainConnection"/>
-    <ns1:hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/m150-onto#OpenConnection"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204015_18_7_BCA">
-    <ns1:hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/m150-onto#ChiselledPlainConnection"/>
-    <ns1:hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/m150-onto#OpenConnection"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204013_7_9_BBA">
-    <ns1:hasPipeOperationDamage rdf:resource="https://l-jamora.github.io/m150-onto#ComplexMassRoots"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204012_23_1_BCA">
-    <ns1:hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/m150-onto#ConnectionNotEvident"/>
-    <ns1:hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/m150-onto#OpenConnection"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204015_34_4_BCA">
-    <ns1:hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/m150-onto#ChiselledPlainConnection"/>
-    <ns1:hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/m150-onto#OpenConnection"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204014_4_6_BCA">
-    <ns1:hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/m150-onto#ChiselledPlainConnection"/>
-    <ns1:hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/m150-onto#OpenConnection"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204015_16_4_BCA">
-    <ns1:hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/m150-onto#ChiselledPlainConnection"/>
-    <ns1:hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/m150-onto#OpenConnection"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204013_7_9_BDC">
-    <ns1:hasPipeFeature rdf:resource="https://l-jamora.github.io/m150-onto#InspectionTermination"/>
-    <ns1:hasTerminationReason rdf:resource="https://l-jamora.github.io/m150-onto#OtherCause"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204013_10_1_BAF">
-    <ns1:hasDamageCause rdf:resource="https://l-jamora.github.io/m150-onto#Mechanical"/>
-    <ns1:hasPipeFabricDamage rdf:resource="https://l-jamora.github.io/m150-onto#AggregateProjectingFromSurface"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204012_5_8_BCA">
-    <ns1:hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/m150-onto#ConnectionNotEvident"/>
-    <ns1:hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/m150-onto#OpenConnection"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204015_26_4_BAH">
-    <ns1:hasPipeFabricDamage rdf:resource="https://l-jamora.github.io/m150-onto#GapConnection"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204013_1_8_DAB">
-    <ns1:hasDamageOrientation rdf:resource="https://l-jamora.github.io/m150-onto#Vertical"/>
-    <ns1:hasNodeFabricDamage rdf:resource="https://l-jamora.github.io/m150-onto#CrackFissure"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204015_1_0_DAB">
-    <ns1:hasDamageOrientation rdf:resource="https://l-jamora.github.io/m150-onto#Vertical"/>
-    <ns1:hasNodeFabricDamage rdf:resource="https://l-jamora.github.io/m150-onto#CrackFissure"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204014_11_3_BAH">
-    <ns1:hasPipeFabricDamage rdf:resource="https://l-jamora.github.io/m150-onto#GapConnection"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204014_11_3_BCA">
-    <ns1:hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/m150-onto#ChiselledPlainConnection"/>
-    <ns1:hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/m150-onto#OpenConnection"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204014_15_1_BCA">
-    <ns1:hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/m150-onto#ChiselledPlainConnection"/>
-    <ns1:hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/m150-onto#OpenConnection"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204015_38_0_BBA">
-    <ns1:hasPipeOperationDamage rdf:resource="https://l-jamora.github.io/m150-onto#ComplexMassRoots"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204014_0_0_BAF">
-    <ns1:hasDamageCause rdf:resource="https://l-jamora.github.io/m150-onto#Mechanical"/>
-    <ns1:hasPipeFabricDamage rdf:resource="https://l-jamora.github.io/m150-onto#AggregateProjectingFromSurface"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204015_2_5_BCA">
-    <ns1:hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/m150-onto#ChiselledPlainConnection"/>
-    <ns1:hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/m150-onto#OpenConnection"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204015_26_4_BCA">
-    <ns1:hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/m150-onto#ChiselledPlainConnection"/>
-    <ns1:hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/m150-onto#OpenConnection"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204012_17_0_BCA">
-    <ns1:hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/m150-onto#ConnectionNotEvident"/>
-    <ns1:hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/m150-onto#OpenConnection"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204015_23_2_BAH">
-    <ns1:hasPipeFabricDamage rdf:resource="https://l-jamora.github.io/m150-onto#GapConnection"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204013_0_0_BAI">
-    <ns1:hasPipeFabricDamage rdf:resource="https://l-jamora.github.io/m150-onto#IntrudingSealingRingAboveCentreline"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204013_5_8_BCA">
-    <ns1:hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/m150-onto#ConnectionNotEvident"/>
-    <ns1:hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/m150-onto#OpenConnection"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204014_42_2_BCE">
-    <ns1:hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/m150-onto#NodeType"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204014_24_8_BAB">
-    <ns1:hasDamageOrientation rdf:resource="https://l-jamora.github.io/m150-onto#Longitudinal"/>
-    <ns1:hasPipeFabricDamage rdf:resource="https://l-jamora.github.io/m150-onto#CrackFissure"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204013_5_8_BAL">
-    <ns1:hasPipeFabricDamage rdf:resource="https://l-jamora.github.io/m150-onto#OtherDefectiveRepair"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204015_10_6_BCA">
-    <ns1:hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/m150-onto#ChiselledPlainConnection"/>
-    <ns1:hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/m150-onto#OpenConnection"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204015_32_3_BCA">
-    <ns1:hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/m150-onto#ChiselledPlainConnection"/>
-    <ns1:hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/m150-onto#OpenConnection"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204013_7_9_BAB">
-    <ns1:hasDamageOrientation rdf:resource="https://l-jamora.github.io/m150-onto#Longitudinal"/>
-    <ns1:hasPipeFabricDamage rdf:resource="https://l-jamora.github.io/m150-onto#CrackFissure"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204013_4_1_BCA">
-    <ns1:hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/m150-onto#ChiselledPlainConnection"/>
-    <ns1:hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/m150-onto#OpenConnection"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204014_11_3_BAB">
-    <ns1:hasDamageOrientation rdf:resource="https://l-jamora.github.io/m150-onto#Longitudinal"/>
-    <ns1:hasPipeFabricDamage rdf:resource="https://l-jamora.github.io/m150-onto#CrackFissure"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204015_36_1_BBA">
-    <ns1:hasPipeOperationDamage rdf:resource="https://l-jamora.github.io/m150-onto#ComplexMassRoots"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204015_0_0_DAB">
-    <ns1:hasDamageOrientation rdf:resource="https://l-jamora.github.io/m150-onto#Vertical"/>
-    <ns1:hasNodeFabricDamage rdf:resource="https://l-jamora.github.io/m150-onto#CrackFissure"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204015_23_2_BCA">
-    <ns1:hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/m150-onto#ChiselledPlainConnection"/>
-    <ns1:hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/m150-onto#OpenConnection"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204015_16_4_BAH">
-    <ns1:hasPipeFabricDamage rdf:resource="https://l-jamora.github.io/m150-onto#PartialGapConnection"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204014_38_6_BAB">
-    <ns1:hasDamageOrientation rdf:resource="https://l-jamora.github.io/m150-onto#Longitudinal"/>
-    <ns1:hasPipeFabricDamage rdf:resource="https://l-jamora.github.io/m150-onto#CrackFissure"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204015_48_3_BCE">
-    <ns1:hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/m150-onto#NodeType"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204015_19_1_BAB">
-    <ns1:hasDamageOrientation rdf:resource="https://l-jamora.github.io/m150-onto#Longitudinal"/>
-    <ns1:hasPipeFabricDamage rdf:resource="https://l-jamora.github.io/m150-onto#CrackFissure"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204012_12_8_BAK">
-    <ns1:hasPipeFabricDamage rdf:resource="https://l-jamora.github.io/m150-onto#OtherLiningDefect"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204014_29_9_BCA">
-    <ns1:hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/m150-onto#DrilledPlainConnection"/>
-    <ns1:hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/m150-onto#OpenConnection"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204015_10_6_BAG">
-    <ns1:hasPipeFabricDamage rdf:resource="https://l-jamora.github.io/m150-onto#IntrudingConnection"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204015_42_1_BCA">
-    <ns1:hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/m150-onto#Junction"/>
-    <ns1:hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/m150-onto#OpenConnection"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204013_0_0_BCD">
-    <ns1:hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/m150-onto#NodeType"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204015_0_0_BCD">
-    <ns1:hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/m150-onto#NodeType"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204014_26_0_BBA">
-    <ns1:hasPipeOperationDamage rdf:resource="https://l-jamora.github.io/m150-onto#ComplexMassRoots"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204012_28_0_BCE">
-    <ns1:hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/m150-onto#NodeType"/>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204013_10_1_BDC">
+    <hasPipeFeature rdf:resource="https://l-jamora.github.io/sdco#InspectionTermination"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204013_6_3_BCA">
-    <ns1:hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/m150-onto#ChiselledPlainConnection"/>
-    <ns1:hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/m150-onto#OpenConnection"/>
+    <hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#ChiselledPlainConnection"/>
+    <hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#OpenConnection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204013_0_0_BAI">
+    <hasPipeFabricDamage rdf:resource="https://l-jamora.github.io/sdco#IntrudingSealingRingAboveCentreline"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204012_12_8_BAK">
+    <hasPipeFabricDamage rdf:resource="https://l-jamora.github.io/sdco#OtherLiningDefect"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204014_11_3_BAH">
+    <hasPipeFabricDamage rdf:resource="https://l-jamora.github.io/sdco#GapConnection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204014_15_1_BCA">
+    <hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#ChiselledPlainConnection"/>
+    <hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#OpenConnection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204013_0_2_DAE">
+    <hasNodeFabricDamage rdf:resource="https://l-jamora.github.io/sdco#MissingBrickworkOrMasonry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204011_0_0_DCG">
+    <hasConnectionDischargeDirection rdf:resource="https://l-jamora.github.io/sdco#ConnectionDischargeIntoNode"/>
+    <hasNodeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#CircularConnectingPipeline"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204015_16_4_BCA">
+    <hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#ChiselledPlainConnection"/>
+    <hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#OpenConnection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204014_11_3_BAB">
+    <hasDamageOrientation rdf:resource="https://l-jamora.github.io/sdco#Longitudinal"/>
+    <hasPipeFabricDamage rdf:resource="https://l-jamora.github.io/sdco#CrackFissure"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204014_18_1_BBA">
-    <ns1:hasPipeOperationDamage rdf:resource="https://l-jamora.github.io/m150-onto#ComplexMassRoots"/>
+    <hasPipeOperationDamage rdf:resource="https://l-jamora.github.io/sdco#ComplexMassRoots"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204013_10_1_BBA">
-    <ns1:hasPipeOperationDamage rdf:resource="https://l-jamora.github.io/m150-onto#ComplexMassRoots"/>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204013_5_8_BAL">
+    <hasPipeFabricDamage rdf:resource="https://l-jamora.github.io/sdco#OtherDefectiveRepair"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204014_42_2_BAF">
+    <hasDamageCause rdf:resource="https://l-jamora.github.io/sdco#Mechanical"/>
+    <hasPipeFabricDamage rdf:resource="https://l-jamora.github.io/sdco#AggregateProjectingFromSurface"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204012_17_0_BCA">
+    <hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#ConnectionNotEvident"/>
+    <hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#OpenConnection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204015_0_0_DAB">
+    <hasDamageOrientation rdf:resource="https://l-jamora.github.io/sdco#Vertical"/>
+    <hasNodeFabricDamage rdf:resource="https://l-jamora.github.io/sdco#CrackFissure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204013_1_7_DAG">
+    <hasNodeFabricDamage rdf:resource="https://l-jamora.github.io/sdco#IntrudingConnection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204013_1_8_DAB">
+    <hasDamageOrientation rdf:resource="https://l-jamora.github.io/sdco#Vertical"/>
+    <hasNodeFabricDamage rdf:resource="https://l-jamora.github.io/sdco#CrackFissure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204014_29_9_BCA">
+    <hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#DrilledPlainConnection"/>
+    <hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#OpenConnection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204011_3_4_DDB">
+    <hasNodeFeature rdf:resource="https://l-jamora.github.io/sdco#GeneralRemark"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204012_0_0_DCG">
+    <hasConnectionDischargeDirection rdf:resource="https://l-jamora.github.io/sdco#ConnectionDischargeIntoNode"/>
+    <hasNodeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#CircularConnectingPipeline"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204015_2_1_DDB">
+    <hasNodeFeature rdf:resource="https://l-jamora.github.io/sdco#GeneralRemark"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204015_26_4_BAH">
+    <hasPipeFabricDamage rdf:resource="https://l-jamora.github.io/sdco#GapConnection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204015_1_0_DAB">
+    <hasDamageOrientation rdf:resource="https://l-jamora.github.io/sdco#Vertical"/>
+    <hasNodeFabricDamage rdf:resource="https://l-jamora.github.io/sdco#CrackFissure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204015_26_4_BCA">
+    <hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#ChiselledPlainConnection"/>
+    <hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#OpenConnection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204014_42_2_BCE">
+    <hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#NodeType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204013_10_1_BAF">
+    <hasDamageCause rdf:resource="https://l-jamora.github.io/sdco#Mechanical"/>
+    <hasPipeFabricDamage rdf:resource="https://l-jamora.github.io/sdco#AggregateProjectingFromSurface"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204013_1_7_DCA">
+    <hasNodeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#InternalDropPipeConnection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204015_38_0_BBA">
+    <hasPipeOperationDamage rdf:resource="https://l-jamora.github.io/sdco#ComplexMassRoots"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204014_23_5_BCA">
+    <hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#DrilledPlainConnection"/>
+    <hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#OpenConnection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204013_0_0_DBC">
+    <hasNodeOperationDamage rdf:resource="https://l-jamora.github.io/sdco#HardOrCompactedSettledDeposit"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204015_32_3_BCA">
+    <hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#ChiselledPlainConnection"/>
+    <hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#OpenConnection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204012_0_0_DDB">
+    <hasNodeFeature rdf:resource="https://l-jamora.github.io/sdco#GeneralRemark"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204015_10_6_BCA">
+    <hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#ChiselledPlainConnection"/>
+    <hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#OpenConnection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204015_0_0_DCG">
+    <hasConnectionDischargeDirection rdf:resource="https://l-jamora.github.io/sdco#ConnectionDischargeIntoNode"/>
+    <hasNodeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#CircularConnectingPipeline"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204015_10_6_BAG">
+    <hasPipeFabricDamage rdf:resource="https://l-jamora.github.io/sdco#IntrudingConnection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204013_0_0_DCA">
+    <hasNodeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#FreeDropConnection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204014_0_0_DCG">
+    <hasConnectionDischargeDirection rdf:resource="https://l-jamora.github.io/sdco#ConnectionDischargeIntoNode"/>
+    <hasNodeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#CircularConnectingPipeline"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204012_0_0_DCA">
+    <hasNodeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#FreeDropConnection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204014_26_0_BBA">
+    <hasPipeOperationDamage rdf:resource="https://l-jamora.github.io/sdco#ComplexMassRoots"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204014_38_6_BAB">
+    <hasDamageOrientation rdf:resource="https://l-jamora.github.io/sdco#Longitudinal"/>
+    <hasPipeFabricDamage rdf:resource="https://l-jamora.github.io/sdco#CrackFissure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204015_23_2_BCA">
+    <hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#ChiselledPlainConnection"/>
+    <hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#OpenConnection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204015_32_3_BAG">
+    <hasPipeFabricDamage rdf:resource="https://l-jamora.github.io/sdco#IntrudingConnection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204015_2_1_DAR">
+    <hasNodeFabricDamage rdf:resource="https://l-jamora.github.io/sdco#RockingCover"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204014_0_0_DDB">
+    <hasNodeFeature rdf:resource="https://l-jamora.github.io/sdco#GeneralRemark"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204015_18_7_BCA">
+    <hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#ChiselledPlainConnection"/>
+    <hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#OpenConnection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204013_7_9_BBA">
+    <hasPipeOperationDamage rdf:resource="https://l-jamora.github.io/sdco#ComplexMassRoots"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204012_28_0_BCE">
+    <hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#NodeType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204014_2_1_DDB">
+    <hasNodeFeature rdf:resource="https://l-jamora.github.io/sdco#GeneralRemark"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204014_0_0_BCD">
+    <hasPipeInventoryFeature rdf:resource="https://l-jamora.github.io/sdco#NodeType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204012_1_5_DAQ">
+    <hasNodeFabricDamage rdf:resource="https://l-jamora.github.io/sdco#OtherDefectiveStepOrLadder"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204012_21_4_BAK">
+    <hasPipeFabricDamage rdf:resource="https://l-jamora.github.io/sdco#OtherLiningDefect"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_1204015_23_2_BAH">
+    <hasPipeFabricDamage rdf:resource="https://l-jamora.github.io/sdco#GapConnection"/>
   </rdf:Description>
 </rdf:RDF>
