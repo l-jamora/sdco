@@ -48,7 +48,7 @@ def expand_closure(g: Graph, seeds: set, hops: int) -> set:
 
 def main() -> int:
     g = Graph()
-    g.parse(str(SOURCE), format="xml")
+    g.parse(SOURCE.as_uri(), format="xml")
 
     seeds = pick_seed_individuals(g)
     included = expand_closure(g, seeds, CLOSURE_HOPS)

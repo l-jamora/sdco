@@ -36,7 +36,7 @@ import time
 from pathlib import Path
 from urllib.parse import unquote, urlparse
 
-from rdflib import OWL, RDF, RDFS, Graph, Literal, Namespace, URIRef
+from rdflib import OWL, RDF, RDFS, XSD, Graph, Literal, Namespace, URIRef
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 SDCO = Namespace("https://l-jamora.github.io/sdco#")
@@ -125,6 +125,13 @@ def parse_any(path: Path) -> Graph:
     except Exception:
         g = Graph()
         g.parse(str(path), format="turtle")
+    # RDF 1.1: "x" and "x"^^xsd:string are the same term, but rdflib treats them as
+    # distinct, so an xsd:string-typed hasConditionCode never joins against SDCO's
+    # plain-literal owl:hasValue restrictions. Normalize on load.
+    for s, p, o in list(g.triples((None, None, None))):
+        if isinstance(o, Literal) and o.datatype == XSD.string:
+            g.remove((s, p, o))
+            g.add((s, p, Literal(str(o), lang=o.language)))
     return g
 
 
