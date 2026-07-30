@@ -6,7 +6,9 @@
 
 Read `CLAUDE.md` for repo-wide context (namespace state, modeling approach, materialization pipeline) before touching anything here.
 
-> **Status note (2026-07-22):** Both tiers have been run to completion and are green except for the two real ontology defects in §4b, which are deliberately left unfixed. Tier 1: 13/13 pass. Tier 2 (`pytest -m reasoner`): 5/5 pass in ~10s on this machine — the ~25-minute reasoning time once feared for Tier 2 was a property of the old ~690-individual synthetic dataset (since deleted), not of the current 4-individual hand-authored fixture; against the fixture, HermiT is dominated by the taxonomy's expressivity, matching CLAUDE.md's ~165s benchmark order of magnitude, not the 25+ minute figure from the synthetic-data era.
+> **Status note (2026-07-22):** Both tiers have been run to completion and are green except for the two real ontology defects in §4b, which are deliberately left unfixed. Tier 1: 13/13 pass.
+>
+> **Update (commit `ab9ec6d`):** both §4b defects were subsequently fixed. As of that commit both tiers pass in full (18/18). Tier 2 (`pytest -m reasoner`): 5/5 pass in ~10s on this machine — the ~25-minute reasoning time once feared for Tier 2 was a property of the old ~690-individual synthetic dataset (since deleted), not of the current 4-individual hand-authored fixture; against the fixture, HermiT is dominated by the taxonomy's expressivity, matching CLAUDE.md's ~165s benchmark order of magnitude, not the 25+ minute figure from the synthetic-data era.
 
 ## 1. Problem this solves
 
@@ -148,14 +150,14 @@ Once the suite was actually run against current `SDCO.rdf` (rather than designed
 6. **`owlready2.sync_reasoner(..., world=world)`** — a keyword the installed `owlready2` 0.51 doesn't accept (it's positional). Fixed to `sync_reasoner(world, infer_property_values=True)`.
 7. **Blank node embedded as `f"<{group}>"` in a second SPARQL query** (`test_reasoning.py`'s poisoned-pair helpers) — produces a syntactically valid but semantically meaningless IRI instead of blank-node syntax, so the follow-up query silently matched zero rows. Fixed to `group.n3()`.
 
-### 4b. Real ontology defects (found, deliberately left unfixed)
+### 4b. Real ontology defects (found, since fixed in commit `ab9ec6d`)
 
-Two genuine `SDCO.rdf` bugs, confirmed by hand, survive after all of §4a's fixes — these are what's actually still red today (`pytest -m ""`: 16/18 pass):
+Two genuine `SDCO.rdf` bugs, confirmed by hand, survived after all of §4a's fixes — at the time of writing these were what was actually still red (`pytest -m ""`: 16/18 pass):
 
 1. **`:BBC`'s `owl:hasValue` restriction reads `"BBB"` instead of `"BBC"`** (`SDCO.rdf`, copy-paste from `:BBB`). This makes `:BBC` a literal duplicate of `:BBB` — any report coded `BBB` also (wrongly) classifies as `BBC`, and vice versa. Caught by `test_no_duplicate_definitions`.
 2. **The entire `BCA1_*` family has zero disjointness axioms.** `BCA1_A, _B, _C, _D, _E, _G, _Z` appear in no `owl:disjointWith` and no `owl:AllDisjointClasses` block anywhere in the file — unlike every sibling family (e.g. `BAB1_A/_B/_C` is properly grouped). A report could be classified as both `BCA1_A` and `BCA1_B` simultaneously with nothing to flag it. Caught by `test_sibling_characterizations_are_pairwise_disjoint`.
 
-**Neither fix is applied by this suite** — deliberately left for a separate decision on this branch (retype one literal; add one `AllDisjointClasses` block).
+**Neither fix was applied by this suite at the time** — deliberately left for a separate decision on this branch (retype one literal; add one `AllDisjointClasses` block). Both were subsequently fixed in commit `ab9ec6d` (`:BBC` retyped to `"BBC"`; an `owl:AllDisjointClasses` block added for the `BCA1_*` family) — `pytest -m ""` now passes 18/18. This section is kept as a historical record of what the test suite surfaced; see the design spec's git history for the fix itself.
 
 ## 5. Mutation-proof (guard verification)
 
@@ -197,7 +199,7 @@ Tier 2 (5 tests) runs in ~10 seconds on this machine against the current 4-indiv
 
 ### Reading a failure
 
-- A **Tier 1 structural failure** (`test_structure.py`) means `SDCO.rdf` itself violates an invariant — fix the ontology, not the test. See §4b for the two known ones as of this writing.
+- A **Tier 1 structural failure** (`test_structure.py`) means `SDCO.rdf` itself violates an invariant — fix the ontology, not the test. See §4b for the two now-fixed ones found this way historically.
 - A **Tier 1 classification failure** (`test_classification.py`) means either the ontology, `classify_individuals()`/`CONSTRUCT_QUERY` in `scripts/materialize_object_properties.py`, or the fixture's HermiT-derived expected types disagree with each other — check which side is wrong before editing any of them.
 - A **Tier 2 failure** means HermiT disagrees with the fast path, or the ontology is actually inconsistent/incoherent under full DL semantics even though the fast-path forward chainer didn't notice (the fast path only pattern-matches `equivalentClass`; it has no notion of disjointness or consistency at all).
 
@@ -218,4 +220,4 @@ git status --short SDCO.rdf   # should be empty
 - No tests for the Python scripts themselves — `scripts/test_classify_individuals.py` and `scripts/test_generate_node_codes.py` stay as they are.
 - No SHACL, no ROBOT, no OOPS! integration, no CI workflow — no `.github/` exists today, and adding one means solving the hardcoded-catalog-absolute-path portability problem (`catalog-v001.xml` and `benchmark/catalog-lite.xml` both hardcode `C:/Users/jluis/...`) first.
 - No hierarchy golden-file snapshot — the structural partition tests catch the same class of regression without per-code-addition churn.
-- Fixing the two ontology bugs found in §4b — flagged, not fixed, by design.
+- Fixing the two ontology bugs found in §4b — flagged, not fixed, by design at the time; both were subsequently fixed in commit `ab9ec6d` (see §4b).
