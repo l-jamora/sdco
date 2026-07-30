@@ -1,6 +1,6 @@
 # Journey Into SDCO: A Technical History of the Sewer Damage Classification Ontology
 
-**Prepared:** July 23, 2026  
+**Prepared:** July 23, 2026 (updated July 30, 2026 — see Part 11)  
 **Repository:** `C:\Users\jluis\Repositories\ICOM\sdco`  
 **Current Branch:** `dev-classes_approach`
 
@@ -374,6 +374,36 @@ With SDCO's formal classification, machine learning models can be trained to pre
 ### The Ponning Refactor as Template
 
 The move from `hasValue` + individuals to `someValuesFrom` + classes is not SDCO-specific. Any ontology that has conflated representation-layer punning with domain-layer hierarchy could benefit from this refactor. Documenting it thoroughly (in `Punning_Refactor_Plan.md` and this narrative) means others can learn from the decision.
+
+---
+
+## Part 11: Node Completion and the Explainer — July 29–30, 2026
+
+### July 29 — Node-Side Reaches Full Coverage
+
+Part 10 (as of July 23) noted the Node side was still missing Inventory and Other codes. Three commits closed that gap:
+
+- **`17f943b`** — NodeOperation damage codes with characterizations.
+- **`96da406`** — NodeInventory codes and their class hierarchy.
+- **`2d77751`** — NodeOther damage codes, completing the class hierarchy.
+
+With this, SDCO's `owl:equivalentClass` count roughly doubled from the 243 recorded in Part 8 to **504**, reflecting the full Node-side (D-family) taxonomy landing alongside the already-complete Pipe side. The taxonomy now has genuine full coverage of DIN EN 13508-2, not the ~189-code partial state from July 23.
+
+### July 30 — Post-Migration Fixes and Literal Normalization
+
+Development had moved to a new machine, surfacing two portability bugs fixed in **`53f39a2`**: the benchmark script built a file URI that didn't survive Windows path handling, and materialized `xsd:string`-typed literals weren't normalizing against the untyped literals used elsewhere in the graph (a variant of the same "typed vs. plain literal" trap `test_codes_are_plain_literals` was written to catch in Part 4). **`aa018d6`** regenerated `derived/` and benchmark data and fixed catalog paths broken by the same migration. **`3d99026`** synced `CLAUDE.md` and the testing design spec to the now-current ontology state.
+
+### July 30 — The Interactive Explainer
+
+**`0797e90`** ("feat(explainer): Add interactive HTML explainer built from live ontology data") introduced `scripts/build_explainer.py` and a self-contained HTML explainer: a template injected with data extracted directly from `SDCO.rdf` (all 80 codes, not just the ~23 present in the m150-onto sample dataset), with an interactive hero section for browsing codes and a node-link taxonomy graph. This is the first SDCO artifact meant for a non-technical audience rather than for reasoning pipelines or test suites.
+
+The explainer went through rapid same-day iteration: fixing character-encoding corruption (mojibake) in generated text, replacing a plain dropdown with arrow-button/keyboard navigation, adding a live-data badge to distinguish real ontology output from a mockup, and populating the reference grid dynamically from the full code set instead of a hardcoded example.
+
+It was then deployed to GitHub Pages: **`2627721`** placed a built `index.html` at the `docs/` root, **`667b369`** briefly relocated the explainer into a subdirectory (and added its own design spec), and **`b8796a7`** moved it back to `docs/` directly — the shortest path to a working Pages deployment. The explainer is now documented in the README as a build-and-serve-locally workflow, alongside the existing materialization and test-suite instructions.
+
+### Net Effect
+
+By the end of July 30, SDCO had gone from "ontology + pipeline + tests" (Part 8's state) to "ontology + pipeline + tests + a documented, deployed, human-facing view of the taxonomy" — completing the Node side that Part 10 had flagged as unfinished, and adding a communication layer the project didn't have on July 23.
 
 ---
 
