@@ -1,7 +1,7 @@
 """Extract real data from the SDCO ontology and its DWA-M 150 example dataset
-into docs/explainer/sdco_data.json, for a later phase to inject into a
-self-contained HTML explainer page. Every number on that page is measured
-here -- nothing hand-typed.
+into docs/sdco_data.json, then inlines it into the self-contained HTML
+explainer page docs/index.html. Every number on that page is measured here --
+nothing hand-typed.
 
 Read-only on all ontology files. Reuses parse_any() from
 materialize_object_properties.py (same directory, importable directly since
@@ -25,7 +25,7 @@ from rdflib import OWL, RDF, RDFS, Graph, Namespace, URIRef
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from materialize_object_properties import parse_any  # noqa: E402
 
-# Token in docs/explainer/template.html replaced by the extracted JSON at build time.
+# Token in docs/template.html replaced by the extracted JSON at build time.
 PLACEHOLDER = "__SDCO_DATA__"
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
@@ -85,8 +85,8 @@ def simplify_value(g: Graph, val):
     (ISO string for dates). Used uniformly for report props, asset props, and
     query result rows."""
     if isinstance(val, URIRef):
-        label = g.value(val, RDFS.label)
-        return str(label) if label is not None else local_name(val)
+        labels = sorted(g.objects(val, RDFS.label), key=lambda l: (getattr(l, "language", None) != "en", str(l)))
+        return str(labels[0]) if labels else local_name(val)
     if hasattr(val, "toPython"):
         try:
             v = val.toPython()
@@ -142,7 +142,7 @@ def build_reports(merged: Graph, m150_data: Graph, materialized_graph: Graph, in
     for report_uri in sorted(m150_data.subjects(RDF.type, M.ConditionReport), key=str):
         props = {}
         child_of = None
-        for p, o in merged.predicate_objects(report_uri):
+        for p, o in sorted(merged.predicate_objects(report_uri), key=lambda t: (str(t[0]), str(t[1]))):
             if p == RDF.type or str(p).startswith(str(S)):
                 continue  # SDCO-namespace triples come from materialized_graph -> "sdco" below
             lname = local_name(p)
@@ -188,12 +188,17 @@ def build_codes(merged: Graph, reports: list) -> list:
     codes = []
     for code, cls in sorted(code_to_class.items()):
         count = counts.get(code, 0)
-        comment = merged.value(cls, RDFS.comment)
+        # :BDC carries three comments (description + one per characterisation);
+        # value() picked one at random, silently dropping the other two.
+        comment = "\n\n".join(sorted(
+            (str(c) for c in merged.objects(cls, RDFS.comment)),
+            key=lambda c: (c.startswith("Characterisation"), c),
+        )) or None
         codes.append({
             "code": code,
             "count": count,
             "sdcoClass": local_name(cls),
-            "comment": str(comment) if comment is not None else None,
+            "comment": comment,
             "family": family_of(code),
             "meaning": meaning_of(merged, cls),
         })
@@ -301,6 +306,7 @@ def run_query(g: Graph, sparql: str, cols: list) -> list:
                if row[i] is not None else None
             for i, c in enumerate(cols)
         })
+    rows.sort(key=lambda r: [(v is not None, str(v)) for v in r.values()])
     return rows
 
 
@@ -567,7 +573,7 @@ def main() -> int:
     parser.add_argument("--m150-data", default=str(M150_REPO / "m150-onto-parsed-dwa.rdf"))
     parser.add_argument("--m150-tbox", default=str(M150_REPO / "m150-onto.rdf"))
     parser.add_argument("--materialized", default=str(REPO_ROOT / "derived" / "SDCO-dwa-parsed_materialized.rdf"))
-    parser.add_argument("--output", default=str(REPO_ROOT / "docs" / "explainer" / "sdco_data.json"))
+    parser.add_argument("--output", default=str(REPO_ROOT / "docs" / "sdco_data.json"))
     args = parser.parse_args()
 
     sdco_graph = parse_any(Path(args.sdco))
