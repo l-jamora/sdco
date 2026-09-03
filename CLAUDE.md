@@ -62,6 +62,7 @@ python scripts/materialize_object_properties.py --source SDCO-dwa-parsed.rdf --c
 
 - `scripts/make_benchmark_dataset.py` — regenerates `benchmark/m150-onto-parsed-dwa-lite.rdf` (see above).
 - `scripts/test_classify_individuals.py` — assert-based self-check for `classify_individuals()`'s two forward-chaining rules (simple + intersection `equivalentClass` patterns) against a toy graph. Run after touching that function.
+- `scripts/generate_labels.py` — derives an `@en` `rdfs:label` for every SDCO class from its name and axioms (condition-code / intersection / CamelCase / verbatim branches) and appends them to `SDCO.rdf` as one regenerable marker-delimited block (`---- BEGIN/END GENERATED LABELS ----`) at the end of the file. Fills gaps only — never overwrites a label that already exists anywhere in the file — and is idempotent (strips its own prior block before re-parsing). `--dry-run` prints the block. `scripts/test_generate_labels.py` is its assert-based self-check; `tests/test_structure.py::test_every_sdco_class_has_a_label` keeps the gap closed.
 
 ### `scripts/obsolete/`
 

@@ -7,7 +7,7 @@ Guards the two defects in docs/handover/plans/SDCO_Testing_Suite.md:
     dimensions (a report can legitimately be both char1 "A" and char2 "A").
 """
 
-from rdflib import OWL, RDF, RDFS, Namespace
+from rdflib import OWL, RDF, RDFS, Namespace, URIRef
 
 M150 = Namespace("https://l-jamora.github.io/m150-onto#")
 SDCO = Namespace("https://l-jamora.github.io/sdco#")
@@ -196,3 +196,13 @@ def test_every_code_reaches_a_category(sdco_graph, defined_classes):
 
     orphans = defined - reachable
     assert not orphans, f"defined classes with no path to a category root: {orphans}"
+
+
+def test_every_sdco_class_has_a_label(sdco_graph):
+    missing = sorted(
+        str(s) for s in sdco_graph.subjects(RDF.type, OWL.Class)
+        if isinstance(s, URIRef)
+        and str(s).startswith(str(SDCO))
+        and sdco_graph.value(s, RDFS.label) is None
+    )
+    assert not missing, f"SDCO classes with no rdfs:label ({len(missing)}): {missing[:10]}"

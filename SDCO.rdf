@@ -13941,5 +13941,1236 @@ Characterisation The following information:  pit not defective (A); pit defectiv
 ] .
 
 
+###  ---- BEGIN GENERATED LABELS (scripts/generate_labels.py -- do not hand-edit) ----
+:AccesablePipeCoverMissing rdfs:label "Accesable Pipe Cover Missing"@en .
+:AccessablePipeCoverInPlace rdfs:label "Accessable Pipe Cover In Place"@en .
+:AggregateProjectingFromSurface rdfs:label "Aggregate Projecting From Surface"@en .
+:Angular rdfs:label "Angular"@en .
+:AnotherObjectObstacle rdfs:label "Another Object Obstacle"@en .
+:ArchShapedConnectingPipeline rdfs:label "Arch Shaped Connecting Pipeline"@en .
+:AtmosphereWithin rdfs:label "Atmosphere Within"@en .
+:AttachedDeposits rdfs:label "Attached Deposits"@en .
+:AuthorityInstruction rdfs:label "Authority Instruction"@en .
+:BAA rdfs:label "BAA (Deformation)"@en .
+:BAA_A rdfs:label "BAA char1=A (Vertical)"@en .
+:BAA_B rdfs:label "BAA char1=B (Horizontal)"@en .
+:BAB rdfs:label "BAB (Fissure)"@en .
+:BAB1_A rdfs:label "BAB char1=A (Surface Crack Fissure)"@en .
+:BAB1_B rdfs:label "BAB char1=B (Crack Fissure)"@en .
+:BAB1_C rdfs:label "BAB char1=C (Fracture Fissure)"@en .
+:BAB2_A rdfs:label "BAB char2=A (Longitudinal)"@en .
+:BAB2_B rdfs:label "BAB char2=B (Circumferential)"@en .
+:BAB2_C rdfs:label "BAB char2=C (Complex)"@en .
+:BAB2_D rdfs:label "BAB char2=D (Helical)"@en .
+:BAB2_E rdfs:label "BAB char2=E (Star Fissure)"@en .
+:BAC rdfs:label "BAC (Break Or Collapse)"@en .
+:BAC_A rdfs:label "BAC char1=A (Break)"@en .
+:BAC_B rdfs:label "BAC char1=B (Missing Wall Break Or Collapse)"@en .
+:BAC_C rdfs:label "BAC char1=C (Collapsed Break Or Collapse)"@en .
+:BAD rdfs:label "BAD (Defective Brickwork Or Masonry)"@en .
+:BAD1_A rdfs:label "BAD char1=A (Displaced Brickwork Or Masonry)"@en .
+:BAD1_B rdfs:label "BAD char1=B (Missing Brickwork Or Masonry)"@en .
+:BAD1_C rdfs:label "BAD char1=C (Dropped Invert Brickwork Or Masonry)"@en .
+:BAD1_D rdfs:label "BAD char1=D (Collapsed Brickwork Or Masonry)"@en .
+:BAD2_A rdfs:label "BAD char2=A (Layer Brickwork Or Masonry Visible)"@en .
+:BAD2_B rdfs:label "BAD char2=B (Nothing Visible)"@en .
+:BAE rdfs:label "BAE (Missing Mortar)"@en .
+:BAF rdfs:label "BAF (Surface)"@en .
+:BAF1_A rdfs:label "BAF char1=A (Increased Roughness)"@en .
+:BAF1_B rdfs:label "BAF char1=B (Spalling)"@en .
+:BAF1_C rdfs:label "BAF char1=C (Visible Aggregate)"@en .
+:BAF1_D rdfs:label "BAF char1=D (Aggregate Projecting From Surface)"@en .
+:BAF1_E rdfs:label "BAF char1=E (Missing Aggregate)"@en .
+:BAF1_F rdfs:label "BAF char1=F (Visible Reinforcement)"@en .
+:BAF1_G rdfs:label "BAF char1=G (Reinforcement Projecting From Surface)"@en .
+:BAF1_H rdfs:label "BAF char1=H (Corroded Reinforcement)"@en .
+:BAF1_I rdfs:label "BAF char1=I (Missing Wall Surface)"@en .
+:BAF1_J rdfs:label "BAF char1=J (Corrosion Products On Surface)"@en .
+:BAF1_K rdfs:label "BAF char1=K (Blistering)"@en .
+:BAF1_Z rdfs:label "BAF char1=Z (Other Surface Damage)"@en .
+:BAF2_A rdfs:label "BAF char2=A (Mechanical)"@en .
+:BAF2_B rdfs:label "BAF char2=B (Chemical)"@en .
+:BAF2_C rdfs:label "BAF char2=C (Chemical Upper Part)"@en .
+:BAF2_D rdfs:label "BAF char2=D (Chemical Lower Part)"@en .
+:BAF2_E rdfs:label "BAF char2=E (Not Evident)"@en .
+:BAF2_Z rdfs:label "BAF char2=Z (Other Cause)"@en .
+:BAG rdfs:label "BAG (Intruding Connection)"@en .
+:BAH rdfs:label "BAH (Defective Connection)"@en .
+:BAH_A rdfs:label "BAH char1=A (Incorrect Position Connection)"@en .
+:BAH_B rdfs:label "BAH char1=B (Gap Connection)"@en .
+:BAH_C rdfs:label "BAH char1=C (Partial Gap Connection)"@en .
+:BAH_D rdfs:label "BAH char1=D (Damaged Connection)"@en .
+:BAH_E rdfs:label "BAH char1=E (Blocked Connection)"@en .
+:BAH_Z rdfs:label "BAH char1=Z (Other Defective Connection)"@en .
+:BAI rdfs:label "BAI (Intruding Sealing Material)"@en .
+:BAI1_A rdfs:label "BAI char1=A (Intruding Sealing Ring)"@en .
+:BAI1_Z rdfs:label "BAI char1=B (Intruding Other Sealant)"@en .
+:BAI2_A rdfs:label "BAI char2=A (Displaced Sealing Ring)"@en .
+:BAI2_B rdfs:label "BAI char2=B (Intruding Sealing Ring Above Centreline)"@en .
+:BAI2_C rdfs:label "BAI char2=C (Intruding Sealing Ring Below Centreline)"@en .
+:BAI2_D rdfs:label "BAI char2=D (Intruding Broken Sealing Ring)"@en .
+:BAJ rdfs:label "BAJ (Displaced Joint)"@en .
+:BAJ_A rdfs:label "BAJ char1=A (Longitudinal)"@en .
+:BAJ_B rdfs:label "BAJ char1=B (Radial)"@en .
+:BAJ_C rdfs:label "BAJ char1=C (Angular)"@en .
+:BAK rdfs:label "BAK (Lining)"@en .
+:BAK1_A rdfs:label "BAK char1=A (Detached Lining)"@en .
+:BAK1_B rdfs:label "BAK char1=B (Discolored Lining)"@en .
+:BAK1_C rdfs:label "BAK char1=C (Defective End Of Lining)"@en .
+:BAK1_D rdfs:label "BAK char1=D (Wrinkled Lining)"@en .
+:BAK1_E rdfs:label "BAK char1=E (Blistered Or Internal Bulge Lining)"@en .
+:BAK1_F rdfs:label "BAK char1=F (External Bulge Lining)"@en .
+:BAK1_G rdfs:label "BAK char1=G (Internal Film Or Coating Separation)"@en .
+:BAK1_H rdfs:label "BAK char1=H (Seam Covering Separation)"@en .
+:BAK1_I rdfs:label "BAK char1=I (Crack Or Split Or Weld Failure)"@en .
+:BAK1_J rdfs:label "BAK char1=J (Hole In Lining)"@en .
+:BAK1_K rdfs:label "BAK char1=K (Lining Connection Defect)"@en .
+:BAK1_L rdfs:label "BAK char1=L (Soft Lining Material)"@en .
+:BAK1_M rdfs:label "BAK char1=M (Resin Missing From Laminate)"@en .
+:BAK1_N rdfs:label "BAK char1=N (End Of Lining Not Sealed)"@en .
+:BAK1_Z rdfs:label "BAK char1=Z (Other Lining Defect)"@en .
+:BAK2_A rdfs:label "BAK char2=A (Longitudinal)"@en .
+:BAK2_B rdfs:label "BAK char2=B (Circumferential)"@en .
+:BAK2_C rdfs:label "BAK char2=C (Complex)"@en .
+:BAK2_D rdfs:label "BAK char2=D (Helical)"@en .
+:BAL rdfs:label "BAL (Defective Repair)"@en .
+:BAL1_A rdfs:label "BAL char1=A (Missing Wall Defective Repair)"@en .
+:BAL1_B rdfs:label "BAL char1=B (Patch Sealing Defective Repair)"@en .
+:BAL1_C rdfs:label "BAL char1=C (Repair Material Separated)"@en .
+:BAL1_D rdfs:label "BAL char1=D (Missing Repair Material)"@en .
+:BAL1_E rdfs:label "BAL char1=E (Excess Repair Material)"@en .
+:BAL1_F rdfs:label "BAL char1=F (Hole In Repair Material)"@en .
+:BAL1_G rdfs:label "BAL char1=G (Crack In Repair Material)"@en .
+:BAL1_Z rdfs:label "BAL char1=Z (Other Defective Repair)"@en .
+:BAL2_A rdfs:label "BAL char2=A (Longitudinal)"@en .
+:BAL2_B rdfs:label "BAL char2=B (Circumferential)"@en .
+:BAL2_C rdfs:label "BAL char2=C (Complex)"@en .
+:BAL2_D rdfs:label "BAL char2=D (Helical)"@en .
+:BAM rdfs:label "BAM (Weld Failure)"@en .
+:BAM_A rdfs:label "BAM char1=A (Longitudinal)"@en .
+:BAM_B rdfs:label "BAM char1=B (Circumferential)"@en .
+:BAM_C rdfs:label "BAM char1=C (Helical)"@en .
+:BAN rdfs:label "BAN (Porous Pipe)"@en .
+:BAO rdfs:label "BAO (Soil Visible Through Defect)"@en .
+:BAP rdfs:label "BAP (Void Visible Through Defect)"@en .
+:BBA rdfs:label "BBA (Roots)"@en .
+:BBA_A rdfs:label "BBA char1=A (Tap Root)"@en .
+:BBA_B rdfs:label "BBA char1=B (Independent Fine Roots)"@en .
+:BBA_C rdfs:label "BBA char1=C (Complex Mass Roots)"@en .
+:BBB rdfs:label "BBB (Attached Deposits)"@en .
+:BBB_A rdfs:label "BBB char1=A (Encrustation Attached Deposit)"@en .
+:BBB_B rdfs:label "BBB char1=B (Grease Attached Deposit)"@en .
+:BBB_C rdfs:label "BBB char1=C (Fouling Attached Deposit)"@en .
+:BBB_Z rdfs:label "BBB char1=D (Other Attached Deposit)"@en .
+:BBC rdfs:label "BBC (Settled Deposit)"@en .
+:BBC_A rdfs:label "BBC char1=A (Fine Settled Deposit)"@en .
+:BBC_B rdfs:label "BBC char1=B (Coarse Settled Deposit)"@en .
+:BBC_C rdfs:label "BBC char1=C (Hard Or Compacted Settled Deposit)"@en .
+:BBC_Z rdfs:label "BBC char1=Z (Other Settled Deposit)"@en .
+:BBD rdfs:label "BBD (Ingress Of Soil)"@en .
+:BBD_A rdfs:label "BBD char1=A (Ingress Of Sand)"@en .
+:BBD_B rdfs:label "BBD char1=B (Ingress Of Peat)"@en .
+:BBD_C rdfs:label "BBD char1=C (Ingress Of Fine Material)"@en .
+:BBD_D rdfs:label "BBD char1=D (Ingress Of Gravel)"@en .
+:BBD_Z rdfs:label "BBD char1=Z (Ingress Of Other Soil)"@en .
+:BBE rdfs:label "BBE (Other Obstacle)"@en .
+:BBE_A rdfs:label "BBE char1=A (Brick Or Masonry Obstacle)"@en .
+:BBE_B rdfs:label "BBE char1=B (Pieces Of Pipe Obstacle)"@en .
+:BBE_C rdfs:label "BBE char1=C (Another Object Obstacle)"@en .
+:BBE_D rdfs:label "BBE char1=D (Protruding Through Wall Obstacle)"@en .
+:BBE_E rdfs:label "BBE char1=E (Wedged In Joint Obstacle)"@en .
+:BBE_F rdfs:label "BBE char1=F (Entering Through Connection Obstacle)"@en .
+:BBE_G rdfs:label "BBE char1=G (External Pipes Or Cables Built Through Structure Obstacle)"@en .
+:BBE_H rdfs:label "BBE char1=H (Built Into Structure Obstacle)"@en .
+:BBE_Z rdfs:label "BBE char1=Z (Other Obstacle)"@en .
+:BBF rdfs:label "BBF (Infiltration)"@en .
+:BBF_A rdfs:label "BBF char1=A (Sweating Infiltration)"@en .
+:BBF_B rdfs:label "BBF char1=B (Dripping Infiltration)"@en .
+:BBF_C rdfs:label "BBF char1=C (Flowing Infiltration)"@en .
+:BBF_D rdfs:label "BBF char1=D (Gushing Infiltration)"@en .
+:BBG rdfs:label "BBG (Exfiltration)"@en .
+:BBH rdfs:label "BBH (Vermin)"@en .
+:BBH1_A rdfs:label "BBH char1=A (Rat Vermin)"@en .
+:BBH1_B rdfs:label "BBH char1=B (Cockroach Vermin)"@en .
+:BBH1_Z rdfs:label "BBH char1=Z (Other Vermin)"@en .
+:BBH2_A rdfs:label "BBH char2=A (In Pipeline)"@en .
+:BBH2_B rdfs:label "BBH char2=B (In Connection)"@en .
+:BBH2_C rdfs:label "BBH char2=C (In Open Joint)"@en .
+:BBH2_Z rdfs:label "BBH char2=Z (Other Location)"@en .
+:BCA rdfs:label "BCA (Connection)"@en .
+:BCA1_A rdfs:label "BCA char1=A (Junction)"@en .
+:BCA1_B rdfs:label "BCA char1=B (Drilled Saddle Connection)"@en .
+:BCA1_C rdfs:label "BCA char1=C (Chiselled Saddle Connection)"@en .
+:BCA1_D rdfs:label "BCA char1=D (Drilled Plain Connection)"@en .
+:BCA1_E rdfs:label "BCA char1=E (Chiselled Plain Connection)"@en .
+:BCA1_G rdfs:label "BCA char1=G (Connection Not Evident)"@en .
+:BCA1_Z rdfs:label "BCA char1=Z (Other Connection)"@en .
+:BCA2_A rdfs:label "BCA char2=A (Open Connection)"@en .
+:BCA2_B rdfs:label "BCA char2=B (Closed Connection)"@en .
+:BCB rdfs:label "BCB (Point Repair)"@en .
+:BCB_A rdfs:label "BCB char1=A"@en .
+:BCB_B rdfs:label "BCB char1=B"@en .
+:BCB_C rdfs:label "BCB char1=C"@en .
+:BCB_D rdfs:label "BCB char1=D"@en .
+:BCB_E rdfs:label "BCB char1=E"@en .
+:BCB_F rdfs:label "BCB char1=F"@en .
+:BCB_G rdfs:label "BCB char1=G"@en .
+:BCB_Z rdfs:label "BCB char1=Z"@en .
+:BCC rdfs:label "BCC (Sewer Curvature)"@en .
+:BCC1_A rdfs:label "BCC char1=A (Left)"@en .
+:BCC1_B rdfs:label "BCC char1=B (Right)"@en .
+:BCC2_A rdfs:label "BCC char2=A (Up)"@en .
+:BCC2_B rdfs:label "BCC char2=B (Down)"@en .
+:BCD rdfs:label "BCD (Node Type)"@en .
+:BCD_A rdfs:label "BCD char1=A (Manhole)"@en .
+:BCD_B rdfs:label "BCD char1=B (Inspection Chamber)"@en .
+:BCD_C rdfs:label "BCD char1=C (Rodding Eye)"@en .
+:BCD_D rdfs:label "BCD char1=D (Lamp Hole)"@en .
+:BCD_E rdfs:label "BCD char1=E (Outfall)"@en .
+:BCD_F rdfs:label "BCD char1=F (Major Connection Without Manhole Or Inspection Chamber)"@en .
+:BCD_X rdfs:label "BCD char1=X (Special Node Type)"@en .
+:BCD_Z rdfs:label "BCD char1=Z (Other Special Chamber)"@en .
+:BCE rdfs:label "BCE (Node Type)"@en .
+:BCE_A rdfs:label "BCE char1=A (Manhole)"@en .
+:BCE_B rdfs:label "BCE char1=B (Inspection Chamber)"@en .
+:BCE_C rdfs:label "BCE char1=C (Rodding Eye)"@en .
+:BCE_D rdfs:label "BCE char1=D (Lamp Hole)"@en .
+:BCE_E rdfs:label "BCE char1=E (Outfall)"@en .
+:BCE_F rdfs:label "BCE char1=F (Major Connection Without Manhole Or Inspection Chamber)"@en .
+:BCE_X rdfs:label "BCE char1=X (Special Node Type)"@en .
+:BCE_Z rdfs:label "BCE char1=Z (Other Special Chamber)"@en .
+:BDA rdfs:label "BDA (General Photograph)"@en .
+:BDB rdfs:label "BDB (General Remark)"@en .
+:BDC rdfs:label "BDC (Inspection Termination)"@en .
+:BDC1_A rdfs:label "BDC char1=A (Obstruction)"@en .
+:BDC1_B rdfs:label "BDC char1=B (High Water Level)"@en .
+:BDC1_C rdfs:label "BDC char1=C (Equipment Failure)"@en .
+:BDC1_Z rdfs:label "BDC char1=Z (Other Cause)"@en .
+:BDC2_A rdfs:label "BDC char2=A (Inspection Complete)"@en .
+:BDC2_B rdfs:label "BDC char2=B (Authority Instruction)"@en .
+:BDC2_C rdfs:label "BDC char2=C (Inspection Complete; Previous Partial Inspection)"@en .
+:BDC2_D rdfs:label "BDC char2=D (Inspection Incomplete; Previous Partial Inspection)"@en .
+:BDC2_E rdfs:label "BDC char2=E (Inspection Status Unknown; Previous Partial Inspection)"@en .
+:BDC2_Z rdfs:label "BDC char2=Z (Other Cause)"@en .
+:BDD rdfs:label "BDD (Water Level)"@en .
+:BDD_A rdfs:label "BDD char1=A (Clear Effluent Wastewater)"@en .
+:BDD_B rdfs:label "BDD char1=B (Discountinued Wastewater Code)"@en .
+:BDD_C rdfs:label "BDD char1=C (Turbid Wastewater)"@en .
+:BDD_D rdfs:label "BDD char1=D (Coloured Wastewater)"@en .
+:BDD_E rdfs:label "BDD char1=E"@en .
+:BDE rdfs:label "BDE (Flow From Incoming Pipe)"@en .
+:BDE1_A rdfs:label "BDE char1=A (Clear Effluent Wastewater)"@en .
+:BDE1_B rdfs:label "BDE char1=B (Discountinued Wastewater Code)"@en .
+:BDE1_C rdfs:label "BDE char1=C (Turbid Wastewater)"@en .
+:BDE1_D rdfs:label "BDE char1=D (Coloured Wastewater)"@en .
+:BDE1_E rdfs:label "BDE char1=E"@en .
+:BDE1_YY rdfs:label "BDE char1=YY (Unknown Wastewater)"@en .
+:BDE2_A rdfs:label "BDE char2=A (Wrongly Connected Incoming Wastewater Pipe)"@en .
+:BDE2_B rdfs:label "BDE char2=B (Wrongly Connected Incoming Surface Water Pipe)"@en .
+:BDE2_C rdfs:label "BDE char2=C (Correct Connection)"@en .
+:BDF rdfs:label "BDF (Atmosphere Within)"@en .
+:BDF_A rdfs:label "BDF char1=A (Oxygen Deficiency)"@en .
+:BDF_B rdfs:label "BDF char1=B (Hydrogen Sulfide)"@en .
+:BDF_C rdfs:label "BDF char1=C (Methane)"@en .
+:BDF_Z rdfs:label "BDF char1=Z (Other Atmosphere Within)"@en .
+:BDG rdfs:label "BDG (Loss Of Vision)"@en .
+:BDG_A rdfs:label "BDG char1=A (Camera Underwater)"@en .
+:BDG_B rdfs:label "BDG char1=B (Slit)"@en .
+:BDG_C rdfs:label "BDG char1=C (Steam)"@en .
+:BDG_Z rdfs:label "BDG char1=Z (Other Cause)"@en .
+:BackdropConnection rdfs:label "Backdrop Connection"@en .
+:Benching rdfs:label "Benching"@en .
+:BenchingConnection rdfs:label "Benching Connection"@en .
+:BenchingConnectionInfiltration rdfs:label "Benching Connection Infiltration"@en .
+:BentStep rdfs:label "Bent Step"@en .
+:BlisteredOrInternalBulgeLining rdfs:label "Blistered Or Internal Bulge Lining"@en .
+:Blistering rdfs:label "Blistering"@en .
+:BlockedConnection rdfs:label "Blocked Connection"@en .
+:Break rdfs:label "Break"@en .
+:BreakOrCollapse rdfs:label "Break Or Collapse"@en .
+:BrickMasonryLayerVisible rdfs:label "Brick Masonry Layer Visible"@en .
+:BrickOrMasonryObstacle rdfs:label "Brick Or Masonry Obstacle"@en .
+:BrokenCover rdfs:label "Broken Cover"@en .
+:BrokenFrame rdfs:label "Broken Frame"@en .
+:BrokenPlasticEncapsulationOfStep rdfs:label "Broken Plastic Encapsulation Of Step"@en .
+:BuiltIntoStructureObstacle rdfs:label "Built Into Structure Obstacle"@en .
+:CameraUnderwater rdfs:label "Camera Underwater"@en .
+:Cause rdfs:label "Cause"@en .
+:Channel rdfs:label "Channel"@en .
+:ChannelInBenching rdfs:label "Channel In Benching"@en .
+:Chemical rdfs:label "Chemical"@en .
+:ChemicalLowerPart rdfs:label "Chemical Lower Part"@en .
+:ChemicalUpperPart rdfs:label "Chemical Upper Part"@en .
+:ChiselledPlainConnection rdfs:label "Chiselled Plain Connection"@en .
+:ChiselledSaddleConnection rdfs:label "Chiselled Saddle Connection"@en .
+:CircularConnectingPipeline rdfs:label "Circular Connecting Pipeline"@en .
+:CircularCrossSection rdfs:label "Circular Cross Section"@en .
+:Circumferential rdfs:label "Circumferential"@en .
+:ClearEffluentWastewater rdfs:label "Clear Effluent Wastewater"@en .
+:ClosedConnection rdfs:label "Closed Connection"@en .
+:CoarseSettledDeposit rdfs:label "Coarse Settled Deposit"@en .
+:CoatedDebrisSafetyBar rdfs:label "Coated Debris Safety Bar"@en .
+:CoatedDebrisSafetyChain rdfs:label "Coated Debris Safety Chain"@en .
+:CockroachVermin rdfs:label "Cockroach Vermin"@en .
+:CollapsedBreakOrCollapse rdfs:label "Collapsed Break Or Collapse"@en .
+:CollapsedBrickworkOrMasonry rdfs:label "Collapsed Brickwork Or Masonry"@en .
+:ColouredWastewater rdfs:label "Coloured Wastewater"@en .
+:Complex rdfs:label "Complex"@en .
+:ComplexMassRoots rdfs:label "Complex Mass Roots"@en .
+:ConnectingPipeline rdfs:label "Connecting Pipeline"@en .
+:ConnectingPipelineDischargeDirection rdfs:label "Connecting Pipeline Discharge Direction"@en .
+:Connection rdfs:label "Connection"@en .
+:ConnectionClosed rdfs:label "Connection Closed"@en .
+:ConnectionDischargeBneching rdfs:label "Connection Discharge Bneching"@en .
+:ConnectionDischargeFromNode rdfs:label "Connection Discharge From Node"@en .
+:ConnectionDischargeIntoNode rdfs:label "Connection Discharge Into Node"@en .
+:ConnectionNotEvident rdfs:label "Connection Not Evident"@en .
+:ContinuationFlowControl rdfs:label "Continuation Flow Control"@en .
+:CorrectConnection rdfs:label "Correct Connection"@en .
+:CorrodedLadderHandrail rdfs:label "Corroded Ladder Handrail"@en .
+:CorrodedLadderRunner rdfs:label "Corroded Ladder Runner"@en .
+:CorrodedLadderSupport rdfs:label "Corroded Ladder Support"@en .
+:CorrodedReinforcement rdfs:label "Corroded Reinforcement"@en .
+:CorrodedStep rdfs:label "Corroded Step"@en .
+:CorrosionProductsOnSurface rdfs:label "Corrosion Products On Surface"@en .
+:CoverAboveSurfaceLevel rdfs:label "Cover Above Surface Level"@en .
+:CoverBelowSurfaceLevel rdfs:label "Cover Below Surface Level"@en .
+:CrackFissure rdfs:label "Crack Fissure"@en .
+:CrackInRepairMaterial rdfs:label "Crack In Repair Material"@en .
+:CrackOrSplitOrWeldFailure rdfs:label "Crack Or Split Or Weld Failure"@en .
+:CrossSection rdfs:label "Cross Section"@en .
+:DAA rdfs:label "DAA (Deformation)"@en .
+:DAA_A rdfs:label "DAA char1=A (General Deformation)"@en .
+:DAA_B rdfs:label "DAA char1=B (Localised Deformation)"@en .
+:DAB rdfs:label "DAB (Fissure)"@en .
+:DAB1_A rdfs:label "DAB char1=A (Surface Crack Fissure)"@en .
+:DAB1_B rdfs:label "DAB char1=B (Crack Fissure)"@en .
+:DAB1_C rdfs:label "DAB char1=C (Fracture Fissure)"@en .
+:DAB2_A rdfs:label "DAB char2=A (Vertical)"@en .
+:DAB2_B rdfs:label "DAB char2=B (Horizontal)"@en .
+:DAB2_C rdfs:label "DAB char2=C (Complex)"@en .
+:DAB2_D rdfs:label "DAB char2=D (Inclined)"@en .
+:DAB2_E rdfs:label "DAB char2=E (Star Fissure)"@en .
+:DAC rdfs:label "DAC (Break Or Collapse)"@en .
+:DAC_A rdfs:label "DAC char1=A (Break)"@en .
+:DAC_B rdfs:label "DAC char1=B (Missing Wall Break Or Collapse)"@en .
+:DAC_C rdfs:label "DAC char1=C (Collapsed Break Or Collapse)"@en .
+:DAD rdfs:label "DAD (Defective Brickwork Or Masonry)"@en .
+:DAD1_A rdfs:label "DAD char1=A (Displaced Brickwork Or Masonry)"@en .
+:DAD1_B rdfs:label "DAD char1=B (Missing Brickwork Or Masonry)"@en .
+:DAD1_C rdfs:label "DAD char1=C (Collapsed Brickwork Or Masonry)"@en .
+:DAD2_A rdfs:label "DAD char2=A (Layer Brickwork Or Masonry Visible)"@en .
+:DAD2_B rdfs:label "DAD char2=B (Nothing Visible)"@en .
+:DAE rdfs:label "DAE (Missing Brickwork Or Masonry)"@en .
+:DAF rdfs:label "DAF (Surface)"@en .
+:DAF1_A rdfs:label "DAF char1=A (Increased Roughness)"@en .
+:DAF1_B rdfs:label "DAF char1=B (Spalling)"@en .
+:DAF1_C rdfs:label "DAF char1=C (Visible Aggregate)"@en .
+:DAF1_D rdfs:label "DAF char1=D (Aggregate Projecting From Surface)"@en .
+:DAF1_E rdfs:label "DAF char1=E (Missing Aggregate)"@en .
+:DAF1_F rdfs:label "DAF char1=F (Visible Reinforcement)"@en .
+:DAF1_G rdfs:label "DAF char1=G (Reinforcement Projecting From Surface)"@en .
+:DAF1_H rdfs:label "DAF char1=H (Corroded Reinforcement)"@en .
+:DAF1_I rdfs:label "DAF char1=I (Missing Wall Surface)"@en .
+:DAF1_J rdfs:label "DAF char1=J (Corrosion Products On Surface)"@en .
+:DAF1_K rdfs:label "DAF char1=K (Blistering)"@en .
+:DAF1_Z rdfs:label "DAF char1=Z (Other Surface Damage)"@en .
+:DAF2_A rdfs:label "DAF char2=A (Mechanical)"@en .
+:DAF2_B rdfs:label "DAF char2=B (Chemical)"@en .
+:DAF2_C rdfs:label "DAF char2=C (Chemical Upper Part)"@en .
+:DAF2_D rdfs:label "DAF char2=D (Chemical Lower Part)"@en .
+:DAF2_E rdfs:label "DAF char2=E (Not Evident)"@en .
+:DAF2_Z rdfs:label "DAF char2=Z (Other Cause)"@en .
+:DAG rdfs:label "DAG (Intruding Connection)"@en .
+:DAH rdfs:label "DAH (Defective Connection)"@en .
+:DAH_A rdfs:label "DAH char1=A (Incorrect Position Connection)"@en .
+:DAH_B rdfs:label "DAH char1=B (Gap Connection)"@en .
+:DAH_C rdfs:label "DAH char1=C (Partial Gap Connection)"@en .
+:DAH_D rdfs:label "DAH char1=D (Damaged Connection)"@en .
+:DAH_E rdfs:label "DAH char1=E (Blocked Connection)"@en .
+:DAH_Z rdfs:label "DAH char1=Z (Other Defective Connection)"@en .
+:DAI rdfs:label "DAI (Intruding Sealing Material)"@en .
+:DAI1_A rdfs:label "DAI char1=A (Intruding Sealing Ring)"@en .
+:DAI1_Z rdfs:label "DAI char1=Z (Intruding Other Sealant)"@en .
+:DAI2_A rdfs:label "DAI char2=A (Displaced Sealing Ring)"@en .
+:DAI2_B rdfs:label "DAI char2=B (Intruding But Not Broken Sealing Ring)"@en .
+:DAI2_C rdfs:label "DAI char2=C (Intruding Broken Sealing Ring)"@en .
+:DAJ rdfs:label "DAJ (Displaced Joint)"@en .
+:DAJ_A rdfs:label "DAJ char1=A (Vertical)"@en .
+:DAJ_B rdfs:label "DAJ char1=B (Horizontal)"@en .
+:DAJ_C rdfs:label "DAJ char1=C (Angular)"@en .
+:DAK rdfs:label "DAK (Lining)"@en .
+:DAK1_A rdfs:label "DAK char1=A (Detached Lining)"@en .
+:DAK1_B rdfs:label "DAK char1=B (Discolored Lining)"@en .
+:DAK1_C rdfs:label "DAK char1=C (Defective End Of Lining)"@en .
+:DAK1_D rdfs:label "DAK char1=D (Wrinkled Lining)"@en .
+:DAK1_E rdfs:label "DAK char1=E (Blistered Or Internal Bulge Lining)"@en .
+:DAK1_F rdfs:label "DAK char1=F (External Bulge Lining)"@en .
+:DAK1_G rdfs:label "DAK char1=G (Internal Film Or Coating Separation)"@en .
+:DAK1_H rdfs:label "DAK char1=H (Seam Covering Separation)"@en .
+:DAK1_I rdfs:label "DAK char1=I (Crack Or Split Or Weld Failure)"@en .
+:DAK1_J rdfs:label "DAK char1=J (Hole In Lining)"@en .
+:DAK1_K rdfs:label "DAK char1=K (Lining Connection Defect)"@en .
+:DAK1_L rdfs:label "DAK char1=L (Soft Lining Material)"@en .
+:DAK1_M rdfs:label "DAK char1=M (Resin Missing From Laminate)"@en .
+:DAK1_N rdfs:label "DAK char1=N (End Of Lining Not Sealed)"@en .
+:DAK1_Z rdfs:label "DAK char1=Z (Other Lining Defect)"@en .
+:DAK2_A rdfs:label "DAK char2=A (Vertical)"@en .
+:DAK2_B rdfs:label "DAK char2=B (Horizontal)"@en .
+:DAK2_C rdfs:label "DAK char2=C (Complex)"@en .
+:DAK2_D rdfs:label "DAK char2=D (Helical)"@en .
+:DAL rdfs:label "DAL (Defective Repair)"@en .
+:DAL_A rdfs:label "DAL char1=A (Missing Wall Defective Repair)"@en .
+:DAL_B rdfs:label "DAL char1=B (Patch Sealing Defective Repair)"@en .
+:DAL_C rdfs:label "DAL char1=C (Repair Material Separated)"@en .
+:DAL_D rdfs:label "DAL char1=D (Missing Repair Material)"@en .
+:DAL_E rdfs:label "DAL char1=E (Excess Repair Material)"@en .
+:DAL_F rdfs:label "DAL char1=F (Hole In Repair Material)"@en .
+:DAL_G rdfs:label "DAL char1=G (Crack In Repair Material)"@en .
+:DAL_Z rdfs:label "DAL char1=Z (Other Defective Repair)"@en .
+:DAM rdfs:label "DAM (Weld Failure)"@en .
+:DAM_A rdfs:label "DAM char1=A (Vertical)"@en .
+:DAM_B rdfs:label "DAM char1=B (Horizontal)"@en .
+:DAM_C rdfs:label "DAM char1=C (Inclined)"@en .
+:DAN rdfs:label "DAN (Porous Wall)"@en .
+:DAO rdfs:label "DAO (Soil Visible Through Defect)"@en .
+:DAP rdfs:label "DAP (Void Visible Through Defect)"@en .
+:DAQ rdfs:label "DAQ (Defective Step Or Ladder)"@en .
+:DAQ_A rdfs:label "DAQ char1=A (Loose Step)"@en .
+:DAQ_B rdfs:label "DAQ char1=B (Missing Step)"@en .
+:DAQ_C rdfs:label "DAQ char1=C (Corroded Step)"@en .
+:DAQ_D rdfs:label "DAQ char1=D (Bent Step)"@en .
+:DAQ_E rdfs:label "DAQ char1=E (Broken Plastic Encapsulation Of Step)"@en .
+:DAQ_F rdfs:label "DAQ char1=F (Corroded Ladder Handrail)"@en .
+:DAQ_G rdfs:label "DAQ char1=G (Loose Ladder Support)"@en .
+:DAQ_H rdfs:label "DAQ char1=H (Missing Ladder Support)"@en .
+:DAQ_I rdfs:label "DAQ char1=I (Corroded Ladder Support)"@en .
+:DAQ_J rdfs:label "DAQ char1=J (Corroded Ladder Runner)"@en .
+:DAQ_K rdfs:label "DAQ char1=K (Defective Toe Hole)"@en .
+:DAQ_Z rdfs:label "DAQ char1=Z (Other Defective Step Or Ladder)"@en .
+:DAR rdfs:label "DAR (Defective Cover Or Frame)"@en .
+:DAR_A rdfs:label "DAR char1=A (Broken Cover)"@en .
+:DAR_B rdfs:label "DAR char1=B (Rocking Cover)"@en .
+:DAR_C rdfs:label "DAR char1=C (Missing Cover)"@en .
+:DAR_D rdfs:label "DAR char1=D (Broken Frame)"@en .
+:DAR_E rdfs:label "DAR char1=E (Loose Frame)"@en .
+:DAR_F rdfs:label "DAR char1=F (Missing Frame)"@en .
+:DAR_G rdfs:label "DAR char1=G (Cover Below Surface Level)"@en .
+:DAR_H rdfs:label "DAR char1=H (Cover Above Surface Level)"@en .
+:DAR_Z rdfs:label "DAR char1=Z (Other Defective Cover Or Frame)"@en .
+:DBA rdfs:label "DBA (Roots)"@en .
+:DBA_A rdfs:label "DBA char1=A (Tap Root)"@en .
+:DBA_B rdfs:label "DBA char1=B (Independent Fine Roots)"@en .
+:DBA_C rdfs:label "DBA char1=C (Complex Mass Roots)"@en .
+:DBB rdfs:label "DBB (Attached Deposits)"@en .
+:DBB_A rdfs:label "DBB char1=A (Encrustation Attached Deposit)"@en .
+:DBB_B rdfs:label "DBB char1=B (Grease Attached Deposit)"@en .
+:DBB_C rdfs:label "DBB char1=C (Fouling Attached Deposit)"@en .
+:DBB_Z rdfs:label "DBB char1=Z (Other Attached Deposit)"@en .
+:DBC rdfs:label "DBC (Settled Deposit)"@en .
+:DBC_A rdfs:label "DBC char1=A (Fine Settled Deposit)"@en .
+:DBC_B rdfs:label "DBC char1=B (Coarse Settled Deposit)"@en .
+:DBC_C rdfs:label "DBC char1=C (Hard Or Compacted Settled Deposit)"@en .
+:DBC_Z rdfs:label "DBC char1=Z (Other Settled Deposit)"@en .
+:DBD rdfs:label "DBD (Ingress Of Soil)"@en .
+:DBE rdfs:label "DBE (Obstacle)"@en .
+:DBE_A rdfs:label "DBE char1=A (Brick Or Masonry Obstacle)"@en .
+:DBE_B rdfs:label "DBE char1=B (Pieces Of Pipe Obstacle)"@en .
+:DBE_C rdfs:label "DBE char1=C (Another Object Obstacle)"@en .
+:DBE_D rdfs:label "DBE char1=D (Protruding Through Wall Obstacle)"@en .
+:DBE_E rdfs:label "DBE char1=E (Wedged In Joint Obstacle)"@en .
+:DBE_F rdfs:label "DBE char1=F (Entering Through Connection Obstacle)"@en .
+:DBE_G rdfs:label "DBE char1=G (External Pipes Or Cables Built Through Structure Obstacle)"@en .
+:DBE_H rdfs:label "DBE char1=H (Built Into Structure Obstacle)"@en .
+:DBE_Z rdfs:label "DBE char1=Z (Other Obstacle)"@en .
+:DBF rdfs:label "DBF (Infiltration)"@en .
+:DBF1_A rdfs:label "DBF char1=A (Sweating Infiltration)"@en .
+:DBF1_B rdfs:label "DBF char1=B (Dripping Infiltration)"@en .
+:DBF1_C rdfs:label "DBF char1=C (Flowing Infiltration)"@en .
+:DBF1_D rdfs:label "DBF char1=D (Gushing Infiltration)"@en .
+:DBF2_A rdfs:label "DBF char2=A (Wall Infiltration)"@en .
+:DBF2_B rdfs:label "DBF char2=B (Invert Connection Infiltration)"@en .
+:DBF2_C rdfs:label "DBF char2=C (Benching Connection Infiltration)"@en .
+:DBG rdfs:label "DBG (Exfiltration)"@en .
+:DBH rdfs:label "DBH (Vermin)"@en .
+:DBH1_A rdfs:label "DBH char1=A (Rat Vermin)"@en .
+:DBH1_B rdfs:label "DBH char1=B (Cockroach Vermin)"@en .
+:DBH1_Z rdfs:label "DBH char1=Z (Other Vermin)"@en .
+:DBH2_A rdfs:label "DBH char2=A (In Manhole Or Inspection Chamber)"@en .
+:DBH2_B rdfs:label "DBH char2=B (In Connection)"@en .
+:DBH2_C rdfs:label "DBH char2=C (In Open Joint)"@en .
+:DBH2_Z rdfs:label "DBH char2=Z (Other Location)"@en .
+:DCA rdfs:label "DCA (Node Connection)"@en .
+:DCA1_A rdfs:label "DCA char1=A (Benching Connection)"@en .
+:DCA1_B rdfs:label "DCA char1=B (Free Drop Connection)"@en .
+:DCA1_C rdfs:label "DCA char1=C (Backdrop Connection)"@en .
+:DCA1_D rdfs:label "DCA char1=D (Internal Drop Pipe Connection)"@en .
+:DCA1_E rdfs:label "DCA char1=E (Ramp Connection)"@en .
+:DCA1_F rdfs:label "DCA char1=F (Ventilation Pipe Connection)"@en .
+:DCA1_Z rdfs:label "DCA char1=Z (Other Connection)"@en .
+:DCA2_A rdfs:label "DCA char2=A (Channel In Benching)"@en .
+:DCA2_B rdfs:label "DCA char2=B (Connection Discharge Bneching)"@en .
+:DCA2_C rdfs:label "DCA char2=C (Ramp Channel Benching)"@en .
+:DCA2_D rdfs:label "DCA char2=D (Pipe Under Benching)"@en .
+:DCA2_Z rdfs:label "DCA char2=Z (Other Benching)"@en .
+:DCB rdfs:label "DCB (Point Repair)"@en .
+:DCB_A rdfs:label "DCB char1=A (Wall Part Repair)"@en .
+:DCB_B rdfs:label "DCB char1=B (Localised Lining Of Manhole Or Inspection Chamber Repair)"@en .
+:DCB_C rdfs:label "DCB char1=C (Injected Sealing Material Repair)"@en .
+:DCB_D rdfs:label "DCB char1=D (Hole Repair)"@en .
+:DCB_E rdfs:label "DCB char1=E (Localised Lining Of Connection Repair)"@en .
+:DCB_F rdfs:label "DCB char1=F (Other Connection Repair)"@en .
+:DCB_Z rdfs:label "DCB char1=Z (Other Point Repair)"@en .
+:DCG rdfs:label "DCG (Connecting Pipeline)"@en .
+:DCG1_A rdfs:label "DCG char1=A (Circular Connecting Pipeline)"@en .
+:DCG1_B rdfs:label "DCG char1=B (Rectangular Connecting Pipeline)"@en .
+:DCG1_C rdfs:label "DCG char1=C (Egg Shaped Connecting Pipeline)"@en .
+:DCG1_D rdfs:label "DCG char1=D (U Shape Connecting Pipeline)"@en .
+:DCG1_E rdfs:label "DCG char1=E (Arch Shaped Connecting Pipeline)"@en .
+:DCG1_F rdfs:label "DCG char1=F (Oval Connecting Pipeline)"@en .
+:DCG1_X rdfs:label "DCG char1=X (Locally Defined Connecting Pipeline)"@en .
+:DCG1_Z rdfs:label "DCG char1=Z (Other Connecting Pipeline)"@en .
+:DCG2_A rdfs:label "DCG char2=A (Connection Discharge Into Node)"@en .
+:DCG2_B rdfs:label "DCG char2=B (Connection Discharge From Node)"@en .
+:DCG2_C rdfs:label "DCG char2=C (Connection Closed)"@en .
+:DCH rdfs:label "DCH (Benching)"@en .
+:DCH_A rdfs:label "DCH char1=A (No Benching)"@en .
+:DCH_B rdfs:label "DCH char1=B (Defective Benching)"@en .
+:DCH_C rdfs:label "DCH char1=C (Working Benching)"@en .
+:DCI rdfs:label "DCI (Channel)"@en .
+:DCI1_A rdfs:label "DCI char1=A (Defective Channel)"@en .
+:DCI1_B rdfs:label "DCI char1=B (Working Channel)"@en .
+:DCI1_C rdfs:label "DCI char1=C (No Channel)"@en .
+:DCI2_A rdfs:label "DCI char2=A (Narrows Channel)"@en .
+:DCI2_B rdfs:label "DCI char2=B (Widens Channel)"@en .
+:DCI2_C rdfs:label "DCI char2=C (High Point Channel)"@en .
+:DCI2_D rdfs:label "DCI char2=D (Low Point Channel)"@en .
+:DCJ rdfs:label "DCJ (Safety Chain Bar)"@en .
+:DCJ_A rdfs:label "DCJ char1=A (No Defects Safety Chain)"@en .
+:DCJ_B rdfs:label "DCJ char1=B (Missing Safety Chain)"@en .
+:DCJ_C rdfs:label "DCJ char1=C (Defective Safety Chain)"@en .
+:DCJ_D rdfs:label "DCJ char1=D (Coated Debris Safety Chain)"@en .
+:DCJ_E rdfs:label "DCJ char1=E (No Defects Safety Bar)"@en .
+:DCJ_F rdfs:label "DCJ char1=F (Missing Safety Bar)"@en .
+:DCJ_G rdfs:label "DCJ char1=G (Defective Safety Bar)"@en .
+:DCJ_H rdfs:label "DCJ char1=H (Coated Debris Safety Bar)"@en .
+:DCK rdfs:label "DCK (Flow Control)"@en .
+:DCK1_A rdfs:label "DCK char1=A (Weir Flow Control)"@en .
+:DCK1_B rdfs:label "DCK char1=B (Syphon Flow Control)"@en .
+:DCK1_C rdfs:label "DCK char1=C (Orifice Plate Flow Control)"@en .
+:DCK1_D rdfs:label "DCK char1=D (Vortex Flow Control)"@en .
+:DCK1_E rdfs:label "DCK char1=E (Gate Valve Flow Control)"@en .
+:DCK1_F rdfs:label "DCK char1=F (Float Operated Gate Valve Flow Control)"@en .
+:DCK1_G rdfs:label "DCK char1=G (Venturi Flow Control)"@en .
+:DCK1_H rdfs:label "DCK char1=H (Flap Valve Flow Control)"@en .
+:DCK1_I rdfs:label "DCK char1=I (Screens Flow Control)"@en .
+:DCK1_Z rdfs:label "DCK char1=Z (Other Flow Control)"@en .
+:DCK2_A rdfs:label "DCK char2=A (Continuation Flow Control)"@en .
+:DCK2_B rdfs:label "DCK char2=B (Overflow Control)"@en .
+:DCL rdfs:label "DCL (Other Pipeline Through Manhole)"@en .
+:DCL1_A rdfs:label "DCL char1=A (No Access To Pipe)"@en .
+:DCL1_B rdfs:label "DCL char1=B (Accessable Pipe Cover In Place)"@en .
+:DCL1_C rdfs:label "DCL char1=C (Accesable Pipe Cover Missing)"@en .
+:DCL2_A rdfs:label "DCL char2=A (Defective Other Pipeline Through Manhole)"@en .
+:DCL2_B rdfs:label "DCL char2=B (Working Other Pipeline Through Manhole)"@en .
+:DCM rdfs:label "DCM (Grit Trap Under Cover)"@en .
+:DCM_A rdfs:label "DCM char1=A (Defective Grit Trap)"@en .
+:DCM_B rdfs:label "DCM char1=B (Missing Grit Trap)"@en .
+:DCM_C rdfs:label "DCM char1=C (Working Grit Trap)"@en .
+:DCN rdfs:label "DCN (Slit Pit)"@en .
+:DCN_A rdfs:label "DCN char1=A (Working Slit Pit)"@en .
+:DCN_B rdfs:label "DCN char1=B (Defective Slit Pit)"@en .
+:DCO rdfs:label "DCO (Cross Section)"@en .
+:DCO_A rdfs:label "DCO char1=A (Circular Cross Section)"@en .
+:DCO_B rdfs:label "DCO char1=B (Rectangular Cross Section)"@en .
+:DCO_X rdfs:label "DCO char1=X (Locally Defined Cross Section)"@en .
+:DCO_Z rdfs:label "DCO char1=Z (Other Cross Section)"@en .
+:DDA rdfs:label "DDA (General Photograph)"@en .
+:DDB rdfs:label "DDB (General Remark)"@en .
+:DDC rdfs:label "DDC (Inspection Termination)"@en .
+:DDC1_A rdfs:label "DDC char1=A (Unable To Lift Cover)"@en .
+:DDC1_B rdfs:label "DDC char1=B (Obstruction)"@en .
+:DDC1_C rdfs:label "DDC char1=C (High Water Level)"@en .
+:DDC1_D rdfs:label "DDC char1=D (Equipment Failure)"@en .
+:DDC1_Z rdfs:label "DDC char1=Z (Other Cause)"@en .
+:DDC2_A rdfs:label "DDC char2=A (Inspection Complete)"@en .
+:DDC2_B rdfs:label "DDC char2=B (Authority Instruction)"@en .
+:DDC2_Z rdfs:label "DDC char2=Z (Other Cause)"@en .
+:DDD rdfs:label "DDD (Water Level)"@en .
+:DDE rdfs:label "DDE (Flow From Incoming Pipe)"@en .
+:DDE1_A rdfs:label "DDE char1=A (Clear Effluent Wastewater)"@en .
+:DDE1_B rdfs:label "DDE char1=B (Discountinued Wastewater Code)"@en .
+:DDE1_C rdfs:label "DDE char1=C (Turbid Wastewater)"@en .
+:DDE1_D rdfs:label "DDE char1=D (Coloured Wastewater)"@en .
+:DDE1_E rdfs:label "DDE char1=E (Turbid Wastewater)"@en .
+:DDE2_A rdfs:label "DDE char2=A (Wrongly Connected Incoming Surface Water Pipe)"@en .
+:DDE2_B rdfs:label "DDE char2=B (Wrongly Connected Incoming Wastewater Pipe)"@en .
+:DDE2_C rdfs:label "DDE char2=C (Correct Connection)"@en .
+:DDF rdfs:label "DDF (Atmosphere Within)"@en .
+:DDF_A rdfs:label "DDF char1=A (Oxygen Deficiency)"@en .
+:DDF_B rdfs:label "DDF char1=B (Hydrogen Sulfide)"@en .
+:DDF_C rdfs:label "DDF char1=C (Methane)"@en .
+:DDF_Z rdfs:label "DDF char1=Z (Other Atmosphere Within)"@en .
+:DDG rdfs:label "DDG (Loss Of Vision)"@en .
+:DDG_A rdfs:label "DDG char1=A (Camera Underwater)"@en .
+:DDG_B rdfs:label "DDG char1=B (Slit)"@en .
+:DDG_C rdfs:label "DDG char1=C (Steam)"@en .
+:DDG_Z rdfs:label "DDG char1=Z (Other Cause)"@en .
+:DamagedConnection rdfs:label "Damaged Connection"@en .
+:Defect rdfs:label "Defect"@en .
+:DefectiveBenching rdfs:label "Defective Benching"@en .
+:DefectiveBrickworkOrMasonry rdfs:label "Defective Brickwork Or Masonry"@en .
+:DefectiveChannel rdfs:label "Defective Channel"@en .
+:DefectiveConnection rdfs:label "Defective Connection"@en .
+:DefectiveCoverOrFrame rdfs:label "Defective Cover Or Frame"@en .
+:DefectiveEndOfLining rdfs:label "Defective End Of Lining"@en .
+:DefectiveGritTrap rdfs:label "Defective Grit Trap"@en .
+:DefectiveOtherPipelineThroughManhole rdfs:label "Defective Other Pipeline Through Manhole"@en .
+:DefectiveRepair rdfs:label "Defective Repair"@en .
+:DefectiveSafetyBar rdfs:label "Defective Safety Bar"@en .
+:DefectiveSafetyChain rdfs:label "Defective Safety Chain"@en .
+:DefectiveSlitPit rdfs:label "Defective Slit Pit"@en .
+:DefectiveStepOrLadder rdfs:label "Defective Step Or Ladder"@en .
+:DefectiveToeHole rdfs:label "Defective Toe Hole"@en .
+:Deformation rdfs:label "Deformation"@en .
+:DetachedLining rdfs:label "Detached Lining"@en .
+:DiscoloredLining rdfs:label "Discolored Lining"@en .
+:DiscountinuedWastewaterCode rdfs:label "Discountinued Wastewater Code"@en .
+:DisplacedBrickworkOrMasonry rdfs:label "Displaced Brickwork Or Masonry"@en .
+:DisplacedJoint rdfs:label "Displaced Joint"@en .
+:DisplacedSealingRing rdfs:label "Displaced Sealing Ring"@en .
+:Down rdfs:label "Down"@en .
+:DrilledPlainConnection rdfs:label "Drilled Plain Connection"@en .
+:DrilledSaddleConnection rdfs:label "Drilled Saddle Connection"@en .
+:DrippingInfiltration rdfs:label "Dripping Infiltration"@en .
+:DroppedInvertBrickworkOrMasonry rdfs:label "Dropped Invert Brickwork Or Masonry"@en .
+:EggShapedConnectingPipeline rdfs:label "Egg Shaped Connecting Pipeline"@en .
+:EncrustationAttachedDeposit rdfs:label "Encrustation Attached Deposit"@en .
+:EndOfLiningNotSealed rdfs:label "End Of Lining Not Sealed"@en .
+:EnteringThroughConnectionObstacle rdfs:label "Entering Through Connection Obstacle"@en .
+:Entfernen rdfs:label "Entfernen"@en .
+:Entfernen_Kurzliner_BAK1_A rdfs:label "Entfernen_Kurzliner_BAK1_A"@en .
+:Entfernen_Kurzliner_BAK1_B rdfs:label "Entfernen_Kurzliner_BAK1_B"@en .
+:Entfernen_Kurzliner_BAK1_D rdfs:label "Entfernen_Kurzliner_BAK1_D"@en .
+:Entfernen_Kurzliner_BAK1_E rdfs:label "Entfernen_Kurzliner_BAK1_E"@en .
+:Entfernen_Kurzliner_BAK1_F rdfs:label "Entfernen_Kurzliner_BAK1_F"@en .
+:Entfernen_Kurzliner_BAK1_G rdfs:label "Entfernen_Kurzliner_BAK1_G"@en .
+:Entfernen_Kurzliner_BAK1_H rdfs:label "Entfernen_Kurzliner_BAK1_H"@en .
+:Entfernen_Kurzliner_BAK1_I rdfs:label "Entfernen_Kurzliner_BAK1_I"@en .
+:Entfernen_Kurzliner_BAK1_J rdfs:label "Entfernen_Kurzliner_BAK1_J"@en .
+:Entfernen_Kurzliner_BAK1_K rdfs:label "Entfernen_Kurzliner_BAK1_K"@en .
+:Entfernen_Kurzliner_BAK1_L rdfs:label "Entfernen_Kurzliner_BAK1_L"@en .
+:Entfernen_Kurzliner_BAK1_M rdfs:label "Entfernen_Kurzliner_BAK1_M"@en .
+:Entfernen_Kurzliner_BAK2_A rdfs:label "Entfernen_Kurzliner_BAK2_A"@en .
+:Entfernen_Kurzliner_BAK2_B rdfs:label "Entfernen_Kurzliner_BAK2_B"@en .
+:Entfernen_Kurzliner_BAK2_C rdfs:label "Entfernen_Kurzliner_BAK2_C"@en .
+:Entfernen_Kurzliner_BAK2_D rdfs:label "Entfernen_Kurzliner_BAK2_D"@en .
+:Entfernen_Kurzliner_BAL1_B rdfs:label "Entfernen_Kurzliner_BAL1_B"@en .
+:Entfernen_Kurzliner_BAL1_C rdfs:label "Entfernen_Kurzliner_BAL1_C"@en .
+:Entfernen_Kurzliner_BAL1_E rdfs:label "Entfernen_Kurzliner_BAL1_E"@en .
+:Entfernen_Kurzliner_BAL1_G rdfs:label "Entfernen_Kurzliner_BAL1_G"@en .
+:Entfernen_Kurzliner_BAL2_A rdfs:label "Entfernen_Kurzliner_BAL2_A"@en .
+:Entfernen_Kurzliner_BAL2_B rdfs:label "Entfernen_Kurzliner_BAL2_B"@en .
+:Entfernen_Kurzliner_BAL2_C rdfs:label "Entfernen_Kurzliner_BAL2_C"@en .
+:Entfernen_Kurzliner_BAL2_D rdfs:label "Entfernen_Kurzliner_BAL2_D"@en .
+:Entfernen_Manschette_BAK1_A rdfs:label "Entfernen_Manschette_BAK1_A"@en .
+:Entfernen_Manschette_BAK1_B rdfs:label "Entfernen_Manschette_BAK1_B"@en .
+:Entfernen_Manschette_BAK1_C rdfs:label "Entfernen_Manschette_BAK1_C"@en .
+:Entfernen_Manschette_BAK1_D rdfs:label "Entfernen_Manschette_BAK1_D"@en .
+:Entfernen_Manschette_BAK1_E rdfs:label "Entfernen_Manschette_BAK1_E"@en .
+:Entfernen_Manschette_BAK1_F rdfs:label "Entfernen_Manschette_BAK1_F"@en .
+:Entfernen_Manschette_BAK1_G rdfs:label "Entfernen_Manschette_BAK1_G"@en .
+:Entfernen_Manschette_BAK1_H rdfs:label "Entfernen_Manschette_BAK1_H"@en .
+:Entfernen_Manschette_BAK1_I rdfs:label "Entfernen_Manschette_BAK1_I"@en .
+:Entfernen_Manschette_BAK1_J rdfs:label "Entfernen_Manschette_BAK1_J"@en .
+:Entfernen_Manschette_BAK1_K rdfs:label "Entfernen_Manschette_BAK1_K"@en .
+:Entfernen_Manschette_BAK1_L rdfs:label "Entfernen_Manschette_BAK1_L"@en .
+:Entfernen_Manschette_BAK1_M rdfs:label "Entfernen_Manschette_BAK1_M"@en .
+:Entfernen_Manschette_BAK2_A rdfs:label "Entfernen_Manschette_BAK2_A"@en .
+:Entfernen_Manschette_BAK2_B rdfs:label "Entfernen_Manschette_BAK2_B"@en .
+:Entfernen_Manschette_BAK2_C rdfs:label "Entfernen_Manschette_BAK2_C"@en .
+:Entfernen_Manschette_BAK2_D rdfs:label "Entfernen_Manschette_BAK2_D"@en .
+:Entfernen_Manschette_BAL1_B rdfs:label "Entfernen_Manschette_BAL1_B"@en .
+:Entfernen_Manschette_BAL1_C rdfs:label "Entfernen_Manschette_BAL1_C"@en .
+:Entfernen_Manschette_BAL1_E rdfs:label "Entfernen_Manschette_BAL1_E"@en .
+:Entfernen_Manschette_BAL1_G rdfs:label "Entfernen_Manschette_BAL1_G"@en .
+:Entfernen_Manschette_BAL2_A rdfs:label "Entfernen_Manschette_BAL2_A"@en .
+:Entfernen_Manschette_BAL2_B rdfs:label "Entfernen_Manschette_BAL2_B"@en .
+:Entfernen_Manschette_BAL2_C rdfs:label "Entfernen_Manschette_BAL2_C"@en .
+:Entfernen_Manschette_BAL2_D rdfs:label "Entfernen_Manschette_BAL2_D"@en .
+:Entfernen_Schlauchliner_BAK1_A rdfs:label "Entfernen_Schlauchliner_BAK1_A"@en .
+:Entfernen_Schlauchliner_BAK1_B rdfs:label "Entfernen_Schlauchliner_BAK1_B"@en .
+:Entfernen_Schlauchliner_BAK1_C rdfs:label "Entfernen_Schlauchliner_BAK1_C"@en .
+:Entfernen_Schlauchliner_BAK1_D rdfs:label "Entfernen_Schlauchliner_BAK1_D"@en .
+:Entfernen_Schlauchliner_BAK1_E rdfs:label "Entfernen_Schlauchliner_BAK1_E"@en .
+:Entfernen_Schlauchliner_BAK1_F rdfs:label "Entfernen_Schlauchliner_BAK1_F"@en .
+:Entfernen_Schlauchliner_BAK1_G rdfs:label "Entfernen_Schlauchliner_BAK1_G"@en .
+:Entfernen_Schlauchliner_BAK1_H rdfs:label "Entfernen_Schlauchliner_BAK1_H"@en .
+:Entfernen_Schlauchliner_BAK1_I rdfs:label "Entfernen_Schlauchliner_BAK1_I"@en .
+:Entfernen_Schlauchliner_BAK1_J rdfs:label "Entfernen_Schlauchliner_BAK1_J"@en .
+:Entfernen_Schlauchliner_BAK1_K rdfs:label "Entfernen_Schlauchliner_BAK1_K"@en .
+:Entfernen_Schlauchliner_BAK1_L rdfs:label "Entfernen_Schlauchliner_BAK1_L"@en .
+:Entfernen_Schlauchliner_BAK1_M rdfs:label "Entfernen_Schlauchliner_BAK1_M"@en .
+:Entfernen_Schlauchliner_BAK2_A rdfs:label "Entfernen_Schlauchliner_BAK2_A"@en .
+:Entfernen_Schlauchliner_BAK2_B rdfs:label "Entfernen_Schlauchliner_BAK2_B"@en .
+:Entfernen_Schlauchliner_BAK2_C rdfs:label "Entfernen_Schlauchliner_BAK2_C"@en .
+:Entfernen_Schlauchliner_BAK2_D rdfs:label "Entfernen_Schlauchliner_BAK2_D"@en .
+:Entfernen_Schlauchliner_BAL1_B rdfs:label "Entfernen_Schlauchliner_BAL1_B"@en .
+:Entfernen_Schlauchliner_BAL1_C rdfs:label "Entfernen_Schlauchliner_BAL1_C"@en .
+:Entfernen_Schlauchliner_BAL1_E rdfs:label "Entfernen_Schlauchliner_BAL1_E"@en .
+:Entfernen_Schlauchliner_BAL1_G rdfs:label "Entfernen_Schlauchliner_BAL1_G"@en .
+:Entfernen_Schlauchliner_BAL2_A rdfs:label "Entfernen_Schlauchliner_BAL2_A"@en .
+:Entfernen_Schlauchliner_BAL2_B rdfs:label "Entfernen_Schlauchliner_BAL2_B"@en .
+:Entfernen_Schlauchliner_BAL2_C rdfs:label "Entfernen_Schlauchliner_BAL2_C"@en .
+:Entfernen_Schlauchliner_BAL2_D rdfs:label "Entfernen_Schlauchliner_BAL2_D"@en .
+:EquipmentFailure rdfs:label "Equipment Failure"@en .
+:Erneuerung rdfs:label "Erneuerung"@en .
+:Erneuerung_BAA_A rdfs:label "Erneuerung_BAA_A"@en .
+:Erneuerung_BAA_B rdfs:label "Erneuerung_BAA_B"@en .
+:Erneuerung_BAB1_A rdfs:label "Erneuerung_BAB1_A"@en .
+:Erneuerung_BAB1_B rdfs:label "Erneuerung_BAB1_B"@en .
+:Erneuerung_BAB1_C rdfs:label "Erneuerung_BAB1_C"@en .
+:Erneuerung_BAB2_A rdfs:label "Erneuerung_BAB2_A"@en .
+:Erneuerung_BAB2_B rdfs:label "Erneuerung_BAB2_B"@en .
+:Erneuerung_BAB2_C rdfs:label "Erneuerung_BAB2_C"@en .
+:Erneuerung_BAB2_D rdfs:label "Erneuerung_BAB2_D"@en .
+:Erneuerung_BAB2_Z rdfs:label "Erneuerung_BAB2_Z"@en .
+:Erneuerung_BAC_A rdfs:label "Erneuerung_BAC_A"@en .
+:Erneuerung_BAC_B rdfs:label "Erneuerung_BAC_B"@en .
+:Erneuerung_BAC_C rdfs:label "Erneuerung_BAC_C"@en .
+:Erneuerung_BAD1_A rdfs:label "Erneuerung_BAD1_A"@en .
+:Erneuerung_BAD1_B rdfs:label "Erneuerung_BAD1_B"@en .
+:Erneuerung_BAD1_C rdfs:label "Erneuerung_BAD1_C"@en .
+:Erneuerung_BAD1_D rdfs:label "Erneuerung_BAD1_D"@en .
+:Erneuerung_BAD2_A rdfs:label "Erneuerung_BAD2_A"@en .
+:Erneuerung_BAD2_B rdfs:label "Erneuerung_BAD2_B"@en .
+:Erneuerung_BAF1_A rdfs:label "Erneuerung_BAF1_A"@en .
+:Erneuerung_BAF1_B rdfs:label "Erneuerung_BAF1_B"@en .
+:Erneuerung_BAF1_C rdfs:label "Erneuerung_BAF1_C"@en .
+:Erneuerung_BAF1_D rdfs:label "Erneuerung_BAF1_D"@en .
+:Erneuerung_BAF1_E rdfs:label "Erneuerung_BAF1_E"@en .
+:Erneuerung_BAF1_F rdfs:label "Erneuerung_BAF1_F"@en .
+:Erneuerung_BAF1_G rdfs:label "Erneuerung_BAF1_G"@en .
+:Erneuerung_BAF1_H rdfs:label "Erneuerung_BAF1_H"@en .
+:Erneuerung_BAF1_I rdfs:label "Erneuerung_BAF1_I"@en .
+:Erneuerung_BAF1_J rdfs:label "Erneuerung_BAF1_J"@en .
+:Erneuerung_BAF1_K rdfs:label "Erneuerung_BAF1_K"@en .
+:Erneuerung_BAF2_A rdfs:label "Erneuerung_BAF2_A"@en .
+:Erneuerung_BAF2_B rdfs:label "Erneuerung_BAF2_B"@en .
+:Erneuerung_BAF2_C rdfs:label "Erneuerung_BAF2_C"@en .
+:Erneuerung_BAF2_D rdfs:label "Erneuerung_BAF2_D"@en .
+:Erneuerung_BAF2_E rdfs:label "Erneuerung_BAF2_E"@en .
+:Erneuerung_BAI1_A rdfs:label "Erneuerung_BAI1_A"@en .
+:Erneuerung_BAI1_Z rdfs:label "Erneuerung_BAI1_Z"@en .
+:Erneuerung_BAI2_A rdfs:label "Erneuerung_BAI2_A"@en .
+:Erneuerung_BAI2_B rdfs:label "Erneuerung_BAI2_B"@en .
+:Erneuerung_BAI2_C rdfs:label "Erneuerung_BAI2_C"@en .
+:Erneuerung_BAI2_D rdfs:label "Erneuerung_BAI2_D"@en .
+:Erneuerung_BAJ_A rdfs:label "Erneuerung_BAJ_A"@en .
+:Erneuerung_BAJ_B rdfs:label "Erneuerung_BAJ_B"@en .
+:Erneuerung_BAJ_C rdfs:label "Erneuerung_BAJ_C"@en .
+:Erneuerung_BAK1_A rdfs:label "Erneuerung_BAK1_A"@en .
+:Erneuerung_BAK1_B rdfs:label "Erneuerung_BAK1_B"@en .
+:Erneuerung_BAK1_C rdfs:label "Erneuerung_BAK1_C"@en .
+:Erneuerung_BAK1_D rdfs:label "Erneuerung_BAK1_D"@en .
+:Erneuerung_BAK1_E rdfs:label "Erneuerung_BAK1_E"@en .
+:Erneuerung_BAK1_F rdfs:label "Erneuerung_BAK1_F"@en .
+:Erneuerung_BAK1_G rdfs:label "Erneuerung_BAK1_G"@en .
+:Erneuerung_BAK1_H rdfs:label "Erneuerung_BAK1_H"@en .
+:Erneuerung_BAK1_I rdfs:label "Erneuerung_BAK1_I"@en .
+:Erneuerung_BAK1_J rdfs:label "Erneuerung_BAK1_J"@en .
+:Erneuerung_BAK1_K rdfs:label "Erneuerung_BAK1_K"@en .
+:Erneuerung_BAK1_L rdfs:label "Erneuerung_BAK1_L"@en .
+:Erneuerung_BAK1_M rdfs:label "Erneuerung_BAK1_M"@en .
+:Erneuerung_BAK2_A rdfs:label "Erneuerung_BAK2_A"@en .
+:Erneuerung_BAK2_B rdfs:label "Erneuerung_BAK2_B"@en .
+:Erneuerung_BAK2_C rdfs:label "Erneuerung_BAK2_C"@en .
+:Erneuerung_BAK2_D rdfs:label "Erneuerung_BAK2_D"@en .
+:Erneuerung_BAL1_A rdfs:label "Erneuerung_BAL1_A"@en .
+:Erneuerung_BAL1_B rdfs:label "Erneuerung_BAL1_B"@en .
+:Erneuerung_BAL1_C rdfs:label "Erneuerung_BAL1_C"@en .
+:Erneuerung_BAL1_D rdfs:label "Erneuerung_BAL1_D"@en .
+:Erneuerung_BAL1_E rdfs:label "Erneuerung_BAL1_E"@en .
+:Erneuerung_BAL1_F rdfs:label "Erneuerung_BAL1_F"@en .
+:Erneuerung_BAL1_G rdfs:label "Erneuerung_BAL1_G"@en .
+:Erneuerung_BAL2_A rdfs:label "Erneuerung_BAL2_A"@en .
+:Erneuerung_BAL2_B rdfs:label "Erneuerung_BAL2_B"@en .
+:Erneuerung_BAL2_C rdfs:label "Erneuerung_BAL2_C"@en .
+:Erneuerung_BAL2_D rdfs:label "Erneuerung_BAL2_D"@en .
+:Erneuerung_BAM_A rdfs:label "Erneuerung_BAM_A"@en .
+:Erneuerung_BAM_B rdfs:label "Erneuerung_BAM_B"@en .
+:Erneuerung_BAM_C rdfs:label "Erneuerung_BAM_C"@en .
+:Erneuerung_BBA_A rdfs:label "Erneuerung_BBA_A"@en .
+:Erneuerung_BBA_B rdfs:label "Erneuerung_BBA_B"@en .
+:Erneuerung_BBA_C rdfs:label "Erneuerung_BBA_C"@en .
+:Erneuerung_BBD_A rdfs:label "Erneuerung_BBD_A"@en .
+:Erneuerung_BBD_B rdfs:label "Erneuerung_BBD_B"@en .
+:Erneuerung_BBD_C rdfs:label "Erneuerung_BBD_C"@en .
+:Erneuerung_BBD_D rdfs:label "Erneuerung_BBD_D"@en .
+:Erneuerung_BBE_G rdfs:label "Erneuerung_BBE_G"@en .
+:Erneuerung_BBF_A rdfs:label "Erneuerung_BBF_A"@en .
+:Erneuerung_BBF_B rdfs:label "Erneuerung_BBF_B"@en .
+:Erneuerung_BBF_C rdfs:label "Erneuerung_BBF_C"@en .
+:Erneuerung_BBF_D rdfs:label "Erneuerung_BBF_D"@en .
+:Erneuerung_BBF_Z rdfs:label "Erneuerung_BBF_Z"@en .
+:ExcessRepairMaterial rdfs:label "Excess Repair Material"@en .
+:Exfiltration rdfs:label "Exfiltration"@en .
+:ExternalBulgeLining rdfs:label "External Bulge Lining"@en .
+:ExternalPipesOrCablesBuiltThroughStructureObstacle rdfs:label "External Pipes Or Cables Built Through Structure Obstacle"@en .
+:FineSettledDeposit rdfs:label "Fine Settled Deposit"@en .
+:Fissure rdfs:label "Fissure"@en .
+:FlapValveFlowControl rdfs:label "Flap Valve Flow Control"@en .
+:FloatOperatedGateValveFlowControl rdfs:label "Float Operated Gate Valve Flow Control"@en .
+:FlowControl rdfs:label "Flow Control"@en .
+:FlowFromIncomingPipe rdfs:label "Flow From Incoming Pipe"@en .
+:FlowingInfiltration rdfs:label "Flowing Infiltration"@en .
+:FoulingAttachedDeposit rdfs:label "Fouling Attached Deposit"@en .
+:FractureFissure rdfs:label "Fracture Fissure"@en .
+:FreeDropConnection rdfs:label "Free Drop Connection"@en .
+:GapConnection rdfs:label "Gap Connection"@en .
+:GateValveFlowControl rdfs:label "Gate Valve Flow Control"@en .
+:GeneralDeformation rdfs:label "General Deformation"@en .
+:GeneralPhotograph rdfs:label "General Photograph"@en .
+:GeneralRemark rdfs:label "General Remark"@en .
+:GreaseAttachedDeposit rdfs:label "Grease Attached Deposit"@en .
+:GritTrapUnderCover rdfs:label "Grit Trap Under Cover"@en .
+:GushingInfiltration rdfs:label "Gushing Infiltration"@en .
+:HardOrCompactedSettledDeposit rdfs:label "Hard Or Compacted Settled Deposit"@en .
+:Helical rdfs:label "Helical"@en .
+:HighPointChannel rdfs:label "High Point Channel"@en .
+:HighWaterLevel rdfs:label "High Water Level"@en .
+:HoleInLining rdfs:label "Hole In Lining"@en .
+:HoleInRepairMaterial rdfs:label "Hole In Repair Material"@en .
+:HoleRepair rdfs:label "Hole Repair"@en .
+:Horizontal rdfs:label "Horizontal"@en .
+:Hutprofil rdfs:label "Hutprofil"@en .
+:Hutprofil_BAC_B rdfs:label "Hutprofil_BAC_B"@en .
+:Hutprofil_BAC_C rdfs:label "Hutprofil_BAC_C"@en .
+:Hutprofil_BAC_D rdfs:label "Hutprofil_BAC_D"@en .
+:HydrogenSulfide rdfs:label "Hydrogen Sulfide"@en .
+:InConnection rdfs:label "In Connection"@en .
+:InManholeOrInspectionChamber rdfs:label "In Manhole Or Inspection Chamber"@en .
+:InOpenJoint rdfs:label "In Open Joint"@en .
+:InPipeline rdfs:label "In Pipeline"@en .
+:Inclined rdfs:label "Inclined"@en .
+:IncorrectPositionConnection rdfs:label "Incorrect Position Connection"@en .
+:IncreasedRoughness rdfs:label "Increased Roughness"@en .
+:IndependentFineRoots rdfs:label "Independent Fine Roots"@en .
+:Infiltration rdfs:label "Infiltration"@en .
+:IngressOfFineMaterial rdfs:label "Ingress Of Fine Material"@en .
+:IngressOfGravel rdfs:label "Ingress Of Gravel"@en .
+:IngressOfOtherSoil rdfs:label "Ingress Of Other Soil"@en .
+:IngressOfPeat rdfs:label "Ingress Of Peat"@en .
+:IngressOfSand rdfs:label "Ingress Of Sand"@en .
+:IngressOfSoil rdfs:label "Ingress Of Soil"@en .
+:InjectedMortarRepair rdfs:label "Injected Mortar Repair"@en .
+:InjectedSealingMaterialRepair rdfs:label "Injected Sealing Material Repair"@en .
+:InspectionChamber rdfs:label "Inspection Chamber"@en .
+:InspectionComplete rdfs:label "Inspection Complete"@en .
+:InspectionIncomplete rdfs:label "Inspection Incomplete"@en .
+:InspectionStatus rdfs:label "Inspection Status"@en .
+:InspectionStatusUnknown rdfs:label "Inspection Status Unknown"@en .
+:InspectionTermination rdfs:label "Inspection Termination"@en .
+:InternalDropPipeConnection rdfs:label "Internal Drop Pipe Connection"@en .
+:InternalFilmOrCoatingSeparation rdfs:label "Internal Film Or Coating Separation"@en .
+:IntrudingBrokenSealingRing rdfs:label "Intruding Broken Sealing Ring"@en .
+:IntrudingButNotBrokenSealingRing rdfs:label "Intruding But Not Broken Sealing Ring"@en .
+:IntrudingConnection rdfs:label "Intruding Connection"@en .
+:IntrudingOtherSealant rdfs:label "Intruding Other Sealant"@en .
+:IntrudingSealingMaterial rdfs:label "Intruding Sealing Material"@en .
+:IntrudingSealingRing rdfs:label "Intruding Sealing Ring"@en .
+:IntrudingSealingRingAboveCentreline rdfs:label "Intruding Sealing Ring Above Centreline"@en .
+:IntrudingSealingRingBelowCentreline rdfs:label "Intruding Sealing Ring Below Centreline"@en .
+:Inventory rdfs:label "Inventory"@en .
+:InvertConnectionInfiltration rdfs:label "Invert Connection Infiltration"@en .
+:Junction rdfs:label "Junction"@en .
+:Kurzliner rdfs:label "Kurzliner"@en .
+:Kurzliner_BAA_A rdfs:label "Kurzliner_BAA_A"@en .
+:Kurzliner_BAA_B rdfs:label "Kurzliner_BAA_B"@en .
+:Kurzliner_BAB1_A rdfs:label "Kurzliner_BAB1_A"@en .
+:Kurzliner_BAB1_B rdfs:label "Kurzliner_BAB1_B"@en .
+:Kurzliner_BAB1_C rdfs:label "Kurzliner_BAB1_C"@en .
+:Kurzliner_BAB2_B rdfs:label "Kurzliner_BAB2_B"@en .
+:Kurzliner_BAB2_C rdfs:label "Kurzliner_BAB2_C"@en .
+:Kurzliner_BAF1_A rdfs:label "Kurzliner_BAF1_A"@en .
+:Kurzliner_BAF1_B rdfs:label "Kurzliner_BAF1_B"@en .
+:Kurzliner_BAF1_C rdfs:label "Kurzliner_BAF1_C"@en .
+:Kurzliner_BAF1_D rdfs:label "Kurzliner_BAF1_D"@en .
+:Kurzliner_BAF1_E rdfs:label "Kurzliner_BAF1_E"@en .
+:Kurzliner_BAF1_F rdfs:label "Kurzliner_BAF1_F"@en .
+:Kurzliner_BAF1_G rdfs:label "Kurzliner_BAF1_G"@en .
+:Kurzliner_BAF1_H rdfs:label "Kurzliner_BAF1_H"@en .
+:Kurzliner_BAF1_I rdfs:label "Kurzliner_BAF1_I"@en .
+:Kurzliner_BAF1_J rdfs:label "Kurzliner_BAF1_J"@en .
+:Kurzliner_BAF1_K rdfs:label "Kurzliner_BAF1_K"@en .
+:Kurzliner_BAF2_A rdfs:label "Kurzliner_BAF2_A"@en .
+:Kurzliner_BAF2_B rdfs:label "Kurzliner_BAF2_B"@en .
+:Kurzliner_BAF2_C rdfs:label "Kurzliner_BAF2_C"@en .
+:Kurzliner_BAF2_D rdfs:label "Kurzliner_BAF2_D"@en .
+:Kurzliner_BAF2_E rdfs:label "Kurzliner_BAF2_E"@en .
+:Kurzliner_BAJ_A rdfs:label "Kurzliner_BAJ_A"@en .
+:Kurzliner_BAJ_B rdfs:label "Kurzliner_BAJ_B"@en .
+:Kurzliner_BAJ_C rdfs:label "Kurzliner_BAJ_C"@en .
+:Kurzliner_BAL1_A rdfs:label "Kurzliner_BAL1_A"@en .
+:Kurzliner_BAL1_D rdfs:label "Kurzliner_BAL1_D"@en .
+:Kurzliner_BAL1_F rdfs:label "Kurzliner_BAL1_F"@en .
+:Kurzliner_BAM_A rdfs:label "Kurzliner_BAM_A"@en .
+:Kurzliner_BAM_B rdfs:label "Kurzliner_BAM_B"@en .
+:Kurzliner_BAM_C rdfs:label "Kurzliner_BAM_C"@en .
+:Kurzliner_BBD_A rdfs:label "Kurzliner_BBD_A"@en .
+:Kurzliner_BBD_B rdfs:label "Kurzliner_BBD_B"@en .
+:Kurzliner_BBD_C rdfs:label "Kurzliner_BBD_C"@en .
+:Kurzliner_BBD_D rdfs:label "Kurzliner_BBD_D"@en .
+:Kurzliner_BBF_A rdfs:label "Kurzliner_BBF_A"@en .
+:Kurzliner_BBF_B rdfs:label "Kurzliner_BBF_B"@en .
+:Kurzliner_BBF_C rdfs:label "Kurzliner_BBF_C"@en .
+:Kurzliner_BBF_D rdfs:label "Kurzliner_BBF_D"@en .
+:Kurzliner_BBF_Z rdfs:label "Kurzliner_BBF_Z"@en .
+:LampHole rdfs:label "Lamp Hole"@en .
+:LayerBrickworkOrMasonryVisible rdfs:label "Layer Brickwork Or Masonry Visible"@en .
+:Left rdfs:label "Left"@en .
+:Lining rdfs:label "Lining"@en .
+:LiningConnectionDefect rdfs:label "Lining Connection Defect"@en .
+:LocalisedDeformation rdfs:label "Localised Deformation"@en .
+:LocalisedLiningOfConnectionRepair rdfs:label "Localised Lining Of Connection Repair"@en .
+:LocalisedLiningOfManholeOrInspectionChamberRepair rdfs:label "Localised Lining Of Manhole Or Inspection Chamber Repair"@en .
+:LocalisedLiningOfPipeRepair rdfs:label "Localised Lining Of Pipe Repair"@en .
+:LocallyDefinedConnectingPipeline rdfs:label "Locally Defined Connecting Pipeline"@en .
+:LocallyDefinedCrossSection rdfs:label "Locally Defined Cross Section"@en .
+:Location rdfs:label "Location"@en .
+:Longitudinal rdfs:label "Longitudinal"@en .
+:LooseFrame rdfs:label "Loose Frame"@en .
+:LooseLadderSupport rdfs:label "Loose Ladder Support"@en .
+:LooseStep rdfs:label "Loose Step"@en .
+:LossOfVision rdfs:label "Loss Of Vision"@en .
+:LowPointChannel rdfs:label "Low Point Channel"@en .
+:MajorConnectionWithoutManholeOrInspectionChamber rdfs:label "Major Connection Without Manhole Or Inspection Chamber"@en .
+:Manhole rdfs:label "Manhole"@en .
+:Manschette rdfs:label "Manschette"@en .
+:Manschette_BAB1_A rdfs:label "Manschette_BAB1_A"@en .
+:Manschette_BAB1_B rdfs:label "Manschette_BAB1_B"@en .
+:Manschette_BAB1_C rdfs:label "Manschette_BAB1_C"@en .
+:Manschette_BAB2_B rdfs:label "Manschette_BAB2_B"@en .
+:Manschette_BAB2_C rdfs:label "Manschette_BAB2_C"@en .
+:Manschette_BAF1_A rdfs:label "Manschette_BAF1_A"@en .
+:Manschette_BAF1_B rdfs:label "Manschette_BAF1_B"@en .
+:Manschette_BAF1_C rdfs:label "Manschette_BAF1_C"@en .
+:Manschette_BAF1_D rdfs:label "Manschette_BAF1_D"@en .
+:Manschette_BAF1_E rdfs:label "Manschette_BAF1_E"@en .
+:Manschette_BAF1_F rdfs:label "Manschette_BAF1_F"@en .
+:Manschette_BAF1_G rdfs:label "Manschette_BAF1_G"@en .
+:Manschette_BAF1_H rdfs:label "Manschette_BAF1_H"@en .
+:Manschette_BAF1_I rdfs:label "Manschette_BAF1_I"@en .
+:Manschette_BAF1_J rdfs:label "Manschette_BAF1_J"@en .
+:Manschette_BAF1_K rdfs:label "Manschette_BAF1_K"@en .
+:Manschette_BAF2_A rdfs:label "Manschette_BAF2_A"@en .
+:Manschette_BAF2_B rdfs:label "Manschette_BAF2_B"@en .
+:Manschette_BAF2_C rdfs:label "Manschette_BAF2_C"@en .
+:Manschette_BAF2_D rdfs:label "Manschette_BAF2_D"@en .
+:Manschette_BAF2_E rdfs:label "Manschette_BAF2_E"@en .
+:Manschette_BAL1_A rdfs:label "Manschette_BAL1_A"@en .
+:Manschette_BAL1_D rdfs:label "Manschette_BAL1_D"@en .
+:Manschette_BAL1_F rdfs:label "Manschette_BAL1_F"@en .
+:Manschette_BAM_A rdfs:label "Manschette_BAM_A"@en .
+:Manschette_BAM_B rdfs:label "Manschette_BAM_B"@en .
+:Manschette_BAM_C rdfs:label "Manschette_BAM_C"@en .
+:Manschette_BBD_A rdfs:label "Manschette_BBD_A"@en .
+:Manschette_BBD_B rdfs:label "Manschette_BBD_B"@en .
+:Manschette_BBD_C rdfs:label "Manschette_BBD_C"@en .
+:Manschette_BBD_D rdfs:label "Manschette_BBD_D"@en .
+:Manschette_BBF_A rdfs:label "Manschette_BBF_A"@en .
+:Manschette_BBF_B rdfs:label "Manschette_BBF_B"@en .
+:Manschette_BBF_C rdfs:label "Manschette_BBF_C"@en .
+:Manschette_BBF_D rdfs:label "Manschette_BBF_D"@en .
+:Manschette_BBF_Z rdfs:label "Manschette_BBF_Z"@en .
+:Mechanical rdfs:label "Mechanical"@en .
+:Methane rdfs:label "Methane"@en .
+:MissingAggregate rdfs:label "Missing Aggregate"@en .
+:MissingBrickworkOrMasonry rdfs:label "Missing Brickwork Or Masonry"@en .
+:MissingCover rdfs:label "Missing Cover"@en .
+:MissingFrame rdfs:label "Missing Frame"@en .
+:MissingGritTrap rdfs:label "Missing Grit Trap"@en .
+:MissingLadderSupport rdfs:label "Missing Ladder Support"@en .
+:MissingMortar rdfs:label "Missing Mortar"@en .
+:MissingRepairMaterial rdfs:label "Missing Repair Material"@en .
+:MissingSafetyBar rdfs:label "Missing Safety Bar"@en .
+:MissingSafetyChain rdfs:label "Missing Safety Chain"@en .
+:MissingStep rdfs:label "Missing Step"@en .
+:MissingWallBreakOrCollapse rdfs:label "Missing Wall Break Or Collapse"@en .
+:MissingWallDefectiveRepair rdfs:label "Missing Wall Defective Repair"@en .
+:MissingWallSurface rdfs:label "Missing Wall Surface"@en .
+:NarrowsChannel rdfs:label "Narrows Channel"@en .
+:NoAccessToPipe rdfs:label "No Access To Pipe"@en .
+:NoBenching rdfs:label "No Benching"@en .
+:NoChannel rdfs:label "No Channel"@en .
+:NoDefectsSafetyBar rdfs:label "No Defects Safety Bar"@en .
+:NoDefectsSafetyChain rdfs:label "No Defects Safety Chain"@en .
+:NodeConnection rdfs:label "Node Connection"@en .
+:NodeFabric rdfs:label "Node Fabric"@en .
+:NodeInventory rdfs:label "Node Inventory"@en .
+:NodeOperation rdfs:label "Node Operation"@en .
+:NodeOther rdfs:label "Node Other"@en .
+:NodeType rdfs:label "Node Type"@en .
+:NotEvident rdfs:label "Not Evident"@en .
+:NothingVisible rdfs:label "Nothing Visible"@en .
+:Observation rdfs:label "Observation"@en .
+:Obstacle rdfs:label "Obstacle"@en .
+:Obstruction rdfs:label "Obstruction"@en .
+:OpenConnection rdfs:label "Open Connection"@en .
+:OperationalDefect rdfs:label "Operational Defect"@en .
+:Orientation rdfs:label "Orientation"@en .
+:OrificePlateFlowControl rdfs:label "Orifice Plate Flow Control"@en .
+:OtherAtmosphereWithin rdfs:label "Other Atmosphere Within"@en .
+:OtherAttachedDeposit rdfs:label "Other Attached Deposit"@en .
+:OtherBenching rdfs:label "Other Benching"@en .
+:OtherCause rdfs:label "Other Cause"@en .
+:OtherConnectingPipeline rdfs:label "Other Connecting Pipeline"@en .
+:OtherConnection rdfs:label "Other Connection"@en .
+:OtherConnectionRepair rdfs:label "Other Connection Repair"@en .
+:OtherCrossSection rdfs:label "Other Cross Section"@en .
+:OtherDefectiveConnection rdfs:label "Other Defective Connection"@en .
+:OtherDefectiveCoverOrFrame rdfs:label "Other Defective Cover Or Frame"@en .
+:OtherDefectiveRepair rdfs:label "Other Defective Repair"@en .
+:OtherDefectiveStepOrLadder rdfs:label "Other Defective Step Or Ladder"@en .
+:OtherFlowControl rdfs:label "Other Flow Control"@en .
+:OtherInjectedSealingMaterialRepair rdfs:label "Other Injected Sealing Material Repair"@en .
+:OtherLiningDefect rdfs:label "Other Lining Defect"@en .
+:OtherLocation rdfs:label "Other Location"@en .
+:OtherObservation rdfs:label "Other Observation"@en .
+:OtherObstacle rdfs:label "Other Obstacle"@en .
+:OtherPipelineThroughManhole rdfs:label "Other Pipeline Through Manhole"@en .
+:OtherPointRepair rdfs:label "Other Point Repair"@en .
+:OtherSettledDeposit rdfs:label "Other Settled Deposit"@en .
+:OtherSpecialChamber rdfs:label "Other Special Chamber"@en .
+:OtherSurfaceDamage rdfs:label "Other Surface Damage"@en .
+:OtherTrenchlessRepair rdfs:label "Other Trenchless Repair"@en .
+:OtherVermin rdfs:label "Other Vermin"@en .
+:Outfall rdfs:label "Outfall"@en .
+:OvalConnectingPipeline rdfs:label "Oval Connecting Pipeline"@en .
+:OverflowControl rdfs:label "Overflow Control"@en .
+:OxygenDeficiency rdfs:label "Oxygen Deficiency"@en .
+:PartialGapConnection rdfs:label "Partial Gap Connection"@en .
+:PatchSealingDefectiveRepair rdfs:label "Patch Sealing Defective Repair"@en .
+:PiecesOfPipeObstacle rdfs:label "Pieces Of Pipe Obstacle"@en .
+:PipeConnection rdfs:label "Pipe Connection"@en .
+:PipeFabric rdfs:label "Pipe Fabric"@en .
+:PipeInventory rdfs:label "Pipe Inventory"@en .
+:PipeOperation rdfs:label "Pipe Operation"@en .
+:PipeOther rdfs:label "Pipe Other"@en .
+:PipeReplacedRepair rdfs:label "Pipe Replaced Repair"@en .
+:PipeUnderBenching rdfs:label "Pipe Under Benching"@en .
+:PointRepair rdfs:label "Point Repair"@en .
+:PorousPipe rdfs:label "Porous Pipe"@en .
+:PorousWall rdfs:label "Porous Wall"@en .
+:PreviousPartialInspection rdfs:label "Previous Partial Inspection"@en .
+:ProtrudingThroughWallObstacle rdfs:label "Protruding Through Wall Obstacle"@en .
+:Radial rdfs:label "Radial"@en .
+:RampChannelBenching rdfs:label "Ramp Channel Benching"@en .
+:RampConnection rdfs:label "Ramp Connection"@en .
+:RatVermin rdfs:label "Rat Vermin"@en .
+:RectangularConnectingPipeline rdfs:label "Rectangular Connecting Pipeline"@en .
+:RectangularCrossSection rdfs:label "Rectangular Cross Section"@en .
+:Reference rdfs:label "Reference"@en .
+:Rehabilitation rdfs:label "Rehabilitation"@en .
+:ReinforcementProjectingFromSurface rdfs:label "Reinforcement Projecting From Surface"@en .
+:Reinigung rdfs:label "Reinigung"@en .
+:Reinigung_BAC_E rdfs:label "Reinigung_BAC_E"@en .
+:Reinigung_BBC_A rdfs:label "Reinigung_BBC_A"@en .
+:Reinigung_BBC_B rdfs:label "Reinigung_BBC_B"@en .
+:Reinigung_BBE_A rdfs:label "Reinigung_BBE_A"@en .
+:Reinigung_BBE_B rdfs:label "Reinigung_BBE_B"@en .
+:Reinigung_BBE_C rdfs:label "Reinigung_BBE_C"@en .
+:Renovation rdfs:label "Renovation"@en .
+:Repair rdfs:label "Repair"@en .
+:RepairMaterialSeparated rdfs:label "Repair Material Separated"@en .
+:Replacement rdfs:label "Replacement"@en .
+:ResinMissingFromLaminate rdfs:label "Resin Missing From Laminate"@en .
+:Right rdfs:label "Right"@en .
+:RockingCover rdfs:label "Rocking Cover"@en .
+:RoddingEye rdfs:label "Rodding Eye"@en .
+:Roots rdfs:label "Roots"@en .
+:SafetyChainBar rdfs:label "Safety Chain Bar"@en .
+:Schlauchliner rdfs:label "Schlauchliner"@en .
+:Schlauchliner_BAA_A rdfs:label "Schlauchliner_BAA_A"@en .
+:Schlauchliner_BAA_B rdfs:label "Schlauchliner_BAA_B"@en .
+:Schlauchliner_BAB1_A rdfs:label "Schlauchliner_BAB1_A"@en .
+:Schlauchliner_BAB1_B rdfs:label "Schlauchliner_BAB1_B"@en .
+:Schlauchliner_BAB1_C rdfs:label "Schlauchliner_BAB1_C"@en .
+:Schlauchliner_BAB2_A rdfs:label "Schlauchliner_BAB2_A"@en .
+:Schlauchliner_BAB2_B rdfs:label "Schlauchliner_BAB2_B"@en .
+:Schlauchliner_BAB2_C rdfs:label "Schlauchliner_BAB2_C"@en .
+:Schlauchliner_BAB2_D rdfs:label "Schlauchliner_BAB2_D"@en .
+:Schlauchliner_BAB2_Z rdfs:label "Schlauchliner_BAB2_Z"@en .
+:Schlauchliner_BAF1_A rdfs:label "Schlauchliner_BAF1_A"@en .
+:Schlauchliner_BAF1_B rdfs:label "Schlauchliner_BAF1_B"@en .
+:Schlauchliner_BAF1_C rdfs:label "Schlauchliner_BAF1_C"@en .
+:Schlauchliner_BAF1_D rdfs:label "Schlauchliner_BAF1_D"@en .
+:Schlauchliner_BAF1_E rdfs:label "Schlauchliner_BAF1_E"@en .
+:Schlauchliner_BAF1_F rdfs:label "Schlauchliner_BAF1_F"@en .
+:Schlauchliner_BAF1_G rdfs:label "Schlauchliner_BAF1_G"@en .
+:Schlauchliner_BAF1_H rdfs:label "Schlauchliner_BAF1_H"@en .
+:Schlauchliner_BAF1_I rdfs:label "Schlauchliner_BAF1_I"@en .
+:Schlauchliner_BAF1_J rdfs:label "Schlauchliner_BAF1_J"@en .
+:Schlauchliner_BAF1_K rdfs:label "Schlauchliner_BAF1_K"@en .
+:Schlauchliner_BAF2_A rdfs:label "Schlauchliner_BAF2_A"@en .
+:Schlauchliner_BAF2_B rdfs:label "Schlauchliner_BAF2_B"@en .
+:Schlauchliner_BAF2_C rdfs:label "Schlauchliner_BAF2_C"@en .
+:Schlauchliner_BAF2_D rdfs:label "Schlauchliner_BAF2_D"@en .
+:Schlauchliner_BAF2_E rdfs:label "Schlauchliner_BAF2_E"@en .
+:Schlauchliner_BAJ_A rdfs:label "Schlauchliner_BAJ_A"@en .
+:Schlauchliner_BAJ_B rdfs:label "Schlauchliner_BAJ_B"@en .
+:Schlauchliner_BAJ_C rdfs:label "Schlauchliner_BAJ_C"@en .
+:Schlauchliner_BAL1_A rdfs:label "Schlauchliner_BAL1_A"@en .
+:Schlauchliner_BAL1_D rdfs:label "Schlauchliner_BAL1_D"@en .
+:Schlauchliner_BAL1_F rdfs:label "Schlauchliner_BAL1_F"@en .
+:Schlauchliner_BAM_A rdfs:label "Schlauchliner_BAM_A"@en .
+:Schlauchliner_BAM_B rdfs:label "Schlauchliner_BAM_B"@en .
+:Schlauchliner_BAM_C rdfs:label "Schlauchliner_BAM_C"@en .
+:Schlauchliner_BBD_A rdfs:label "Schlauchliner_BBD_A"@en .
+:Schlauchliner_BBD_B rdfs:label "Schlauchliner_BBD_B"@en .
+:Schlauchliner_BBD_C rdfs:label "Schlauchliner_BBD_C"@en .
+:Schlauchliner_BBD_D rdfs:label "Schlauchliner_BBD_D"@en .
+:Schlauchliner_BBF_A rdfs:label "Schlauchliner_BBF_A"@en .
+:Schlauchliner_BBF_B rdfs:label "Schlauchliner_BBF_B"@en .
+:Schlauchliner_BBF_C rdfs:label "Schlauchliner_BBF_C"@en .
+:Schlauchliner_BBF_D rdfs:label "Schlauchliner_BBF_D"@en .
+:Schlauchliner_BBF_Z rdfs:label "Schlauchliner_BBF_Z"@en .
+:Schädlingsbekämpfung rdfs:label "Schädlingsbekämpfung"@en .
+:Schädlingsbekämpfung_BBH1_A rdfs:label "Schädlingsbekämpfung_BBH1_A"@en .
+:Schädlingsbekämpfung_BBH1_B rdfs:label "Schädlingsbekämpfung_BBH1_B"@en .
+:Schädlingsbekämpfung_BBH1_Z rdfs:label "Schädlingsbekämpfung_BBH1_Z"@en .
+:Schädlingsbekämpfung_BBH2_A rdfs:label "Schädlingsbekämpfung_BBH2_A"@en .
+:Schädlingsbekämpfung_BBH2_B rdfs:label "Schädlingsbekämpfung_BBH2_B"@en .
+:Schädlingsbekämpfung_BBH2_C rdfs:label "Schädlingsbekämpfung_BBH2_C"@en .
+:Schädlingsbekämpfung_BBH2_Z rdfs:label "Schädlingsbekämpfung_BBH2_Z"@en .
+:ScreensFlowControl rdfs:label "Screens Flow Control"@en .
+:SeamCoveringSeparation rdfs:label "Seam Covering Separation"@en .
+:SettledDeposit rdfs:label "Settled Deposit"@en .
+:SewerCurvature rdfs:label "Sewer Curvature"@en .
+:Slit rdfs:label "Slit"@en .
+:SlitPit rdfs:label "Slit Pit"@en .
+:SoftLiningMaterial rdfs:label "Soft Lining Material"@en .
+:SoilVisibleThroughDefect rdfs:label "Soil Visible Through Defect"@en .
+:Spalling rdfs:label "Spalling"@en .
+:SpecialNodeType rdfs:label "Special Node Type"@en .
+:StarFissure rdfs:label "Star Fissure"@en .
+:Steam rdfs:label "Steam"@en .
+:StructuralDefect rdfs:label "Structural Defect"@en .
+:Surface rdfs:label "Surface"@en .
+:SurfaceCrackFissure rdfs:label "Surface Crack Fissure"@en .
+:SweatingInfiltration rdfs:label "Sweating Infiltration"@en .
+:SyphonFlowControl rdfs:label "Syphon Flow Control"@en .
+:TapRoot rdfs:label "Tap Root"@en .
+:TurbidWastewater rdfs:label "Turbid Wastewater"@en .
+:UShapeConnectingPipeline rdfs:label "U Shape Connecting Pipeline"@en .
+:UnableToLiftCover rdfs:label "Unable To Lift Cover"@en .
+:UnknownWastewater rdfs:label "Unknown Wastewater"@en .
+:Up rdfs:label "Up"@en .
+:VentilationPipeConnection rdfs:label "Ventilation Pipe Connection"@en .
+:VenturiFlowControl rdfs:label "Venturi Flow Control"@en .
+:Vermin rdfs:label "Vermin"@en .
+:Verpressen rdfs:label "Verpressen"@en .
+:Verpressen_BAC_B rdfs:label "Verpressen_BAC_B"@en .
+:Verpressen_BAC_C rdfs:label "Verpressen_BAC_C"@en .
+:Verpressen_BAC_D rdfs:label "Verpressen_BAC_D"@en .
+:Verspachteln rdfs:label "Verspachteln"@en .
+:Verspachteln_BAF1_A rdfs:label "Verspachteln_BAF1_A"@en .
+:Verspachteln_BAF1_B rdfs:label "Verspachteln_BAF1_B"@en .
+:Verspachteln_BAF1_C rdfs:label "Verspachteln_BAF1_C"@en .
+:Verspachteln_BAF1_E rdfs:label "Verspachteln_BAF1_E"@en .
+:Verspachteln_BAF1_F rdfs:label "Verspachteln_BAF1_F"@en .
+:Verspachteln_BAF1_H rdfs:label "Verspachteln_BAF1_H"@en .
+:Verspachteln_BAF2_A rdfs:label "Verspachteln_BAF2_A"@en .
+:Verspachteln_BAF2_B rdfs:label "Verspachteln_BAF2_B"@en .
+:Verspachteln_BAF2_C rdfs:label "Verspachteln_BAF2_C"@en .
+:Verspachteln_BAF2_D rdfs:label "Verspachteln_BAF2_D"@en .
+:Verspachteln_BAF2_E rdfs:label "Verspachteln_BAF2_E"@en .
+:Vertical rdfs:label "Vertical"@en .
+:VisibleAggregate rdfs:label "Visible Aggregate"@en .
+:VisibleReinforcement rdfs:label "Visible Reinforcement"@en .
+:VoidVisibleThroughDefect rdfs:label "Void Visible Through Defect"@en .
+:VortexFlowControl rdfs:label "Vortex Flow Control"@en .
+:WallInfiltration rdfs:label "Wall Infiltration"@en .
+:WallPartRepair rdfs:label "Wall Part Repair"@en .
+:Wastewater rdfs:label "Wastewater"@en .
+:WaterLevel rdfs:label "Water Level"@en .
+:WedgedInJointObstacle rdfs:label "Wedged In Joint Obstacle"@en .
+:WeirFlowControl rdfs:label "Weir Flow Control"@en .
+:WeldFailure rdfs:label "Weld Failure"@en .
+:WidensChannel rdfs:label "Widens Channel"@en .
+:WorkingBenching rdfs:label "Working Benching"@en .
+:WorkingChannel rdfs:label "Working Channel"@en .
+:WorkingGritTrap rdfs:label "Working Grit Trap"@en .
+:WorkingOtherPipelineThroughManhole rdfs:label "Working Other Pipeline Through Manhole"@en .
+:WorkingSlitPit rdfs:label "Working Slit Pit"@en .
+:WrinkledLining rdfs:label "Wrinkled Lining"@en .
+:WronglyConnectedIncomingSurfaceWaterPipe rdfs:label "Wrongly Connected Incoming Surface Water Pipe"@en .
+:WronglyConnectedIncomingWastewaterPipe rdfs:label "Wrongly Connected Incoming Wastewater Pipe"@en .
+:fräsen rdfs:label "fräsen"@en .
+:fräsen_BAF1_D rdfs:label "fräsen_BAF1_D"@en .
+:fräsen_BAF1_G rdfs:label "fräsen_BAF1_G"@en .
+:fräsen_Kurzliner_BAI1_A rdfs:label "fräsen_Kurzliner_BAI1_A"@en .
+:fräsen_Kurzliner_BAI1_Z rdfs:label "fräsen_Kurzliner_BAI1_Z"@en .
+:fräsen_Kurzliner_BAI2_A rdfs:label "fräsen_Kurzliner_BAI2_A"@en .
+:fräsen_Kurzliner_BAI2_B rdfs:label "fräsen_Kurzliner_BAI2_B"@en .
+:fräsen_Kurzliner_BAI2_C rdfs:label "fräsen_Kurzliner_BAI2_C"@en .
+:fräsen_Kurzliner_BAI2_D rdfs:label "fräsen_Kurzliner_BAI2_D"@en .
+:fräsen_Kurzliner_BBA_A rdfs:label "fräsen_Kurzliner_BBA_A"@en .
+:fräsen_Kurzliner_BBA_B rdfs:label "fräsen_Kurzliner_BBA_B"@en .
+:fräsen_Kurzliner_BBA_C rdfs:label "fräsen_Kurzliner_BBA_C"@en .
+:fräsen_Manschette_BAD1_A rdfs:label "fräsen_Manschette_BAD1_A"@en .
+:fräsen_Manschette_BAD1_B rdfs:label "fräsen_Manschette_BAD1_B"@en .
+:fräsen_Manschette_BAI1_A rdfs:label "fräsen_Manschette_BAI1_A"@en .
+:fräsen_Manschette_BAI1_Z rdfs:label "fräsen_Manschette_BAI1_Z"@en .
+:fräsen_Manschette_BAI2_A rdfs:label "fräsen_Manschette_BAI2_A"@en .
+:fräsen_Manschette_BAI2_B rdfs:label "fräsen_Manschette_BAI2_B"@en .
+:fräsen_Manschette_BAI2_C rdfs:label "fräsen_Manschette_BAI2_C"@en .
+:fräsen_Manschette_BAI2_D rdfs:label "fräsen_Manschette_BAI2_D"@en .
+:fräsen_Manschette_BBA_A rdfs:label "fräsen_Manschette_BBA_A"@en .
+:fräsen_Manschette_BBA_B rdfs:label "fräsen_Manschette_BBA_B"@en .
+:fräsen_Manschette_BBA_C rdfs:label "fräsen_Manschette_BBA_C"@en .
+:fräsen_Muffe_spachteln_BBA_A rdfs:label "fräsen_Muffe_spachteln_BBA_A"@en .
+:fräsen_Muffe_spachteln_BBA_B rdfs:label "fräsen_Muffe_spachteln_BBA_B"@en .
+:fräsen_Muffe_spachteln_BBA_C rdfs:label "fräsen_Muffe_spachteln_BBA_C"@en .
+:fräsen_Reinigung_BBB_A rdfs:label "fräsen_Reinigung_BBB_A"@en .
+:fräsen_Reinigung_BBB_B rdfs:label "fräsen_Reinigung_BBB_B"@en .
+:fräsen_Reinigung_BBB_C rdfs:label "fräsen_Reinigung_BBB_C"@en .
+:fräsen_Reinigung_BBC_C rdfs:label "fräsen_Reinigung_BBC_C"@en .
+:fräsen_Reinigung_BBE_D rdfs:label "fräsen_Reinigung_BBE_D"@en .
+:fräsen_Reinigung_BBE_E rdfs:label "fräsen_Reinigung_BBE_E"@en .
+:fräsen_Reinigung_BBE_F rdfs:label "fräsen_Reinigung_BBE_F"@en .
+:fräsen_Schlauchliner_BAI1_A rdfs:label "fräsen_Schlauchliner_BAI1_A"@en .
+:fräsen_Schlauchliner_BAI1_Z rdfs:label "fräsen_Schlauchliner_BAI1_Z"@en .
+:fräsen_Schlauchliner_BAI2_A rdfs:label "fräsen_Schlauchliner_BAI2_A"@en .
+:fräsen_Schlauchliner_BAI2_B rdfs:label "fräsen_Schlauchliner_BAI2_B"@en .
+:fräsen_Schlauchliner_BAI2_C rdfs:label "fräsen_Schlauchliner_BAI2_C"@en .
+:fräsen_Schlauchliner_BAI2_D rdfs:label "fräsen_Schlauchliner_BAI2_D"@en .
+:fräsen_Schlauchliner_BBA_A rdfs:label "fräsen_Schlauchliner_BBA_A"@en .
+:fräsen_Schlauchliner_BBA_B rdfs:label "fräsen_Schlauchliner_BBA_B"@en .
+:fräsen_Schlauchliner_BBA_C rdfs:label "fräsen_Schlauchliner_BBA_C"@en .
+:fräsen_Verspachteln_BAB1_A rdfs:label "fräsen_Verspachteln_BAB1_A"@en .
+:fräsen_Verspachteln_BAB1_B rdfs:label "fräsen_Verspachteln_BAB1_B"@en .
+:fräsen_Verspachteln_BAB1_C rdfs:label "fräsen_Verspachteln_BAB1_C"@en .
+:fräsen_Verspachteln_BAB2_A rdfs:label "fräsen_Verspachteln_BAB2_A"@en .
+:fräsen_Verspachteln_BAB2_B rdfs:label "fräsen_Verspachteln_BAB2_B"@en .
+:fräsen_Verspachteln_BAB2_C rdfs:label "fräsen_Verspachteln_BAB2_C"@en .
+:fräsen_Verspachteln_BAB2_D rdfs:label "fräsen_Verspachteln_BAB2_D"@en .
+:fräsen_Verspachteln_BAB2_Z rdfs:label "fräsen_Verspachteln_BAB2_Z"@en .
+:fräsen_Verspachteln_BAI1_A rdfs:label "fräsen_Verspachteln_BAI1_A"@en .
+:fräsen_Verspachteln_BAI1_Z rdfs:label "fräsen_Verspachteln_BAI1_Z"@en .
+:fräsen_Verspachteln_BAI2_A rdfs:label "fräsen_Verspachteln_BAI2_A"@en .
+:fräsen_Verspachteln_BAI2_B rdfs:label "fräsen_Verspachteln_BAI2_B"@en .
+:fräsen_Verspachteln_BAI2_C rdfs:label "fräsen_Verspachteln_BAI2_C"@en .
+:fräsen_Verspachteln_BAI2_D rdfs:label "fräsen_Verspachteln_BAI2_D"@en .
+:kA rdfs:label "kA"@en .
+:kA_BAC_Z rdfs:label "kA_BAC_Z"@en .
+:kA_BAK1_Z rdfs:label "kA_BAK1_Z"@en .
+:kA_BBB_Z rdfs:label "kA_BBB_Z"@en .
+:kA_BBC_Z rdfs:label "kA_BBC_Z"@en .
+:kA_BBD_Z rdfs:label "kA_BBD_Z"@en .
+:kA_BBE_H rdfs:label "kA_BBE_H"@en .
+:kA_BBE_Z rdfs:label "kA_BBE_Z"@en .
+###  ---- END GENERATED LABELS ----
+
 
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

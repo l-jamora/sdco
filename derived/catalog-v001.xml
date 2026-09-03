@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <uri id="User Entered Import Resolution" name="https://l-jamora.github.io/sdco" uri="file:/C:/Users/jluis/GitHub/ICOM/sdco/SDCO.rdf"/>
+    <uri id="User Entered Import Resolution" name="https://l-jamora.github.io/sdco" uri="file:/home/jluis/Repositories/ICOM/sdco/SDCO.rdf"/>
     <uri name="http://www.semanticweb.org/jluis/ontologies/sdco" uri="../SDCO.rdf"/>
 </catalog>

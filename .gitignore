@@ -5,3 +5,4 @@ scripts/__pycache__/*
 .pytest_cache/*
 .vscode/*
 SDCO-dwa-parsed.rdf
+.venv/

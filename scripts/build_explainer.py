@@ -115,7 +115,7 @@ def meaning_of(g: Graph, cls: URIRef):
         if (restr, RDF.type, OWL.Restriction) in g:
             filler = g.value(restr, OWL.someValuesFrom)
             if filler is not None:
-                fillers.append(humanize(local_name(filler)))
+                fillers.append(str(g.value(filler, RDFS.label) or humanize(local_name(filler))))
     return "; ".join(fillers) if fillers else None
 
 
