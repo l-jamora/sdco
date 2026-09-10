@@ -2418,9 +2418,9 @@ Circumferntial Location: Should be recorded""" ;
      rdfs:subClassOf :PipeOperation ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasPipeOperationDamage ;
-                       owl:someValuesFrom :OtherObstacle
+                       owl:someValuesFrom :Obstacle
                      ] ;
-     rdfs:label "BBE (Other Obstacle)"@en .
+     rdfs:label "BBE (Obstacle)"@en .
 
 
 ###  https://l-jamora.github.io/sdco#BBE_A
