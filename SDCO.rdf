@@ -3026,8 +3026,12 @@ Circumferntial Location: Should be recorded""" ;
                                                 ) ;
                              rdf:type owl:Class
                            ] ;
-       rdfs:subClassOf :BCB ;
-       rdfs:label "BCB char1=A"@en .
+       rdfs:subClassOf :BCB ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasPipeInventoryFeature ;
+                         owl:someValuesFrom :PipeReplacedRepair
+                       ] ;
+       rdfs:label "BCB char1=A (Pipe Replaced Repair)"@en .
 
 
 ###  https://l-jamora.github.io/sdco#BCB_B
@@ -3040,8 +3044,12 @@ Circumferntial Location: Should be recorded""" ;
                                                 ) ;
                              rdf:type owl:Class
                            ] ;
-       rdfs:subClassOf :BCB ;
-       rdfs:label "BCB char1=B"@en .
+       rdfs:subClassOf :BCB ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasPipeInventoryFeature ;
+                         owl:someValuesFrom :LocalisedLiningOfPipeRepair
+                       ] ;
+       rdfs:label "BCB char1=B (Localised Lining Of Pipe Repair)"@en .
 
 
 ###  https://l-jamora.github.io/sdco#BCB_C
@@ -3054,8 +3062,12 @@ Circumferntial Location: Should be recorded""" ;
                                                 ) ;
                              rdf:type owl:Class
                            ] ;
-       rdfs:subClassOf :BCB ;
-       rdfs:label "BCB char1=C"@en .
+       rdfs:subClassOf :BCB ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasPipeInventoryFeature ;
+                         owl:someValuesFrom :InjectedMortarRepair
+                       ] ;
+       rdfs:label "BCB char1=C (Injected Mortar Repair)"@en .
 
 
 ###  https://l-jamora.github.io/sdco#BCB_D
@@ -3068,8 +3080,12 @@ Circumferntial Location: Should be recorded""" ;
                                                 ) ;
                              rdf:type owl:Class
                            ] ;
-       rdfs:subClassOf :BCB ;
-       rdfs:label "BCB char1=D"@en .
+       rdfs:subClassOf :BCB ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasPipeInventoryFeature ;
+                         owl:someValuesFrom :OtherInjectedSealingMaterialRepair
+                       ] ;
+       rdfs:label "BCB char1=D (Other Injected Sealing Material Repair)"@en .
 
 
 ###  https://l-jamora.github.io/sdco#BCB_E
@@ -3082,8 +3098,12 @@ Circumferntial Location: Should be recorded""" ;
                                                 ) ;
                              rdf:type owl:Class
                            ] ;
-       rdfs:subClassOf :BCB ;
-       rdfs:label "BCB char1=E"@en .
+       rdfs:subClassOf :BCB ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasPipeInventoryFeature ;
+                         owl:someValuesFrom :HoleRepair
+                       ] ;
+       rdfs:label "BCB char1=E (Hole Repair)"@en .
 
 
 ###  https://l-jamora.github.io/sdco#BCB_F
@@ -3096,8 +3116,12 @@ Circumferntial Location: Should be recorded""" ;
                                                 ) ;
                              rdf:type owl:Class
                            ] ;
-       rdfs:subClassOf :BCB ;
-       rdfs:label "BCB char1=F"@en .
+       rdfs:subClassOf :BCB ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasPipeInventoryFeature ;
+                         owl:someValuesFrom :LocalisedLiningOfConnectionRepair
+                       ] ;
+       rdfs:label "BCB char1=F (Localised Lining Of Connection Repair)"@en .
 
 
 ###  https://l-jamora.github.io/sdco#BCB_G
@@ -3110,8 +3134,12 @@ Circumferntial Location: Should be recorded""" ;
                                                 ) ;
                              rdf:type owl:Class
                            ] ;
-       rdfs:subClassOf :BCB ;
-       rdfs:label "BCB char1=G"@en .
+       rdfs:subClassOf :BCB ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasPipeInventoryFeature ;
+                         owl:someValuesFrom :OtherRepairOfConnection
+                       ] ;
+       rdfs:label "BCB char1=G (Other Repair Of Connection)"@en .
 
 
 ###  https://l-jamora.github.io/sdco#BCB_Z
@@ -3124,8 +3152,12 @@ Circumferntial Location: Should be recorded""" ;
                                                 ) ;
                              rdf:type owl:Class
                            ] ;
-       rdfs:subClassOf :BCB ;
-       rdfs:label "BCB char1=Z"@en .
+       rdfs:subClassOf :BCB ,
+                       [ rdf:type owl:Restriction ;
+                         owl:onProperty :hasPipeInventoryFeature ;
+                         owl:someValuesFrom :OtherTrenchlessRepair
+                       ] ;
+       rdfs:label "BCB char1=Z (Other Trenchless Repair)"@en .
 
 
 ###  https://l-jamora.github.io/sdco#BCC
@@ -10127,6 +10159,12 @@ DCM This is used to record the presence of a grit trap (bucket) under the cover.
 :LocalisedLiningOfConnectionRepair rdf:type owl:Class ;
                                    rdfs:subClassOf :PointRepair ;
                                    rdfs:label "Localised Lining Of Connection Repair"@en .
+
+
+###  https://l-jamora.github.io/sdco#OtherRepairOfConnection
+:OtherRepairOfConnection rdf:type owl:Class ;
+                         rdfs:subClassOf :PointRepair ;
+                         rdfs:label "Other Repair Of Connection"@en .
 
 
 ###  https://l-jamora.github.io/sdco#LocalisedLiningOfManholeOrInspectionChamberRepair
