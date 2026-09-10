@@ -3734,7 +3734,7 @@ Circumferntial Location: Should be recorded""" ;
         rdfs:subClassOf :BDC ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasTerminationReason ;
-                          owl:someValuesFrom :InspectionComplete
+                          owl:someValuesFrom :InspectionCompleteWithPreviousPartialInspection
                         ] ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasTerminationReason ;
@@ -10013,7 +10013,15 @@ DCM This is used to record the presence of a grit trap (bucket) under the cover.
 ###  https://l-jamora.github.io/sdco#InspectionComplete
 :InspectionComplete rdf:type owl:Class ;
                     rdfs:subClassOf :InspectionStatus ;
+                    rdfs:comment "The inspection reached its objective. BDC/DDC characterization 2 = A (objective achieved before the finish node was reached)."@en ;
                     rdfs:label "Inspection Complete"@en .
+
+
+###  https://l-jamora.github.io/sdco#InspectionCompleteWithPreviousPartialInspection
+:InspectionCompleteWithPreviousPartialInspection rdf:type owl:Class ;
+                                                 rdfs:subClassOf :InspectionComplete ;
+                                                 rdfs:comment "The whole-pipeline inspection is complete only when this inspection is considered together with a previous partial inspection. BDC characterization 2 = C - distinct from bare :InspectionComplete (char2 = A), which needs no prior inspection."@en ;
+                                                 rdfs:label "Inspection Complete With Previous Partial Inspection"@en .
 
 
 ###  https://l-jamora.github.io/sdco#InspectionIncomplete
