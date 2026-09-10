@@ -262,25 +262,29 @@ Whether the connection is incoming or outgoing or has been sealed:  connection d
 ###  https://l-jamora.github.io/sdco#ArchShapedConnectingPipeline
 :ArchShapedConnectingPipeline rdf:type owl:Class ;
                               rdfs:subClassOf :ConnectingPipeline ;
-                              rdfs:label "Arch Shaped Connecting Pipeline"@en .
+                              rdfs:label "Arch Shaped Connecting Pipeline"@en ;
+                              rdfs:comment "A pipe cross-section with a circular soffit and a flat invert, joined by parallel sides. Used for DCG char1 (E)." .
 
 
 ###  https://l-jamora.github.io/sdco#AtmosphereWithin
 :AtmosphereWithin rdf:type owl:Class ;
                   rdfs:subClassOf :OtherObservation ;
-                  rdfs:label "Atmosphere Within"@en .
+                  rdfs:label "Atmosphere Within"@en ;
+                  rdfs:comment "A potentially hazardous atmosphere (oxygen deficiency, hydrogen sulfide, methane) was detected in the pipe or chamber. Used for BDF (pipe) and DDF (manhole/chamber), with char giving the hazard type as its subclasses." .
 
 
 ###  https://l-jamora.github.io/sdco#AttachedDeposits
 :AttachedDeposits rdf:type owl:Class ;
                   rdfs:subClassOf :OperationalDefect ;
-                  rdfs:label "Attached Deposits"@en .
+                  rdfs:label "Attached Deposits"@en ;
+                  rdfs:comment "Material such as encrustation, grease or fouling is attached to the wall of the pipe or chamber. Used for BBB (pipe) and DBB (manhole/chamber), with char giving the material type as its subclasses." .
 
 
 ###  https://l-jamora.github.io/sdco#AuthorityInstruction
 :AuthorityInstruction rdf:type owl:Class ;
                       rdfs:subClassOf :Cause ;
-                      rdfs:label "Authority Instruction"@en .
+                      rdfs:label "Authority Instruction"@en ;
+                      rdfs:comment "Records that the inspection was terminated on the instruction of the employing authority rather than for a technical reason. Used for BDC char2 (B) and DDC char2 (B)." .
 
 
 ###  https://l-jamora.github.io/sdco#BAA
@@ -4292,7 +4296,8 @@ The wastewater flowing from the incoming pipe is:
 ###  https://l-jamora.github.io/sdco#BackdropConnection
 :BackdropConnection rdf:type owl:Class ;
                     rdfs:subClassOf :NodeConnection ;
-                    rdfs:label "Backdrop Connection"@en .
+                    rdfs:label "Backdrop Connection"@en ;
+                    rdfs:comment "The connecting pipe discharges via a backdrop: an enclosed vertical pipe carrying flow from a higher-level drain down to the manhole invert. Used for DCA char1 (C)." .
 
 
 ###  https://l-jamora.github.io/sdco#Benching
@@ -4307,7 +4312,8 @@ Created for code DCA (Connection Type, Node Inventory Code), char2."""@en ;
 ###  https://l-jamora.github.io/sdco#BenchingConnection
 :BenchingConnection rdf:type owl:Class ;
                     rdfs:subClassOf :NodeConnection ;
-                    rdfs:label "Benching Connection"@en .
+                    rdfs:label "Benching Connection"@en ;
+                    rdfs:comment "The connecting pipe discharges directly into the benching. Used for DCA char1 (A)." .
 
 
 ###  https://l-jamora.github.io/sdco#BenchingConnectionInfiltration
@@ -4326,13 +4332,15 @@ Created for code DCA (Connection Type, Node Inventory Code), char2."""@en ;
 ###  https://l-jamora.github.io/sdco#BlisteredOrInternalBulgeLining
 :BlisteredOrInternalBulgeLining rdf:type owl:Class ;
                                 rdfs:subClassOf :Lining ;
-                                rdfs:label "Blistered Or Internal Bulge Lining"@en .
+                                rdfs:label "Blistered Or Internal Bulge Lining"@en ;
+                                rdfs:comment "The lining has blistered or bulged inward from the host wall. Used for BAK char1 (E) and DAK char1 (E), distinct from Blistering, which is a bulge in the host wall's own surface rather than the lining." .
 
 
 ###  https://l-jamora.github.io/sdco#Blistering
 :Blistering rdf:type owl:Class ;
             rdfs:subClassOf :Surface ;
-            rdfs:label "Blistering"@en .
+            rdfs:label "Blistering"@en ;
+            rdfs:comment "An internal bulge in the pipe or chamber wall's own surface, distinct from a lining bulge (BlisteredOrInternalBulgeLining). Used for BAF char1 (K) and DAF char1 (K)." .
 
 
 ###  https://l-jamora.github.io/sdco#BlockedConnection
@@ -4351,7 +4359,8 @@ Created for code DCA (Connection Type, Node Inventory Code), char2."""@en ;
 ###  https://l-jamora.github.io/sdco#BreakOrCollapse
 :BreakOrCollapse rdf:type owl:Class ;
                  rdfs:subClassOf :StructuralDefect ;
-                 rdfs:label "Break Or Collapse"@en .
+                 rdfs:label "Break Or Collapse"@en ;
+                 rdfs:comment "A structural failure ranging from displaced but still-present pieces, through missing pieces, to a complete loss of structural integrity. Used for BAC (pipe) and DAC (manhole/chamber), with Break, MissingWallBreakOrCollapse and CollapsedBreakOrCollapse as its char subclasses." .
 
 
 ###  https://l-jamora.github.io/sdco#BrickMasonryLayerVisible
@@ -4381,7 +4390,8 @@ Created for code DCA (Connection Type, Node Inventory Code), char2."""@en ;
 ###  https://l-jamora.github.io/sdco#BrokenPlasticEncapsulationOfStep
 :BrokenPlasticEncapsulationOfStep rdf:type owl:Class ;
                                   rdfs:subClassOf :DefectiveStepOrLadder ;
-                                  rdfs:label "Broken Plastic Encapsulation Of Step"@en .
+                                  rdfs:label "Broken Plastic Encapsulation Of Step"@en ;
+                                  rdfs:comment "The plastic coating (encapsulation) around a step has cracked or broken, exposing the metal step beneath to corrosion. Used only for DAQ char (E)." .
 
 
 ###  https://l-jamora.github.io/sdco#BuiltIntoStructureObstacle
@@ -4393,7 +4403,8 @@ Created for code DCA (Connection Type, Node Inventory Code), char2."""@en ;
 ###  https://l-jamora.github.io/sdco#CameraUnderwater
 :CameraUnderwater rdf:type owl:Class ;
                   rdfs:subClassOf :Cause ;
-                  rdfs:label "Camera Underwater"@en .
+                  rdfs:label "Camera Underwater"@en ;
+                  rdfs:comment "The view is obstructed because the camera itself is under water. Used for BDG char (A) and DDG char (A)." .
 
 
 ###  https://l-jamora.github.io/sdco#Cause
@@ -4430,38 +4441,44 @@ Also to describe DDC InspectionTermination Reasons"""@en ;
 ###  https://l-jamora.github.io/sdco#ChannelInBenching
 :ChannelInBenching rdf:type owl:Class ;
                    rdfs:subClassOf :Benching ;
-                   rdfs:label "Channel In Benching"@en .
+                   rdfs:label "Channel In Benching"@en ;
+                   rdfs:comment "The connecting pipe's channel runs within the benching itself, one of four benching-arrangement diagrams in the standard. Used for DCA char2 (A)." .
 
 
 ###  https://l-jamora.github.io/sdco#Chemical
 :Chemical rdf:type owl:Class ;
           rdfs:subClassOf :Cause ;
-          rdfs:label "Chemical"@en .
+          rdfs:label "Chemical"@en ;
+          rdfs:comment "One of the listed causes of surface damage, denoting general chemical attack on the wall. Used for BAF char2 (B) and DAF char2 (B), and is the parent of ChemicalUpperPart and ChemicalLowerPart, which record where in the cross-section the chemical damage occurs." .
 
 
 ###  https://l-jamora.github.io/sdco#ChemicalLowerPart
 :ChemicalLowerPart rdf:type owl:Class ;
                    rdfs:subClassOf :Chemical ;
                    owl:disjointWith :ChemicalUpperPart ;
-                   rdfs:label "Chemical Lower Part"@en .
+                   rdfs:label "Chemical Lower Part"@en ;
+                   rdfs:comment "Chemical surface damage located in the lower part of the pipe or channel. Used for BAF char2 (D) and DAF char2 (D), distinguished from ChemicalUpperPart by location in the cross-section." .
 
 
 ###  https://l-jamora.github.io/sdco#ChemicalUpperPart
 :ChemicalUpperPart rdf:type owl:Class ;
                    rdfs:subClassOf :Chemical ;
-                   rdfs:label "Chemical Upper Part"@en .
+                   rdfs:label "Chemical Upper Part"@en ;
+                   rdfs:comment "Chemical surface damage located in the upper part of the pipe or channel. Used for BAF char2 (C) and DAF char2 (C), distinguished from ChemicalLowerPart by location in the cross-section." .
 
 
 ###  https://l-jamora.github.io/sdco#ChiselledPlainConnection
 :ChiselledPlainConnection rdf:type owl:Class ;
                           rdfs:subClassOf :PipeConnection ;
-                          rdfs:label "Chiselled Plain Connection"@en .
+                          rdfs:label "Chiselled Plain Connection"@en ;
+                          rdfs:comment "A connection made without any special fitting, through a rough hole formed with a hammer and chisel. Used for BCA char1 (E), distinguished from DrilledPlainConnection by the hole-forming method." .
 
 
 ###  https://l-jamora.github.io/sdco#ChiselledSaddleConnection
 :ChiselledSaddleConnection rdf:type owl:Class ;
                            rdfs:subClassOf :PipeConnection ;
-                           rdfs:label "Chiselled Saddle Connection"@en .
+                           rdfs:label "Chiselled Saddle Connection"@en ;
+                           rdfs:comment "A connection made using a saddle fitting through a rough hole formed with a hammer and chisel. Used for BCA char1 (C), distinguished from DrilledSaddleConnection by the hole-forming method." .
 
 
 ###  https://l-jamora.github.io/sdco#CircularConnectingPipeline
@@ -4485,20 +4502,23 @@ Also to describe DDC InspectionTermination Reasons"""@en ;
 ###  https://l-jamora.github.io/sdco#ClearEffluentWastewater
 :ClearEffluentWastewater rdf:type owl:Class ;
                          rdfs:subClassOf :Wastewater ;
-                         rdfs:label "Clear Effluent Wastewater"@en .
+                         rdfs:label "Clear Effluent Wastewater"@en ;
+                         rdfs:comment "The wastewater is clear enough that the invert is visible. Used for BDD (A), BDE char1 (A) and DDE char1 (A)." .
 
 
 ###  https://l-jamora.github.io/sdco#ClosedConnection
 :ClosedConnection rdf:type owl:Class ;
                   rdfs:subClassOf :PipeConnection ;
                   owl:disjointWith :OpenConnection ;
-                  rdfs:label "Closed Connection"@en .
+                  rdfs:label "Closed Connection"@en ;
+                  rdfs:comment "Records that the connection has been closed off; either a junction left for future use or one that has been cut off. Used for BCA char2 (B)." .
 
 
 ###  https://l-jamora.github.io/sdco#CoarseSettledDeposit
 :CoarseSettledDeposit rdf:type owl:Class ;
                       rdfs:subClassOf :SettledDeposit ;
-                      rdfs:label "Coarse Settled Deposit"@en .
+                      rdfs:label "Coarse Settled Deposit"@en ;
+                      rdfs:comment "Coarse settled material such as rubble or gravel. Used for BBC char (B) and DBC char (B)." .
 
 
 ###  https://l-jamora.github.io/sdco#CoatedDebrisSafetyBar
@@ -4535,7 +4555,8 @@ Also to describe DDC InspectionTermination Reasons"""@en ;
 ###  https://l-jamora.github.io/sdco#ColouredWastewater
 :ColouredWastewater rdf:type owl:Class ;
                     rdfs:subClassOf :Wastewater ;
-                    rdfs:label "Coloured Wastewater"@en .
+                    rdfs:label "Coloured Wastewater"@en ;
+                    rdfs:comment "The wastewater is coloured; the combined 'turbid and coloured' value (E) is also mapped onto this class. Used for BDD (D)/(E) and BDE char1 (D)/(E)." .
 
 
 ###  https://l-jamora.github.io/sdco#Complex
@@ -4553,7 +4574,8 @@ Also to describe DDC InspectionTermination Reasons"""@en ;
 ###  https://l-jamora.github.io/sdco#ConnectingPipeline
 :ConnectingPipeline rdf:type owl:Class ;
                     rdfs:subClassOf :Inventory ;
-                    rdfs:label "Connecting Pipeline"@en .
+                    rdfs:label "Connecting Pipeline"@en ;
+                    rdfs:comment "Details of a pipeline connecting to the manhole or inspection chamber, primarily its cross-sectional shape. Used for DCG char1, with the specific shapes as subclasses; the pipe-side standard has no equivalent code, since a connecting pipeline's shape there is only captured in BCA's remarks." .
 
 
 ###  https://l-jamora.github.io/sdco#ConnectingPipelineDischargeDirection
@@ -4568,7 +4590,8 @@ Whether the connection is incoming or outgoing or has been sealed:  connection d
 ###  https://l-jamora.github.io/sdco#Connection
 :Connection rdf:type owl:Class ;
             rdfs:subClassOf :Inventory ;
-            rdfs:label "Connection"@en .
+            rdfs:label "Connection"@en ;
+            rdfs:comment "Another pipeline is connected to the pipe being inspected; most such connections are assumed circular unless recorded otherwise. Used for BCA (pipe); the node-side connection concept is instead split across NodeConnection (DCA) and ConnectingPipeline (DCG)." .
 
 
 ###  https://l-jamora.github.io/sdco#ConnectionClosed
@@ -4580,7 +4603,8 @@ Whether the connection is incoming or outgoing or has been sealed:  connection d
 ###  https://l-jamora.github.io/sdco#ConnectionDischargeBneching
 :ConnectionDischargeBneching rdf:type owl:Class ;
                              rdfs:subClassOf :Benching ;
-                             rdfs:label "Connection Discharge Bneching"@en .
+                             rdfs:label "Connection Discharge Bneching"@en ;
+                             rdfs:comment "The connection discharges across the surface of the benching rather than through a formed channel. Used for DCA char2 (B)." .
 
 
 ###  https://l-jamora.github.io/sdco#ConnectionDischargeFromNode
@@ -4598,20 +4622,23 @@ Whether the connection is incoming or outgoing or has been sealed:  connection d
 ###  https://l-jamora.github.io/sdco#ConnectionNotEvident
 :ConnectionNotEvident rdf:type owl:Class ;
                       rdfs:subClassOf :PipeConnection ;
-                      rdfs:label "Connection Not Evident"@en .
+                      rdfs:label "Connection Not Evident"@en ;
+                      rdfs:comment "Records that the type of connection fitting could not be determined during inspection. Used for BCA char1 (G)." .
 
 
 ###  https://l-jamora.github.io/sdco#ContinuationFlowControl
 :ContinuationFlowControl rdf:type owl:Class ;
                          rdfs:subClassOf :FlowControl ;
                          owl:disjointWith :OverflowControl ;
-                         rdfs:label "Continuation Flow Control"@en .
+                         rdfs:label "Continuation Flow Control"@en ;
+                         rdfs:comment "Records that the flow-control device controls the continuing (foul-water) flow rather than an overflow. Used for DCK char2 (A)." .
 
 
 ###  https://l-jamora.github.io/sdco#CorrectConnection
 :CorrectConnection rdf:type owl:Class ;
                    rdfs:subClassOf :FlowFromIncomingPipe ;
-                   rdfs:label "Correct Connection"@en .
+                   rdfs:label "Correct Connection"@en ;
+                   rdfs:comment "The connecting pipe was not observed to be wrongly connected. Used for BDE char2 (C) and DDE char2 (C)." .
 
 
 ###  https://l-jamora.github.io/sdco#CorrodedLadderHandrail
@@ -4665,7 +4692,8 @@ Whether the connection is incoming or outgoing or has been sealed:  connection d
 ###  https://l-jamora.github.io/sdco#CrackFissure
 :CrackFissure rdf:type owl:Class ;
               rdfs:subClassOf :Fissure ;
-              rdfs:label "Crack Fissure"@en .
+              rdfs:label "Crack Fissure"@en ;
+              rdfs:comment "A fissure where crack lines are visible on the wall but the pieces remain in place; more severe than a surface crack but not yet an open fracture. Used for BAB char1 (B) and DAB char1 (B)." .
 
 
 ###  https://l-jamora.github.io/sdco#CrackInRepairMaterial
@@ -4677,7 +4705,8 @@ Whether the connection is incoming or outgoing or has been sealed:  connection d
 ###  https://l-jamora.github.io/sdco#CrackOrSplitOrWeldFailure
 :CrackOrSplitOrWeldFailure rdf:type owl:Class ;
                            rdfs:subClassOf :Lining ;
-                           rdfs:label "Crack Or Split Or Weld Failure"@en .
+                           rdfs:label "Crack Or Split Or Weld Failure"@en ;
+                           rdfs:comment "The lining has a crack, a split, or a failed weld. Used for BAK char1 (I) and DAK char1 (I); DIN treats these three distinct fault types as a single characterization value, which SDCO mirrors in one class rather than splitting them." .
 
 
 ###  https://l-jamora.github.io/sdco#CrossSection
@@ -9520,37 +9549,43 @@ DCO Characterisation The shape of the horizontal (plan) cross-section of the man
 ###  https://l-jamora.github.io/sdco#Defect
 :Defect rdf:type owl:Class ;
         rdfs:subClassOf :Observation ;
-        rdfs:label "Defect"@en .
+        rdfs:label "Defect"@en ;
+        rdfs:comment "The standard groups its fabric-condition and operation-condition main codes (BA../BB.. for pipes, DA../DB.. for nodes) under these two editorial headings, without restricting how the codes may be combined. SDCO mirrors that split with StructuralDefect and OperationalDefect as the two children of Defect." .
 
 
 ###  https://l-jamora.github.io/sdco#DefectiveBenching
 :DefectiveBenching rdf:type owl:Class ;
                    rdfs:subClassOf :Benching ;
-                   rdfs:label "Defective Benching"@en .
+                   rdfs:label "Defective Benching"@en ;
+                   rdfs:comment "Records that the benching is defective. Used for DCH char (A)." .
 
 
 ###  https://l-jamora.github.io/sdco#DefectiveBrickworkOrMasonry
 :DefectiveBrickworkOrMasonry rdf:type owl:Class ;
                              rdfs:subClassOf :StructuralDefect ;
-                             rdfs:label "Defective Brickwork Or Masonry"@en .
+                             rdfs:label "Defective Brickwork Or Masonry"@en ;
+                             rdfs:comment "Individual bricks or masonry units of a brick/masonry pipe or chamber have moved, gone missing, or (pipes only) let the invert drop, from their original position. Used for BAD (pipe) and DAD (manhole/chamber)." .
 
 
 ###  https://l-jamora.github.io/sdco#DefectiveChannel
 :DefectiveChannel rdf:type owl:Class ;
                   rdfs:subClassOf :Channel ;
-                  rdfs:label "Defective Channel"@en .
+                  rdfs:label "Defective Channel"@en ;
+                  rdfs:comment "Records that the channel is defective. Used for DCI char1 (A)." .
 
 
 ###  https://l-jamora.github.io/sdco#DefectiveConnection
 :DefectiveConnection rdf:type owl:Class ;
                      rdfs:subClassOf :StructuralDefect ;
-                     rdfs:label "Defective Connection"@en .
+                     rdfs:label "Defective Connection"@en ;
+                     rdfs:comment "A connection to the pipe or chamber is faulty; wrongly positioned, gapped, damaged or blocked. Used for BAH (pipe) and DAH (manhole/chamber), with char giving the specific defect type as its subclasses." .
 
 
 ###  https://l-jamora.github.io/sdco#DefectiveCoverOrFrame
 :DefectiveCoverOrFrame rdf:type owl:Class ;
                        rdfs:subClassOf :StructuralDefect ;
-                       rdfs:label "Defective Cover Or Frame"@en .
+                       rdfs:label "Defective Cover Or Frame"@en ;
+                       rdfs:comment "There is a defect in the manhole or inspection chamber cover or frame; broken, rocking, missing, or set above/below the surrounding surface level. Used only for DAR; the standard defines no pipe-side equivalent, since pipes have no cover." .
 
 
 ###  https://l-jamora.github.io/sdco#DefectiveEndOfLining
@@ -9575,7 +9610,8 @@ DCO Characterisation The shape of the horizontal (plan) cross-section of the man
 ###  https://l-jamora.github.io/sdco#DefectiveRepair
 :DefectiveRepair rdf:type owl:Class ;
                  rdfs:subClassOf :StructuralDefect ;
-                 rdfs:label "Defective Repair"@en .
+                 rdfs:label "Defective Repair"@en ;
+                 rdfs:comment "A previously carried-out repair to the pipe or chamber wall now itself has a defect. Used for BAL (pipe, requires the BCB point-repair code too) and DAL (manhole/chamber, requires DCB too), with char1 giving the specific defect type." .
 
 
 ###  https://l-jamora.github.io/sdco#DefectiveSafetyBar
@@ -9600,7 +9636,8 @@ DCO Characterisation The shape of the horizontal (plan) cross-section of the man
 ###  https://l-jamora.github.io/sdco#DefectiveStepOrLadder
 :DefectiveStepOrLadder rdf:type owl:Class ;
                        rdfs:subClassOf :StructuralDefect ;
-                       rdfs:label "Defective Step Or Ladder"@en .
+                       rdfs:label "Defective Step Or Ladder"@en ;
+                       rdfs:comment "There is a defect in an access step, ladder or toe hole inside a manhole or inspection chamber. Used only for DAQ; the standard defines no pipe-side equivalent, since pipes have no steps or ladders." .
 
 
 ###  https://l-jamora.github.io/sdco#DefectiveToeHole
@@ -9612,7 +9649,8 @@ DCO Characterisation The shape of the horizontal (plan) cross-section of the man
 ###  https://l-jamora.github.io/sdco#Deformation
 :Deformation rdf:type owl:Class ;
              rdfs:subClassOf :StructuralDefect ;
-             rdfs:label "Deformation"@en .
+             rdfs:label "Deformation"@en ;
+             rdfs:comment "The cross-sectional shape of the pipe or chamber has changed from its original shape, either generally across a wide area or as a localised deformation. Used for BAA (pipe) and DAA (manhole/chamber); DAA further splits into GeneralDeformation and LocalisedDeformation, a distinction BAA does not make." .
 
 
 ###  https://l-jamora.github.io/sdco#DetachedLining
@@ -9630,7 +9668,8 @@ DCO Characterisation The shape of the horizontal (plan) cross-section of the man
 ###  https://l-jamora.github.io/sdco#DiscountinuedWastewaterCode
 :DiscountinuedWastewaterCode rdf:type owl:Class ;
                              rdfs:subClassOf :Wastewater ;
-                             rdfs:label "Discountinued Wastewater Code"@en .
+                             rdfs:label "Discountinued Wastewater Code"@en ;
+                             rdfs:comment "A wastewater-appearance value retained from an earlier edition of the standard whose use has since been discontinued. Used for BDD (B), BDE char1 (B) and DDE char1 (B)." .
 
 
 ###  https://l-jamora.github.io/sdco#DisplacedBrickworkOrMasonry
@@ -9642,13 +9681,15 @@ DCO Characterisation The shape of the horizontal (plan) cross-section of the man
 ###  https://l-jamora.github.io/sdco#DisplacedJoint
 :DisplacedJoint rdf:type owl:Class ;
                 rdfs:subClassOf :StructuralDefect ;
-                rdfs:label "Displaced Joint"@en .
+                rdfs:label "Displaced Joint"@en ;
+                rdfs:comment "Adjacent pipe units, or adjacent chamber units, are displaced out of their intended alignment relative to each other. Used for BAJ (pipe, char: longitudinal/radial/angular) and DAJ (manhole/chamber, char: vertical/horizontal/angular); the two codes reuse different sets of Orientation values for the same displacement concept." .
 
 
 ###  https://l-jamora.github.io/sdco#DisplacedSealingRing
 :DisplacedSealingRing rdf:type owl:Class ;
                       rdfs:subClassOf :IntrudingSealingRing ;
-                      rdfs:label "Displaced Sealing Ring"@en .
+                      rdfs:label "Displaced Sealing Ring"@en ;
+                      rdfs:comment "The sealing ring is visibly displaced from its joint but is not intruding into the bore. Used for BAI char2 (A) and DAI char2 (A)." .
 
 
 ###  https://l-jamora.github.io/sdco#Down
@@ -9660,31 +9701,36 @@ DCO Characterisation The shape of the horizontal (plan) cross-section of the man
 ###  https://l-jamora.github.io/sdco#DrilledPlainConnection
 :DrilledPlainConnection rdf:type owl:Class ;
                         rdfs:subClassOf :PipeConnection ;
-                        rdfs:label "Drilled Plain Connection"@en .
+                        rdfs:label "Drilled Plain Connection"@en ;
+                        rdfs:comment "A connection made without any special fitting, through a neat, drilled hole. Used for BCA char1 (D), distinguished from ChiselledPlainConnection by the hole-forming method." .
 
 
 ###  https://l-jamora.github.io/sdco#DrilledSaddleConnection
 :DrilledSaddleConnection rdf:type owl:Class ;
                          rdfs:subClassOf :PipeConnection ;
-                         rdfs:label "Drilled Saddle Connection"@en .
+                         rdfs:label "Drilled Saddle Connection"@en ;
+                         rdfs:comment "A connection made using a saddle fitting through a neat, drilled hole. Used for BCA char1 (B), distinguished from ChiselledSaddleConnection by the hole-forming method." .
 
 
 ###  https://l-jamora.github.io/sdco#DrippingInfiltration
 :DrippingInfiltration rdf:type owl:Class ;
                       rdfs:subClassOf :Infiltration ;
-                      rdfs:label "Dripping Infiltration"@en .
+                      rdfs:label "Dripping Infiltration"@en ;
+                      rdfs:comment "Water enters as intermittent drips rather than a continuous flow. Used for BBF char (B) and DBF char1 (B)." .
 
 
 ###  https://l-jamora.github.io/sdco#DroppedInvertBrickworkOrMasonry
 :DroppedInvertBrickworkOrMasonry rdf:type owl:Class ;
                                  rdfs:subClassOf :DefectiveBrickworkOrMasonry ;
-                                 rdfs:label "Dropped Invert Brickwork Or Masonry"@en .
+                                 rdfs:label "Dropped Invert Brickwork Or Masonry"@en ;
+                                 rdfs:comment "A section of the invert of a brick or masonry pipeline has dropped relative to the walls, leaving a gap of more than 20 mm. Used only for BAD char1 (C); DIN defines no equivalent DAD value for manholes/chambers." .
 
 
 ###  https://l-jamora.github.io/sdco#EggShapedConnectingPipeline
 :EggShapedConnectingPipeline rdf:type owl:Class ;
                              rdfs:subClassOf :ConnectingPipeline ;
-                             rdfs:label "Egg Shaped Connecting Pipeline"@en .
+                             rdfs:label "Egg Shaped Connecting Pipeline"@en ;
+                             rdfs:comment "A pipe cross-section shaped like an egg (narrower top, wider bottom). Used for DCG char1 (C)." .
 
 
 ###  https://l-jamora.github.io/sdco#EncrustationAttachedDeposit
@@ -9708,7 +9754,8 @@ DCO Characterisation The shape of the horizontal (plan) cross-section of the man
 ###  https://l-jamora.github.io/sdco#EquipmentFailure
 :EquipmentFailure rdf:type owl:Class ;
                   rdfs:subClassOf :Cause ;
-                  rdfs:label "Equipment Failure"@en .
+                  rdfs:label "Equipment Failure"@en ;
+                  rdfs:comment "One of the listed reasons an inspection was terminated early, denoting a failure of the inspection equipment itself. Used for BDC char1 (C) and DDC char1 (D)." .
 
 
 ###  https://l-jamora.github.io/sdco#ExcessRepairMaterial
@@ -9720,7 +9767,8 @@ DCO Characterisation The shape of the horizontal (plan) cross-section of the man
 ###  https://l-jamora.github.io/sdco#Exfiltration
 :Exfiltration rdf:type owl:Class ;
               rdfs:subClassOf :OperationalDefect ;
-              rdfs:label "Exfiltration"@en .
+              rdfs:label "Exfiltration"@en ;
+              rdfs:comment "Visible leakage of flow out of the pipe or chamber. Used for BBG (pipe) and DBG (manhole/chamber); neither code carries any characterization or quantification." .
 
 
 ###  https://l-jamora.github.io/sdco#ExternalBulgeLining
@@ -9738,13 +9786,15 @@ DCO Characterisation The shape of the horizontal (plan) cross-section of the man
 ###  https://l-jamora.github.io/sdco#FineSettledDeposit
 :FineSettledDeposit rdf:type owl:Class ;
                     rdfs:subClassOf :SettledDeposit ;
-                    rdfs:label "Fine Settled Deposit"@en .
+                    rdfs:label "Fine Settled Deposit"@en ;
+                    rdfs:comment "Fine settled material such as sand or silt. Used for BBC char (A) and DBC char (A)." .
 
 
 ###  https://l-jamora.github.io/sdco#Fissure
 :Fissure rdf:type owl:Class ;
          rdfs:subClassOf :StructuralDefect ;
-         rdfs:label "Fissure"@en .
+         rdfs:label "Fissure"@en ;
+         rdfs:comment "A crack in the pipe or chamber wall, ranging from a surface-only crack through visible crack lines to a fully open fracture. Used for BAB (pipe) and DAB (manhole/chamber), with SurfaceCrackFissure, CrackFissure and FractureFissure as its char1 subclasses." .
 
 
 ###  https://l-jamora.github.io/sdco#FlapValveFlowControl
@@ -9769,37 +9819,43 @@ DCO Characterisation The shape of the horizontal (plan) cross-section of the man
 ###  https://l-jamora.github.io/sdco#FlowFromIncomingPipe
 :FlowFromIncomingPipe rdf:type owl:Class ;
                       rdfs:subClassOf :OtherObservation ;
-                      rdfs:label "Flow From Incoming Pipe"@en .
+                      rdfs:label "Flow From Incoming Pipe"@en ;
+                      rdfs:comment "Information about the wastewater flowing from an incoming/connecting pipe, requiring the connection code (BCA, or DCA+DCG) to also be recorded. Used for BDE (pipe) and DDE (manhole/chamber), with char1 giving the water's appearance (shared with Wastewater) and char2 flagging a wrongly-connected pipe." .
 
 
 ###  https://l-jamora.github.io/sdco#FlowingInfiltration
 :FlowingInfiltration rdf:type owl:Class ;
                      rdfs:subClassOf :Infiltration ;
-                     rdfs:label "Flowing Infiltration"@en .
+                     rdfs:label "Flowing Infiltration"@en ;
+                     rdfs:comment "Water enters as a continuous flow. Used for BBF char (C) and DBF char1 (C)." .
 
 
 ###  https://l-jamora.github.io/sdco#FoulingAttachedDeposit
 :FoulingAttachedDeposit rdf:type owl:Class ;
                         rdfs:subClassOf :AttachedDeposits ;
-                        rdfs:label "Fouling Attached Deposit"@en .
+                        rdfs:label "Fouling Attached Deposit"@en ;
+                        rdfs:comment "A deposit of organisms (e.g. biofilm) attached to the wall, as opposed to encrustation or grease. Used for BBB char (C) and DBB char (C)." .
 
 
 ###  https://l-jamora.github.io/sdco#FractureFissure
 :FractureFissure rdf:type owl:Class ;
                  rdfs:subClassOf :Fissure ;
-                 rdfs:label "Fracture Fissure"@en .
+                 rdfs:label "Fracture Fissure"@en ;
+                 rdfs:comment "The most severe fissure type: a crack visibly open in the wall, though the pieces are still in place. Used for BAB char1 (C) and DAB char1 (C)." .
 
 
 ###  https://l-jamora.github.io/sdco#FreeDropConnection
 :FreeDropConnection rdf:type owl:Class ;
                     rdfs:subClassOf :NodeConnection ;
-                    rdfs:label "Free Drop Connection"@en .
+                    rdfs:label "Free Drop Connection"@en ;
+                    rdfs:comment "The connecting pipe discharges as a free fall (an open drop) into the channel. Used for DCA char1 (B)." .
 
 
 ###  https://l-jamora.github.io/sdco#GapConnection
 :GapConnection rdf:type owl:Class ;
                rdfs:subClassOf :DefectiveConnection ;
-               rdfs:label "Gap Connection"@en .
+               rdfs:label "Gap Connection"@en ;
+               rdfs:comment "There is a gap all the way around the connecting pipe's junction with the main pipe or chamber wall. Used for BAH char (B) and DAH char (B), distinguished from PartialGapConnection by extending around the full circumference." .
 
 
 ###  https://l-jamora.github.io/sdco#GateValveFlowControl
@@ -9818,13 +9874,15 @@ DCO Characterisation The shape of the horizontal (plan) cross-section of the man
 ###  https://l-jamora.github.io/sdco#GeneralPhotograph
 :GeneralPhotograph rdf:type owl:Class ;
                    rdfs:subClassOf :OtherObservation ;
-                   rdfs:label "General Photograph"@en .
+                   rdfs:label "General Photograph"@en ;
+                   rdfs:comment "A still photograph taken to record the general condition of the pipe or chamber rather than a specific coded feature. Used for BDA (pipe) and DDA (manhole/chamber)." .
 
 
 ###  https://l-jamora.github.io/sdco#GeneralRemark
 :GeneralRemark rdf:type owl:Class ;
                rdfs:subClassOf :OtherObservation ;
-               rdfs:label "General Remark"@en .
+               rdfs:label "General Remark"@en ;
+               rdfs:comment "A free-text remark that cannot be captured by any other code. Used for BDB (pipe) and DDB (manhole/chamber)." .
 
 
 ###  https://l-jamora.github.io/sdco#GreaseAttachedDeposit
@@ -9845,13 +9903,15 @@ DCM This is used to record the presence of a grit trap (bucket) under the cover.
 ###  https://l-jamora.github.io/sdco#GushingInfiltration
 :GushingInfiltration rdf:type owl:Class ;
                      rdfs:subClassOf :Infiltration ;
-                     rdfs:label "Gushing Infiltration"@en .
+                     rdfs:label "Gushing Infiltration"@en ;
+                     rdfs:comment "The most severe infiltration extent: water entering under pressure. Used for BBF char (D) and DBF char1 (D)." .
 
 
 ###  https://l-jamora.github.io/sdco#HardOrCompactedSettledDeposit
 :HardOrCompactedSettledDeposit rdf:type owl:Class ;
                                rdfs:subClassOf :SettledDeposit ;
-                               rdfs:label "Hard Or Compacted Settled Deposit"@en .
+                               rdfs:label "Hard Or Compacted Settled Deposit"@en ;
+                               rdfs:comment "Hard or compacted settled material such as concrete. Used for BBC char (C) and DBC char (C)." .
 
 
 ###  https://l-jamora.github.io/sdco#Helical
@@ -9863,13 +9923,15 @@ DCM This is used to record the presence of a grit trap (bucket) under the cover.
 ###  https://l-jamora.github.io/sdco#HighPointChannel
 :HighPointChannel rdf:type owl:Class ;
                   rdfs:subClassOf :Channel ;
-                  rdfs:label "High Point Channel"@en .
+                  rdfs:label "High Point Channel"@en ;
+                  rdfs:comment "The channel has a high point (a local rise against the flow direction). Used for DCI char2 (C)." .
 
 
 ###  https://l-jamora.github.io/sdco#HighWaterLevel
 :HighWaterLevel rdf:type owl:Class ;
                 rdfs:subClassOf :Cause ;
-                rdfs:label "High Water Level"@en .
+                rdfs:label "High Water Level"@en ;
+                rdfs:comment "One of the listed reasons an inspection was terminated early, denoting a water level too high to continue. Used for BDC char1 (B) and DDC char1 (C)." .
 
 
 ###  https://l-jamora.github.io/sdco#HoleInLining
@@ -9887,7 +9949,8 @@ DCM This is used to record the presence of a grit trap (bucket) under the cover.
 ###  https://l-jamora.github.io/sdco#HoleRepair
 :HoleRepair rdf:type owl:Class ;
             rdfs:subClassOf :PointRepair ;
-            rdfs:label "Hole Repair"@en .
+            rdfs:label "Hole Repair"@en ;
+            rdfs:comment "A hole was repaired directly (e.g. patched) rather than by lining, injection or replacement. Used for DCB char (D); the corresponding pipe-side value (BCB char1 E) has no someValuesFrom wiring, so only node individuals currently materialize into this class." .
 
 
 ###  https://l-jamora.github.io/sdco#Horizontal
@@ -9899,7 +9962,8 @@ DCM This is used to record the presence of a grit trap (bucket) under the cover.
 ###  https://l-jamora.github.io/sdco#HydrogenSulfide
 :HydrogenSulfide rdf:type owl:Class ;
                  rdfs:subClassOf :AtmosphereWithin ;
-                 rdfs:label "Hydrogen Sulfide"@en .
+                 rdfs:label "Hydrogen Sulfide"@en ;
+                 rdfs:comment "Hydrogen sulfide gas was detected in the atmosphere. Used for BDF char (B) and DDF char (B)." .
 
 
 ###  https://l-jamora.github.io/sdco#InConnection
@@ -9911,7 +9975,8 @@ DCM This is used to record the presence of a grit trap (bucket) under the cover.
 ###  https://l-jamora.github.io/sdco#InManholeOrInspectionChamber
 :InManholeOrInspectionChamber rdf:type owl:Class ;
                               rdfs:subClassOf :Location ;
-                              rdfs:label "In Manhole Or Inspection Chamber"@en .
+                              rdfs:label "In Manhole Or Inspection Chamber"@en ;
+                              rdfs:comment "The vermin was seen in the manhole or inspection chamber itself, the node-side counterpart of the pipe-side InPipeline value. Used for DBH char2 (A)." .
 
 
 ###  https://l-jamora.github.io/sdco#InOpenJoint
@@ -9923,7 +9988,8 @@ DCM This is used to record the presence of a grit trap (bucket) under the cover.
 ###  https://l-jamora.github.io/sdco#InPipeline
 :InPipeline rdf:type owl:Class ;
             rdfs:subClassOf :Location ;
-            rdfs:label "In Pipeline"@en .
+            rdfs:label "In Pipeline"@en ;
+            rdfs:comment "The vermin was seen in the pipeline itself, one of the listed vermin-location values used for pipe inspections. Used for BBH char2 (A); the node-side equivalent value is instead InManholeOrInspectionChamber (DBH char2 A), since the location described differs for the two structures." .
 
 
 ###  https://l-jamora.github.io/sdco#Inclined
@@ -9953,7 +10019,8 @@ DCM This is used to record the presence of a grit trap (bucket) under the cover.
 ###  https://l-jamora.github.io/sdco#Infiltration
 :Infiltration rdf:type owl:Class ;
               rdfs:subClassOf :OperationalDefect ;
-              rdfs:label "Infiltration"@en .
+              rdfs:label "Infiltration"@en ;
+              rdfs:comment "Water ingressing into the pipe or chamber through the wall, joints or defects. Used for BBF (pipe, char: sweating/dripping/flowing/gushing extent) and DBF (manhole/chamber, char1 extent + char2 entry point: wall, invert connection, or benching connection); DBF adds an entry-location characterization that BBF does not have." .
 
 
 ###  https://l-jamora.github.io/sdco#IngressOfFineMaterial
@@ -9989,19 +10056,22 @@ DCM This is used to record the presence of a grit trap (bucket) under the cover.
 ###  https://l-jamora.github.io/sdco#IngressOfSoil
 :IngressOfSoil rdf:type owl:Class ;
                rdfs:subClassOf :OperationalDefect ;
-               rdfs:label "Ingress Of Soil"@en .
+               rdfs:label "Ingress Of Soil"@en ;
+               rdfs:comment "Soil from the surrounding ground is intruding into the pipe or chamber. Used for BBD (pipe, with char giving the soil type as subclasses) and DBD (manhole/chamber); DIN gives DBD no characterization codes, so the soil-type subclasses only ever classify pipe individuals." .
 
 
 ###  https://l-jamora.github.io/sdco#InjectedMortarRepair
 :InjectedMortarRepair rdf:type owl:Class ;
                       rdfs:subClassOf :PointRepair ;
-                      rdfs:label "Injected Mortar Repair"@en .
+                      rdfs:label "Injected Mortar Repair"@en ;
+                      rdfs:comment "Mortar was injected to repair the defect, a pipe-only repair method. Corresponds to BCB char1 (C); has no someValuesFrom wiring to hasPipeInventoryFeature, so this class is not currently reachable through materialization; DIN's node-side equivalent (DCB C, injection of sealing material) is instead mapped to InjectedSealingMaterialRepair." .
 
 
 ###  https://l-jamora.github.io/sdco#InjectedSealingMaterialRepair
 :InjectedSealingMaterialRepair rdf:type owl:Class ;
                                rdfs:subClassOf :PointRepair ;
-                               rdfs:label "Injected Sealing Material Repair"@en .
+                               rdfs:label "Injected Sealing Material Repair"@en ;
+                               rdfs:comment "A sealing material other than mortar was injected to repair the defect. Used for DCB char (C); on the pipe side this corresponds to BCB char1 (D), which has no someValuesFrom wiring, so only node individuals currently materialize into this class." .
 
 
 ###  https://l-jamora.github.io/sdco#InspectionChamber
@@ -10027,55 +10097,64 @@ DCM This is used to record the presence of a grit trap (bucket) under the cover.
 ###  https://l-jamora.github.io/sdco#InspectionIncomplete
 :InspectionIncomplete rdf:type owl:Class ;
                       rdfs:subClassOf :InspectionStatus ;
-                      rdfs:label "Inspection Incomplete"@en .
+                      rdfs:label "Inspection Incomplete"@en ;
+                      rdfs:comment "Records that, taken with a previous partial inspection, the whole pipeline is still not complete. Used only for BDC char2 (D); DIN defines no DDC char2 equivalent since manholes/chambers are not inspected in successive partial passes." .
 
 
 ###  https://l-jamora.github.io/sdco#InspectionStatus
 :InspectionStatus rdf:type owl:Class ;
                   rdfs:subClassOf :Cause ;
-                  rdfs:label "Inspection Status"@en .
+                  rdfs:label "Inspection Status"@en ;
+                  rdfs:comment "Groups the standard's second termination-reason characterization, which records how a terminated pipe inspection relates to a previously completed partial inspection of the same pipeline. SDCO collects InspectionComplete, InspectionIncomplete, InspectionStatusUnknown and PreviousPartialInspection under this parent." .
 
 
 ###  https://l-jamora.github.io/sdco#InspectionStatusUnknown
 :InspectionStatusUnknown rdf:type owl:Class ;
                          rdfs:subClassOf :InspectionStatus ;
-                         rdfs:label "Inspection Status Unknown"@en .
+                         rdfs:label "Inspection Status Unknown"@en ;
+                         rdfs:comment "Records that it is not known whether, taken with a previous partial inspection, the whole pipeline is now complete. Used only for BDC char2 (E); DIN defines no DDC char2 equivalent." .
 
 
 ###  https://l-jamora.github.io/sdco#InspectionTermination
 :InspectionTermination rdf:type owl:Class ;
                        rdfs:subClassOf :OtherObservation ;
-                       rdfs:label "Inspection Termination"@en .
+                       rdfs:label "Inspection Termination"@en ;
+                       rdfs:comment "The inspection was terminated before reaching the intended finish node (pipe) or before completion (node); any obstruction causing this shall also be coded separately with its own main code. Used for BDC (pipe) and DDC (manhole/chamber), with the Cause subtree giving the termination reason and outcome as subclasses." .
 
 
 ###  https://l-jamora.github.io/sdco#InternalDropPipeConnection
 :InternalDropPipeConnection rdf:type owl:Class ;
                             rdfs:subClassOf :NodeConnection ;
-                            rdfs:label "Internal Drop Pipe Connection"@en .
+                            rdfs:label "Internal Drop Pipe Connection"@en ;
+                            rdfs:comment "The connecting pipe discharges via an internal drop pipe fitted inside the chamber, distinct from an external backdrop pipe. Used for DCA char1 (D)." .
 
 
 ###  https://l-jamora.github.io/sdco#InternalFilmOrCoatingSeparation
 :InternalFilmOrCoatingSeparation rdf:type owl:Class ;
                                  rdfs:subClassOf :Lining ;
-                                 rdfs:label "Internal Film Or Coating Separation"@en .
+                                 rdfs:label "Internal Film Or Coating Separation"@en ;
+                                 rdfs:comment "The internal film or coating layer of a lining has separated from the host wall. Used for BAK char1 (G) and DAK char1 (G)." .
 
 
 ###  https://l-jamora.github.io/sdco#IntrudingBrokenSealingRing
 :IntrudingBrokenSealingRing rdf:type owl:Class ;
                             rdfs:subClassOf :IntrudingSealingRing ;
-                            rdfs:label "Intruding Broken Sealing Ring"@en .
+                            rdfs:label "Intruding Broken Sealing Ring"@en ;
+                            rdfs:comment "The sealing ring is both intruding into the bore and broken. Used for BAI char2 (D) and DAI char2 (C)." .
 
 
 ###  https://l-jamora.github.io/sdco#IntrudingButNotBrokenSealingRing
 :IntrudingButNotBrokenSealingRing rdf:type owl:Class ;
                                   rdfs:subClassOf :IntrudingSealingRing ;
-                                  rdfs:label "Intruding But Not Broken Sealing Ring"@en .
+                                  rdfs:label "Intruding But Not Broken Sealing Ring"@en ;
+                                  rdfs:comment "The node-side sealing ring is intruding but not broken; unlike the pipe-side code, DIN does not split this by centreline position for manholes/chambers. Used only for DAI char2 (B)." .
 
 
 ###  https://l-jamora.github.io/sdco#IntrudingConnection
 :IntrudingConnection rdf:type owl:Class ;
                      rdfs:subClassOf :StructuralDefect ;
-                     rdfs:label "Intruding Connection"@en .
+                     rdfs:label "Intruding Connection"@en ;
+                     rdfs:comment "A connecting pipe projects into the main pipe or chamber, obstructing its cross-section. Used for BAG (pipe, requires the BCA connection code too) and DAG (node, requires DCA and DCG too)." .
 
 
 ###  https://l-jamora.github.io/sdco#IntrudingOtherSealant
@@ -10087,31 +10166,36 @@ DCM This is used to record the presence of a grit trap (bucket) under the cover.
 ###  https://l-jamora.github.io/sdco#IntrudingSealingMaterial
 :IntrudingSealingMaterial rdf:type owl:Class ;
                           rdfs:subClassOf :StructuralDefect ;
-                          rdfs:label "Intruding Sealing Material"@en .
+                          rdfs:label "Intruding Sealing Material"@en ;
+                          rdfs:comment "Material used to seal a joint between adjacent pipe or chamber units is intruding into the bore. Used for BAI (pipe) and DAI (manhole/chamber), with char1 distinguishing a sealing ring from other sealant." .
 
 
 ###  https://l-jamora.github.io/sdco#IntrudingSealingRing
 :IntrudingSealingRing rdf:type owl:Class ;
                       rdfs:subClassOf :IntrudingSealingMaterial ;
-                      rdfs:label "Intruding Sealing Ring"@en .
+                      rdfs:label "Intruding Sealing Ring"@en ;
+                      rdfs:comment "The intruding sealing material is a sealing ring rather than another kind of sealant. Used for BAI char1 (A) and DAI char1 (A); its own char2 subclasses record whether the ring is displaced, intruding, or broken." .
 
 
 ###  https://l-jamora.github.io/sdco#IntrudingSealingRingAboveCentreline
 :IntrudingSealingRingAboveCentreline rdf:type owl:Class ;
                                      rdfs:subClassOf :IntrudingSealingRing ;
-                                     rdfs:label "Intruding Sealing Ring Above Centreline"@en .
+                                     rdfs:label "Intruding Sealing Ring Above Centreline"@en ;
+                                     rdfs:comment "The sealing ring is intruding but not broken, with its lowest point above the horizontal centreline. Used only for BAI char2 (B); DIN's node-side char2 has no centreline split; it only distinguishes intruding-but-not-broken (IntrudingButNotBrokenSealingRing) from broken." .
 
 
 ###  https://l-jamora.github.io/sdco#IntrudingSealingRingBelowCentreline
 :IntrudingSealingRingBelowCentreline rdf:type owl:Class ;
                                      rdfs:subClassOf :IntrudingSealingRing ;
-                                     rdfs:label "Intruding Sealing Ring Below Centreline"@en .
+                                     rdfs:label "Intruding Sealing Ring Below Centreline"@en ;
+                                     rdfs:comment "The sealing ring is intruding but not broken, with its lowest point below the horizontal centreline. Used only for BAI char2 (C); see IntrudingSealingRingAboveCentreline for the corresponding node-side simplification." .
 
 
 ###  https://l-jamora.github.io/sdco#Inventory
 :Inventory rdf:type owl:Class ;
            rdfs:subClassOf :Observation ;
-           rdfs:label "Inventory"@en .
+           rdfs:label "Inventory"@en ;
+           rdfs:comment "The standard's inventory codes (BC.. for pipes, DC.. for nodes) record permanent fixtures and construction features of the network rather than defects. SDCO groups the corresponding classes (Connection, PointRepair, SewerCurvature, NodeType, Benching, Channel, FlowControl, etc.) under Inventory." .
 
 
 ###  https://l-jamora.github.io/sdco#InvertConnectionInfiltration
@@ -10124,19 +10208,22 @@ DCM This is used to record the presence of a grit trap (bucket) under the cover.
 ###  https://l-jamora.github.io/sdco#Junction
 :Junction rdf:type owl:Class ;
           rdfs:subClassOf :PipeConnection ;
-          rdfs:label "Junction"@en .
+          rdfs:label "Junction"@en ;
+          rdfs:comment "The connection is made using a prefabricated pipe unit with a factory-formed junction, rather than a fitting added on site. Used for BCA char1 (A)." .
 
 
 ###  https://l-jamora.github.io/sdco#LampHole
 :LampHole rdf:type owl:Class ;
           rdfs:subClassOf :NodeType ;
-          rdfs:label "Lamp Hole"@en .
+          rdfs:label "Lamp Hole"@en ;
+          rdfs:comment "A small-diameter vertical access shaft to a drain, too narrow for personnel entry, used mainly for rodding rather than inspection access. Used for BCD (D) and BCE (D)." .
 
 
 ###  https://l-jamora.github.io/sdco#LayerBrickworkOrMasonryVisible
 :LayerBrickworkOrMasonryVisible rdf:type owl:Class ;
                                 rdfs:subClassOf :MissingBrickworkOrMasonry ;
-                                rdfs:label "Layer Brickwork Or Masonry Visible"@en .
+                                rdfs:label "Layer Brickwork Or Masonry Visible"@en ;
+                                rdfs:comment "Where brickwork or masonry is missing, another layer of brickwork or masonry is visible through the hole. Used for BAD char2 (A) and DAD char2 (A)." .
 
 
 ###  https://l-jamora.github.io/sdco#Left
@@ -10148,13 +10235,15 @@ DCM This is used to record the presence of a grit trap (bucket) under the cover.
 ###  https://l-jamora.github.io/sdco#Lining
 :Lining rdf:type owl:Class ;
         rdfs:subClassOf :StructuralDefect ;
-        rdfs:label "Lining"@en .
+        rdfs:label "Lining"@en ;
+        rdfs:comment "A defect observed in a pipe or chamber lining (detachment, discolouration, wrinkling, blistering, cracking, holes and similar). Used for BAK (pipe) and DAK (manhole/chamber), with char1 giving the specific lining fault as its subclasses." .
 
 
 ###  https://l-jamora.github.io/sdco#LiningConnectionDefect
 :LiningConnectionDefect rdf:type owl:Class ;
                         rdfs:subClassOf :Lining ;
-                        rdfs:label "Lining Connection Defect"@en .
+                        rdfs:label "Lining Connection Defect"@en ;
+                        rdfs:comment "There is a defect where the lining meets a connection rather than in the lining's main run. Used for BAK char1 (K) and DAK char1 (K)." .
 
 
 ###  https://l-jamora.github.io/sdco#LocalisedDeformation
@@ -10166,7 +10255,8 @@ DCM This is used to record the presence of a grit trap (bucket) under the cover.
 ###  https://l-jamora.github.io/sdco#LocalisedLiningOfConnectionRepair
 :LocalisedLiningOfConnectionRepair rdf:type owl:Class ;
                                    rdfs:subClassOf :PointRepair ;
-                                   rdfs:label "Localised Lining Of Connection Repair"@en .
+                                   rdfs:label "Localised Lining Of Connection Repair"@en ;
+                                   rdfs:comment "A short localised lining (e.g. a 'top hat') was applied to repair a connection rather than the main wall. Used for DCB char (E); the pipe-side equivalent (BCB char1 F) has no someValuesFrom wiring, so only node individuals currently materialize into this class." .
 
 
 ###  https://l-jamora.github.io/sdco#OtherRepairOfConnection
@@ -10178,13 +10268,15 @@ DCM This is used to record the presence of a grit trap (bucket) under the cover.
 ###  https://l-jamora.github.io/sdco#LocalisedLiningOfManholeOrInspectionChamberRepair
 :LocalisedLiningOfManholeOrInspectionChamberRepair rdf:type owl:Class ;
                                                    rdfs:subClassOf :PointRepair ;
-                                                   rdfs:label "Localised Lining Of Manhole Or Inspection Chamber Repair"@en .
+                                                   rdfs:label "Localised Lining Of Manhole Or Inspection Chamber Repair"@en ;
+                                                   rdfs:comment "A short section of lining was applied inside the manhole or inspection chamber as the repair method. Used for DCB char (B); its pipe-side equivalent is LocalisedLiningOfPipeRepair (BCB char1 B), which has no someValuesFrom wiring." .
 
 
 ###  https://l-jamora.github.io/sdco#LocalisedLiningOfPipeRepair
 :LocalisedLiningOfPipeRepair rdf:type owl:Class ;
                              rdfs:subClassOf :PointRepair ;
-                             rdfs:label "Localised Lining Of Pipe Repair"@en .
+                             rdfs:label "Localised Lining Of Pipe Repair"@en ;
+                             rdfs:comment "A short section of pipe lining was applied as the repair method; DIN notes this combination should also be coded with BAK (Lining). Corresponds to BCB char1 (B); has no someValuesFrom wiring to hasPipeInventoryFeature, so it is not currently reachable through materialization." .
 
 
 ###  https://l-jamora.github.io/sdco#LocallyDefinedConnectingPipeline
@@ -10248,13 +10340,15 @@ Has potential to be used to also describe other damage codes with more detail.""
 ###  https://l-jamora.github.io/sdco#LowPointChannel
 :LowPointChannel rdf:type owl:Class ;
                  rdfs:subClassOf :Channel ;
-                 rdfs:label "Low Point Channel"@en .
+                 rdfs:label "Low Point Channel"@en ;
+                 rdfs:comment "The channel has a low point (a local dip below the surrounding invert). Used for DCI char2 (D)." .
 
 
 ###  https://l-jamora.github.io/sdco#MajorConnectionWithoutManholeOrInspectionChamber
 :MajorConnectionWithoutManholeOrInspectionChamber rdf:type owl:Class ;
                                                   rdfs:subClassOf :NodeType ;
-                                                  rdfs:label "Major Connection Without Manhole Or Inspection Chamber"@en .
+                                                  rdfs:label "Major Connection Without Manhole Or Inspection Chamber"@en ;
+                                                  rdfs:comment "The node is simply a significant connection point (e.g. a large junction) without any manhole or inspection chamber structure built around it. Used for BCD (F) and BCE (F)." .
 
 
 ###  https://l-jamora.github.io/sdco#Manhole
@@ -10266,13 +10360,15 @@ Has potential to be used to also describe other damage codes with more detail.""
 ###  https://l-jamora.github.io/sdco#Mechanical
 :Mechanical rdf:type owl:Class ;
             rdfs:subClassOf :Cause ;
-            rdfs:label "Mechanical"@en .
+            rdfs:label "Mechanical"@en ;
+            rdfs:comment "One of the listed causes of surface damage, denoting physical/mechanical action rather than chemical attack. Used for BAF char2 (A) and DAF char2 (A), the cause dimension of the Surface Damage code." .
 
 
 ###  https://l-jamora.github.io/sdco#Methane
 :Methane rdf:type owl:Class ;
          rdfs:subClassOf :AtmosphereWithin ;
-         rdfs:label "Methane"@en .
+         rdfs:label "Methane"@en ;
+         rdfs:comment "Methane gas was detected in the atmosphere. Used for BDF char (C) and DDF char (C)." .
 
 
 ###  https://l-jamora.github.io/sdco#MissingAggregate
@@ -10284,7 +10380,8 @@ Has potential to be used to also describe other damage codes with more detail.""
 ###  https://l-jamora.github.io/sdco#MissingBrickworkOrMasonry
 :MissingBrickworkOrMasonry rdf:type owl:Class ;
                            rdfs:subClassOf :DefectiveBrickworkOrMasonry ;
-                           rdfs:label "Missing Brickwork Or Masonry"@en .
+                           rdfs:label "Missing Brickwork Or Masonry"@en ;
+                           rdfs:comment "Bricks or masonry units are missing from the pipe or chamber wall. Used for BAD char1 (B) and DAD char1 (B); SDCO also maps the separate node-only DAE (Missing mortar) code onto this class rather than a distinct node-side MissingMortar class, so this class conflates two different DIN observations for manhole individuals." .
 
 
 ###  https://l-jamora.github.io/sdco#MissingCover
@@ -10314,7 +10411,8 @@ Has potential to be used to also describe other damage codes with more detail.""
 ###  https://l-jamora.github.io/sdco#MissingMortar
 :MissingMortar rdf:type owl:Class ;
                rdfs:subClassOf :StructuralDefect ;
-               rdfs:label "Missing Mortar"@en .
+               rdfs:label "Missing Mortar"@en ;
+               rdfs:comment "All or part of the mortar bedding a brick or masonry pipe wall is missing. Used only for BAE (pipe); SDCO maps DAE, the mirroring node-side missing-mortar code, onto MissingBrickworkOrMasonry instead of this class, so MissingMortar never classifies node individuals." .
 
 
 ###  https://l-jamora.github.io/sdco#MissingRepairMaterial
@@ -10363,7 +10461,8 @@ Has potential to be used to also describe other damage codes with more detail.""
 ###  https://l-jamora.github.io/sdco#NarrowsChannel
 :NarrowsChannel rdf:type owl:Class ;
                 rdfs:subClassOf :Channel ;
-                rdfs:label "Narrows Channel"@en .
+                rdfs:label "Narrows Channel"@en ;
+                rdfs:comment "The channel narrows in the direction of flow. Used for DCI char2 (A)." .
 
 
 ###  https://l-jamora.github.io/sdco#NoAccessToPipe
@@ -10375,13 +10474,15 @@ Has potential to be used to also describe other damage codes with more detail.""
 ###  https://l-jamora.github.io/sdco#NoBenching
 :NoBenching rdf:type owl:Class ;
             rdfs:subClassOf :Benching ;
-            rdfs:label "No Benching"@en .
+            rdfs:label "No Benching"@en ;
+            rdfs:comment "Records that the manhole or inspection chamber has no benching. Used for DCH char (C)." .
 
 
 ###  https://l-jamora.github.io/sdco#NoChannel
 :NoChannel rdf:type owl:Class ;
            rdfs:subClassOf :Channel ;
-           rdfs:label "No Channel"@en .
+           rdfs:label "No Channel"@en ;
+           rdfs:comment "Records that the manhole or inspection chamber has no channel. Used for DCI char1 (C)." .
 
 
 ###  https://l-jamora.github.io/sdco#NoDefectsSafetyBar
@@ -10399,7 +10500,8 @@ Has potential to be used to also describe other damage codes with more detail.""
 ###  https://l-jamora.github.io/sdco#NodeConnection
 :NodeConnection rdf:type owl:Class ;
                 rdfs:subClassOf :Connection ;
-                rdfs:label "Node Connection"@en .
+                rdfs:label "Node Connection"@en ;
+                rdfs:comment "The node-side connection-type characterization: how a pipeline enters the manhole or inspection chamber (in the benching, free drop, backdrop, internal drop pipe, ramp, ventilation). Used for DCA char1, with the specific arrangement types as subclasses." .
 
 
 ###  https://l-jamora.github.io/sdco#NodeFabric
@@ -10429,60 +10531,70 @@ Has potential to be used to also describe other damage codes with more detail.""
 ###  https://l-jamora.github.io/sdco#NodeType
 :NodeType rdf:type owl:Class ;
           rdfs:subClassOf :Inventory ;
-          rdfs:label "Node Type"@en .
+          rdfs:label "Node Type"@en ;
+          rdfs:comment "The type of node; manhole, inspection chamber, rodding eye, lamp hole, outfall, major connection without a chamber, or an employing-authority-defined type; at the start or finish of the pipeline inspection. Used for BCD (start node) and BCE (finish node), which share the same characterization values as this class's subclasses." .
 
 
 ###  https://l-jamora.github.io/sdco#NotEvident
 :NotEvident rdf:type owl:Class ;
             rdfs:subClassOf :Cause ;
-            rdfs:label "Not Evident"@en .
+            rdfs:label "Not Evident"@en ;
+            rdfs:comment "Records that surface damage was observed but its cause could not be determined. Used for BAF char2 (E) and DAF char2 (E)." .
 
 
 ###  https://l-jamora.github.io/sdco#NothingVisible
 :NothingVisible rdf:type owl:Class ;
                 rdfs:subClassOf :MissingBrickworkOrMasonry ;
-                rdfs:label "Nothing Visible"@en .
+                rdfs:label "Nothing Visible"@en ;
+                rdfs:comment "Where brickwork or masonry is missing, it is not possible to determine what is exposed through the hole. Used for BAD char2 (B) and DAD char2 (B)." .
 
 
 ###  https://l-jamora.github.io/sdco#Observation
 :Observation rdf:type owl:Class ;
-             rdfs:label "Observation"@en .
+             rdfs:label "Observation"@en ;
+             rdfs:comment "DIN EN 13508-2 requires every recorded feature to be tagged with one of its defined main codes, optionally refined by characterization, quantification and location information. SDCO's Observation class is the root of the damage-code taxonomy, spanning both pipe (B-codes) and node (D-codes) observations across its six subtrees (Cause, Defect, Inventory, Location, Orientation, OtherObservation)." .
 
 
 ###  https://l-jamora.github.io/sdco#Obstacle
 :Obstacle rdf:type owl:Class ;
           rdfs:subClassOf :OperationalDefect ;
-          rdfs:label "Obstacle"@en .
+          rdfs:label "Obstacle"@en ;
+          rdfs:comment "An object in the manhole or inspection chamber obstructing its cross-section, used only when none of the other operational codes (roots, deposits, soil) apply. Used for DBE; SDCO maps the pipe-side equivalent (BBE) onto OtherObstacle instead of this class, so Obstacle itself only ever classifies node individuals." .
 
 
 ###  https://l-jamora.github.io/sdco#Obstruction
 :Obstruction rdf:type owl:Class ;
              rdfs:subClassOf :Cause ;
-             rdfs:label "Obstruction"@en .
+             rdfs:label "Obstruction"@en ;
+             rdfs:comment "One of the listed reasons an inspection was terminated early, denoting a physical obstruction blocking the camera or equipment. Used for BDC char1 (A) and DDC char1 (B)." .
 
 
 ###  https://l-jamora.github.io/sdco#OpenConnection
 :OpenConnection rdf:type owl:Class ;
                 rdfs:subClassOf :PipeConnection ;
-                rdfs:label "Open Connection"@en .
+                rdfs:label "Open Connection"@en ;
+                rdfs:comment "Records that the connection is open and in use. Used for BCA char2 (A)." .
 
 
 ###  https://l-jamora.github.io/sdco#OperationalDefect
 :OperationalDefect rdf:type owl:Class ;
                    rdfs:subClassOf :Defect ;
-                   rdfs:label "Operational Defect"@en .
+                   rdfs:label "Operational Defect"@en ;
+                   rdfs:comment "Groups the standard's operation-condition codes (BB.. for pipes, DB.. for nodes); roots, deposits, obstacles, infiltration, exfiltration, vermin; describing how debris, water or organisms affect the running of the pipe or chamber rather than its fabric. SDCO uses OperationalDefect as the parent of these classes, referenced via hasPipeOperationDamage/hasNodeOperationDamage." .
 
 
 ###  https://l-jamora.github.io/sdco#Orientation
 :Orientation rdf:type owl:Class ;
              rdfs:subClassOf :Observation ;
-             rdfs:label "Orientation"@en .
+             rdfs:label "Orientation"@en ;
+             rdfs:comment "The standard records the clockface position of an observation and, for several defects, an orientation value (longitudinal/circumferential/vertical/horizontal/complex/helical/inclined/radial/angular) describing how the feature runs relative to the pipe or chamber axis. SDCO collects all such orientation-valued classes under this parent, referenced from hasDamageOrientation and the curvature-direction properties." .
 
 
 ###  https://l-jamora.github.io/sdco#OrificePlateFlowControl
 :OrificePlateFlowControl rdf:type owl:Class ;
                          rdfs:subClassOf :FlowControl ;
-                         rdfs:label "Orifice Plate Flow Control"@en .
+                         rdfs:label "Orifice Plate Flow Control"@en ;
+                         rdfs:comment "A plate with a fixed opening used to restrict or regulate flow. Used for DCK char1 (C)." .
 
 
 ###  https://l-jamora.github.io/sdco#OtherAtmosphereWithin
@@ -10525,7 +10637,8 @@ Has potential to be used to also describe other damage codes with more detail.""
 ###  https://l-jamora.github.io/sdco#OtherConnectionRepair
 :OtherConnectionRepair rdf:type owl:Class ;
                        rdfs:subClassOf :PointRepair ;
-                       rdfs:label "Other Connection Repair"@en .
+                       rdfs:label "Other Connection Repair"@en ;
+                       rdfs:comment "Some other repair method (not localised lining) was applied to a connection. Used for DCB char (F); the pipe-side equivalent (BCB char1 G) has no someValuesFrom wiring, so only node individuals currently materialize into this class." .
 
 
 ###  https://l-jamora.github.io/sdco#OtherCrossSection
@@ -10592,7 +10705,8 @@ Has potential to be used to also describe other damage codes with more detail.""
 ###  https://l-jamora.github.io/sdco#OtherObstacle
 :OtherObstacle rdf:type owl:Class ;
                rdfs:subClassOf :Obstacle ;
-               rdfs:label "Other Obstacle"@en .
+               rdfs:label "Other Obstacle"@en ;
+               rdfs:comment "Covers the pipe-side obstacle code (BBE) generically, plus the catch-all 'other' obstacle type on both sides. Used for BBE, BBE char (Z) and DBE char (Z); this conflates the plain pipe main-code with the DIN 'other' characterization value, unlike the node side, where Obstacle is the main-code parent." .
 
 
 ###  https://l-jamora.github.io/sdco#OtherPipelineThroughManhole
@@ -10607,7 +10721,8 @@ DCL !There is another wastewater pipeline through the manhole or inspection  cha
 ###  https://l-jamora.github.io/sdco#OtherPointRepair
 :OtherPointRepair rdf:type owl:Class ;
                   rdfs:subClassOf :PointRepair ;
-                  rdfs:label "Other Point Repair"@en .
+                  rdfs:label "Other Point Repair"@en ;
+                  rdfs:comment "Some other repair method was used, with further detail in the remarks. Used for DCB char (Z); the pipe-side equivalent (BCB char1 Z, OtherTrenchlessRepair) has no someValuesFrom wiring." .
 
 
 ###  https://l-jamora.github.io/sdco#OtherSettledDeposit
@@ -10631,7 +10746,8 @@ DCL !There is another wastewater pipeline through the manhole or inspection  cha
 ###  https://l-jamora.github.io/sdco#OtherTrenchlessRepair
 :OtherTrenchlessRepair rdf:type owl:Class ;
                        rdfs:subClassOf :PointRepair ;
-                       rdfs:label "Other Trenchless Repair"@en .
+                       rdfs:label "Other Trenchless Repair"@en ;
+                       rdfs:comment "Some other trenchless repair method was used, with further detail in the remarks. Corresponds to BCB char1 (Z); has no someValuesFrom wiring to hasPipeInventoryFeature, so it is not currently reachable through materialization." .
 
 
 ###  https://l-jamora.github.io/sdco#OtherVermin
@@ -10649,31 +10765,36 @@ DCL !There is another wastewater pipeline through the manhole or inspection  cha
 ###  https://l-jamora.github.io/sdco#OvalConnectingPipeline
 :OvalConnectingPipeline rdf:type owl:Class ;
                         rdfs:subClassOf :ConnectingPipeline ;
-                        rdfs:label "Oval Connecting Pipeline"@en .
+                        rdfs:label "Oval Connecting Pipeline"@en ;
+                        rdfs:comment "A pipe cross-section with equal-diameter circular invert and soffit, joined by parallel sides. Used for DCG char1 (F)." .
 
 
 ###  https://l-jamora.github.io/sdco#OverflowControl
 :OverflowControl rdf:type owl:Class ;
                  rdfs:subClassOf :FlowControl ;
-                 rdfs:label "Overflow Control"@en .
+                 rdfs:label "Overflow Control"@en ;
+                 rdfs:comment "Records that the flow-control device controls an overflow rather than the continuing flow. Used for DCK char2 (B)." .
 
 
 ###  https://l-jamora.github.io/sdco#OxygenDeficiency
 :OxygenDeficiency rdf:type owl:Class ;
                   rdfs:subClassOf :AtmosphereWithin ;
-                  rdfs:label "Oxygen Deficiency"@en .
+                  rdfs:label "Oxygen Deficiency"@en ;
+                  rdfs:comment "A shortage of oxygen was detected in the atmosphere. Used for BDF char (A) and DDF char (A)." .
 
 
 ###  https://l-jamora.github.io/sdco#PartialGapConnection
 :PartialGapConnection rdf:type owl:Class ;
                       rdfs:subClassOf :DefectiveConnection ;
-                      rdfs:label "Partial Gap Connection"@en .
+                      rdfs:label "Partial Gap Connection"@en ;
+                      rdfs:comment "There is a gap around only part of the circumference of the connecting pipe's junction. Used for BAH char (C) and DAH char (C), distinguished from GapConnection by covering only part of the circumference." .
 
 
 ###  https://l-jamora.github.io/sdco#PatchSealingDefectiveRepair
 :PatchSealingDefectiveRepair rdf:type owl:Class ;
                              rdfs:subClassOf :DefectiveRepair ;
-                             rdfs:label "Patch Sealing Defective Repair"@en .
+                             rdfs:label "Patch Sealing Defective Repair"@en ;
+                             rdfs:comment "A patch that was used to seal a hole deliberately cut in the wall (e.g. for a connection) has itself become defective. Used for BAL char1 (B) and DAL char (B)." .
 
 
 ###  https://l-jamora.github.io/sdco#PiecesOfPipeObstacle
@@ -10685,7 +10806,8 @@ DCL !There is another wastewater pipeline through the manhole or inspection  cha
 ###  https://l-jamora.github.io/sdco#PipeConnection
 :PipeConnection rdf:type owl:Class ;
                 rdfs:subClassOf :Connection ;
-                rdfs:label "Pipe Connection"@en .
+                rdfs:label "Pipe Connection"@en ;
+                rdfs:comment "The pipe-side connection-type characterization: how the connecting pipe was formed into the wall (prefabricated junction, drilled or chiselled saddle/plain fitting, not evident). Used for BCA char1, with the specific fitting types as subclasses." .
 
 
 ###  https://l-jamora.github.io/sdco#PipeFabric
@@ -10715,37 +10837,43 @@ DCL !There is another wastewater pipeline through the manhole or inspection  cha
 ###  https://l-jamora.github.io/sdco#PipeReplacedRepair
 :PipeReplacedRepair rdf:type owl:Class ;
                     rdfs:subClassOf :PointRepair ;
-                    rdfs:label "Pipe Replaced Repair"@en .
+                    rdfs:label "Pipe Replaced Repair"@en ;
+                    rdfs:comment "A section of pipe was replaced during the repair. Corresponds to BCB char1 (A); unlike its node counterpart (DCB char A to WallPartRepair), this class currently has no someValuesFrom restriction wiring it to hasPipeInventoryFeature, so BCB (A) individuals are not classified into it by materialization." .
 
 
 ###  https://l-jamora.github.io/sdco#PipeUnderBenching
 :PipeUnderBenching rdf:type owl:Class ;
                    rdfs:subClassOf :Benching ;
-                   rdfs:label "Pipe Under Benching"@en .
+                   rdfs:label "Pipe Under Benching"@en ;
+                   rdfs:comment "The connecting pipe passes underneath the benching rather than discharging across or through it. Used for DCA char2 (D)." .
 
 
 ###  https://l-jamora.github.io/sdco#PointRepair
 :PointRepair rdf:type owl:Class ;
              rdfs:subClassOf :Inventory ;
-             rdfs:label "Point Repair"@en .
+             rdfs:label "Point Repair"@en ;
+             rdfs:comment "A short section of the drain, sewer, manhole or inspection chamber has been repaired using a listed method (replacement, lining, injected material, hole repair). Used for BCB (pipe) and DCB (manhole/chamber), with char giving the repair method as its subclasses." .
 
 
 ###  https://l-jamora.github.io/sdco#PorousPipe
 :PorousPipe rdf:type owl:Class ;
             rdfs:subClassOf :StructuralDefect ;
-            rdfs:label "Porous Pipe"@en .
+            rdfs:label "Porous Pipe"@en ;
+            rdfs:comment "The pipe material is observed to be porous. Used only for BAN; DIN's mirroring node code (DAN, Porous wall) is modelled in SDCO as the separate PorousWall class rather than merged into this one." .
 
 
 ###  https://l-jamora.github.io/sdco#PorousWall
 :PorousWall rdf:type owl:Class ;
             rdfs:subClassOf :StructuralDefect ;
-            rdfs:label "Porous Wall"@en .
+            rdfs:label "Porous Wall"@en ;
+            rdfs:comment "The material forming the manhole or inspection chamber wall is observed to be porous. Used only for DAN, the node-side counterpart of BAN (Porous pipe)." .
 
 
 ###  https://l-jamora.github.io/sdco#PreviousPartialInspection
 :PreviousPartialInspection rdf:type owl:Class ;
                            rdfs:subClassOf :Cause ;
-                           rdfs:label "Previous Partial Inspection"@en .
+                           rdfs:label "Previous Partial Inspection"@en ;
+                           rdfs:comment "Marks that the termination reason relates to a previous partial inspection of the same pipeline, and is the parent of the three specific completeness outcomes. Referenced by BDC char2 (C), (D) and (E)." .
 
 
 ###  https://l-jamora.github.io/sdco#ProtrudingThroughWallObstacle
@@ -10764,13 +10892,15 @@ DCL !There is another wastewater pipeline through the manhole or inspection  cha
 ###  https://l-jamora.github.io/sdco#RampChannelBenching
 :RampChannelBenching rdf:type owl:Class ;
                      rdfs:subClassOf :Benching ;
-                     rdfs:label "Ramp Channel Benching"@en .
+                     rdfs:label "Ramp Channel Benching"@en ;
+                     rdfs:comment "The connection's channel forms a ramp down through the benching to the main channel. Used for DCA char2 (C)." .
 
 
 ###  https://l-jamora.github.io/sdco#RampConnection
 :RampConnection rdf:type owl:Class ;
                 rdfs:subClassOf :NodeConnection ;
-                rdfs:label "Ramp Connection"@en .
+                rdfs:label "Ramp Connection"@en ;
+                rdfs:comment "The connecting pipe discharges via a ramp leading down to the channel. Used for DCA char1 (E)." .
 
 
 ###  https://l-jamora.github.io/sdco#RatVermin
@@ -10805,13 +10935,15 @@ DCL !There is another wastewater pipeline through the manhole or inspection  cha
 ###  https://l-jamora.github.io/sdco#RepairMaterialSeparated
 :RepairMaterialSeparated rdf:type owl:Class ;
                          rdfs:subClassOf :DefectiveRepair ;
-                         rdfs:label "Repair Material Separated"@en .
+                         rdfs:label "Repair Material Separated"@en ;
+                         rdfs:comment "The repair material has separated from the host wall it was applied to. Used for BAL char1 (C) and DAL char (C)." .
 
 
 ###  https://l-jamora.github.io/sdco#ResinMissingFromLaminate
 :ResinMissingFromLaminate rdf:type owl:Class ;
                           rdfs:subClassOf :Lining ;
-                          rdfs:label "Resin Missing From Laminate"@en .
+                          rdfs:label "Resin Missing From Laminate"@en ;
+                          rdfs:comment "Resin is missing from a laminate lining, exposing the underlying fibre reinforcement. Used for BAK char1 (M) and DAK char1 (M)." .
 
 
 ###  https://l-jamora.github.io/sdco#Right
@@ -10829,13 +10961,15 @@ DCL !There is another wastewater pipeline through the manhole or inspection  cha
 ###  https://l-jamora.github.io/sdco#RoddingEye
 :RoddingEye rdf:type owl:Class ;
             rdfs:subClassOf :NodeType ;
-            rdfs:label "Rodding Eye"@en .
+            rdfs:label "Rodding Eye"@en ;
+            rdfs:comment "A surface-level access point allowing rodding equipment to be inserted into the pipe without an inspection chamber. Used for BCD (C) and BCE (C)." .
 
 
 ###  https://l-jamora.github.io/sdco#Roots
 :Roots rdf:type owl:Class ;
        rdfs:subClassOf :OperationalDefect ;
-       rdfs:label "Roots"@en .
+       rdfs:label "Roots"@en ;
+       rdfs:comment "Roots of trees or other plants have grown into the pipe or chamber through joints, defects or connections. Used for BBA (pipe) and DBA (manhole/chamber), with char giving the root type (tap root, fine roots, complex mass) as its subclasses." .
 
 
 ###  https://l-jamora.github.io/sdco#SafetyChainBar
@@ -10856,25 +10990,29 @@ DCJ This is used to record the location and condition of safety chains/bars on t
 ###  https://l-jamora.github.io/sdco#SeamCoveringSeparation
 :SeamCoveringSeparation rdf:type owl:Class ;
                         rdfs:subClassOf :Lining ;
-                        rdfs:label "Seam Covering Separation"@en .
+                        rdfs:label "Seam Covering Separation"@en ;
+                        rdfs:comment "The material covering a seam in the lining has separated. Used for BAK char1 (H) and DAK char1 (H)." .
 
 
 ###  https://l-jamora.github.io/sdco#SettledDeposit
 :SettledDeposit rdf:type owl:Class ;
                 rdfs:subClassOf :OperationalDefect ;
-                rdfs:label "Settled Deposit"@en .
+                rdfs:label "Settled Deposit"@en ;
+                rdfs:comment "Material has settled and deposited in the invert of the pipe, or in the invert/benching of a chamber. Used for BBC (pipe) and DBC (manhole/chamber), with char giving the deposit type (fine, coarse, hard/compacted) as its subclasses." .
 
 
 ###  https://l-jamora.github.io/sdco#SewerCurvature
 :SewerCurvature rdf:type owl:Class ;
                 rdfs:subClassOf :Inventory ;
-                rdfs:label "Sewer Curvature"@en .
+                rdfs:label "Sewer Curvature"@en ;
+                rdfs:comment "The route of the drain or sewer deviates by a prefabricated bend rather than at a joint (a curved pipeline), explicitly excluding angular joint displacement (BAJ C). Used for BCC, with char1 (Left/Right) and char2 (Up/Down) recording horizontal and vertical curvature direction; DIN defines no equivalent code for manholes/chambers." .
 
 
 ###  https://l-jamora.github.io/sdco#Silt
 :Silt rdf:type owl:Class ;
       rdfs:subClassOf :Cause ;
-      rdfs:label "Silt"@en .
+      rdfs:label "Silt"@en ;
+      rdfs:comment "The view is obstructed by suspended silt in the water. Used for BDG char (B) and DDG char (B)." .
 
 
 ###  https://l-jamora.github.io/sdco#SiltPit
@@ -10895,19 +11033,22 @@ Characterisation The following information:  pit not defective (A); pit defectiv
 ###  https://l-jamora.github.io/sdco#SoilVisibleThroughDefect
 :SoilVisibleThroughDefect rdf:type owl:Class ;
                           rdfs:subClassOf :StructuralDefect ;
-                          rdfs:label "Soil Visible Through Defect"@en .
+                          rdfs:label "Soil Visible Through Defect"@en ;
+                          rdfs:comment "Soil from outside the pipe or chamber wall is visible through an existing defect. Used for BAO (pipe) and DAO (manhole/chamber)." .
 
 
 ###  https://l-jamora.github.io/sdco#Spalling
 :Spalling rdf:type owl:Class ;
           rdfs:subClassOf :Surface ;
-          rdfs:label "Spalling"@en .
+          rdfs:label "Spalling"@en ;
+          rdfs:comment "Small fragments breaking away from the surface of the pipe or chamber fabric, one of the surface-damage types. Used for BAF char1 (B) and DAF char1 (B)." .
 
 
 ###  https://l-jamora.github.io/sdco#SpecialNodeType
 :SpecialNodeType rdf:type owl:Class ;
                  rdfs:subClassOf :NodeType ;
-                 rdfs:label "Special Node Type"@en .
+                 rdfs:label "Special Node Type"@en ;
+                 rdfs:comment "A node type defined locally by the employing authority, coded with an X-prefixed value rather than one of the standard's own letters. Used for BCD (X) and BCE (X)." .
 
 
 ###  https://l-jamora.github.io/sdco#StarFissure
@@ -10919,31 +11060,36 @@ Characterisation The following information:  pit not defective (A); pit defectiv
 ###  https://l-jamora.github.io/sdco#Steam
 :Steam rdf:type owl:Class ;
        rdfs:subClassOf :Cause ;
-       rdfs:label "Steam"@en .
+       rdfs:label "Steam"@en ;
+       rdfs:comment "The view is obstructed by steam or condensation. Used for BDG char (C) and DDG char (C)." .
 
 
 ###  https://l-jamora.github.io/sdco#StructuralDefect
 :StructuralDefect rdf:type owl:Class ;
                   rdfs:subClassOf :Defect ;
-                  rdfs:label "Structural Defect"@en .
+                  rdfs:label "Structural Defect"@en ;
+                  rdfs:comment "Groups the standard's fabric-condition codes (BA.. for pipes, DA.. for nodes); deformation, fissures, breaks, defective brickwork, surface damage, linings, repairs and similar; describing damage to the physical structure of the pipe or chamber. SDCO uses StructuralDefect as the parent of these classes, referenced via hasPipeFabricDamage/hasNodeFabricDamage." .
 
 
 ###  https://l-jamora.github.io/sdco#Surface
 :Surface rdf:type owl:Class ;
          rdfs:subClassOf :StructuralDefect ;
-         rdfs:label "Surface"@en .
+         rdfs:label "Surface"@en ;
+         rdfs:comment "The surface of the pipe or chamber has been damaged by mechanical action or chemical attack (including metal corrosion). Used for BAF (pipe) and DAF (manhole/chamber), with subclasses for each char1 damage type and the Cause subtree giving char2." .
 
 
 ###  https://l-jamora.github.io/sdco#SurfaceCrackFissure
 :SurfaceCrackFissure rdf:type owl:Class ;
                      rdfs:subClassOf :Fissure ;
-                     rdfs:label "Surface Crack Fissure"@en .
+                     rdfs:label "Surface Crack Fissure"@en ;
+                     rdfs:comment "The mildest fissure type: a crack confined to the surface, not extending through the wall. Used for BAB char1 (A) and DAB char1 (A)." .
 
 
 ###  https://l-jamora.github.io/sdco#SweatingInfiltration
 :SweatingInfiltration rdf:type owl:Class ;
                       rdfs:subClassOf :Infiltration ;
-                      rdfs:label "Sweating Infiltration"@en .
+                      rdfs:label "Sweating Infiltration"@en ;
+                      rdfs:comment "The mildest infiltration extent: a slow ingress of water with no visible drips. Used for BBF char (A) and DBF char1 (A)." .
 
 
 ###  https://l-jamora.github.io/sdco#SyphonFlowControl
@@ -10961,25 +11107,29 @@ Characterisation The following information:  pit not defective (A); pit defectiv
 ###  https://l-jamora.github.io/sdco#TurbidWastewater
 :TurbidWastewater rdf:type owl:Class ;
                   rdfs:subClassOf :Wastewater ;
-                  rdfs:label "Turbid Wastewater"@en .
+                  rdfs:label "Turbid Wastewater"@en ;
+                  rdfs:comment "The wastewater is turbid (cloudy) but not additionally coloured. Used for BDD (C), BDE char1 (C) and DDE char1 (C); SDCO also maps the combined 'turbid and coloured' value (E) onto this class alongside ColouredWastewater." .
 
 
 ###  https://l-jamora.github.io/sdco#UShapeConnectingPipeline
 :UShapeConnectingPipeline rdf:type owl:Class ;
                           rdfs:subClassOf :ConnectingPipeline ;
-                          rdfs:label "U Shape Connecting Pipeline"@en .
+                          rdfs:label "U Shape Connecting Pipeline"@en ;
+                          rdfs:comment "A pipe cross-section with a circular invert and a flat top, joined by parallel sides. Used for DCG char1 (D)." .
 
 
 ###  https://l-jamora.github.io/sdco#UnableToLiftCover
 :UnableToLiftCover rdf:type owl:Class ;
                    rdfs:subClassOf :Cause ;
-                   rdfs:label "Unable To Lift Cover"@en .
+                   rdfs:label "Unable To Lift Cover"@en ;
+                   rdfs:comment "A node-inspection-only termination reason: the manhole or inspection chamber cover could not be removed. Used only for DDC char1 (A); pipe inspections have no equivalent BDC value since they involve no cover to lift." .
 
 
 ###  https://l-jamora.github.io/sdco#UnknownWastewater
 :UnknownWastewater rdf:type owl:Class ;
                    rdfs:subClassOf :Wastewater ;
-                   rdfs:label "Unknown Wastewater"@en .
+                   rdfs:label "Unknown Wastewater"@en ;
+                   rdfs:comment "Records that the incoming pipe's wastewater could not be observed because the water level in the main pipe was too high, using the standard's YY 'not observable' code. Used only for BDE char1 (YY); DIN gives no equivalent YY provision for DDE." .
 
 
 ###  https://l-jamora.github.io/sdco#Up
@@ -10991,19 +11141,22 @@ Characterisation The following information:  pit not defective (A); pit defectiv
 ###  https://l-jamora.github.io/sdco#VentilationPipeConnection
 :VentilationPipeConnection rdf:type owl:Class ;
                            rdfs:subClassOf :NodeConnection ;
-                           rdfs:label "Ventilation Pipe Connection"@en .
+                           rdfs:label "Ventilation Pipe Connection"@en ;
+                           rdfs:comment "The connection is a ventilation pipe rather than a wastewater-carrying connection. Used for DCA char1 (F)." .
 
 
 ###  https://l-jamora.github.io/sdco#VenturiFlowControl
 :VenturiFlowControl rdf:type owl:Class ;
                     rdfs:subClassOf :FlowControl ;
-                    rdfs:label "Venturi Flow Control"@en .
+                    rdfs:label "Venturi Flow Control"@en ;
+                    rdfs:comment "A measuring flume (e.g. a venturi) used to gauge flow rather than to physically control it. Used for DCK char1 (G)." .
 
 
 ###  https://l-jamora.github.io/sdco#Vermin
 :Vermin rdf:type owl:Class ;
         rdfs:subClassOf :OperationalDefect ;
-        rdfs:label "Vermin"@en .
+        rdfs:label "Vermin"@en ;
+        rdfs:comment "Vermin (rats, cockroaches or other animals) actually observed in or around the pipe or chamber. Used for BBH (pipe) and DBH (manhole/chamber), with char1 giving the animal type and char2 the location." .
 
 
 ###  https://l-jamora.github.io/sdco#Vertical
@@ -11027,13 +11180,15 @@ Characterisation The following information:  pit not defective (A); pit defectiv
 ###  https://l-jamora.github.io/sdco#VoidVisibleThroughDefect
 :VoidVisibleThroughDefect rdf:type owl:Class ;
                           rdfs:subClassOf :StructuralDefect ;
-                          rdfs:label "Void Visible Through Defect"@en .
+                          rdfs:label "Void Visible Through Defect"@en ;
+                          rdfs:comment "A void in the ground outside the pipe or chamber wall is visible through an existing defect. Used for BAP (pipe) and DAP (manhole/chamber)." .
 
 
 ###  https://l-jamora.github.io/sdco#VortexFlowControl
 :VortexFlowControl rdf:type owl:Class ;
                    rdfs:subClassOf :FlowControl ;
-                   rdfs:label "Vortex Flow Control"@en .
+                   rdfs:label "Vortex Flow Control"@en ;
+                   rdfs:comment "A vortex-type flow control device, which limits flow rate using a swirling flow pattern rather than a moving mechanical part. Used for DCK char1 (D)." .
 
 
 ###  https://l-jamora.github.io/sdco#WallInfiltration
@@ -11046,19 +11201,22 @@ Characterisation The following information:  pit not defective (A); pit defectiv
 ###  https://l-jamora.github.io/sdco#WallPartRepair
 :WallPartRepair rdf:type owl:Class ;
                 rdfs:subClassOf :PointRepair ;
-                rdfs:label "Wall Part Repair"@en .
+                rdfs:label "Wall Part Repair"@en ;
+                rdfs:comment "Part of the manhole or inspection chamber wall was replaced during the repair. Used for DCB char (A); the pipe-side code (BCB char1 A, 'pipe replaced') is instead mapped to the separate PipeReplacedRepair class, which has no someValuesFrom wiring to hasPipeInventoryFeature, so BCB (A) individuals are not currently materialized into a specific repair-type class." .
 
 
 ###  https://l-jamora.github.io/sdco#Wastewater
 :Wastewater rdf:type owl:Class ;
             rdfs:subClassOf :OtherObservation ;
-            rdfs:label "Wastewater"@en .
+            rdfs:label "Wastewater"@en ;
+            rdfs:comment "The visual appearance of the wastewater in the pipe or chamber (clear, discontinued code, turbid, coloured, or turbid-and-coloured), shared by the water-level and incoming-flow codes. Used for BDD, BDE char1 and DDE char1, with the specific appearance values as its subclasses." .
 
 
 ###  https://l-jamora.github.io/sdco#WaterLevel
 :WaterLevel rdf:type owl:Class ;
             rdfs:subClassOf :OtherObservation ;
-            rdfs:label "Water Level"@en .
+            rdfs:label "Water Level"@en ;
+            rdfs:comment "The level of wastewater above the invert of the pipe or chamber. Used for BDD (pipe, char gives the wastewater's appearance from the Wastewater subtree) and DDD (manhole/chamber, recorded only via the vertical location, with no characterization)." .
 
 
 ###  https://l-jamora.github.io/sdco#WedgedInJointObstacle
@@ -11076,25 +11234,29 @@ Characterisation The following information:  pit not defective (A); pit defectiv
 ###  https://l-jamora.github.io/sdco#WeldFailure
 :WeldFailure rdf:type owl:Class ;
              rdfs:subClassOf :StructuralDefect ;
-             rdfs:label "Weld Failure"@en .
+             rdfs:label "Weld Failure"@en ;
+             rdfs:comment "A failure in a weld in the fabric of the pipe or chamber. Used for BAM (pipe, char: longitudinal/circumferential/helical) and DAM (manhole/chamber, char: vertical/horizontal/inclined)." .
 
 
 ###  https://l-jamora.github.io/sdco#WidensChannel
 :WidensChannel rdf:type owl:Class ;
                rdfs:subClassOf :Channel ;
-               rdfs:label "Widens Channel"@en .
+               rdfs:label "Widens Channel"@en ;
+               rdfs:comment "The channel widens in the direction of flow. Used for DCI char2 (B)." .
 
 
 ###  https://l-jamora.github.io/sdco#WorkingBenching
 :WorkingBenching rdf:type owl:Class ;
                  rdfs:subClassOf :Benching ;
-                 rdfs:label "Working Benching"@en .
+                 rdfs:label "Working Benching"@en ;
+                 rdfs:comment "Records that the benching was inspected and found not defective. Used for DCH char (B)." .
 
 
 ###  https://l-jamora.github.io/sdco#WorkingChannel
 :WorkingChannel rdf:type owl:Class ;
                 rdfs:subClassOf :Channel ;
-                rdfs:label "Working Channel"@en .
+                rdfs:label "Working Channel"@en ;
+                rdfs:comment "Records that the channel was inspected and found not defective. Used for DCI char1 (B)." .
 
 
 ###  https://l-jamora.github.io/sdco#WorkingGritTrap
@@ -11124,13 +11286,15 @@ Characterisation The following information:  pit not defective (A); pit defectiv
 ###  https://l-jamora.github.io/sdco#WronglyConnectedIncomingSurfaceWaterPipe
 :WronglyConnectedIncomingSurfaceWaterPipe rdf:type owl:Class ;
                                           rdfs:subClassOf :FlowFromIncomingPipe ;
-                                          rdfs:label "Wrongly Connected Incoming Surface Water Pipe"@en .
+                                          rdfs:label "Wrongly Connected Incoming Surface Water Pipe"@en ;
+                                          rdfs:comment "Surface water is observed discharging into a wastewater drain or sewer, indicating a wrongly connected surface-water pipe. Used for BDE char2 (B) and DDE char2 (A); the two codes swap the A/B ordering of this and the wastewater case." .
 
 
 ###  https://l-jamora.github.io/sdco#WronglyConnectedIncomingWastewaterPipe
 :WronglyConnectedIncomingWastewaterPipe rdf:type owl:Class ;
                                         rdfs:subClassOf :FlowFromIncomingPipe ;
-                                        rdfs:label "Wrongly Connected Incoming Wastewater Pipe"@en .
+                                        rdfs:label "Wrongly Connected Incoming Wastewater Pipe"@en ;
+                                        rdfs:comment "Wastewater is observed discharging into a surface-water drain or sewer, indicating a wrongly connected foul pipe. Used for BDE char2 (A) and DDE char2 (B); the two codes swap the A/B ordering of this and the surface-water case." .
 
 
 #################################################################
