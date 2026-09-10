@@ -72,7 +72,11 @@ def demo() -> None:
     )
     out1 = render_char_class(char_row_1)
     assert "owl:intersectionOf ( :DEA" in out1, "char row missing parent intersection"
-    assert "owl:onProperty :hasCharacterization1" in out1, "char row missing hasCharacterization1"
+    # hasCharacterization1/2 are m150-onto terms; SDCO.rdf declares no m150-onto:
+    # prefix, so the generator (and the committed D-family classes) use the full IRI.
+    assert (
+        "owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization1>" in out1
+    ), "char row missing hasCharacterization1"
     assert 'owl:hasValue "A"' in out1, "char row missing char_value"
     assert "owl:someValuesFrom :TapRoot" in out1, "char row missing filler class"
 
@@ -83,7 +87,9 @@ def demo() -> None:
         object_property="hasDamageOrientation", filler_class="Vertical",
     )
     out2 = render_char_class(char_row_2)
-    assert "owl:onProperty :hasCharacterization2" in out2, "char2 row missing hasCharacterization2"
+    assert (
+        "owl:onProperty <https://l-jamora.github.io/m150-onto#hasCharacterization2>" in out2
+    ), "char2 row missing hasCharacterization2"
     assert "owl:someValuesFrom :Vertical" in out2, "char2 row missing its own filler class"
     assert "hasNodeOperationDamage" not in out2, "char2 row must not leak char1's object property"
 
