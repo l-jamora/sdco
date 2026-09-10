@@ -4248,9 +4248,9 @@ The wastewater flowing from the incoming pipe is:
        rdfs:subClassOf :BDG ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasObstructionReason ;
-                         owl:someValuesFrom :Slit
+                         owl:someValuesFrom :Silt
                        ] ;
-       rdfs:label "BDG char1=B (Slit)"@en .
+       rdfs:label "BDG char1=B (Silt)"@en .
 
 
 ###  https://l-jamora.github.io/sdco#BDG_C
@@ -8853,9 +8853,9 @@ DCO Characterisation The shape of the horizontal (plan) cross-section of the man
      rdfs:subClassOf :NodeInventory ,
                      [ rdf:type owl:Restriction ;
                        owl:onProperty :hasNodeInventoryFeature ;
-                       owl:someValuesFrom :SlitPit
+                       owl:someValuesFrom :SiltPit
                      ] ;
-     rdfs:label "DCN (Slit Pit)"@en .
+     rdfs:label "DCN (Silt Pit)"@en .
 
 
 ###  https://l-jamora.github.io/sdco#DCN_A
@@ -8871,10 +8871,10 @@ DCO Characterisation The shape of the horizontal (plan) cross-section of the man
        rdfs:subClassOf :DCN ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasNodeInventoryFeature ;
-                         owl:someValuesFrom :WorkingSlitPit
+                         owl:someValuesFrom :WorkingSiltPit
                        ] ;
        owl:disjointWith :DCN_B ;
-       rdfs:label "DCN char1=A (Working Slit Pit)"@en .
+       rdfs:label "DCN char1=A (Working Silt Pit)"@en .
 
 
 ###  https://l-jamora.github.io/sdco#DCN_B
@@ -8890,9 +8890,9 @@ DCO Characterisation The shape of the horizontal (plan) cross-section of the man
        rdfs:subClassOf :DCN ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasNodeInventoryFeature ;
-                         owl:someValuesFrom :DefectiveSlitPit
+                         owl:someValuesFrom :DefectiveSiltPit
                        ] ;
-       rdfs:label "DCN char1=B (Defective Slit Pit)"@en .
+       rdfs:label "DCN char1=B (Defective Silt Pit)"@en .
 
 
 ###  https://l-jamora.github.io/sdco#DCO
@@ -9470,9 +9470,9 @@ DCO Characterisation The shape of the horizontal (plan) cross-section of the man
        rdfs:subClassOf :DDG ,
                        [ rdf:type owl:Restriction ;
                          owl:onProperty :hasObstructionReason ;
-                         owl:someValuesFrom :Slit
+                         owl:someValuesFrom :Silt
                        ] ;
-       rdfs:label "DDG char1=B (Slit)"@en .
+       rdfs:label "DDG char1=B (Silt)"@en .
 
 
 ###  https://l-jamora.github.io/sdco#DDG_C
@@ -9590,11 +9590,11 @@ DCO Characterisation The shape of the horizontal (plan) cross-section of the man
                       rdfs:label "Defective Safety Chain"@en .
 
 
-###  https://l-jamora.github.io/sdco#DefectiveSlitPit
-:DefectiveSlitPit rdf:type owl:Class ;
-                  rdfs:subClassOf :SlitPit ;
-                  owl:disjointWith :WorkingSlitPit ;
-                  rdfs:label "Defective Slit Pit"@en .
+###  https://l-jamora.github.io/sdco#DefectiveSiltPit
+:DefectiveSiltPit rdf:type owl:Class ;
+                  rdfs:subClassOf :SiltPit ;
+                  owl:disjointWith :WorkingSiltPit ;
+                  rdfs:label "Defective Silt Pit"@en .
 
 
 ###  https://l-jamora.github.io/sdco#DefectiveStepOrLadder
@@ -10863,19 +10863,19 @@ DCJ This is used to record the location and condition of safety chains/bars on t
                 rdfs:label "Sewer Curvature"@en .
 
 
-###  https://l-jamora.github.io/sdco#Slit
-:Slit rdf:type owl:Class ;
+###  https://l-jamora.github.io/sdco#Silt
+:Silt rdf:type owl:Class ;
       rdfs:subClassOf :Cause ;
-      rdfs:label "Slit"@en .
+      rdfs:label "Silt"@en .
 
 
-###  https://l-jamora.github.io/sdco#SlitPit
-:SlitPit rdf:type owl:Class ;
+###  https://l-jamora.github.io/sdco#SiltPit
+:SiltPit rdf:type owl:Class ;
          rdfs:subClassOf :Inventory ;
          rdfs:comment """Used to describe DCN.
 
 Characterisation The following information:  pit not defective (A); pit defective (B)."""@en ;
-         rdfs:label "Slit Pit"@en .
+         rdfs:label "Silt Pit"@en .
 
 
 ###  https://l-jamora.github.io/sdco#SoftLiningMaterial
@@ -11101,10 +11101,10 @@ Characterisation The following information:  pit not defective (A); pit defectiv
                                     rdfs:label "Working Other Pipeline Through Manhole"@en .
 
 
-###  https://l-jamora.github.io/sdco#WorkingSlitPit
-:WorkingSlitPit rdf:type owl:Class ;
-                rdfs:subClassOf :SlitPit ;
-                rdfs:label "Working Slit Pit"@en .
+###  https://l-jamora.github.io/sdco#WorkingSiltPit
+:WorkingSiltPit rdf:type owl:Class ;
+                rdfs:subClassOf :SiltPit ;
+                rdfs:label "Working Silt Pit"@en .
 
 
 ###  https://l-jamora.github.io/sdco#WrinkledLining
@@ -11237,7 +11237,7 @@ Characterisation The following information:  pit not defective (A); pit defectiv
                 :Obstruction
                 :OtherCause
                 :PreviousPartialInspection
-                :Slit
+                :Silt
                 :Steam
               )
 ] .
@@ -11664,7 +11664,7 @@ Characterisation The following information:  pit not defective (A); pit defectiv
                 :PointRepair
                 :SafetyChainBar
                 :SewerCurvature
-                :SlitPit
+                :SiltPit
               )
 ] .
 
