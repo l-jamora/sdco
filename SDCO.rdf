@@ -8,6 +8,8 @@
 
 <https://l-jamora.github.io/sdco> rdf:type owl:Ontology ;
                                    owl:imports <https://l-jamora.github.io/m150-onto> ;
+                                   owl:versionIRI <https://l-jamora.github.io/sdco/0.1.0> ;
+                                   owl:versionInfo "0.1.0" ;
                                    rdfs:label "Sewer Damage Classification Ontology" .
 
 #################################################################
