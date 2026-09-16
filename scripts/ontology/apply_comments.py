@@ -1,6 +1,6 @@
 """Apply human/AI-reviewed rdfs:comment values from a CSV into SDCO.rdf.
 
-scripts/observation_comments.csv (written by a separate review pass, not this
+scripts/ontology/observation_comments.csv (written by a separate review pass, not this
 script) carries one row per class under review:
 
     class_name,label,parent,existing_comment,din_clause,comment
@@ -33,8 +33,8 @@ grown by exactly the number of inserted lines (i.e. no line was deleted);
 any failure restores the original text and aborts.
 
 Usage:
-    python scripts/apply_comments.py --csv scripts/observation_comments.csv --dry-run
-    python scripts/apply_comments.py --csv scripts/observation_comments.csv
+    python scripts/ontology/apply_comments.py --csv scripts/ontology/observation_comments.csv --dry-run
+    python scripts/ontology/apply_comments.py --csv scripts/ontology/observation_comments.csv
 """
 
 import argparse
@@ -48,7 +48,7 @@ from rdflib import OWL, RDF, RDFS, Graph
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from generate_node_codes import NODE, parse_any  # noqa: E402
 
-REPO_ROOT = Path(__file__).resolve().parent.parent
+REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 
 
 def read_rows(csv_path: Path) -> list[dict]:
@@ -229,7 +229,7 @@ def apply_comment(text: str, class_name: str, comment: str) -> tuple[str, int] |
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("--csv", default=str(REPO_ROOT / "scripts" / "observation_comments.csv"), help="CSV of reviewed comments to apply.")
+    parser.add_argument("--csv", default=str(REPO_ROOT / "scripts" / "ontology" / "observation_comments.csv"), help="CSV of reviewed comments to apply.")
     parser.add_argument("--source", default=str(REPO_ROOT / "SDCO.rdf"), help="Ontology file to update.")
     parser.add_argument("--dry-run", action="store_true", help="Validate and print what would change; write nothing.")
     args = parser.parse_args()

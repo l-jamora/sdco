@@ -17,8 +17,8 @@ statement), so no existing line of SDCO.rdf is edited -- do NOT round-trip the
 file through rdflib.
 
 Usage:
-    python scripts/generate_labels.py --dry-run
-    python scripts/generate_labels.py
+    python scripts/ontology/generate_labels.py --dry-run
+    python scripts/ontology/generate_labels.py
 """
 
 import argparse
@@ -34,7 +34,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from build_explainer import humanize, local_name, meaning_of  # noqa: E402
 from generate_node_codes import insert_before_footer  # noqa: E402
 
-REPO_ROOT = Path(__file__).resolve().parent.parent
+REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 SDCO_NS = "https://l-jamora.github.io/sdco#"
 
 BEGIN_MARKER = "###  ---- BEGIN GENERATED LABELS (scripts/generate_labels.py -- do not hand-edit) ----"

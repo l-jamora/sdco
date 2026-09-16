@@ -6,14 +6,14 @@ damage-code taxonomy is still fully exercised), then follows object-property lin
 outward a couple hops (isChildOf -> InspectionReport -> inspects/hasInspector/... )
 so no dangling references are left. Writes benchmark/m150-onto-parsed-dwa-lite.rdf.
 
-Run: python scripts/make_benchmark_dataset.py
+Run: python scripts/benchmark/make_benchmark_dataset.py
 """
 
 from pathlib import Path
 
 from rdflib import RDF, Graph, Namespace, URIRef
 
-REPO_ROOT = Path(__file__).resolve().parent.parent
+REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 SOURCE = REPO_ROOT.parent / "m150-onto" / "m150-onto-parsed-dwa.rdf"
 OUTPUT = REPO_ROOT / "benchmark" / "m150-onto-parsed-dwa-lite.rdf"
 M150 = Namespace("https://l-jamora.github.io/m150-onto#")

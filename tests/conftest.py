@@ -1,8 +1,8 @@
 """Session-scoped fixtures for the SDCO test suite.
 
 Reuses parsing/classification/reasoning helpers from
-scripts/materialize_object_properties.py rather than reimplementing them --
-pythonpath = ["scripts"] in pyproject.toml makes that a bare import.
+scripts/ontology/materialize_object_properties.py rather than reimplementing them --
+pythonpath = ["scripts/ontology"] in pyproject.toml makes that a bare import.
 
 Test individuals come from tests/fixtures/test_individuals.rdf, a small
 hand-authored (Protege, RDF/XML) file -- not generated. See that file's

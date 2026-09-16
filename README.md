@@ -14,7 +14,7 @@ Full design narrative, competency questions, and SPARQL/SHACL examples: `docs/Se
 - `derived/` — generated output only (materialized triples). Never hand-edit; regenerate via scripts.
 - `benchmark/` — lightweight dataset for fast iteration on materialization.
 - `docs/` — design docs, the DIN EN 13508-2 standard, refactor/handover writeups.
-- `scripts/` — maintenance and materialization scripts (`scripts/obsolete/` holds one-time recovery scripts kept for history).
+- `scripts/` — maintenance and materialization scripts, categorized under `scripts/ontology/` and `scripts/benchmark/` (see `scripts/README.md`); `scripts/obsolete/` holds one-time recovery scripts kept for history.
 
 ## Modeling approach
 
@@ -59,11 +59,11 @@ flowchart TD
 
     B -->|"owl:imports via\ncatalog-v001.xml"| E[/"SDCO-dwa-parsed.rdf\nmerge file, gitignored,\nself-imports its own\nmaterialized output"/]:::data
 
-    E -->|"python scripts/materialize_object_properties.py\n--source SDCO-dwa-parsed.rdf"| F{"classify_individuals\nfast path?"}:::process
+    E -->|"python scripts/ontology/materialize_object_properties.py\n--source SDCO-dwa-parsed.rdf"| F{"classify_individuals\nfast path?"}:::process
     F -->|"default: SPARQL UPDATE\nforward-chain (~seconds)"| G
     F -->|"--reason: HermiT via owlready2\ncorrectness oracle, minutes+"| G
 
-    G(["derived/SDCO-dwa-parsed_materialized.rdf / .ttl\nliteral damage-code triples"]):::io -->|"python scripts/build_explainer.py"| H(["docs/explainer/index.html\ndata-driven walkthrough"]):::io --> End(["End"]):::terminal
+    G(["derived/SDCO-dwa-parsed_materialized.rdf / .ttl\nliteral damage-code triples"]):::io -->|"python scripts/ontology/build_explainer.py"| H(["docs/explainer/index.html\ndata-driven walkthrough"]):::io --> End(["End"]):::terminal
 
     classDef io fill:#2b6cb0,stroke:#1a365d,stroke-width:2px,color:#fff
     classDef data fill:#dd6b20,stroke:#7b341e,stroke-width:2px,color:#fff
@@ -81,24 +81,24 @@ Legend: **blue rounded** = pipeline input/output files, **orange parallelogram**
 3. **Materialize** (below) — realize each individual's damage-code classification and emit literal triples the `someValuesFrom` restrictions alone can't produce.
 4. **Explainer** (optional) — `build_explainer.py` turns the materialized data into a browsable HTML walkthrough.
 
-For fast local iteration, `scripts/make_benchmark_dataset.py` + `benchmark/catalog-lite.xml` substitute a 23-report lightweight dataset for steps 1–3.
+For fast local iteration, `scripts/benchmark/make_benchmark_dataset.py` + `benchmark/catalog-lite.xml` substitute a 23-report lightweight dataset for steps 1–3.
 
 ## Materialization
 
-`someValuesFrom` restrictions are existential, so reasoning alone never yields a literal, queryable triple for the filler. `scripts/materialize_object_properties.py` closes that gap, producing `derived/*_materialized.rdf`/`.ttl`:
+`someValuesFrom` restrictions are existential, so reasoning alone never yields a literal, queryable triple for the filler. `scripts/ontology/materialize_object_properties.py` closes that gap, producing `derived/*_materialized.rdf`/`.ttl`:
 
 ```bash
-python scripts/materialize_object_properties.py --source SDCO-dwa-parsed.rdf
+python scripts/ontology/materialize_object_properties.py --source SDCO-dwa-parsed.rdf
 ```
 
 By default it forward-chains the `equivalentClass` patterns directly (seconds). Pass `--reason` to instead run the original HermiT path via `owlready2` as a correctness oracle (minutes+).
 
 ## Explainer
 
-`docs/explainer/` is a self-contained HTML walkthrough of the ontology, built from real data (not hand-typed numbers). `scripts/build_explainer.py` extracts stats/examples from `SDCO.rdf` + the m150 example dataset into `docs/explainer/sdco_data.json`, then injects that JSON into `docs/explainer/template.html` to produce `docs/explainer/index.html`.
+`docs/explainer/` is a self-contained HTML walkthrough of the ontology, built from real data (not hand-typed numbers). `scripts/ontology/build_explainer.py` extracts stats/examples from `SDCO.rdf` + the m150 example dataset into `docs/explainer/sdco_data.json`, then injects that JSON into `docs/explainer/template.html` to produce `docs/explainer/index.html`.
 
 ```bash
-python scripts/build_explainer.py
+python scripts/ontology/build_explainer.py
 ```
 
 Don't open `index.html` via `file://` — browsers treat `file://` pages as unique security origins, which breaks things. Serve it over localhost instead:

@@ -2,7 +2,7 @@
 failures, the auto-declare path, disjoint grouping, idempotent skipping, and
 footer-insertion -- run against tiny in-memory graphs/rows, no fixture files.
 
-Run: python scripts/test_generate_node_codes.py
+Run: python scripts/ontology/test_generate_node_codes.py
 """
 
 import tempfile

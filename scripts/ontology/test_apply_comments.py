@@ -3,7 +3,7 @@ gap-fill skip, quote/newline escaping, blank-comment skip, unknown-class
 validation error, and idempotency -- all against a tiny Protege-shaped Turtle
 snippet, no fixture files.
 
-Run: python scripts/test_apply_comments.py
+Run: python scripts/ontology/test_apply_comments.py
 """
 
 from rdflib import OWL, RDF, Graph

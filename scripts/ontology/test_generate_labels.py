@@ -2,7 +2,7 @@
 mangling guard, block-strip idempotency, and the fill-gaps-never-overwrite
 skip -- all against a tiny in-memory graph, no fixture files.
 
-Run: python scripts/test_generate_labels.py
+Run: python scripts/ontology/test_generate_labels.py
 """
 
 from rdflib import OWL, RDF, RDFS, BNode, Graph, Literal, Namespace

@@ -43,8 +43,8 @@ exist in the ontology, UNLESS they match has(Node|Pipe)(Fabric|Operation)Damage
 hasPipeOperationDamage shape) since it's the one known gap (hasNodeOperationDamage).
 
 Usage:
-    python scripts/generate_node_codes.py --dry-run
-    python scripts/generate_node_codes.py
+    python scripts/ontology/generate_node_codes.py --dry-run
+    python scripts/ontology/generate_node_codes.py
 """
 
 import argparse
@@ -58,7 +58,7 @@ from rdflib import OWL, RDF, RDFS, Graph, Namespace
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from materialize_object_properties import parse_any  # noqa: E402
 
-REPO_ROOT = Path(__file__).resolve().parent.parent
+REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 NS = "https://l-jamora.github.io/sdco#"
 M150_NS = "https://l-jamora.github.io/m150-onto#"
 NODE = Namespace(NS)
@@ -345,7 +345,7 @@ def insert_before_footer(source_path: Path, new_text: str) -> None:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--csv", default=str(REPO_ROOT / "scripts" / "node_codes.csv"), help="CSV mapping file to read.")
+    parser.add_argument("--csv", default=str(REPO_ROOT / "scripts" / "ontology" / "node_codes.csv"), help="CSV mapping file to read.")
     parser.add_argument("--source", default=str(REPO_ROOT / "SDCO.rdf"), help="Ontology file to update.")
     parser.add_argument(
         "--dry-run", action="store_true", help="Validate and print generated Turtle; don't write --source."

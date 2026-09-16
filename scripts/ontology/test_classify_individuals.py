@@ -1,7 +1,7 @@
 """Self-check for classify_individuals()'s forward-chaining rules: one simple
 hasValue pattern, one intersection pattern, run against a tiny toy graph.
 
-Run: python scripts/test_classify_individuals.py
+Run: python scripts/ontology/test_classify_individuals.py
 """
 
 from rdflib import RDF, Graph, Literal, Namespace, OWL, URIRef

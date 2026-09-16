@@ -9,7 +9,7 @@ python adds a script's own directory to sys.path[0]) rather than
 reimplementing RDF/XML-vs-turtle sniffing or the xsd:string literal
 normalization that join between m150 data and SDCO relies on.
 
-    python scripts/build_explainer.py
+    python scripts/ontology/build_explainer.py
 """
 
 import argparse
@@ -28,7 +28,7 @@ from materialize_object_properties import parse_any  # noqa: E402
 # Token in docs/template.html replaced by the extracted JSON at build time.
 PLACEHOLDER = "__SDCO_DATA__"
 
-REPO_ROOT = Path(__file__).resolve().parent.parent
+REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 M150_REPO = REPO_ROOT.parent / "m150-onto"
 
 S = Namespace("https://l-jamora.github.io/sdco#")

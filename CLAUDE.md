@@ -15,7 +15,7 @@ Full design narrative, competency questions, and SPARQL/SHACL examples: `docs/Se
 - `catalog-v001.xml` — OASIS XML catalog resolving `owl:imports <https://l-jamora.github.io/m150-onto>` to the local `m150-onto/m150-onto.rdf` file, so imports work offline.
 - `derived/` — generated output only (materialized triples, catalog copy for that context). Never hand-edit; regenerate via scripts.
 - `docs/` — design doc, DIN EN 13508-2 PDFs, refactor/handover writeups. Read before large structural changes — several past decisions (punning removal, materialization approach) are recorded there with rationale, not just in commit messages.
-- `scripts/` — one-off/repeatable maintenance scripts (Python, `rdflib`/`owlready2`), described below.
+- `scripts/` — one-off/repeatable maintenance scripts (Python, `rdflib`/`owlready2`), described below (`scripts/README.md` has the full categorized index).
 
 ## Namespace state (fixed and committed)
 
@@ -35,10 +35,10 @@ A sibling branch `dev-instances_approach` (remote-only, individuals-only, no cla
 
 ## Materialization: turning existential restrictions into literal triples
 
-`scripts/materialize_object_properties.py` solves the gap above: realizes each individual's damage-code classes, then a SPARQL CONSTRUCT query walks from those realized classes through the untouched `someValuesFrom` restrictions to emit literal triples (most-specific filler only) to `derived/*_materialized.rdf`/`.ttl`. The source file is never modified (hash-checked). Supports `--source` to pick `SDCO.rdf` or `SDCO-dwa-parsed.rdf`, and `--catalog` to resolve `owl:imports` locally.
+`scripts/ontology/materialize_object_properties.py` solves the gap above: realizes each individual's damage-code classes, then a SPARQL CONSTRUCT query walks from those realized classes through the untouched `someValuesFrom` restrictions to emit literal triples (most-specific filler only) to `derived/*_materialized.rdf`/`.ttl`. The source file is never modified (hash-checked). Supports `--source` to pick `SDCO.rdf` or `SDCO-dwa-parsed.rdf`, and `--catalog` to resolve `owl:imports` locally.
 
 ```bash
-python scripts/materialize_object_properties.py --source SDCO-dwa-parsed.rdf
+python scripts/ontology/materialize_object_properties.py --source SDCO-dwa-parsed.rdf
 ```
 
 **Default path (fast, seconds):** `classify_individuals()` forward-chains the `equivalentClass` patterns directly with SPARQL UPDATE — every damage code is defined as either a plain `hasValue` restriction or an intersection of a base code class with one more `hasValue` restriction, so full DL realization was never actually needed for this taxonomy shape. Full run on `SDCO-dwa-parsed.rdf` (~1,128 individuals across the m150-onto imports): ~10s, 104 triples.
@@ -51,18 +51,18 @@ Reuse the CONSTRUCT query for any new object property or damage code rather than
 
 ### Benchmark dataset
 
-`benchmark/` holds a lightweight copy of the m150-onto-parsed import for fast iteration: `scripts/make_benchmark_dataset.py` picks one `ConditionReport` per distinct `hasConditionCode` (23 reports vs 452 individuals in the full parsed file) plus a 2-hop object-property closure, and `benchmark/catalog-lite.xml` points `owl:imports <https://l-jamora.github.io/m150-onto-parsed>` at it instead of the full file.
+`benchmark/` holds a lightweight copy of the m150-onto-parsed import for fast iteration: `scripts/benchmark/make_benchmark_dataset.py` picks one `ConditionReport` per distinct `hasConditionCode` (23 reports vs 452 individuals in the full parsed file) plus a 2-hop object-property closure, and `benchmark/catalog-lite.xml` points `owl:imports <https://l-jamora.github.io/m150-onto-parsed>` at it instead of the full file.
 
 ```bash
-python scripts/make_benchmark_dataset.py   # regenerate benchmark/m150-onto-parsed-dwa-lite.rdf
-python scripts/materialize_object_properties.py --source SDCO-dwa-parsed.rdf --catalog benchmark/catalog-lite.xml
+python scripts/benchmark/make_benchmark_dataset.py   # regenerate benchmark/m150-onto-parsed-dwa-lite.rdf
+python scripts/ontology/materialize_object_properties.py --source SDCO-dwa-parsed.rdf --catalog benchmark/catalog-lite.xml
 ```
 
 ## Other scripts
 
-- `scripts/make_benchmark_dataset.py` — regenerates `benchmark/m150-onto-parsed-dwa-lite.rdf` (see above).
-- `scripts/test_classify_individuals.py` — assert-based self-check for `classify_individuals()`'s two forward-chaining rules (simple + intersection `equivalentClass` patterns) against a toy graph. Run after touching that function.
-- `scripts/generate_labels.py` — derives an `@en` `rdfs:label` for every SDCO class from its name and axioms (condition-code / intersection / CamelCase / verbatim branches) and appends them to `SDCO.rdf` as one regenerable marker-delimited block (`---- BEGIN/END GENERATED LABELS ----`) at the end of the file. Fills gaps only — never overwrites a label that already exists anywhere in the file — and is idempotent (strips its own prior block before re-parsing). `--dry-run` prints the block. `scripts/test_generate_labels.py` is its assert-based self-check; `tests/test_structure.py::test_every_sdco_class_has_a_label` keeps the gap closed.
+- `scripts/benchmark/make_benchmark_dataset.py` — regenerates `benchmark/m150-onto-parsed-dwa-lite.rdf` (see above).
+- `scripts/ontology/test_classify_individuals.py` — assert-based self-check for `classify_individuals()`'s two forward-chaining rules (simple + intersection `equivalentClass` patterns) against a toy graph. Run after touching that function.
+- `scripts/ontology/generate_labels.py` — derives an `@en` `rdfs:label` for every SDCO class from its name and axioms (condition-code / intersection / CamelCase / verbatim branches) and appends them to `SDCO.rdf` as one regenerable marker-delimited block (`---- BEGIN/END GENERATED LABELS ----`) at the end of the file. Fills gaps only — never overwrites a label that already exists anywhere in the file — and is idempotent (strips its own prior block before re-parsing). `--dry-run` prints the block. `scripts/ontology/test_generate_labels.py` is its assert-based self-check; `tests/test_structure.py::test_every_sdco_class_has_a_label` keeps the gap closed.
 
 ### `scripts/obsolete/`
 
@@ -77,7 +77,7 @@ One-time recovery scripts for fallout from the namespace-consolidation commit (`
 
 - **Tier 1** (`tests/test_structure.py`, `tests/test_classification.py`, default `pytest`, ~1-2s): rdflib-only structural invariants over `SDCO.rdf`, plus a fixture round trip through `classify_individuals()`/`CONSTRUCT_QUERY`.
 - **Tier 2** (`tests/test_reasoning.py`, opt-in via `pytest -m reasoner`, ~10s): HermiT via `owlready2`, needs a JDK and the sibling `m150-onto` repo. Both tiers currently pass. Two real ontology defects the suite once surfaced (design spec §4b) — `:BBC`'s `equivalentClass` wrongly reading literal `"BBB"`, and the `BCA1_*` family having no disjointness axioms — were fixed in commit `ab9ec6d`.
-- Test individuals live in `tests/fixtures/test_individuals.rdf` — hand-authored (Protégé-shaped RDF/XML), not generated. Each individual's expected damage-code `rdf:type`(s) must be derived from HermiT (`python scripts/materialize_object_properties.py --source tests/fixtures/test_individuals.rdf --catalog tests/fixtures/catalog-v001.xml --reason`), **never** by hand-guessing or by copying `classify_individuals()`'s own output back in — that would make the test circular.
+- Test individuals live in `tests/fixtures/test_individuals.rdf` — hand-authored (Protégé-shaped RDF/XML), not generated. Each individual's expected damage-code `rdf:type`(s) must be derived from HermiT (`python scripts/ontology/materialize_object_properties.py --source tests/fixtures/test_individuals.rdf --catalog tests/fixtures/catalog-v001.xml --reason`), **never** by hand-guessing or by copying `classify_individuals()`'s own output back in — that would make the test circular.
 
 ## Working with the ontology
 
