@@ -48,6 +48,41 @@ Each `Reference` code class (e.g. `:BAA`) is `owl:equivalentClass` to a literal 
 
 > Classes imported directly from `m150-onto` (e.g. `ConditionReport`, individuals for pipe sections/nodes) aren't part of this hierarchy — see the sibling [m150-onto](../m150-onto) repo for those.
 
+## Data pipeline: M150 XML → materialized triples
+
+```mermaid
+flowchart TD
+    Start(["Start"]):::terminal --> A(["M150 Type B XML\nraw inspection export"]):::io -->|"python -m ontoparser.parser\n--input FILE.xml"| B[/"m150-onto-parsed-dwa.rdf\nBeispiel_* individuals:\nPipeSections, Nodes, Inspections,\nConditionReports"/]:::data
+
+    C{{"m150-onto.rdf\nbase data-exchange ontology"}}:::ontology -.owl:imports.-> B
+    D{{"SDCO.rdf\ndamage-code class taxonomy"}}:::ontology -->|"owl:imports"| E
+
+    B -->|"owl:imports via\ncatalog-v001.xml"| E[/"SDCO-dwa-parsed.rdf\nmerge file, gitignored,\nself-imports its own\nmaterialized output"/]:::data
+
+    E -->|"python scripts/materialize_object_properties.py\n--source SDCO-dwa-parsed.rdf"| F{"classify_individuals\nfast path?"}:::process
+    F -->|"default: SPARQL UPDATE\nforward-chain (~seconds)"| G
+    F -->|"--reason: HermiT via owlready2\ncorrectness oracle, minutes+"| G
+
+    G(["derived/SDCO-dwa-parsed_materialized.rdf / .ttl\nliteral damage-code triples"]):::io -->|"python scripts/build_explainer.py"| H(["docs/explainer/index.html\ndata-driven walkthrough"]):::io --> End(["End"]):::terminal
+
+    classDef io fill:#2b6cb0,stroke:#1a365d,stroke-width:2px,color:#fff
+    classDef data fill:#dd6b20,stroke:#7b341e,stroke-width:2px,color:#fff
+    classDef ontology fill:#38a169,stroke:#22543d,stroke-width:2px,color:#fff
+    classDef process fill:#805ad5,stroke:#44337a,stroke-width:2px,color:#fff
+    classDef terminal fill:#1a202c,stroke:#000,stroke-width:2px,color:#fff
+```
+
+Legend: **blue rounded** = pipeline input/output files, **orange parallelogram** = generated intermediate data, **green hexagon** = the two source ontologies, **purple diamond** = the materialization decision step.
+
+**Steps:**
+
+1. **Parse the raw XML** (in the sibling [m150-onto](../m150-onto) repo): `python -m ontoparser.parser --input <file.xml>` reads the DWA M150 Type B export and, via a CSV-driven mapping + six-stage entity resolution, creates `Beispiel_`-prefixed OWL individuals. The output is a diff-only file (`owl:imports` the base `m150-onto.rdf` rather than duplicating it).
+2. **Merge with SDCO**: `SDCO-dwa-parsed.rdf` (gitignored, local-only) `owl:imports` both `SDCO.rdf` and the parsed m150 individuals — `catalog-v001.xml` resolves both imports to local files so nothing needs a network fetch.
+3. **Materialize** (below) — realize each individual's damage-code classification and emit literal triples the `someValuesFrom` restrictions alone can't produce.
+4. **Explainer** (optional) — `build_explainer.py` turns the materialized data into a browsable HTML walkthrough.
+
+For fast local iteration, `scripts/make_benchmark_dataset.py` + `benchmark/catalog-lite.xml` substitute a 23-report lightweight dataset for steps 1–3.
+
 ## Materialization
 
 `someValuesFrom` restrictions are existential, so reasoning alone never yields a literal, queryable triple for the filler. `scripts/materialize_object_properties.py` closes that gap, producing `derived/*_materialized.rdf`/`.ttl`:
