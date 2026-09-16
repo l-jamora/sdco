@@ -1,0 +1,364 @@
+class_name,label,parent,existing_comment,din_clause,comment
+AccesablePipeCoverMissing,Accesable Pipe Cover Missing,OtherPipelineThroughManhole,,,
+AccessablePipeCoverInPlace,Accessable Pipe Cover In Place,OtherPipelineThroughManhole,,,
+AggregateProjectingFromSurface,Aggregate Projecting From Surface,Surface,,,
+Angular,Angular,Orientation,Used by BAJ Displaced Joint,,
+AnotherObjectObstacle,Another Object Obstacle,Obstacle,,,
+ArchShapedConnectingPipeline,Arch Shaped Connecting Pipeline,ConnectingPipeline,,"Table 12, DCG char1 (E)","A pipe cross-section with a circular soffit and a flat invert, joined by parallel sides. Used for DCG char1 (E)."
+AtmosphereWithin,Atmosphere Within,OtherObservation,,"Table 7, BDF; Table 13, DDF","A potentially hazardous atmosphere (oxygen deficiency, hydrogen sulfide, methane) was detected in the pipe or chamber. Used for BDF (pipe) and DDF (manhole/chamber), with char giving the hazard type as its subclasses."
+AttachedDeposits,Attached Deposits,OperationalDefect,,"Table 5, BBB; Table 11, DBB","Material such as encrustation, grease or fouling is attached to the wall of the pipe or chamber. Used for BBB (pipe) and DBB (manhole/chamber), with char giving the material type as its subclasses."
+AuthorityInstruction,Authority Instruction,Cause,,"Table 7, BDC char2 (B); Table 13, DDC char2 (B)",Records that the inspection was terminated on the instruction of the employing authority rather than for a technical reason. Used for BDC char2 (B) and DDC char2 (B).
+BackdropConnection,Backdrop Connection,NodeConnection,,"Table 12, DCA char1 (C)",The connecting pipe discharges via a backdrop: an enclosed vertical pipe carrying flow from a higher-level drain down to the manhole invert. Used for DCA char1 (C).
+Benching,Benching,Inventory,"Describe the benching arrangment of a connection type.
+
+Created for code DCA (Connection Type, Node Inventory Code), char2.",,
+BenchingConnection,Benching Connection,NodeConnection,,"Table 12, DCA char1 (A)",The connecting pipe discharges directly into the benching. Used for DCA char1 (A).
+BenchingConnectionInfiltration,Benching Connection Infiltration,Infiltration,"Infiltration through the space between a connecting pipe and the wall of the manhole/chamber, above benching",,
+BentStep,Bent Step,DefectiveStepOrLadder,,,
+BlisteredOrInternalBulgeLining,Blistered Or Internal Bulge Lining,Lining,,"Table 4, BAK char1 (E); Table 10, DAK char1 (E)","The lining has blistered or bulged inward from the host wall. Used for BAK char1 (E) and DAK char1 (E), distinct from Blistering, which is a bulge in the host wall's own surface rather than the lining."
+Blistering,Blistering,Surface,,"Table 4, BAF char1 (K); Table 10, DAF char1 (K)","An internal bulge in the pipe or chamber wall's own surface, distinct from a lining bulge (BlisteredOrInternalBulgeLining). Used for BAF char1 (K) and DAF char1 (K)."
+BlockedConnection,Blocked Connection,DefectiveConnection,,,
+Break,Break,BreakOrCollapse,pieces of pipe visibly displaced but not missing,,
+BreakOrCollapse,Break Or Collapse,StructuralDefect,,"Table 4, BAC; Table 10, DAC","A structural failure ranging from displaced but still-present pieces, through missing pieces, to a complete loss of structural integrity. Used for BAC (pipe) and DAC (manhole/chamber), with Break, MissingWallBreakOrCollapse and CollapsedBreakOrCollapse as its char subclasses."
+BrickMasonryLayerVisible,Brick Masonry Layer Visible,DefectiveBrickworkOrMasonry,,,
+BrickOrMasonryObstacle,Brick Or Masonry Obstacle,Obstacle,,,
+BrokenCover,Broken Cover,DefectiveCoverOrFrame,,,
+BrokenFrame,Broken Frame,DefectiveCoverOrFrame,,,
+BrokenPlasticEncapsulationOfStep,Broken Plastic Encapsulation Of Step,DefectiveStepOrLadder,,"Table 10, DAQ char (E)","The plastic coating (encapsulation) around a step has cracked or broken, exposing the metal step beneath to corrosion. Used only for DAQ char (E)."
+BuiltIntoStructureObstacle,Built Into Structure Obstacle,Obstacle,,,
+CameraUnderwater,Camera Underwater,Cause,,"Table 7, BDG char (A); Table 13, DDG char (A)",The view is obstructed because the camera itself is under water. Used for BDG char (A) and DDG char (A).
+Cause,Cause,Observation,"`Cause` is used to describe the characterization codes that define the cause of a defect.
+
+Example: Surface Damage `BAF` char2 describes mechanical, chemical, [...] causes for the surface damage.
+
+---
+
+
+Created to describe BAF / DAF Surface Damage Char2.
+
+Describes the cause of the surface damage. Has potential to be expanded to further describes other damage codes as well.
+
+Also used to described BDG Loss of vision and its reasons for the vision obstruction to the view of the pipeline.
+
+Also to describe DDC InspectionTermination Reasons",,
+Channel,Channel,Inventory,"Used to describe DCI char1 and 2:
+
+!Characterisation 1""  The following information:  channel defective (A); channel not defective (B);  !no channel (C).""
+
+!Characterisation 2 Further information:  Channel narrows (in the direction of flow) (A); Channel widens (in the direction of flow) (B); Channel has a high point (C); Channel has a low point (D).""",,
+ChannelInBenching,Channel In Benching,Benching,,"Table 12, DCA char2 (A); Figure 6","The connecting pipe's channel runs within the benching itself, one of four benching-arrangement diagrams in the standard. Used for DCA char2 (A)."
+Chemical,Chemical,Cause,,"Table 4, BAF char2 (B); Table 10, DAF char2 (B)","One of the listed causes of surface damage, denoting general chemical attack on the wall. Used for BAF char2 (B) and DAF char2 (B), and is the parent of ChemicalUpperPart and ChemicalLowerPart, which record where in the cross-section the chemical damage occurs."
+ChemicalLowerPart,Chemical Lower Part,Chemical,,"Table 4, BAF char2 (D); Table 10, DAF char2 (D)","Chemical surface damage located in the lower part of the pipe or channel. Used for BAF char2 (D) and DAF char2 (D), distinguished from ChemicalUpperPart by location in the cross-section."
+ChemicalUpperPart,Chemical Upper Part,Chemical,,"Table 4, BAF char2 (C); Table 10, DAF char2 (C)","Chemical surface damage located in the upper part of the pipe or channel. Used for BAF char2 (C) and DAF char2 (C), distinguished from ChemicalLowerPart by location in the cross-section."
+ChiselledPlainConnection,Chiselled Plain Connection,PipeConnection,,"Table 4, BCA char1 (E)","A connection made without any special fitting, through a rough hole formed with a hammer and chisel. Used for BCA char1 (E), distinguished from DrilledPlainConnection by the hole-forming method."
+ChiselledSaddleConnection,Chiselled Saddle Connection,PipeConnection,,"Table 4, BCA char1 (C)","A connection made using a saddle fitting through a rough hole formed with a hammer and chisel. Used for BCA char1 (C), distinguished from DrilledSaddleConnection by the hole-forming method."
+CircularConnectingPipeline,Circular Connecting Pipeline,ConnectingPipeline,,,
+CircularCrossSection,Circular Cross Section,CrossSection,,,
+Circumferential,Circumferential,Orientation,,,
+ClearEffluentWastewater,Clear Effluent Wastewater,Wastewater,,"Table 7, BDD (A); BDE char1 (A); DDE char1 (A)","The wastewater is clear enough that the invert is visible. Used for BDD (A), BDE char1 (A) and DDE char1 (A)."
+ClosedConnection,Closed Connection,PipeConnection,,"Table 4, BCA char2 (B)",Records that the connection has been closed off; either a junction left for future use or one that has been cut off. Used for BCA char2 (B).
+CoarseSettledDeposit,Coarse Settled Deposit,SettledDeposit,,"Table 5, BBC char (B); Table 11, DBC char (B)",Coarse settled material such as rubble or gravel. Used for BBC char (B) and DBC char (B).
+CoatedDebrisSafetyBar,Coated Debris Safety Bar,SafetyChainBar,,,
+CoatedDebrisSafetyChain,Coated Debris Safety Chain,SafetyChainBar,,,
+CockroachVermin,Cockroach Vermin,Vermin,,,
+CollapsedBreakOrCollapse,Collapsed Break Or Collapse,BreakOrCollapse,complete loss of structural integrity,,
+CollapsedBrickworkOrMasonry,Collapsed Brickwork Or Masonry,DefectiveBrickworkOrMasonry,,,
+ColouredWastewater,Coloured Wastewater,Wastewater,,"Table 7, BDD (D)/(E); BDE char1 (D)/(E)",The wastewater is coloured; the combined 'turbid and coloured' value (E) is also mapped onto this class. Used for BDD (D)/(E) and BDE char1 (D)/(E).
+Complex,Complex,Orientation,,,
+ComplexMassRoots,Complex Mass Roots,Roots,,,
+ConnectingPipeline,Connecting Pipeline,Inventory,,"Table 12, DCG char1","Details of a pipeline connecting to the manhole or inspection chamber, primarily its cross-sectional shape. Used for DCG char1, with the specific shapes as subclasses; the pipe-side standard has no equivalent code, since a connecting pipeline's shape there is only captured in BCA's remarks."
+ConnectingPipelineDischargeDirection,Connecting Pipeline Discharge Direction,OtherObservation,"To define DCG char2:
+
+Whether the connection is incoming or outgoing or has been sealed:  connection discharges into the manhole or inspection chamber (A); connection discharges from the manhole or inspection chamber (B); connection closed (C).",,
+Connection,Connection,Inventory,,"Table 4, BCA",Another pipeline is connected to the pipe being inspected; most such connections are assumed circular unless recorded otherwise. Used for BCA (pipe); the node-side connection concept is instead split across NodeConnection (DCA) and ConnectingPipeline (DCG).
+ConnectionClosed,Connection Closed,ConnectingPipelineDischargeDirection,,,
+ConnectionDischargeBneching,Connection Discharge Bneching,Benching,,"Table 12, DCA char2 (B); Figure 6",The connection discharges across the surface of the benching rather than through a formed channel. Used for DCA char2 (B).
+ConnectionDischargeFromNode,Connection Discharge From Node,ConnectingPipelineDischargeDirection,,,
+ConnectionDischargeIntoNode,Connection Discharge Into Node,ConnectingPipelineDischargeDirection,,,
+ConnectionNotEvident,Connection Not Evident,PipeConnection,,"Table 4, BCA char1 (G)",Records that the type of connection fitting could not be determined during inspection. Used for BCA char1 (G).
+ContinuationFlowControl,Continuation Flow Control,FlowControl,,"Table 12, DCK char2 (A)",Records that the flow-control device controls the continuing (foul-water) flow rather than an overflow. Used for DCK char2 (A).
+CorrectConnection,Correct Connection,FlowFromIncomingPipe,,"Table 7, BDE char2 (C); Table 13, DDE char2 (C)",The connecting pipe was not observed to be wrongly connected. Used for BDE char2 (C) and DDE char2 (C).
+CorrodedLadderHandrail,Corroded Ladder Handrail,DefectiveStepOrLadder,,,
+CorrodedLadderRunner,Corroded Ladder Runner,DefectiveStepOrLadder,,,
+CorrodedLadderSupport,Corroded Ladder Support,DefectiveStepOrLadder,,,
+CorrodedReinforcement,Corroded Reinforcement,Surface,,,
+CorrodedStep,Corroded Step,DefectiveStepOrLadder,,,
+CorrosionProductsOnSurface,Corrosion Products On Surface,Surface,,,
+CoverAboveSurfaceLevel,Cover Above Surface Level,DefectiveCoverOrFrame,,,
+CoverBelowSurfaceLevel,Cover Below Surface Level,DefectiveCoverOrFrame,,,
+CrackFissure,Crack Fissure,Fissure,,"Table 4, BAB char1 (B); Table 10, DAB char1 (B)",A fissure where crack lines are visible on the wall but the pieces remain in place; more severe than a surface crack but not yet an open fracture. Used for BAB char1 (B) and DAB char1 (B).
+CrackInRepairMaterial,Crack In Repair Material,DefectiveRepair,,,
+CrackOrSplitOrWeldFailure,Crack Or Split Or Weld Failure,Lining,,"Table 4, BAK char1 (I); Table 10, DAK char1 (I)","The lining has a crack, a split, or a failed weld. Used for BAK char1 (I) and DAK char1 (I); DIN treats these three distinct fault types as a single characterization value, which SDCO mirrors in one class rather than splitting them."
+CrossSection,Cross Section,Inventory,"Used to describe DCO.
+
+DCO Characterisation The shape of the horizontal (plan) cross-section of the manhole or inspection  chamber as follows:  circular (A); rectangular (B);  local section - code to be specified by the employing authority and prefixed by an X (e.g. XA);  !other (Z) – where this is used",,
+DamagedConnection,Damaged Connection,DefectiveConnection,,,
+Defect,Defect,Observation,,8.2/8.3 headings; 11.2/11.3 headings,"The standard groups its fabric-condition and operation-condition main codes (BA../BB.. for pipes, DA../DB.. for nodes) under these two editorial headings, without restricting how the codes may be combined. SDCO mirrors that split with StructuralDefect and OperationalDefect as the two children of Defect."
+DefectiveBenching,Defective Benching,Benching,,"Table 12, DCH char (A)",Records that the benching is defective. Used for DCH char (A).
+DefectiveBrickworkOrMasonry,Defective Brickwork Or Masonry,StructuralDefect,,"Table 4, BAD; Table 10, DAD","Individual bricks or masonry units of a brick/masonry pipe or chamber have moved, gone missing, or (pipes only) let the invert drop, from their original position. Used for BAD (pipe) and DAD (manhole/chamber)."
+DefectiveChannel,Defective Channel,Channel,,"Table 12, DCI char1 (A)",Records that the channel is defective. Used for DCI char1 (A).
+DefectiveConnection,Defective Connection,StructuralDefect,,"Table 4, BAH; Table 10, DAH","A connection to the pipe or chamber is faulty; wrongly positioned, gapped, damaged or blocked. Used for BAH (pipe) and DAH (manhole/chamber), with char giving the specific defect type as its subclasses."
+DefectiveCoverOrFrame,Defective Cover Or Frame,StructuralDefect,,"Table 10, DAR","There is a defect in the manhole or inspection chamber cover or frame; broken, rocking, missing, or set above/below the surrounding surface level. Used only for DAR; the standard defines no pipe-side equivalent, since pipes have no cover."
+DefectiveEndOfLining,Defective End Of Lining,Lining,,,
+DefectiveGritTrap,Defective Grit Trap,GritTrapUnderCover,,,
+DefectiveOtherPipelineThroughManhole,Defective Other Pipeline Through Manhole,OtherPipelineThroughManhole,,,
+DefectiveRepair,Defective Repair,StructuralDefect,,"Table 4, BAL; Table 10, DAL","A previously carried-out repair to the pipe or chamber wall now itself has a defect. Used for BAL (pipe, requires the BCB point-repair code too) and DAL (manhole/chamber, requires DCB too), with char1 giving the specific defect type."
+DefectiveSafetyBar,Defective Safety Bar,SafetyChainBar,,,
+DefectiveSafetyChain,Defective Safety Chain,SafetyChainBar,,,
+DefectiveSiltPit,Defective Silt Pit,SiltPit,,,
+DefectiveStepOrLadder,Defective Step Or Ladder,StructuralDefect,,"Table 10, DAQ","There is a defect in an access step, ladder or toe hole inside a manhole or inspection chamber. Used only for DAQ; the standard defines no pipe-side equivalent, since pipes have no steps or ladders."
+DefectiveToeHole,Defective Toe Hole,DefectiveStepOrLadder,,,
+Deformation,Deformation,StructuralDefect,,"Table 4, BAA; Table 10, DAA","The cross-sectional shape of the pipe or chamber has changed from its original shape, either generally across a wide area or as a localised deformation. Used for BAA (pipe) and DAA (manhole/chamber); DAA further splits into GeneralDeformation and LocalisedDeformation, a distinction BAA does not make."
+DetachedLining,Detached Lining,Lining,,,
+DiscoloredLining,Discolored Lining,Lining,,,
+DiscountinuedWastewaterCode,Discountinued Wastewater Code,Wastewater,,"Table 7, BDD (B); BDE char1 (B); DDE char1 (B)","A wastewater-appearance value retained from an earlier edition of the standard whose use has since been discontinued. Used for BDD (B), BDE char1 (B) and DDE char1 (B)."
+DisplacedBrickworkOrMasonry,Displaced Brickwork Or Masonry,DefectiveBrickworkOrMasonry,,,
+DisplacedJoint,Displaced Joint,StructuralDefect,,"Table 4, BAJ; Table 10, DAJ","Adjacent pipe units, or adjacent chamber units, are displaced out of their intended alignment relative to each other. Used for BAJ (pipe, char: longitudinal/radial/angular) and DAJ (manhole/chamber, char: vertical/horizontal/angular); the two codes reuse different sets of Orientation values for the same displacement concept."
+DisplacedSealingRing,Displaced Sealing Ring,IntrudingSealingRing,,"Table 4, BAI char2 (A); Table 10, DAI char2 (A)",The sealing ring is visibly displaced from its joint but is not intruding into the bore. Used for BAI char2 (A) and DAI char2 (A).
+Down,Down,Orientation,,,
+DrilledPlainConnection,Drilled Plain Connection,PipeConnection,,"Table 4, BCA char1 (D)","A connection made without any special fitting, through a neat, drilled hole. Used for BCA char1 (D), distinguished from ChiselledPlainConnection by the hole-forming method."
+DrilledSaddleConnection,Drilled Saddle Connection,PipeConnection,,"Table 4, BCA char1 (B)","A connection made using a saddle fitting through a neat, drilled hole. Used for BCA char1 (B), distinguished from ChiselledSaddleConnection by the hole-forming method."
+DrippingInfiltration,Dripping Infiltration,Infiltration,,"Table 5, BBF char (B); Table 11, DBF char1 (B)",Water enters as intermittent drips rather than a continuous flow. Used for BBF char (B) and DBF char1 (B).
+DroppedInvertBrickworkOrMasonry,Dropped Invert Brickwork Or Masonry,DefectiveBrickworkOrMasonry,,"Table 4, BAD char1 (C)","A section of the invert of a brick or masonry pipeline has dropped relative to the walls, leaving a gap of more than 20 mm. Used only for BAD char1 (C); DIN defines no equivalent DAD value for manholes/chambers."
+EggShapedConnectingPipeline,Egg Shaped Connecting Pipeline,ConnectingPipeline,,"Table 12, DCG char1 (C)","A pipe cross-section shaped like an egg (narrower top, wider bottom). Used for DCG char1 (C)."
+EncrustationAttachedDeposit,Encrustation Attached Deposit,AttachedDeposits,,,
+EndOfLiningNotSealed,End Of Lining Not Sealed,Lining,,,
+EnteringThroughConnectionObstacle,Entering Through Connection Obstacle,Obstacle,,,
+EquipmentFailure,Equipment Failure,Cause,,"Table 7, BDC char1 (C); Table 13, DDC char1 (D)","One of the listed reasons an inspection was terminated early, denoting a failure of the inspection equipment itself. Used for BDC char1 (C) and DDC char1 (D)."
+ExcessRepairMaterial,Excess Repair Material,DefectiveRepair,,,
+Exfiltration,Exfiltration,OperationalDefect,,"Table 5, BBG; Table 11, DBG",Visible leakage of flow out of the pipe or chamber. Used for BBG (pipe) and DBG (manhole/chamber); neither code carries any characterization or quantification.
+ExternalBulgeLining,External Bulge Lining,Lining,,,
+ExternalPipesOrCablesBuiltThroughStructureObstacle,External Pipes Or Cables Built Through Structure Obstacle,Obstacle,,,
+FineSettledDeposit,Fine Settled Deposit,SettledDeposit,,"Table 5, BBC char (A); Table 11, DBC char (A)",Fine settled material such as sand or silt. Used for BBC char (A) and DBC char (A).
+Fissure,Fissure,StructuralDefect,,"Table 4, BAB; Table 10, DAB","A crack in the pipe or chamber wall, ranging from a surface-only crack through visible crack lines to a fully open fracture. Used for BAB (pipe) and DAB (manhole/chamber), with SurfaceCrackFissure, CrackFissure and FractureFissure as its char1 subclasses."
+FlapValveFlowControl,Flap Valve Flow Control,FlowControl,,,
+FloatOperatedGateValveFlowControl,Float Operated Gate Valve Flow Control,FlowControl,,,
+FlowControl,Flow Control,Inventory,Used to describe DCK: Flow Control,,
+FlowFromIncomingPipe,Flow From Incoming Pipe,OtherObservation,,"Table 7, BDE; Table 13, DDE","Information about the wastewater flowing from an incoming/connecting pipe, requiring the connection code (BCA, or DCA+DCG) to also be recorded. Used for BDE (pipe) and DDE (manhole/chamber), with char1 giving the water's appearance (shared with Wastewater) and char2 flagging a wrongly-connected pipe."
+FlowingInfiltration,Flowing Infiltration,Infiltration,,"Table 5, BBF char (C); Table 11, DBF char1 (C)",Water enters as a continuous flow. Used for BBF char (C) and DBF char1 (C).
+FoulingAttachedDeposit,Fouling Attached Deposit,AttachedDeposits,,"Table 5, BBB char (C); Table 11, DBB char (C)","A deposit of organisms (e.g. biofilm) attached to the wall, as opposed to encrustation or grease. Used for BBB char (C) and DBB char (C)."
+FractureFissure,Fracture Fissure,Fissure,,"Table 4, BAB char1 (C); Table 10, DAB char1 (C)","The most severe fissure type: a crack visibly open in the wall, though the pieces are still in place. Used for BAB char1 (C) and DAB char1 (C)."
+FreeDropConnection,Free Drop Connection,NodeConnection,,"Table 12, DCA char1 (B)",The connecting pipe discharges as a free fall (an open drop) into the channel. Used for DCA char1 (B).
+GapConnection,Gap Connection,DefectiveConnection,,"Table 4, BAH char (B); Table 10, DAH char (B)","There is a gap all the way around the connecting pipe's junction with the main pipe or chamber wall. Used for BAH char (B) and DAH char (B), distinguished from PartialGapConnection by extending around the full circumference."
+GateValveFlowControl,Gate Valve Flow Control,FlowControl,,,
+GeneralDeformation,General Deformation,Deformation,,,
+GeneralPhotograph,General Photograph,OtherObservation,,"Table 7, BDA; Table 13, DDA",A still photograph taken to record the general condition of the pipe or chamber rather than a specific coded feature. Used for BDA (pipe) and DDA (manhole/chamber).
+GeneralRemark,General Remark,OtherObservation,,"Table 7, BDB; Table 13, DDB",A free-text remark that cannot be captured by any other code. Used for BDB (pipe) and DDB (manhole/chamber).
+GreaseAttachedDeposit,Grease Attached Deposit,AttachedDeposits,,,
+GritTrapUnderCover,Grit Trap Under Cover,Inventory,"Used to describe DCM.
+
+DCM This is used to record the presence of a grit trap (bucket) under the cover.  Characterisation The following information:  trap present with no defects (A); trap missing (with evidence that one was provided) (B); trap defective (C).",,
+GushingInfiltration,Gushing Infiltration,Infiltration,,"Table 5, BBF char (D); Table 11, DBF char1 (D)",The most severe infiltration extent: water entering under pressure. Used for BBF char (D) and DBF char1 (D).
+HardOrCompactedSettledDeposit,Hard Or Compacted Settled Deposit,SettledDeposit,,"Table 5, BBC char (C); Table 11, DBC char (C)",Hard or compacted settled material such as concrete. Used for BBC char (C) and DBC char (C).
+Helical,Helical,Orientation,,,
+HighPointChannel,High Point Channel,Channel,,"Table 12, DCI char2 (C)",The channel has a high point (a local rise against the flow direction). Used for DCI char2 (C).
+HighWaterLevel,High Water Level,Cause,,"Table 7, BDC char1 (B); Table 13, DDC char1 (C)","One of the listed reasons an inspection was terminated early, denoting a water level too high to continue. Used for BDC char1 (B) and DDC char1 (C)."
+HoleInLining,Hole In Lining,Lining,,,
+HoleInRepairMaterial,Hole In Repair Material,DefectiveRepair,,,
+HoleRepair,Hole Repair,PointRepair,,"Table 6, BCB char1 (E); Table 12, DCB char (D)","A hole was repaired directly (e.g. patched) rather than by lining, injection or replacement. Used for DCB char (D); the corresponding pipe-side value (BCB char1 E) has no someValuesFrom wiring, so only node individuals currently materialize into this class."
+Horizontal,Horizontal,Orientation,,,
+HydrogenSulfide,Hydrogen Sulfide,AtmosphereWithin,,"Table 7, BDF char (B); Table 13, DDF char (B)",Hydrogen sulfide gas was detected in the atmosphere. Used for BDF char (B) and DDF char (B).
+InConnection,In Connection,Location,,,
+InManholeOrInspectionChamber,In Manhole Or Inspection Chamber,Location,,"Table 11, DBH char2 (A)","The vermin was seen in the manhole or inspection chamber itself, the node-side counterpart of the pipe-side InPipeline value. Used for DBH char2 (A)."
+InOpenJoint,In Open Joint,Location,,,
+InPipeline,In Pipeline,Location,,"Table 5, BBH char2 (A)","The vermin was seen in the pipeline itself, one of the listed vermin-location values used for pipe inspections. Used for BBH char2 (A); the node-side equivalent value is instead InManholeOrInspectionChamber (DBH char2 A), since the location described differs for the two structures."
+Inclined,Inclined,Orientation,,,
+IncorrectPositionConnection,Incorrect Position Connection,DefectiveConnection,,,
+IncreasedRoughness,Increased Roughness,Surface,,,
+IndependentFineRoots,Independent Fine Roots,Roots,,,
+Infiltration,Infiltration,OperationalDefect,,"Table 5, BBF; Table 11, DBF","Water ingressing into the pipe or chamber through the wall, joints or defects. Used for BBF (pipe, char: sweating/dripping/flowing/gushing extent) and DBF (manhole/chamber, char1 extent + char2 entry point: wall, invert connection, or benching connection); DBF adds an entry-location characterization that BBF does not have."
+IngressOfFineMaterial,Ingress Of Fine Material,IngressOfSoil,,,
+IngressOfGravel,Ingress Of Gravel,IngressOfSoil,,,
+IngressOfOtherSoil,Ingress Of Other Soil,IngressOfSoil,,,
+IngressOfPeat,Ingress Of Peat,IngressOfSoil,,,
+IngressOfSand,Ingress Of Sand,IngressOfSoil,,,
+IngressOfSoil,Ingress Of Soil,OperationalDefect,,"Table 5, BBD; Table 11, DBD","Soil from the surrounding ground is intruding into the pipe or chamber. Used for BBD (pipe, with char giving the soil type as subclasses) and DBD (manhole/chamber); DIN gives DBD no characterization codes, so the soil-type subclasses only ever classify pipe individuals."
+InjectedMortarRepair,Injected Mortar Repair,PointRepair,,"Table 6, BCB char1 (C)","Mortar was injected to repair the defect, a pipe-only repair method. Corresponds to BCB char1 (C); has no someValuesFrom wiring to hasPipeInventoryFeature, so this class is not currently reachable through materialization; DIN's node-side equivalent (DCB C, injection of sealing material) is instead mapped to InjectedSealingMaterialRepair."
+InjectedSealingMaterialRepair,Injected Sealing Material Repair,PointRepair,,"Table 6, BCB char1 (D); Table 12, DCB char (C)","A sealing material other than mortar was injected to repair the defect. Used for DCB char (C); on the pipe side this corresponds to BCB char1 (D), which has no someValuesFrom wiring, so only node individuals currently materialize into this class."
+InspectionChamber,Inspection Chamber,NodeType,,,
+InspectionComplete,Inspection Complete,InspectionStatus,,"Table 7, BDC char2 (A)/(C); Table 13, DDC char2 (A)","Records that, taken with a previous partial inspection, the whole pipeline is now complete. Used for BDC char2 (C); SDCO also maps the distinct 'objective achieved' values (BDC char2 A, DDC char2 A) onto this same class, conflating two different DIN characterization meanings under one class name."
+InspectionIncomplete,Inspection Incomplete,InspectionStatus,,"Table 7, BDC char2 (D)","Records that, taken with a previous partial inspection, the whole pipeline is still not complete. Used only for BDC char2 (D); DIN defines no DDC char2 equivalent since manholes/chambers are not inspected in successive partial passes."
+InspectionStatus,Inspection Status,Cause,,"Table 7, BDC char2","Groups the standard's second termination-reason characterization, which records how a terminated pipe inspection relates to a previously completed partial inspection of the same pipeline. SDCO collects InspectionComplete, InspectionIncomplete, InspectionStatusUnknown and PreviousPartialInspection under this parent."
+InspectionStatusUnknown,Inspection Status Unknown,InspectionStatus,,"Table 7, BDC char2 (E)","Records that it is not known whether, taken with a previous partial inspection, the whole pipeline is now complete. Used only for BDC char2 (E); DIN defines no DDC char2 equivalent."
+InspectionTermination,Inspection Termination,OtherObservation,,"Table 7, BDC; Table 13, DDC","The inspection was terminated before reaching the intended finish node (pipe) or before completion (node); any obstruction causing this shall also be coded separately with its own main code. Used for BDC (pipe) and DDC (manhole/chamber), with the Cause subtree giving the termination reason and outcome as subclasses."
+InternalDropPipeConnection,Internal Drop Pipe Connection,NodeConnection,,"Table 12, DCA char1 (D)","The connecting pipe discharges via an internal drop pipe fitted inside the chamber, distinct from an external backdrop pipe. Used for DCA char1 (D)."
+InternalFilmOrCoatingSeparation,Internal Film Or Coating Separation,Lining,,"Table 4, BAK char1 (G); Table 10, DAK char1 (G)",The internal film or coating layer of a lining has separated from the host wall. Used for BAK char1 (G) and DAK char1 (G).
+IntrudingBrokenSealingRing,Intruding Broken Sealing Ring,IntrudingSealingRing,,"Table 4, BAI char2 (D); Table 10, DAI char2 (C)",The sealing ring is both intruding into the bore and broken. Used for BAI char2 (D) and DAI char2 (C).
+IntrudingButNotBrokenSealingRing,Intruding But Not Broken Sealing Ring,IntrudingSealingRing,,"Table 10, DAI char2 (B)","The node-side sealing ring is intruding but not broken; unlike the pipe-side code, DIN does not split this by centreline position for manholes/chambers. Used only for DAI char2 (B)."
+IntrudingConnection,Intruding Connection,StructuralDefect,,"Table 4, BAG; Table 10, DAG","A connecting pipe projects into the main pipe or chamber, obstructing its cross-section. Used for BAG (pipe, requires the BCA connection code too) and DAG (node, requires DCA and DCG too)."
+IntrudingOtherSealant,Intruding Other Sealant,IntrudingSealingMaterial,,,
+IntrudingSealingMaterial,Intruding Sealing Material,StructuralDefect,,"Table 4, BAI; Table 10, DAI","Material used to seal a joint between adjacent pipe or chamber units is intruding into the bore. Used for BAI (pipe) and DAI (manhole/chamber), with char1 distinguishing a sealing ring from other sealant."
+IntrudingSealingRing,Intruding Sealing Ring,IntrudingSealingMaterial,,"Table 4, BAI char1 (A); Table 10, DAI char1 (A)","The intruding sealing material is a sealing ring rather than another kind of sealant. Used for BAI char1 (A) and DAI char1 (A); its own char2 subclasses record whether the ring is displaced, intruding, or broken."
+IntrudingSealingRingAboveCentreline,Intruding Sealing Ring Above Centreline,IntrudingSealingRing,,"Table 4, BAI char2 (B)","The sealing ring is intruding but not broken, with its lowest point above the horizontal centreline. Used only for BAI char2 (B); DIN's node-side char2 has no centreline split; it only distinguishes intruding-but-not-broken (IntrudingButNotBrokenSealingRing) from broken."
+IntrudingSealingRingBelowCentreline,Intruding Sealing Ring Below Centreline,IntrudingSealingRing,,"Table 4, BAI char2 (C)","The sealing ring is intruding but not broken, with its lowest point below the horizontal centreline. Used only for BAI char2 (C); see IntrudingSealingRingAboveCentreline for the corresponding node-side simplification."
+Inventory,Inventory,Observation,,8.4/11.4 headings,"The standard's inventory codes (BC.. for pipes, DC.. for nodes) record permanent fixtures and construction features of the network rather than defects. SDCO groups the corresponding classes (Connection, PointRepair, SewerCurvature, NodeType, Benching, Channel, FlowControl, etc.) under Inventory."
+InvertConnectionInfiltration,Invert Connection Infiltration,Infiltration,"Infiltration through the space between a connecting pipe and the wall of the manhole/chamber, at the invert",,
+Junction,Junction,PipeConnection,,"Table 4, BCA char1 (A)","The connection is made using a prefabricated pipe unit with a factory-formed junction, rather than a fitting added on site. Used for BCA char1 (A)."
+LampHole,Lamp Hole,NodeType,,"Table 6, BCD/BCE (D)","A small-diameter vertical access shaft to a drain, too narrow for personnel entry, used mainly for rodding rather than inspection access. Used for BCD (D) and BCE (D)."
+LayerBrickworkOrMasonryVisible,Layer Brickwork Or Masonry Visible,MissingBrickworkOrMasonry,,"Table 4, BAD char2 (A); Table 10, DAD char2 (A)","Where brickwork or masonry is missing, another layer of brickwork or masonry is visible through the hole. Used for BAD char2 (A) and DAD char2 (A)."
+Left,Left,Orientation,,,
+Lining,Lining,StructuralDefect,,"Table 4, BAK; Table 10, DAK","A defect observed in a pipe or chamber lining (detachment, discolouration, wrinkling, blistering, cracking, holes and similar). Used for BAK (pipe) and DAK (manhole/chamber), with char1 giving the specific lining fault as its subclasses."
+LiningConnectionDefect,Lining Connection Defect,Lining,,"Table 4, BAK char1 (K); Table 10, DAK char1 (K)",There is a defect where the lining meets a connection rather than in the lining's main run. Used for BAK char1 (K) and DAK char1 (K).
+LocalisedDeformation,Localised Deformation,Deformation,,,
+LocalisedLiningOfConnectionRepair,Localised Lining Of Connection Repair,PointRepair,,"Table 6, BCB char1 (F); Table 12, DCB char (E)","A short localised lining (e.g. a 'top hat') was applied to repair a connection rather than the main wall. Used for DCB char (E); the pipe-side equivalent (BCB char1 F) has no someValuesFrom wiring, so only node individuals currently materialize into this class."
+LocalisedLiningOfManholeOrInspectionChamberRepair,Localised Lining Of Manhole Or Inspection Chamber Repair,PointRepair,,"Table 12, DCB char (B)","A short section of lining was applied inside the manhole or inspection chamber as the repair method. Used for DCB char (B); its pipe-side equivalent is LocalisedLiningOfPipeRepair (BCB char1 B), which has no someValuesFrom wiring."
+LocalisedLiningOfPipeRepair,Localised Lining Of Pipe Repair,PointRepair,,"Table 6, BCB char1 (B)","A short section of pipe lining was applied as the repair method; DIN notes this combination should also be coded with BAK (Lining). Corresponds to BCB char1 (B); has no someValuesFrom wiring to hasPipeInventoryFeature, so it is not currently reachable through materialization."
+LocallyDefinedConnectingPipeline,Locally Defined Connecting Pipeline,ConnectingPipeline,,,
+LocallyDefinedCrossSection,Locally Defined Cross Section,CrossSection,,,
+Location,Location,Observation,"Made for BBH/DBH Vermin: Describes the location of the vermin.
+
+The location of the vermin: 
+ in the pipeline (A);
+ in a connection (B);
+ in an open joint (C);
+ !other (Z) – where this is used further details shall be recorded in the remarks section.""
+
+Has potential to be used to also describe other damage codes with more detail.",,
+Longitudinal,Longitudinal,Orientation,,,
+LooseFrame,Loose Frame,DefectiveCoverOrFrame,,,
+LooseLadderSupport,Loose Ladder Support,DefectiveStepOrLadder,,,
+LooseStep,Loose Step,DefectiveStepOrLadder,,,
+LossOfVision,Loss Of Vision,OtherObservation,Reasons for loss of vision captured in subclass 'Cause',,
+LowPointChannel,Low Point Channel,Channel,,"Table 12, DCI char2 (D)",The channel has a low point (a local dip below the surrounding invert). Used for DCI char2 (D).
+MajorConnectionWithoutManholeOrInspectionChamber,Major Connection Without Manhole Or Inspection Chamber,NodeType,,"Table 6, BCD/BCE (F)",The node is simply a significant connection point (e.g. a large junction) without any manhole or inspection chamber structure built around it. Used for BCD (F) and BCE (F).
+Manhole,Manhole,NodeType,,,
+Mechanical,Mechanical,Cause,,"Table 4, BAF char2 (A); Table 10, DAF char2 (A)","One of the listed causes of surface damage, denoting physical/mechanical action rather than chemical attack. Used for BAF char2 (A) and DAF char2 (A), the cause dimension of the Surface Damage code."
+Methane,Methane,AtmosphereWithin,,"Table 7, BDF char (C); Table 13, DDF char (C)",Methane gas was detected in the atmosphere. Used for BDF char (C) and DDF char (C).
+MissingAggregate,Missing Aggregate,Surface,,,
+MissingBrickworkOrMasonry,Missing Brickwork Or Masonry,DefectiveBrickworkOrMasonry,,"Table 4, BAD char1 (B); Table 10, DAD char1 (B), DAE","Bricks or masonry units are missing from the pipe or chamber wall. Used for BAD char1 (B) and DAD char1 (B); SDCO also maps the separate node-only DAE (Missing mortar) code onto this class rather than a distinct node-side MissingMortar class, so this class conflates two different DIN observations for manhole individuals."
+MissingCover,Missing Cover,DefectiveCoverOrFrame,,,
+MissingFrame,Missing Frame,DefectiveCoverOrFrame,,,
+MissingGritTrap,Missing Grit Trap,GritTrapUnderCover,,,
+MissingLadderSupport,Missing Ladder Support,DefectiveStepOrLadder,,,
+MissingMortar,Missing Mortar,StructuralDefect,,"Table 4, BAE","All or part of the mortar bedding a brick or masonry pipe wall is missing. Used only for BAE (pipe); SDCO maps DAE, the mirroring node-side missing-mortar code, onto MissingBrickworkOrMasonry instead of this class, so MissingMortar never classifies node individuals."
+MissingRepairMaterial,Missing Repair Material,DefectiveRepair,,,
+MissingSafetyBar,Missing Safety Bar,SafetyChainBar,,,
+MissingSafetyChain,Missing Safety Chain,SafetyChainBar,,,
+MissingStep,Missing Step,DefectiveStepOrLadder,,,
+MissingWallBreakOrCollapse,Missing Wall Break Or Collapse,BreakOrCollapse,missing pieces of wall,,
+MissingWallDefectiveRepair,Missing Wall Defective Repair,DefectiveRepair,,,
+MissingWallSurface,Missing Wall Surface,Surface,,,
+NarrowsChannel,Narrows Channel,Channel,,"Table 12, DCI char2 (A)",The channel narrows in the direction of flow. Used for DCI char2 (A).
+NoAccessToPipe,No Access To Pipe,OtherPipelineThroughManhole,,,
+NoBenching,No Benching,Benching,,"Table 12, DCH char (C)",Records that the manhole or inspection chamber has no benching. Used for DCH char (C).
+NoChannel,No Channel,Channel,,"Table 12, DCI char1 (C)",Records that the manhole or inspection chamber has no channel. Used for DCI char1 (C).
+NoDefectsSafetyBar,No Defects Safety Bar,SafetyChainBar,,,
+NoDefectsSafetyChain,No Defects Safety Chain,SafetyChainBar,,,
+NodeConnection,Node Connection,Connection,,"Table 12, DCA char1","The node-side connection-type characterization: how a pipeline enters the manhole or inspection chamber (in the benching, free drop, backdrop, internal drop pipe, ramp, ventilation). Used for DCA char1, with the specific arrangement types as subclasses."
+NodeType,Node Type,Inventory,,"Table 6, BCD/BCE","The type of node; manhole, inspection chamber, rodding eye, lamp hole, outfall, major connection without a chamber, or an employing-authority-defined type; at the start or finish of the pipeline inspection. Used for BCD (start node) and BCE (finish node), which share the same characterization values as this class's subclasses."
+NotEvident,Not Evident,Cause,,"Table 4, BAF char2 (E); Table 10, DAF char2 (E)",Records that surface damage was observed but its cause could not be determined. Used for BAF char2 (E) and DAF char2 (E).
+NothingVisible,Nothing Visible,MissingBrickworkOrMasonry,,"Table 4, BAD char2 (B); Table 10, DAD char2 (B)","Where brickwork or masonry is missing, it is not possible to determine what is exposed through the hole. Used for BAD char2 (B) and DAD char2 (B)."
+Observation,Observation,,,8.1.1/11.1.1,"DIN EN 13508-2 requires every recorded feature to be tagged with one of its defined main codes, optionally refined by characterization, quantification and location information. SDCO's Observation class is the root of the damage-code taxonomy, spanning both pipe (B-codes) and node (D-codes) observations across its six subtrees (Cause, Defect, Inventory, Location, Orientation, OtherObservation)."
+Obstacle,Obstacle,OperationalDefect,,"Table 11, DBE","An object in the manhole or inspection chamber obstructing its cross-section, used only when none of the other operational codes (roots, deposits, soil) apply. Used for DBE; SDCO maps the pipe-side equivalent (BBE) onto OtherObstacle instead of this class, so Obstacle itself only ever classifies node individuals."
+Obstruction,Obstruction,Cause,,"Table 7, BDC char1 (A); Table 13, DDC char1 (B)","One of the listed reasons an inspection was terminated early, denoting a physical obstruction blocking the camera or equipment. Used for BDC char1 (A) and DDC char1 (B)."
+OpenConnection,Open Connection,PipeConnection,,"Table 4, BCA char2 (A)",Records that the connection is open and in use. Used for BCA char2 (A).
+OperationalDefect,Operational Defect,Defect,,8.3 heading; 11.3 heading,"Groups the standard's operation-condition codes (BB.. for pipes, DB.. for nodes); roots, deposits, obstacles, infiltration, exfiltration, vermin; describing how debris, water or organisms affect the running of the pipe or chamber rather than its fabric. SDCO uses OperationalDefect as the parent of these classes, referenced via hasPipeOperationDamage/hasNodeOperationDamage."
+Orientation,Orientation,Observation,,8.1.5/Table 3; various characterization-2 fields,"The standard records the clockface position of an observation and, for several defects, an orientation value (longitudinal/circumferential/vertical/horizontal/complex/helical/inclined/radial/angular) describing how the feature runs relative to the pipe or chamber axis. SDCO collects all such orientation-valued classes under this parent, referenced from hasDamageOrientation and the curvature-direction properties."
+OrificePlateFlowControl,Orifice Plate Flow Control,FlowControl,,"Table 12, DCK char1 (C)",A plate with a fixed opening used to restrict or regulate flow. Used for DCK char1 (C).
+OtherAtmosphereWithin,Other Atmosphere Within,AtmosphereWithin,,,
+OtherAttachedDeposit,Other Attached Deposit,AttachedDeposits,,,
+OtherBenching,Other Benching,Benching,,,
+OtherCause,Other Cause,Cause,General catch all for any other cause / obstructions described in several damage codes.,,
+OtherConnectingPipeline,Other Connecting Pipeline,ConnectingPipeline,,,
+OtherConnection,Other Connection,Connection,,,
+OtherConnectionRepair,Other Connection Repair,PointRepair,,"Table 6, BCB char1 (G); Table 12, DCB char (F)","Some other repair method (not localised lining) was applied to a connection. Used for DCB char (F); the pipe-side equivalent (BCB char1 G) has no someValuesFrom wiring, so only node individuals currently materialize into this class."
+OtherCrossSection,Other Cross Section,CrossSection,,,
+OtherDefectiveConnection,Other Defective Connection,DefectiveConnection,,,
+OtherDefectiveCoverOrFrame,Other Defective Cover Or Frame,DefectiveCoverOrFrame,,,
+OtherDefectiveRepair,Other Defective Repair,DefectiveRepair,,,
+OtherDefectiveStepOrLadder,Other Defective Step Or Ladder,DefectiveStepOrLadder,,,
+OtherFlowControl,Other Flow Control,FlowControl,,,
+OtherInjectedSealingMaterialRepair,Other Injected Sealing Material Repair,PointRepair,,,
+OtherLiningDefect,Other Lining Defect,Lining,,,
+OtherLocation,Other Location,Location,,,
+OtherObservation,Other Observation,Observation,Describes the codes categorized as 'Other' in DIN EN 13508-2.,,
+OtherObstacle,Other Obstacle,Obstacle,,"Table 5, BBE; Table 11, DBE char (Z)","Covers the pipe-side obstacle code (BBE) generically, plus the catch-all 'other' obstacle type on both sides. Used for BBE, BBE char (Z) and DBE char (Z); this conflates the plain pipe main-code with the DIN 'other' characterization value, unlike the node side, where Obstacle is the main-code parent."
+OtherPipelineThroughManhole,Other Pipeline Through Manhole,Inventory,"To describe DCL.
+
+DCL !There is another wastewater pipeline through the manhole or inspection  chamber.  The connections to the manhole or inspection chamber joined to each end of the pipeline should be coded using DCA and DCG."" Characterisation 1 There is:  no access to the pipe (A); access is provided – cover in place (B);  !access is provided – cover missing (C).""  Characterisation 2 !The pipeline is:""  defective (A); not defective (B).",,
+OtherPointRepair,Other Point Repair,PointRepair,,"Table 12, DCB char (Z)","Some other repair method was used, with further detail in the remarks. Used for DCB char (Z); the pipe-side equivalent (BCB char1 Z, OtherTrenchlessRepair) has no someValuesFrom wiring."
+OtherSettledDeposit,Other Settled Deposit,SettledDeposit,,,
+OtherSpecialChamber,Other Special Chamber,NodeType,,,
+OtherSurfaceDamage,Other Surface Damage,Surface,,,
+OtherTrenchlessRepair,Other Trenchless Repair,PointRepair,,"Table 6, BCB char1 (Z)","Some other trenchless repair method was used, with further detail in the remarks. Corresponds to BCB char1 (Z); has no someValuesFrom wiring to hasPipeInventoryFeature, so it is not currently reachable through materialization."
+OtherVermin,Other Vermin,Vermin,,,
+Outfall,Outfall,NodeType,,,
+OvalConnectingPipeline,Oval Connecting Pipeline,ConnectingPipeline,,"Table 12, DCG char1 (F)","A pipe cross-section with equal-diameter circular invert and soffit, joined by parallel sides. Used for DCG char1 (F)."
+OverflowControl,Overflow Control,FlowControl,,"Table 12, DCK char2 (B)",Records that the flow-control device controls an overflow rather than the continuing flow. Used for DCK char2 (B).
+OxygenDeficiency,Oxygen Deficiency,AtmosphereWithin,,"Table 7, BDF char (A); Table 13, DDF char (A)",A shortage of oxygen was detected in the atmosphere. Used for BDF char (A) and DDF char (A).
+PartialGapConnection,Partial Gap Connection,DefectiveConnection,,"Table 4, BAH char (C); Table 10, DAH char (C)","There is a gap around only part of the circumference of the connecting pipe's junction. Used for BAH char (C) and DAH char (C), distinguished from GapConnection by covering only part of the circumference."
+PatchSealingDefectiveRepair,Patch Sealing Defective Repair,DefectiveRepair,,"Table 4, BAL char1 (B); Table 10, DAL char (B)",A patch that was used to seal a hole deliberately cut in the wall (e.g. for a connection) has itself become defective. Used for BAL char1 (B) and DAL char (B).
+PiecesOfPipeObstacle,Pieces Of Pipe Obstacle,Obstacle,,,
+PipeConnection,Pipe Connection,Connection,,"Table 4, BCA char1","The pipe-side connection-type characterization: how the connecting pipe was formed into the wall (prefabricated junction, drilled or chiselled saddle/plain fitting, not evident). Used for BCA char1, with the specific fitting types as subclasses."
+PipeReplacedRepair,Pipe Replaced Repair,PointRepair,,"Table 6, BCB char1 (A)","A section of pipe was replaced during the repair. Corresponds to BCB char1 (A); unlike its node counterpart (DCB char A to WallPartRepair), this class currently has no someValuesFrom restriction wiring it to hasPipeInventoryFeature, so BCB (A) individuals are not classified into it by materialization."
+PipeUnderBenching,Pipe Under Benching,Benching,,"Table 12, DCA char2 (D); Figure 6",The connecting pipe passes underneath the benching rather than discharging across or through it. Used for DCA char2 (D).
+PointRepair,Point Repair,Inventory,,"Table 6, BCB; Table 12, DCB","A short section of the drain, sewer, manhole or inspection chamber has been repaired using a listed method (replacement, lining, injected material, hole repair). Used for BCB (pipe) and DCB (manhole/chamber), with char giving the repair method as its subclasses."
+PorousPipe,Porous Pipe,StructuralDefect,,"Table 4, BAN","The pipe material is observed to be porous. Used only for BAN; DIN's mirroring node code (DAN, Porous wall) is modelled in SDCO as the separate PorousWall class rather than merged into this one."
+PorousWall,Porous Wall,StructuralDefect,,"Table 10, DAN","The material forming the manhole or inspection chamber wall is observed to be porous. Used only for DAN, the node-side counterpart of BAN (Porous pipe)."
+PreviousPartialInspection,Previous Partial Inspection,Cause,,"Table 7, BDC char2 (C)/(D)/(E)","Marks that the termination reason relates to a previous partial inspection of the same pipeline, and is the parent of the three specific completeness outcomes. Referenced by BDC char2 (C), (D) and (E)."
+ProtrudingThroughWallObstacle,Protruding Through Wall Obstacle,Obstacle,,,
+Radial,Radial,Orientation,used by BAJ Displaced Joint,,
+RampChannelBenching,Ramp Channel Benching,Benching,,"Table 12, DCA char2 (C); Figure 6",The connection's channel forms a ramp down through the benching to the main channel. Used for DCA char2 (C).
+RampConnection,Ramp Connection,NodeConnection,,"Table 12, DCA char1 (E)",The connecting pipe discharges via a ramp leading down to the channel. Used for DCA char1 (E).
+RatVermin,Rat Vermin,Vermin,,,
+RectangularConnectingPipeline,Rectangular Connecting Pipeline,ConnectingPipeline,,,
+RectangularCrossSection,Rectangular Cross Section,CrossSection,,,
+ReinforcementProjectingFromSurface,Reinforcement Projecting From Surface,Surface,,,
+RepairMaterialSeparated,Repair Material Separated,DefectiveRepair,,"Table 4, BAL char1 (C); Table 10, DAL char (C)",The repair material has separated from the host wall it was applied to. Used for BAL char1 (C) and DAL char (C).
+ResinMissingFromLaminate,Resin Missing From Laminate,Lining,,"Table 4, BAK char1 (M); Table 10, DAK char1 (M)","Resin is missing from a laminate lining, exposing the underlying fibre reinforcement. Used for BAK char1 (M) and DAK char1 (M)."
+Right,Right,Orientation,,,
+RockingCover,Rocking Cover,DefectiveCoverOrFrame,,,
+RoddingEye,Rodding Eye,NodeType,,"Table 6, BCD/BCE (C)",A surface-level access point allowing rodding equipment to be inserted into the pipe without an inspection chamber. Used for BCD (C) and BCE (C).
+Roots,Roots,OperationalDefect,,"Table 5, BBA; Table 11, DBA","Roots of trees or other plants have grown into the pipe or chamber through joints, defects or connections. Used for BBA (pipe) and DBA (manhole/chamber), with char giving the root type (tap root, fine roots, complex mass) as its subclasses."
+SafetyChainBar,Safety Chain Bar,Inventory,"To describe DCJ:
+
+DCJ This is used to record the location and condition of safety chains/bars on the  outgoing connections. Characterisation The following information:  safety chain present with no defects (A); safety chain missing (with evidence that one was provided) (B); safety chain defective (C); safety chain in position but coated with debris (D); safety bar present with no defects (E); safety bar missing (with evidence that one was provided) (F); safety bar defective (G); safety bar in position but coated with debris (H)",,
+ScreensFlowControl,Screens Flow Control,FlowControl,,,
+SeamCoveringSeparation,Seam Covering Separation,Lining,,"Table 4, BAK char1 (H); Table 10, DAK char1 (H)",The material covering a seam in the lining has separated. Used for BAK char1 (H) and DAK char1 (H).
+SettledDeposit,Settled Deposit,OperationalDefect,,"Table 5, BBC; Table 11, DBC","Material has settled and deposited in the invert of the pipe, or in the invert/benching of a chamber. Used for BBC (pipe) and DBC (manhole/chamber), with char giving the deposit type (fine, coarse, hard/compacted) as its subclasses."
+SewerCurvature,Sewer Curvature,Inventory,,"Table 6, BCC","The route of the drain or sewer deviates by a prefabricated bend rather than at a joint (a curved pipeline), explicitly excluding angular joint displacement (BAJ C). Used for BCC, with char1 (Left/Right) and char2 (Up/Down) recording horizontal and vertical curvature direction; DIN defines no equivalent code for manholes/chambers."
+Silt,Silt,Cause,,"Table 7, BDG char (B); Table 13, DDG char (B)","The view is obstructed by suspended silt in the water. Used for BDG char (B) and DDG char (B)."
+SiltPit,Silt Pit,Inventory,"Used to describe DCN.
+
+Characterisation The following information:  pit not defective (A); pit defective (B).",,
+SoftLiningMaterial,Soft Lining Material,Lining,,,
+SoilVisibleThroughDefect,Soil Visible Through Defect,StructuralDefect,,"Table 4, BAO; Table 10, DAO",Soil from outside the pipe or chamber wall is visible through an existing defect. Used for BAO (pipe) and DAO (manhole/chamber).
+Spalling,Spalling,Surface,,"Table 4, BAF char1 (B); Table 10, DAF char1 (B)","Small fragments breaking away from the surface of the pipe or chamber fabric, one of the surface-damage types. Used for BAF char1 (B) and DAF char1 (B)."
+SpecialNodeType,Special Node Type,NodeType,,"Table 6, BCD/BCE (X)","A node type defined locally by the employing authority, coded with an X-prefixed value rather than one of the standard's own letters. Used for BCD (X) and BCE (X)."
+StarFissure,Star Fissure,Orientation,,,
+Steam,Steam,Cause,,"Table 7, BDG char (C); Table 13, DDG char (C)",The view is obstructed by steam or condensation. Used for BDG char (C) and DDG char (C).
+StructuralDefect,Structural Defect,Defect,,8.2 heading; 11.2 heading,"Groups the standard's fabric-condition codes (BA.. for pipes, DA.. for nodes); deformation, fissures, breaks, defective brickwork, surface damage, linings, repairs and similar; describing damage to the physical structure of the pipe or chamber. SDCO uses StructuralDefect as the parent of these classes, referenced via hasPipeFabricDamage/hasNodeFabricDamage."
+Surface,Surface,StructuralDefect,,"Table 4, BAF; Table 10, DAF","The surface of the pipe or chamber has been damaged by mechanical action or chemical attack (including metal corrosion). Used for BAF (pipe) and DAF (manhole/chamber), with subclasses for each char1 damage type and the Cause subtree giving char2."
+SurfaceCrackFissure,Surface Crack Fissure,Fissure,,"Table 4, BAB char1 (A); Table 10, DAB char1 (A)","The mildest fissure type: a crack confined to the surface, not extending through the wall. Used for BAB char1 (A) and DAB char1 (A)."
+SweatingInfiltration,Sweating Infiltration,Infiltration,,"Table 5, BBF char (A); Table 11, DBF char1 (A)",The mildest infiltration extent: a slow ingress of water with no visible drips. Used for BBF char (A) and DBF char1 (A).
+SyphonFlowControl,Syphon Flow Control,FlowControl,,,
+TapRoot,Tap Root,Roots,,,
+TurbidWastewater,Turbid Wastewater,Wastewater,,"Table 7, BDD (C); BDE char1 (C); DDE char1 (C)","The wastewater is turbid (cloudy) but not additionally coloured. Used for BDD (C), BDE char1 (C) and DDE char1 (C); SDCO also maps the combined 'turbid and coloured' value (E) onto this class alongside ColouredWastewater."
+UShapeConnectingPipeline,U Shape Connecting Pipeline,ConnectingPipeline,,"Table 12, DCG char1 (D)","A pipe cross-section with a circular invert and a flat top, joined by parallel sides. Used for DCG char1 (D)."
+UnableToLiftCover,Unable To Lift Cover,Cause,,"Table 13, DDC char1 (A)",A node-inspection-only termination reason: the manhole or inspection chamber cover could not be removed. Used only for DDC char1 (A); pipe inspections have no equivalent BDC value since they involve no cover to lift.
+UnknownWastewater,Unknown Wastewater,Wastewater,,"Table 7, BDE char1 (YY)","Records that the incoming pipe's wastewater could not be observed because the water level in the main pipe was too high, using the standard's YY 'not observable' code. Used only for BDE char1 (YY); DIN gives no equivalent YY provision for DDE."
+Up,Up,Orientation,,,
+VentilationPipeConnection,Ventilation Pipe Connection,NodeConnection,,"Table 12, DCA char1 (F)",The connection is a ventilation pipe rather than a wastewater-carrying connection. Used for DCA char1 (F).
+VenturiFlowControl,Venturi Flow Control,FlowControl,,"Table 12, DCK char1 (G)",A measuring flume (e.g. a venturi) used to gauge flow rather than to physically control it. Used for DCK char1 (G).
+Vermin,Vermin,OperationalDefect,,"Table 5, BBH; Table 11, DBH","Vermin (rats, cockroaches or other animals) actually observed in or around the pipe or chamber. Used for BBH (pipe) and DBH (manhole/chamber), with char1 giving the animal type and char2 the location."
+Vertical,Vertical,Orientation,,,
+VisibleAggregate,Visible Aggregate,Surface,,,
+VisibleReinforcement,Visible Reinforcement,Surface,,,
+VoidVisibleThroughDefect,Void Visible Through Defect,StructuralDefect,,"Table 4, BAP; Table 10, DAP",A void in the ground outside the pipe or chamber wall is visible through an existing defect. Used for BAP (pipe) and DAP (manhole/chamber).
+VortexFlowControl,Vortex Flow Control,FlowControl,,"Table 12, DCK char1 (D)","A vortex-type flow control device, which limits flow rate using a swirling flow pattern rather than a moving mechanical part. Used for DCK char1 (D)."
+WallInfiltration,Wall Infiltration,Infiltration,Infiltration through the wall of the manhole or inspection chamber,,
+WallPartRepair,Wall Part Repair,PointRepair,,"Table 12, DCB char (A)","Part of the manhole or inspection chamber wall was replaced during the repair. Used for DCB char (A); the pipe-side code (BCB char1 A, 'pipe replaced') is instead mapped to the separate PipeReplacedRepair class, which has no someValuesFrom wiring to hasPipeInventoryFeature, so BCB (A) individuals are not currently materialized into a specific repair-type class."
+Wastewater,Wastewater,OtherObservation,,"Table 7, BDD/BDE char1; Table 13, DDE char1","The visual appearance of the wastewater in the pipe or chamber (clear, discontinued code, turbid, coloured, or turbid-and-coloured), shared by the water-level and incoming-flow codes. Used for BDD, BDE char1 and DDE char1, with the specific appearance values as its subclasses."
+WaterLevel,Water Level,OtherObservation,,"Table 7, BDD; Table 13, DDD","The level of wastewater above the invert of the pipe or chamber. Used for BDD (pipe, char gives the wastewater's appearance from the Wastewater subtree) and DDD (manhole/chamber, recorded only via the vertical location, with no characterization)."
+WedgedInJointObstacle,Wedged In Joint Obstacle,Obstacle,,,
+WeirFlowControl,Weir Flow Control,FlowControl,,,
+WeldFailure,Weld Failure,StructuralDefect,,"Table 4, BAM; Table 10, DAM","A failure in a weld in the fabric of the pipe or chamber. Used for BAM (pipe, char: longitudinal/circumferential/helical) and DAM (manhole/chamber, char: vertical/horizontal/inclined)."
+WidensChannel,Widens Channel,Channel,,"Table 12, DCI char2 (B)",The channel widens in the direction of flow. Used for DCI char2 (B).
+WorkingBenching,Working Benching,Benching,,"Table 12, DCH char (B)",Records that the benching was inspected and found not defective. Used for DCH char (B).
+WorkingChannel,Working Channel,Channel,,"Table 12, DCI char1 (B)",Records that the channel was inspected and found not defective. Used for DCI char1 (B).
+WorkingGritTrap,Working Grit Trap,GritTrapUnderCover,,,
+WorkingOtherPipelineThroughManhole,Working Other Pipeline Through Manhole,OtherPipelineThroughManhole,,,
+WorkingSiltPit,Working Silt Pit,SiltPit,,,
+WrinkledLining,Wrinkled Lining,Lining,,,
+WronglyConnectedIncomingSurfaceWaterPipe,Wrongly Connected Incoming Surface Water Pipe,FlowFromIncomingPipe,,"Table 7, BDE char2 (B); Table 13, DDE char2 (A)","Surface water is observed discharging into a wastewater drain or sewer, indicating a wrongly connected surface-water pipe. Used for BDE char2 (B) and DDE char2 (A); the two codes swap the A/B ordering of this and the wastewater case."
+WronglyConnectedIncomingWastewaterPipe,Wrongly Connected Incoming Wastewater Pipe,FlowFromIncomingPipe,,"Table 7, BDE char2 (A); Table 13, DDE char2 (B)","Wastewater is observed discharging into a surface-water drain or sewer, indicating a wrongly connected foul pipe. Used for BDE char2 (A) and DDE char2 (B); the two codes swap the A/B ordering of this and the surface-water case."

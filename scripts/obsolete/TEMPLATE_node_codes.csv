@@ -1,0 +1,31 @@
+class_name,category,parent_code,characterization_dim,char_value,object_property,filler_class,comment
+# Round-trip proof rows: these 5 already exist in SDCO.rdf. A run against them
+# should skip all class-body emission (idempotent) but still prove that
+# disjoint-group membership is computed from CSV rows (NodeFabric base group;
+# (DAB,1) and (DAB,2) characterization groups).
+#
+# object_property is blank on both base rows: it defaults from category
+# (NodeFabric -> hasNodeFabricDamage). It's spelled out on each char row
+# because each is the FIRST (and only) row in its (parent, dim) group here --
+# carry-forward only fills in blanks for a group's 2nd+ member. Add a second
+# dim-1 letter under DAA and its object_property could be left blank too.
+DAA,NodeFabric,,,,,Deformation,
+DAA_A,,DAA,1,A,hasNodeFabricDamage,GeneralDeformation,
+DAB,NodeFabric,,,,,Fissure,
+DAB1_A,,DAB,1,A,hasNodeFabricDamage,SurfaceCrackFissure,
+DAB2_A,,DAB,2,A,hasDamageOrientation,Vertical,
+#
+# TODO: replace the rows below with real new Node codes. This pair is left as
+# a worked example: it is the first NodeOperation code, and its object_property
+# (hasNodeOperationDamage) does not exist yet in SDCO.rdf -- the script will
+# auto-declare it (mirroring the existing hasPipeOperationDamage property)
+# because the name matches the has(Node|Pipe)(Fabric|Operation)Damage pattern.
+# filler_class values below (Roots, TapRoot) already exist in SDCO.rdf (reused
+# from the Pipe side), so no manual class creation is needed for this example.
+#
+# class_name is blank on the char row: auto-derived to "DEA_A" (DEA only uses
+# characterization dimension 1 so far, so no digit in the name). Its
+# object_property is spelled out (first row of the (DEA,1) group); the base
+# row's is left blank, defaulting from category.
+DEA,NodeOperation,,,,,Roots,TODO: example only -- replace with the real next code
+,,DEA,1,A,hasNodeOperationDamage,TapRoot,TODO: example only -- replace with the real next code

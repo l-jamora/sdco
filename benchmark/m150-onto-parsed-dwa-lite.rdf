@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:m150="https://l-jamora.github.io/m150-onto#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_2255026_33_BAH">
+    <m150:isChildOf rdf:resource="https://l-jamora.github.io/m150-onto#Beispiel_Inspection_2255026"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://l-jamora.github.io/m150-onto#ConditionReport"/>
+    <m150:hasPipeSectionConditionStation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">33.0</m150:hasPipeSectionConditionStation>
+    <m150:hasConditionCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BAH</m150:hasConditionCode>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Condition[2255026]_[33]_[BAH]</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_2255027_29_5_BCA">
+    <m150:isChildOf rdf:resource="https://l-jamora.github.io/m150-onto#Beispiel_Inspection_2255027"/>
+    <rdf:type rdf:resource="https://l-jamora.github.io/m150-onto#ConditionReport"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <m150:hasConditionCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCA</m150:hasConditionCode>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Condition[2255027]_[29.5]_[BCA]</rdfs:label>
+    <m150:hasPipeSectionConditionStation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">29.5</m150:hasPipeSectionConditionStation>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_PipeSection_2255027">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gegengefï¿½lle?: nein | erfasst am: 2007-10-10 | erfasst von: BASYS MIGRATION | geï¿½ndert am: 2025-04-15 | geï¿½ndert von: dieter.suendermann | GKZ: 2 | Anschlï¿½sse fest: 2 | Straï¿½enentwï¿½sserung: ja | Nur Strassenentwï¿½sserung?: nein | Baulosnr: 70665 | Feld78: 100 | Basys Id: 1457 | Rechtswert Oben: 290798428 | Rechtswert Unten: 290758410 | Objekt ID: 2255027 | Ortsteilschlï¿½ssel: 0 | mass_id: 0 | Logische ID: 2255027 | Hochwert Oben: 5628043155 | Hochwert Unten: 5628045287 | ID: 188089 | Gemeindeschlï¿½ssel: 5334002 | Faktor: -0.054 | Ablauf: 188092 | Haltungsflï¿½che: 1 Objekt | Hydraulikdaten: 0 Objekte | Kanaluntersuchungen: 1 Objekt | Kosten: 0 Objekte | Sanierung Leitung: 0 Objekte | Strichdarstellung: 2 Objekte | Zulauf: 188096 | Leitung: 1 Linie</rdfs:comment>
+    <m150:hasOperationalStatus rdf:resource="https://l-jamora.github.io/m150-onto#M150_RT109_B"/>
+    <m150:hasPipeSectionGradient rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.4</m150:hasPipeSectionGradient>
+    <m150:hasPipeSectionConnectingPipeStationing rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">217.33</m150:hasPipeSectionConnectingPipeStationing>
+    <m150:hasSewerUsage rdf:resource="https://l-jamora.github.io/m150-onto#M150_RT104_R"/>
+    <m150:hasAlternativeDesignation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60010000 003</m150:hasAlternativeDesignation>
+    <m150:hasPipeSectionProfileWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300</m150:hasPipeSectionProfileWidth>
+    <m150:hasPipeSectionPipeLength rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">39.07</m150:hasPipeSectionPipeLength>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PipeSection[2255027]</rdfs:label>
+    <m150:hasDistrictName rdf:resource="https://l-jamora.github.io/m150-onto#Beispiel_District_Laurensberg"/>
+    <m150:hasStreetCode rdf:resource="https://l-jamora.github.io/m150-onto#Beispiel_StreetCode_2926"/>
+    <m150:hasPipeSectionProfileType rdf:resource="https://l-jamora.github.io/m150-onto#M150_RT106_DN"/>
+    <m150:hasPipeSectionProfileHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300</m150:hasPipeSectionProfileHeight>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://l-jamora.github.io/m150-onto#PipeSection"/>
+    <m150:hasPipeSectionLength rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">40.07</m150:hasPipeSectionLength>
+    <m150:hasStreetName rdf:resource="https://l-jamora.github.io/m150-onto#Beispiel_Street_Burgstra_e"/>
+    <m150:hasPipeSectionTopNodeDesignation rdf:resource="https://l-jamora.github.io/m150-onto#Beispiel_Node_2255027"/>
+    <m150:hasMunicipalityCode rdf:resource="https://l-jamora.github.io/m150-onto#Beispiel_MunicipalityCode_Aachen"/>
+    <m150:hasPipeSectionBottomNodeDesignation rdf:resource="https://l-jamora.github.io/m150-onto#Beispiel_Node_2255026"/>
+    <m150:hasTreatmentPlantNumber rdf:resource="https://l-jamora.github.io/m150-onto#Beispiel_TreatmentPlant_Einleitung_in_ein_Gew_sser"/>
+    <m150:hasDesignation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2255027</m150:hasDesignation>
+    <m150:hasYearOfConstruction rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1970</m150:hasYearOfConstruction>
+    <m150:hasMaterial rdf:resource="https://l-jamora.github.io/m150-onto#M150_RT105_B"/>
+    <m150:hasOwner rdf:resource="https://l-jamora.github.io/m150-onto#M150_RT110_STADT AC  FB68_PLACEHOLDER"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_2255028_0_BCE">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://l-jamora.github.io/m150-onto#ConditionReport"/>
+    <m150:isChildOf rdf:resource="https://l-jamora.github.io/m150-onto#Beispiel_Inspection_2255028"/>
+    <m150:hasConditionCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCE</m150:hasConditionCode>
+    <m150:hasPipeSectionConditionStation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</m150:hasPipeSectionConditionStation>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Condition[2255028]_[0]_[BCE]</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_PipeSection_2255025">
+    <m150:hasPipeSectionProfileWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">400</m150:hasPipeSectionProfileWidth>
+    <m150:hasOperationalStatus rdf:resource="https://l-jamora.github.io/m150-onto#M150_RT109_B"/>
+    <m150:hasYearOfConstruction rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1970</m150:hasYearOfConstruction>
+    <m150:hasMaterial rdf:resource="https://l-jamora.github.io/m150-onto#M150_RT105_B"/>
+    <m150:hasPipeSectionProfileHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">400</m150:hasPipeSectionProfileHeight>
+    <m150:hasOwner rdf:resource="https://l-jamora.github.io/m150-onto#M150_RT110_STADT AC  FB68_PLACEHOLDER"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gegengefï¿½lle?: nein | erfasst am: 2007-10-10 | erfasst von: BASYS MIGRATION | geï¿½ndert am: 2025-04-15 | geï¿½ndert von: dieter.suendermann | GKZ: 2 | Anschlï¿½sse fest: 2 | Straï¿½enentwï¿½sserung: ja | Nur Strassenentwï¿½sserung?: nein | Baulosnr: 70662 | Feld78: 100 | Basys Id: 1349 | Rechtswert Oben: 290718517 | Rechtswert Unten: 290683433 | Objekt ID: 2255025 | Ortsteilschlï¿½ssel: 0 | mass_id: 0 | Logische ID: 2255025 | Hochwert Oben: 5628045128 | Hochwert Unten: 5628045643 | ID: 187346 | Gemeindeschlï¿½ssel: 5334002 | Faktor: -0.03785 | Ablauf: 187349 | Haltungsflï¿½che: 1 Objekt | Hydraulikdaten: 0 Objekte | Kanaluntersuchungen: 1 Objekt | Kosten: 0 Objekte | Sanierung Leitung: 0 Objekte | Strichdarstellung: 2 Objekte | Zulauf: 187353 | Leitung: 1 Linie</rdfs:comment>
+    <m150:hasPipeSectionGradient rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.78</m150:hasPipeSectionGradient>
+    <m150:hasPipeSectionPipeLength rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">34.09</m150:hasPipeSectionPipeLength>
+    <m150:hasSewerUsage rdf:resource="https://l-jamora.github.io/m150-onto#M150_RT104_R"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PipeSection[2255025]</rdfs:label>
+    <m150:hasDesignation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2255025</m150:hasDesignation>
+    <m150:hasDistrictName rdf:resource="https://l-jamora.github.io/m150-onto#Beispiel_District_Laurensberg"/>
+    <m150:hasPipeSectionProfileType rdf:resource="https://l-jamora.github.io/m150-onto#M150_RT106_DN"/>
+    <m150:hasTreatmentPlantNumber rdf:resource="https://l-jamora.github.io/m150-onto#Beispiel_TreatmentPlant_Einleitung_in_ein_Gew_sser"/>
+    <m150:hasStreetCode rdf:resource="https://l-jamora.github.io/m150-onto#Beispiel_StreetCode_2926"/>
+    <m150:hasPipeSectionLength rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">35.09</m150:hasPipeSectionLength>
+    <m150:hasPipeSectionTopNodeDesignation rdf:resource="https://l-jamora.github.io/m150-onto#Beispiel_Node_2255025"/>
+    <m150:hasPipeSectionBottomNodeDesignation rdf:resource="https://l-jamora.github.io/m150-onto#Beispiel_Node_2255024"/>
+    <m150:hasMunicipalityCode rdf:resource="https://l-jamora.github.io/m150-onto#Beispiel_MunicipalityCode_Aachen"/>
+    <m150:hasPipeSectionConnectingPipeStationing rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">213.66</m150:hasPipeSectionConnectingPipeStationing>
+    <m150:hasStreetName rdf:resource="https://l-jamora.github.io/m150-onto#Beispiel_Street_Burgstra_e"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://l-jamora.github.io/m150-onto#PipeSection"/>
+    <m150:hasAlternativeDesignation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60010000 005</m150:hasAlternativeDesignation>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_PipeSection_2255028">
+    <m150:hasDistrictName rdf:resource="https://l-jamora.github.io/m150-onto#Beispiel_District_Laurensberg"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gegengefï¿½lle?: nein | erfasst am: 2007-10-10 | erfasst von: BASYS MIGRATION | geï¿½ndert am: 2009-03-16 | geï¿½ndert von: Sï¿½ndermann | GKZ: 2 | Anschlï¿½sse fest: 0 | Straï¿½enentwï¿½sserung: ja | Nur Strassenentwï¿½sserung?: nein | Baulosnr: 70667 | Feld78: 100 | Basys Id: 1533 | Rechtswert Oben: 290829766 | Rechtswert Unten: 290798428 | Objekt ID: 2255028 | Ortsteilschlï¿½ssel: 0 | mass_id: 0 | Logische ID: 2255028 | Hochwert Oben: 5628041193 | Hochwert Unten: 5628043155 | ID: 188551 | Gemeindeschlï¿½ssel: 5334002 | Faktor: -0.07139 | Ablauf: 188554 | Haltungsflï¿½che: 1 Objekt | Hydraulikdaten: 0 Objekte | Kanaluntersuchungen: 1 Objekt | Kosten: 0 Objekte | Sanierung Leitung: 0 Objekte | Strichdarstellung: 2 Objekte | Zulauf: 188558 | Leitung: 1 Linie</rdfs:comment>
+    <m150:hasPipeSectionPipeLength rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30.4</m150:hasPipeSectionPipeLength>
+    <m150:hasPipeSectionProfileHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300</m150:hasPipeSectionProfileHeight>
+    <m150:hasStreetCode rdf:resource="https://l-jamora.github.io/m150-onto#Beispiel_StreetCode_2926"/>
+    <m150:hasPipeSectionConnectingPipeStationing rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">220.18</m150:hasPipeSectionConnectingPipeStationing>
+    <m150:hasDesignation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2255028</m150:hasDesignation>
+    <m150:hasPipeSectionProfileType rdf:resource="https://l-jamora.github.io/m150-onto#M150_RT106_DN"/>
+    <m150:hasStreetName rdf:resource="https://l-jamora.github.io/m150-onto#Beispiel_Street_Burgstra_e"/>
+    <m150:hasMunicipalityCode rdf:resource="https://l-jamora.github.io/m150-onto#Beispiel_MunicipalityCode_Aachen"/>
+    <m150:hasPipeSectionGradient rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.14</m150:hasPipeSectionGradient>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://l-jamora.github.io/m150-onto#PipeSection"/>
+    <m150:hasPipeSectionLength rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">31.4</m150:hasPipeSectionLength>
+    <m150:hasPipeSectionProfileWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300</m150:hasPipeSectionProfileWidth>
+    <m150:hasOwner rdf:resource="https://l-jamora.github.io/m150-onto#M150_RT110_STADT AC  FB68_PLACEHOLDER"/>
+    <m150:hasPipeSectionBottomNodeDesignation rdf:resource="https://l-jamora.github.io/m150-onto#Beispiel_Node_2255027"/>
+    <m150:hasOperationalStatus rdf:resource="https://l-jamora.github.io/m150-onto#M150_RT109_B"/>
+    <m150:hasTreatmentPlantNumber rdf:resource="https://l-jamora.github.io/m150-onto#Beispiel_TreatmentPlant_Einleitung_in_ein_Gew_sser"/>
+    <m150:hasYearOfConstruction rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1970</m150:hasYearOfConstruction>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PipeSection[2255028]</rdfs:label>
+    <m150:hasPipeSectionTopNodeDesignation rdf:resource="https://l-jamora.github.io/m150-onto#Beispiel_Node_2255028"/>
+    <m150:hasAlternativeDesignation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60010000 002</m150:hasAlternativeDesignation>
+    <m150:hasSewerUsage rdf:resource="https://l-jamora.github.io/m150-onto#M150_RT104_R"/>
+    <m150:hasMaterial rdf:resource="https://l-jamora.github.io/m150-onto#M150_RT105_B"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Inspection_2255025">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inspection[2255025]</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://l-jamora.github.io/m150-onto#InspectionReport"/>
+    <m150:hasInspectionDateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-11-07T00:00:00</m150:hasInspectionDateTime>
+    <m150:inspects rdf:resource="https://l-jamora.github.io/m150-onto#Beispiel_PipeSection_2255025"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_2255027_29_5_BAF">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Condition[2255027]_[29.5]_[BAF]</rdfs:label>
+    <m150:hasConditionCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BAF</m150:hasConditionCode>
+    <rdf:type rdf:resource="https://l-jamora.github.io/m150-onto#ConditionReport"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <m150:hasPipeSectionConditionStation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">29.5</m150:hasPipeSectionConditionStation>
+    <m150:isChildOf rdf:resource="https://l-jamora.github.io/m150-onto#Beispiel_Inspection_2255027"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Inspection_2255027">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inspection[2255027]</rdfs:label>
+    <m150:hasInspectionDateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-11-07T00:00:00</m150:hasInspectionDateTime>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://l-jamora.github.io/m150-onto#InspectionReport"/>
+    <m150:inspects rdf:resource="https://l-jamora.github.io/m150-onto#Beispiel_PipeSection_2255027"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_PipeSection_2255026">
+    <m150:hasPipeSectionBottomNodeDesignation rdf:resource="https://l-jamora.github.io/m150-onto#Beispiel_Node_2255025"/>
+    <m150:hasPipeSectionPipeLength rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">38.89</m150:hasPipeSectionPipeLength>
+    <m150:hasOwner rdf:resource="https://l-jamora.github.io/m150-onto#M150_RT110_STADT AC  FB68_PLACEHOLDER"/>
+    <m150:hasPipeSectionProfileType rdf:resource="https://l-jamora.github.io/m150-onto#M150_RT106_DN"/>
+    <m150:hasOperationalStatus rdf:resource="https://l-jamora.github.io/m150-onto#M150_RT109_B"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://l-jamora.github.io/m150-onto#PipeSection"/>
+    <m150:hasStreetName rdf:resource="https://l-jamora.github.io/m150-onto#Beispiel_Street_Burgstra_e"/>
+    <m150:hasPipeSectionTopNodeDesignation rdf:resource="https://l-jamora.github.io/m150-onto#Beispiel_Node_2255026"/>
+    <m150:hasMunicipalityCode rdf:resource="https://l-jamora.github.io/m150-onto#Beispiel_MunicipalityCode_Aachen"/>
+    <m150:hasMaterial rdf:resource="https://l-jamora.github.io/m150-onto#M150_RT105_B"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PipeSection[2255026]</rdfs:label>
+    <m150:hasYearOfConstruction rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1970</m150:hasYearOfConstruction>
+    <m150:hasPipeSectionProfileWidth rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">400</m150:hasPipeSectionProfileWidth>
+    <m150:hasPipeSectionProfileHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">400</m150:hasPipeSectionProfileHeight>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gegengefï¿½lle?: nein | erfasst am: 2007-10-10 | erfasst von: BASYS MIGRATION | geï¿½ndert am: 2025-04-15 | geï¿½ndert von: dieter.suendermann | GKZ: 2 | Anschlï¿½sse fest: 4 | Straï¿½enentwï¿½sserung: ja | Nur Strassenentwï¿½sserung?: nein | Baulosnr: 70664 | Feld78: 100 | Basys Id: 1393 | Rechtswert Oben: 290758410 | Rechtswert Unten: 290718517 | Objekt ID: 2255026 | Ortsteilschlï¿½ssel: 0 | mass_id: 0 | Logische ID: 2255026 | Hochwert Oben: 5628045287 | Hochwert Unten: 5628045128 | ID: 187651 | Gemeindeschlï¿½ssel: 5334002 | Faktor: -0.04011 | Ablauf: 187654 | Haltungsflï¿½che: 1 Objekt | Hydraulikdaten: 0 Objekte | Kanaluntersuchungen: 1 Objekt | Kosten: 0 Objekte | Sanierung Leitung: 0 Objekte | Strichdarstellung: 2 Objekte | Zulauf: 187658 | Leitung: 1 Linie</rdfs:comment>
+    <m150:hasPipeSectionConnectingPipeStationing rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">215.22</m150:hasPipeSectionConnectingPipeStationing>
+    <m150:hasAlternativeDesignation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60010000 004</m150:hasAlternativeDesignation>
+    <m150:hasStreetCode rdf:resource="https://l-jamora.github.io/m150-onto#Beispiel_StreetCode_2926"/>
+    <m150:hasPipeSectionLength rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">39.89</m150:hasPipeSectionLength>
+    <m150:hasDesignation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2255026</m150:hasDesignation>
+    <m150:hasPipeSectionGradient rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.01</m150:hasPipeSectionGradient>
+    <m150:hasSewerUsage rdf:resource="https://l-jamora.github.io/m150-onto#M150_RT104_R"/>
+    <m150:hasTreatmentPlantNumber rdf:resource="https://l-jamora.github.io/m150-onto#Beispiel_TreatmentPlant_Einleitung_in_ein_Gew_sser"/>
+    <m150:hasDistrictName rdf:resource="https://l-jamora.github.io/m150-onto#Beispiel_District_Laurensberg"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Inspection_2255028">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://l-jamora.github.io/m150-onto#InspectionReport"/>
+    <m150:hasInspectionDateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-11-08T00:00:00</m150:hasInspectionDateTime>
+    <m150:inspects rdf:resource="https://l-jamora.github.io/m150-onto#Beispiel_PipeSection_2255028"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inspection[2255028]</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Inspection_2255026">
+    <m150:inspects rdf:resource="https://l-jamora.github.io/m150-onto#Beispiel_PipeSection_2255026"/>
+    <m150:hasInspectionDateTime rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-11-07T00:00:00</m150:hasInspectionDateTime>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inspection[2255026]</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://l-jamora.github.io/m150-onto#InspectionReport"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_2255025_5_382_BAG">
+    <m150:hasPipeSectionConditionStation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.382</m150:hasPipeSectionConditionStation>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://l-jamora.github.io/m150-onto#ConditionReport"/>
+    <m150:hasConditionCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BAG</m150:hasConditionCode>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Condition[2255025]_[5.382]_[BAG]</rdfs:label>
+    <m150:isChildOf rdf:resource="https://l-jamora.github.io/m150-onto#Beispiel_Inspection_2255025"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_2255028_1_7_BBC">
+    <m150:hasPipeSectionConditionStation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.7</m150:hasPipeSectionConditionStation>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Condition[2255028]_[1.7]_[BBC]</rdfs:label>
+    <m150:isChildOf rdf:resource="https://l-jamora.github.io/m150-onto#Beispiel_Inspection_2255028"/>
+    <m150:hasConditionCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BBC</m150:hasConditionCode>
+    <rdf:type rdf:resource="https://l-jamora.github.io/m150-onto#ConditionReport"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_2255026_0_4_BDB">
+    <rdf:type rdf:resource="https://l-jamora.github.io/m150-onto#ConditionReport"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <m150:hasConditionCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BDB</m150:hasConditionCode>
+    <m150:hasPipeSectionConditionStation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.4</m150:hasPipeSectionConditionStation>
+    <m150:isChildOf rdf:resource="https://l-jamora.github.io/m150-onto#Beispiel_Inspection_2255026"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Condition[2255026]_[0.4]_[BDB]</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_2255025_12_982_BAJ">
+    <rdf:type rdf:resource="https://l-jamora.github.io/m150-onto#ConditionReport"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Condition[2255025]_[12.982]_[BAJ]</rdfs:label>
+    <m150:hasConditionCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BAJ</m150:hasConditionCode>
+    <m150:hasPipeSectionConditionStation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.982</m150:hasPipeSectionConditionStation>
+    <m150:isChildOf rdf:resource="https://l-jamora.github.io/m150-onto#Beispiel_Inspection_2255025"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto-parsed">
+    <rdfs:comment>Auto-generated by ontoparser.parser from burgstr.xml. Contains only the individuals/assertions parsed from that XML file; imports the base M150-Onto ontology rather than duplicating it. DO NOT HAND-EDIT -- regenerate with python -m ontoparser.parser.</rdfs:comment>
+    <owl:imports rdf:resource="https://l-jamora.github.io/m150-onto"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://l-jamora.github.io/m150-onto#Beispiel_Condition_2255028_31_4_BCD">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Condition[2255028]_[31.4]_[BCD]</rdfs:label>
+    <m150:hasConditionCode rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCD</m150:hasConditionCode>
+    <rdf:type rdf:resource="https://l-jamora.github.io/m150-onto#ConditionReport"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <m150:hasPipeSectionConditionStation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">31.4</m150:hasPipeSectionConditionStation>
+    <m150:isChildOf rdf:resource="https://l-jamora.github.io/m150-onto#Beispiel_Inspection_2255028"/>
+  </rdf:Description>
+</rdf:RDF>
