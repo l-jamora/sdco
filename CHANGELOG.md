@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.1.1] - 2026-09-17
+
+### Ontology
+
+- Added an `rdfs:comment` to the `Reference` superclass in `SDCO.rdf` explaining its role, with a concrete example (`DAB`/`DAB2_A`).
+
 ## [0.1.0] - 2026-09-16
 
 First release. Everything below happened on `dev-classes_approach`, merged into `main` for this tag.
