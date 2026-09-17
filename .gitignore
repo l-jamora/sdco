@@ -6,3 +6,5 @@ scripts/__pycache__/*
 .vscode/*
 SDCO-dwa-parsed.rdf
 .venv/
+latex/
+docs/design-specs/Sewer Damage Classification Ontology SDCO.md
