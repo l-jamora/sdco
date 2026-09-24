@@ -149,6 +149,30 @@ def test_sibling_characterizations_are_pairwise_disjoint(sdco_graph, defined_cla
     assert not missing, f"sibling characterization classes missing a disjointness axiom: {missing}"
 
 
+def test_sibling_characterizations_share_one_property(sdco_graph, defined_classes):
+    """Within one (base, characterization property) family, every sibling's
+    someValuesFrom restriction must use the same object property -- all BAF
+    char2 codes are causes, so all use hasDamageCause. No range on the
+    hasDamage chain means a wrong property here is not a DL contradiction,
+    so HermiT's coherence check can't catch it."""
+    families: dict = {}
+    for rec in defined_classes:
+        if rec["kind"] == "intersection" and str(rec["prop"]).startswith(str(M150.hasCharacterization)):
+            restriction_props = {
+                sdco_graph.value(sup, OWL.onProperty)
+                for sup in sdco_graph.objects(rec["cls"], RDFS.subClassOf)
+                if sdco_graph.value(sup, OWL.someValuesFrom) is not None
+            }
+            families.setdefault((rec["base"], rec["prop"]), {})[rec["cls"]] = restriction_props
+
+    mixed = []
+    for (base, prop), members in families.items():
+        used = set().union(*members.values())
+        if len(used) > 1:
+            mixed.append((base, prop, {cls: props for cls, props in members.items()}))
+    assert not mixed, f"characterization families whose siblings use different object properties: {mixed}"
+
+
 def test_no_duplicate_definitions(defined_classes):
     seen: dict = {}
     dupes = []

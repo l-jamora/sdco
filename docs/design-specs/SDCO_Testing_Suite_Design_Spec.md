@@ -89,7 +89,7 @@ Hand-authored (Protégé or by hand, matching Protégé's RDF/XML serialization)
 
 `conftest.py`'s `load_fixture_individuals()` splits the `sdco#`-namespace types back out as `expected` before classification runs. Extend this file directly to add coverage — no Python changes needed — but re-derive new individuals' expected types via HermiT (`--reason`), never by hand-guessing or by running `classify_individuals()` and copying its output.
 
-### `tests/test_structure.py` — Tier 1, 8 tests
+### `tests/test_structure.py` — Tier 1, 10 tests (incl. `test_every_sdco_class_has_a_label`, not tabled here — see CLAUDE.md)
 
 No reasoner; reads `defined_classes`.
 
@@ -99,6 +99,7 @@ No reasoner; reads `defined_classes`.
 | `test_two_passes_suffice` | No intersection's `base` is itself intersection-defined — the direct guard on `classify_individuals()`'s hardcoded 2-pass count. |
 | `test_no_mixed_disjoint_groups` | For each `owl:AllDisjointClasses` group and inline `owl:disjointWith` pair, all members keyed on a `hasCharacterization*` property share the *same* one. Guards defect (2). Parsed via rdflib SPARQL, not text, since both block styles (`AllDisjointClasses` and inline) coexist. |
 | `test_sibling_characterizations_are_pairwise_disjoint` | Positive counterpart (OOPS! P11, missing disjointness): within one `(base, characterization property)` family, every sibling pair must appear in *some* disjointness axiom. |
+| `test_sibling_characterizations_share_one_property` | Added 2026-09-24. Within one `(base, characterization property)` family, every sibling's `someValuesFrom` restriction uses the same object property (e.g. all `BAF2_*` → `hasDamageCause`). Needed because the `hasDamage` property chain has no `rdfs:range`, so a wrong property is not a DL contradiction and Tier 2's coherence check can't see it. See §4c. |
 | `test_no_duplicate_definitions` | No two classes share a `(kind, base, prop, val)` signature. |
 | `test_codes_are_plain_literals` | Every `owl:hasValue` in a code definition is an untyped `Literal` (no datatype, no language tag). |
 | `test_no_dangling_object_property_references` | Every `owl:someValuesFrom` filler and `owl:onProperty` target used in a restriction is declared in-file as `owl:Class` / `owl:ObjectProperty`. Scoped to object properties only — datatype properties (`hasConditionCode` etc.) come from the m150-onto import and are never declared in `SDCO.rdf`. |
@@ -158,6 +159,16 @@ Two genuine `SDCO.rdf` bugs, confirmed by hand, survived after all of §4a's fix
 2. **The entire `BCA1_*` family has zero disjointness axioms.** `BCA1_A, _B, _C, _D, _E, _G, _Z` appear in no `owl:disjointWith` and no `owl:AllDisjointClasses` block anywhere in the file — unlike every sibling family (e.g. `BAB1_A/_B/_C` is properly grouped). A report could be classified as both `BCA1_A` and `BCA1_B` simultaneously with nothing to flag it. Caught by `test_sibling_characterizations_are_pairwise_disjoint`.
 
 **Neither fix was applied by this suite at the time** — deliberately left for a separate decision on this branch (retype one literal; add one `AllDisjointClasses` block). Both were subsequently fixed in commit `ab9ec6d` (`:BBC` retyped to `"BBC"`; an `owl:AllDisjointClasses` block added for the `BCA1_*` family) — `pytest -m ""` now passes 18/18. This section is kept as a historical record of what the test suite surfaced; see the design spec's git history for the fix itself.
+
+### 4c. `BAF2_E` on the wrong property (found and fixed 2026-09-24)
+
+Surfaced by a competency-question SPARQL query in the design notes ("which codes can record a damage cause?"), not by the suite: it returned 11 rows instead of 12. `:BAF2_E` (pipe surface damage, char2 E "Not Evident") was `rdfs:subClassOf [ owl:onProperty :hasPipeFabricDamage ; owl:someValuesFrom :NotEvident ]`, while its siblings `BAF2_A–D/Z` and the node twin `DAF2_E` use `hasDamageCause`. `NotEvident ⊑ Cause`, and the source CSV comment (`observation_comments.csv`) confirms it is a cause value.
+
+Why nothing caught it: no Tier 1 test compared the object properties of sibling characterization classes. Tier 2 didn't either, because `hasDamage`/`hasPipeDamage`/`hasPipeFabricDamage` declare no `rdfs:range`. `Cause` and `Defect` *are* declared disjoint, so with a `Defect` range on the chain HermiT would have reported `BAF2_E` unsatisfiable. Without the range, a `Cause` filler on a damage property is simply allowed. No data was affected: neither the DWA example data nor the fixtures contain a BAF char2 `E` report.
+
+Fix: `onProperty` changed to `:hasDamageCause` in `SDCO.rdf`. Guard: `test_sibling_characterizations_share_one_property`, confirmed red on the unfixed file (flags exactly the BAF char2 family, the only mixed family of 87) and green after.
+
+**Second guard, same day: `rdfs:range :Defect` on `:hasDamage`** (inherited by all 6 sub-properties). Checking every filler on the chain before adding it surfaced four more defects of the same kind that the sibling test *can't* see, because all siblings were wrong the same way: `DBH2_A/B/C/Z` (node vermin location — `InManholeOrInspectionChamber`, `InConnection`, `InOpenJoint`, `OtherLocation`, all ⊑ `Location`) used `hasNodeOperationDamage`, while the pipe twins `BBH2_*` use `hasLocation`. Origin: `scripts/obsolete/NodeOperation_node_codes.csv` rows 40–43 (one-time generator input, already baked in; not re-run). Fixed to `hasLocation`. After the fix, all 149 fillers on the chain are ⊑ `Defect`. Mutation-proof: reverting `DBH2_A` alone makes `test_ontology_is_coherent` fail with `DBH2_A` unsatisfiable (`Location` and `Defect` are disjoint), so the range turns this whole defect class into a reasoner-visible contradiction.
 
 ## 5. Mutation-proof (guard verification)
 

@@ -7,10 +7,10 @@
 @base <https://l-jamora.github.io/sdco#> .
 
 <https://l-jamora.github.io/sdco> rdf:type owl:Ontology ;
-                                   owl:versionIRI <https://l-jamora.github.io/sdco/0.1.0> ;
+                                   owl:versionIRI <https://l-jamora.github.io/sdco/0.1.2> ;
                                    owl:imports <https://l-jamora.github.io/m150-onto> ;
                                    rdfs:label "Sewer Damage Classification Ontology" ;
-                                   owl:versionInfo "0.1.0" .
+                                   owl:versionInfo "0.1.2" .
 
 #################################################################
 #    Annotation properties
@@ -53,7 +53,8 @@ Whether the connection is incoming or outgoing or has been sealed:  connection d
 ###  https://l-jamora.github.io/sdco#hasDamage
 :hasDamage rdf:type owl:ObjectProperty ,
                     owl:AsymmetricProperty ,
-                    owl:IrreflexiveProperty .
+                    owl:IrreflexiveProperty ;
+           rdfs:range :Defect .
 
 
 ###  https://l-jamora.github.io/sdco#hasDamageCause
@@ -1024,7 +1025,7 @@ Circumferntial Location: Should be recorded""" ;
                             ] ;
         rdfs:subClassOf :BAF ,
                         [ rdf:type owl:Restriction ;
-                          owl:onProperty :hasPipeFabricDamage ;
+                          owl:onProperty :hasDamageCause ;
                           owl:someValuesFrom :NotEvident
                         ] ;
         rdfs:label "BAF char2=E (Not Evident)"@en .
@@ -7462,7 +7463,7 @@ DCO Characterisation The shape of the horizontal (plan) cross-section of the man
                             ] ;
         rdfs:subClassOf :DBH ,
                         [ rdf:type owl:Restriction ;
-                          owl:onProperty :hasNodeOperationDamage ;
+                          owl:onProperty :hasLocation ;
                           owl:someValuesFrom :InManholeOrInspectionChamber
                         ] ;
         rdfs:label "DBH char2=A (In Manhole Or Inspection Chamber)"@en .
@@ -7480,7 +7481,7 @@ DCO Characterisation The shape of the horizontal (plan) cross-section of the man
                             ] ;
         rdfs:subClassOf :DBH ,
                         [ rdf:type owl:Restriction ;
-                          owl:onProperty :hasNodeOperationDamage ;
+                          owl:onProperty :hasLocation ;
                           owl:someValuesFrom :InConnection
                         ] ;
         rdfs:label "DBH char2=B (In Connection)"@en .
@@ -7498,7 +7499,7 @@ DCO Characterisation The shape of the horizontal (plan) cross-section of the man
                             ] ;
         rdfs:subClassOf :DBH ,
                         [ rdf:type owl:Restriction ;
-                          owl:onProperty :hasNodeOperationDamage ;
+                          owl:onProperty :hasLocation ;
                           owl:someValuesFrom :InOpenJoint
                         ] ;
         rdfs:label "DBH char2=C (In Open Joint)"@en .
@@ -7516,7 +7517,7 @@ DCO Characterisation The shape of the horizontal (plan) cross-section of the man
                             ] ;
         rdfs:subClassOf :DBH ,
                         [ rdf:type owl:Restriction ;
-                          owl:onProperty :hasNodeOperationDamage ;
+                          owl:onProperty :hasLocation ;
                           owl:someValuesFrom :OtherLocation
                         ] ;
         rdfs:label "DBH char2=Z (Other Location)"@en .
