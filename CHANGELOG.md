@@ -1,5 +1,25 @@
 # Changelog
 
+## [0.1.2] - 2026-09-24
+
+### Ontology
+
+- Fixed `:BAF2_E` (pipe surface damage, cause "Not Evident"): its restriction used `hasPipeFabricDamage` instead of `hasDamageCause`, unlike its siblings `BAF2_A–D/Z` and the node twin `DAF2_E`.
+- Fixed `:DBH2_A/B/C/Z` (node vermin location): their restrictions used `hasNodeOperationDamage` instead of `hasLocation`, unlike the pipe twins `BBH2_*`.
+- Added `rdfs:range :Defect` to `:hasDamage` (inherited by all six pipe/node damage sub-properties). Since `Defect` is disjoint with `Cause`/`Location`, a non-damage value on a damage property now makes the class unsatisfiable, so the reasoner catches this defect class.
+- `owl:versionIRI`/`owl:versionInfo` bumped to `0.1.2` (0.1.1 had left them at `0.1.0`).
+
+### Tests
+
+- New Tier 1 test `test_sibling_characterizations_share_one_property`: every sibling in a characterization family must use the same object property. Fails on the pre-fix `BAF2_E`; the `DBH2_*` case is caught by the new range via Tier 2's `test_ontology_is_coherent`.
+
+### Docs
+
+- `docs/design-specs/SDCO_Testing_Suite_Design_Spec.md`: new test documented, §4c on the two defects and both guards, Tier 1 test count corrected.
+- `CLAUDE.md`: refreshed stale numbers (materialization output 141 triples / ~16 s, 509 `someValuesFrom` restrictions, 839 named classes — the old 1,228 had counted anonymous intersection classes too).
+- `scripts/README.md`: fixed explainer output paths (`docs/index.html`, `docs/sdco_data.json`).
+- Explainer (`docs/index.html`, `docs/sdco_data.json`) rebuilt against the current ontology. It had been stale since before the 0.1.0 fixes (still showed `Slit` instead of `Silt`, the old `BBE` Obstacle meaning and old counts); now in sync.
+
 ## [0.1.1] - 2026-09-17
 
 ### Ontology

@@ -2732,7 +2732,7 @@
       "sdcoClass": "BBE",
       "comment": null,
       "family": "PipeOperation",
-      "meaning": "Other Obstacle"
+      "meaning": "Obstacle"
     },
     {
       "code": "BBF",
@@ -3028,7 +3028,7 @@
       "sdcoClass": "DCN",
       "comment": null,
       "family": "NodeInventory",
-      "meaning": "Slit Pit"
+      "meaning": "Silt Pit"
     },
     {
       "code": "DCO",
@@ -3135,7 +3135,13 @@
               "children": [
                 {
                   "name": "InspectionComplete",
-                  "children": [],
+                  "children": [
+                    {
+                      "name": "InspectionCompleteWithPreviousPartialInspection",
+                      "children": [],
+                      "reportCount": 0
+                    }
+                  ],
                   "reportCount": 0
                 },
                 {
@@ -3177,7 +3183,7 @@
               "reportCount": 0
             },
             {
-              "name": "Slit",
+              "name": "Silt",
               "children": [],
               "reportCount": 0
             },
@@ -4430,6 +4436,11 @@
                   "reportCount": 0
                 },
                 {
+                  "name": "OtherRepairOfConnection",
+                  "children": [],
+                  "reportCount": 0
+                },
+                {
                   "name": "OtherTrenchlessRepair",
                   "children": [],
                   "reportCount": 0
@@ -4499,15 +4510,15 @@
               "reportCount": 0
             },
             {
-              "name": "SlitPit",
+              "name": "SiltPit",
               "children": [
                 {
-                  "name": "DefectiveSlitPit",
+                  "name": "DefectiveSiltPit",
                   "children": [],
                   "reportCount": 0
                 },
                 {
-                  "name": "WorkingSlitPit",
+                  "name": "WorkingSiltPit",
                   "children": [],
                   "reportCount": 0
                 }
@@ -5830,16 +5841,16 @@
   ],
   "stats": {
     "tripleCounts": {
-      "SDCO.rdf": 12911,
+      "SDCO.rdf": 11142,
       "m150-onto-parsed-dwa.rdf": 2269,
       "m150-onto.rdf": 2896,
       "SDCO-dwa-parsed_materialized.rdf": 145
     },
     "axioms": {
       "equivalentClass": 504,
-      "namedClasses": 1228,
-      "someValuesFrom": 501,
-      "allDisjointClasses": 133,
+      "namedClasses": 839,
+      "someValuesFrom": 509,
+      "allDisjointClasses": 119,
       "objectProperties": 29
     },
     "reportCount": 96,
