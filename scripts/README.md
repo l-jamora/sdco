@@ -10,7 +10,7 @@ Core scripts that read/write `SDCO.rdf` directly, plus their self-checks and inp
 - `generate_node_codes.py` — generates OWL class axioms for Node damage/inventory/operation/other codes from `node_codes.csv` and inserts them into `SDCO.rdf`.
 - `generate_labels.py` — derives an `@en` `rdfs:label` for every SDCO class from its name/axioms and appends gap-fill-only labels to `SDCO.rdf` as a regenerable marker-delimited block.
 - `apply_comments.py` — splices reviewed `rdfs:comment` values from `observation_comments.csv` into `SDCO.rdf` by text-locating each class's declaration block (never an rdflib round-trip write, to avoid reformatting the file).
-- `build_explainer.py` — extracts real data from `SDCO.rdf` + the m150 example dataset into `docs/explainer/sdco_data.json`, then builds `docs/explainer/index.html`.
+- `build_explainer.py` — extracts real data from `SDCO.rdf` + the m150 example dataset into `docs/sdco_data.json`, then builds `docs/index.html` (from `docs/template.html`).
 - `node_codes.csv`, `observation_comments.csv`, `nodeclasses_wip.xlsx` — input data consumed by the generators above.
 - `test_classify_individuals.py`, `test_generate_node_codes.py`, `test_apply_comments.py`, `test_generate_labels.py` — assert-based self-checks against toy in-memory graphs (no fixture files). Standalone `python scripts/ontology/test_*.py` runs, not collected by pytest (`testpaths = ["tests"]` in `pyproject.toml`).
 
