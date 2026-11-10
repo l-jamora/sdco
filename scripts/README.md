@@ -4,15 +4,16 @@ Maintenance and materialization tooling for SDCO, categorized into subdirectorie
 
 ## `ontology/`
 
-Core scripts that read/write `SDCO.rdf` directly, plus their self-checks and input data. Interlinked: `generate_node_codes.py` and `build_explainer.py` import `materialize_object_properties.py`; `apply_comments.py` imports `generate_node_codes.py`; `generate_labels.py` imports both `build_explainer.py` and `generate_node_codes.py`.
+Core scripts that read/write `SDCO.rdf` directly, plus their self-checks and input data. Interlinked: `generate_node_codes.py` and `build_explainer.py` import `materialize_object_properties.py`; `apply_comments.py` imports `generate_node_codes.py`; `generate_labels.py` imports both `build_explainer.py` and `generate_node_codes.py`; `generate_isdefinedby.py` imports all three.
 
 - `materialize_object_properties.py` — realizes each individual's damage-code classes and emits literal `someValuesFrom` filler triples to `derived/*_materialized.rdf`/`.ttl`. Fast SPARQL forward-chaining path by default; `--reason` runs HermiT via `owlready2` as a correctness oracle. `pyproject.toml`'s `pythonpath = ["scripts/ontology"]` makes this a bare import for `tests/conftest.py`.
 - `generate_node_codes.py` — generates OWL class axioms for Node damage/inventory/operation/other codes from `node_codes.csv` and inserts them into `SDCO.rdf`.
 - `generate_labels.py` — derives an `@en` `rdfs:label` for every SDCO class from its name/axioms and appends gap-fill-only labels to `SDCO.rdf` as a regenerable marker-delimited block.
+- `generate_isdefinedby.py` — adds `rdfs:isDefinedBy` tracing classes to DIN EN 13508-2: code classes from their `equivalentClass` axiom (`main code X[, characterization N = V]`), Observation classes from the `din_clause` column of `observation_comments.csv`, else from the code classes pointing at them (`Table T, CODE charN (V); ...`). Regenerable marker-delimited block; gap-fill only.
 - `apply_comments.py` — splices reviewed `rdfs:comment` values from `observation_comments.csv` into `SDCO.rdf` by text-locating each class's declaration block (never an rdflib round-trip write, to avoid reformatting the file).
 - `build_explainer.py` — extracts real data from `SDCO.rdf` + the m150 example dataset into `docs/sdco_data.json`, then builds `docs/index.html` (from `docs/template.html`).
 - `node_codes.csv`, `observation_comments.csv`, `nodeclasses_wip.xlsx` — input data consumed by the generators above.
-- `test_classify_individuals.py`, `test_generate_node_codes.py`, `test_apply_comments.py`, `test_generate_labels.py` — assert-based self-checks against toy in-memory graphs (no fixture files). Standalone `python scripts/ontology/test_*.py` runs, not collected by pytest (`testpaths = ["tests"]` in `pyproject.toml`).
+- `test_classify_individuals.py`, `test_generate_node_codes.py`, `test_apply_comments.py`, `test_generate_labels.py`, `test_generate_isdefinedby.py` — assert-based self-checks against toy in-memory graphs (no fixture files). Standalone `python scripts/ontology/test_*.py` runs, not collected by pytest (`testpaths = ["tests"]` in `pyproject.toml`).
 
 ## `benchmark/`
 

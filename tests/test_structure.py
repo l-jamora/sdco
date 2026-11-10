@@ -230,3 +230,47 @@ def test_every_sdco_class_has_a_label(sdco_graph):
         and sdco_graph.value(s, RDFS.label) is None
     )
     assert not missing, f"SDCO classes with no rdfs:label ({len(missing)}): {missing[:10]}"
+
+
+def test_every_code_class_is_traced_to_the_standard(sdco_graph):
+    # Code classes are exactly those with an owl:equivalentClass definition.
+    missing = sorted(
+        str(s) for s in sdco_graph.subjects(OWL.equivalentClass, None)
+        if isinstance(s, URIRef)
+        and str(s).startswith(str(SDCO))
+        and not str(sdco_graph.value(s, RDFS.isDefinedBy) or "").startswith("DIN EN 13508-2, main code ")
+    )
+    assert not missing, f"code classes with no DIN EN 13508-2 rdfs:isDefinedBy ({len(missing)}): {missing[:10]}"
+
+
+
+# SDCO's own groupings (no DIN concept behind them), plus one unreferenced leaf.
+UNTRACED_OBSERVATION_CLASSES = {
+    "Cause", "Location", "OtherObservation", "ConnectingPipelineDischargeDirection",
+    "BrickMasonryLayerVisible",  # likely duplicate of LayerBrickworkOrMasonryVisible
+}
+
+
+def test_every_observation_class_is_traced_to_the_standard(sdco_graph):
+    seen, todo = set(), [SDCO.Observation]
+    while todo:
+        for s in sdco_graph.subjects(RDFS.subClassOf, todo.pop()):
+            if isinstance(s, URIRef) and s not in seen:
+                seen.add(s)
+                todo.append(s)
+    traced = {s.split("#")[1] for s in seen if str(sdco_graph.value(s, RDFS.isDefinedBy) or "").startswith("DIN EN 13508-2, ")}
+    names = {s.split("#")[1] for s in seen}
+    assert names - traced == UNTRACED_OBSERVATION_CLASSES, (
+        f"untraced: {sorted(names - traced - UNTRACED_OBSERVATION_CLASSES)}; "
+        f"stale exceptions: {sorted(UNTRACED_OBSERVATION_CLASSES & traced)}")
+
+def test_din_clause_rows_are_traced_to_the_standard(sdco_graph):
+    from pathlib import Path
+    from generate_isdefinedby import read_clauses
+
+    clauses = read_clauses(Path(__file__).resolve().parent.parent / "scripts" / "ontology" / "observation_comments.csv")
+    wrong = sorted(
+        name for name, clause in clauses.items()
+        if str(sdco_graph.value(SDCO[name], RDFS.isDefinedBy)) != f"DIN EN 13508-2, {clause}"
+    )
+    assert not wrong, f"din_clause rows not reflected in rdfs:isDefinedBy ({len(wrong)}): {wrong[:10]}"

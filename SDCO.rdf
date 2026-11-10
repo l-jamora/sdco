@@ -516,7 +516,6 @@ Circumferntial Location: Should be recorded""" ;
                        owl:someValuesFrom :BreakOrCollapse
                      ] ;
      rdfs:comment "Break/Collapse" ;
-     rdfs:isDefinedBy "DIN EN 13508-2" ;
      rdfs:label "BAC (Break Or Collapse)"@en .
 
 
@@ -12620,6 +12619,835 @@ Characterisation The following information:  pit not defective (A); pit defectiv
                 :PipeOther
               )
 ] .
+
+
+###  ---- BEGIN GENERATED ISDEFINEDBY (scripts/generate_isdefinedby.py -- do not hand-edit) ----
+:AccesablePipeCoverMissing rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCL char1 (C)" .
+:AccessablePipeCoverInPlace rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCL char1 (B)" .
+:AggregateProjectingFromSurface rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAF char1 (D); Table 10, DAF char1 (D)" .
+:Angular rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAJ char1 (C); Table 10, DAJ char1 (C)" .
+:AnotherObjectObstacle rdfs:isDefinedBy "DIN EN 13508-2, Table 5, BBE char1 (C); Table 11, DBE char1 (C)" .
+:ArchShapedConnectingPipeline rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCG char1 (E)" .
+:AtmosphereWithin rdfs:isDefinedBy "DIN EN 13508-2, Table 7, BDF; Table 13, DDF" .
+:AttachedDeposits rdfs:isDefinedBy "DIN EN 13508-2, Table 5, BBB; Table 11, DBB" .
+:AuthorityInstruction rdfs:isDefinedBy "DIN EN 13508-2, Table 7, BDC char2 (B); Table 13, DDC char2 (B)" .
+:BAA rdfs:isDefinedBy "DIN EN 13508-2, main code BAA" .
+:BAA_A rdfs:isDefinedBy "DIN EN 13508-2, main code BAA, characterization 1 = A" .
+:BAA_B rdfs:isDefinedBy "DIN EN 13508-2, main code BAA, characterization 1 = B" .
+:BAB rdfs:isDefinedBy "DIN EN 13508-2, main code BAB" .
+:BAB1_A rdfs:isDefinedBy "DIN EN 13508-2, main code BAB, characterization 1 = A" .
+:BAB1_B rdfs:isDefinedBy "DIN EN 13508-2, main code BAB, characterization 1 = B" .
+:BAB1_C rdfs:isDefinedBy "DIN EN 13508-2, main code BAB, characterization 1 = C" .
+:BAB2_A rdfs:isDefinedBy "DIN EN 13508-2, main code BAB, characterization 2 = A" .
+:BAB2_B rdfs:isDefinedBy "DIN EN 13508-2, main code BAB, characterization 2 = B" .
+:BAB2_C rdfs:isDefinedBy "DIN EN 13508-2, main code BAB, characterization 2 = C" .
+:BAB2_D rdfs:isDefinedBy "DIN EN 13508-2, main code BAB, characterization 2 = D" .
+:BAB2_E rdfs:isDefinedBy "DIN EN 13508-2, main code BAB, characterization 2 = E" .
+:BAC rdfs:isDefinedBy "DIN EN 13508-2, main code BAC" .
+:BAC_A rdfs:isDefinedBy "DIN EN 13508-2, main code BAC, characterization 1 = A" .
+:BAC_B rdfs:isDefinedBy "DIN EN 13508-2, main code BAC, characterization 1 = B" .
+:BAC_C rdfs:isDefinedBy "DIN EN 13508-2, main code BAC, characterization 1 = C" .
+:BAD rdfs:isDefinedBy "DIN EN 13508-2, main code BAD" .
+:BAD1_A rdfs:isDefinedBy "DIN EN 13508-2, main code BAD, characterization 1 = A" .
+:BAD1_B rdfs:isDefinedBy "DIN EN 13508-2, main code BAD, characterization 1 = B" .
+:BAD1_C rdfs:isDefinedBy "DIN EN 13508-2, main code BAD, characterization 1 = C" .
+:BAD1_D rdfs:isDefinedBy "DIN EN 13508-2, main code BAD, characterization 1 = D" .
+:BAD2_A rdfs:isDefinedBy "DIN EN 13508-2, main code BAD, characterization 2 = A" .
+:BAD2_B rdfs:isDefinedBy "DIN EN 13508-2, main code BAD, characterization 2 = B" .
+:BAE rdfs:isDefinedBy "DIN EN 13508-2, main code BAE" .
+:BAF rdfs:isDefinedBy "DIN EN 13508-2, main code BAF" .
+:BAF1_A rdfs:isDefinedBy "DIN EN 13508-2, main code BAF, characterization 1 = A" .
+:BAF1_B rdfs:isDefinedBy "DIN EN 13508-2, main code BAF, characterization 1 = B" .
+:BAF1_C rdfs:isDefinedBy "DIN EN 13508-2, main code BAF, characterization 1 = C" .
+:BAF1_D rdfs:isDefinedBy "DIN EN 13508-2, main code BAF, characterization 1 = D" .
+:BAF1_E rdfs:isDefinedBy "DIN EN 13508-2, main code BAF, characterization 1 = E" .
+:BAF1_F rdfs:isDefinedBy "DIN EN 13508-2, main code BAF, characterization 1 = F" .
+:BAF1_G rdfs:isDefinedBy "DIN EN 13508-2, main code BAF, characterization 1 = G" .
+:BAF1_H rdfs:isDefinedBy "DIN EN 13508-2, main code BAF, characterization 1 = H" .
+:BAF1_I rdfs:isDefinedBy "DIN EN 13508-2, main code BAF, characterization 1 = I" .
+:BAF1_J rdfs:isDefinedBy "DIN EN 13508-2, main code BAF, characterization 1 = J" .
+:BAF1_K rdfs:isDefinedBy "DIN EN 13508-2, main code BAF, characterization 1 = K" .
+:BAF1_Z rdfs:isDefinedBy "DIN EN 13508-2, main code BAF, characterization 1 = Z" .
+:BAF2_A rdfs:isDefinedBy "DIN EN 13508-2, main code BAF, characterization 2 = A" .
+:BAF2_B rdfs:isDefinedBy "DIN EN 13508-2, main code BAF, characterization 2 = B" .
+:BAF2_C rdfs:isDefinedBy "DIN EN 13508-2, main code BAF, characterization 2 = C" .
+:BAF2_D rdfs:isDefinedBy "DIN EN 13508-2, main code BAF, characterization 2 = D" .
+:BAF2_E rdfs:isDefinedBy "DIN EN 13508-2, main code BAF, characterization 2 = E" .
+:BAF2_Z rdfs:isDefinedBy "DIN EN 13508-2, main code BAF, characterization 2 = Z" .
+:BAG rdfs:isDefinedBy "DIN EN 13508-2, main code BAG" .
+:BAH rdfs:isDefinedBy "DIN EN 13508-2, main code BAH" .
+:BAH_A rdfs:isDefinedBy "DIN EN 13508-2, main code BAH, characterization 1 = A" .
+:BAH_B rdfs:isDefinedBy "DIN EN 13508-2, main code BAH, characterization 1 = B" .
+:BAH_C rdfs:isDefinedBy "DIN EN 13508-2, main code BAH, characterization 1 = C" .
+:BAH_D rdfs:isDefinedBy "DIN EN 13508-2, main code BAH, characterization 1 = D" .
+:BAH_E rdfs:isDefinedBy "DIN EN 13508-2, main code BAH, characterization 1 = E" .
+:BAH_Z rdfs:isDefinedBy "DIN EN 13508-2, main code BAH, characterization 1 = Z" .
+:BAI rdfs:isDefinedBy "DIN EN 13508-2, main code BAI" .
+:BAI1_A rdfs:isDefinedBy "DIN EN 13508-2, main code BAI, characterization 1 = A" .
+:BAI1_Z rdfs:isDefinedBy "DIN EN 13508-2, main code BAI, characterization 1 = B" .
+:BAI2_A rdfs:isDefinedBy "DIN EN 13508-2, main code BAI, characterization 2 = A" .
+:BAI2_B rdfs:isDefinedBy "DIN EN 13508-2, main code BAI, characterization 2 = B" .
+:BAI2_C rdfs:isDefinedBy "DIN EN 13508-2, main code BAI, characterization 2 = C" .
+:BAI2_D rdfs:isDefinedBy "DIN EN 13508-2, main code BAI, characterization 2 = D" .
+:BAJ rdfs:isDefinedBy "DIN EN 13508-2, main code BAJ" .
+:BAJ_A rdfs:isDefinedBy "DIN EN 13508-2, main code BAJ, characterization 1 = A" .
+:BAJ_B rdfs:isDefinedBy "DIN EN 13508-2, main code BAJ, characterization 1 = B" .
+:BAJ_C rdfs:isDefinedBy "DIN EN 13508-2, main code BAJ, characterization 1 = C" .
+:BAK rdfs:isDefinedBy "DIN EN 13508-2, main code BAK" .
+:BAK1_A rdfs:isDefinedBy "DIN EN 13508-2, main code BAK, characterization 1 = A" .
+:BAK1_B rdfs:isDefinedBy "DIN EN 13508-2, main code BAK, characterization 1 = B" .
+:BAK1_C rdfs:isDefinedBy "DIN EN 13508-2, main code BAK, characterization 1 = C" .
+:BAK1_D rdfs:isDefinedBy "DIN EN 13508-2, main code BAK, characterization 1 = D" .
+:BAK1_E rdfs:isDefinedBy "DIN EN 13508-2, main code BAK, characterization 1 = E" .
+:BAK1_F rdfs:isDefinedBy "DIN EN 13508-2, main code BAK, characterization 1 = F" .
+:BAK1_G rdfs:isDefinedBy "DIN EN 13508-2, main code BAK, characterization 1 = G" .
+:BAK1_H rdfs:isDefinedBy "DIN EN 13508-2, main code BAK, characterization 1 = H" .
+:BAK1_I rdfs:isDefinedBy "DIN EN 13508-2, main code BAK, characterization 1 = I" .
+:BAK1_J rdfs:isDefinedBy "DIN EN 13508-2, main code BAK, characterization 1 = J" .
+:BAK1_K rdfs:isDefinedBy "DIN EN 13508-2, main code BAK, characterization 1 = K" .
+:BAK1_L rdfs:isDefinedBy "DIN EN 13508-2, main code BAK, characterization 1 = L" .
+:BAK1_M rdfs:isDefinedBy "DIN EN 13508-2, main code BAK, characterization 1 = M" .
+:BAK1_N rdfs:isDefinedBy "DIN EN 13508-2, main code BAK, characterization 1 = N" .
+:BAK1_Z rdfs:isDefinedBy "DIN EN 13508-2, main code BAK, characterization 1 = Z" .
+:BAK2_A rdfs:isDefinedBy "DIN EN 13508-2, main code BAK, characterization 2 = A" .
+:BAK2_B rdfs:isDefinedBy "DIN EN 13508-2, main code BAK, characterization 2 = B" .
+:BAK2_C rdfs:isDefinedBy "DIN EN 13508-2, main code BAK, characterization 2 = C" .
+:BAK2_D rdfs:isDefinedBy "DIN EN 13508-2, main code BAK, characterization 2 = D" .
+:BAL rdfs:isDefinedBy "DIN EN 13508-2, main code BAL" .
+:BAL1_A rdfs:isDefinedBy "DIN EN 13508-2, main code BAL, characterization 1 = A" .
+:BAL1_B rdfs:isDefinedBy "DIN EN 13508-2, main code BAL, characterization 1 = B" .
+:BAL1_C rdfs:isDefinedBy "DIN EN 13508-2, main code BAL, characterization 1 = C" .
+:BAL1_D rdfs:isDefinedBy "DIN EN 13508-2, main code BAL, characterization 1 = D" .
+:BAL1_E rdfs:isDefinedBy "DIN EN 13508-2, main code BAL, characterization 1 = E" .
+:BAL1_F rdfs:isDefinedBy "DIN EN 13508-2, main code BAL, characterization 1 = F" .
+:BAL1_G rdfs:isDefinedBy "DIN EN 13508-2, main code BAL, characterization 1 = G" .
+:BAL1_Z rdfs:isDefinedBy "DIN EN 13508-2, main code BAL, characterization 1 = Z" .
+:BAL2_A rdfs:isDefinedBy "DIN EN 13508-2, main code BAL, characterization 2 = A" .
+:BAL2_B rdfs:isDefinedBy "DIN EN 13508-2, main code BAL, characterization 2 = B" .
+:BAL2_C rdfs:isDefinedBy "DIN EN 13508-2, main code BAL, characterization 2 = C" .
+:BAL2_D rdfs:isDefinedBy "DIN EN 13508-2, main code BAL, characterization 2 = D" .
+:BAM rdfs:isDefinedBy "DIN EN 13508-2, main code BAM" .
+:BAM_A rdfs:isDefinedBy "DIN EN 13508-2, main code BAM, characterization 1 = A" .
+:BAM_B rdfs:isDefinedBy "DIN EN 13508-2, main code BAM, characterization 1 = B" .
+:BAM_C rdfs:isDefinedBy "DIN EN 13508-2, main code BAM, characterization 1 = C" .
+:BAN rdfs:isDefinedBy "DIN EN 13508-2, main code BAN" .
+:BAO rdfs:isDefinedBy "DIN EN 13508-2, main code BAO" .
+:BAP rdfs:isDefinedBy "DIN EN 13508-2, main code BAP" .
+:BBA rdfs:isDefinedBy "DIN EN 13508-2, main code BBA" .
+:BBA_A rdfs:isDefinedBy "DIN EN 13508-2, main code BBA, characterization 1 = A" .
+:BBA_B rdfs:isDefinedBy "DIN EN 13508-2, main code BBA, characterization 1 = B" .
+:BBA_C rdfs:isDefinedBy "DIN EN 13508-2, main code BBA, characterization 1 = C" .
+:BBB rdfs:isDefinedBy "DIN EN 13508-2, main code BBB" .
+:BBB_A rdfs:isDefinedBy "DIN EN 13508-2, main code BBB, characterization 1 = A" .
+:BBB_B rdfs:isDefinedBy "DIN EN 13508-2, main code BBB, characterization 1 = B" .
+:BBB_C rdfs:isDefinedBy "DIN EN 13508-2, main code BBB, characterization 1 = C" .
+:BBB_Z rdfs:isDefinedBy "DIN EN 13508-2, main code BBB, characterization 1 = D" .
+:BBC rdfs:isDefinedBy "DIN EN 13508-2, main code BBC" .
+:BBC_A rdfs:isDefinedBy "DIN EN 13508-2, main code BBC, characterization 1 = A" .
+:BBC_B rdfs:isDefinedBy "DIN EN 13508-2, main code BBC, characterization 1 = B" .
+:BBC_C rdfs:isDefinedBy "DIN EN 13508-2, main code BBC, characterization 1 = C" .
+:BBC_Z rdfs:isDefinedBy "DIN EN 13508-2, main code BBC, characterization 1 = Z" .
+:BBD rdfs:isDefinedBy "DIN EN 13508-2, main code BBD" .
+:BBD_A rdfs:isDefinedBy "DIN EN 13508-2, main code BBD, characterization 1 = A" .
+:BBD_B rdfs:isDefinedBy "DIN EN 13508-2, main code BBD, characterization 1 = B" .
+:BBD_C rdfs:isDefinedBy "DIN EN 13508-2, main code BBD, characterization 1 = C" .
+:BBD_D rdfs:isDefinedBy "DIN EN 13508-2, main code BBD, characterization 1 = D" .
+:BBD_Z rdfs:isDefinedBy "DIN EN 13508-2, main code BBD, characterization 1 = Z" .
+:BBE rdfs:isDefinedBy "DIN EN 13508-2, main code BBE" .
+:BBE_A rdfs:isDefinedBy "DIN EN 13508-2, main code BBE, characterization 1 = A" .
+:BBE_B rdfs:isDefinedBy "DIN EN 13508-2, main code BBE, characterization 1 = B" .
+:BBE_C rdfs:isDefinedBy "DIN EN 13508-2, main code BBE, characterization 1 = C" .
+:BBE_D rdfs:isDefinedBy "DIN EN 13508-2, main code BBE, characterization 1 = D" .
+:BBE_E rdfs:isDefinedBy "DIN EN 13508-2, main code BBE, characterization 1 = E" .
+:BBE_F rdfs:isDefinedBy "DIN EN 13508-2, main code BBE, characterization 1 = F" .
+:BBE_G rdfs:isDefinedBy "DIN EN 13508-2, main code BBE, characterization 1 = G" .
+:BBE_H rdfs:isDefinedBy "DIN EN 13508-2, main code BBE, characterization 1 = H" .
+:BBE_Z rdfs:isDefinedBy "DIN EN 13508-2, main code BBE, characterization 1 = Z" .
+:BBF rdfs:isDefinedBy "DIN EN 13508-2, main code BBF" .
+:BBF_A rdfs:isDefinedBy "DIN EN 13508-2, main code BBF, characterization 1 = A" .
+:BBF_B rdfs:isDefinedBy "DIN EN 13508-2, main code BBF, characterization 1 = B" .
+:BBF_C rdfs:isDefinedBy "DIN EN 13508-2, main code BBF, characterization 1 = C" .
+:BBF_D rdfs:isDefinedBy "DIN EN 13508-2, main code BBF, characterization 1 = D" .
+:BBG rdfs:isDefinedBy "DIN EN 13508-2, main code BBG" .
+:BBH rdfs:isDefinedBy "DIN EN 13508-2, main code BBH" .
+:BBH1_A rdfs:isDefinedBy "DIN EN 13508-2, main code BBH, characterization 1 = A" .
+:BBH1_B rdfs:isDefinedBy "DIN EN 13508-2, main code BBH, characterization 1 = B" .
+:BBH1_Z rdfs:isDefinedBy "DIN EN 13508-2, main code BBH, characterization 1 = Z" .
+:BBH2_A rdfs:isDefinedBy "DIN EN 13508-2, main code BBH, characterization 2 = A" .
+:BBH2_B rdfs:isDefinedBy "DIN EN 13508-2, main code BBH, characterization 2 = B" .
+:BBH2_C rdfs:isDefinedBy "DIN EN 13508-2, main code BBH, characterization 2 = C" .
+:BBH2_Z rdfs:isDefinedBy "DIN EN 13508-2, main code BBH, characterization 2 = Z" .
+:BCA rdfs:isDefinedBy "DIN EN 13508-2, main code BCA" .
+:BCA1_A rdfs:isDefinedBy "DIN EN 13508-2, main code BCA, characterization 1 = A" .
+:BCA1_B rdfs:isDefinedBy "DIN EN 13508-2, main code BCA, characterization 1 = B" .
+:BCA1_C rdfs:isDefinedBy "DIN EN 13508-2, main code BCA, characterization 1 = C" .
+:BCA1_D rdfs:isDefinedBy "DIN EN 13508-2, main code BCA, characterization 1 = D" .
+:BCA1_E rdfs:isDefinedBy "DIN EN 13508-2, main code BCA, characterization 1 = E" .
+:BCA1_G rdfs:isDefinedBy "DIN EN 13508-2, main code BCA, characterization 1 = G" .
+:BCA1_Z rdfs:isDefinedBy "DIN EN 13508-2, main code BCA, characterization 1 = Z" .
+:BCA2_A rdfs:isDefinedBy "DIN EN 13508-2, main code BCA, characterization 2 = A" .
+:BCA2_B rdfs:isDefinedBy "DIN EN 13508-2, main code BCA, characterization 2 = B" .
+:BCB rdfs:isDefinedBy "DIN EN 13508-2, main code BCB" .
+:BCB_A rdfs:isDefinedBy "DIN EN 13508-2, main code BCB, characterization 1 = A" .
+:BCB_B rdfs:isDefinedBy "DIN EN 13508-2, main code BCB, characterization 1 = B" .
+:BCB_C rdfs:isDefinedBy "DIN EN 13508-2, main code BCB, characterization 1 = C" .
+:BCB_D rdfs:isDefinedBy "DIN EN 13508-2, main code BCB, characterization 1 = D" .
+:BCB_E rdfs:isDefinedBy "DIN EN 13508-2, main code BCB, characterization 1 = E" .
+:BCB_F rdfs:isDefinedBy "DIN EN 13508-2, main code BCB, characterization 1 = F" .
+:BCB_G rdfs:isDefinedBy "DIN EN 13508-2, main code BCB, characterization 1 = G" .
+:BCB_Z rdfs:isDefinedBy "DIN EN 13508-2, main code BCB, characterization 1 = Z" .
+:BCC rdfs:isDefinedBy "DIN EN 13508-2, main code BCC" .
+:BCC1_A rdfs:isDefinedBy "DIN EN 13508-2, main code BCC, characterization 1 = A" .
+:BCC1_B rdfs:isDefinedBy "DIN EN 13508-2, main code BCC, characterization 1 = B" .
+:BCC2_A rdfs:isDefinedBy "DIN EN 13508-2, main code BCC, characterization 2 = A" .
+:BCC2_B rdfs:isDefinedBy "DIN EN 13508-2, main code BCC, characterization 2 = B" .
+:BCD rdfs:isDefinedBy "DIN EN 13508-2, main code BCD" .
+:BCD_A rdfs:isDefinedBy "DIN EN 13508-2, main code BCD, characterization 1 = A" .
+:BCD_B rdfs:isDefinedBy "DIN EN 13508-2, main code BCD, characterization 1 = B" .
+:BCD_C rdfs:isDefinedBy "DIN EN 13508-2, main code BCD, characterization 1 = C" .
+:BCD_D rdfs:isDefinedBy "DIN EN 13508-2, main code BCD, characterization 1 = D" .
+:BCD_E rdfs:isDefinedBy "DIN EN 13508-2, main code BCD, characterization 1 = E" .
+:BCD_F rdfs:isDefinedBy "DIN EN 13508-2, main code BCD, characterization 1 = F" .
+:BCD_X rdfs:isDefinedBy "DIN EN 13508-2, main code BCD, characterization 1 = X" .
+:BCD_Z rdfs:isDefinedBy "DIN EN 13508-2, main code BCD, characterization 1 = Z" .
+:BCE rdfs:isDefinedBy "DIN EN 13508-2, main code BCE" .
+:BCE_A rdfs:isDefinedBy "DIN EN 13508-2, main code BCE, characterization 1 = A" .
+:BCE_B rdfs:isDefinedBy "DIN EN 13508-2, main code BCE, characterization 1 = B" .
+:BCE_C rdfs:isDefinedBy "DIN EN 13508-2, main code BCE, characterization 1 = C" .
+:BCE_D rdfs:isDefinedBy "DIN EN 13508-2, main code BCE, characterization 1 = D" .
+:BCE_E rdfs:isDefinedBy "DIN EN 13508-2, main code BCE, characterization 1 = E" .
+:BCE_F rdfs:isDefinedBy "DIN EN 13508-2, main code BCE, characterization 1 = F" .
+:BCE_X rdfs:isDefinedBy "DIN EN 13508-2, main code BCE, characterization 1 = X" .
+:BCE_Z rdfs:isDefinedBy "DIN EN 13508-2, main code BCE, characterization 1 = Z" .
+:BDA rdfs:isDefinedBy "DIN EN 13508-2, main code BDA" .
+:BDB rdfs:isDefinedBy "DIN EN 13508-2, main code BDB" .
+:BDC rdfs:isDefinedBy "DIN EN 13508-2, main code BDC" .
+:BDC1_A rdfs:isDefinedBy "DIN EN 13508-2, main code BDC, characterization 1 = A" .
+:BDC1_B rdfs:isDefinedBy "DIN EN 13508-2, main code BDC, characterization 1 = B" .
+:BDC1_C rdfs:isDefinedBy "DIN EN 13508-2, main code BDC, characterization 1 = C" .
+:BDC1_Z rdfs:isDefinedBy "DIN EN 13508-2, main code BDC, characterization 1 = Z" .
+:BDC2_A rdfs:isDefinedBy "DIN EN 13508-2, main code BDC, characterization 2 = A" .
+:BDC2_B rdfs:isDefinedBy "DIN EN 13508-2, main code BDC, characterization 2 = B" .
+:BDC2_C rdfs:isDefinedBy "DIN EN 13508-2, main code BDC, characterization 2 = C" .
+:BDC2_D rdfs:isDefinedBy "DIN EN 13508-2, main code BDC, characterization 2 = D" .
+:BDC2_E rdfs:isDefinedBy "DIN EN 13508-2, main code BDC, characterization 2 = E" .
+:BDC2_Z rdfs:isDefinedBy "DIN EN 13508-2, main code BDC, characterization 2 = Z" .
+:BDD rdfs:isDefinedBy "DIN EN 13508-2, main code BDD" .
+:BDD_A rdfs:isDefinedBy "DIN EN 13508-2, main code BDD, characterization 1 = A" .
+:BDD_B rdfs:isDefinedBy "DIN EN 13508-2, main code BDD, characterization 1 = B" .
+:BDD_C rdfs:isDefinedBy "DIN EN 13508-2, main code BDD, characterization 1 = C" .
+:BDD_D rdfs:isDefinedBy "DIN EN 13508-2, main code BDD, characterization 1 = D" .
+:BDD_E rdfs:isDefinedBy "DIN EN 13508-2, main code BDD, characterization 1 = E" .
+:BDE rdfs:isDefinedBy "DIN EN 13508-2, main code BDE" .
+:BDE1_A rdfs:isDefinedBy "DIN EN 13508-2, main code BDE, characterization 1 = A" .
+:BDE1_B rdfs:isDefinedBy "DIN EN 13508-2, main code BDE, characterization 1 = B" .
+:BDE1_C rdfs:isDefinedBy "DIN EN 13508-2, main code BDE, characterization 1 = C" .
+:BDE1_D rdfs:isDefinedBy "DIN EN 13508-2, main code BDE, characterization 1 = D" .
+:BDE1_E rdfs:isDefinedBy "DIN EN 13508-2, main code BDE, characterization 1 = E" .
+:BDE1_YY rdfs:isDefinedBy "DIN EN 13508-2, main code BDE, characterization 1 = YY" .
+:BDE2_A rdfs:isDefinedBy "DIN EN 13508-2, main code BDE, characterization 2 = A" .
+:BDE2_B rdfs:isDefinedBy "DIN EN 13508-2, main code BDE, characterization 2 = B" .
+:BDE2_C rdfs:isDefinedBy "DIN EN 13508-2, main code BDE, characterization 2 = C" .
+:BDF rdfs:isDefinedBy "DIN EN 13508-2, main code BDF" .
+:BDF_A rdfs:isDefinedBy "DIN EN 13508-2, main code BDF, characterization 1 = A" .
+:BDF_B rdfs:isDefinedBy "DIN EN 13508-2, main code BDF, characterization 1 = B" .
+:BDF_C rdfs:isDefinedBy "DIN EN 13508-2, main code BDF, characterization 1 = C" .
+:BDF_Z rdfs:isDefinedBy "DIN EN 13508-2, main code BDF, characterization 1 = Z" .
+:BDG rdfs:isDefinedBy "DIN EN 13508-2, main code BDG" .
+:BDG_A rdfs:isDefinedBy "DIN EN 13508-2, main code BDG, characterization 1 = A" .
+:BDG_B rdfs:isDefinedBy "DIN EN 13508-2, main code BDG, characterization 1 = B" .
+:BDG_C rdfs:isDefinedBy "DIN EN 13508-2, main code BDG, characterization 1 = C" .
+:BDG_Z rdfs:isDefinedBy "DIN EN 13508-2, main code BDG, characterization 1 = Z" .
+:BackdropConnection rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCA char1 (C)" .
+:Benching rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCH" .
+:BenchingConnection rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCA char1 (A)" .
+:BenchingConnectionInfiltration rdfs:isDefinedBy "DIN EN 13508-2, Table 11, DBF char2 (C)" .
+:BentStep rdfs:isDefinedBy "DIN EN 13508-2, Table 10, DAQ char1 (D)" .
+:BlisteredOrInternalBulgeLining rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAK char1 (E); Table 10, DAK char1 (E)" .
+:Blistering rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAF char1 (K); Table 10, DAF char1 (K)" .
+:BlockedConnection rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAH char1 (E); Table 10, DAH char1 (E)" .
+:Break rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAC char1 (A); Table 10, DAC char1 (A)" .
+:BreakOrCollapse rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAC; Table 10, DAC" .
+:BrickOrMasonryObstacle rdfs:isDefinedBy "DIN EN 13508-2, Table 5, BBE char1 (A); Table 11, DBE char1 (A)" .
+:BrokenCover rdfs:isDefinedBy "DIN EN 13508-2, Table 10, DAR char1 (A)" .
+:BrokenFrame rdfs:isDefinedBy "DIN EN 13508-2, Table 10, DAR char1 (D)" .
+:BrokenPlasticEncapsulationOfStep rdfs:isDefinedBy "DIN EN 13508-2, Table 10, DAQ char (E)" .
+:BuiltIntoStructureObstacle rdfs:isDefinedBy "DIN EN 13508-2, Table 5, BBE char1 (H); Table 11, DBE char1 (H)" .
+:CameraUnderwater rdfs:isDefinedBy "DIN EN 13508-2, Table 7, BDG char (A); Table 13, DDG char (A)" .
+:Channel rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCI" .
+:ChannelInBenching rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCA char2 (A); Figure 6" .
+:Chemical rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAF char2 (B); Table 10, DAF char2 (B)" .
+:ChemicalLowerPart rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAF char2 (D); Table 10, DAF char2 (D)" .
+:ChemicalUpperPart rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAF char2 (C); Table 10, DAF char2 (C)" .
+:ChiselledPlainConnection rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BCA char1 (E)" .
+:ChiselledSaddleConnection rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BCA char1 (C)" .
+:CircularConnectingPipeline rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCG char1 (A)" .
+:CircularCrossSection rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCO char1 (A)" .
+:Circumferential rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAB char2 (B); Table 4, BAK char2 (B); Table 4, BAL char2 (B); Table 4, BAM char1 (B)" .
+:ClearEffluentWastewater rdfs:isDefinedBy "DIN EN 13508-2, Table 7, BDD (A); BDE char1 (A); DDE char1 (A)" .
+:ClosedConnection rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BCA char2 (B)" .
+:CoarseSettledDeposit rdfs:isDefinedBy "DIN EN 13508-2, Table 5, BBC char (B); Table 11, DBC char (B)" .
+:CoatedDebrisSafetyBar rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCJ char1 (H)" .
+:CoatedDebrisSafetyChain rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCJ char1 (D)" .
+:CockroachVermin rdfs:isDefinedBy "DIN EN 13508-2, Table 5, BBH char1 (B); Table 11, DBH char1 (B)" .
+:CollapsedBreakOrCollapse rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAC char1 (C); Table 10, DAC char1 (C)" .
+:CollapsedBrickworkOrMasonry rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAD char1 (D); Table 10, DAD char1 (C)" .
+:ColouredWastewater rdfs:isDefinedBy "DIN EN 13508-2, Table 7, BDD (D)/(E); BDE char1 (D)/(E)" .
+:Complex rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAB char2 (C); Table 4, BAK char2 (C); Table 4, BAL char2 (C); Table 10, DAB char2 (C); Table 10, DAK char2 (C)" .
+:ComplexMassRoots rdfs:isDefinedBy "DIN EN 13508-2, Table 5, BBA char1 (C); Table 11, DBA char1 (C)" .
+:ConnectingPipeline rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCG char1" .
+:Connection rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BCA" .
+:ConnectionClosed rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCG char2 (C)" .
+:ConnectionDischargeBneching rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCA char2 (B); Figure 6" .
+:ConnectionDischargeFromNode rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCG char2 (B)" .
+:ConnectionDischargeIntoNode rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCG char2 (A)" .
+:ConnectionNotEvident rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BCA char1 (G)" .
+:ContinuationFlowControl rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCK char2 (A)" .
+:CorrectConnection rdfs:isDefinedBy "DIN EN 13508-2, Table 7, BDE char2 (C); Table 13, DDE char2 (C)" .
+:CorrodedLadderHandrail rdfs:isDefinedBy "DIN EN 13508-2, Table 10, DAQ char1 (F)" .
+:CorrodedLadderRunner rdfs:isDefinedBy "DIN EN 13508-2, Table 10, DAQ char1 (J)" .
+:CorrodedLadderSupport rdfs:isDefinedBy "DIN EN 13508-2, Table 10, DAQ char1 (I)" .
+:CorrodedReinforcement rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAF char1 (H); Table 10, DAF char1 (H)" .
+:CorrodedStep rdfs:isDefinedBy "DIN EN 13508-2, Table 10, DAQ char1 (C)" .
+:CorrosionProductsOnSurface rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAF char1 (J); Table 10, DAF char1 (J)" .
+:CoverAboveSurfaceLevel rdfs:isDefinedBy "DIN EN 13508-2, Table 10, DAR char1 (H)" .
+:CoverBelowSurfaceLevel rdfs:isDefinedBy "DIN EN 13508-2, Table 10, DAR char1 (G)" .
+:CrackFissure rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAB char1 (B); Table 10, DAB char1 (B)" .
+:CrackInRepairMaterial rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAL char1 (G); Table 10, DAL char1 (G)" .
+:CrackOrSplitOrWeldFailure rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAK char1 (I); Table 10, DAK char1 (I)" .
+:CrossSection rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCO" .
+:DAA rdfs:isDefinedBy "DIN EN 13508-2, main code DAA" .
+:DAA_A rdfs:isDefinedBy "DIN EN 13508-2, main code DAA, characterization 1 = A" .
+:DAA_B rdfs:isDefinedBy "DIN EN 13508-2, main code DAA, characterization 1 = B" .
+:DAB rdfs:isDefinedBy "DIN EN 13508-2, main code DAB" .
+:DAB1_A rdfs:isDefinedBy "DIN EN 13508-2, main code DAB, characterization 1 = A" .
+:DAB1_B rdfs:isDefinedBy "DIN EN 13508-2, main code DAB, characterization 1 = B" .
+:DAB1_C rdfs:isDefinedBy "DIN EN 13508-2, main code DAB, characterization 1 = C" .
+:DAB2_A rdfs:isDefinedBy "DIN EN 13508-2, main code DAB, characterization 2 = A" .
+:DAB2_B rdfs:isDefinedBy "DIN EN 13508-2, main code DAB, characterization 2 = B" .
+:DAB2_C rdfs:isDefinedBy "DIN EN 13508-2, main code DAB, characterization 2 = C" .
+:DAB2_D rdfs:isDefinedBy "DIN EN 13508-2, main code DAB, characterization 2 = D" .
+:DAB2_E rdfs:isDefinedBy "DIN EN 13508-2, main code DAB, characterization 2 = E" .
+:DAC rdfs:isDefinedBy "DIN EN 13508-2, main code DAC" .
+:DAC_A rdfs:isDefinedBy "DIN EN 13508-2, main code DAC, characterization 1 = A" .
+:DAC_B rdfs:isDefinedBy "DIN EN 13508-2, main code DAC, characterization 1 = B" .
+:DAC_C rdfs:isDefinedBy "DIN EN 13508-2, main code DAC, characterization 1 = C" .
+:DAD rdfs:isDefinedBy "DIN EN 13508-2, main code DAD" .
+:DAD1_A rdfs:isDefinedBy "DIN EN 13508-2, main code DAD, characterization 1 = A" .
+:DAD1_B rdfs:isDefinedBy "DIN EN 13508-2, main code DAD, characterization 1 = B" .
+:DAD1_C rdfs:isDefinedBy "DIN EN 13508-2, main code DAD, characterization 1 = C" .
+:DAD2_A rdfs:isDefinedBy "DIN EN 13508-2, main code DAD, characterization 2 = A" .
+:DAD2_B rdfs:isDefinedBy "DIN EN 13508-2, main code DAD, characterization 2 = B" .
+:DAE rdfs:isDefinedBy "DIN EN 13508-2, main code DAE" .
+:DAF rdfs:isDefinedBy "DIN EN 13508-2, main code DAF" .
+:DAF1_A rdfs:isDefinedBy "DIN EN 13508-2, main code DAF, characterization 1 = A" .
+:DAF1_B rdfs:isDefinedBy "DIN EN 13508-2, main code DAF, characterization 1 = B" .
+:DAF1_C rdfs:isDefinedBy "DIN EN 13508-2, main code DAF, characterization 1 = C" .
+:DAF1_D rdfs:isDefinedBy "DIN EN 13508-2, main code DAF, characterization 1 = D" .
+:DAF1_E rdfs:isDefinedBy "DIN EN 13508-2, main code DAF, characterization 1 = E" .
+:DAF1_F rdfs:isDefinedBy "DIN EN 13508-2, main code DAF, characterization 1 = F" .
+:DAF1_G rdfs:isDefinedBy "DIN EN 13508-2, main code DAF, characterization 1 = G" .
+:DAF1_H rdfs:isDefinedBy "DIN EN 13508-2, main code DAF, characterization 1 = H" .
+:DAF1_I rdfs:isDefinedBy "DIN EN 13508-2, main code DAF, characterization 1 = I" .
+:DAF1_J rdfs:isDefinedBy "DIN EN 13508-2, main code DAF, characterization 1 = J" .
+:DAF1_K rdfs:isDefinedBy "DIN EN 13508-2, main code DAF, characterization 1 = K" .
+:DAF1_Z rdfs:isDefinedBy "DIN EN 13508-2, main code DAF, characterization 1 = Z" .
+:DAF2_A rdfs:isDefinedBy "DIN EN 13508-2, main code DAF, characterization 2 = A" .
+:DAF2_B rdfs:isDefinedBy "DIN EN 13508-2, main code DAF, characterization 2 = B" .
+:DAF2_C rdfs:isDefinedBy "DIN EN 13508-2, main code DAF, characterization 2 = C" .
+:DAF2_D rdfs:isDefinedBy "DIN EN 13508-2, main code DAF, characterization 2 = D" .
+:DAF2_E rdfs:isDefinedBy "DIN EN 13508-2, main code DAF, characterization 2 = E" .
+:DAF2_Z rdfs:isDefinedBy "DIN EN 13508-2, main code DAF, characterization 2 = Z" .
+:DAG rdfs:isDefinedBy "DIN EN 13508-2, main code DAG" .
+:DAH rdfs:isDefinedBy "DIN EN 13508-2, main code DAH" .
+:DAH_A rdfs:isDefinedBy "DIN EN 13508-2, main code DAH, characterization 1 = A" .
+:DAH_B rdfs:isDefinedBy "DIN EN 13508-2, main code DAH, characterization 1 = B" .
+:DAH_C rdfs:isDefinedBy "DIN EN 13508-2, main code DAH, characterization 1 = C" .
+:DAH_D rdfs:isDefinedBy "DIN EN 13508-2, main code DAH, characterization 1 = D" .
+:DAH_E rdfs:isDefinedBy "DIN EN 13508-2, main code DAH, characterization 1 = E" .
+:DAH_Z rdfs:isDefinedBy "DIN EN 13508-2, main code DAH, characterization 1 = Z" .
+:DAI rdfs:isDefinedBy "DIN EN 13508-2, main code DAI" .
+:DAI1_A rdfs:isDefinedBy "DIN EN 13508-2, main code DAI, characterization 1 = A" .
+:DAI1_Z rdfs:isDefinedBy "DIN EN 13508-2, main code DAI, characterization 1 = Z" .
+:DAI2_A rdfs:isDefinedBy "DIN EN 13508-2, main code DAI, characterization 2 = A" .
+:DAI2_B rdfs:isDefinedBy "DIN EN 13508-2, main code DAI, characterization 2 = B" .
+:DAI2_C rdfs:isDefinedBy "DIN EN 13508-2, main code DAI, characterization 2 = C" .
+:DAJ rdfs:isDefinedBy "DIN EN 13508-2, main code DAJ" .
+:DAJ_A rdfs:isDefinedBy "DIN EN 13508-2, main code DAJ, characterization 1 = A" .
+:DAJ_B rdfs:isDefinedBy "DIN EN 13508-2, main code DAJ, characterization 1 = B" .
+:DAJ_C rdfs:isDefinedBy "DIN EN 13508-2, main code DAJ, characterization 1 = C" .
+:DAK rdfs:isDefinedBy "DIN EN 13508-2, main code DAK" .
+:DAK1_A rdfs:isDefinedBy "DIN EN 13508-2, main code DAK, characterization 1 = A" .
+:DAK1_B rdfs:isDefinedBy "DIN EN 13508-2, main code DAK, characterization 1 = B" .
+:DAK1_C rdfs:isDefinedBy "DIN EN 13508-2, main code DAK, characterization 1 = C" .
+:DAK1_D rdfs:isDefinedBy "DIN EN 13508-2, main code DAK, characterization 1 = D" .
+:DAK1_E rdfs:isDefinedBy "DIN EN 13508-2, main code DAK, characterization 1 = E" .
+:DAK1_F rdfs:isDefinedBy "DIN EN 13508-2, main code DAK, characterization 1 = F" .
+:DAK1_G rdfs:isDefinedBy "DIN EN 13508-2, main code DAK, characterization 1 = G" .
+:DAK1_H rdfs:isDefinedBy "DIN EN 13508-2, main code DAK, characterization 1 = H" .
+:DAK1_I rdfs:isDefinedBy "DIN EN 13508-2, main code DAK, characterization 1 = I" .
+:DAK1_J rdfs:isDefinedBy "DIN EN 13508-2, main code DAK, characterization 1 = J" .
+:DAK1_K rdfs:isDefinedBy "DIN EN 13508-2, main code DAK, characterization 1 = K" .
+:DAK1_L rdfs:isDefinedBy "DIN EN 13508-2, main code DAK, characterization 1 = L" .
+:DAK1_M rdfs:isDefinedBy "DIN EN 13508-2, main code DAK, characterization 1 = M" .
+:DAK1_N rdfs:isDefinedBy "DIN EN 13508-2, main code DAK, characterization 1 = N" .
+:DAK1_Z rdfs:isDefinedBy "DIN EN 13508-2, main code DAK, characterization 1 = Z" .
+:DAK2_A rdfs:isDefinedBy "DIN EN 13508-2, main code DAK, characterization 2 = A" .
+:DAK2_B rdfs:isDefinedBy "DIN EN 13508-2, main code DAK, characterization 2 = B" .
+:DAK2_C rdfs:isDefinedBy "DIN EN 13508-2, main code DAK, characterization 2 = C" .
+:DAK2_D rdfs:isDefinedBy "DIN EN 13508-2, main code DAK, characterization 2 = D" .
+:DAL rdfs:isDefinedBy "DIN EN 13508-2, main code DAL" .
+:DAL_A rdfs:isDefinedBy "DIN EN 13508-2, main code DAL, characterization 1 = A" .
+:DAL_B rdfs:isDefinedBy "DIN EN 13508-2, main code DAL, characterization 1 = B" .
+:DAL_C rdfs:isDefinedBy "DIN EN 13508-2, main code DAL, characterization 1 = C" .
+:DAL_D rdfs:isDefinedBy "DIN EN 13508-2, main code DAL, characterization 1 = D" .
+:DAL_E rdfs:isDefinedBy "DIN EN 13508-2, main code DAL, characterization 1 = E" .
+:DAL_F rdfs:isDefinedBy "DIN EN 13508-2, main code DAL, characterization 1 = F" .
+:DAL_G rdfs:isDefinedBy "DIN EN 13508-2, main code DAL, characterization 1 = G" .
+:DAL_Z rdfs:isDefinedBy "DIN EN 13508-2, main code DAL, characterization 1 = Z" .
+:DAM rdfs:isDefinedBy "DIN EN 13508-2, main code DAM" .
+:DAM_A rdfs:isDefinedBy "DIN EN 13508-2, main code DAM, characterization 1 = A" .
+:DAM_B rdfs:isDefinedBy "DIN EN 13508-2, main code DAM, characterization 1 = B" .
+:DAM_C rdfs:isDefinedBy "DIN EN 13508-2, main code DAM, characterization 1 = C" .
+:DAN rdfs:isDefinedBy "DIN EN 13508-2, main code DAN" .
+:DAO rdfs:isDefinedBy "DIN EN 13508-2, main code DAO" .
+:DAP rdfs:isDefinedBy "DIN EN 13508-2, main code DAP" .
+:DAQ rdfs:isDefinedBy "DIN EN 13508-2, main code DAQ" .
+:DAQ_A rdfs:isDefinedBy "DIN EN 13508-2, main code DAQ, characterization 1 = A" .
+:DAQ_B rdfs:isDefinedBy "DIN EN 13508-2, main code DAQ, characterization 1 = B" .
+:DAQ_C rdfs:isDefinedBy "DIN EN 13508-2, main code DAQ, characterization 1 = C" .
+:DAQ_D rdfs:isDefinedBy "DIN EN 13508-2, main code DAQ, characterization 1 = D" .
+:DAQ_E rdfs:isDefinedBy "DIN EN 13508-2, main code DAQ, characterization 1 = E" .
+:DAQ_F rdfs:isDefinedBy "DIN EN 13508-2, main code DAQ, characterization 1 = F" .
+:DAQ_G rdfs:isDefinedBy "DIN EN 13508-2, main code DAQ, characterization 1 = G" .
+:DAQ_H rdfs:isDefinedBy "DIN EN 13508-2, main code DAQ, characterization 1 = H" .
+:DAQ_I rdfs:isDefinedBy "DIN EN 13508-2, main code DAQ, characterization 1 = I" .
+:DAQ_J rdfs:isDefinedBy "DIN EN 13508-2, main code DAQ, characterization 1 = J" .
+:DAQ_K rdfs:isDefinedBy "DIN EN 13508-2, main code DAQ, characterization 1 = K" .
+:DAQ_Z rdfs:isDefinedBy "DIN EN 13508-2, main code DAQ, characterization 1 = Z" .
+:DAR rdfs:isDefinedBy "DIN EN 13508-2, main code DAR" .
+:DAR_A rdfs:isDefinedBy "DIN EN 13508-2, main code DAR, characterization 1 = A" .
+:DAR_B rdfs:isDefinedBy "DIN EN 13508-2, main code DAR, characterization 1 = B" .
+:DAR_C rdfs:isDefinedBy "DIN EN 13508-2, main code DAR, characterization 1 = C" .
+:DAR_D rdfs:isDefinedBy "DIN EN 13508-2, main code DAR, characterization 1 = D" .
+:DAR_E rdfs:isDefinedBy "DIN EN 13508-2, main code DAR, characterization 1 = E" .
+:DAR_F rdfs:isDefinedBy "DIN EN 13508-2, main code DAR, characterization 1 = F" .
+:DAR_G rdfs:isDefinedBy "DIN EN 13508-2, main code DAR, characterization 1 = G" .
+:DAR_H rdfs:isDefinedBy "DIN EN 13508-2, main code DAR, characterization 1 = H" .
+:DAR_Z rdfs:isDefinedBy "DIN EN 13508-2, main code DAR, characterization 1 = Z" .
+:DBA rdfs:isDefinedBy "DIN EN 13508-2, main code DBA" .
+:DBA_A rdfs:isDefinedBy "DIN EN 13508-2, main code DBA, characterization 1 = A" .
+:DBA_B rdfs:isDefinedBy "DIN EN 13508-2, main code DBA, characterization 1 = B" .
+:DBA_C rdfs:isDefinedBy "DIN EN 13508-2, main code DBA, characterization 1 = C" .
+:DBB rdfs:isDefinedBy "DIN EN 13508-2, main code DBB" .
+:DBB_A rdfs:isDefinedBy "DIN EN 13508-2, main code DBB, characterization 1 = A" .
+:DBB_B rdfs:isDefinedBy "DIN EN 13508-2, main code DBB, characterization 1 = B" .
+:DBB_C rdfs:isDefinedBy "DIN EN 13508-2, main code DBB, characterization 1 = C" .
+:DBB_Z rdfs:isDefinedBy "DIN EN 13508-2, main code DBB, characterization 1 = Z" .
+:DBC rdfs:isDefinedBy "DIN EN 13508-2, main code DBC" .
+:DBC_A rdfs:isDefinedBy "DIN EN 13508-2, main code DBC, characterization 1 = A" .
+:DBC_B rdfs:isDefinedBy "DIN EN 13508-2, main code DBC, characterization 1 = B" .
+:DBC_C rdfs:isDefinedBy "DIN EN 13508-2, main code DBC, characterization 1 = C" .
+:DBC_Z rdfs:isDefinedBy "DIN EN 13508-2, main code DBC, characterization 1 = Z" .
+:DBD rdfs:isDefinedBy "DIN EN 13508-2, main code DBD" .
+:DBE rdfs:isDefinedBy "DIN EN 13508-2, main code DBE" .
+:DBE_A rdfs:isDefinedBy "DIN EN 13508-2, main code DBE, characterization 1 = A" .
+:DBE_B rdfs:isDefinedBy "DIN EN 13508-2, main code DBE, characterization 1 = B" .
+:DBE_C rdfs:isDefinedBy "DIN EN 13508-2, main code DBE, characterization 1 = C" .
+:DBE_D rdfs:isDefinedBy "DIN EN 13508-2, main code DBE, characterization 1 = D" .
+:DBE_E rdfs:isDefinedBy "DIN EN 13508-2, main code DBE, characterization 1 = E" .
+:DBE_F rdfs:isDefinedBy "DIN EN 13508-2, main code DBE, characterization 1 = F" .
+:DBE_G rdfs:isDefinedBy "DIN EN 13508-2, main code DBE, characterization 1 = G" .
+:DBE_H rdfs:isDefinedBy "DIN EN 13508-2, main code DBE, characterization 1 = H" .
+:DBE_Z rdfs:isDefinedBy "DIN EN 13508-2, main code DBE, characterization 1 = Z" .
+:DBF rdfs:isDefinedBy "DIN EN 13508-2, main code DBF" .
+:DBF1_A rdfs:isDefinedBy "DIN EN 13508-2, main code DBF, characterization 1 = A" .
+:DBF1_B rdfs:isDefinedBy "DIN EN 13508-2, main code DBF, characterization 1 = B" .
+:DBF1_C rdfs:isDefinedBy "DIN EN 13508-2, main code DBF, characterization 1 = C" .
+:DBF1_D rdfs:isDefinedBy "DIN EN 13508-2, main code DBF, characterization 1 = D" .
+:DBF2_A rdfs:isDefinedBy "DIN EN 13508-2, main code DBF, characterization 2 = A" .
+:DBF2_B rdfs:isDefinedBy "DIN EN 13508-2, main code DBF, characterization 2 = B" .
+:DBF2_C rdfs:isDefinedBy "DIN EN 13508-2, main code DBF, characterization 2 = C" .
+:DBG rdfs:isDefinedBy "DIN EN 13508-2, main code DBG" .
+:DBH rdfs:isDefinedBy "DIN EN 13508-2, main code DBH" .
+:DBH1_A rdfs:isDefinedBy "DIN EN 13508-2, main code DBH, characterization 1 = A" .
+:DBH1_B rdfs:isDefinedBy "DIN EN 13508-2, main code DBH, characterization 1 = B" .
+:DBH1_Z rdfs:isDefinedBy "DIN EN 13508-2, main code DBH, characterization 1 = Z" .
+:DBH2_A rdfs:isDefinedBy "DIN EN 13508-2, main code DBH, characterization 2 = A" .
+:DBH2_B rdfs:isDefinedBy "DIN EN 13508-2, main code DBH, characterization 2 = B" .
+:DBH2_C rdfs:isDefinedBy "DIN EN 13508-2, main code DBH, characterization 2 = C" .
+:DBH2_Z rdfs:isDefinedBy "DIN EN 13508-2, main code DBH, characterization 2 = Z" .
+:DCA rdfs:isDefinedBy "DIN EN 13508-2, main code DCA" .
+:DCA1_A rdfs:isDefinedBy "DIN EN 13508-2, main code DCA, characterization 1 = A" .
+:DCA1_B rdfs:isDefinedBy "DIN EN 13508-2, main code DCA, characterization 1 = B" .
+:DCA1_C rdfs:isDefinedBy "DIN EN 13508-2, main code DCA, characterization 1 = C" .
+:DCA1_D rdfs:isDefinedBy "DIN EN 13508-2, main code DCA, characterization 1 = D" .
+:DCA1_E rdfs:isDefinedBy "DIN EN 13508-2, main code DCA, characterization 1 = E" .
+:DCA1_F rdfs:isDefinedBy "DIN EN 13508-2, main code DCA, characterization 1 = F" .
+:DCA1_Z rdfs:isDefinedBy "DIN EN 13508-2, main code DCA, characterization 1 = Z" .
+:DCA2_A rdfs:isDefinedBy "DIN EN 13508-2, main code DCA, characterization 2 = A" .
+:DCA2_B rdfs:isDefinedBy "DIN EN 13508-2, main code DCA, characterization 2 = B" .
+:DCA2_C rdfs:isDefinedBy "DIN EN 13508-2, main code DCA, characterization 2 = C" .
+:DCA2_D rdfs:isDefinedBy "DIN EN 13508-2, main code DCA, characterization 2 = D" .
+:DCA2_Z rdfs:isDefinedBy "DIN EN 13508-2, main code DCA, characterization 2 = Z" .
+:DCB rdfs:isDefinedBy "DIN EN 13508-2, main code DCB" .
+:DCB_A rdfs:isDefinedBy "DIN EN 13508-2, main code DCB, characterization 1 = A" .
+:DCB_B rdfs:isDefinedBy "DIN EN 13508-2, main code DCB, characterization 1 = B" .
+:DCB_C rdfs:isDefinedBy "DIN EN 13508-2, main code DCB, characterization 1 = C" .
+:DCB_D rdfs:isDefinedBy "DIN EN 13508-2, main code DCB, characterization 1 = D" .
+:DCB_E rdfs:isDefinedBy "DIN EN 13508-2, main code DCB, characterization 1 = E" .
+:DCB_F rdfs:isDefinedBy "DIN EN 13508-2, main code DCB, characterization 1 = F" .
+:DCB_Z rdfs:isDefinedBy "DIN EN 13508-2, main code DCB, characterization 1 = Z" .
+:DCG rdfs:isDefinedBy "DIN EN 13508-2, main code DCG" .
+:DCG1_A rdfs:isDefinedBy "DIN EN 13508-2, main code DCG, characterization 1 = A" .
+:DCG1_B rdfs:isDefinedBy "DIN EN 13508-2, main code DCG, characterization 1 = B" .
+:DCG1_C rdfs:isDefinedBy "DIN EN 13508-2, main code DCG, characterization 1 = C" .
+:DCG1_D rdfs:isDefinedBy "DIN EN 13508-2, main code DCG, characterization 1 = D" .
+:DCG1_E rdfs:isDefinedBy "DIN EN 13508-2, main code DCG, characterization 1 = E" .
+:DCG1_F rdfs:isDefinedBy "DIN EN 13508-2, main code DCG, characterization 1 = F" .
+:DCG1_X rdfs:isDefinedBy "DIN EN 13508-2, main code DCG, characterization 1 = X" .
+:DCG1_Z rdfs:isDefinedBy "DIN EN 13508-2, main code DCG, characterization 1 = Z" .
+:DCG2_A rdfs:isDefinedBy "DIN EN 13508-2, main code DCG, characterization 2 = A" .
+:DCG2_B rdfs:isDefinedBy "DIN EN 13508-2, main code DCG, characterization 2 = B" .
+:DCG2_C rdfs:isDefinedBy "DIN EN 13508-2, main code DCG, characterization 2 = C" .
+:DCH rdfs:isDefinedBy "DIN EN 13508-2, main code DCH" .
+:DCH_A rdfs:isDefinedBy "DIN EN 13508-2, main code DCH, characterization 1 = A" .
+:DCH_B rdfs:isDefinedBy "DIN EN 13508-2, main code DCH, characterization 1 = B" .
+:DCH_C rdfs:isDefinedBy "DIN EN 13508-2, main code DCH, characterization 1 = C" .
+:DCI rdfs:isDefinedBy "DIN EN 13508-2, main code DCI" .
+:DCI1_A rdfs:isDefinedBy "DIN EN 13508-2, main code DCI, characterization 1 = A" .
+:DCI1_B rdfs:isDefinedBy "DIN EN 13508-2, main code DCI, characterization 1 = B" .
+:DCI1_C rdfs:isDefinedBy "DIN EN 13508-2, main code DCI, characterization 1 = C" .
+:DCI2_A rdfs:isDefinedBy "DIN EN 13508-2, main code DCI, characterization 2 = A" .
+:DCI2_B rdfs:isDefinedBy "DIN EN 13508-2, main code DCI, characterization 2 = B" .
+:DCI2_C rdfs:isDefinedBy "DIN EN 13508-2, main code DCI, characterization 2 = C" .
+:DCI2_D rdfs:isDefinedBy "DIN EN 13508-2, main code DCI, characterization 2 = D" .
+:DCJ rdfs:isDefinedBy "DIN EN 13508-2, main code DCJ" .
+:DCJ_A rdfs:isDefinedBy "DIN EN 13508-2, main code DCJ, characterization 1 = A" .
+:DCJ_B rdfs:isDefinedBy "DIN EN 13508-2, main code DCJ, characterization 1 = B" .
+:DCJ_C rdfs:isDefinedBy "DIN EN 13508-2, main code DCJ, characterization 1 = C" .
+:DCJ_D rdfs:isDefinedBy "DIN EN 13508-2, main code DCJ, characterization 1 = D" .
+:DCJ_E rdfs:isDefinedBy "DIN EN 13508-2, main code DCJ, characterization 1 = E" .
+:DCJ_F rdfs:isDefinedBy "DIN EN 13508-2, main code DCJ, characterization 1 = F" .
+:DCJ_G rdfs:isDefinedBy "DIN EN 13508-2, main code DCJ, characterization 1 = G" .
+:DCJ_H rdfs:isDefinedBy "DIN EN 13508-2, main code DCJ, characterization 1 = H" .
+:DCK rdfs:isDefinedBy "DIN EN 13508-2, main code DCK" .
+:DCK1_A rdfs:isDefinedBy "DIN EN 13508-2, main code DCK, characterization 1 = A" .
+:DCK1_B rdfs:isDefinedBy "DIN EN 13508-2, main code DCK, characterization 1 = B" .
+:DCK1_C rdfs:isDefinedBy "DIN EN 13508-2, main code DCK, characterization 1 = C" .
+:DCK1_D rdfs:isDefinedBy "DIN EN 13508-2, main code DCK, characterization 1 = D" .
+:DCK1_E rdfs:isDefinedBy "DIN EN 13508-2, main code DCK, characterization 1 = E" .
+:DCK1_F rdfs:isDefinedBy "DIN EN 13508-2, main code DCK, characterization 1 = F" .
+:DCK1_G rdfs:isDefinedBy "DIN EN 13508-2, main code DCK, characterization 1 = G" .
+:DCK1_H rdfs:isDefinedBy "DIN EN 13508-2, main code DCK, characterization 1 = H" .
+:DCK1_I rdfs:isDefinedBy "DIN EN 13508-2, main code DCK, characterization 1 = I" .
+:DCK1_Z rdfs:isDefinedBy "DIN EN 13508-2, main code DCK, characterization 1 = Z" .
+:DCK2_A rdfs:isDefinedBy "DIN EN 13508-2, main code DCK, characterization 2 = A" .
+:DCK2_B rdfs:isDefinedBy "DIN EN 13508-2, main code DCK, characterization 2 = B" .
+:DCL rdfs:isDefinedBy "DIN EN 13508-2, main code DCL" .
+:DCL1_A rdfs:isDefinedBy "DIN EN 13508-2, main code DCL, characterization 1 = A" .
+:DCL1_B rdfs:isDefinedBy "DIN EN 13508-2, main code DCL, characterization 1 = B" .
+:DCL1_C rdfs:isDefinedBy "DIN EN 13508-2, main code DCL, characterization 1 = C" .
+:DCL2_A rdfs:isDefinedBy "DIN EN 13508-2, main code DCL, characterization 2 = A" .
+:DCL2_B rdfs:isDefinedBy "DIN EN 13508-2, main code DCL, characterization 2 = B" .
+:DCM rdfs:isDefinedBy "DIN EN 13508-2, main code DCM" .
+:DCM_A rdfs:isDefinedBy "DIN EN 13508-2, main code DCM, characterization 1 = A" .
+:DCM_B rdfs:isDefinedBy "DIN EN 13508-2, main code DCM, characterization 1 = B" .
+:DCM_C rdfs:isDefinedBy "DIN EN 13508-2, main code DCM, characterization 1 = C" .
+:DCN rdfs:isDefinedBy "DIN EN 13508-2, main code DCN" .
+:DCN_A rdfs:isDefinedBy "DIN EN 13508-2, main code DCN, characterization 1 = A" .
+:DCN_B rdfs:isDefinedBy "DIN EN 13508-2, main code DCN, characterization 1 = B" .
+:DCO rdfs:isDefinedBy "DIN EN 13508-2, main code DCO" .
+:DCO_A rdfs:isDefinedBy "DIN EN 13508-2, main code DCO, characterization 1 = A" .
+:DCO_B rdfs:isDefinedBy "DIN EN 13508-2, main code DCO, characterization 1 = B" .
+:DCO_X rdfs:isDefinedBy "DIN EN 13508-2, main code DCO, characterization 1 = X" .
+:DCO_Z rdfs:isDefinedBy "DIN EN 13508-2, main code DCO, characterization 1 = Z" .
+:DDA rdfs:isDefinedBy "DIN EN 13508-2, main code DDA" .
+:DDB rdfs:isDefinedBy "DIN EN 13508-2, main code DDB" .
+:DDC rdfs:isDefinedBy "DIN EN 13508-2, main code DDC" .
+:DDC1_A rdfs:isDefinedBy "DIN EN 13508-2, main code DDC, characterization 1 = A" .
+:DDC1_B rdfs:isDefinedBy "DIN EN 13508-2, main code DDC, characterization 1 = B" .
+:DDC1_C rdfs:isDefinedBy "DIN EN 13508-2, main code DDC, characterization 1 = C" .
+:DDC1_D rdfs:isDefinedBy "DIN EN 13508-2, main code DDC, characterization 1 = D" .
+:DDC1_Z rdfs:isDefinedBy "DIN EN 13508-2, main code DDC, characterization 1 = Z" .
+:DDC2_A rdfs:isDefinedBy "DIN EN 13508-2, main code DDC, characterization 2 = A" .
+:DDC2_B rdfs:isDefinedBy "DIN EN 13508-2, main code DDC, characterization 2 = B" .
+:DDC2_Z rdfs:isDefinedBy "DIN EN 13508-2, main code DDC, characterization 2 = Z" .
+:DDD rdfs:isDefinedBy "DIN EN 13508-2, main code DDD" .
+:DDE rdfs:isDefinedBy "DIN EN 13508-2, main code DDE" .
+:DDE1_A rdfs:isDefinedBy "DIN EN 13508-2, main code DDE, characterization 1 = A" .
+:DDE1_B rdfs:isDefinedBy "DIN EN 13508-2, main code DDE, characterization 1 = B" .
+:DDE1_C rdfs:isDefinedBy "DIN EN 13508-2, main code DDE, characterization 1 = C" .
+:DDE1_D rdfs:isDefinedBy "DIN EN 13508-2, main code DDE, characterization 1 = D" .
+:DDE1_E rdfs:isDefinedBy "DIN EN 13508-2, main code DDE, characterization 1 = E" .
+:DDE2_A rdfs:isDefinedBy "DIN EN 13508-2, main code DDE, characterization 2 = A" .
+:DDE2_B rdfs:isDefinedBy "DIN EN 13508-2, main code DDE, characterization 2 = B" .
+:DDE2_C rdfs:isDefinedBy "DIN EN 13508-2, main code DDE, characterization 2 = C" .
+:DDF rdfs:isDefinedBy "DIN EN 13508-2, main code DDF" .
+:DDF_A rdfs:isDefinedBy "DIN EN 13508-2, main code DDF, characterization 1 = A" .
+:DDF_B rdfs:isDefinedBy "DIN EN 13508-2, main code DDF, characterization 1 = B" .
+:DDF_C rdfs:isDefinedBy "DIN EN 13508-2, main code DDF, characterization 1 = C" .
+:DDF_Z rdfs:isDefinedBy "DIN EN 13508-2, main code DDF, characterization 1 = Z" .
+:DDG rdfs:isDefinedBy "DIN EN 13508-2, main code DDG" .
+:DDG_A rdfs:isDefinedBy "DIN EN 13508-2, main code DDG, characterization 1 = A" .
+:DDG_B rdfs:isDefinedBy "DIN EN 13508-2, main code DDG, characterization 1 = B" .
+:DDG_C rdfs:isDefinedBy "DIN EN 13508-2, main code DDG, characterization 1 = C" .
+:DDG_Z rdfs:isDefinedBy "DIN EN 13508-2, main code DDG, characterization 1 = Z" .
+:DamagedConnection rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAH char1 (D); Table 10, DAH char1 (D)" .
+:Defect rdfs:isDefinedBy "DIN EN 13508-2, 8.2/8.3 headings; 11.2/11.3 headings" .
+:DefectiveBenching rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCH char (A)" .
+:DefectiveBrickworkOrMasonry rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAD; Table 10, DAD" .
+:DefectiveChannel rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCI char1 (A)" .
+:DefectiveConnection rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAH; Table 10, DAH" .
+:DefectiveCoverOrFrame rdfs:isDefinedBy "DIN EN 13508-2, Table 10, DAR" .
+:DefectiveEndOfLining rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAK char1 (C); Table 10, DAK char1 (C)" .
+:DefectiveGritTrap rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCM char1 (A)" .
+:DefectiveOtherPipelineThroughManhole rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCL char2 (A)" .
+:DefectiveRepair rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAL; Table 10, DAL" .
+:DefectiveSafetyBar rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCJ char1 (G)" .
+:DefectiveSafetyChain rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCJ char1 (C)" .
+:DefectiveSiltPit rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCN char1 (B)" .
+:DefectiveStepOrLadder rdfs:isDefinedBy "DIN EN 13508-2, Table 10, DAQ" .
+:DefectiveToeHole rdfs:isDefinedBy "DIN EN 13508-2, Table 10, DAQ char1 (K)" .
+:Deformation rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAA; Table 10, DAA" .
+:DetachedLining rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAK char1 (A); Table 10, DAK char1 (A)" .
+:DiscoloredLining rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAK char1 (B); Table 10, DAK char1 (B)" .
+:DiscountinuedWastewaterCode rdfs:isDefinedBy "DIN EN 13508-2, Table 7, BDD (B); BDE char1 (B); DDE char1 (B)" .
+:DisplacedBrickworkOrMasonry rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAD char1 (A); Table 10, DAD char1 (A)" .
+:DisplacedJoint rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAJ; Table 10, DAJ" .
+:DisplacedSealingRing rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAI char2 (A); Table 10, DAI char2 (A)" .
+:Down rdfs:isDefinedBy "DIN EN 13508-2, Table 6, BCC char2 (B)" .
+:DrilledPlainConnection rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BCA char1 (D)" .
+:DrilledSaddleConnection rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BCA char1 (B)" .
+:DrippingInfiltration rdfs:isDefinedBy "DIN EN 13508-2, Table 5, BBF char (B); Table 11, DBF char1 (B)" .
+:DroppedInvertBrickworkOrMasonry rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAD char1 (C)" .
+:EggShapedConnectingPipeline rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCG char1 (C)" .
+:EncrustationAttachedDeposit rdfs:isDefinedBy "DIN EN 13508-2, Table 5, BBB char1 (A); Table 11, DBB char1 (A)" .
+:EndOfLiningNotSealed rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAK char1 (N); Table 10, DAK char1 (N)" .
+:EnteringThroughConnectionObstacle rdfs:isDefinedBy "DIN EN 13508-2, Table 5, BBE char1 (F); Table 11, DBE char1 (F)" .
+:EquipmentFailure rdfs:isDefinedBy "DIN EN 13508-2, Table 7, BDC char1 (C); Table 13, DDC char1 (D)" .
+:ExcessRepairMaterial rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAL char1 (E); Table 10, DAL char1 (E)" .
+:Exfiltration rdfs:isDefinedBy "DIN EN 13508-2, Table 5, BBG; Table 11, DBG" .
+:ExternalBulgeLining rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAK char1 (F); Table 10, DAK char1 (F)" .
+:ExternalPipesOrCablesBuiltThroughStructureObstacle rdfs:isDefinedBy "DIN EN 13508-2, Table 5, BBE char1 (G); Table 11, DBE char1 (G)" .
+:FineSettledDeposit rdfs:isDefinedBy "DIN EN 13508-2, Table 5, BBC char (A); Table 11, DBC char (A)" .
+:Fissure rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAB; Table 10, DAB" .
+:FlapValveFlowControl rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCK char1 (H)" .
+:FloatOperatedGateValveFlowControl rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCK char1 (F)" .
+:FlowControl rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCK" .
+:FlowFromIncomingPipe rdfs:isDefinedBy "DIN EN 13508-2, Table 7, BDE; Table 13, DDE" .
+:FlowingInfiltration rdfs:isDefinedBy "DIN EN 13508-2, Table 5, BBF char (C); Table 11, DBF char1 (C)" .
+:FoulingAttachedDeposit rdfs:isDefinedBy "DIN EN 13508-2, Table 5, BBB char (C); Table 11, DBB char (C)" .
+:FractureFissure rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAB char1 (C); Table 10, DAB char1 (C)" .
+:FreeDropConnection rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCA char1 (B)" .
+:GapConnection rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAH char (B); Table 10, DAH char (B)" .
+:GateValveFlowControl rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCK char1 (E)" .
+:GeneralDeformation rdfs:isDefinedBy "DIN EN 13508-2, Table 10, DAA char1 (A)" .
+:GeneralPhotograph rdfs:isDefinedBy "DIN EN 13508-2, Table 7, BDA; Table 13, DDA" .
+:GeneralRemark rdfs:isDefinedBy "DIN EN 13508-2, Table 7, BDB; Table 13, DDB" .
+:GreaseAttachedDeposit rdfs:isDefinedBy "DIN EN 13508-2, Table 5, BBB char1 (B); Table 11, DBB char1 (B)" .
+:GritTrapUnderCover rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCM" .
+:GushingInfiltration rdfs:isDefinedBy "DIN EN 13508-2, Table 5, BBF char (D); Table 11, DBF char1 (D)" .
+:HardOrCompactedSettledDeposit rdfs:isDefinedBy "DIN EN 13508-2, Table 5, BBC char (C); Table 11, DBC char (C)" .
+:Helical rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAB char2 (D); Table 4, BAK char2 (D); Table 4, BAL char2 (D); Table 4, BAM char1 (C); Table 10, DAK char2 (D)" .
+:HighPointChannel rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCI char2 (C)" .
+:HighWaterLevel rdfs:isDefinedBy "DIN EN 13508-2, Table 7, BDC char1 (B); Table 13, DDC char1 (C)" .
+:HoleInLining rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAK char1 (J); Table 10, DAK char1 (J)" .
+:HoleInRepairMaterial rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAL char1 (F); Table 10, DAL char1 (F)" .
+:HoleRepair rdfs:isDefinedBy "DIN EN 13508-2, Table 6, BCB char1 (E); Table 12, DCB char (D)" .
+:Horizontal rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAA char1 (B); Table 10, DAB char2 (B); Table 10, DAJ char1 (B); Table 10, DAK char2 (B); Table 10, DAM char1 (B)" .
+:HydrogenSulfide rdfs:isDefinedBy "DIN EN 13508-2, Table 7, BDF char (B); Table 13, DDF char (B)" .
+:InConnection rdfs:isDefinedBy "DIN EN 13508-2, Table 5, BBH char2 (B); Table 11, DBH char2 (B)" .
+:InManholeOrInspectionChamber rdfs:isDefinedBy "DIN EN 13508-2, Table 11, DBH char2 (A)" .
+:InOpenJoint rdfs:isDefinedBy "DIN EN 13508-2, Table 5, BBH char2 (C); Table 11, DBH char2 (C)" .
+:InPipeline rdfs:isDefinedBy "DIN EN 13508-2, Table 5, BBH char2 (A)" .
+:Inclined rdfs:isDefinedBy "DIN EN 13508-2, Table 10, DAB char2 (D); Table 10, DAM char1 (C)" .
+:IncorrectPositionConnection rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAH char1 (A); Table 10, DAH char1 (A)" .
+:IncreasedRoughness rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAF char1 (A); Table 10, DAF char1 (A)" .
+:IndependentFineRoots rdfs:isDefinedBy "DIN EN 13508-2, Table 5, BBA char1 (B); Table 11, DBA char1 (B)" .
+:Infiltration rdfs:isDefinedBy "DIN EN 13508-2, Table 5, BBF; Table 11, DBF" .
+:IngressOfFineMaterial rdfs:isDefinedBy "DIN EN 13508-2, Table 5, BBD char1 (C)" .
+:IngressOfGravel rdfs:isDefinedBy "DIN EN 13508-2, Table 5, BBD char1 (D)" .
+:IngressOfOtherSoil rdfs:isDefinedBy "DIN EN 13508-2, Table 5, BBD char1 (Z)" .
+:IngressOfPeat rdfs:isDefinedBy "DIN EN 13508-2, Table 5, BBD char1 (B)" .
+:IngressOfSand rdfs:isDefinedBy "DIN EN 13508-2, Table 5, BBD char1 (A)" .
+:IngressOfSoil rdfs:isDefinedBy "DIN EN 13508-2, Table 5, BBD; Table 11, DBD" .
+:InjectedMortarRepair rdfs:isDefinedBy "DIN EN 13508-2, Table 6, BCB char1 (C)" .
+:InjectedSealingMaterialRepair rdfs:isDefinedBy "DIN EN 13508-2, Table 6, BCB char1 (D); Table 12, DCB char (C)" .
+:InspectionChamber rdfs:isDefinedBy "DIN EN 13508-2, Table 6, BCD char1 (B); Table 6, BCE char1 (B)" .
+:InspectionComplete rdfs:isDefinedBy "DIN EN 13508-2, Table 7, BDC char2 (A)/(C); Table 13, DDC char2 (A)" .
+:InspectionCompleteWithPreviousPartialInspection rdfs:isDefinedBy "DIN EN 13508-2, Table 7, BDC char2 (C)" .
+:InspectionIncomplete rdfs:isDefinedBy "DIN EN 13508-2, Table 7, BDC char2 (D)" .
+:InspectionStatus rdfs:isDefinedBy "DIN EN 13508-2, Table 7, BDC char2" .
+:InspectionStatusUnknown rdfs:isDefinedBy "DIN EN 13508-2, Table 7, BDC char2 (E)" .
+:InspectionTermination rdfs:isDefinedBy "DIN EN 13508-2, Table 7, BDC; Table 13, DDC" .
+:InternalDropPipeConnection rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCA char1 (D)" .
+:InternalFilmOrCoatingSeparation rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAK char1 (G); Table 10, DAK char1 (G)" .
+:IntrudingBrokenSealingRing rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAI char2 (D); Table 10, DAI char2 (C)" .
+:IntrudingButNotBrokenSealingRing rdfs:isDefinedBy "DIN EN 13508-2, Table 10, DAI char2 (B)" .
+:IntrudingConnection rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAG; Table 10, DAG" .
+:IntrudingOtherSealant rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAI char1 (B); Table 10, DAI char1 (Z)" .
+:IntrudingSealingMaterial rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAI; Table 10, DAI" .
+:IntrudingSealingRing rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAI char1 (A); Table 10, DAI char1 (A)" .
+:IntrudingSealingRingAboveCentreline rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAI char2 (B)" .
+:IntrudingSealingRingBelowCentreline rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAI char2 (C)" .
+:Inventory rdfs:isDefinedBy "DIN EN 13508-2, 8.4/11.4 headings" .
+:InvertConnectionInfiltration rdfs:isDefinedBy "DIN EN 13508-2, Table 11, DBF char2 (B)" .
+:Junction rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BCA char1 (A)" .
+:LampHole rdfs:isDefinedBy "DIN EN 13508-2, Table 6, BCD/BCE (D)" .
+:LayerBrickworkOrMasonryVisible rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAD char2 (A); Table 10, DAD char2 (A)" .
+:Left rdfs:isDefinedBy "DIN EN 13508-2, Table 6, BCC char1 (A)" .
+:Lining rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAK; Table 10, DAK" .
+:LiningConnectionDefect rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAK char1 (K); Table 10, DAK char1 (K)" .
+:LocalisedDeformation rdfs:isDefinedBy "DIN EN 13508-2, Table 10, DAA char1 (B)" .
+:LocalisedLiningOfConnectionRepair rdfs:isDefinedBy "DIN EN 13508-2, Table 6, BCB char1 (F); Table 12, DCB char (E)" .
+:LocalisedLiningOfManholeOrInspectionChamberRepair rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCB char (B)" .
+:LocalisedLiningOfPipeRepair rdfs:isDefinedBy "DIN EN 13508-2, Table 6, BCB char1 (B)" .
+:LocallyDefinedConnectingPipeline rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCG char1 (X)" .
+:LocallyDefinedCrossSection rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCO char1 (X)" .
+:Longitudinal rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAB char2 (A); Table 4, BAJ char1 (A); Table 4, BAK char2 (A); Table 4, BAL char2 (A); Table 4, BAM char1 (A)" .
+:LooseFrame rdfs:isDefinedBy "DIN EN 13508-2, Table 10, DAR char1 (E)" .
+:LooseLadderSupport rdfs:isDefinedBy "DIN EN 13508-2, Table 10, DAQ char1 (G)" .
+:LooseStep rdfs:isDefinedBy "DIN EN 13508-2, Table 10, DAQ char1 (A)" .
+:LossOfVision rdfs:isDefinedBy "DIN EN 13508-2, Table 7, BDG; Table 13, DDG" .
+:LowPointChannel rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCI char2 (D)" .
+:MajorConnectionWithoutManholeOrInspectionChamber rdfs:isDefinedBy "DIN EN 13508-2, Table 6, BCD/BCE (F)" .
+:Manhole rdfs:isDefinedBy "DIN EN 13508-2, Table 6, BCD char1 (A); Table 6, BCE char1 (A)" .
+:Mechanical rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAF char2 (A); Table 10, DAF char2 (A)" .
+:Methane rdfs:isDefinedBy "DIN EN 13508-2, Table 7, BDF char (C); Table 13, DDF char (C)" .
+:MissingAggregate rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAF char1 (E); Table 10, DAF char1 (E)" .
+:MissingBrickworkOrMasonry rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAD char1 (B); Table 10, DAD char1 (B), DAE" .
+:MissingCover rdfs:isDefinedBy "DIN EN 13508-2, Table 10, DAR char1 (C)" .
+:MissingFrame rdfs:isDefinedBy "DIN EN 13508-2, Table 10, DAR char1 (F)" .
+:MissingGritTrap rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCM char1 (B)" .
+:MissingLadderSupport rdfs:isDefinedBy "DIN EN 13508-2, Table 10, DAQ char1 (H)" .
+:MissingMortar rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAE" .
+:MissingRepairMaterial rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAL char1 (D); Table 10, DAL char1 (D)" .
+:MissingSafetyBar rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCJ char1 (F)" .
+:MissingSafetyChain rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCJ char1 (B)" .
+:MissingStep rdfs:isDefinedBy "DIN EN 13508-2, Table 10, DAQ char1 (B)" .
+:MissingWallBreakOrCollapse rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAC char1 (B); Table 10, DAC char1 (B)" .
+:MissingWallDefectiveRepair rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAL char1 (A); Table 10, DAL char1 (A)" .
+:MissingWallSurface rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAF char1 (I); Table 10, DAF char1 (I)" .
+:NarrowsChannel rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCI char2 (A)" .
+:NoAccessToPipe rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCL char1 (A)" .
+:NoBenching rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCH char (C)" .
+:NoChannel rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCI char1 (C)" .
+:NoDefectsSafetyBar rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCJ char1 (E)" .
+:NoDefectsSafetyChain rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCJ char1 (A)" .
+:NodeConnection rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCA char1" .
+:NodeType rdfs:isDefinedBy "DIN EN 13508-2, Table 6, BCD/BCE" .
+:NotEvident rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAF char2 (E); Table 10, DAF char2 (E)" .
+:NothingVisible rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAD char2 (B); Table 10, DAD char2 (B)" .
+:Observation rdfs:isDefinedBy "DIN EN 13508-2, 8.1.1/11.1.1" .
+:Obstacle rdfs:isDefinedBy "DIN EN 13508-2, Table 11, DBE" .
+:Obstruction rdfs:isDefinedBy "DIN EN 13508-2, Table 7, BDC char1 (A); Table 13, DDC char1 (B)" .
+:OpenConnection rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BCA char2 (A)" .
+:OperationalDefect rdfs:isDefinedBy "DIN EN 13508-2, 8.3 heading; 11.3 heading" .
+:Orientation rdfs:isDefinedBy "DIN EN 13508-2, 8.1.5/Table 3; various characterization-2 fields" .
+:OrificePlateFlowControl rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCK char1 (C)" .
+:OtherAtmosphereWithin rdfs:isDefinedBy "DIN EN 13508-2, Table 7, BDF char1 (Z); Table 13, DDF char1 (Z)" .
+:OtherAttachedDeposit rdfs:isDefinedBy "DIN EN 13508-2, Table 5, BBB char1 (D); Table 11, DBB char1 (Z)" .
+:OtherBenching rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCA char2 (Z)" .
+:OtherCause rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAF char2 (Z); Table 7, BDC char1 (Z); Table 7, BDC char2 (Z); Table 7, BDG char1 (Z); Table 10, DAF char2 (Z); Table 13, DDC char1 (Z); Table 13, DDC char2 (Z); Table 13, DDG char1 (Z)" .
+:OtherConnectingPipeline rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCG char1 (Z)" .
+:OtherConnection rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BCA char1 (Z); Table 12, DCA char1 (Z)" .
+:OtherConnectionRepair rdfs:isDefinedBy "DIN EN 13508-2, Table 6, BCB char1 (G); Table 12, DCB char (F)" .
+:OtherCrossSection rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCO char1 (Z)" .
+:OtherDefectiveConnection rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAH char1 (Z); Table 10, DAH char1 (Z)" .
+:OtherDefectiveCoverOrFrame rdfs:isDefinedBy "DIN EN 13508-2, Table 10, DAR char1 (Z)" .
+:OtherDefectiveRepair rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAL char1 (Z); Table 10, DAL char1 (Z)" .
+:OtherDefectiveStepOrLadder rdfs:isDefinedBy "DIN EN 13508-2, Table 10, DAQ char1 (Z)" .
+:OtherFlowControl rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCK char1 (Z)" .
+:OtherInjectedSealingMaterialRepair rdfs:isDefinedBy "DIN EN 13508-2, Table 6, BCB char1 (D)" .
+:OtherLiningDefect rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAK char1 (Z); Table 10, DAK char1 (Z)" .
+:OtherLocation rdfs:isDefinedBy "DIN EN 13508-2, Table 5, BBH char2 (Z); Table 11, DBH char2 (Z)" .
+:OtherObstacle rdfs:isDefinedBy "DIN EN 13508-2, Table 5, BBE; Table 11, DBE char (Z)" .
+:OtherPipelineThroughManhole rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCL" .
+:OtherPointRepair rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCB char (Z)" .
+:OtherRepairOfConnection rdfs:isDefinedBy "DIN EN 13508-2, Table 6, BCB char1 (G)" .
+:OtherSettledDeposit rdfs:isDefinedBy "DIN EN 13508-2, Table 5, BBC char1 (Z); Table 11, DBC char1 (Z)" .
+:OtherSpecialChamber rdfs:isDefinedBy "DIN EN 13508-2, Table 6, BCD char1 (Z); Table 6, BCE char1 (Z)" .
+:OtherSurfaceDamage rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAF char1 (Z); Table 10, DAF char1 (Z)" .
+:OtherTrenchlessRepair rdfs:isDefinedBy "DIN EN 13508-2, Table 6, BCB char1 (Z)" .
+:OtherVermin rdfs:isDefinedBy "DIN EN 13508-2, Table 5, BBH char1 (Z); Table 11, DBH char1 (Z)" .
+:Outfall rdfs:isDefinedBy "DIN EN 13508-2, Table 6, BCD char1 (E); Table 6, BCE char1 (E)" .
+:OvalConnectingPipeline rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCG char1 (F)" .
+:OverflowControl rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCK char2 (B)" .
+:OxygenDeficiency rdfs:isDefinedBy "DIN EN 13508-2, Table 7, BDF char (A); Table 13, DDF char (A)" .
+:PartialGapConnection rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAH char (C); Table 10, DAH char (C)" .
+:PatchSealingDefectiveRepair rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAL char1 (B); Table 10, DAL char (B)" .
+:PiecesOfPipeObstacle rdfs:isDefinedBy "DIN EN 13508-2, Table 5, BBE char1 (B); Table 11, DBE char1 (B)" .
+:PipeConnection rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BCA char1" .
+:PipeReplacedRepair rdfs:isDefinedBy "DIN EN 13508-2, Table 6, BCB char1 (A)" .
+:PipeUnderBenching rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCA char2 (D); Figure 6" .
+:PointRepair rdfs:isDefinedBy "DIN EN 13508-2, Table 6, BCB; Table 12, DCB" .
+:PorousPipe rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAN" .
+:PorousWall rdfs:isDefinedBy "DIN EN 13508-2, Table 10, DAN" .
+:PreviousPartialInspection rdfs:isDefinedBy "DIN EN 13508-2, Table 7, BDC char2 (C)/(D)/(E)" .
+:ProtrudingThroughWallObstacle rdfs:isDefinedBy "DIN EN 13508-2, Table 5, BBE char1 (D); Table 11, DBE char1 (D)" .
+:Radial rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAJ char1 (B)" .
+:RampChannelBenching rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCA char2 (C); Figure 6" .
+:RampConnection rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCA char1 (E)" .
+:RatVermin rdfs:isDefinedBy "DIN EN 13508-2, Table 5, BBH char1 (A); Table 11, DBH char1 (A)" .
+:RectangularConnectingPipeline rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCG char1 (B)" .
+:RectangularCrossSection rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCO char1 (B)" .
+:ReinforcementProjectingFromSurface rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAF char1 (G); Table 10, DAF char1 (G)" .
+:RepairMaterialSeparated rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAL char1 (C); Table 10, DAL char (C)" .
+:ResinMissingFromLaminate rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAK char1 (M); Table 10, DAK char1 (M)" .
+:Right rdfs:isDefinedBy "DIN EN 13508-2, Table 6, BCC char1 (B)" .
+:RockingCover rdfs:isDefinedBy "DIN EN 13508-2, Table 10, DAR char1 (B)" .
+:RoddingEye rdfs:isDefinedBy "DIN EN 13508-2, Table 6, BCD/BCE (C)" .
+:Roots rdfs:isDefinedBy "DIN EN 13508-2, Table 5, BBA; Table 11, DBA" .
+:SafetyChainBar rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCJ" .
+:ScreensFlowControl rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCK char1 (I)" .
+:SeamCoveringSeparation rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAK char1 (H); Table 10, DAK char1 (H)" .
+:SettledDeposit rdfs:isDefinedBy "DIN EN 13508-2, Table 5, BBC; Table 11, DBC" .
+:SewerCurvature rdfs:isDefinedBy "DIN EN 13508-2, Table 6, BCC" .
+:Silt rdfs:isDefinedBy "DIN EN 13508-2, Table 7, BDG char (B); Table 13, DDG char (B)" .
+:SiltPit rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCN" .
+:SoftLiningMaterial rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAK char1 (L); Table 10, DAK char1 (L)" .
+:SoilVisibleThroughDefect rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAO; Table 10, DAO" .
+:Spalling rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAF char1 (B); Table 10, DAF char1 (B)" .
+:SpecialNodeType rdfs:isDefinedBy "DIN EN 13508-2, Table 6, BCD/BCE (X)" .
+:StarFissure rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAB char2 (E); Table 10, DAB char2 (E)" .
+:Steam rdfs:isDefinedBy "DIN EN 13508-2, Table 7, BDG char (C); Table 13, DDG char (C)" .
+:StructuralDefect rdfs:isDefinedBy "DIN EN 13508-2, 8.2 heading; 11.2 heading" .
+:Surface rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAF; Table 10, DAF" .
+:SurfaceCrackFissure rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAB char1 (A); Table 10, DAB char1 (A)" .
+:SweatingInfiltration rdfs:isDefinedBy "DIN EN 13508-2, Table 5, BBF char (A); Table 11, DBF char1 (A)" .
+:SyphonFlowControl rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCK char1 (B)" .
+:TapRoot rdfs:isDefinedBy "DIN EN 13508-2, Table 5, BBA char1 (A); Table 11, DBA char1 (A)" .
+:TurbidWastewater rdfs:isDefinedBy "DIN EN 13508-2, Table 7, BDD (C); BDE char1 (C); DDE char1 (C)" .
+:UShapeConnectingPipeline rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCG char1 (D)" .
+:UnableToLiftCover rdfs:isDefinedBy "DIN EN 13508-2, Table 13, DDC char1 (A)" .
+:UnknownWastewater rdfs:isDefinedBy "DIN EN 13508-2, Table 7, BDE char1 (YY)" .
+:Up rdfs:isDefinedBy "DIN EN 13508-2, Table 6, BCC char2 (A)" .
+:VentilationPipeConnection rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCA char1 (F)" .
+:VenturiFlowControl rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCK char1 (G)" .
+:Vermin rdfs:isDefinedBy "DIN EN 13508-2, Table 5, BBH; Table 11, DBH" .
+:Vertical rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAA char1 (A); Table 10, DAB char2 (A); Table 10, DAJ char1 (A); Table 10, DAK char2 (A); Table 10, DAM char1 (A)" .
+:VisibleAggregate rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAF char1 (C); Table 10, DAF char1 (C)" .
+:VisibleReinforcement rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAF char1 (F); Table 10, DAF char1 (F)" .
+:VoidVisibleThroughDefect rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAP; Table 10, DAP" .
+:VortexFlowControl rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCK char1 (D)" .
+:WallInfiltration rdfs:isDefinedBy "DIN EN 13508-2, Table 11, DBF char2 (A)" .
+:WallPartRepair rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCB char (A)" .
+:Wastewater rdfs:isDefinedBy "DIN EN 13508-2, Table 7, BDD/BDE char1; Table 13, DDE char1" .
+:WaterLevel rdfs:isDefinedBy "DIN EN 13508-2, Table 7, BDD; Table 13, DDD" .
+:WedgedInJointObstacle rdfs:isDefinedBy "DIN EN 13508-2, Table 5, BBE char1 (E); Table 11, DBE char1 (E)" .
+:WeirFlowControl rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCK char1 (A)" .
+:WeldFailure rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAM; Table 10, DAM" .
+:WidensChannel rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCI char2 (B)" .
+:WorkingBenching rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCH char (B)" .
+:WorkingChannel rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCI char1 (B)" .
+:WorkingGritTrap rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCM char1 (C)" .
+:WorkingOtherPipelineThroughManhole rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCL char2 (B)" .
+:WorkingSiltPit rdfs:isDefinedBy "DIN EN 13508-2, Table 12, DCN char1 (A)" .
+:WrinkledLining rdfs:isDefinedBy "DIN EN 13508-2, Table 4, BAK char1 (D); Table 10, DAK char1 (D)" .
+:WronglyConnectedIncomingSurfaceWaterPipe rdfs:isDefinedBy "DIN EN 13508-2, Table 7, BDE char2 (B); Table 13, DDE char2 (A)" .
+:WronglyConnectedIncomingWastewaterPipe rdfs:isDefinedBy "DIN EN 13508-2, Table 7, BDE char2 (A); Table 13, DDE char2 (B)" .
+###  ---- END GENERATED ISDEFINEDBY ----
 
 
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
