@@ -1,4 +1,5 @@
-PYTHON ?= python
+# uv run uses the locked .venv without activating it; override with PYTHON=python.
+PYTHON ?= uv run python
 # Parsed M150-Onto file to materialize (default: the sibling m150-onto repo's example).
 DATA ?= ../m150-onto/m150-onto-parsed-dwa.rdf
 

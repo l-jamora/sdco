@@ -13194,7 +13194,7 @@
       "xmlDistinctTags": 179,
       "xmlConditionBlocks": 108,
       "mappedDwaElements": 259,
-      "parsedIndividuals": 238
+      "parsedIndividuals": 239
     },
     "featured": {
       "reportId": "Beispiel_Condition_1204013_7_9_BAB",
@@ -13367,7 +13367,7 @@
           "p": "m150:isChildOf",
           "o": {
             "kind": "iri",
-            "text": "m150:Beispiel_Inspection_1204013"
+            "text": "m150:Beispiel_Inspection_1204013_07_04_2006_10_04_00"
           },
           "parserAdded": true
         }
@@ -13704,15 +13704,15 @@
         "iri": "https://l-jamora.github.io/m150-onto#Beispiel_PipeSection_1204013"
       },
       {
-        "id": "Beispiel_Inspection_1204013",
+        "id": "Beispiel_Inspection_1204013_07_04_2006_10_04_00",
         "label": "Inspection 2006-04-07",
         "ns": "m150",
         "kind": "individual",
-        "iri": "https://l-jamora.github.io/m150-onto#Beispiel_Inspection_1204013"
+        "iri": "https://l-jamora.github.io/m150-onto#Beispiel_Inspection_1204013_07_04_2006_10_04_00"
       },
       {
         "id": "lit:insp:hasInspectionDateTime",
-        "label": "\"2006-04-07T10:55:00\"",
+        "label": "\"2006-04-07T10:04:00\"",
         "ns": "m150",
         "kind": "literal",
         "iri": "",
@@ -14171,18 +14171,18 @@
     ],
     "edges": [
       {
-        "source": "Beispiel_Inspection_1204013",
+        "source": "Beispiel_Inspection_1204013_07_04_2006_10_04_00",
         "target": "Beispiel_PipeSection_1204013",
         "label": "m150:inspects"
       },
       {
-        "source": "Beispiel_Inspection_1204013",
+        "source": "Beispiel_Inspection_1204013_07_04_2006_10_04_00",
         "target": "lit:insp:hasInspectionDateTime",
         "label": "m150:hasInspectionDateTime",
         "detail": true
       },
       {
-        "source": "Beispiel_Inspection_1204013",
+        "source": "Beispiel_Inspection_1204013_07_04_2006_10_04_00",
         "target": "Beispiel_Person_H_Potter",
         "label": "m150:hasInspector",
         "detail": true
@@ -14194,7 +14194,7 @@
         "detail": true
       },
       {
-        "source": "Beispiel_Inspection_1204013",
+        "source": "Beispiel_Inspection_1204013_07_04_2006_10_04_00",
         "target": "Beispiel_Organization_Kanalinspektions_GmbH",
         "label": "m150:hasCompany",
         "detail": true
@@ -14206,7 +14206,7 @@
         "detail": true
       },
       {
-        "source": "Beispiel_Inspection_1204013",
+        "source": "Beispiel_Inspection_1204013_07_04_2006_10_04_00",
         "target": "Beispiel_Person_Hr_Voldemort",
         "label": "m150:hasSiteManagement",
         "detail": true
@@ -14218,7 +14218,7 @@
         "detail": true
       },
       {
-        "source": "Beispiel_Inspection_1204013",
+        "source": "Beispiel_Inspection_1204013_07_04_2006_10_04_00",
         "target": "Beispiel_Person_DWA",
         "label": "m150:hasClient",
         "detail": true
@@ -14230,7 +14230,7 @@
         "detail": true
       },
       {
-        "source": "Beispiel_Inspection_1204013",
+        "source": "Beispiel_Inspection_1204013_07_04_2006_10_04_00",
         "target": "Beispiel_CameraSystem_Dreh_Schwenkkopf",
         "label": "m150:hasCameraSystemUsed",
         "detail": true
@@ -14313,7 +14313,7 @@
       },
       {
         "source": "Beispiel_Condition_1204013_7_9_BAB",
-        "target": "Beispiel_Inspection_1204013",
+        "target": "Beispiel_Inspection_1204013_07_04_2006_10_04_00",
         "label": "m150:isChildOf"
       },
       {
@@ -14358,7 +14358,7 @@
       },
       {
         "source": "Beispiel_Condition_1204013_0_0_BAF",
-        "target": "Beispiel_Inspection_1204013",
+        "target": "Beispiel_Inspection_1204013_07_04_2006_10_04_00",
         "label": "m150:isChildOf"
       },
       {
@@ -14403,7 +14403,7 @@
       },
       {
         "source": "Beispiel_Condition_1204013_0_0_BAI",
-        "target": "Beispiel_Inspection_1204013",
+        "target": "Beispiel_Inspection_1204013_07_04_2006_10_04_00",
         "label": "m150:isChildOf"
       },
       {
@@ -14438,7 +14438,7 @@
       },
       {
         "source": "Beispiel_Condition_1204013_0_0_BCD",
-        "target": "Beispiel_Inspection_1204013",
+        "target": "Beispiel_Inspection_1204013_07_04_2006_10_04_00",
         "label": "m150:isChildOf"
       },
       {
@@ -14463,7 +14463,7 @@
       },
       {
         "source": "Beispiel_Condition_1204013_10_1_BBA",
-        "target": "Beispiel_Inspection_1204013",
+        "target": "Beispiel_Inspection_1204013_07_04_2006_10_04_00",
         "label": "m150:isChildOf"
       },
       {
@@ -14628,7 +14628,7 @@
       "videoCounterReading": "0:00:22",
       "assetId": "Beispiel_PipeSection_1204012",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204012",
+      "inspectionId": "Beispiel_Inspection_1204012_07_04_2006_11_32_00",
       "inspectionDate": null,
       "sdco": [
         {
@@ -14725,7 +14725,7 @@
       "videoCounterReading": "0:06:23",
       "assetId": "Beispiel_PipeSection_1204012",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204012",
+      "inspectionId": "Beispiel_Inspection_1204012_07_04_2006_11_32_00",
       "inspectionDate": null,
       "sdco": [
         {
@@ -14750,7 +14750,7 @@
       "videoCounterReading": "0:09:13",
       "assetId": "Beispiel_PipeSection_1204012",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204012",
+      "inspectionId": "Beispiel_Inspection_1204012_07_04_2006_11_32_00",
       "inspectionDate": null,
       "sdco": [
         {
@@ -14774,7 +14774,7 @@
       "videoCounterReading": "0:12:17",
       "assetId": "Beispiel_PipeSection_1204012",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204012",
+      "inspectionId": "Beispiel_Inspection_1204012_07_04_2006_11_32_00",
       "inspectionDate": null,
       "sdco": [
         {
@@ -14827,7 +14827,7 @@
       "videoCounterReading": "0:14:51",
       "assetId": "Beispiel_PipeSection_1204012",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204012",
+      "inspectionId": "Beispiel_Inspection_1204012_07_04_2006_11_32_00",
       "inspectionDate": null,
       "sdco": [
         {
@@ -14851,7 +14851,7 @@
       "videoCounterReading": "0:19:41",
       "assetId": "Beispiel_PipeSection_1204012",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204012",
+      "inspectionId": "Beispiel_Inspection_1204012_07_04_2006_11_32_00",
       "inspectionDate": null,
       "sdco": [
         {
@@ -14878,7 +14878,7 @@
       "videoCounterReading": "0:14:20",
       "assetId": "Beispiel_PipeSection_1204012",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204012",
+      "inspectionId": "Beispiel_Inspection_1204012_07_04_2006_11_32_00",
       "inspectionDate": null,
       "sdco": [
         {
@@ -14924,7 +14924,7 @@
       "videoCounterReading": "0:03:26",
       "assetId": "Beispiel_PipeSection_1204012",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204012",
+      "inspectionId": "Beispiel_Inspection_1204012_07_04_2006_11_32_00",
       "inspectionDate": null,
       "sdco": [
         {
@@ -14955,7 +14955,7 @@
       "videoCounterReading": "0:00:42",
       "assetId": "Beispiel_PipeSection_1204013",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204013",
+      "inspectionId": "Beispiel_Inspection_1204013_07_04_2006_10_55_00",
       "inspectionDate": "2006-04-07T10:55:00",
       "sdco": [
         {
@@ -14982,7 +14982,7 @@
       "videoCounterReading": "0:00:42",
       "assetId": "Beispiel_PipeSection_1204013",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204013",
+      "inspectionId": "Beispiel_Inspection_1204013_07_04_2006_10_55_00",
       "inspectionDate": "2006-04-07T10:55:00",
       "sdco": [
         {
@@ -15008,7 +15008,7 @@
       "videoCounterReading": "0:00:19",
       "assetId": "Beispiel_PipeSection_1204013",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204013",
+      "inspectionId": "Beispiel_Inspection_1204013_07_04_2006_10_55_00",
       "inspectionDate": "2006-04-07T10:55:00",
       "sdco": [
         {
@@ -15149,8 +15149,8 @@
       "videoCounterReading": "0:11:38",
       "assetId": "Beispiel_PipeSection_1204013",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204013",
-      "inspectionDate": "2006-04-07T10:55:00",
+      "inspectionId": "Beispiel_Inspection_1204013_07_04_2006_10_04_00",
+      "inspectionDate": "2006-04-07T10:04:00",
       "sdco": [
         {
           "property": "hasDamageCause",
@@ -15178,8 +15178,8 @@
       "videoCounterReading": "0:12:04",
       "assetId": "Beispiel_PipeSection_1204013",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204013",
-      "inspectionDate": "2006-04-07T10:55:00",
+      "inspectionId": "Beispiel_Inspection_1204013_07_04_2006_10_04_00",
+      "inspectionDate": "2006-04-07T10:04:00",
       "sdco": [
         {
           "property": "hasPipeOperationDamage",
@@ -15201,8 +15201,8 @@
       "videoCounterReading": "0:14:20",
       "assetId": "Beispiel_PipeSection_1204013",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204013",
-      "inspectionDate": "2006-04-07T10:55:00",
+      "inspectionId": "Beispiel_Inspection_1204013_07_04_2006_10_04_00",
+      "inspectionDate": "2006-04-07T10:04:00",
       "sdco": [
         {
           "property": "hasPipeFeature",
@@ -15397,7 +15397,7 @@
       "videoCounterReading": "0:03:35",
       "assetId": "Beispiel_PipeSection_1204013",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204013",
+      "inspectionId": "Beispiel_Inspection_1204013_07_04_2006_10_55_00",
       "inspectionDate": "2006-04-07T10:55:00",
       "sdco": [
         {
@@ -15426,7 +15426,7 @@
       "videoCounterReading": "0:06:11",
       "assetId": "Beispiel_PipeSection_1204013",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204013",
+      "inspectionId": "Beispiel_Inspection_1204013_07_04_2006_10_55_00",
       "inspectionDate": "2006-04-07T10:55:00",
       "sdco": [
         {
@@ -15450,7 +15450,7 @@
       "videoCounterReading": "0:05:02",
       "assetId": "Beispiel_PipeSection_1204013",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204013",
+      "inspectionId": "Beispiel_Inspection_1204013_07_04_2006_10_55_00",
       "inspectionDate": "2006-04-07T10:55:00",
       "sdco": [
         {
@@ -15478,7 +15478,7 @@
       "videoCounterReading": "0:05:42",
       "assetId": "Beispiel_PipeSection_1204013",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204013",
+      "inspectionId": "Beispiel_Inspection_1204013_07_04_2006_10_55_00",
       "inspectionDate": "2006-04-07T10:55:00",
       "sdco": [
         {
@@ -15502,8 +15502,8 @@
       "videoCounterReading": "0:05:16",
       "assetId": "Beispiel_PipeSection_1204013",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204013",
-      "inspectionDate": "2006-04-07T10:55:00",
+      "inspectionId": "Beispiel_Inspection_1204013_07_04_2006_10_04_00",
+      "inspectionDate": "2006-04-07T10:04:00",
       "sdco": [
         {
           "property": "hasPipeInventoryFeature",
@@ -15530,8 +15530,8 @@
       "videoCounterReading": "0:08:41",
       "assetId": "Beispiel_PipeSection_1204013",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204013",
-      "inspectionDate": "2006-04-07T10:55:00",
+      "inspectionId": "Beispiel_Inspection_1204013_07_04_2006_10_04_00",
+      "inspectionDate": "2006-04-07T10:04:00",
       "sdco": [
         {
           "property": "hasDamageOrientation",
@@ -15559,7 +15559,7 @@
       "videoCounterReading": "0:08:07",
       "assetId": "Beispiel_PipeSection_1204013",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204013",
+      "inspectionId": "Beispiel_Inspection_1204013_07_04_2006_10_55_00",
       "inspectionDate": "2006-04-07T10:55:00",
       "sdco": [
         {
@@ -15583,7 +15583,7 @@
       "videoCounterReading": "0:08:49",
       "assetId": "Beispiel_PipeSection_1204013",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204013",
+      "inspectionId": "Beispiel_Inspection_1204013_07_04_2006_10_55_00",
       "inspectionDate": "2006-04-07T10:55:00",
       "sdco": [
         {
@@ -15610,8 +15610,8 @@
       "videoCounterReading": "0:10:56",
       "assetId": "Beispiel_PipeSection_1204013",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204013",
-      "inspectionDate": "2006-04-07T10:55:00",
+      "inspectionId": "Beispiel_Inspection_1204013_07_04_2006_10_04_00",
+      "inspectionDate": "2006-04-07T10:04:00",
       "sdco": [
         {
           "property": "hasPipeFabricDamage",
@@ -15634,8 +15634,8 @@
       "videoCounterReading": "0:10:17",
       "assetId": "Beispiel_PipeSection_1204013",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204013",
-      "inspectionDate": "2006-04-07T10:55:00",
+      "inspectionId": "Beispiel_Inspection_1204013_07_04_2006_10_04_00",
+      "inspectionDate": "2006-04-07T10:04:00",
       "sdco": [
         {
           "property": "hasPipeInventoryFeature",
@@ -15662,7 +15662,7 @@
       "videoCounterReading": "0:01:07",
       "assetId": "Beispiel_PipeSection_1204014",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204014",
+      "inspectionId": "Beispiel_Inspection_1204014_07_04_2006_09_11_00",
       "inspectionDate": "2006-04-07T09:11:00",
       "sdco": [
         {
@@ -15689,7 +15689,7 @@
       "videoCounterReading": "0:00:25",
       "assetId": "Beispiel_PipeSection_1204014",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204014",
+      "inspectionId": "Beispiel_Inspection_1204014_07_04_2006_09_11_00",
       "inspectionDate": "2006-04-07T09:11:00",
       "sdco": [
         {
@@ -15809,7 +15809,7 @@
       "videoCounterReading": "0:11:18",
       "assetId": "Beispiel_PipeSection_1204014",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204014",
+      "inspectionId": "Beispiel_Inspection_1204014_07_04_2006_09_11_00",
       "inspectionDate": "2006-04-07T09:11:00",
       "sdco": [
         {
@@ -15836,7 +15836,7 @@
       "videoCounterReading": "0:10:43",
       "assetId": "Beispiel_PipeSection_1204014",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204014",
+      "inspectionId": "Beispiel_Inspection_1204014_07_04_2006_09_11_00",
       "inspectionDate": "2006-04-07T09:11:00",
       "sdco": [
         {
@@ -15860,7 +15860,7 @@
       "videoCounterReading": "0:10:19",
       "assetId": "Beispiel_PipeSection_1204014",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204014",
+      "inspectionId": "Beispiel_Inspection_1204014_07_04_2006_09_11_00",
       "inspectionDate": "2006-04-07T09:11:00",
       "sdco": [
         {
@@ -15887,7 +15887,7 @@
       "videoCounterReading": "0:15:06",
       "assetId": "Beispiel_PipeSection_1204014",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204014",
+      "inspectionId": "Beispiel_Inspection_1204014_07_04_2006_09_11_00",
       "inspectionDate": "2006-04-07T09:11:00",
       "sdco": [
         {
@@ -15911,7 +15911,7 @@
       "videoCounterReading": "0:14:32",
       "assetId": "Beispiel_PipeSection_1204014",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204014",
+      "inspectionId": "Beispiel_Inspection_1204014_07_04_2006_09_11_00",
       "inspectionDate": "2006-04-07T09:11:00",
       "sdco": [
         {
@@ -15940,7 +15940,7 @@
       "videoCounterReading": "0:18:11",
       "assetId": "Beispiel_PipeSection_1204014",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204014",
+      "inspectionId": "Beispiel_Inspection_1204014_07_04_2006_09_11_00",
       "inspectionDate": "2006-04-07T09:11:00",
       "sdco": [
         {
@@ -15964,7 +15964,7 @@
       "videoCounterReading": "0:20:21",
       "assetId": "Beispiel_PipeSection_1204014",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204014",
+      "inspectionId": "Beispiel_Inspection_1204014_07_04_2006_09_11_00",
       "inspectionDate": "2006-04-07T09:11:00",
       "sdco": [
         {
@@ -15993,7 +15993,7 @@
       "videoCounterReading": "0:21:07",
       "assetId": "Beispiel_PipeSection_1204014",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204014",
+      "inspectionId": "Beispiel_Inspection_1204014_07_04_2006_09_11_00",
       "inspectionDate": "2006-04-07T09:11:00",
       "sdco": [
         {
@@ -16022,7 +16022,7 @@
       "videoCounterReading": "0:22:35",
       "assetId": "Beispiel_PipeSection_1204014",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204014",
+      "inspectionId": "Beispiel_Inspection_1204014_07_04_2006_09_11_00",
       "inspectionDate": "2006-04-07T09:11:00",
       "sdco": [
         {
@@ -16046,7 +16046,7 @@
       "videoCounterReading": "0:24:09",
       "assetId": "Beispiel_PipeSection_1204014",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204014",
+      "inspectionId": "Beispiel_Inspection_1204014_07_04_2006_09_11_00",
       "inspectionDate": "2006-04-07T09:11:00",
       "sdco": [
         {
@@ -16097,7 +16097,7 @@
       "videoCounterReading": "0:03:24",
       "assetId": "Beispiel_PipeSection_1204014",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204014",
+      "inspectionId": "Beispiel_Inspection_1204014_07_04_2006_09_11_00",
       "inspectionDate": "2006-04-07T09:11:00",
       "sdco": [
         {
@@ -16126,7 +16126,7 @@
       "videoCounterReading": "0:27:46",
       "assetId": "Beispiel_PipeSection_1204014",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204014",
+      "inspectionId": "Beispiel_Inspection_1204014_07_04_2006_09_11_00",
       "inspectionDate": "2006-04-07T09:11:00",
       "sdco": [
         {
@@ -16154,7 +16154,7 @@
       "videoCounterReading": "0:30:57",
       "assetId": "Beispiel_PipeSection_1204014",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204014",
+      "inspectionId": "Beispiel_Inspection_1204014_07_04_2006_09_11_00",
       "inspectionDate": "2006-04-07T09:11:00",
       "sdco": [
         {
@@ -16181,7 +16181,7 @@
       "videoCounterReading": "0:31:10",
       "assetId": "Beispiel_PipeSection_1204014",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204014",
+      "inspectionId": "Beispiel_Inspection_1204014_07_04_2006_09_11_00",
       "inspectionDate": "2006-04-07T09:11:00",
       "sdco": [
         {
@@ -16205,7 +16205,7 @@
       "videoCounterReading": "0:05:54",
       "assetId": "Beispiel_PipeSection_1204014",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204014",
+      "inspectionId": "Beispiel_Inspection_1204014_07_04_2006_09_11_00",
       "inspectionDate": "2006-04-07T09:11:00",
       "sdco": [
         {
@@ -16234,7 +16234,7 @@
       "videoCounterReading": "0:07:06",
       "assetId": "Beispiel_PipeSection_1204014",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204014",
+      "inspectionId": "Beispiel_Inspection_1204014_07_04_2006_09_11_00",
       "inspectionDate": "2006-04-07T09:11:00",
       "sdco": [
         {
@@ -16263,7 +16263,7 @@
       "videoCounterReading": "0:09:28",
       "assetId": "Beispiel_PipeSection_1204014",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204014",
+      "inspectionId": "Beispiel_Inspection_1204014_07_04_2006_09_11_00",
       "inspectionDate": "2006-04-07T09:11:00",
       "sdco": [
         {
@@ -16290,7 +16290,7 @@
       "videoCounterReading": "0:00:04",
       "assetId": "Beispiel_PipeSection_1204015",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204015",
+      "inspectionId": "Beispiel_Inspection_1204015_07_04_2006_08_30_00",
       "inspectionDate": "2006-04-07T08:30:00",
       "sdco": [
         {
@@ -16412,7 +16412,7 @@
       "videoCounterReading": "0:04:15",
       "assetId": "Beispiel_PipeSection_1204015",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204015",
+      "inspectionId": "Beispiel_Inspection_1204015_07_04_2006_08_30_00",
       "inspectionDate": "2006-04-07T08:30:00",
       "sdco": [
         {
@@ -16436,7 +16436,7 @@
       "videoCounterReading": "0:03:48",
       "assetId": "Beispiel_PipeSection_1204015",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204015",
+      "inspectionId": "Beispiel_Inspection_1204015_07_04_2006_08_30_00",
       "inspectionDate": "2006-04-07T08:30:00",
       "sdco": [
         {
@@ -16462,7 +16462,7 @@
       "videoCounterReading": "0:06:47",
       "assetId": "Beispiel_PipeSection_1204015",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204015",
+      "inspectionId": "Beispiel_Inspection_1204015_07_04_2006_08_30_00",
       "inspectionDate": "2006-04-07T08:30:00",
       "sdco": [
         {
@@ -16486,7 +16486,7 @@
       "videoCounterReading": "0:06:32",
       "assetId": "Beispiel_PipeSection_1204015",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204015",
+      "inspectionId": "Beispiel_Inspection_1204015_07_04_2006_08_30_00",
       "inspectionDate": "2006-04-07T08:30:00",
       "sdco": [
         {
@@ -16514,7 +16514,7 @@
       "videoCounterReading": "0:08:13",
       "assetId": "Beispiel_PipeSection_1204015",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204015",
+      "inspectionId": "Beispiel_Inspection_1204015_07_04_2006_08_30_00",
       "inspectionDate": "2006-04-07T08:30:00",
       "sdco": [
         {
@@ -16542,7 +16542,7 @@
       "videoCounterReading": "0:09:04",
       "assetId": "Beispiel_PipeSection_1204015",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204015",
+      "inspectionId": "Beispiel_Inspection_1204015_07_04_2006_08_30_00",
       "inspectionDate": "2006-04-07T08:30:00",
       "sdco": [
         {
@@ -16597,7 +16597,7 @@
       "videoCounterReading": "0:10:26",
       "assetId": "Beispiel_PipeSection_1204015",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204015",
+      "inspectionId": "Beispiel_Inspection_1204015_07_04_2006_08_30_00",
       "inspectionDate": "2006-04-07T08:30:00",
       "sdco": [
         {
@@ -16621,7 +16621,7 @@
       "videoCounterReading": "0:10:07",
       "assetId": "Beispiel_PipeSection_1204015",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204015",
+      "inspectionId": "Beispiel_Inspection_1204015_07_04_2006_08_30_00",
       "inspectionDate": "2006-04-07T08:30:00",
       "sdco": [
         {
@@ -16648,7 +16648,7 @@
       "videoCounterReading": "0:11:38",
       "assetId": "Beispiel_PipeSection_1204015",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204015",
+      "inspectionId": "Beispiel_Inspection_1204015_07_04_2006_08_30_00",
       "inspectionDate": "2006-04-07T08:30:00",
       "sdco": [
         {
@@ -16672,7 +16672,7 @@
       "videoCounterReading": "0:11:14",
       "assetId": "Beispiel_PipeSection_1204015",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204015",
+      "inspectionId": "Beispiel_Inspection_1204015_07_04_2006_08_30_00",
       "inspectionDate": "2006-04-07T08:30:00",
       "sdco": [
         {
@@ -16744,7 +16744,7 @@
       "videoCounterReading": "0:01:02",
       "assetId": "Beispiel_PipeSection_1204015",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204015",
+      "inspectionId": "Beispiel_Inspection_1204015_07_04_2006_08_30_00",
       "inspectionDate": "2006-04-07T08:30:00",
       "sdco": [
         {
@@ -16772,7 +16772,7 @@
       "videoCounterReading": "0:12:25",
       "assetId": "Beispiel_PipeSection_1204015",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204015",
+      "inspectionId": "Beispiel_Inspection_1204015_07_04_2006_08_30_00",
       "inspectionDate": "2006-04-07T08:30:00",
       "sdco": [
         {
@@ -16796,7 +16796,7 @@
       "videoCounterReading": "0:12:04",
       "assetId": "Beispiel_PipeSection_1204015",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204015",
+      "inspectionId": "Beispiel_Inspection_1204015_07_04_2006_08_30_00",
       "inspectionDate": "2006-04-07T08:30:00",
       "sdco": [
         {
@@ -16824,7 +16824,7 @@
       "videoCounterReading": "0:14:08",
       "assetId": "Beispiel_PipeSection_1204015",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204015",
+      "inspectionId": "Beispiel_Inspection_1204015_07_04_2006_08_30_00",
       "inspectionDate": "2006-04-07T08:30:00",
       "sdco": [
         {
@@ -16853,7 +16853,7 @@
       "videoCounterReading": "0:16:14",
       "assetId": "Beispiel_PipeSection_1204015",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204015",
+      "inspectionId": "Beispiel_Inspection_1204015_07_04_2006_08_30_00",
       "inspectionDate": "2006-04-07T08:30:00",
       "sdco": [
         {
@@ -16878,7 +16878,7 @@
       "videoCounterReading": "0:17:53",
       "assetId": "Beispiel_PipeSection_1204015",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204015",
+      "inspectionId": "Beispiel_Inspection_1204015_07_04_2006_08_30_00",
       "inspectionDate": "2006-04-07T08:30:00",
       "sdco": [
         {
@@ -16902,7 +16902,7 @@
       "videoCounterReading": "0:17:07",
       "assetId": "Beispiel_PipeSection_1204015",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204015",
+      "inspectionId": "Beispiel_Inspection_1204015_07_04_2006_08_30_00",
       "inspectionDate": "2006-04-07T08:30:00",
       "sdco": [
         {
@@ -16929,7 +16929,7 @@
       "videoCounterReading": "0:22:10",
       "assetId": "Beispiel_PipeSection_1204015",
       "assetType": "PipeSection",
-      "inspectionId": "Beispiel_Inspection_1204015",
+      "inspectionId": "Beispiel_Inspection_1204015_07_04_2006_08_30_00",
       "inspectionDate": "2006-04-07T08:30:00",
       "sdco": [
         {
@@ -20336,7 +20336,7 @@
   "stats": {
     "tripleCounts": {
       "SDCO.rdf": 11966,
-      "m150-onto-parsed-dwa.rdf": 2269,
+      "m150-onto-parsed-dwa.rdf": 2291,
       "m150-onto.rdf": 2898,
       "m150-onto-parsed-dwa_materialized.rdf": 145
     },
@@ -20352,7 +20352,7 @@
     "totalCodeCount": 80,
     "pipeSectionCount": 4,
     "nodeCount": 5,
-    "inspectionCount": 9,
+    "inspectionCount": 10,
     "materializedTripleCount": 141,
     "materializedSubjectCount": 96,
     "inspectionDateRange": {
