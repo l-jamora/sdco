@@ -9,7 +9,7 @@ python adds a script's own directory to sys.path[0]) rather than
 reimplementing RDF/XML-vs-turtle sniffing or the xsd:string literal
 normalization that join between m150 data and SDCO relies on.
 
-    python scripts/ontology/build_explainer.py
+    python scripts/pipeline/build_explainer.py
 """
 
 import argparse
@@ -1230,7 +1230,7 @@ def build_stats(sdco_graph, m150_data, m150_tbox, materialized_graph, reports, c
             "SDCO.rdf": len(sdco_graph),
             "m150-onto-parsed-dwa.rdf": len(m150_data),
             "m150-onto.rdf": len(m150_tbox),
-            "SDCO-dwa-parsed_materialized.rdf": len(materialized_graph),
+            "m150-onto-parsed-dwa_materialized.rdf": len(materialized_graph),
         },
         "axioms": {
             "equivalentClass": len(list(sdco_graph.subjects(OWL.equivalentClass, None))),
@@ -1279,7 +1279,7 @@ def main() -> int:
     parser.add_argument("--sdco", default=str(REPO_ROOT / "SDCO.rdf"))
     parser.add_argument("--m150-data", default=str(M150_REPO / "m150-onto-parsed-dwa.rdf"))
     parser.add_argument("--m150-tbox", default=str(M150_REPO / "m150-onto.rdf"))
-    parser.add_argument("--materialized", default=str(REPO_ROOT / "derived" / "SDCO-dwa-parsed_materialized.rdf"))
+    parser.add_argument("--materialized", default=str(REPO_ROOT / "derived" / "m150-onto-parsed-dwa_materialized.rdf"))
     parser.add_argument("--output", default=str(REPO_ROOT / "docs" / "sdco_data.json"))
     parser.add_argument("--template-only", action="store_true",
                         help="skip extraction (slow); re-inject the existing --output JSON into the template")

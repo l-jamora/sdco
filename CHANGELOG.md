@@ -2,6 +2,13 @@
 
 ## [Unreleased]
 
+### Changed
+
+- Repo restructure: `make materialize [DATA=<parsed M150 file>]` now builds `derived/<data stem>_materialized.rdf` straight from SDCO.rdf + `../m150-onto/m150-onto.rdf` + the parsed file (`materialize_object_properties.py` takes the data file as a positional argument; `--source` and `--catalog` are gone). The stale merge file `SDCO-dwa-parsed.rdf`, `benchmark/`, `scripts/benchmark/`, `scripts/obsolete/`, `derived/catalog-v001.xml` and the old `derived/*` outputs were removed.
+- One root `catalog-v001.xml` with relative paths; `tests/fixtures/catalog-v001.xml` is relative too.
+- `scripts/ontology/` split into `scripts/pipeline/` (materialize, explainer) and `scripts/authoring/` (generators, CSV inputs); the script self-checks moved to `tests/` and run under pytest.
+- Added a `Makefile`; dependencies now live in `pyproject.toml` (`requirements-dev.txt` removed, `uv.lock` tracked); `.gitignore` ignores `__pycache__/`.
+
 ### Docs
 
 - Explainer: new fifth tab `Explore` / `Erkunden` (`#explore`, `#explore/<code>`) with a searchable code browser (definition, characterisation letters, class chain, matching m150-onto property and DWA XML element, IRIs), a sentence-shaped classifier ("Code X with characterisation 1 Y ...") that evaluates the two `equivalentClass` pattern shapes of `classify_individuals()` in JS and explains the match in plain words (letters valid only for other codes are flagged; no severity is shown because SDCO defines none), and a schematic inline-SVG sewer plan with nine synthetic example observations (station plus clock position, coloured by code family, keyboard accessible). New `build_explorer()` in `build_explainer.py` exports the data as `explorer` in `sdco_data.json` and asserts that the JS-mirror logic equals `classify_individuals()` for all presets and demo observations; the demo network and presets live in `scripts/ontology/explorer_demo.json` (synthetic, validated against `SDCO.rdf`). No external library is used.

@@ -2,7 +2,7 @@
 mangling guard, block-strip idempotency, and the fill-gaps-never-overwrite
 skip -- all against a tiny in-memory graph, no fixture files.
 
-Run: python scripts/ontology/test_generate_labels.py
+Run: python tests/test_generate_labels.py
 """
 
 from rdflib import OWL, RDF, RDFS, BNode, Graph, Literal, Namespace
@@ -75,7 +75,7 @@ def _fixture() -> Graph:
     return g
 
 
-def demo() -> None:
+def test_demo() -> None:
     g = _fixture()
 
     assert compose(g, S.BAB) == "BAB (Fissure)", compose(g, S.BAB)
@@ -114,4 +114,4 @@ def demo() -> None:
 
 
 if __name__ == "__main__":
-    demo()
+    test_demo()

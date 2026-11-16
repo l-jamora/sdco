@@ -1,10 +1,9 @@
 docs/DIN EN 13508-2 ENGLISH.pdf
-scripts/__pycache__/*
+__pycache__/
 *.pyc
 .claude/*
 .pytest_cache/*
 .vscode/*
-SDCO-dwa-parsed.rdf
 .venv/
 latex/
 docs/design-specs/Sewer Damage Classification Ontology SDCO.md

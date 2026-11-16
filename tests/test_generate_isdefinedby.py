@@ -4,7 +4,7 @@ classes, derivation from referring code classes (table learned from the
 clauses), unknown-clause-class guard, classes with neither skipped, existing
 annotations kept, block-strip idempotency -- against a tiny in-memory graph.
 
-Run: python scripts/ontology/test_generate_isdefinedby.py
+Run: python tests/test_generate_isdefinedby.py
 """
 
 from rdflib import OWL, RDF, RDFS, BNode, Graph, Literal, Namespace
@@ -36,7 +36,7 @@ def _char(g, cls, base, n, v):
     g.add((cls, OWL.equivalentClass, inter))
 
 
-def main():
+def test_main():
     g = Graph()
     _code(g, S.BAB, "BAB")
     _char(g, S.Oddly_Named, S.BAB, 2, "A")  # path must come from axioms, not the name
@@ -77,4 +77,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    test_main()

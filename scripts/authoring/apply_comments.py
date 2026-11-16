@@ -1,6 +1,6 @@
 """Apply human/AI-reviewed rdfs:comment values from a CSV into SDCO.rdf.
 
-scripts/ontology/observation_comments.csv (written by a separate review pass, not this
+scripts/authoring/observation_comments.csv (written by a separate review pass, not this
 script) carries one row per class under review:
 
     class_name,label,parent,existing_comment,din_clause,comment
@@ -33,8 +33,8 @@ grown by exactly the number of inserted lines (i.e. no line was deleted);
 any failure restores the original text and aborts.
 
 Usage:
-    python scripts/ontology/apply_comments.py --csv scripts/ontology/observation_comments.csv --dry-run
-    python scripts/ontology/apply_comments.py --csv scripts/ontology/observation_comments.csv
+    python scripts/authoring/apply_comments.py --csv scripts/authoring/observation_comments.csv --dry-run
+    python scripts/authoring/apply_comments.py --csv scripts/authoring/observation_comments.csv
 """
 
 import argparse
@@ -229,7 +229,7 @@ def apply_comment(text: str, class_name: str, comment: str) -> tuple[str, int] |
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("--csv", default=str(REPO_ROOT / "scripts" / "ontology" / "observation_comments.csv"), help="CSV of reviewed comments to apply.")
+    parser.add_argument("--csv", default=str(REPO_ROOT / "scripts" / "authoring" / "observation_comments.csv"), help="CSV of reviewed comments to apply.")
     parser.add_argument("--source", default=str(REPO_ROOT / "SDCO.rdf"), help="Ontology file to update.")
     parser.add_argument("--dry-run", action="store_true", help="Validate and print what would change; write nothing.")
     args = parser.parse_args()

@@ -15483,7 +15483,7 @@
       "sdco": [
         {
           "property": "hasPipeInventoryFeature",
-          "class": "PointRepair"
+          "class": "OtherTrenchlessRepair"
         }
       ]
     },
@@ -18937,7 +18937,7 @@
                 {
                   "name": "OtherTrenchlessRepair",
                   "children": [],
-                  "reportCount": 0
+                  "reportCount": 1
                 },
                 {
                   "name": "PipeReplacedRepair",
@@ -20335,10 +20335,10 @@
   ],
   "stats": {
     "tripleCounts": {
-      "SDCO.rdf": 11142,
+      "SDCO.rdf": 11966,
       "m150-onto-parsed-dwa.rdf": 2269,
-      "m150-onto.rdf": 2896,
-      "SDCO-dwa-parsed_materialized.rdf": 145
+      "m150-onto.rdf": 2898,
+      "m150-onto-parsed-dwa_materialized.rdf": 145
     },
     "axioms": {
       "equivalentClass": 504,

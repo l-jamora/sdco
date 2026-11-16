@@ -1,3 +1,0 @@
-pytest
-owlready2
-rdflib

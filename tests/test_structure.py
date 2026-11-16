@@ -268,7 +268,7 @@ def test_din_clause_rows_are_traced_to_the_standard(sdco_graph):
     from pathlib import Path
     from generate_isdefinedby import read_clauses
 
-    clauses = read_clauses(Path(__file__).resolve().parent.parent / "scripts" / "ontology" / "observation_comments.csv")
+    clauses = read_clauses(Path(__file__).resolve().parent.parent / "scripts" / "authoring" / "observation_comments.csv")
     wrong = sorted(
         name for name, clause in clauses.items()
         if str(sdco_graph.value(SDCO[name], RDFS.isDefinedBy)) != f"DIN EN 13508-2, {clause}"

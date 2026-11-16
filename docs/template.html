@@ -1095,7 +1095,7 @@ const VARS = () => ({
   eq: nf(ST.axioms.equivalentClass), svf: nf(ST.axioms.someValuesFrom),
   m: nf(ST.materializedTripleCount), ms: nf(ST.materializedSubjectCount),
   sdco: nf(ST.tripleCounts['SDCO.rdf']), tbox: nf(ST.tripleCounts['m150-onto.rdf']),
-  data: nf(ST.tripleCounts['m150-onto-parsed-dwa.rdf']), mat: nf(ST.tripleCounts['SDCO-dwa-parsed_materialized.rdf']),
+  data: nf(ST.tripleCounts['m150-onto-parsed-dwa.rdf']), mat: nf(ST.tripleCounts['m150-onto-parsed-dwa_materialized.rdf']),
   lgAsset: LG.asset, lgReports: LG.edges.filter(e => e.label === 'm150:isChildOf').length, lgNodes: LG.nodes.filter(n => !n.detail).length, lgEdges: LG.edges.filter(e => !e.detail).length,
   lgNodesM: LG.nodes.filter(n => n.ns === 'm150' && !n.detail).length, lgEdgesM: LG.edges.filter(e => !e.detail && !/^(sdco|rdf|rdfs):/.test(e.label)).length, lgDetN: LG.nodes.filter(n => n.detail && !n.hd).length, lgHdN: LG.nodes.filter(n => n.hd).length,
   d0: (ST.inspectionDateRange.min || '').slice(0, 10), d1: (ST.inspectionDateRange.max || '').slice(0, 10)

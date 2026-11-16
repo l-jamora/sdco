@@ -17,8 +17,8 @@ statement), so no existing line of SDCO.rdf is edited -- do NOT round-trip the
 file through rdflib.
 
 Usage:
-    python scripts/ontology/generate_labels.py --dry-run
-    python scripts/ontology/generate_labels.py
+    python scripts/authoring/generate_labels.py --dry-run
+    python scripts/authoring/generate_labels.py
 """
 
 import argparse
@@ -31,6 +31,7 @@ from rdflib.collection import Collection
 from rdflib.term import URIRef
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "pipeline"))
 from build_explainer import humanize, local_name, meaning_of  # noqa: E402
 from generate_node_codes import insert_before_footer  # noqa: E402
 

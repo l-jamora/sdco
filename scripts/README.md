@@ -1,25 +1,21 @@
 # scripts/
 
-Maintenance and materialization tooling for SDCO, categorized into subdirectories. Scripts import each other as bare same-directory modules (`sys.path.insert(0, str(Path(__file__).resolve().parent))`), so interdependent scripts live together in one directory — see each subdir's own dependency notes below before moving anything further.
+Two directories, split by job. Scripts import siblings as bare modules (`sys.path.insert(0, ...)`); `pyproject.toml` puts both directories on pytest's `pythonpath`. Run them through the repo-root `Makefile` where a target exists.
 
-## `ontology/`
+## `pipeline/` — turn a parsed M150 file into derived output
 
-Core scripts that read/write `SDCO.rdf` directly, plus their self-checks and input data. Interlinked: `generate_node_codes.py` and `build_explainer.py` import `materialize_object_properties.py`; `apply_comments.py` imports `generate_node_codes.py`; `generate_labels.py` imports both `build_explainer.py` and `generate_node_codes.py`; `generate_isdefinedby.py` imports all three.
+- `materialize_object_properties.py` — `make materialize [DATA=<parsed file>]`. Merges `SDCO.rdf`, `../m150-onto/m150-onto.rdf` (via the root `catalog-v001.xml`) and the parsed data file, realizes each individual's damage-code classes and emits literal `someValuesFrom` filler triples to `derived/<data stem>_materialized.rdf`. Fast SPARQL forward-chaining by default; `--reason` runs HermiT via `owlready2` as a correctness oracle. SDCO.rdf and the data file are hash-checked.
+- `build_explainer.py` — `make explainer`. Extracts real data from `SDCO.rdf`, the m150 example dataset and the materialized file into `docs/sdco_data.json`, then builds the bilingual (EN/DE) `docs/index.html` from `docs/template.html`; many internal assertions, `--template-only` skips extraction.
+- `explorer_demo.json` — synthetic demo sewer plan and classifier presets for the Explore tab, validated against `SDCO.rdf` by `build_explainer.py`.
 
-- `materialize_object_properties.py` — realizes each individual's damage-code classes and emits literal `someValuesFrom` filler triples to `derived/*_materialized.rdf`/`.ttl`. Fast SPARQL forward-chaining path by default; `--reason` runs HermiT via `owlready2` as a correctness oracle. `pyproject.toml`'s `pythonpath = ["scripts/ontology"]` makes this a bare import for `tests/conftest.py`.
+## `authoring/` — scripts that edit `SDCO.rdf`
+
+They import `pipeline/` modules (`parse_any`, `build_explainer` helpers) and each other: `apply_comments.py` imports `generate_node_codes.py`; `generate_labels.py` imports `build_explainer.py` and `generate_node_codes.py`; `generate_isdefinedby.py` imports all of those.
+
 - `generate_node_codes.py` — generates OWL class axioms for Node damage/inventory/operation/other codes from `node_codes.csv` and inserts them into `SDCO.rdf`.
-- `generate_labels.py` — derives an `@en` `rdfs:label` for every SDCO class from its name/axioms and appends gap-fill-only labels to `SDCO.rdf` as a regenerable marker-delimited block.
-- `generate_isdefinedby.py` — adds `rdfs:isDefinedBy` tracing classes to DIN EN 13508-2: code classes from their `equivalentClass` axiom (`main code X[, characterization N = V]`), Observation classes from the `din_clause` column of `observation_comments.csv`, else from the code classes pointing at them (`Table T, CODE charN (V); ...`). Regenerable marker-delimited block; gap-fill only.
-- `apply_comments.py` — splices reviewed `rdfs:comment` values from `observation_comments.csv` into `SDCO.rdf` by text-locating each class's declaration block (never an rdflib round-trip write, to avoid reformatting the file).
-- `build_explainer.py` — extracts real data from `SDCO.rdf` + the m150 example dataset into `docs/sdco_data.json`, plus m150-onto stats and one XML-versus-RDF condition report, then builds the bilingual (EN/DE) `docs/index.html` (from `docs/template.html`) and checks i18n key parity. Also exports the Explore tab data (code browser, classifier, plan) and validates it against `classify_individuals()`.
-- `explorer_demo.json` — synthetic demo sewer plan and classifier presets for the Explore tab; every code and letter in it is validated against `SDCO.rdf` by `build_explainer.py`.
-- `node_codes.csv`, `observation_comments.csv`, `nodeclasses_wip.xlsx` — input data consumed by the generators above.
-- `test_classify_individuals.py`, `test_generate_node_codes.py`, `test_apply_comments.py`, `test_generate_labels.py`, `test_generate_isdefinedby.py` — assert-based self-checks against toy in-memory graphs (no fixture files). Standalone `python scripts/ontology/test_*.py` runs, not collected by pytest (`testpaths = ["tests"]` in `pyproject.toml`).
+- `generate_labels.py` — derives an `@en` `rdfs:label` for every class and appends gap-fill-only labels as a regenerable marker-delimited block.
+- `generate_isdefinedby.py` — adds `rdfs:isDefinedBy` tracing classes to DIN EN 13508-2 (code classes from their axioms, Observation classes from `observation_comments.csv` or the code classes pointing at them). `make regen` runs labels then isDefinedBy.
+- `apply_comments.py` — splices reviewed `rdfs:comment` values from `observation_comments.csv` into `SDCO.rdf` by text-locating each class's declaration block (no rdflib round-trip write).
+- `node_codes.csv`, `observation_comments.csv`, `nodeclasses_wip.xlsx` — input data.
 
-## `benchmark/`
-
-- `make_benchmark_dataset.py` — builds `benchmark/m150-onto-parsed-dwa-lite.rdf`, a lightweight copy of the m150-onto-parsed import (one `ConditionReport` per distinct `hasConditionCode`, plus a 2-hop object-property closure) for fast materialization iteration.
-
-## `obsolete/`
-
-One-time recovery scripts for fallout from the namespace-consolidation commit `5c38450`. Both confirmed via `--dry-run` to have zero remaining work against the current `SDCO.rdf` — kept for history, not part of the normal workflow. See `CLAUDE.md` for details.
+The assert-based self-checks for these scripts live in `tests/` (`test_classify_individuals.py`, `test_generate_*.py`, `test_apply_comments.py`) and run under `make test`.

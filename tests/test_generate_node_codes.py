@@ -2,7 +2,7 @@
 failures, the auto-declare path, disjoint grouping, idempotent skipping, and
 footer-insertion -- run against tiny in-memory graphs/rows, no fixture files.
 
-Run: python scripts/ontology/test_generate_node_codes.py
+Run: python tests/test_generate_node_codes.py
 """
 
 import tempfile
@@ -50,7 +50,7 @@ def build_graph() -> Graph:
     return g
 
 
-def demo() -> None:
+def test_demo() -> None:
     g = build_graph()
 
     # 1. base-row triple shape
@@ -203,4 +203,4 @@ def demo() -> None:
 
 
 if __name__ == "__main__":
-    demo()
+    test_demo()

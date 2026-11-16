@@ -23,8 +23,8 @@ overwrite; the prior block is stripped before parsing. Do NOT round-trip
 SDCO.rdf through rdflib.
 
 Usage:
-    python scripts/ontology/generate_isdefinedby.py --dry-run
-    python scripts/ontology/generate_isdefinedby.py
+    python scripts/authoring/generate_isdefinedby.py --dry-run
+    python scripts/authoring/generate_isdefinedby.py
 """
 
 import argparse
@@ -38,6 +38,7 @@ from rdflib.collection import Collection
 from rdflib.term import URIRef
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "pipeline"))
 from build_explainer import local_name  # noqa: E402
 from generate_labels import SDCO_NS, _char_restriction, _esc  # noqa: E402
 from generate_node_codes import insert_before_footer  # noqa: E402
@@ -165,7 +166,7 @@ def build_block(g: Graph, clauses: dict[str, str] | None = None) -> tuple[str, i
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--source", default=str(REPO_ROOT / "SDCO.rdf"), help="Ontology file to update.")
-    parser.add_argument("--csv", default=str(REPO_ROOT / "scripts" / "ontology" / "observation_comments.csv"),
+    parser.add_argument("--csv", default=str(REPO_ROOT / "scripts" / "authoring" / "observation_comments.csv"),
                         help="Inventory whose din_clause column traces Observation classes.")
     parser.add_argument("--dry-run", action="store_true", help="Print the block; write nothing.")
     args = parser.parse_args()

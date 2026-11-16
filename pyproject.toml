@@ -1,5 +1,14 @@
+[project]
+name = "sdco"
+version = "0.1.2"
+requires-python = ">=3.11"
+dependencies = ["rdflib", "owlready2"]
+
+[dependency-groups]
+dev = ["pytest"]
+
 [tool.pytest.ini_options]
-pythonpath = ["scripts/ontology"]
+pythonpath = ["scripts/pipeline", "scripts/authoring"]
 testpaths = ["tests"]
 markers = ["reasoner: needs owlready2 + JDK + sibling m150-onto repo (slow, minutes)"]
 addopts = "-m 'not reasoner'"

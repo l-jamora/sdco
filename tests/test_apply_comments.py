@@ -3,7 +3,7 @@ gap-fill skip, quote/newline escaping, blank-comment skip, unknown-class
 validation error, and idempotency -- all against a tiny Protege-shaped Turtle
 snippet, no fixture files.
 
-Run: python scripts/ontology/test_apply_comments.py
+Run: python tests/test_apply_comments.py
 """
 
 from rdflib import OWL, RDF, Graph
@@ -52,7 +52,7 @@ def _parses(text: str) -> Graph:
     return g
 
 
-def demo() -> None:
+def test_demo() -> None:
     # Sanity: the fixture itself is valid turtle and gap-fill target (BAA1_A)
     # is genuinely uncommented, BAB genuinely already has one.
     g0 = _parses(SNIPPET)
@@ -114,4 +114,4 @@ def demo() -> None:
 
 
 if __name__ == "__main__":
-    demo()
+    test_demo()
