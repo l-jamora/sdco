@@ -10,7 +10,7 @@ Full design narrative, competency questions, and SPARQL/SHACL examples: `docs/de
 
 ```bash
 uv sync                                    # rdflib, owlready2, pytest
-make materialize DATA=<parsed M150 file>   # default: ../m150-onto/m150-onto-parsed-dwa.rdf
+make materialize DATA=<parsed M150 file>   # default: ../m150-onto/m150-onto-parsed.rdf
 make explainer                             # rebuild docs/sdco_data.json and docs/index.html
 make test                                  # fast pytest tier; make test-reasoner needs a JDK
 ```
@@ -62,10 +62,10 @@ Each `Reference` code class (e.g. `:BAA`) is `owl:equivalentClass` to a literal 
 
 ```mermaid
 flowchart TD
-    A(["parsed M150 file\nm150-onto-parsed-dwa.rdf"]):::io --> M
+    A(["parsed M150 file\nm150-onto-parsed.rdf"]):::io --> M
     B{{"SDCO.rdf\ndamage-code taxonomy"}}:::ontology --> M
     C{{"m150-onto.rdf\nbase ontology"}}:::ontology --> M
-    M{"make materialize\nclassify + CONSTRUCT\n(--reason: HermiT oracle)"}:::process --> D(["derived/m150-onto-parsed-dwa_materialized.rdf\nliteral damage-code triples"]):::io
+    M{"make materialize\nclassify + CONSTRUCT\n(--reason: HermiT oracle)"}:::process --> D(["derived/m150-onto-parsed_materialized.rdf\nliteral damage-code triples"]):::io
     D -->|"make explainer"| E(["docs/index.html"]):::io
 
     classDef io fill:#2b6cb0,stroke:#1a365d,stroke-width:2px,color:#fff
@@ -73,7 +73,7 @@ flowchart TD
     classDef process fill:#805ad5,stroke:#44337a,stroke-width:2px,color:#fff
 ```
 
-The parsed file comes from the sibling [m150-onto](../m150-onto) repo (`python -m ontoparser.parser --input <file.xml>`, which creates `Beispiel_`-prefixed individuals and `owl:imports` the base ontology). `someValuesFrom` restrictions are existential, so reasoning alone never yields a literal, queryable triple for the filler; `scripts/pipeline/materialize_object_properties.py` closes that gap. It merges SDCO.rdf, the m150-onto base ontology (resolved via `catalog-v001.xml`) and the parsed file, realizes each individual's damage-code classes, and emits the filler triples.
+The parsed file comes from the sibling [m150-onto](../m150-onto) repo (`python -m ontoparser.parser --input <file.xml>`, which creates `PARSED_`-prefixed individuals and `owl:imports` the base ontology). `someValuesFrom` restrictions are existential, so reasoning alone never yields a literal, queryable triple for the filler; `scripts/pipeline/materialize_object_properties.py` closes that gap. It merges SDCO.rdf, the m150-onto base ontology (resolved via `catalog-v001.xml`) and the parsed file, realizes each individual's damage-code classes, and emits the filler triples.
 
 ```bash
 make materialize DATA=path/to/parsed.rdf

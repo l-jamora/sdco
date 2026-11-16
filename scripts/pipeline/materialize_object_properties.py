@@ -23,7 +23,7 @@ correctness oracle to validate the fast path against.
 
 Usage: python scripts/pipeline/materialize_object_properties.py [data.rdf]
 (or `make materialize DATA=...`). `data` is a parsed M150-Onto file; it defaults to
-../m150-onto/m150-onto-parsed-dwa.rdf. The work graph is SDCO.rdf + the data file, with
+../m150-onto/m150-onto-parsed.rdf. The work graph is SDCO.rdf + the data file, with
 owl:imports (m150-onto) resolved via the repo's catalog-v001.xml. Output goes to
 derived/<data stem>_materialized.rdf. SDCO.rdf and the data file are hash-checked and
 never modified.
@@ -41,7 +41,7 @@ from urllib.parse import unquote, urlparse
 from rdflib import OWL, RDF, RDFS, XSD, Graph, Literal, Namespace, URIRef
 
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent
-DEFAULT_DATA = REPO_ROOT.parent / "m150-onto" / "m150-onto-parsed-dwa.rdf"
+DEFAULT_DATA = REPO_ROOT.parent / "m150-onto" / "m150-onto-parsed.rdf"
 SDCO = Namespace("https://l-jamora.github.io/sdco#")
 
 # NOTE: does *not* require `?ind a owl:NamedIndividual` -- owlready2's RDF/XML

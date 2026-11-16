@@ -741,14 +741,14 @@ svg.plan .syn { fill: var(--warn); font-size: 3.2px; }
 "ov.stat.mat": "literal triples materialized from the class axioms",
 "ov.pipe.title": "Three layers, one record",
 "ov.pipe.intro": "The same inspection record travels through three layers: the XML file, the RDF individuals that the parser creates, and the SDCO classes the individuals are sorted into.",
-"ov.pipe.note": "Numbers: size of the example XML (<code>{xmlName}</code>), triples in <code>m150-onto-parsed-dwa.rdf</code>, named classes and <code>equivalentClass</code> definitions in <code>SDCO.rdf</code>.",
+"ov.pipe.note": "Numbers: size of the example XML (<code>{xmlName}</code>), triples in <code>m150-onto-parsed.rdf</code>, named classes and <code>equivalentClass</code> definitions in <code>SDCO.rdf</code>.",
 "ov.pipe.b1": "DWA-M 150 XML", "ov.pipe.b1s": "XML elements in {tags} distinct tags; the condition code sits in <code>HZ002</code>",
 "ov.pipe.b2": "m150-onto RDF", "ov.pipe.b2s": "triples describing pipe sections, manholes, inspections and condition reports as individuals",
 "ov.pipe.b3": "SDCO classes", "ov.pipe.b3s": "named classes; {eq} <code>equivalentClass</code> definitions connect codes to meaning",
 "ov.pipe.c1": "ontoparser", "ov.pipe.c2": "SDCO + reasoner",
 "ov.lg.title": "Linked data: two vocabularies, one graph",
 "ov.lg.intro": "One real pipe section (<code>{lgAsset}</code>), its inspection and {lgReports} of its condition reports, drawn as triples. Ochre nodes are m150-onto data, teal nodes are SDCO classes. The two vocabularies are joined only by IRIs: each report points at the SDCO classes it falls into, and those classes lead up the taxonomy. Columns read left to right: pipe section, inspection, condition reports with their code literal, then (right of the dashed line) the SDCO classes. Use the switch to start with the m150-onto data alone and watch SDCO attach through IRIs, or open the details of the inspection or of the pipe section (Haltung). Drag nodes, hover to see predicates, click for the triples.",
-"ov.lg.note": "Extracted by the build from <code>SDCO.rdf</code>, <code>m150-onto-parsed-dwa.rdf</code> and the materialized file: {lgNodes} nodes, {lgEdges} triples ({lgNodesM} nodes and {lgEdgesM} triples of them are m150-onto only; the inspection details add {lgDetN} nodes, the Haltung details {lgHdN} more). Shown are {lgReports} reports of distinct codes, one of them a fissure. Dark edges cross from m150-onto into SDCO. Reset also re-lays the graph and keeps the current switches.",
+"ov.lg.note": "Extracted by the build from <code>SDCO.rdf</code>, <code>m150-onto-parsed.rdf</code> and the materialized file: {lgNodes} nodes, {lgEdges} triples ({lgNodesM} nodes and {lgEdgesM} triples of them are m150-onto only; the inspection details add {lgDetN} nodes, the Haltung details {lgHdN} more). Shown are {lgReports} reports of distinct codes, one of them a fissure. Dark edges cross from m150-onto into SDCO. Reset also re-lays the graph and keeps the current switches.",
 "ov.lg.reset": "Reset",
 "ov.lg.mode.m150": "m150-onto only", "ov.lg.mode.sdco": "+ SDCO", "ov.lg.det": "Inspection details", "ov.lg.hd": "Haltung details", "ov.lg.mode.aria": "Graph content",
 "ov.lg.hint": "Drag a node to move and pin it, double-click to release it. Hover to highlight neighbours, click or press Enter to list its triples.",
@@ -772,7 +772,7 @@ svg.plan .syn { fill: var(--warn); font-size: 3.2px; }
 "m.lead": "m150-onto is an OWL ontology of the DWA-M 150 exchange format: pipe sections, manholes, inspections and condition reports become individuals with typed relations. The <code>ontoparser</code> converts XML files into such RDF data.",
 "m.x2t.title": "One condition report: XML element by XML element into triples",
 "m.x2t.intro": "On the left is the real XML block of one condition report (<code>{xmlPath}</code>, pipe {asset}), on the right the RDF triples the parser produced for it. The arrows follow the project's DWA-to-ontology mapping table.",
-"m.x2t.note": "Source: <code>{xmlName}</code> and <code>m150-onto-parsed-dwa.rdf</code>. Empty XML elements are left out. The three rows tagged “parser” have no XML counterpart as such: the type, a generated label, and the link to the inspection that results from the nesting.",
+"m.x2t.note": "Source: <code>{xmlName}</code> and <code>m150-onto-parsed.rdf</code>. Empty XML elements are left out. The three rows tagged “parser” have no XML counterpart as such: the type, a generated label, and the link to the inspection that results from the nesting.",
 "m.x2t.xml": "DWA-M 150 XML", "m.x2t.rdf": "m150-onto RDF", "m.x2t.parser": "parser",
 "m.graph.title": "The same record as a graph",
 "m.graph.intro": "RDF is a graph. The report becomes a node; every value becomes a labelled edge. Literals are ochre, links to other individuals are teal.",
@@ -828,7 +828,7 @@ svg.plan .syn { fill: var(--warn); font-size: 3.2px; }
 "s.f.2.t": "Existential restrictions", "s.f.2.b": "{svf} <code>someValuesFrom</code> restrictions give automatic subsumption. The price: a reasoner never writes the filler as a triple. That is why the materialization script exists ({m} triples for {ms} reports here).",
 "s.f.3.t": "Imports m150-onto", "s.f.3.b": "<code>SDCO.rdf</code> imports m150-onto, resolved locally through an XML catalog. Terms of the data format stay in the m150-onto namespace, damage taxonomy terms live in the SDCO namespace.",
 "s.f.4.t": "Limits", "s.f.4.b": "The fast classification covers only the two <code>equivalentClass</code> patterns SDCO uses today. Everything shown is measured on one sample dataset ({reports} reports, {u} of the {tc} codes occur).",
-"colophon": "Built from {sdco} triples (SDCO.rdf), {tbox} triples (m150-onto.rdf), {data} triples (m150-onto-parsed-dwa.rdf) and {mat} triples (materialized). Inspection dates in the sample: {d0} to {d1}."
+"colophon": "Built from {sdco} triples (SDCO.rdf), {tbox} triples (m150-onto.rdf), {data} triples (m150-onto-parsed.rdf) and {mat} triples (materialized). Inspection dates in the sample: {d0} to {d1}."
 },
 "de": {
 "tab.overview": "Überblick", "tab.m150": "m150-onto", "tab.sdco": "SDCO", "replay": "Wiederholen",
@@ -978,14 +978,14 @@ svg.plan .syn { fill: var(--warn); font-size: 3.2px; }
 "ov.stat.mat": "aus den Klassenaxiomen materialisierte Literal-Tripel",
 "ov.pipe.title": "Drei Ebenen, ein Datensatz",
 "ov.pipe.intro": "Derselbe Inspektionsdatensatz durchläuft drei Ebenen: die XML-Datei, die vom Parser erzeugten RDF-Individuen und die SDCO-Klassen, in die diese Individuen einsortiert werden.",
-"ov.pipe.note": "Zahlen: Größe der Beispiel-XML (<code>{xmlName}</code>), Tripel in <code>m150-onto-parsed-dwa.rdf</code>, benannte Klassen und <code>equivalentClass</code>-Definitionen in <code>SDCO.rdf</code>.",
+"ov.pipe.note": "Zahlen: Größe der Beispiel-XML (<code>{xmlName}</code>), Tripel in <code>m150-onto-parsed.rdf</code>, benannte Klassen und <code>equivalentClass</code>-Definitionen in <code>SDCO.rdf</code>.",
 "ov.pipe.b1": "DWA-M-150-XML", "ov.pipe.b1s": "XML-Elemente in {tags} verschiedenen Tags; der Zustandskode steht in <code>HZ002</code>",
 "ov.pipe.b2": "m150-onto-RDF", "ov.pipe.b2s": "Tripel, die Haltungen, Schächte, Inspektionen und Zustandsberichte als Individuen beschreiben",
 "ov.pipe.b3": "SDCO-Klassen", "ov.pipe.b3s": "benannte Klassen; {eq} <code>equivalentClass</code>-Definitionen verbinden Kodes mit Bedeutung",
 "ov.pipe.c1": "ontoparser", "ov.pipe.c2": "SDCO + Reasoner",
 "ov.lg.title": "Linked Data: zwei Vokabulare, ein Graph",
 "ov.lg.intro": "Eine echte Haltung (<code>{lgAsset}</code>), ihre Inspektion und {lgReports} ihrer Zustandsberichte, als Tripel gezeichnet. Ockerfarbene Knoten sind m150-onto-Daten, türkise Knoten sind SDCO-Klassen. Die beiden Vokabulare sind nur über IRIs verbunden: Jeder Bericht verweist auf die SDCO-Klassen, in die er fällt, und diese führen die Taxonomie aufwärts. Die Spalten lesen sich von links nach rechts: Haltung, Inspektion, Zustandsberichte mit ihrem Code-Literal, dann (rechts der gestrichelten Linie) die SDCO-Klassen. Mit dem Schalter lässt sich zuerst nur m150-onto zeigen und dann beobachten, wie SDCO sich über IRIs anhängt, oder die Details der Inspektion oder der Haltung öffnen. Knoten ziehen, mit der Maus darüberfahren, anklicken für die Tripel.",
-"ov.lg.note": "Vom Build aus <code>SDCO.rdf</code>, <code>m150-onto-parsed-dwa.rdf</code> und der materialisierten Datei extrahiert: {lgNodes} Knoten, {lgEdges} Tripel (davon {lgNodesM} Knoten und {lgEdgesM} Tripel nur m150-onto; die Inspektionsdetails fügen {lgDetN} Knoten hinzu, die Haltungsdetails {lgHdN} weitere). Gezeigt werden {lgReports} Berichte verschiedener Codes, darunter ein Riss. Dunkle Kanten führen von m150-onto nach SDCO. Zurücksetzen ordnet den Graphen auch neu an und behält die Schalter bei.",
+"ov.lg.note": "Vom Build aus <code>SDCO.rdf</code>, <code>m150-onto-parsed.rdf</code> und der materialisierten Datei extrahiert: {lgNodes} Knoten, {lgEdges} Tripel (davon {lgNodesM} Knoten und {lgEdgesM} Tripel nur m150-onto; die Inspektionsdetails fügen {lgDetN} Knoten hinzu, die Haltungsdetails {lgHdN} weitere). Gezeigt werden {lgReports} Berichte verschiedener Codes, darunter ein Riss. Dunkle Kanten führen von m150-onto nach SDCO. Zurücksetzen ordnet den Graphen auch neu an und behält die Schalter bei.",
 "ov.lg.reset": "Zurücksetzen",
 "ov.lg.mode.m150": "Nur m150-onto", "ov.lg.mode.sdco": "+ SDCO", "ov.lg.det": "Inspektionsdetails", "ov.lg.hd": "Haltungsdetails", "ov.lg.mode.aria": "Graphinhalt",
 "ov.lg.hint": "Knoten ziehen verschiebt und fixiert ihn, Doppelklick löst ihn wieder. Mit der Maus darüberfahren hebt die Nachbarn hervor, Klick oder Eingabetaste listet die Tripel.",
@@ -1009,7 +1009,7 @@ svg.plan .syn { fill: var(--warn); font-size: 3.2px; }
 "m.lead": "m150-onto ist eine OWL-Ontologie des Austauschformats DWA-M 150: Haltungen, Schächte, Inspektionen und Zustandsberichte werden zu Individuen mit typisierten Beziehungen. Der <code>ontoparser</code> wandelt XML-Dateien in solche RDF-Daten um.",
 "m.x2t.title": "Ein Zustandsbericht: XML-Element für XML-Element zu Tripeln",
 "m.x2t.intro": "Links der echte XML-Block eines Zustandsberichts (<code>{xmlPath}</code>, Haltung {asset}), rechts die RDF-Tripel, die der Parser daraus erzeugt hat. Die Pfeile folgen der Zuordnungstabelle DWA zu Ontologie des Projekts.",
-"m.x2t.note": "Quelle: <code>{xmlName}</code> und <code>m150-onto-parsed-dwa.rdf</code>. Leere XML-Elemente sind weggelassen. Die drei mit „Parser“ markierten Zeilen haben kein XML-Gegenstück im engeren Sinn: der Typ, ein erzeugtes Label und die Verknüpfung zur Inspektion, die sich aus der Verschachtelung ergibt.",
+"m.x2t.note": "Quelle: <code>{xmlName}</code> und <code>m150-onto-parsed.rdf</code>. Leere XML-Elemente sind weggelassen. Die drei mit „Parser“ markierten Zeilen haben kein XML-Gegenstück im engeren Sinn: der Typ, ein erzeugtes Label und die Verknüpfung zur Inspektion, die sich aus der Verschachtelung ergibt.",
 "m.x2t.xml": "DWA-M-150-XML", "m.x2t.rdf": "m150-onto-RDF", "m.x2t.parser": "Parser",
 "m.graph.title": "Derselbe Datensatz als Graph",
 "m.graph.intro": "RDF ist ein Graph. Der Bericht wird zu einem Knoten, jeder Wert zu einer beschrifteten Kante. Literale sind ocker, Verweise auf andere Individuen blaugrün.",
@@ -1065,7 +1065,7 @@ svg.plan .syn { fill: var(--warn); font-size: 3.2px; }
 "s.f.2.t": "Existenzielle Restriktionen", "s.f.2.b": "{svf} <code>someValuesFrom</code>-Restriktionen liefern automatische Subsumtion. Der Preis: Ein Reasoner schreibt den Füller nie als Tripel. Deshalb gibt es das Materialisierungsskript ({m} Tripel für {ms} Berichte hier).",
 "s.f.3.t": "Importiert m150-onto", "s.f.3.b": "<code>SDCO.rdf</code> importiert m150-onto, lokal über einen XML-Katalog aufgelöst. Begriffe des Datenformats bleiben im m150-onto-Namensraum, Begriffe der Schadenstaxonomie liegen im SDCO-Namensraum.",
 "s.f.4.t": "Grenzen", "s.f.4.b": "Die schnelle Klassifikation deckt nur die beiden <code>equivalentClass</code>-Muster ab, die SDCO heute verwendet. Alles Gezeigte ist an einem Beispieldatensatz gemessen ({reports} Berichte, {u} der {tc} Kodes kommen vor).",
-"colophon": "Erzeugt aus {sdco} Tripeln (SDCO.rdf), {tbox} Tripeln (m150-onto.rdf), {data} Tripeln (m150-onto-parsed-dwa.rdf) und {mat} Tripeln (materialisiert). Inspektionsdaten der Stichprobe: {d0} bis {d1}."
+"colophon": "Erzeugt aus {sdco} Tripeln (SDCO.rdf), {tbox} Tripeln (m150-onto.rdf), {data} Tripeln (m150-onto-parsed.rdf) und {mat} Tripeln (materialisiert). Inspektionsdaten der Stichprobe: {d0} bis {d1}."
 }
 }
 </script>
@@ -1095,7 +1095,7 @@ const VARS = () => ({
   eq: nf(ST.axioms.equivalentClass), svf: nf(ST.axioms.someValuesFrom),
   m: nf(ST.materializedTripleCount), ms: nf(ST.materializedSubjectCount),
   sdco: nf(ST.tripleCounts['SDCO.rdf']), tbox: nf(ST.tripleCounts['m150-onto.rdf']),
-  data: nf(ST.tripleCounts['m150-onto-parsed-dwa.rdf']), mat: nf(ST.tripleCounts['m150-onto-parsed-dwa_materialized.rdf']),
+  data: nf(ST.tripleCounts['m150-onto-parsed.rdf']), mat: nf(ST.tripleCounts['m150-onto-parsed_materialized.rdf']),
   lgAsset: LG.asset, lgReports: LG.edges.filter(e => e.label === 'm150:isChildOf').length, lgNodes: LG.nodes.filter(n => !n.detail).length, lgEdges: LG.edges.filter(e => !e.detail).length,
   lgNodesM: LG.nodes.filter(n => n.ns === 'm150' && !n.detail).length, lgEdgesM: LG.edges.filter(e => !e.detail && !/^(sdco|rdf|rdfs):/.test(e.label)).length, lgDetN: LG.nodes.filter(n => n.detail && !n.hd).length, lgHdN: LG.nodes.filter(n => n.hd).length,
   d0: (ST.inspectionDateRange.min || '').slice(0, 10), d1: (ST.inspectionDateRange.max || '').slice(0, 10)
@@ -1159,7 +1159,7 @@ function renderPipeline() {
   $('#st-pipeline').innerHTML = `<div class="pipe">
     <div class="box b1 rise" ${delay(.1)}><span class="label">1</span><h3>${t('ov.pipe.b1')}</h3><div class="big" data-count="${MS.xmlElements}">0</div><small>${t('ov.pipe.b1s')}</small></div>
     <div class="conn"><i class="grow" ${delay(.6)}></i><b ${delay(.9)}></b><span class="rise" ${delay(.6)}>${t('ov.pipe.c1')}</span></div>
-    <div class="box b2 rise" ${delay(1.5)}><span class="label">2</span><h3>${t('ov.pipe.b2')}</h3><div class="big" data-count="${tc['m150-onto-parsed-dwa.rdf']}">0</div><small>${t('ov.pipe.b2s')}</small></div>
+    <div class="box b2 rise" ${delay(1.5)}><span class="label">2</span><h3>${t('ov.pipe.b2')}</h3><div class="big" data-count="${tc['m150-onto-parsed.rdf']}">0</div><small>${t('ov.pipe.b2s')}</small></div>
     <div class="conn"><i class="grow" ${delay(2.1)}></i><b ${delay(2.4)}></b><span class="rise" ${delay(2.1)}>${t('ov.pipe.c2')}</span></div>
     <div class="box b3 rise" ${delay(3)}><span class="label">3</span><h3>${t('ov.pipe.b3')}</h3><div class="big" data-count="${ST.axioms.namedClasses}">0</div><small>${t('ov.pipe.b3s')}</small></div>
   </div>`;

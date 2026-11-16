@@ -35,10 +35,10 @@ A sibling branch `dev-instances_approach` (remote-only, individuals-only, no cla
 
 ## Materialization: turning existential restrictions into literal triples
 
-`scripts/pipeline/materialize_object_properties.py` solves the gap above: realizes each individual's damage-code classes, then a SPARQL CONSTRUCT query walks from those realized classes through the untouched `someValuesFrom` restrictions to emit literal triples (most-specific filler only) to `derived/*_materialized.rdf`/`.ttl`. The source file is never modified (hash-checked). Takes the parsed M150-Onto file as one optional positional argument (default `../m150-onto/m150-onto-parsed-dwa.rdf`), merges it with `SDCO.rdf` and the m150-onto base ontology (imports resolved via `catalog-v001.xml`), and writes `derived/<data stem>_materialized.rdf`. The source files are hash-checked.
+`scripts/pipeline/materialize_object_properties.py` solves the gap above: realizes each individual's damage-code classes, then a SPARQL CONSTRUCT query walks from those realized classes through the untouched `someValuesFrom` restrictions to emit literal triples (most-specific filler only) to `derived/*_materialized.rdf`/`.ttl`. The source file is never modified (hash-checked). Takes the parsed M150-Onto file as one optional positional argument (default `../m150-onto/m150-onto-parsed.rdf`), merges it with `SDCO.rdf` and the m150-onto base ontology (imports resolved via `catalog-v001.xml`), and writes `derived/<data stem>_materialized.rdf`. The source files are hash-checked.
 
 ```bash
-make materialize DATA=../m150-onto/m150-onto-parsed-dwa.rdf   # DATA is optional
+make materialize DATA=../m150-onto/m150-onto-parsed.rdf   # DATA is optional
 ```
 
 **Default path (fast, seconds):** `classify_individuals()` forward-chains the `equivalentClass` patterns directly with SPARQL UPDATE — every damage code is defined as either a plain `hasValue` restriction or an intersection of a base code class with one more `hasValue` restriction, so full DL realization was never actually needed for this taxonomy shape. Full run on the parsed M150 file (~1,128 individuals across the m150-onto imports): ~16s, 141 triples (re-measured 2026-09-24).

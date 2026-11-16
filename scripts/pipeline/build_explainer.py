@@ -639,7 +639,7 @@ def build_m150(m150_root: Path, sdco_graph: Graph, m150_data: Graph, m150_tbox: 
         asset_id = (asset.findtext("HG001") or asset.findtext("KG001") or "").strip()
         station = (el.findtext(el.tag + "001") or "").strip().replace(",", "_").replace(".", "_")
         code = (el.findtext(el.tag + "002") or "").strip()
-        key = f"Beispiel_Condition_{asset_id}_{station}_{code}"
+        key = f"PARSED_Condition_{asset_id}_{station}_{code}"
         if key in wanted:
             hz_match.setdefault(key, []).append((el, asset_id))
     unique = [k for k in sorted(wanted) if len(hz_match.get(k, [])) == 1]
@@ -1128,7 +1128,7 @@ def build_linked_graph(sdco_graph: Graph, m150_data: Graph, m150_tbox: Graph, ma
                 node(lid, f'"{str(o)}"', "m150", "literal", "")
                 edge(insp_id, lid, "m150:" + pname)
             else:
-                node(local_name(o), local_name(o).replace("Beispiel_", "", 1), "m150", "individual", str(o))
+                node(local_name(o), local_name(o).replace("PARSED_", "", 1), "m150", "individual", str(o))
                 edge(insp_id, local_name(o), "m150:" + pname)
                 for lab in m150_data.objects(o, RDFS.label):
                     node("lit:" + local_name(o), f'"{lab}"', "m150", "literal", "")
@@ -1228,9 +1228,9 @@ def build_stats(sdco_graph, m150_data, m150_tbox, materialized_graph, reports, c
     return {
         "tripleCounts": {
             "SDCO.rdf": len(sdco_graph),
-            "m150-onto-parsed-dwa.rdf": len(m150_data),
+            "m150-onto-parsed.rdf": len(m150_data),
             "m150-onto.rdf": len(m150_tbox),
-            "m150-onto-parsed-dwa_materialized.rdf": len(materialized_graph),
+            "m150-onto-parsed_materialized.rdf": len(materialized_graph),
         },
         "axioms": {
             "equivalentClass": len(list(sdco_graph.subjects(OWL.equivalentClass, None))),
@@ -1277,9 +1277,9 @@ def inject(output: dict, out_path: Path) -> int:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--sdco", default=str(REPO_ROOT / "SDCO.rdf"))
-    parser.add_argument("--m150-data", default=str(M150_REPO / "m150-onto-parsed-dwa.rdf"))
+    parser.add_argument("--m150-data", default=str(M150_REPO / "m150-onto-parsed.rdf"))
     parser.add_argument("--m150-tbox", default=str(M150_REPO / "m150-onto.rdf"))
-    parser.add_argument("--materialized", default=str(REPO_ROOT / "derived" / "m150-onto-parsed-dwa_materialized.rdf"))
+    parser.add_argument("--materialized", default=str(REPO_ROOT / "derived" / "m150-onto-parsed_materialized.rdf"))
     parser.add_argument("--output", default=str(REPO_ROOT / "docs" / "sdco_data.json"))
     parser.add_argument("--template-only", action="store_true",
                         help="skip extraction (slow); re-inject the existing --output JSON into the template")
