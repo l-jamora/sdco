@@ -7,10 +7,10 @@
 @base <https://l-jamora.github.io/sdco#> .
 
 <https://l-jamora.github.io/sdco> rdf:type owl:Ontology ;
-                                   owl:versionIRI <https://l-jamora.github.io/sdco/0.1.2> ;
+                                   owl:versionIRI <https://l-jamora.github.io/sdco/0.2.0> ;
                                    owl:imports <https://l-jamora.github.io/m150-onto> ;
                                    rdfs:label "Sewer Damage Classification Ontology" ;
-                                   owl:versionInfo "0.1.2" .
+                                   owl:versionInfo "0.2.0" .
 
 #################################################################
 #    Annotation properties

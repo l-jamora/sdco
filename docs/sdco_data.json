@@ -13473,8 +13473,8 @@
     }
   },
   "benefits": {
-    "version": "0.1.2",
-    "versionIri": "https://l-jamora.github.io/sdco/0.1.2",
+    "version": "0.2.0",
+    "versionIri": "https://l-jamora.github.io/sdco/0.2.0",
     "imports": [
       "https://l-jamora.github.io/m150-onto"
     ],
