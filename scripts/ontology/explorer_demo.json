@@ -1,0 +1,38 @@
+{
+  "_note": "SYNTHETIC demo data for the Explore tab (sewer plan + presets). Not real inspection records. Coordinates are plan metres. build_explainer.py validates every code and letter against SDCO.rdf.",
+  "blocks": [
+    [[25, 40], [70, 40], [70, 92], [25, 92]],
+    [[92, 42], [136, 42], [136, 86], [92, 86]],
+    [[162, 40], [206, 40], [206, 78], [162, 78]],
+    [[20, 120], [190, 120], [190, 138], [20, 138]],
+    [[20, 6], [68, 6], [68, 28], [20, 28]]
+  ],
+  "manholes": [
+    {"id": "S01", "x": 20, "y": 110}, {"id": "S02", "x": 80, "y": 100}, {"id": "S03", "x": 140, "y": 95},
+    {"id": "S04", "x": 190, "y": 90}, {"id": "S05", "x": 80, "y": 35}, {"id": "S06", "x": 150, "y": 30},
+    {"id": "S07", "x": 150, "y": 62}
+  ],
+  "pipes": [
+    {"id": "H01", "from": "S01", "to": "S02"}, {"id": "H02", "from": "S02", "to": "S03"},
+    {"id": "H03", "from": "S03", "to": "S04"}, {"id": "H04", "from": "S05", "to": "S02"},
+    {"id": "H05", "from": "S06", "to": "S07"}, {"id": "H06", "from": "S07", "to": "S03"}
+  ],
+  "observations": [
+    {"id": "O1", "pipe": "H01", "station": 8, "clock": 12, "code": "BAB", "char1": "B", "char2": "A"},
+    {"id": "O2", "pipe": "H01", "station": 30, "clock": 9, "code": "BCA", "char1": "A"},
+    {"id": "O3", "pipe": "H02", "station": 12, "clock": 11, "code": "BBA", "char1": "A"},
+    {"id": "O4", "pipe": "H02", "station": 36, "clock": 6, "code": "BBF", "char1": "A"},
+    {"id": "O5", "pipe": "H03", "station": 22, "clock": 1, "code": "BAC", "char1": "A"},
+    {"id": "O6", "pipe": "H04", "station": 25, "clock": 2, "code": "BAJ", "char1": "A"},
+    {"id": "O7", "pipe": "H06", "station": 10, "clock": 3, "code": "BAH", "char1": "A"},
+    {"id": "O8", "manhole": "S03", "clock": 9, "code": "DAB", "char1": "A", "char2": "A"},
+    {"id": "O9", "manhole": "S07", "clock": 12, "code": "DBF", "char1": "B"}
+  ],
+  "presets": [
+    {"id": "p1", "code": "BAB", "char1": "B", "char2": "A"},
+    {"id": "p2", "code": "BBA", "char1": "A"},
+    {"id": "p3", "code": "DAB", "char1": "A", "char2": "B"},
+    {"id": "p4", "code": "BAC", "char1": "A"},
+    {"id": "p5", "code": "BAB", "char1": "D", "expectFlag": true}
+  ]
+}
